@@ -3,7 +3,9 @@
 
 #include "TypeEncoder.h"
 #include "clang/AST/Mangle.h"
+#include "clang/AST/RecordLayout.h"
 
+#include <algorithm>
 #include <sstream>
 
 namespace see {
@@ -23,6 +25,11 @@ TypeKind TypeEncoder::getTypeKind(clang::QualType type) const {
     if (type->isPointerType())
         return TypeKind::Pointer;
 
+    // Check enum BEFORE integer types, as unscoped enums are considered
+    // integer types by Clang
+    if (type->isEnumeralType())
+        return TypeKind::Enum;
+
     if (type->isBooleanType())
         return TypeKind::Bool;
 
@@ -38,13 +45,11 @@ TypeKind TypeEncoder::getTypeKind(clang::QualType type) const {
     if (type->isSignedIntegerType())
         return TypeKind::Int;
 
-    if (type->isEnumeralType())
-        return TypeKind::Enum;
-
     if (type->isArrayType())
         return TypeKind::Array;
 
-    if (type->isStructureType())
+    // Handle both struct and class types (they're equivalent in C++)
+    if (type->isStructureType() || type->isClassType())
         return TypeKind::Struct;
 
     if (type->isUnionType())
@@ -200,6 +205,14 @@ std::string TypeEncoder::getHookSuffix(clang::QualType type) const {
         return "ptr";
     case TypeKind::Reference:
         return "ref";
+    case TypeKind::Struct:
+        return "struct";
+    case TypeKind::Array:
+        return "array";
+    case TypeKind::Enum:
+        return "enum";
+    case TypeKind::Union:
+        return "union";
     default:
         return "generic";
     }
@@ -207,7 +220,19 @@ std::string TypeEncoder::getHookSuffix(clang::QualType type) const {
 
 bool TypeEncoder::isSupported(clang::QualType type) const {
     TypeKind kind = getTypeKind(type);
-    return kind != TypeKind::Unknown && kind != TypeKind::Void;
+    if (kind == TypeKind::Unknown || kind == TypeKind::Void)
+        return false;
+
+    // For Tier 2, we support all basic composite types
+    // Check if the type is complete for record types
+    type = type.getCanonicalType();
+    if (type->isRecordType()) {
+        const clang::RecordDecl* record = type->getAsRecordDecl();
+        if (!record || !record->isCompleteDefinition())
+            return false;
+    }
+
+    return true;
 }
 
 const char* TypeEncoder::kindToString(TypeKind kind) {
@@ -240,6 +265,393 @@ const char* TypeEncoder::kindToString(TypeKind kind) {
     default:
         return "Unknown";
     }
+}
+
+const char* TypeEncoder::accessToString(AccessLevel level) {
+    switch (level) {
+    case AccessLevel::Public:
+        return "Public";
+    case AccessLevel::Protected:
+        return "Protected";
+    case AccessLevel::Private:
+        return "Private";
+    default:
+        return "Public";
+    }
+}
+
+AccessLevel TypeEncoder::convertAccess(clang::AccessSpecifier spec) {
+    switch (spec) {
+    case clang::AS_public:
+        return AccessLevel::Public;
+    case clang::AS_protected:
+        return AccessLevel::Protected;
+    case clang::AS_private:
+        return AccessLevel::Private;
+    default:
+        return AccessLevel::Public;
+    }
+}
+
+bool TypeEncoder::isStruct(clang::QualType type) const {
+    type = type.getCanonicalType();
+    return type->isStructureType() || type->isClassType();
+}
+
+bool TypeEncoder::isEnum(clang::QualType type) const {
+    type = type.getCanonicalType();
+    return type->isEnumeralType();
+}
+
+bool TypeEncoder::isUnion(clang::QualType type) const {
+    type = type.getCanonicalType();
+    return type->isUnionType();
+}
+
+bool TypeEncoder::isArray(clang::QualType type) const {
+    type = type.getCanonicalType();
+    return type->isConstantArrayType();
+}
+
+std::pair<clang::QualType, size_t>
+TypeEncoder::getArrayInfo(clang::QualType type) const {
+    type = type.getCanonicalType();
+    if (const auto* arr = llvm::dyn_cast<clang::ConstantArrayType>(type)) {
+        return {arr->getElementType(), arr->getSize().getZExtValue()};
+    }
+    return {clang::QualType(), 0};
+}
+
+bool TypeEncoder::hasGeneratedDescriptor(clang::QualType type) const {
+    return m_generatedTypes.count(getMangledName(type)) > 0;
+}
+
+void TypeEncoder::markDescriptorGenerated(clang::QualType type) {
+    m_generatedTypes.insert(getMangledName(type));
+}
+
+std::string TypeEncoder::getDescriptorRef(clang::QualType type) const {
+    // For builtin types, use the predefined constants
+    type = type.getCanonicalType();
+    if (type->isBuiltinType()) {
+        const auto* builtin = type->getAs<clang::BuiltinType>();
+        switch (builtin->getKind()) {
+        case clang::BuiltinType::Int:
+            return "&see::TYPE_INT";
+        case clang::BuiltinType::UInt:
+            return "&see::TYPE_UINT";
+        case clang::BuiltinType::Long:
+            return "&see::TYPE_LONG";
+        case clang::BuiltinType::ULong:
+            return "&see::TYPE_ULONG";
+        case clang::BuiltinType::LongLong:
+            return "&see::TYPE_LLONG";
+        case clang::BuiltinType::ULongLong:
+            return "&see::TYPE_ULLONG";
+        case clang::BuiltinType::Float:
+            return "&see::TYPE_FLOAT";
+        case clang::BuiltinType::Double:
+            return "&see::TYPE_DOUBLE";
+        case clang::BuiltinType::Bool:
+            return "&see::TYPE_BOOL";
+        case clang::BuiltinType::Char_S:
+        case clang::BuiltinType::Char_U:
+        case clang::BuiltinType::SChar:
+            return "&see::TYPE_CHAR";
+        case clang::BuiltinType::UChar:
+            return "&see::TYPE_UCHAR";
+        default:
+            break;
+        }
+    }
+
+    // For pointer to char, use predefined
+    if (type->isPointerType()) {
+        clang::QualType pointee = type->getPointeeType();
+        if (pointee->isCharType())
+            return "&see::TYPE_PTR_CHAR";
+        if (pointee->isVoidType())
+            return "&see::TYPE_PTR_VOID";
+    }
+
+    return "&__see_type_" + getMangledName(type);
+}
+
+std::string
+TypeEncoder::generateFieldInfoArray(const clang::RecordDecl* record,
+                                     const std::string& baseName) {
+    if (!record || !record->isCompleteDefinition())
+        return "";
+
+    std::ostringstream ss;
+    const clang::ASTRecordLayout& layout =
+        m_context.getASTRecordLayout(record);
+
+    // Collect fields
+    std::vector<std::tuple<std::string, size_t, clang::QualType, AccessLevel>>
+        fields;
+
+    unsigned fieldIdx = 0;
+    for (const auto* field : record->fields()) {
+        size_t offset = layout.getFieldOffset(fieldIdx) / 8;
+        AccessLevel access = AccessLevel::Public;
+
+        // For C++ classes, get access specifier
+        if (const auto* cxxRecord =
+                llvm::dyn_cast<clang::CXXRecordDecl>(record)) {
+            access = convertAccess(field->getAccess());
+        }
+
+        fields.emplace_back(field->getNameAsString(), offset, field->getType(),
+                            access);
+        ++fieldIdx;
+    }
+
+    if (fields.empty())
+        return "";
+
+    ss << "static const see::FieldInfo " << baseName << "_fields[] = {\n";
+    for (size_t i = 0; i < fields.size(); ++i) {
+        const auto& [name, offset, type, access] = fields[i];
+        ss << "    {\"" << name << "\", " << offset << ", "
+           << getDescriptorRef(type) << ", see::AccessLevel::"
+           << accessToString(access) << ", false}";
+        if (i + 1 < fields.size())
+            ss << ",";
+        ss << "\n";
+    }
+    ss << "};\n";
+
+    return ss.str();
+}
+
+std::string
+TypeEncoder::generateEnumValueArray(const clang::EnumDecl* decl,
+                                     const std::string& baseName) {
+    if (!decl)
+        return "";
+
+    std::ostringstream ss;
+    std::vector<std::pair<std::string, long long>> values;
+
+    for (const auto* enumerator : decl->enumerators()) {
+        values.emplace_back(enumerator->getNameAsString(),
+                            enumerator->getInitVal().getExtValue());
+    }
+
+    // Sort by value for binary search in runtime
+    std::sort(values.begin(), values.end(),
+              [](const auto& a, const auto& b) { return a.second < b.second; });
+
+    if (values.empty())
+        return "";
+
+    ss << "static const see::EnumValue " << baseName << "_values[] = {\n";
+    for (size_t i = 0; i < values.size(); ++i) {
+        ss << "    {" << values[i].second << ", \"" << values[i].first << "\"}";
+        if (i + 1 < values.size())
+            ss << ",";
+        ss << "\n";
+    }
+    ss << "};\n";
+
+    return ss.str();
+}
+
+std::string
+TypeEncoder::generateBaseInfoArray(const clang::CXXRecordDecl* record,
+                                    const std::string& baseName) {
+    if (!record || !record->getNumBases())
+        return "";
+
+    std::ostringstream ss;
+    const clang::ASTRecordLayout& layout =
+        m_context.getASTRecordLayout(record);
+
+    ss << "static const see::BaseInfo " << baseName << "_bases[] = {\n";
+
+    unsigned idx = 0;
+    for (const auto& base : record->bases()) {
+        clang::QualType baseType = base.getType();
+        size_t offset = 0;
+        bool isVirtual = base.isVirtual();
+
+        if (!isVirtual) {
+            const auto* baseDecl = baseType->getAsCXXRecordDecl();
+            if (baseDecl) {
+                offset = layout.getBaseClassOffset(baseDecl).getQuantity();
+            }
+        }
+
+        ss << "    {" << getDescriptorRef(baseType) << ", " << offset << ", "
+           << (isVirtual ? "true" : "false") << "}";
+        if (++idx < record->getNumBases())
+            ss << ",";
+        ss << "\n";
+    }
+    ss << "};\n";
+
+    return ss.str();
+}
+
+std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
+    type = type.getCanonicalType();
+
+    // Skip builtin types - they have predefined descriptors in the runtime
+    if (type->isBuiltinType()) {
+        return "";
+    }
+
+    // Skip pointer to char/void - also predefined
+    if (type->isPointerType()) {
+        clang::QualType pointee = type->getPointeeType();
+        if (pointee->isCharType() || pointee->isVoidType()) {
+            return "";
+        }
+    }
+
+    std::string mangledName = getMangledName(type);
+
+    // Skip if already generated
+    if (hasGeneratedDescriptor(type))
+        return "";
+
+    markDescriptorGenerated(type);
+
+    std::ostringstream ss;
+    TypeKind kind = getTypeKind(type);
+    std::string spelling = getSpelling(type);
+    size_t size = getSize(type);
+
+    // For composite types, first generate dependency descriptors
+    std::string dependencies;
+
+    if (type->isRecordType()) {
+        const clang::RecordDecl* record = type->getAsRecordDecl();
+        if (record && record->isCompleteDefinition()) {
+            // Generate descriptors for field types
+            for (const auto* field : record->fields()) {
+                dependencies += generateTypeDescriptorCode(field->getType());
+            }
+
+            // Generate descriptors for base classes
+            if (const auto* cxxRecord =
+                    llvm::dyn_cast<clang::CXXRecordDecl>(record)) {
+                for (const auto& base : cxxRecord->bases()) {
+                    dependencies += generateTypeDescriptorCode(base.getType());
+                }
+            }
+        }
+    }
+
+    if (type->isConstantArrayType()) {
+        auto [elemType, count] = getArrayInfo(type);
+        dependencies += generateTypeDescriptorCode(elemType);
+    }
+
+    if (type->isPointerType() || type->isReferenceType()) {
+        clang::QualType pointee = getPointeeType(type);
+        if (!pointee.isNull() && !pointee->isVoidType()) {
+            dependencies += generateTypeDescriptorCode(pointee);
+        }
+    }
+
+    ss << dependencies;
+
+    // Generate auxiliary arrays for composite types
+    std::string fieldArrayName = "__see_type_" + mangledName;
+    std::string fieldArrayCode;
+    std::string enumArrayCode;
+    std::string baseArrayCode;
+    size_t fieldCount = 0;
+    size_t enumValueCount = 0;
+    size_t baseCount = 0;
+    bool isScopedEnum = false;
+    bool isPolymorphic = false;
+    bool isUnionType = type->isUnionType();
+
+    if (type->isRecordType()) {
+        const clang::RecordDecl* record = type->getAsRecordDecl();
+        if (record && record->isCompleteDefinition()) {
+            fieldArrayCode =
+                generateFieldInfoArray(record, fieldArrayName);
+            fieldCount = std::distance(record->field_begin(), record->field_end());
+
+            if (const auto* cxxRecord =
+                    llvm::dyn_cast<clang::CXXRecordDecl>(record)) {
+                isPolymorphic = cxxRecord->isPolymorphic();
+                if (cxxRecord->getNumBases() > 0) {
+                    baseArrayCode =
+                        generateBaseInfoArray(cxxRecord, fieldArrayName);
+                    baseCount = cxxRecord->getNumBases();
+                }
+            }
+        }
+    }
+
+    if (type->isEnumeralType()) {
+        const clang::EnumDecl* enumDecl = type->getAs<clang::EnumType>()->getDecl();
+        if (enumDecl) {
+            enumArrayCode = generateEnumValueArray(enumDecl, fieldArrayName);
+            enumValueCount =
+                std::distance(enumDecl->enumerator_begin(), enumDecl->enumerator_end());
+            isScopedEnum = enumDecl->isScoped();
+        }
+    }
+
+    ss << fieldArrayCode;
+    ss << enumArrayCode;
+    ss << baseArrayCode;
+
+    // Generate the TypeDescriptor
+    ss << "static const see::TypeDescriptor __see_type_" << mangledName
+       << " = {\n";
+    ss << "    see::TypeKind::" << kindToString(kind) << ",\n";
+    ss << "    \"" << spelling << "\",\n";
+    ss << "    " << size << ",\n";
+
+    // Fields
+    if (fieldCount > 0) {
+        ss << "    " << fieldArrayName << "_fields, " << fieldCount << ",\n";
+    } else {
+        ss << "    nullptr, 0,\n";
+    }
+
+    // Element type (for arrays and pointers)
+    if (type->isConstantArrayType()) {
+        auto [elemType, count] = getArrayInfo(type);
+        ss << "    " << getDescriptorRef(elemType) << ", " << count << ",\n";
+    } else if (type->isPointerType() || type->isReferenceType()) {
+        clang::QualType pointee = getPointeeType(type);
+        if (!pointee.isNull() && !pointee->isVoidType()) {
+            ss << "    " << getDescriptorRef(pointee) << ", 0,\n";
+        } else {
+            ss << "    nullptr, 0,\n";
+        }
+    } else {
+        ss << "    nullptr, 0,\n";
+    }
+
+    // Base classes
+    if (baseCount > 0) {
+        ss << "    " << fieldArrayName << "_bases, " << baseCount << ",\n";
+    } else {
+        ss << "    nullptr, 0,\n";
+    }
+
+    // Enum values
+    if (enumValueCount > 0) {
+        ss << "    " << fieldArrayName << "_values, " << enumValueCount << ",\n";
+    } else {
+        ss << "    nullptr, 0,\n";
+    }
+
+    ss << "    " << (isScopedEnum ? "true" : "false") << ",\n";
+    ss << "    " << (isPolymorphic ? "true" : "false") << ",\n";
+    ss << "    " << (isUnionType ? "true" : "false") << "\n";
+    ss << "};\n\n";
+
+    return ss.str();
 }
 
 } // namespace see

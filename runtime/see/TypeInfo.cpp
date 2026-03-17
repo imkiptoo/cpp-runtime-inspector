@@ -37,33 +37,65 @@ const char* typeKindToString(TypeKind kind) {
     }
 }
 
+const char* accessLevelToString(AccessLevel level) {
+    switch (level) {
+    case AccessLevel::Public:
+        return "public";
+    case AccessLevel::Protected:
+        return "protected";
+    case AccessLevel::Private:
+        return "private";
+    default:
+        return "unknown";
+    }
+}
+
+const char* lookupEnumName(const TypeDescriptor* type, long long value) {
+    if (!type || type->kind != TypeKind::Enum || !type->enum_values)
+        return nullptr;
+
+    // Binary search for the value
+    size_t left = 0;
+    size_t right = type->enum_value_count;
+    while (left < right) {
+        size_t mid = left + (right - left) / 2;
+        if (type->enum_values[mid].value == value) {
+            return type->enum_values[mid].name;
+        } else if (type->enum_values[mid].value < value) {
+            left = mid + 1;
+        } else {
+            right = mid;
+        }
+    }
+    return nullptr;
+}
+
+// Helper macro for defining built-in type descriptors
+// TypeDescriptor: kind, spelling, size, fields, field_count, element_type,
+//                 element_count, bases, base_count, enum_values, enum_value_count,
+//                 is_scoped_enum, is_polymorphic, is_union
+#define BUILTIN_TYPE(k, s, sz) \
+    {k, s, sz, nullptr, 0, nullptr, 0, nullptr, 0, nullptr, 0, false, false, false}
+
+#define BUILTIN_PTR(s, elem) \
+    {TypeKind::Pointer, s, sizeof(void*), nullptr, 0, elem, 0, nullptr, 0, nullptr, 0, false, false, false}
+
 // Built-in type descriptors
-const TypeDescriptor TYPE_INT = {TypeKind::Int, "int", sizeof(int),
-                                  nullptr, 0, nullptr, 0};
-const TypeDescriptor TYPE_UINT = {TypeKind::UInt, "unsigned int",
-                                   sizeof(unsigned int), nullptr, 0, nullptr, 0};
-const TypeDescriptor TYPE_LONG = {TypeKind::Int, "long", sizeof(long),
-                                   nullptr, 0, nullptr, 0};
-const TypeDescriptor TYPE_ULONG = {TypeKind::UInt, "unsigned long",
-                                    sizeof(unsigned long), nullptr, 0, nullptr, 0};
-const TypeDescriptor TYPE_LLONG = {TypeKind::Int, "long long", sizeof(long long),
-                                    nullptr, 0, nullptr, 0};
-const TypeDescriptor TYPE_ULLONG = {TypeKind::UInt, "unsigned long long",
-                                     sizeof(unsigned long long), nullptr, 0,
-                                     nullptr, 0};
-const TypeDescriptor TYPE_FLOAT = {TypeKind::Float, "float", sizeof(float),
-                                    nullptr, 0, nullptr, 0};
-const TypeDescriptor TYPE_DOUBLE = {TypeKind::Float, "double", sizeof(double),
-                                     nullptr, 0, nullptr, 0};
-const TypeDescriptor TYPE_BOOL = {TypeKind::Bool, "bool", sizeof(bool),
-                                   nullptr, 0, nullptr, 0};
-const TypeDescriptor TYPE_CHAR = {TypeKind::Char, "char", sizeof(char),
-                                   nullptr, 0, nullptr, 0};
-const TypeDescriptor TYPE_UCHAR = {TypeKind::Char, "unsigned char",
-                                    sizeof(unsigned char), nullptr, 0, nullptr, 0};
-const TypeDescriptor TYPE_PTR_CHAR = {TypeKind::Pointer, "char*", sizeof(char*),
-                                       nullptr, 0, &TYPE_CHAR, 0};
-const TypeDescriptor TYPE_PTR_VOID = {TypeKind::Pointer, "void*", sizeof(void*),
-                                       nullptr, 0, nullptr, 0};
+const TypeDescriptor TYPE_INT = BUILTIN_TYPE(TypeKind::Int, "int", sizeof(int));
+const TypeDescriptor TYPE_UINT = BUILTIN_TYPE(TypeKind::UInt, "unsigned int", sizeof(unsigned int));
+const TypeDescriptor TYPE_LONG = BUILTIN_TYPE(TypeKind::Int, "long", sizeof(long));
+const TypeDescriptor TYPE_ULONG = BUILTIN_TYPE(TypeKind::UInt, "unsigned long", sizeof(unsigned long));
+const TypeDescriptor TYPE_LLONG = BUILTIN_TYPE(TypeKind::Int, "long long", sizeof(long long));
+const TypeDescriptor TYPE_ULLONG = BUILTIN_TYPE(TypeKind::UInt, "unsigned long long", sizeof(unsigned long long));
+const TypeDescriptor TYPE_FLOAT = BUILTIN_TYPE(TypeKind::Float, "float", sizeof(float));
+const TypeDescriptor TYPE_DOUBLE = BUILTIN_TYPE(TypeKind::Float, "double", sizeof(double));
+const TypeDescriptor TYPE_BOOL = BUILTIN_TYPE(TypeKind::Bool, "bool", sizeof(bool));
+const TypeDescriptor TYPE_CHAR = BUILTIN_TYPE(TypeKind::Char, "char", sizeof(char));
+const TypeDescriptor TYPE_UCHAR = BUILTIN_TYPE(TypeKind::Char, "unsigned char", sizeof(unsigned char));
+const TypeDescriptor TYPE_PTR_CHAR = BUILTIN_PTR("char*", &TYPE_CHAR);
+const TypeDescriptor TYPE_PTR_VOID = BUILTIN_PTR("void*", nullptr);
+
+#undef BUILTIN_TYPE
+#undef BUILTIN_PTR
 
 } // namespace see

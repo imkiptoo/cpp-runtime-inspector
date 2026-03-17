@@ -17,45 +17,84 @@ enum class TypeKind : uint8_t {
     Char,      //!< Character types
     Pointer,   //!< Pointer types
     Reference, //!< Reference types
-    // Tier 2:
-    Struct, //!< Struct/class types
-    Array,  //!< Array types
-    Enum,   //!< Enumeration types
-    Union,  //!< Union types
-    // Special:
-    Void,   //!< Void type
-    Unknown //!< Unsupported types
+    Struct,    //!< Struct/class types
+    Array,     //!< Array types
+    Enum,      //!< Enumeration types
+    Union,     //!< Union types
+    Void,      //!< Void type
+    Unknown    //!< Unsupported types
+};
+
+//! Access level for struct/class members.
+enum class AccessLevel : uint8_t {
+    Public,
+    Protected,
+    Private
 };
 
 //! Forward declaration for recursive type references.
 struct TypeDescriptor;
 
-//! Field information for struct types (Tier 2).
+//! Field information for struct/class/union types.
 struct FieldInfo {
-    const char* name;
-    size_t offset;
-    const TypeDescriptor* type;
+    const char* name;             //!< Field name
+    size_t offset;                //!< Byte offset from struct base
+    const TypeDescriptor* type;   //!< Field type descriptor
+    AccessLevel access;           //!< Access level (public/protected/private)
+    bool is_vptr;                 //!< True if this is a vptr field
+};
+
+//! Base class information for inheritance.
+struct BaseInfo {
+    const TypeDescriptor* type;   //!< Base class type descriptor
+    size_t offset;                //!< Byte offset (usually 0 for single inheritance)
+    bool is_virtual;              //!< True if virtual inheritance
+};
+
+//! Enum value-name pair for enum types.
+struct EnumValue {
+    long long value;              //!< Enum underlying value
+    const char* name;             //!< Enum enumerator name
 };
 
 //! Describes a type for runtime serialization.
 //!
 //! Generated as static data by the plugin for each unique type encountered.
 struct TypeDescriptor {
-    TypeKind kind;          //!< Type category
-    const char* spelling;   //!< Human-readable type name
-    size_t size;            //!< sizeof(T)
+    TypeKind kind;                //!< Type category
+    const char* spelling;         //!< Human-readable type name
+    size_t size;                  //!< sizeof(T)
 
-    // For struct types (Tier 2):
-    const FieldInfo* fields;
-    size_t field_count;
+    // For struct/class/union types:
+    const FieldInfo* fields;      //!< Array of field descriptors
+    size_t field_count;           //!< Number of fields
 
-    // For array types (Tier 2):
-    const TypeDescriptor* element_type;
-    size_t element_count;
+    // For array types:
+    const TypeDescriptor* element_type;  //!< Element type descriptor
+    size_t element_count;                //!< Number of elements (0 for dynamic)
+
+    // For class types with inheritance:
+    const BaseInfo* bases;        //!< Array of base class descriptors
+    size_t base_count;            //!< Number of base classes
+
+    // For enum types:
+    const EnumValue* enum_values; //!< Array of enum value-name pairs
+    size_t enum_value_count;      //!< Number of enum values
+    bool is_scoped_enum;          //!< True if enum class
+
+    // Flags:
+    bool is_polymorphic;          //!< Has virtual functions
+    bool is_union;                //!< Is a union (fields overlap)
 };
 
 //! Convert TypeKind to string for JSON output.
 const char* typeKindToString(TypeKind kind);
+
+//! Convert AccessLevel to string for JSON output.
+const char* accessLevelToString(AccessLevel level);
+
+//! Look up enum value name by value. Returns nullptr if not found.
+const char* lookupEnumName(const TypeDescriptor* type, long long value);
 
 //! Built-in type descriptors for common types.
 extern const TypeDescriptor TYPE_INT;
