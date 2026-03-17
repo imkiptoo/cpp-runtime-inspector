@@ -22,6 +22,69 @@ nlohmann::json JsonEmitter::toOPT(const TraceState& state) {
     }
     result["trace"] = trace;
 
+    // Include memory leaks if any
+    const auto& leaks = state.getLeakedAllocations();
+    if (!leaks.empty()) {
+        nlohmann::json leakedArray = nlohmann::json::array();
+        for (const auto& [heapId, typeName] : leaks) {
+            nlohmann::json leakInfo = nlohmann::json::array();
+            leakInfo.push_back("leaked");
+            leakInfo.push_back(heapId);
+            leakInfo.push_back(typeName);
+            leakedArray.push_back(leakInfo);
+        }
+        result["memory_leaks"] = leakedArray;
+    }
+
+    return result;
+}
+
+nlohmann::json JsonEmitter::heapObjectToJson(const HeapObject& obj) {
+    nlohmann::json result = nlohmann::json::array();
+
+    if (obj.isArray) {
+        // Array: ["HEAP_ARRAY", typeName, [elem1, elem2, ...]]
+        result.push_back("HEAP_ARRAY");
+        result.push_back(obj.typeName);
+
+        // The value should be an ArrayValue
+        if (std::holds_alternative<ArrayValue>(obj.value)) {
+            const auto& av = std::get<ArrayValue>(obj.value);
+            nlohmann::json elements = nlohmann::json::array();
+            for (const auto& elem : av.elements) {
+                if (elem) {
+                    elements.push_back(valueToJson(elem->value, elem->type));
+                }
+            }
+            result.push_back(elements);
+        } else {
+            // Fallback: just include the encoded value
+            result.push_back(valueToJson(obj.value, nullptr));
+        }
+    } else if (std::holds_alternative<StructValue>(obj.value)) {
+        // Struct: ["HEAP_STRUCT", typeName, [[field1, value1], ...]]
+        result.push_back("HEAP_STRUCT");
+        result.push_back(obj.typeName);
+
+        const auto& sv = std::get<StructValue>(obj.value);
+        nlohmann::json fields = nlohmann::json::array();
+        for (const auto& fieldName : sv.fieldOrder) {
+            auto it = sv.fields.find(fieldName);
+            if (it != sv.fields.end() && it->second) {
+                nlohmann::json fieldPair = nlohmann::json::array();
+                fieldPair.push_back(fieldName);
+                fieldPair.push_back(valueToJson(it->second->value, it->second->type));
+                fields.push_back(fieldPair);
+            }
+        }
+        result.push_back(fields);
+    } else {
+        // Primitive: ["HEAP_PRIMITIVE", typeName, value]
+        result.push_back("HEAP_PRIMITIVE");
+        result.push_back(obj.typeName);
+        result.push_back(valueToJson(obj.value, nullptr));
+    }
+
     return result;
 }
 
@@ -57,8 +120,12 @@ nlohmann::json JsonEmitter::stepToJson(const TraceStep& step) {
     result["globals"] = nlohmann::json::object();
     result["ordered_globals"] = nlohmann::json::array();
 
-    // Heap (empty for now - Tier 3)
-    result["heap"] = nlohmann::json::object();
+    // Heap state
+    nlohmann::json heapJson = nlohmann::json::object();
+    for (const auto& [heapId, obj] : step.heap) {
+        heapJson[std::to_string(heapId)] = heapObjectToJson(obj);
+    }
+    result["heap"] = heapJson;
 
     // Stdout
     result["stdout"] = step.stdout_capture;
@@ -113,6 +180,79 @@ nlohmann::json JsonEmitter::valueToJson(const EncodedValue& value,
                 return arr;
             } else if constexpr (std::is_same_v<T, std::string>) {
                 return arg;
+            } else if constexpr (std::is_same_v<T, StructValue>) {
+                // Struct: ["C_STRUCT", typeName, {field1: value1, ...}]
+                nlohmann::json result = nlohmann::json::array();
+                result.push_back("C_STRUCT");
+                result.push_back(arg.typeName);
+
+                nlohmann::json fields = nlohmann::json::object();
+                for (const auto& fieldName : arg.fieldOrder) {
+                    auto it = arg.fields.find(fieldName);
+                    if (it != arg.fields.end() && it->second) {
+                        fields[fieldName] =
+                            valueToJson(it->second->value, it->second->type);
+                    }
+                }
+                result.push_back(fields);
+                return result;
+            } else if constexpr (std::is_same_v<T, ArrayValue>) {
+                // Array: ["C_ARRAY", elementType, [elem1, elem2, ...]]
+                nlohmann::json result = nlohmann::json::array();
+                result.push_back("C_ARRAY");
+                result.push_back(arg.elementTypeName);
+
+                nlohmann::json elements = nlohmann::json::array();
+                for (const auto& elem : arg.elements) {
+                    if (elem) {
+                        elements.push_back(
+                            valueToJson(elem->value, elem->type));
+                    }
+                }
+                result.push_back(elements);
+                return result;
+            } else if constexpr (std::is_same_v<T, EnumValue_>) {
+                // Enum: show name if available, otherwise value
+                if (arg.hasName) {
+                    return arg.enumName;
+                } else {
+                    return arg.value;
+                }
+            } else if constexpr (std::is_same_v<T, UnionValue>) {
+                // Union: ["C_UNION", typeName, {firstField: value}]
+                nlohmann::json result = nlohmann::json::array();
+                result.push_back("C_UNION");
+                result.push_back(arg.typeName);
+
+                nlohmann::json content = nlohmann::json::object();
+                if (!arg.firstFieldName.empty() && arg.firstFieldValue) {
+                    content[arg.firstFieldName] = valueToJson(
+                        arg.firstFieldValue->value, arg.firstFieldValue->type);
+                }
+                // Also include raw bytes as hex
+                std::ostringstream hexBytes;
+                for (uint8_t b : arg.rawBytes) {
+                    hexBytes << std::hex << std::setfill('0') << std::setw(2)
+                             << static_cast<int>(b);
+                }
+                content["__raw"] = hexBytes.str();
+                result.push_back(content);
+                return result;
+            } else if constexpr (std::is_same_v<T, HeapRef>) {
+                // Heap reference
+                nlohmann::json result = nlohmann::json::array();
+                if (arg.isDangling) {
+                    result.push_back("DANGLING");
+                    result.push_back(arg.heapId);
+                } else if (arg.offset > 0) {
+                    result.push_back("REF_OFFSET");
+                    result.push_back(arg.heapId);
+                    result.push_back(static_cast<int>(arg.offset));
+                } else {
+                    result.push_back("REF");
+                    result.push_back(arg.heapId);
+                }
+                return result;
             } else {
                 return nullptr;
             }

@@ -25,6 +25,9 @@ public:
     static nlohmann::json valueToJson(const EncodedValue& value,
                                        const TypeDescriptor* type);
 
+    //! Convert a heap object to JSON.
+    static nlohmann::json heapObjectToJson(const HeapObject& obj);
+
     //! Emit trace to stderr.
     static void emit(const TraceState& state);
 };

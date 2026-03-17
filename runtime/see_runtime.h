@@ -87,6 +87,46 @@ void __see_var_update_ref(const char* name, void* addr,
                           const void* referent_addr);
 
 // ---------------------------------------------------------------------------
+// Tier 2: Composite types
+// ---------------------------------------------------------------------------
+
+// Struct/class types (value is the struct address for field traversal)
+void __see_var_init_struct(const char* name, void* addr,
+                           const see::TypeDescriptor* type, int line);
+void __see_var_update_struct(const char* name, void* addr,
+                             const see::TypeDescriptor* type);
+
+// Enum types
+void __see_var_init_enum(const char* name, void* addr,
+                         const see::TypeDescriptor* type, long long value,
+                         int line);
+void __see_var_update_enum(const char* name, void* addr,
+                           const see::TypeDescriptor* type, long long value);
+
+// Union types
+void __see_var_init_union(const char* name, void* addr,
+                          const see::TypeDescriptor* type, int line);
+void __see_var_update_union(const char* name, void* addr,
+                            const see::TypeDescriptor* type);
+
+// Array types (fixed-size)
+void __see_var_init_array(const char* name, void* addr,
+                          const see::TypeDescriptor* type, int line);
+void __see_var_update_array(const char* name, void* addr,
+                            const see::TypeDescriptor* type);
+
+// ---------------------------------------------------------------------------
+// Tier 3: Heap allocation tracking
+// ---------------------------------------------------------------------------
+
+//! Record a heap allocation. Returns heap ID.
+int __see_alloc(void* ptr, unsigned long size, const see::TypeDescriptor* type,
+                int is_array, unsigned long array_count);
+
+//! Record a heap deallocation (before the actual free/delete).
+void __see_dealloc(void* ptr);
+
+// ---------------------------------------------------------------------------
 // Legacy compatibility (Tier 0)
 // ---------------------------------------------------------------------------
 
@@ -98,4 +138,51 @@ void __see_var_update(const char* name, void* addr, int value);
 
 #ifdef __cplusplus
 }
-#endif
+
+// ---------------------------------------------------------------------------
+// C++ template wrappers for new/delete capture
+// ---------------------------------------------------------------------------
+
+namespace see {
+
+//! Capture a single-object new expression.
+//! Usage: T* p = see::__see_capture_new<T>(new T(args), &__see_type_T);
+template <typename T>
+T* __see_capture_new(T* ptr, const TypeDescriptor* type) {
+    if (ptr) {
+        __see_alloc(ptr, sizeof(T), type, 0, 1);
+    }
+    return ptr;
+}
+
+//! Capture an array new expression.
+//! Usage: T* p = see::__see_capture_new_array<T>(new T[n], &__see_type_T, n);
+template <typename T>
+T* __see_capture_new_array(T* ptr, const TypeDescriptor* type, unsigned long count) {
+    if (ptr) {
+        __see_alloc(ptr, sizeof(T) * count, type, 1, count);
+    }
+    return ptr;
+}
+
+//! Pre-delete hook for single object.
+//! Usage: (see::__see_pre_delete(p), delete p);
+template <typename T>
+void __see_pre_delete(T* ptr) {
+    if (ptr) {
+        __see_dealloc(ptr);
+    }
+}
+
+//! Pre-delete hook for array.
+//! Usage: (see::__see_pre_delete_array(p), delete[] p);
+template <typename T>
+void __see_pre_delete_array(T* ptr) {
+    if (ptr) {
+        __see_dealloc(ptr);
+    }
+}
+
+} // namespace see
+
+#endif // __cplusplus

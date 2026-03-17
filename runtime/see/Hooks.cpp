@@ -22,15 +22,9 @@ std::string formatAddress(const void* ptr) {
     return ss.str();
 }
 
-//! Create pointer encoding: ["C_ADDRESS", "0x...", "type", "region"]
-std::vector<std::string> encodePointer(const void* ptr,
-                                        const TypeDescriptor* type) {
-    std::vector<std::string> result;
-    result.push_back("C_ADDRESS");
-    result.push_back(formatAddress(ptr));
-    result.push_back(type ? type->spelling : "void*");
-    result.push_back(regionToString(TraceState::instance().classifyAddress(ptr)));
-    return result;
+//! Encode a pointer value using TraceState's heap-aware encoding.
+EncodedValue encodePointerValue(const void* ptr, const TypeDescriptor* type) {
+    return TraceState::instance().encodePointer(ptr, type);
 }
 
 //! Idempotent atexit registration.
@@ -41,6 +35,8 @@ void ensureExitHandlerRegistered() {
         std::atexit([]() {
             auto& state = TraceState::instance();
             if (!state.isFinalized()) {
+                // Check for memory leaks and emit events
+                state.checkLeaks();
                 state.finalize();
                 JsonEmitter::emit(state);
             }
@@ -151,7 +147,7 @@ void __see_var_update_char(const char* name, void* addr,
 void __see_var_init_ptr(const char* name, void* addr,
                         const see::TypeDescriptor* type, const void* ptr_value,
                         int line) {
-    see::EncodedValue value = see::encodePointer(ptr_value, type);
+    see::EncodedValue value = see::encodePointerValue(ptr_value, type);
 
     // Special handling for C-strings
     if (type && type->element_type &&
@@ -169,7 +165,7 @@ void __see_var_init_ptr(const char* name, void* addr,
 void __see_var_update_ptr(const char* name, void* addr,
                           const see::TypeDescriptor* type,
                           const void* ptr_value) {
-    see::EncodedValue value = see::encodePointer(ptr_value, type);
+    see::EncodedValue value = see::encodePointerValue(ptr_value, type);
 
     // Special handling for C-strings
     if (type && type->element_type &&
@@ -189,7 +185,7 @@ void __see_var_update_ptr(const char* name, void* addr,
 void __see_var_init_ref(const char* name, void* addr,
                         const see::TypeDescriptor* type,
                         const void* referent_addr, int line) {
-    see::EncodedValue value = see::encodePointer(referent_addr, type);
+    see::EncodedValue value = see::encodePointerValue(referent_addr, type);
     see::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
                                                line);
 }
@@ -197,9 +193,81 @@ void __see_var_init_ref(const char* name, void* addr,
 void __see_var_update_ref(const char* name, void* addr,
                           const see::TypeDescriptor* type,
                           const void* referent_addr) {
-    see::EncodedValue value = see::encodePointer(referent_addr, type);
+    see::EncodedValue value = see::encodePointerValue(referent_addr, type);
     see::TraceState::instance().recordVarUpdate(name, addr, type,
                                                  std::move(value));
+}
+
+// ---------------------------------------------------------------------------
+// Tier 2: Composite types
+// ---------------------------------------------------------------------------
+
+void __see_var_init_struct(const char* name, void* addr,
+                           const see::TypeDescriptor* type, int line) {
+    see::EncodedValue value = see::TraceState::instance().encodeStruct(addr, type);
+    see::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
+                                               line);
+}
+
+void __see_var_update_struct(const char* name, void* addr,
+                             const see::TypeDescriptor* type) {
+    see::EncodedValue value = see::TraceState::instance().encodeStruct(addr, type);
+    see::TraceState::instance().recordVarUpdate(name, addr, type, std::move(value));
+}
+
+void __see_var_init_enum(const char* name, void* addr,
+                         const see::TypeDescriptor* type, long long value,
+                         int line) {
+    see::EncodedValue encoded = see::TraceState::instance().encodeEnum(value, type);
+    see::TraceState::instance().recordVarInit(name, addr, type, std::move(encoded),
+                                               line);
+}
+
+void __see_var_update_enum(const char* name, void* addr,
+                           const see::TypeDescriptor* type, long long value) {
+    see::EncodedValue encoded = see::TraceState::instance().encodeEnum(value, type);
+    see::TraceState::instance().recordVarUpdate(name, addr, type, std::move(encoded));
+}
+
+void __see_var_init_union(const char* name, void* addr,
+                          const see::TypeDescriptor* type, int line) {
+    see::EncodedValue value = see::TraceState::instance().encodeUnion(addr, type);
+    see::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
+                                               line);
+}
+
+void __see_var_update_union(const char* name, void* addr,
+                            const see::TypeDescriptor* type) {
+    see::EncodedValue value = see::TraceState::instance().encodeUnion(addr, type);
+    see::TraceState::instance().recordVarUpdate(name, addr, type, std::move(value));
+}
+
+void __see_var_init_array(const char* name, void* addr,
+                          const see::TypeDescriptor* type, int line) {
+    see::EncodedValue value = see::TraceState::instance().encodeArray(addr, type);
+    see::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
+                                               line);
+}
+
+void __see_var_update_array(const char* name, void* addr,
+                            const see::TypeDescriptor* type) {
+    see::EncodedValue value = see::TraceState::instance().encodeArray(addr, type);
+    see::TraceState::instance().recordVarUpdate(name, addr, type, std::move(value));
+}
+
+// ---------------------------------------------------------------------------
+// Tier 3: Heap allocation tracking
+// ---------------------------------------------------------------------------
+
+int __see_alloc(void* ptr, unsigned long size, const see::TypeDescriptor* type,
+                int is_array, unsigned long array_count) {
+    return see::TraceState::instance().recordAlloc(
+        ptr, static_cast<size_t>(size), type,
+        is_array != 0, static_cast<size_t>(array_count));
+}
+
+void __see_dealloc(void* ptr) {
+    see::TraceState::instance().recordFree(ptr);
 }
 
 // --- Legacy compatibility (single int-only hook) ---
