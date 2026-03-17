@@ -82,6 +82,7 @@ add_library(see_runtime STATIC
     runtime/see/JsonEmit.cpp
     runtime/see/Hooks.cpp
     runtime/see/StringSafe.cpp
+    runtime/see/Heap.cpp
 )
 target_include_directories(see_runtime PUBLIC runtime)
 target_link_libraries(see_runtime PRIVATE nlohmann_json::nlohmann_json)
