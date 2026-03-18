@@ -21,6 +21,9 @@ class SeeVisitor : public clang::RecursiveASTVisitor<SeeVisitor> {
 public:
     SeeVisitor(clang::Rewriter& rewriter, clang::ASTContext& context);
 
+    //! Finalize the visitor - flush pending type descriptors.
+    void finalize();
+
     //! Enable base class traversal for statement children.
     bool shouldTraversePostOrder() const { return false; }
 
@@ -57,6 +60,12 @@ public:
     //! Visit while statements to ensure compound bodies.
     bool VisitWhileStmt(clang::WhileStmt* stmt);
 
+    //! Visit new expressions to capture heap allocations (Tier 3).
+    bool VisitCXXNewExpr(clang::CXXNewExpr* expr);
+
+    //! Visit delete expressions to track deallocations (Tier 3).
+    bool VisitCXXDeleteExpr(clang::CXXDeleteExpr* expr);
+
 private:
     //! Check if current statement's parent is a CompoundStmt.
     bool hasCompoundStmtParent() const;
@@ -73,8 +82,21 @@ private:
     //! Get the value expression for passing to a hook.
     std::string getValueExpr(clang::VarDecl* decl) const;
 
+    //! Ensure type descriptor is emitted for a type (for Tier 2 composite types).
+    void ensureTypeDescriptor(clang::QualType type);
+
+    //! Get the location to insert type descriptors (before main or first function).
+    clang::SourceLocation getDescriptorInsertionPoint() const;
+
     //! Track which types we've generated descriptors for.
-    std::unordered_set<std::string> m_emittedTypes;
+    mutable std::unordered_set<std::string> m_emittedTypes;
+
+    //! Accumulated type descriptor code to be inserted.
+    mutable std::string m_pendingDescriptors;
+
+    //! Track if we've found an insertion point.
+    mutable bool m_hasInsertionPoint = false;
+    mutable clang::SourceLocation m_insertionPoint;
 
     //! Stack of parent statements for context tracking.
     std::vector<clang::Stmt*> m_parentStack;

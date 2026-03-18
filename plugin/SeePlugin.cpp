@@ -26,6 +26,7 @@ public:
 
         see::SeeVisitor visitor(rewriter, context);
         visitor.TraverseDecl(context.getTranslationUnitDecl());
+        visitor.finalize();
 
         // Write instrumented output
         clang::SourceManager& sm = context.getSourceManager();
