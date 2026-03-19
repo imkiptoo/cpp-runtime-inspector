@@ -26,6 +26,7 @@ Makefile
 *.swo
 *~
 plan.md
+ui_plan.md
 
 # Generated instrumented files
 *.instrumented.cpp
