@@ -25,6 +25,7 @@ Makefile
 *.swp
 *.swo
 *~
+chc.sh
 plan.md
 ui_plan.md
 
