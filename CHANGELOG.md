@@ -7,6 +7,32 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **Tier 3 Implementation** - Heap and pointer semantics
+  - Heap allocation tracking with interval tree (sorted vector implementation)
+  - `CXXNewExpr` instrumentation for `new` and `new[]` expressions
+  - `CXXDeleteExpr` instrumentation for `delete` and `delete[]` expressions
+  - C++ template wrappers: `__see_capture_new<T>`, `__see_capture_new_array<T>`
+  - Pre-delete hooks: `__see_pre_delete<T>`, `__see_pre_delete_array<T>`
+  - Pointer-to-heap resolution with `["REF", heap_id]` encoding
+  - Offset resolution with `["REF_OFFSET", heap_id, offset]` encoding
+  - Use-after-free detection with `["DANGLING", heap_id]` encoding
+  - Memory leak detection at program exit (`memory_leaks` array in output)
+  - Heap state snapshots in each trace step
+  - Heap objects encoded as `HEAP_PRIMITIVE`, `HEAP_ARRAY`, or `HEAP_STRUCT`
+  - Golden tests for heap tracking (heap_basic, heap_array, heap_uaf, heap_leak)
+
+- **Tier 2 Implementation** - User-defined types support
+  - Struct/class field enumeration and encoding
+  - Single inheritance support with base class field inclusion
+  - Polymorphic class support (is_polymorphic flag for virtual functions)
+  - Scoped and unscoped enum support with symbolic name display
+  - Union support with raw byte representation and first field interpretation
+  - Fixed-size array support with element-by-element encoding
+  - Type descriptor generation for all composite types
+  - Composite type hooks: `__see_var_init_struct`, `__see_var_init_enum`,
+    `__see_var_init_union`, `__see_var_init_array` (with update variants)
+  - Golden tests for structs, enums
+
 - **Tier 1 Implementation** - Complete rewrite of the See++ instrumentation framework
   - Modular plugin architecture with separated concerns:
     - `Visitor.cpp` - AST traversal and instrumentation
