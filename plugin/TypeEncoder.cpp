@@ -8,7 +8,7 @@
 #include <algorithm>
 #include <sstream>
 
-namespace see {
+namespace inspector {
 
 TypeEncoder::TypeEncoder(clang::ASTContext& context) : m_context(context) {}
 
@@ -654,4 +654,4 @@ std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
     return ss.str();
 }
 
-} // namespace see
+} // namespace inspector

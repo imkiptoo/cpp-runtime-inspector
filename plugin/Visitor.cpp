@@ -1,5 +1,5 @@
 //! @file Visitor.cpp
-//! @brief Implementation of the See++ AST visitor.
+//! @brief Implementation of the C++ Runtime Inspector AST visitor.
 
 #include "Visitor.h"
 
@@ -8,33 +8,33 @@
 
 #include <sstream>
 
-namespace see {
+namespace inspector {
 
-SeeVisitor::SeeVisitor(clang::Rewriter& rewriter, clang::ASTContext& context)
+InspectorVisitor::InspectorVisitor(clang::Rewriter& rewriter, clang::ASTContext& context)
     : m_helpers(rewriter, context), m_typeEncoder(context), m_context(context),
       m_rewriter(rewriter) {}
 
-void SeeVisitor::finalize() {
+void InspectorVisitor::finalize() {
     // Flush any pending type descriptors
     if (m_hasInsertionPoint && !m_pendingDescriptors.empty()) {
         m_rewriter.InsertTextBefore(m_insertionPoint,
-                                    "// See++ type descriptors\n" +
+                                    "// C++ Runtime Inspector type descriptors\n" +
                                         m_pendingDescriptors + "\n");
         m_pendingDescriptors.clear();
     }
 }
 
-bool SeeVisitor::TraverseStmt(clang::Stmt* stmt) {
+bool InspectorVisitor::TraverseStmt(clang::Stmt* stmt) {
     if (!stmt)
         return true;
 
     m_parentStack.push_back(stmt);
-    bool result = clang::RecursiveASTVisitor<SeeVisitor>::TraverseStmt(stmt);
+    bool result = clang::RecursiveASTVisitor<InspectorVisitor>::TraverseStmt(stmt);
     m_parentStack.pop_back();
     return result;
 }
 
-bool SeeVisitor::hasCompoundStmtParent() const {
+bool InspectorVisitor::hasCompoundStmtParent() const {
     // The current statement is at the back, its parent is second-to-last
     if (m_parentStack.size() < 2)
         return false;
@@ -42,7 +42,7 @@ bool SeeVisitor::hasCompoundStmtParent() const {
         m_parentStack[m_parentStack.size() - 2]);
 }
 
-bool SeeVisitor::VisitFunctionDecl(clang::FunctionDecl* decl) {
+bool InspectorVisitor::VisitFunctionDecl(clang::FunctionDecl* decl) {
     if (!decl->hasBody() || !m_helpers.isInMainFile(decl->getLocation()))
         return true;
 
@@ -61,37 +61,37 @@ bool SeeVisitor::VisitFunctionDecl(clang::FunctionDecl* decl) {
         m_hasInsertionPoint = true;
     }
 
-    // Inject __see_enter after opening brace
+    // Inject __inspector_enter after opening brace
     unsigned enterLine = m_helpers.getLineNumber(compound->getLBracLoc());
     std::string enterCall =
-        "__see_enter(\"" + funcName + "\", " + std::to_string(enterLine) + "); ";
+        "__inspector_enter(\"" + funcName + "\", " + std::to_string(enterLine) + "); ";
     m_rewriter.InsertTextAfterToken(compound->getLBracLoc(),
                                     "\n    " + enterCall);
 
-    // Inject __see_leave before closing brace
+    // Inject __inspector_leave before closing brace
     unsigned leaveLine = m_helpers.getLineNumber(compound->getRBracLoc());
     std::string leaveCall =
-        "    __see_leave(\"" + funcName + "\", " + std::to_string(leaveLine) +
+        "    __inspector_leave(\"" + funcName + "\", " + std::to_string(leaveLine) +
         ");\n";
     m_rewriter.InsertTextBefore(compound->getRBracLoc(), leaveCall);
 
     return true;
 }
 
-bool SeeVisitor::VisitReturnStmt(clang::ReturnStmt* stmt) {
+bool InspectorVisitor::VisitReturnStmt(clang::ReturnStmt* stmt) {
     if (!m_helpers.isInMainFile(stmt->getBeginLoc()))
         return true;
 
     std::string funcName = findEnclosingFunctionName(stmt);
     unsigned line = m_helpers.getLineNumber(stmt->getBeginLoc());
     std::string call =
-        "__see_leave(\"" + funcName + "\", " + std::to_string(line) + "); ";
+        "__inspector_leave(\"" + funcName + "\", " + std::to_string(line) + "); ";
     m_rewriter.InsertTextBefore(stmt->getBeginLoc(), call);
 
     return true;
 }
 
-bool SeeVisitor::VisitVarDecl(clang::VarDecl* decl) {
+bool InspectorVisitor::VisitVarDecl(clang::VarDecl* decl) {
     if (!m_helpers.isInMainFile(decl->getLocation()))
         return true;
 
@@ -136,12 +136,12 @@ bool SeeVisitor::VisitVarDecl(clang::VarDecl* decl) {
                                       m_context.getSourceManager(), m_context.getLangOpts())
                                       .str();
                     }
-                    std::string prefix = "::see::__see_capture_new_array<" + typeName + ">(";
+                    std::string prefix = "::inspector::__inspector_capture_new_array<" + typeName + ">(";
                     std::string suffix = ", " + typeRef + ", " + sizeStr + ")";
                     m_rewriter.InsertTextBefore(newExpr->getBeginLoc(), prefix);
                     m_rewriter.InsertTextAfterToken(newExpr->getEndLoc(), suffix);
                 } else {
-                    std::string prefix = "::see::__see_capture_new<" + typeName + ">(";
+                    std::string prefix = "::inspector::__inspector_capture_new<" + typeName + ">(";
                     std::string suffix = ", " + typeRef + ")";
                     m_rewriter.InsertTextBefore(newExpr->getBeginLoc(), prefix);
                     m_rewriter.InsertTextAfterToken(newExpr->getEndLoc(), suffix);
@@ -158,7 +158,7 @@ bool SeeVisitor::VisitVarDecl(clang::VarDecl* decl) {
     return true;
 }
 
-bool SeeVisitor::VisitBinaryOperator(clang::BinaryOperator* op) {
+bool InspectorVisitor::VisitBinaryOperator(clang::BinaryOperator* op) {
     if (!m_helpers.isInMainFile(op->getBeginLoc()))
         return true;
 
@@ -181,7 +181,7 @@ bool SeeVisitor::VisitBinaryOperator(clang::BinaryOperator* op) {
 
     std::string call = generateVarUpdateCall(var);
 
-    // Wrap in comma operator: (x = expr, __see_var_update_...(...))
+    // Wrap in comma operator: (x = expr, __inspector_var_update_...(...))
     m_rewriter.InsertTextBefore(op->getBeginLoc(), "(");
     m_rewriter.InsertTextAfterToken(op->getEndLoc(),
                                     RewriteHelpers::commaWrap(call));
@@ -189,7 +189,7 @@ bool SeeVisitor::VisitBinaryOperator(clang::BinaryOperator* op) {
     return true;
 }
 
-bool SeeVisitor::VisitCompoundAssignOperator(
+bool InspectorVisitor::VisitCompoundAssignOperator(
     clang::CompoundAssignOperator* op) {
     if (!m_helpers.isInMainFile(op->getBeginLoc()))
         return true;
@@ -218,7 +218,7 @@ bool SeeVisitor::VisitCompoundAssignOperator(
     return true;
 }
 
-bool SeeVisitor::VisitUnaryOperator(clang::UnaryOperator* op) {
+bool InspectorVisitor::VisitUnaryOperator(clang::UnaryOperator* op) {
     if (!m_helpers.isInMainFile(op->getBeginLoc()))
         return true;
 
@@ -249,7 +249,7 @@ bool SeeVisitor::VisitUnaryOperator(clang::UnaryOperator* op) {
     return true;
 }
 
-bool SeeVisitor::VisitStmt(clang::Stmt* stmt) {
+bool InspectorVisitor::VisitStmt(clang::Stmt* stmt) {
     if (!m_helpers.isInMainFile(stmt->getBeginLoc()))
         return true;
 
@@ -276,13 +276,13 @@ bool SeeVisitor::VisitStmt(clang::Stmt* stmt) {
         return true;
 
     unsigned line = m_helpers.getLineNumber(stmt->getBeginLoc());
-    std::string call = "__see_step(" + std::to_string(line) + "); ";
+    std::string call = "__inspector_step(" + std::to_string(line) + "); ";
     m_rewriter.InsertTextBefore(stmt->getBeginLoc(), call);
 
     return true;
 }
 
-bool SeeVisitor::VisitIfStmt(clang::IfStmt* stmt) {
+bool InspectorVisitor::VisitIfStmt(clang::IfStmt* stmt) {
     if (!m_helpers.isInMainFile(stmt->getBeginLoc()))
         return true;
 
@@ -299,7 +299,7 @@ bool SeeVisitor::VisitIfStmt(clang::IfStmt* stmt) {
     return true;
 }
 
-bool SeeVisitor::VisitForStmt(clang::ForStmt* stmt) {
+bool InspectorVisitor::VisitForStmt(clang::ForStmt* stmt) {
     if (!m_helpers.isInMainFile(stmt->getBeginLoc()))
         return true;
 
@@ -309,7 +309,7 @@ bool SeeVisitor::VisitForStmt(clang::ForStmt* stmt) {
     return true;
 }
 
-bool SeeVisitor::VisitWhileStmt(clang::WhileStmt* stmt) {
+bool InspectorVisitor::VisitWhileStmt(clang::WhileStmt* stmt) {
     if (!m_helpers.isInMainFile(stmt->getBeginLoc()))
         return true;
 
@@ -319,7 +319,7 @@ bool SeeVisitor::VisitWhileStmt(clang::WhileStmt* stmt) {
     return true;
 }
 
-std::string SeeVisitor::findEnclosingFunctionName(clang::Stmt* stmt) const {
+std::string InspectorVisitor::findEnclosingFunctionName(clang::Stmt* stmt) const {
     const auto& parents = m_context.getParents(*stmt);
     for (const auto& parent : parents) {
         if (const auto* fn = parent.get<clang::FunctionDecl>())
@@ -331,7 +331,7 @@ std::string SeeVisitor::findEnclosingFunctionName(clang::Stmt* stmt) const {
     return "<unknown>";
 }
 
-std::string SeeVisitor::generateVarInitCall(clang::VarDecl* decl) const {
+std::string InspectorVisitor::generateVarInitCall(clang::VarDecl* decl) const {
     clang::QualType type = decl->getType();
     std::string varName = decl->getNameAsString();
     std::string suffix = m_typeEncoder.getHookSuffix(type);
@@ -342,25 +342,25 @@ std::string SeeVisitor::generateVarInitCall(clang::VarDecl* decl) const {
 
     // Use the simple legacy API for int to maintain backward compatibility
     if (kind == TypeKind::Int && type->isSpecificBuiltinType(clang::BuiltinType::Int)) {
-        ss << "; __see_var_init(\"" << varName << "\", &" << varName << ", " << varName << ")";
+        ss << "; __inspector_var_init(\"" << varName << "\", &" << varName << ", " << varName << ")";
     } else if (kind == TypeKind::Struct || kind == TypeKind::Union ||
                kind == TypeKind::Array) {
         // Composite types: pass address, no value expression
         std::string typeRef = m_typeEncoder.getDescriptorRef(type);
-        ss << "; __see_var_init_" << suffix << "(\"" << varName << "\", &"
+        ss << "; __inspector_var_init_" << suffix << "(\"" << varName << "\", &"
            << varName << ", " << typeRef << ", " << line << ")";
     } else {
         // Primitives, pointers, references, enums: pass value
         std::string value = getValueExpr(decl);
         std::string typeRef = m_typeEncoder.getDescriptorRef(type);
-        ss << "; __see_var_init_" << suffix << "(\"" << varName << "\", &"
+        ss << "; __inspector_var_init_" << suffix << "(\"" << varName << "\", &"
            << varName << ", " << typeRef << ", " << value << ", " << line << ")";
     }
 
     return ss.str();
 }
 
-std::string SeeVisitor::generateVarUpdateCall(clang::VarDecl* decl) const {
+std::string InspectorVisitor::generateVarUpdateCall(clang::VarDecl* decl) const {
     clang::QualType type = decl->getType();
     std::string varName = decl->getNameAsString();
     std::string suffix = m_typeEncoder.getHookSuffix(type);
@@ -370,25 +370,25 @@ std::string SeeVisitor::generateVarUpdateCall(clang::VarDecl* decl) const {
 
     // Use the simple legacy API for int to maintain backward compatibility
     if (kind == TypeKind::Int && type->isSpecificBuiltinType(clang::BuiltinType::Int)) {
-        ss << "__see_var_update(\"" << varName << "\", &" << varName << ", " << varName << ")";
+        ss << "__inspector_var_update(\"" << varName << "\", &" << varName << ", " << varName << ")";
     } else if (kind == TypeKind::Struct || kind == TypeKind::Union ||
                kind == TypeKind::Array) {
         // Composite types: pass address, no value expression
         std::string typeRef = m_typeEncoder.getDescriptorRef(type);
-        ss << "__see_var_update_" << suffix << "(\"" << varName << "\", &"
+        ss << "__inspector_var_update_" << suffix << "(\"" << varName << "\", &"
            << varName << ", " << typeRef << ")";
     } else {
         // Primitives, pointers, references, enums: pass value
         std::string value = getValueExpr(decl);
         std::string typeRef = m_typeEncoder.getDescriptorRef(type);
-        ss << "__see_var_update_" << suffix << "(\"" << varName << "\", &"
+        ss << "__inspector_var_update_" << suffix << "(\"" << varName << "\", &"
            << varName << ", " << typeRef << ", " << value << ")";
     }
 
     return ss.str();
 }
 
-std::string SeeVisitor::getValueExpr(clang::VarDecl* decl) const {
+std::string InspectorVisitor::getValueExpr(clang::VarDecl* decl) const {
     clang::QualType type = decl->getType();
     std::string varName = decl->getNameAsString();
     TypeKind kind = m_typeEncoder.getTypeKind(type);
@@ -423,7 +423,7 @@ std::string SeeVisitor::getValueExpr(clang::VarDecl* decl) const {
     return varName;
 }
 
-void SeeVisitor::ensureTypeDescriptor(clang::QualType type) {
+void InspectorVisitor::ensureTypeDescriptor(clang::QualType type) {
     std::string mangledName = m_typeEncoder.getMangledName(type);
 
     // Skip if already emitted
@@ -442,11 +442,11 @@ void SeeVisitor::ensureTypeDescriptor(clang::QualType type) {
     }
 }
 
-clang::SourceLocation SeeVisitor::getDescriptorInsertionPoint() const {
+clang::SourceLocation InspectorVisitor::getDescriptorInsertionPoint() const {
     return m_insertionPoint;
 }
 
-bool SeeVisitor::VisitCXXNewExpr(clang::CXXNewExpr* expr) {
+bool InspectorVisitor::VisitCXXNewExpr(clang::CXXNewExpr* expr) {
     if (!m_helpers.isInMainFile(expr->getBeginLoc()))
         return true;
 
@@ -496,15 +496,15 @@ bool SeeVisitor::VisitCXXNewExpr(clang::CXXNewExpr* expr) {
                           .str();
         }
 
-        // Wrap: ::see::__see_capture_new_array<T>(new T[n], &type, n)
-        std::string prefix = "::see::__see_capture_new_array<" + typeName + ">(";
+        // Wrap: ::inspector::__inspector_capture_new_array<T>(new T[n], &type, n)
+        std::string prefix = "::inspector::__inspector_capture_new_array<" + typeName + ">(";
         std::string suffix = ", " + typeRef + ", " + sizeStr + ")";
 
         m_rewriter.InsertTextBefore(expr->getBeginLoc(), prefix);
         m_rewriter.InsertTextAfterToken(expr->getEndLoc(), suffix);
     } else {
-        // Wrap: ::see::__see_capture_new<T>(new T(args), &type)
-        std::string prefix = "::see::__see_capture_new<" + typeName + ">(";
+        // Wrap: ::inspector::__inspector_capture_new<T>(new T(args), &type)
+        std::string prefix = "::inspector::__inspector_capture_new<" + typeName + ">(";
         std::string suffix = ", " + typeRef + ")";
 
         m_rewriter.InsertTextBefore(expr->getBeginLoc(), prefix);
@@ -514,7 +514,7 @@ bool SeeVisitor::VisitCXXNewExpr(clang::CXXNewExpr* expr) {
     return true;
 }
 
-bool SeeVisitor::VisitCXXDeleteExpr(clang::CXXDeleteExpr* expr) {
+bool InspectorVisitor::VisitCXXDeleteExpr(clang::CXXDeleteExpr* expr) {
     if (!m_helpers.isInMainFile(expr->getBeginLoc()))
         return true;
 
@@ -540,10 +540,10 @@ bool SeeVisitor::VisitCXXDeleteExpr(clang::CXXDeleteExpr* expr) {
         typeName = ptrType->getPointeeType().getAsString();
     }
 
-    // Wrap: (::see::__see_pre_delete<T>(p), delete p)
-    // or:   (::see::__see_pre_delete_array<T>(p), delete[] p)
-    std::string hookName = isArray ? "__see_pre_delete_array" : "__see_pre_delete";
-    std::string prefix = "(::see::" + hookName + "<" + typeName + ">(" + argStr + "), ";
+    // Wrap: (::inspector::__inspector_pre_delete<T>(p), delete p)
+    // or:   (::inspector::__inspector_pre_delete_array<T>(p), delete[] p)
+    std::string hookName = isArray ? "__inspector_pre_delete_array" : "__inspector_pre_delete";
+    std::string prefix = "(::inspector::" + hookName + "<" + typeName + ">(" + argStr + "), ";
     std::string suffix = ")";
 
     m_rewriter.InsertTextBefore(expr->getBeginLoc(), prefix);
@@ -552,4 +552,4 @@ bool SeeVisitor::VisitCXXDeleteExpr(clang::CXXDeleteExpr* expr) {
     return true;
 }
 
-} // namespace see
+} // namespace inspector

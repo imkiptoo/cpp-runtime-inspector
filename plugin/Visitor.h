@@ -1,5 +1,5 @@
 //! @file Visitor.h
-//! @brief RecursiveASTVisitor for See++ instrumentation.
+//! @brief RecursiveASTVisitor for C++ Runtime Inspector instrumentation.
 
 #pragma once
 
@@ -13,13 +13,13 @@
 #include <unordered_set>
 #include <vector>
 
-namespace see {
+namespace inspector {
 
 //! AST visitor that walks the translation unit and rewrites source code
 //! to inject instrumentation calls.
-class SeeVisitor : public clang::RecursiveASTVisitor<SeeVisitor> {
+class InspectorVisitor : public clang::RecursiveASTVisitor<InspectorVisitor> {
 public:
-    SeeVisitor(clang::Rewriter& rewriter, clang::ASTContext& context);
+    InspectorVisitor(clang::Rewriter& rewriter, clang::ASTContext& context);
 
     //! Finalize the visitor - flush pending type descriptors.
     void finalize();
@@ -111,4 +111,4 @@ private:
     clang::Rewriter& m_rewriter;
 };
 
-} // namespace see
+} // namespace inspector

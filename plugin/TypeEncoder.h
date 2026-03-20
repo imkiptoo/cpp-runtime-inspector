@@ -1,5 +1,5 @@
 //! @file TypeEncoder.h
-//! @brief Type descriptor generation for the See++ plugin.
+//! @brief Type descriptor generation for the C++ Runtime Inspector plugin.
 //!
 //! This module handles encoding of C++ types into TypeDescriptor structures
 //! that can be emitted as static data in instrumented code.
@@ -15,7 +15,7 @@
 #include <string>
 #include <unordered_map>
 
-namespace see {
+namespace inspector {
 
 //! Type kind categories matching runtime TypeKind enum.
 enum class TypeKind : uint8_t {
@@ -43,7 +43,7 @@ enum class AccessLevel : uint8_t {
     Private
 };
 
-//! Encodes C++ types into See++ type descriptors.
+//! Encodes C++ types into C++ Runtime Inspector type descriptors.
 class TypeEncoder {
 public:
     explicit TypeEncoder(clang::ASTContext& context);
@@ -142,4 +142,4 @@ private:
                                        const std::string& baseName);
 };
 
-} // namespace see
+} // namespace inspector

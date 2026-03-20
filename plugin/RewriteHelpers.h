@@ -9,7 +9,7 @@
 
 #include <string>
 
-namespace see {
+namespace inspector {
 
 //! Helper class for source code rewriting operations.
 class RewriteHelpers {
@@ -52,4 +52,4 @@ private:
     clang::ASTContext& m_context;
 };
 
-} // namespace see
+} // namespace inspector

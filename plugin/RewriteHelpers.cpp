@@ -5,7 +5,7 @@
 #include "clang/Basic/SourceManager.h"
 #include "clang/Lex/Lexer.h"
 
-namespace see {
+namespace inspector {
 
 RewriteHelpers::RewriteHelpers(clang::Rewriter& rewriter,
                                clang::ASTContext& context)
@@ -100,4 +100,4 @@ bool RewriteHelpers::ensureCompoundBody(clang::Stmt* body) {
     return true;
 }
 
-} // namespace see
+} // namespace inspector

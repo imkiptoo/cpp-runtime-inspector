@@ -1,17 +1,17 @@
 //! @file Diagnostics.h
-//! @brief Warning and error emission utilities for the See++ plugin.
+//! @brief Warning and error emission utilities for the C++ Runtime Inspector plugin.
 
 #pragma once
 
 #include "clang/Basic/Diagnostic.h"
 #include "clang/Basic/SourceLocation.h"
 
-namespace see {
+namespace inspector {
 
 //! Diagnostic helper for emitting plugin-specific warnings and notes.
 class Diagnostics {
-public:
-    explicit Diagnostics(clang::DiagnosticsEngine& diags);
+// ...existing code...
+} // namespace inspector
 
     //! Emit a warning about an unsupported type.
     void warnUnsupportedType(clang::SourceLocation loc,
