@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run golden tests for See++ instrumentation.
+# Run golden tests for C++ Runtime Inspector instrumentation.
 #
 # For each test directory in tests/golden/:
 #   1. Instrument input.cpp using the plugin
@@ -23,14 +23,14 @@ fi
 
 # Plugin extension varies by platform
 if [[ "$(uname)" == "Darwin" ]]; then
-    PLUGIN="${BUILD}/libSeePlugin.dylib"
+    PLUGIN="${BUILD}/libInspectorPlugin.dylib"
     CLANGXX="${CLANGXX:-/opt/homebrew/opt/llvm/bin/clang++}"
 else
-    PLUGIN="${BUILD}/libSeePlugin.so"
+    PLUGIN="${BUILD}/libInspectorPlugin.so"
     CLANGXX="${CLANGXX:-clang++}"
 fi
 
-RUNTIME="${BUILD}/libsee_runtime.a"
+RUNTIME="${BUILD}/libinspector_runtime.a"
 
 # Check dependencies
 [[ -f "${PLUGIN}"  ]] || { echo "Plugin not built at ${PLUGIN}. Run cmake first."  >&2; exit 1; }
@@ -197,7 +197,7 @@ run_test() {
 }
 
 # Main
-echo "=== See++ Golden Tests ==="
+echo "=== C++ Runtime Inspector Golden Tests ==="
 echo ""
 
 # Find all test directories

@@ -1,4 +1,4 @@
-# Top-level build for the See++ PoC.
+# Top-level build for the C++ Runtime Inspector.
 #
 # Layout:
 #   plugin/    The Clang AST plugin (a shared library Clang loads).
@@ -15,12 +15,12 @@
 #
 # Usage after building:
 #   1. Build:               cmake -B build && cmake --build build
-#   2. Inspect rewrite:     clang++ -fplugin=build/plugin/libSeePlugin.so \
+#   2. Inspect rewrite:     clang++ -fplugin=build/plugin/libInspectorPlugin.so \
 #                                   -fsyntax-only test/example.cpp
-#   3. Compile + run:       see scripts/instrument-and-run.sh
+#   3. Compile + run:       ./scripts/instrument-and-run.sh
 
 cmake_minimum_required(VERSION 3.20)
-project(see_poc C CXX)
+project(cpp_runtime_inspector C CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -56,36 +56,36 @@ add_definitions(${LLVM_DEFINITIONS})
 # against Clang's internal libraries — those are provided by Clang itself at
 # load time, so we don't link them here (doing so causes "duplicate symbol"
 # errors at runtime). This is the Clang-plugin convention.
-add_library(SeePlugin SHARED
-    plugin/SeePlugin.cpp
+add_library(InspectorPlugin SHARED
+    plugin/InspectorPlugin.cpp
     plugin/Visitor.cpp
     plugin/TypeEncoder.cpp
     plugin/RewriteHelpers.cpp
     plugin/Diagnostics.cpp
 )
-target_include_directories(SeePlugin PRIVATE plugin)
-target_compile_options(SeePlugin PRIVATE -fno-rtti)  # match Clang's build flags
+target_include_directories(InspectorPlugin PRIVATE plugin)
+target_compile_options(InspectorPlugin PRIVATE -fno-rtti)  # match Clang's build flags
 
 # On macOS, Clang plugins must allow undefined symbols that are resolved at load time.
 if(APPLE)
-    target_link_options(SeePlugin PRIVATE -undefined dynamic_lookup)
+    target_link_options(InspectorPlugin PRIVATE -undefined dynamic_lookup)
 endif()
 
 # --- The runtime ---------------------------------------------------------
 # Static archive that gets linked into instrumented programs. Could equally
 # be shared; static is simpler for a PoC because there's no LD_LIBRARY_PATH
 # to manage.
-add_library(see_runtime STATIC
-    runtime/see_runtime.cpp
-    runtime/see/TypeInfo.cpp
-    runtime/see/Trace.cpp
-    runtime/see/JsonEmit.cpp
-    runtime/see/Hooks.cpp
-    runtime/see/StringSafe.cpp
-    runtime/see/Heap.cpp
+add_library(inspector_runtime STATIC
+    runtime/inspector_runtime.cpp
+    runtime/inspector/TypeInfo.cpp
+    runtime/inspector/Trace.cpp
+    runtime/inspector/JsonEmit.cpp
+    runtime/inspector/Hooks.cpp
+    runtime/inspector/StringSafe.cpp
+    runtime/inspector/Heap.cpp
 )
-target_include_directories(see_runtime PUBLIC runtime)
-target_link_libraries(see_runtime PRIVATE nlohmann_json::nlohmann_json)
+target_include_directories(inspector_runtime PUBLIC runtime)
+target_link_libraries(inspector_runtime PRIVATE nlohmann_json::nlohmann_json)
 
 # --- Testing -------------------------------------------------------------
 enable_testing()
@@ -94,6 +94,6 @@ enable_testing()
 add_custom_target(golden-tests
     COMMAND ${CMAKE_SOURCE_DIR}/scripts/run-golden-tests.sh
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-    DEPENDS SeePlugin see_runtime
+    DEPENDS InspectorPlugin inspector_runtime
     COMMENT "Running golden tests"
 )

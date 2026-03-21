@@ -11,10 +11,10 @@
 #
 #   Pass 2: clang++ -c  test/example.cpp.instrumented.cpp
 #           Plain compile of the rewritten source. NO plugin this time.
-#           Produces example.o with the __see_* calls present in real codegen.
+#           Produces example.o with the __inspector_* calls present in real codegen.
 #
-#   Pass 3: clang++ example.o libsee_runtime.a -o example
-#           Link against the runtime that defines __see_*.
+#   Pass 3: clang++ example.o libinspector_runtime.a -o example
+#           Link against the runtime that defines __inspector_*.
 #
 # Run from the repo root:    ./scripts/instrument-and-run.sh
 
@@ -29,14 +29,14 @@ BUILD="${ROOT}/cmake-build-debug"
 if [[ ! -d "${BUILD}" ]]; then
     BUILD="${ROOT}/build"
 fi
-RUNTIME="${BUILD}/libsee_runtime.a"
+RUNTIME="${BUILD}/libinspector_runtime.a"
 
 # Plugin extension varies by platform
 if [[ "$(uname)" == "Darwin" ]]; then
-    PLUGIN="${BUILD}/libSeePlugin.dylib"
+    PLUGIN="${BUILD}/libInspectorPlugin.dylib"
     CLANGXX="${CLANGXX:-/opt/homebrew/opt/llvm/bin/clang++}"
 else
-    PLUGIN="${BUILD}/libSeePlugin.so"
+    PLUGIN="${BUILD}/libInspectorPlugin.so"
     CLANGXX="${CLANGXX:-clang++}"
 fi
 
