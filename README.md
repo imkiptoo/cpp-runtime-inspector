@@ -1,4 +1,4 @@
-# See++ Option 3 — PoC Backend
+# C++ Runtime Inspector — PoC Backend
 
 A minimal proof-of-concept for the LLVM-instrumentation approach: a Clang AST
 plugin that rewrites C++ source so the resulting binary self-traces. Built and
@@ -25,7 +25,7 @@ state at each step:
 ```
 
 Format is a simplified version of pgbovine's OPT trace format used by Python
-Tutor and See++. A frontend that consumes the OPT format will consume this
+Tutor and C++ Runtime Inspector. A frontend that consumes the OPT format will consume this
 with minor adapter glue.
 
 ## Architecture (3 artifacts, 2 build passes)
@@ -36,16 +36,16 @@ lowered to IR. So a source-to-source instrumenter needs two clang invocations:
 ```
   user.cpp
      |
-     |  Pass 1:  clang -fsyntax-only -fplugin=libSeePlugin.so user.cpp
+     |  Pass 1:  clang -fsyntax-only -fplugin=libInspectorPlugin.so user.cpp
      |           Plugin walks AST, writes user.cpp.instrumented.cpp
      v
-  user.cpp.instrumented.cpp     (rewritten, with __see_* calls injected)
+  user.cpp.instrumented.cpp     (rewritten, with __inspector_* calls injected)
      |
      |  Pass 2:  clang++ -c user.cpp.instrumented.cpp
      v
   user.o
      |
-     |  Pass 3:  clang++ user.o libsee_runtime.a -o user
+     |  Pass 3:  clang++ user.o libinspector_runtime.a -o user
      v
   user                           (self-tracing binary)
      |
@@ -71,8 +71,8 @@ CLANGXX=/usr/lib/llvm-18/bin/clang++ ./scripts/instrument-and-run.sh
 
 ## Files
 
-- `plugin/SeePlugin.cpp` — Clang AST plugin. ~270 lines, single file.
-- `runtime/see_runtime.{h,cpp}` — tracing runtime. ~250 lines, no deps.
+- `plugin/InspectorPlugin.cpp` — Clang AST plugin. ~270 lines, single file.
+- `runtime/inspector_runtime.{h,cpp}` — tracing runtime. ~250 lines, no deps.
 - `test/example.cpp` — sample input that exercises calls/returns/init/update.
 - `scripts/instrument-and-run.sh` — three-pass build driver.
 - `CMakeLists.txt` — finds installed LLVM/Clang via their CMake configs.
@@ -82,17 +82,17 @@ CLANGXX=/usr/lib/llvm-18/bin/clang++ ./scripts/instrument-and-run.sh
 These are real bugs visible in the rewritten source. None block the PoC; all
 are documented because they are useful learning artifacts.
 
-1. **Dead `__see_leave` after every `return`.** The plugin injects the leave
+1. **Dead `__inspector_leave` after every `return`.** The plugin injects the leave
    call both before each `return` (via `VisitReturnStmt`) and at the function's
    closing brace (via `VisitFunctionDecl`). The post-return leave is unreachable
    for any function that returns. Visible in the rewrite, harmless at runtime.
    Fix: track in a per-function flag whether the function falls off the end,
    and only emit the closing-brace leave when it does.
 
-2. **`line: 0` in every event.** The `__see_step(line)` injection is
+2. **`line: 0` in every event.** The `__inspector_step(line)` injection is
    intentionally disabled in the plugin. Naive injection before every `Stmt`
    breaks compound expressions like `if (cond) stmt;` (becomes
-   `if (cond) __see_step(N); stmt;` — two statements where one was expected).
+   `if (cond) __inspector_step(N); stmt;` — two statements where one was expected).
    The proper fix needs a parent-aware visitor that only injects at statements
    that are direct children of a `CompoundStmt`. Roughly 50 lines of additional
    visitor code.
@@ -103,8 +103,8 @@ are documented because they are useful learning artifacts.
    field encoding via `RecordDecl::fields()`.
 
 4. **No heap tracking.** `new` and `delete` aren't intercepted. The cleanest
-   addition: visit `CXXNewExpr` in the AST (insert `__see_alloc(ptr, size, "T")`
-   after the new), and provide an `__see_free` hook. The runtime would maintain
+   addition: visit `CXXNewExpr` in the AST (insert `__inspector_alloc(ptr, size, "T")`
+   after the new), and provide an `__inspector_free` hook. The runtime would maintain
    an interval tree of live allocations so pointer-to-heap resolution works.
 
 5. **No template handling.** Templates are visited at definition time, not
@@ -112,7 +112,7 @@ are documented because they are useful learning artifacts.
    per-instantiation. Real fix is dual instrumentation: AST for names, IR pass
    for events.
 
-6. **`__see_var_update` only catches `=`.** `+=`, `-=`, `++` etc. are
+6. **`__inspector_var_update` only catches `=`.** `+=`, `-=`, `++` etc. are
    `BinaryOperator` / `UnaryOperator` nodes with different opcodes; not handled.
 
 7. **No type encoding in trace.** Real OPT format encodes pointers as
@@ -144,9 +144,9 @@ Three things this exercise actually demonstrated, not just argued:
 In rough order of leverage:
 
 1. Fix the dead-leave bug (small, removes confusion in rewrites).
-2. Implement parent-aware `__see_step` injection (biggest functional win:
+2. Implement parent-aware `__inspector_step` injection (biggest functional win:
    actual line numbers in the trace).
-3. Add `CXXNewExpr` instrumentation + `__see_alloc` runtime hook.
+3. Add `CXXNewExpr` instrumentation + `__inspector_alloc` runtime hook.
 4. Generalize the type-handling: separate hooks for primitive types, plus
    recursive struct/class encoding.
 5. Implement pointer-to-heap resolution (interval tree of live allocations).

@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the See++ project will be documented in this file.
+All notable changes to the C++ Runtime Inspector project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
@@ -11,8 +11,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Heap allocation tracking with interval tree (sorted vector implementation)
   - `CXXNewExpr` instrumentation for `new` and `new[]` expressions
   - `CXXDeleteExpr` instrumentation for `delete` and `delete[]` expressions
-  - C++ template wrappers: `__see_capture_new<T>`, `__see_capture_new_array<T>`
-  - Pre-delete hooks: `__see_pre_delete<T>`, `__see_pre_delete_array<T>`
+  - C++ template wrappers: `__inspector_capture_new<T>`, `__inspector_capture_new_array<T>`
+  - Pre-delete hooks: `__inspector_pre_delete<T>`, `__inspector_pre_delete_array<T>`
   - Pointer-to-heap resolution with `["REF", heap_id]` encoding
   - Offset resolution with `["REF_OFFSET", heap_id, offset]` encoding
   - Use-after-free detection with `["DANGLING", heap_id]` encoding
@@ -29,30 +29,30 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Union support with raw byte representation and first field interpretation
   - Fixed-size array support with element-by-element encoding
   - Type descriptor generation for all composite types
-  - Composite type hooks: `__see_var_init_struct`, `__see_var_init_enum`,
-    `__see_var_init_union`, `__see_var_init_array` (with update variants)
+  - Composite type hooks: `__inspector_var_init_struct`, `__inspector_var_init_enum`,
+    `__inspector_var_init_union`, `__inspector_var_init_array` (with update variants)
   - Golden tests for structs, enums
 
-- **Tier 1 Implementation** - Complete rewrite of the See++ instrumentation framework
+- **Tier 1 Implementation** - Complete rewrite of the C++ Runtime Inspector instrumentation framework
   - Modular plugin architecture with separated concerns:
     - `Visitor.cpp` - AST traversal and instrumentation
     - `TypeEncoder.cpp` - Type descriptor generation
     - `RewriteHelpers.cpp` - Source rewriting utilities
     - `Diagnostics.cpp` - Warning and error emission
   - Modular runtime architecture:
-    - `see/Trace.cpp` - Trace state management
-    - `see/TypeInfo.cpp` - Type descriptors
-    - `see/JsonEmit.cpp` - OPT format JSON emission
-    - `see/Hooks.cpp` - Instrumentation hook implementations
-    - `see/StringSafe.cpp` - SIGSEGV-protected string reading
+    - `inspector/Trace.cpp` - Trace state management
+    - `inspector/TypeInfo.cpp` - Type descriptors
+    - `inspector/JsonEmit.cpp` - OPT format JSON emission
+    - `inspector/Hooks.cpp` - Instrumentation hook implementations
+    - `inspector/StringSafe.cpp` - SIGSEGV-protected string reading
   - Type-specific variable tracking hooks:
-    - `__see_var_init_int`, `__see_var_update_int`
-    - `__see_var_init_uint`, `__see_var_update_uint`
-    - `__see_var_init_float`, `__see_var_update_float`
-    - `__see_var_init_bool`, `__see_var_update_bool`
-    - `__see_var_init_char`, `__see_var_update_char`
-    - `__see_var_init_ptr`, `__see_var_update_ptr`
-    - `__see_var_init_ref`, `__see_var_update_ref`
+    - `__inspector_var_init_int`, `__inspector_var_update_int`
+    - `__inspector_var_init_uint`, `__inspector_var_update_uint`
+    - `__inspector_var_init_float`, `__inspector_var_update_float`
+    - `__inspector_var_init_bool`, `__inspector_var_update_bool`
+    - `__inspector_var_init_char`, `__inspector_var_update_char`
+    - `__inspector_var_init_ptr`, `__inspector_var_update_ptr`
+    - `__inspector_var_init_ref`, `__inspector_var_update_ref`
   - Full OPT trace format with:
     - Stack frame snapshots
     - Variable state tracking
