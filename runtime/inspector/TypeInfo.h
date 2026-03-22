@@ -1,4 +1,4 @@
-//! @file see/TypeInfo.h
+//! @file inspector/TypeInfo.h
 //! @brief Type descriptor definitions for the C++ Runtime Inspector runtime.
 
 #pragma once

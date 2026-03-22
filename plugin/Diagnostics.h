@@ -10,8 +10,8 @@ namespace inspector {
 
 //! Diagnostic helper for emitting plugin-specific warnings and notes.
 class Diagnostics {
-// ...existing code...
-} // namespace inspector
+public:
+    explicit Diagnostics(clang::DiagnosticsEngine& diags);
 
     //! Emit a warning about an unsupported type.
     void warnUnsupportedType(clang::SourceLocation loc,
@@ -31,4 +31,4 @@ private:
     unsigned m_noteID;
 };
 
-} // namespace see
+} // namespace inspector

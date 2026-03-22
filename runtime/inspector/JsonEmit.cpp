@@ -1,4 +1,4 @@
-//! @file see/JsonEmit.cpp
+//! @file inspector/JsonEmit.cpp
 //! @brief OPT format JSON emission implementation.
 
 #include "JsonEmit.h"

@@ -1,4 +1,4 @@
-//! @file see/JsonEmit.h
+//! @file inspector/JsonEmit.h
 //! @brief OPT format JSON emission for the C++ Runtime Inspector runtime.
 
 #pragma once

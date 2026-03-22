@@ -1,6 +1,6 @@
-# See++ Trace Format
+# C++ Runtime Inspector Trace Format
 
-See++ generates execution traces in the OPT (Online Python Tutor) format, enabling compatibility with existing visualization frontends.
+C++ Runtime Inspector generates execution traces in the OPT (Online Python Tutor) format, enabling compatibility with existing visualization frontends.
 
 ## Overview
 
@@ -169,7 +169,7 @@ Produces trace:
 
 This format is compatible with:
 - Python Tutor visualization frontend
-- See++ web interface
+- C++ Runtime Inspector web interface
 - Custom visualization tools implementing OPT format
 
 ## Future Extensions

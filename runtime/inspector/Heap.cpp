@@ -1,4 +1,4 @@
-//! @file see/Heap.cpp
+//! @file inspector/Heap.cpp
 //! @brief Heap allocation tracking implementation.
 
 #include "Heap.h"

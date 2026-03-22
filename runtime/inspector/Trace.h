@@ -1,4 +1,4 @@
-//! @file see/Trace.h
+//! @file inspector/Trace.h
 //! @brief Trace state management for the C++ Runtime Inspector runtime.
 
 #pragma once

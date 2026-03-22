@@ -1,4 +1,4 @@
-//! @file see/Hooks.cpp
+//! @file inspector/Hooks.cpp
 //! @brief Implementation of __inspector_* hook functions.
 
 #include "JsonEmit.h"
@@ -55,146 +55,146 @@ void ensureExitHandlerRegistered() {
 extern "C" {
 
 void __inspector_enter(const char* funcName, int line) {
-    see::ensureExitHandlerRegistered();
-    see::TraceState::instance().pushFrame(funcName ? funcName : "<null>", line);
+    inspector::ensureExitHandlerRegistered();
+    inspector::TraceState::instance().pushFrame(funcName ? funcName : "<null>", line);
 }
 
 void __inspector_leave(const char* funcName, int line) {
     (void)funcName; // Used for validation in debug builds
-    see::TraceState::instance().popFrame(line);
+    inspector::TraceState::instance().popFrame(line);
 }
 
 void __inspector_step(int line) {
-    see::TraceState::instance().recordStep(line);
+    inspector::TraceState::instance().recordStep(line);
 }
 
 // --- Integer types ---
 
 void __inspector_var_init_int(const char* name, void* addr,
-                        const see::TypeDescriptor* type, long long value,
+                        const inspector::TypeDescriptor* type, long long value,
                         int line) {
-    see::TraceState::instance().recordVarInit(
-        name, addr, type, see::EncodedValue{value}, line);
+    inspector::TraceState::instance().recordVarInit(
+        name, addr, type, inspector::EncodedValue{value}, line);
 }
 
 void __inspector_var_update_int(const char* name, void* addr,
-                          const see::TypeDescriptor* type, long long value) {
-    see::TraceState::instance().recordVarUpdate(name, addr, type,
-                                                 see::EncodedValue{value});
+                          const inspector::TypeDescriptor* type, long long value) {
+    inspector::TraceState::instance().recordVarUpdate(name, addr, type,
+                                                 inspector::EncodedValue{value});
 }
 
 void __inspector_var_init_uint(const char* name, void* addr,
-                         const see::TypeDescriptor* type,
+                         const inspector::TypeDescriptor* type,
                          unsigned long long value, int line) {
-    see::TraceState::instance().recordVarInit(
-        name, addr, type, see::EncodedValue{value}, line);
+    inspector::TraceState::instance().recordVarInit(
+        name, addr, type, inspector::EncodedValue{value}, line);
 }
 
 void __inspector_var_update_uint(const char* name, void* addr,
-                           const see::TypeDescriptor* type,
+                           const inspector::TypeDescriptor* type,
                            unsigned long long value) {
-    see::TraceState::instance().recordVarUpdate(name, addr, type,
-                                                 see::EncodedValue{value});
+    inspector::TraceState::instance().recordVarUpdate(name, addr, type,
+                                                 inspector::EncodedValue{value});
 }
 
 // --- Floating point types ---
 
 void __inspector_var_init_float(const char* name, void* addr,
-                          const see::TypeDescriptor* type, double value,
+                          const inspector::TypeDescriptor* type, double value,
                           int line) {
-    see::TraceState::instance().recordVarInit(
-        name, addr, type, see::EncodedValue{value}, line);
+    inspector::TraceState::instance().recordVarInit(
+        name, addr, type, inspector::EncodedValue{value}, line);
 }
 
 void __inspector_var_update_float(const char* name, void* addr,
-                            const see::TypeDescriptor* type, double value) {
-    see::TraceState::instance().recordVarUpdate(name, addr, type,
-                                                 see::EncodedValue{value});
+                            const inspector::TypeDescriptor* type, double value) {
+    inspector::TraceState::instance().recordVarUpdate(name, addr, type,
+                                                 inspector::EncodedValue{value});
 }
 
 // --- Boolean type ---
 
 void __inspector_var_init_bool(const char* name, void* addr,
-                         const see::TypeDescriptor* type, bool value,
+                         const inspector::TypeDescriptor* type, bool value,
                          int line) {
-    see::TraceState::instance().recordVarInit(
-        name, addr, type, see::EncodedValue{value}, line);
+    inspector::TraceState::instance().recordVarInit(
+        name, addr, type, inspector::EncodedValue{value}, line);
 }
 
 void __inspector_var_update_bool(const char* name, void* addr,
-                           const see::TypeDescriptor* type, bool value) {
-    see::TraceState::instance().recordVarUpdate(name, addr, type,
-                                                 see::EncodedValue{value});
+                           const inspector::TypeDescriptor* type, bool value) {
+    inspector::TraceState::instance().recordVarUpdate(name, addr, type,
+                                                 inspector::EncodedValue{value});
 }
 
 // --- Character type ---
 
 void __inspector_var_init_char(const char* name, void* addr,
-                         const see::TypeDescriptor* type, int value,
+                         const inspector::TypeDescriptor* type, int value,
                          int line) {
-    see::TraceState::instance().recordVarInit(
-        name, addr, type, see::EncodedValue{static_cast<char>(value)}, line);
+    inspector::TraceState::instance().recordVarInit(
+        name, addr, type, inspector::EncodedValue{static_cast<char>(value)}, line);
 }
 
 void __inspector_var_update_char(const char* name, void* addr,
-                           const see::TypeDescriptor* type, int value) {
-    see::TraceState::instance().recordVarUpdate(
-        name, addr, type, see::EncodedValue{static_cast<char>(value)});
+                           const inspector::TypeDescriptor* type, int value) {
+    inspector::TraceState::instance().recordVarUpdate(
+        name, addr, type, inspector::EncodedValue{static_cast<char>(value)});
 }
 
 // --- Pointer types ---
 
 void __inspector_var_init_ptr(const char* name, void* addr,
-                        const see::TypeDescriptor* type, const void* ptr_value,
+                        const inspector::TypeDescriptor* type, const void* ptr_value,
                         int line) {
-    see::EncodedValue value = see::encodePointerValue(ptr_value, type);
+    inspector::EncodedValue value = inspector::encodePointerValue(ptr_value, type);
 
     // Special handling for C-strings
     if (type && type->element_type &&
-        type->element_type->kind == see::TypeKind::Char) {
-        std::string str = see::safeReadString(static_cast<const char*>(ptr_value), 256);
+        type->element_type->kind == inspector::TypeKind::Char) {
+        std::string str = inspector::safeReadString(static_cast<const char*>(ptr_value), 256);
         if (!str.empty()) {
             value = str;
         }
     }
 
-    see::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
+    inspector::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
                                                line);
 }
 
 void __inspector_var_update_ptr(const char* name, void* addr,
-                          const see::TypeDescriptor* type,
+                          const inspector::TypeDescriptor* type,
                           const void* ptr_value) {
-    see::EncodedValue value = see::encodePointerValue(ptr_value, type);
+    inspector::EncodedValue value = inspector::encodePointerValue(ptr_value, type);
 
     // Special handling for C-strings
     if (type && type->element_type &&
-        type->element_type->kind == see::TypeKind::Char) {
-        std::string str = see::safeReadString(static_cast<const char*>(ptr_value), 256);
+        type->element_type->kind == inspector::TypeKind::Char) {
+        std::string str = inspector::safeReadString(static_cast<const char*>(ptr_value), 256);
         if (!str.empty()) {
             value = str;
         }
     }
 
-    see::TraceState::instance().recordVarUpdate(name, addr, type,
+    inspector::TraceState::instance().recordVarUpdate(name, addr, type,
                                                  std::move(value));
 }
 
 // --- Reference types ---
 
 void __inspector_var_init_ref(const char* name, void* addr,
-                        const see::TypeDescriptor* type,
+                        const inspector::TypeDescriptor* type,
                         const void* referent_addr, int line) {
-    see::EncodedValue value = see::encodePointerValue(referent_addr, type);
-    see::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
+    inspector::EncodedValue value = inspector::encodePointerValue(referent_addr, type);
+    inspector::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
                                                line);
 }
 
 void __inspector_var_update_ref(const char* name, void* addr,
-                          const see::TypeDescriptor* type,
+                          const inspector::TypeDescriptor* type,
                           const void* referent_addr) {
-    see::EncodedValue value = see::encodePointerValue(referent_addr, type);
-    see::TraceState::instance().recordVarUpdate(name, addr, type,
+    inspector::EncodedValue value = inspector::encodePointerValue(referent_addr, type);
+    inspector::TraceState::instance().recordVarUpdate(name, addr, type,
                                                  std::move(value));
 }
 
@@ -203,81 +203,81 @@ void __inspector_var_update_ref(const char* name, void* addr,
 // ---------------------------------------------------------------------------
 
 void __inspector_var_init_struct(const char* name, void* addr,
-                           const see::TypeDescriptor* type, int line) {
-    see::EncodedValue value = see::TraceState::instance().encodeStruct(addr, type);
-    see::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
+                           const inspector::TypeDescriptor* type, int line) {
+    inspector::EncodedValue value = inspector::TraceState::instance().encodeStruct(addr, type);
+    inspector::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
                                                line);
 }
 
 void __inspector_var_update_struct(const char* name, void* addr,
-                             const see::TypeDescriptor* type) {
-    see::EncodedValue value = see::TraceState::instance().encodeStruct(addr, type);
-    see::TraceState::instance().recordVarUpdate(name, addr, type, std::move(value));
+                             const inspector::TypeDescriptor* type) {
+    inspector::EncodedValue value = inspector::TraceState::instance().encodeStruct(addr, type);
+    inspector::TraceState::instance().recordVarUpdate(name, addr, type, std::move(value));
 }
 
 void __inspector_var_init_enum(const char* name, void* addr,
-                         const see::TypeDescriptor* type, long long value,
+                         const inspector::TypeDescriptor* type, long long value,
                          int line) {
-    see::EncodedValue encoded = see::TraceState::instance().encodeEnum(value, type);
-    see::TraceState::instance().recordVarInit(name, addr, type, std::move(encoded),
+    inspector::EncodedValue encoded = inspector::TraceState::instance().encodeEnum(value, type);
+    inspector::TraceState::instance().recordVarInit(name, addr, type, std::move(encoded),
                                                line);
 }
 
 void __inspector_var_update_enum(const char* name, void* addr,
-                           const see::TypeDescriptor* type, long long value) {
-    see::EncodedValue encoded = see::TraceState::instance().encodeEnum(value, type);
-    see::TraceState::instance().recordVarUpdate(name, addr, type, std::move(encoded));
+                           const inspector::TypeDescriptor* type, long long value) {
+    inspector::EncodedValue encoded = inspector::TraceState::instance().encodeEnum(value, type);
+    inspector::TraceState::instance().recordVarUpdate(name, addr, type, std::move(encoded));
 }
 
 void __inspector_var_init_union(const char* name, void* addr,
-                          const see::TypeDescriptor* type, int line) {
-    see::EncodedValue value = see::TraceState::instance().encodeUnion(addr, type);
-    see::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
+                          const inspector::TypeDescriptor* type, int line) {
+    inspector::EncodedValue value = inspector::TraceState::instance().encodeUnion(addr, type);
+    inspector::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
                                                line);
 }
 
 void __inspector_var_update_union(const char* name, void* addr,
-                            const see::TypeDescriptor* type) {
-    see::EncodedValue value = see::TraceState::instance().encodeUnion(addr, type);
-    see::TraceState::instance().recordVarUpdate(name, addr, type, std::move(value));
+                            const inspector::TypeDescriptor* type) {
+    inspector::EncodedValue value = inspector::TraceState::instance().encodeUnion(addr, type);
+    inspector::TraceState::instance().recordVarUpdate(name, addr, type, std::move(value));
 }
 
 void __inspector_var_init_array(const char* name, void* addr,
-                          const see::TypeDescriptor* type, int line) {
-    see::EncodedValue value = see::TraceState::instance().encodeArray(addr, type);
-    see::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
+                          const inspector::TypeDescriptor* type, int line) {
+    inspector::EncodedValue value = inspector::TraceState::instance().encodeArray(addr, type);
+    inspector::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
                                                line);
 }
 
 void __inspector_var_update_array(const char* name, void* addr,
-                            const see::TypeDescriptor* type) {
-    see::EncodedValue value = see::TraceState::instance().encodeArray(addr, type);
-    see::TraceState::instance().recordVarUpdate(name, addr, type, std::move(value));
+                            const inspector::TypeDescriptor* type) {
+    inspector::EncodedValue value = inspector::TraceState::instance().encodeArray(addr, type);
+    inspector::TraceState::instance().recordVarUpdate(name, addr, type, std::move(value));
 }
 
 // ---------------------------------------------------------------------------
 // Tier 3: Heap allocation tracking
 // ---------------------------------------------------------------------------
 
-int __inspector_alloc(void* ptr, unsigned long size, const see::TypeDescriptor* type,
+int __inspector_alloc(void* ptr, unsigned long size, const inspector::TypeDescriptor* type,
                 int is_array, unsigned long array_count) {
-    return see::TraceState::instance().recordAlloc(
+    return inspector::TraceState::instance().recordAlloc(
         ptr, static_cast<size_t>(size), type,
         is_array != 0, static_cast<size_t>(array_count));
 }
 
 void __inspector_dealloc(void* ptr) {
-    see::TraceState::instance().recordFree(ptr);
+    inspector::TraceState::instance().recordFree(ptr);
 }
 
 // --- Legacy compatibility (single int-only hook) ---
 
 void __inspector_var_init(const char* name, void* addr, int value) {
-    __inspector_var_init_int(name, addr, &see::TYPE_INT, value, 0);
+    __inspector_var_init_int(name, addr, &inspector::TYPE_INT, value, 0);
 }
 
 void __inspector_var_update(const char* name, void* addr, int value) {
-    __inspector_var_update_int(name, addr, &see::TYPE_INT, value);
+    __inspector_var_update_int(name, addr, &inspector::TYPE_INT, value);
 }
 
 } // extern "C"

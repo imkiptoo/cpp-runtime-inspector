@@ -1,4 +1,4 @@
-//! @file see/StringSafe.h
+//! @file inspector/StringSafe.h
 //! @brief Safe string reading with SIGSEGV protection.
 
 #pragma once

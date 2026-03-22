@@ -1,4 +1,4 @@
-//! @file see/Heap.h
+//! @file inspector/Heap.h
 //! @brief Heap allocation tracking for the C++ Runtime Inspector runtime.
 
 #pragma once

@@ -1,5 +1,5 @@
 //! @file RewriteHelpers.h
-//! @brief Source rewriting utilities for the See++ plugin.
+//! @brief Source rewriting utilities for the C++ Runtime Inspector plugin.
 
 #pragma once
 
@@ -33,7 +33,7 @@ public:
     static std::string stringLiteral(llvm::StringRef s);
 
     //! Wrap an expression with parentheses and comma operator.
-    //! Returns the closing part: ", __see_...(...))"
+    //! Returns the closing part: ", __inspector_...(...))"
     static std::string commaWrap(llvm::StringRef hookCall);
 
     //! Get source line number for a location.

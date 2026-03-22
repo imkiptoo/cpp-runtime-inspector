@@ -1,4 +1,4 @@
-//! @file see/StringSafe.cpp
+//! @file inspector/StringSafe.cpp
 //! @brief Safe string reading implementation.
 
 #include "StringSafe.h"

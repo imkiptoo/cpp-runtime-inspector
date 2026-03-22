@@ -1,4 +1,4 @@
-//! @file see/TypeInfo.cpp
+//! @file inspector/TypeInfo.cpp
 //! @brief Type descriptor implementations.
 
 #include "TypeInfo.h"

@@ -176,9 +176,9 @@ std::string TypeEncoder::generateDescriptor(clang::QualType type) const {
     size_t size = getSize(type);
     TypeKind kind = getTypeKind(type);
 
-    ss << "static const see::TypeDescriptor __see_type_" << mangledName
+    ss << "static const inspector::TypeDescriptor __inspector_type_" << mangledName
        << " = {\n";
-    ss << "    see::TypeKind::" << kindToString(kind) << ",\n";
+    ss << "    inspector::TypeKind::" << kindToString(kind) << ",\n";
     ss << "    \"" << spelling << "\",\n";
     ss << "    " << size << ",\n";
     ss << "    nullptr, 0,  // fields\n";
@@ -337,29 +337,29 @@ std::string TypeEncoder::getDescriptorRef(clang::QualType type) const {
         const auto* builtin = type->getAs<clang::BuiltinType>();
         switch (builtin->getKind()) {
         case clang::BuiltinType::Int:
-            return "&see::TYPE_INT";
+            return "&inspector::TYPE_INT";
         case clang::BuiltinType::UInt:
-            return "&see::TYPE_UINT";
+            return "&inspector::TYPE_UINT";
         case clang::BuiltinType::Long:
-            return "&see::TYPE_LONG";
+            return "&inspector::TYPE_LONG";
         case clang::BuiltinType::ULong:
-            return "&see::TYPE_ULONG";
+            return "&inspector::TYPE_ULONG";
         case clang::BuiltinType::LongLong:
-            return "&see::TYPE_LLONG";
+            return "&inspector::TYPE_LLONG";
         case clang::BuiltinType::ULongLong:
-            return "&see::TYPE_ULLONG";
+            return "&inspector::TYPE_ULLONG";
         case clang::BuiltinType::Float:
-            return "&see::TYPE_FLOAT";
+            return "&inspector::TYPE_FLOAT";
         case clang::BuiltinType::Double:
-            return "&see::TYPE_DOUBLE";
+            return "&inspector::TYPE_DOUBLE";
         case clang::BuiltinType::Bool:
-            return "&see::TYPE_BOOL";
+            return "&inspector::TYPE_BOOL";
         case clang::BuiltinType::Char_S:
         case clang::BuiltinType::Char_U:
         case clang::BuiltinType::SChar:
-            return "&see::TYPE_CHAR";
+            return "&inspector::TYPE_CHAR";
         case clang::BuiltinType::UChar:
-            return "&see::TYPE_UCHAR";
+            return "&inspector::TYPE_UCHAR";
         default:
             break;
         }
@@ -369,12 +369,12 @@ std::string TypeEncoder::getDescriptorRef(clang::QualType type) const {
     if (type->isPointerType()) {
         clang::QualType pointee = type->getPointeeType();
         if (pointee->isCharType())
-            return "&see::TYPE_PTR_CHAR";
+            return "&inspector::TYPE_PTR_CHAR";
         if (pointee->isVoidType())
-            return "&see::TYPE_PTR_VOID";
+            return "&inspector::TYPE_PTR_VOID";
     }
 
-    return "&__see_type_" + getMangledName(type);
+    return "&__inspector_type_" + getMangledName(type);
 }
 
 std::string
@@ -410,11 +410,11 @@ TypeEncoder::generateFieldInfoArray(const clang::RecordDecl* record,
     if (fields.empty())
         return "";
 
-    ss << "static const see::FieldInfo " << baseName << "_fields[] = {\n";
+    ss << "static const inspector::FieldInfo " << baseName << "_fields[] = {\n";
     for (size_t i = 0; i < fields.size(); ++i) {
         const auto& [name, offset, type, access] = fields[i];
         ss << "    {\"" << name << "\", " << offset << ", "
-           << getDescriptorRef(type) << ", see::AccessLevel::"
+           << getDescriptorRef(type) << ", inspector::AccessLevel::"
            << accessToString(access) << ", false}";
         if (i + 1 < fields.size())
             ss << ",";
@@ -446,7 +446,7 @@ TypeEncoder::generateEnumValueArray(const clang::EnumDecl* decl,
     if (values.empty())
         return "";
 
-    ss << "static const see::EnumValue " << baseName << "_values[] = {\n";
+    ss << "static const inspector::EnumValue " << baseName << "_values[] = {\n";
     for (size_t i = 0; i < values.size(); ++i) {
         ss << "    {" << values[i].second << ", \"" << values[i].first << "\"}";
         if (i + 1 < values.size())
@@ -468,7 +468,7 @@ TypeEncoder::generateBaseInfoArray(const clang::CXXRecordDecl* record,
     const clang::ASTRecordLayout& layout =
         m_context.getASTRecordLayout(record);
 
-    ss << "static const see::BaseInfo " << baseName << "_bases[] = {\n";
+    ss << "static const inspector::BaseInfo " << baseName << "_bases[] = {\n";
 
     unsigned idx = 0;
     for (const auto& base : record->bases()) {
@@ -559,7 +559,7 @@ std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
     ss << dependencies;
 
     // Generate auxiliary arrays for composite types
-    std::string fieldArrayName = "__see_type_" + mangledName;
+    std::string fieldArrayName = "__inspector_type_" + mangledName;
     std::string fieldArrayCode;
     std::string enumArrayCode;
     std::string baseArrayCode;
@@ -604,9 +604,9 @@ std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
     ss << baseArrayCode;
 
     // Generate the TypeDescriptor
-    ss << "static const see::TypeDescriptor __see_type_" << mangledName
+    ss << "static const inspector::TypeDescriptor __inspector_type_" << mangledName
        << " = {\n";
-    ss << "    see::TypeKind::" << kindToString(kind) << ",\n";
+    ss << "    inspector::TypeKind::" << kindToString(kind) << ",\n";
     ss << "    \"" << spelling << "\",\n";
     ss << "    " << size << ",\n";
 

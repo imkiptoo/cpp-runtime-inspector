@@ -1,4 +1,4 @@
-//! @file see/Trace.cpp
+//! @file inspector/Trace.cpp
 //! @brief Trace state management implementation.
 
 #include "Trace.h"
