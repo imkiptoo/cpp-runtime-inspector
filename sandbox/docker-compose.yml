@@ -1,0 +1,32 @@
+# C++ Runtime Inspector Sandbox
+#
+# Usage:
+#   docker-compose build
+#   echo 'int main() { int x = 5; return 0; }' | docker-compose run --rm inspector
+
+version: '3.8'
+
+services:
+  inspector:
+    build:
+      context: ..
+      dockerfile: sandbox/Dockerfile
+    image: cpp-inspector-sandbox
+    stdin_open: true
+    tty: false
+    read_only: true
+    tmpfs:
+      - /workspace:size=64M,mode=1777
+    security_opt:
+      - no-new-privileges:true
+      - seccomp:seccomp-profile.json
+    cap_drop:
+      - ALL
+    network_mode: none
+    mem_limit: 256m
+    memswap_limit: 256m
+    pids_limit: 64
+    cpus: 1
+    environment:
+      - TIMEOUT=10
+      - MAX_MEMORY=262144

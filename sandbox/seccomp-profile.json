@@ -1,0 +1,179 @@
+{
+  "defaultAction": "SCMP_ACT_ERRNO",
+  "defaultErrnoRet": 1,
+  "archMap": [
+    {
+      "architecture": "SCMP_ARCH_X86_64",
+      "subArchitectures": [
+        "SCMP_ARCH_X86",
+        "SCMP_ARCH_X32"
+      ]
+    },
+    {
+      "architecture": "SCMP_ARCH_AARCH64",
+      "subArchitectures": [
+        "SCMP_ARCH_ARM"
+      ]
+    }
+  ],
+  "syscalls": [
+    {
+      "names": [
+        "read",
+        "pread64",
+        "readv"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Allow reading from file descriptors"
+    },
+    {
+      "names": [
+        "write",
+        "pwrite64",
+        "writev"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "args": [
+        {
+          "index": 0,
+          "value": 1,
+          "op": "SCMP_CMP_EQ"
+        }
+      ],
+      "comment": "Allow writing to stdout (fd 1)"
+    },
+    {
+      "names": [
+        "write",
+        "pwrite64",
+        "writev"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "args": [
+        {
+          "index": 0,
+          "value": 2,
+          "op": "SCMP_CMP_EQ"
+        }
+      ],
+      "comment": "Allow writing to stderr (fd 2)"
+    },
+    {
+      "names": [
+        "brk",
+        "mmap",
+        "mmap2",
+        "munmap",
+        "mprotect",
+        "mremap"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Memory management"
+    },
+    {
+      "names": [
+        "exit",
+        "exit_group"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Process termination"
+    },
+    {
+      "names": [
+        "futex",
+        "get_robust_list",
+        "set_robust_list",
+        "set_tid_address"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Thread synchronization primitives (needed by libc)"
+    },
+    {
+      "names": [
+        "rt_sigaction",
+        "rt_sigprocmask",
+        "rt_sigreturn",
+        "sigaltstack"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Signal handling (for crash handlers)"
+    },
+    {
+      "names": [
+        "arch_prctl",
+        "prctl"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Process state (libc startup)"
+    },
+    {
+      "names": [
+        "getpid",
+        "gettid",
+        "getuid",
+        "geteuid",
+        "getgid",
+        "getegid"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Process info (needed by libc)"
+    },
+    {
+      "names": [
+        "clock_gettime",
+        "clock_getres",
+        "gettimeofday",
+        "time"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Time queries"
+    },
+    {
+      "names": [
+        "fstat",
+        "fstat64",
+        "newfstatat",
+        "statx"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "File stat (needed by some libc functions)"
+    },
+    {
+      "names": [
+        "close"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Close file descriptors"
+    },
+    {
+      "names": [
+        "lseek",
+        "llseek",
+        "_llseek"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "File seeking"
+    },
+    {
+      "names": [
+        "getrandom"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Random number generation"
+    },
+    {
+      "names": [
+        "rseq"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Restartable sequences (glibc 2.35+)"
+    },
+    {
+      "names": [
+        "tgkill"
+      ],
+      "action": "SCMP_ACT_ALLOW",
+      "comment": "Signal delivery to threads (for exceptions)"
+    }
+  ]
+}
