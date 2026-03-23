@@ -19,7 +19,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - Memory leak detection at program exit (`memory_leaks` array in output)
   - Heap state snapshots in each trace step
   - Heap objects encoded as `HEAP_PRIMITIVE`, `HEAP_ARRAY`, or `HEAP_STRUCT`
-  - Golden tests for heap tracking (heap_basic, heap_array, heap_uaf, heap_leak)
+  - **malloc/free shim** (`shim/inspector_malloc_shim.c`) for C-style allocation tracking
+    - Intercepts malloc, calloc, realloc, free, posix_memalign
+    - Uses dlsym(RTLD_NEXT, ...) for portability across Linux and macOS
+    - Thread-local reentrancy guard prevents infinite recursion
+    - Bootstrap buffer for allocations during dlsym initialization
+    - Runtime hooks: `__inspector_alloc_malloc`, `__inspector_dealloc_malloc`
+  - Golden tests for heap tracking (heap_basic, heap_array, heap_uaf, heap_leak, linked_list, malloc_basic)
+  - Test runner support for shim-based tests (`.use_shim` marker file)
 
 - **Tier 2 Implementation** - User-defined types support
   - Struct/class field enumeration and encoding

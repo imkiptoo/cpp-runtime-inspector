@@ -87,6 +87,27 @@ add_library(inspector_runtime STATIC
 target_include_directories(inspector_runtime PUBLIC runtime)
 target_link_libraries(inspector_runtime PRIVATE nlohmann_json::nlohmann_json)
 
+# --- The malloc shim -----------------------------------------------------
+# Shared library that intercepts malloc/free for C-style allocation tracking.
+# Usage: LD_PRELOAD=libinspector_malloc_shim.so ./program (Linux)
+#        DYLD_INSERT_LIBRARIES=libinspector_malloc_shim.dylib ./program (macOS)
+#
+# NOTE: The shim does NOT link against the runtime. The __inspector_alloc_malloc
+# and __inspector_dealloc_malloc functions are resolved at load time from the
+# main program (which must be linked with inspector_runtime).
+add_library(inspector_malloc_shim SHARED
+    shim/inspector_malloc_shim.c
+)
+target_link_libraries(inspector_malloc_shim PRIVATE ${CMAKE_DL_LIBS})
+
+# Allow undefined symbols resolved at runtime (the runtime hooks)
+if(APPLE)
+    target_link_options(inspector_malloc_shim PRIVATE -undefined dynamic_lookup)
+else()
+    # On Linux, allow undefined symbols
+    target_link_options(inspector_malloc_shim PRIVATE -Wl,--allow-shlib-undefined)
+endif()
+
 # --- Testing -------------------------------------------------------------
 enable_testing()
 
@@ -94,6 +115,6 @@ enable_testing()
 add_custom_target(golden-tests
     COMMAND ${CMAKE_SOURCE_DIR}/scripts/run-golden-tests.sh
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-    DEPENDS InspectorPlugin inspector_runtime
+    DEPENDS InspectorPlugin inspector_runtime inspector_malloc_shim
     COMMENT "Running golden tests"
 )

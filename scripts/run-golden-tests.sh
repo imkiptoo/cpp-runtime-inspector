@@ -32,9 +32,19 @@ fi
 
 RUNTIME="${BUILD}/libinspector_runtime.a"
 
+# Malloc shim for tests that need it
+if [[ "$(uname)" == "Darwin" ]]; then
+    MALLOC_SHIM="${BUILD}/libinspector_malloc_shim.dylib"
+else
+    MALLOC_SHIM="${BUILD}/libinspector_malloc_shim.so"
+fi
+
 # Check dependencies
 [[ -f "${PLUGIN}"  ]] || { echo "Plugin not built at ${PLUGIN}. Run cmake first."  >&2; exit 1; }
 [[ -f "${RUNTIME}" ]] || { echo "Runtime not built at ${RUNTIME}. Run cmake first." >&2; exit 1; }
+# Malloc shim is optional - only needed for malloc tests
+HAVE_MALLOC_SHIM=0
+[[ -f "${MALLOC_SHIM}" ]] && HAVE_MALLOC_SHIM=1
 
 # Temporary directory for test outputs
 TMPDIR=$(mktemp -d)
@@ -150,10 +160,30 @@ run_test() {
         return 1
     fi
 
-    # Run
-    if ! "${workdir}/test" 2>"${workdir}/actual.json"; then
-        # Non-zero exit is OK for some tests
-        :
+    # Run - check if test needs malloc shim
+    local use_shim=0
+    if [[ -f "${test_dir}/.use_shim" ]]; then
+        use_shim=1
+        if [[ ${HAVE_MALLOC_SHIM} -eq 0 ]]; then
+            echo "SKIP (needs malloc shim, not built)"
+            ((SKIPPED++))
+            rm -f "${instrumented}"
+            return 0
+        fi
+    fi
+
+    if [[ ${use_shim} -eq 1 ]]; then
+        # Run with malloc shim
+        if [[ "$(uname)" == "Darwin" ]]; then
+            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" 2>"${workdir}/actual.json" || true
+        else
+            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" 2>"${workdir}/actual.json" || true
+        fi
+    else
+        if ! "${workdir}/test" 2>"${workdir}/actual.json"; then
+            # Non-zero exit is OK for some tests
+            :
+        fi
     fi
 
     # Check if output is valid JSON

@@ -1,0 +1,15 @@
+{
+  "code": "// Linked list construction test\n// Verify REF chains are visualized correctly\n\nstruct Node {\n    int value;\n    Node* next;\n};\n\nint main() {\n    // Create a simple linked list: 1 -> 2 -> 3 -> nullptr\n    Node* head = new Node{1, nullptr};\n    head->next = new Node{2, nullptr};\n    head->next->next = new Node{3, nullptr};\n\n    // Clean up\n    Node* current = head;\n    while (current != nullptr) {\n        Node* next = current->next;\n        delete current;\n        current = next;\n    }\n\n    return 0;\n}\n",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "line": 9,
+      "stack_to_render": [],
+      "heap": {},
+      "globals": {},
+      "ordered_globals": []
+    }
+  ],
+  "memory_leaks": []
+}

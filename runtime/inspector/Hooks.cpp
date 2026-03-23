@@ -270,6 +270,20 @@ void __inspector_dealloc(void* ptr) {
     inspector::TraceState::instance().recordFree(ptr);
 }
 
+// ---------------------------------------------------------------------------
+// Tier 3: malloc/free shim hooks (C-style allocations without type info)
+// ---------------------------------------------------------------------------
+
+void __inspector_alloc_malloc(void* ptr, size_t size) {
+    // Record allocation with no type information
+    inspector::TraceState::instance().recordAlloc(
+        ptr, size, nullptr, false, 1);
+}
+
+void __inspector_dealloc_malloc(void* ptr) {
+    inspector::TraceState::instance().recordFree(ptr);
+}
+
 // --- Legacy compatibility (single int-only hook) ---
 
 void __inspector_var_init(const char* name, void* addr, int value) {

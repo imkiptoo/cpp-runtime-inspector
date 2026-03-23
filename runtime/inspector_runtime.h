@@ -11,6 +11,8 @@
 
 #include "inspector/TypeInfo.h"
 
+#include <stddef.h>  // for size_t
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -125,6 +127,18 @@ int __inspector_alloc(void* ptr, unsigned long size, const inspector::TypeDescri
 
 //! Record a heap deallocation (before the actual free/delete).
 void __inspector_dealloc(void* ptr);
+
+// ---------------------------------------------------------------------------
+// Tier 3: malloc/free shim hooks
+// ---------------------------------------------------------------------------
+
+//! Record a malloc allocation (no type information).
+//! Called by the LD_PRELOAD/DYLD_INSERT_LIBRARIES shim.
+void __inspector_alloc_malloc(void* ptr, size_t size);
+
+//! Record a free deallocation.
+//! Called by the LD_PRELOAD/DYLD_INSERT_LIBRARIES shim.
+void __inspector_dealloc_malloc(void* ptr);
 
 // ---------------------------------------------------------------------------
 // Legacy compatibility (Tier 0)

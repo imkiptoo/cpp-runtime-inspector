@@ -1,0 +1,15 @@
+{
+  "code": "// Basic malloc/free test\n// Requires the malloc shim to track C-style allocations\n\n#include <cstdlib>\n\nint main() {\n    int* p = static_cast<int*>(malloc(sizeof(int)));\n    *p = 42;\n    free(p);\n    return 0;\n}\n",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "line": 6,
+      "stack_to_render": [],
+      "heap": {},
+      "globals": {},
+      "ordered_globals": []
+    }
+  ],
+  "memory_leaks": []
+}
