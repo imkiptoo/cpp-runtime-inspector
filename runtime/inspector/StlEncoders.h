@@ -11,6 +11,7 @@
 #pragma once
 
 #include "TypeInfo.h"
+#include "Trace.h"
 
 #include <cstddef>
 #include <string>
@@ -20,9 +21,7 @@
 
 namespace inspector {
 
-// Forward declarations
-class TraceState;
-struct EncodedValue;
+// TraceState is defined in Trace.h
 
 //! Identifies which STL container type this is.
 enum class StlContainerKind {
