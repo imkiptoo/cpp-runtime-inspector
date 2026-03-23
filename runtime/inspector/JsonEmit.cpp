@@ -101,6 +101,12 @@ nlohmann::json JsonEmitter::stepToJson(const TraceStep& step) {
     case EventKind::Return:
         result["event"] = "return";
         break;
+    case EventKind::Throw:
+        result["event"] = "exception";
+        break;
+    case EventKind::Catch:
+        result["event"] = "catch";
+        break;
     case EventKind::StepLine:
     default:
         result["event"] = "step_line";
@@ -260,9 +266,63 @@ nlohmann::json JsonEmitter::valueToJson(const EncodedValue& value,
         value);
 }
 
-void JsonEmitter::emit(const TraceState& state) {
+size_t JsonEmitter::estimateOutputSize(const TraceState& state) {
+    // Quick estimation based on step count and average step size
+    // Average step is roughly 500-2000 bytes depending on variable count
+    const size_t avgStepSize = 1000;
+    return state.getSteps().size() * avgStepSize + state.getSourceCode().size();
+}
+
+bool JsonEmitter::emit(const TraceState& state, size_t maxOutputSize) {
     nlohmann::json output = toOPT(state);
-    std::fprintf(stderr, "%s\n", output.dump().c_str());
+    std::string jsonStr = output.dump();
+
+    // Check size limit
+    if (maxOutputSize > 0 && jsonStr.size() > maxOutputSize) {
+        // Output is too large - emit truncated version
+        // We need to reduce the number of trace steps until we fit
+        nlohmann::json truncated;
+        truncated["code"] = state.getSourceCode();
+        truncated["truncated"] = true;
+        truncated["truncation_reason"] = "output_size_exceeded";
+        truncated["original_event_count"] = state.getSteps().size();
+
+        // Try to include as many steps as possible
+        nlohmann::json trace = nlohmann::json::array();
+        const auto& steps = state.getSteps();
+
+        // Start with roughly half the steps and adjust
+        size_t targetSteps = steps.size();
+        while (targetSteps > 0) {
+            trace.clear();
+            for (size_t i = 0; i < targetSteps && i < steps.size(); ++i) {
+                trace.push_back(stepToJson(steps[i]));
+            }
+            truncated["trace"] = trace;
+            truncated["included_event_count"] = targetSteps;
+
+            jsonStr = truncated.dump();
+            if (jsonStr.size() <= maxOutputSize) {
+                break;
+            }
+            // Reduce by 25% each iteration
+            targetSteps = targetSteps * 3 / 4;
+            if (targetSteps == 0) {
+                // Can't fit even minimal output - emit error only
+                truncated["trace"] = nlohmann::json::array();
+                truncated["included_event_count"] = 0;
+                truncated["error"] = "output_too_large_to_fit";
+                jsonStr = truncated.dump();
+                break;
+            }
+        }
+
+        std::fprintf(stderr, "%s\n", jsonStr.c_str());
+        return true;  // Was truncated
+    }
+
+    std::fprintf(stderr, "%s\n", jsonStr.c_str());
+    return false;  // Not truncated
 }
 
 } // namespace inspector
