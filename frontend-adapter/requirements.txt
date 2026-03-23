@@ -1,0 +1,2 @@
+# C++ Runtime Inspector Frontend Adapter
+# No external dependencies - uses Python 3 standard library only
