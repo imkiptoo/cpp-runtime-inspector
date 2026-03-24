@@ -1,15 +1,19 @@
 # C++ Runtime Inspector Trace Format
 
-C++ Runtime Inspector generates execution traces in the OPT (Online Python Tutor) format, enabling compatibility with existing visualization frontends.
+C++ Runtime Inspector generates execution traces in the OPT (Online Python Tutor)
+format, enabling compatibility with existing visualization frontends.
 
 ## Overview
 
-The trace output is a JSON object with two top-level keys:
+The trace output is a JSON object with these top-level keys:
 
 ```json
 {
   "code": "<original source code>",
-  "trace": [<array of trace steps>]
+  "trace": [<array of trace steps>],
+  "memory_leaks": [<optional array of leak info>],
+  "truncated": false,
+  "truncation_reason": null
 }
 ```
 
@@ -32,11 +36,13 @@ Each step in the trace array represents a point in execution:
 
 ### Event Types
 
-| Event | Description |
-|-------|-------------|
-| `call` | Function entry |
-| `return` | Function exit |
-| `step_line` | Statement execution or variable change |
+| Event       | Description                                    |
+|-------------|------------------------------------------------|
+| `call`      | Function entry                                 |
+| `return`    | Function exit                                  |
+| `step_line` | Statement execution or variable change         |
+| `exception` | Exception thrown (throw expression)            |
+| `catch`     | Exception caught (catch block entry)           |
 
 ### Stack Frames
 
@@ -56,110 +62,226 @@ Each frame in `stack_to_render`:
 }
 ```
 
-### Value Encoding
+## Value Encoding
 
-| Type | JSON Representation |
-|------|---------------------|
-| Integer | `42`, `-17` |
-| Float | `3.14`, `-0.5` |
-| Boolean | `true`, `false` |
-| Character | `"a"` (as string) |
-| Pointer | `["C_ADDRESS", "0xADDR", "type*", "region"]` |
-| String | `"hello world"` |
+### Primitives
 
-### Memory Regions
+| Type      | JSON Representation        |
+|-----------|----------------------------|
+| Integer   | `42`, `-17`                |
+| Unsigned  | `42`                       |
+| Float     | `3.14`, `-0.5`             |
+| Boolean   | `true`, `false`            |
+| Character | `"a"` (as single-char str) |
+| String    | `"hello world"`            |
 
-Pointers include a region hint:
-- `"stack"` - Stack-allocated
-- `"heap"` - Heap-allocated (Tier 3)
+### Pointers and References
+
+```json
+["C_ADDRESS", "0xADDR", "type*", "region"]
+```
+
+Region values:
+- `"stack"` - Stack-allocated memory
+- `"heap"` - Dynamically allocated memory
 - `"global"` - Global/static storage
-- `"unknown"` - Cannot determine
+- `"unknown"` - Cannot determine region
 
-## Example
+### Heap References (Tier 3)
+
+When a pointer points to tracked heap memory:
+
+```json
+["REF", 1]                    // Pointer to heap object 1
+["REF_OFFSET", 1, 16]         // Pointer to offset 16 in heap object 1
+["DANGLING", 1]               // Pointer to freed heap object 1
+```
+
+### Structs and Classes
+
+```json
+["C_STRUCT", "MyStruct", {
+  "field1": 42,
+  "field2": "hello",
+  "nested": ["C_STRUCT", "Inner", {...}]
+}]
+```
+
+### Arrays
+
+```json
+["C_ARRAY", "int", [1, 2, 3, 4, 5]]
+```
+
+Multi-dimensional arrays are nested:
+
+```json
+["C_ARRAY", "int[3]", [
+  ["C_ARRAY", "int", [1, 2, 3]],
+  ["C_ARRAY", "int", [4, 5, 6]]
+]]
+```
+
+### Enums
+
+Encoded enums show the symbolic name when available:
+
+```json
+"RED"           // enum value with known name
+42              // enum value without symbolic name
+```
+
+### Unions
+
+```json
+["C_UNION", "MyUnion", {
+  "firstField": 42,
+  "__raw": "2a000000"
+}]
+```
+
+## Heap Objects
+
+The `heap` field maps heap IDs to heap objects:
+
+```json
+"heap": {
+  "1": ["HEAP_PRIMITIVE", "int", 42],
+  "2": ["HEAP_ARRAY", "int", [1, 2, 3]],
+  "3": ["HEAP_STRUCT", "Node", [
+    ["value", 10],
+    ["next", ["REF", 4]]
+  ]]
+}
+```
+
+### Heap Object Types
+
+| Type           | Format                                   |
+|----------------|------------------------------------------|
+| Primitive      | `["HEAP_PRIMITIVE", typename, value]`    |
+| Array          | `["HEAP_ARRAY", typename, [elements]]`   |
+| Struct/Class   | `["HEAP_STRUCT", typename, [[f,v],...]]` |
+
+## Memory Leaks
+
+Detected at program exit:
+
+```json
+"memory_leaks": [
+  ["leaked", 5, "int"],
+  ["leaked", 6, "Node"]
+]
+```
+
+## Truncation
+
+When resource limits are hit:
+
+```json
+{
+  "truncated": true,
+  "truncation_reason": "event_count_exceeded",
+  "original_event_count": 150000,
+  "included_event_count": 100000,
+  ...
+}
+```
+
+Or for output size limits:
+
+```json
+{
+  "truncated": true,
+  "truncation_reason": "output_size_exceeded",
+  ...
+}
+```
+
+## STL Container Encoding
+
+STL containers are encoded as their logical contents:
+
+### std::vector
+
+```json
+["C_ARRAY", "int", [1, 2, 3, 4, 5]]
+```
+
+### std::string
+
+```json
+"hello world"
+```
+
+### std::unique_ptr / std::shared_ptr
+
+```json
+["REF", 5]        // Points to heap object 5
+["C_ADDRESS", "0x0", "int*", "null"]  // nullptr
+```
+
+### std::pair
+
+```json
+["C_STRUCT", "std::pair", {
+  "first": "key",
+  "second": 42
+}]
+```
+
+## Complete Example
 
 Input program:
 
 ```cpp
+#include <vector>
+
+struct Node {
+    int value;
+    Node* next;
+};
+
 int main() {
-    int a = 5;
-    int b = a + 3;
+    Node* head = new Node{10, nullptr};
+    head->next = new Node{20, nullptr};
+
+    std::vector<int> v = {1, 2, 3};
+
+    delete head->next;
+    delete head;
     return 0;
 }
 ```
 
-Produces trace:
+Produces trace with heap tracking:
 
 ```json
 {
-  "code": "",
+  "code": "...",
   "trace": [
     {
       "event": "call",
-      "line": 1,
+      "line": 8,
       "func_name": "main",
-      "stack_to_render": [{
-        "frame_id": 0,
-        "func_name": "main",
-        "encoded_locals": {},
-        "ordered_varnames": [],
-        "is_highlighted": true,
-        "is_zombie": false
-      }],
-      "globals": {},
-      "ordered_globals": [],
-      "heap": {},
-      "stdout": ""
+      "stack_to_render": [...],
+      "heap": {}
     },
     {
       "event": "step_line",
-      "line": 0,
+      "line": 9,
       "func_name": "main",
       "stack_to_render": [{
-        "frame_id": 0,
-        "func_name": "main",
-        "encoded_locals": {"a": 5},
-        "ordered_varnames": ["a"],
-        "is_highlighted": true,
-        "is_zombie": false
+        "encoded_locals": {
+          "head": ["REF", 1]
+        }
       }],
-      "globals": {},
-      "ordered_globals": [],
-      "heap": {},
-      "stdout": ""
-    },
-    {
-      "event": "step_line",
-      "line": 0,
-      "func_name": "main",
-      "stack_to_render": [{
-        "frame_id": 0,
-        "func_name": "main",
-        "encoded_locals": {"a": 5, "b": 8},
-        "ordered_varnames": ["a", "b"],
-        "is_highlighted": true,
-        "is_zombie": false
-      }],
-      "globals": {},
-      "ordered_globals": [],
-      "heap": {},
-      "stdout": ""
-    },
-    {
-      "event": "return",
-      "line": 4,
-      "func_name": "main",
-      "stack_to_render": [{
-        "frame_id": 0,
-        "func_name": "main",
-        "encoded_locals": {"a": 5, "b": 8},
-        "ordered_varnames": ["a", "b"],
-        "is_highlighted": true,
-        "is_zombie": false
-      }],
-      "globals": {},
-      "ordered_globals": [],
-      "heap": {},
-      "stdout": ""
+      "heap": {
+        "1": ["HEAP_STRUCT", "Node", [
+          ["value", 10],
+          ["next", ["C_ADDRESS", "0x0", "Node*", "null"]]
+        ]]
+      }
     }
   ]
 }
@@ -172,10 +294,7 @@ This format is compatible with:
 - C++ Runtime Inspector web interface
 - Custom visualization tools implementing OPT format
 
-## Future Extensions
+## Reference
 
-Tier 2/3 features will add:
-- `heap` object containing heap allocations
-- Struct/class field expansion in `encoded_locals`
-- Array element tracking
-- Global variable tracking in `globals`
+See the original OPT format specification:
+https://github.com/pgbovine/OnlinePythonTutor/blob/master/v3/docs/opt-trace-format.md
