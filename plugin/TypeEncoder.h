@@ -100,6 +100,18 @@ public:
     //! Get the element type and count for array types.
     std::pair<clang::QualType, size_t> getArrayInfo(clang::QualType type) const;
 
+    //! Check if this is an STL container type.
+    bool isStlContainer(clang::QualType type) const;
+
+    //! Check if this is a lambda type.
+    bool isLambda(clang::QualType type) const;
+
+    //! Get a friendly name for lambda types.
+    std::string getLambdaFriendlyName(clang::QualType type) const;
+
+    //! Get the element type for STL containers (e.g., T for vector<T>).
+    clang::QualType getStlElementType(clang::QualType type) const;
+
     //! Generate complete TypeDescriptor code for a type, including all
     //! dependencies (field types, base types, etc.).
     //! Returns all necessary declarations in topological order.
@@ -117,8 +129,14 @@ public:
 private:
     clang::ASTContext& m_context;
 
-    //! Track types we've already generated descriptors for.
+    //! Track types we've already generated descriptors for (fully complete).
     mutable std::set<std::string> m_generatedTypes;
+
+    //! Track types currently being generated (to detect circular refs).
+    mutable std::set<std::string> m_inProgressTypes;
+
+    //! Track types needing deferred generation due to circular references.
+    mutable std::vector<clang::QualType> m_deferredTypes;
 
     //! Convert TypeKind to string for code generation.
     static const char* kindToString(TypeKind kind);
