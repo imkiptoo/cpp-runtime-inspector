@@ -12,12 +12,15 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-BUILD="${ROOT}/cmake-build-debug"
 GOLDEN_DIR="${ROOT}/tests/golden"
 RUNTIME_HDR="${ROOT}/runtime"
 
-# Use cmake-build-debug if it exists, otherwise build/
-if [[ ! -d "${BUILD}" ]]; then
+# Determine build directory (env var takes priority)
+if [[ -n "${BUILD_DIR:-}" ]]; then
+    BUILD="${ROOT}/${BUILD_DIR}"
+elif [[ -d "${ROOT}/cmake-build-debug" ]]; then
+    BUILD="${ROOT}/cmake-build-debug"
+else
     BUILD="${ROOT}/build"
 fi
 
