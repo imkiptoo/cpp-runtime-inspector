@@ -2,6 +2,7 @@
 //! @brief Implementation of __inspector_* hook functions.
 
 #include "JsonEmit.h"
+#include "Signals.h"
 #include "Trace.h"
 #include "TypeInfo.h"
 #include "StringSafe.h"
@@ -27,11 +28,14 @@ EncodedValue encodePointerValue(const void* ptr, const TypeDescriptor* type) {
     return TraceState::instance().encodePointer(ptr, type);
 }
 
-//! Idempotent atexit registration.
+//! Idempotent atexit registration and crash handler installation.
 void ensureExitHandlerRegistered() {
     static std::atomic<bool> registered{false};
     bool expected = false;
     if (registered.compare_exchange_strong(expected, true)) {
+        // Install crash handlers for SIGSEGV, SIGABRT, etc.
+        installCrashHandlers();
+
         std::atexit([]() {
             auto& state = TraceState::instance();
             if (!state.isFinalized()) {
@@ -292,6 +296,21 @@ void __inspector_var_init(const char* name, void* addr, int value) {
 
 void __inspector_var_update(const char* name, void* addr, int value) {
     __inspector_var_update_int(name, addr, &inspector::TYPE_INT, value);
+}
+
+// ---------------------------------------------------------------------------
+// Tier 5: Exception tracking
+// ---------------------------------------------------------------------------
+
+void __inspector_throw(const char* funcName, int line) {
+    inspector::TraceState::instance().recordThrow(funcName ? funcName : "<null>", line);
+}
+
+void __inspector_catch(const char* funcName, const char* typeName, int line) {
+    inspector::TraceState::instance().recordCatch(
+        funcName ? funcName : "<null>",
+        typeName ? typeName : "...",
+        line);
 }
 
 } // extern "C"
