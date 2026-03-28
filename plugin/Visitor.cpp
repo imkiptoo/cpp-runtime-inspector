@@ -99,11 +99,44 @@ bool InspectorVisitor::VisitVarDecl(clang::VarDecl* decl) {
     if (!decl->isLocalVarDecl())
         return true;
 
+    // Skip exception catch clause declarations
+    if (decl->isExceptionVariable())
+        return true;
+
+    // Skip variables declared in for-loop init expressions
+    // These cannot be instrumented because inserting text after them breaks the for syntax
+    const auto& parents = m_context.getParents(*decl);
+    for (const auto& parent : parents) {
+        if (const auto* declStmt = parent.get<clang::DeclStmt>()) {
+            // Check if this DeclStmt is the init part of a ForStmt
+            const auto& declStmtParents = m_context.getParents(*declStmt);
+            for (const auto& dsParent : declStmtParents) {
+                if (const auto* forStmt = dsParent.get<clang::ForStmt>()) {
+                    if (forStmt->getInit() == declStmt) {
+                        // This variable is in the for-loop init - skip it
+                        return true;
+                    }
+                }
+                // Also check for range-based for loops (CXXForRangeStmt)
+                if (dsParent.get<clang::CXXForRangeStmt>()) {
+                    // This variable is in a range-based for loop - skip it
+                    return true;
+                }
+            }
+        }
+    }
+
     clang::QualType type = decl->getType();
 
     // Check if type is supported
     if (!m_typeEncoder.isSupported(type))
         return true;
+
+    // Skip STL container types - their internals are library-specific
+    // and should be handled by the runtime STL encoders, not plugin instrumentation
+    if (m_typeEncoder.isStlContainer(type)) {
+        return true;
+    }
 
     // For composite types and pointers, ensure type descriptor is emitted
     TypeKind kind = m_typeEncoder.getTypeKind(type);
@@ -165,6 +198,24 @@ bool InspectorVisitor::VisitBinaryOperator(clang::BinaryOperator* op) {
     if (op->getOpcode() != clang::BO_Assign)
         return true;
 
+    // Skip if this expression is the initializer of a VarDecl
+    // to avoid conflict with VisitVarDecl's instrumentation
+    const auto& parents = m_context.getParents(*op);
+    for (const auto& parent : parents) {
+        if (parent.get<clang::VarDecl>()) {
+            return true;  // Skip - VisitVarDecl will handle this
+        }
+        // Also check if wrapped in an implicit cast that's a VarDecl initializer
+        if (const auto* castExpr = parent.get<clang::ImplicitCastExpr>()) {
+            const auto& castParents = m_context.getParents(*castExpr);
+            for (const auto& castParent : castParents) {
+                if (castParent.get<clang::VarDecl>()) {
+                    return true;  // Skip - VisitVarDecl will handle this
+                }
+            }
+        }
+    }
+
     // Get the LHS variable
     clang::Expr* lhs = op->getLHS()->IgnoreParenCasts();
     auto* ref = llvm::dyn_cast<clang::DeclRefExpr>(lhs);
@@ -193,6 +244,24 @@ bool InspectorVisitor::VisitCompoundAssignOperator(
     clang::CompoundAssignOperator* op) {
     if (!m_helpers.isInMainFile(op->getBeginLoc()))
         return true;
+
+    // Skip if this expression is the initializer of a VarDecl
+    // to avoid conflict with VisitVarDecl's instrumentation
+    const auto& parents = m_context.getParents(*op);
+    for (const auto& parent : parents) {
+        if (parent.get<clang::VarDecl>()) {
+            return true;  // Skip - VisitVarDecl will handle this
+        }
+        // Also check if wrapped in an implicit cast that's a VarDecl initializer
+        if (const auto* castExpr = parent.get<clang::ImplicitCastExpr>()) {
+            const auto& castParents = m_context.getParents(*castExpr);
+            for (const auto& castParent : castParents) {
+                if (castParent.get<clang::VarDecl>()) {
+                    return true;  // Skip - VisitVarDecl will handle this
+                }
+            }
+        }
+    }
 
     // Get the LHS variable
     clang::Expr* lhs = op->getLHS()->IgnoreParenCasts();
@@ -225,6 +294,24 @@ bool InspectorVisitor::VisitUnaryOperator(clang::UnaryOperator* op) {
     // Handle ++x, --x, x++, x--
     if (!op->isIncrementDecrementOp())
         return true;
+
+    // Skip if this expression is the initializer of a VarDecl
+    // to avoid conflict with VisitVarDecl's instrumentation
+    const auto& parents = m_context.getParents(*op);
+    for (const auto& parent : parents) {
+        if (parent.get<clang::VarDecl>()) {
+            return true;  // Skip - VisitVarDecl will handle this
+        }
+        // Also check if wrapped in an implicit cast that's a VarDecl initializer
+        if (const auto* castExpr = parent.get<clang::ImplicitCastExpr>()) {
+            const auto& castParents = m_context.getParents(*castExpr);
+            for (const auto& castParent : castParents) {
+                if (castParent.get<clang::VarDecl>()) {
+                    return true;  // Skip - VisitVarDecl will handle this
+                }
+            }
+        }
+    }
 
     clang::Expr* sub = op->getSubExpr()->IgnoreParenCasts();
     auto* ref = llvm::dyn_cast<clang::DeclRefExpr>(sub);
@@ -548,6 +635,46 @@ bool InspectorVisitor::VisitCXXDeleteExpr(clang::CXXDeleteExpr* expr) {
 
     m_rewriter.InsertTextBefore(expr->getBeginLoc(), prefix);
     m_rewriter.InsertTextAfterToken(expr->getEndLoc(), suffix);
+
+    return true;
+}
+
+bool InspectorVisitor::VisitCXXThrowExpr(clang::CXXThrowExpr* expr) {
+    if (!m_helpers.isInMainFile(expr->getBeginLoc()))
+        return true;
+
+    unsigned line = m_helpers.getLineNumber(expr->getBeginLoc());
+    std::string funcName = m_currentFunction.empty() ? "<unknown>" : m_currentFunction;
+
+    // Insert throw event before the throw expression
+    std::string call = "(__inspector_throw(\"" + funcName + "\", " + std::to_string(line) + "), ";
+    m_rewriter.InsertTextBefore(expr->getBeginLoc(), call);
+    m_rewriter.InsertTextAfterToken(expr->getEndLoc(), ")");
+
+    return true;
+}
+
+bool InspectorVisitor::VisitCXXCatchStmt(clang::CXXCatchStmt* stmt) {
+    if (!m_helpers.isInMainFile(stmt->getBeginLoc()))
+        return true;
+
+    unsigned line = m_helpers.getLineNumber(stmt->getBeginLoc());
+    std::string funcName = m_currentFunction.empty() ? "<unknown>" : m_currentFunction;
+
+    // Get exception type name
+    std::string typeName = "...";  // Default for catch(...)
+    if (stmt->getExceptionDecl()) {
+        typeName = stmt->getExceptionDecl()->getType().getAsString();
+    }
+
+    // Insert catch event at the beginning of the catch body
+    if (auto* body = stmt->getHandlerBlock()) {
+        if (auto* compound = llvm::dyn_cast<clang::CompoundStmt>(body)) {
+            std::string call = "__inspector_catch(\"" + funcName + "\", \"" +
+                               typeName + "\", " + std::to_string(line) + "); ";
+            m_rewriter.InsertTextAfterToken(compound->getLBracLoc(), "\n        " + call);
+        }
+    }
 
     return true;
 }

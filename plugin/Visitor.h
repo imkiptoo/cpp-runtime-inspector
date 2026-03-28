@@ -66,6 +66,12 @@ public:
     //! Visit delete expressions to track deallocations (Tier 3).
     bool VisitCXXDeleteExpr(clang::CXXDeleteExpr* expr);
 
+    //! Visit throw expressions to track exceptions (Tier 5).
+    bool VisitCXXThrowExpr(clang::CXXThrowExpr* expr);
+
+    //! Visit catch statements to track exception handling (Tier 5).
+    bool VisitCXXCatchStmt(clang::CXXCatchStmt* stmt);
+
 private:
     //! Check if current statement's parent is a CompoundStmt.
     bool hasCompoundStmtParent() const;
