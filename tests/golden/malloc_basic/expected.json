@@ -1,15 +1,80 @@
 {
-  "code": "// Basic malloc/free test\n// Requires the malloc shim to track C-style allocations\n\n#include <cstdlib>\n\nint main() {\n    int* p = static_cast<int*>(malloc(sizeof(int)));\n    *p = 42;\n    free(p);\n    return 0;\n}\n",
+  "code": "",
   "trace": [
     {
       "event": "call",
       "func_name": "main",
-      "line": 6,
-      "stack_to_render": [],
-      "heap": {},
       "globals": {},
-      "ordered_globals": []
+      "heap": {},
+      "line": 6,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 7,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "p": [
+              "C_ADDRESS",
+              "0x6000037c8020",
+              "int *",
+              "unknown"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "p": [
+              "C_ADDRESS",
+              "0x6000037c8020",
+              "int *",
+              "unknown"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p"
+          ]
+        }
+      ],
+      "stdout": ""
     }
-  ],
-  "memory_leaks": []
+  ]
 }

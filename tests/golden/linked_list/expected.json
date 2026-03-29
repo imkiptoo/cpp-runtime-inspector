@@ -1,15 +1,501 @@
 {
-  "code": "// Linked list construction test\n// Verify REF chains are visualized correctly\n\nstruct Node {\n    int value;\n    Node* next;\n};\n\nint main() {\n    // Create a simple linked list: 1 -> 2 -> 3 -> nullptr\n    Node* head = new Node{1, nullptr};\n    head->next = new Node{2, nullptr};\n    head->next->next = new Node{3, nullptr};\n\n    // Clean up\n    Node* current = head;\n    while (current != nullptr) {\n        Node* next = current->next;\n        delete current;\n        current = next;\n    }\n\n    return 0;\n}\n",
+  "code": "",
   "trace": [
     {
       "event": "call",
       "func_name": "main",
-      "line": 9,
-      "stack_to_render": [],
-      "heap": {},
       "globals": {},
-      "ordered_globals": []
+      "heap": {},
+      "line": 9,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              1
+            ],
+            [
+              "next",
+              [
+                "C_ADDRESS",
+                "0x0",
+                "struct Node *",
+                "null"
+              ]
+            ]
+          ]
+        ]
+      },
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "head": [
+              "REF",
+              1
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "head"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              1
+            ],
+            [
+              "next",
+              [
+                "REF",
+                2
+              ]
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              2
+            ],
+            [
+              "next",
+              [
+                "REF",
+                3
+              ]
+            ]
+          ]
+        ],
+        "3": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              3
+            ],
+            [
+              "next",
+              [
+                "C_ADDRESS",
+                "0x0",
+                "struct Node *",
+                "null"
+              ]
+            ]
+          ]
+        ]
+      },
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "current": [
+              "REF",
+              1
+            ],
+            "head": [
+              "REF",
+              1
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "head",
+            "current"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              1
+            ],
+            [
+              "next",
+              [
+                "REF",
+                2
+              ]
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              2
+            ],
+            [
+              "next",
+              [
+                "REF",
+                3
+              ]
+            ]
+          ]
+        ],
+        "3": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              3
+            ],
+            [
+              "next",
+              [
+                "C_ADDRESS",
+                "0x0",
+                "struct Node *",
+                "null"
+              ]
+            ]
+          ]
+        ]
+      },
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "current": [
+              "REF",
+              1
+            ],
+            "head": [
+              "REF",
+              1
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "head",
+            "current"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              1
+            ],
+            [
+              "next",
+              [
+                "REF",
+                2
+              ]
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              2
+            ],
+            [
+              "next",
+              [
+                "REF",
+                3
+              ]
+            ]
+          ]
+        ],
+        "3": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              3
+            ],
+            [
+              "next",
+              [
+                "C_ADDRESS",
+                "0x0",
+                "struct Node *",
+                "null"
+              ]
+            ]
+          ]
+        ]
+      },
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "current": [
+              "REF",
+              1
+            ],
+            "head": [
+              "REF",
+              1
+            ],
+            "next": [
+              "REF",
+              2
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "head",
+            "current",
+            "next"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "2": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              2
+            ],
+            [
+              "next",
+              [
+                "REF",
+                3
+              ]
+            ]
+          ]
+        ],
+        "3": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              3
+            ],
+            [
+              "next",
+              [
+                "C_ADDRESS",
+                "0x0",
+                "struct Node *",
+                "null"
+              ]
+            ]
+          ]
+        ]
+      },
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "current": [
+              "REF",
+              2
+            ],
+            "head": [
+              "REF",
+              1
+            ],
+            "next": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "head",
+            "current",
+            "next"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "3": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              3
+            ],
+            [
+              "next",
+              [
+                "C_ADDRESS",
+                "0x0",
+                "struct Node *",
+                "null"
+              ]
+            ]
+          ]
+        ]
+      },
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "current": [
+              "REF",
+              3
+            ],
+            "head": [
+              "REF",
+              1
+            ],
+            "next": [
+              "C_ADDRESS",
+              "0x0",
+              "struct Node *",
+              "null"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "head",
+            "current",
+            "next"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "current": [
+              "C_ADDRESS",
+              "0x0",
+              "struct Node *",
+              "null"
+            ],
+            "head": [
+              "REF",
+              1
+            ],
+            "next": [
+              "C_ADDRESS",
+              "0x0",
+              "struct Node *",
+              "null"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "head",
+            "current",
+            "next"
+          ]
+        }
+      ],
+      "stdout": ""
     }
-  ],
-  "memory_leaks": []
+  ]
 }
