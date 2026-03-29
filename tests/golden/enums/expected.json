@@ -36,7 +36,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": ["c"]
+          "ordered_varnames": [
+            "c"
+          ]
         }
       ],
       "stdout": ""
@@ -58,7 +60,10 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": ["c", "d"]
+          "ordered_varnames": [
+            "c",
+            "d"
+          ]
         }
       ],
       "stdout": ""
@@ -80,7 +85,10 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": ["c", "d"]
+          "ordered_varnames": [
+            "c",
+            "d"
+          ]
         }
       ],
       "stdout": ""

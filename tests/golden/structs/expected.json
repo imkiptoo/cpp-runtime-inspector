@@ -30,13 +30,22 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "p": ["C_STRUCT", "struct Point", {"x": 10, "y": 20}]
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": ["p"]
+          "ordered_varnames": [
+            "p"
+          ]
         }
       ],
       "stdout": ""
@@ -51,13 +60,22 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "p": ["C_STRUCT", "struct Point", {"x": 10, "y": 20}]
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": ["p"]
+          "ordered_varnames": [
+            "p"
+          ]
         }
       ],
       "stdout": ""

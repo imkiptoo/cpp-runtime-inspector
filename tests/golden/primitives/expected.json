@@ -29,12 +29,16 @@
       "ordered_globals": [],
       "stack_to_render": [
         {
-          "encoded_locals": {"a": 5},
+          "encoded_locals": {
+            "a": 5
+          },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": ["a"]
+          "ordered_varnames": [
+            "a"
+          ]
         }
       ],
       "stdout": ""
@@ -48,12 +52,18 @@
       "ordered_globals": [],
       "stack_to_render": [
         {
-          "encoded_locals": {"a": 5, "b": 3},
+          "encoded_locals": {
+            "a": 5,
+            "b": 3
+          },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": ["a", "b"]
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
         }
       ],
       "stdout": ""
@@ -67,12 +77,20 @@
       "ordered_globals": [],
       "stack_to_render": [
         {
-          "encoded_locals": {"a": 5, "b": 3, "sum": 8},
+          "encoded_locals": {
+            "a": 5,
+            "b": 3,
+            "sum": 8
+          },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": ["a", "b", "sum"]
+          "ordered_varnames": [
+            "a",
+            "b",
+            "sum"
+          ]
         }
       ],
       "stdout": ""
@@ -86,12 +104,20 @@
       "ordered_globals": [],
       "stack_to_render": [
         {
-          "encoded_locals": {"a": 5, "b": 3, "sum": 8},
+          "encoded_locals": {
+            "a": 5,
+            "b": 3,
+            "sum": 8
+          },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": ["a", "b", "sum"]
+          "ordered_varnames": [
+            "a",
+            "b",
+            "sum"
+          ]
         }
       ],
       "stdout": ""

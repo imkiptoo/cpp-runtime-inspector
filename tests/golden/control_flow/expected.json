@@ -1,233 +1,233 @@
 {
-    "code": "",
-    "trace": [
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
         {
-            "event": "call",
-            "func_name": "main",
-            "globals": {},
-            "heap": {},
-            "line": 8,
-            "ordered_globals": [],
-            "stack_to_render": [
-                {
-                    "encoded_locals": {},
-                    "frame_id": 0,
-                    "func_name": "main",
-                    "is_highlighted": true,
-                    "is_zombie": false,
-                    "ordered_varnames": []
-                }
-            ],
-            "stdout": ""
-        },
-        {
-            "event": "step_line",
-            "func_name": "main",
-            "globals": {},
-            "heap": {},
-            "line": 0,
-            "ordered_globals": [],
-            "stack_to_render": [
-                {
-                    "encoded_locals": {
-                        "a": 4
-                    },
-                    "frame_id": 0,
-                    "func_name": "main",
-                    "is_highlighted": true,
-                    "is_zombie": false,
-                    "ordered_varnames": [
-                        "a"
-                    ]
-                }
-            ],
-            "stdout": ""
-        },
-        {
-            "event": "step_line",
-            "func_name": "main",
-            "globals": {},
-            "heap": {},
-            "line": 0,
-            "ordered_globals": [],
-            "stack_to_render": [
-                {
-                    "encoded_locals": {
-                        "a": 4,
-                        "b": 5
-                    },
-                    "frame_id": 0,
-                    "func_name": "main",
-                    "is_highlighted": true,
-                    "is_zombie": false,
-                    "ordered_varnames": [
-                        "a",
-                        "b"
-                    ]
-                }
-            ],
-            "stdout": ""
-        },
-        {
-            "event": "call",
-            "func_name": "multiply",
-            "globals": {},
-            "heap": {},
-            "line": 3,
-            "ordered_globals": [],
-            "stack_to_render": [
-                {
-                    "encoded_locals": {
-                        "a": 4,
-                        "b": 5
-                    },
-                    "frame_id": 0,
-                    "func_name": "main",
-                    "is_highlighted": false,
-                    "is_zombie": false,
-                    "ordered_varnames": [
-                        "a",
-                        "b"
-                    ]
-                },
-                {
-                    "encoded_locals": {},
-                    "frame_id": 1,
-                    "func_name": "multiply",
-                    "is_highlighted": true,
-                    "is_zombie": false,
-                    "ordered_varnames": []
-                }
-            ],
-            "stdout": ""
-        },
-        {
-            "event": "step_line",
-            "func_name": "multiply",
-            "globals": {},
-            "heap": {},
-            "line": 0,
-            "ordered_globals": [],
-            "stack_to_render": [
-                {
-                    "encoded_locals": {
-                        "a": 4,
-                        "b": 5
-                    },
-                    "frame_id": 0,
-                    "func_name": "main",
-                    "is_highlighted": false,
-                    "is_zombie": false,
-                    "ordered_varnames": [
-                        "a",
-                        "b"
-                    ]
-                },
-                {
-                    "encoded_locals": {
-                        "result": 20
-                    },
-                    "frame_id": 1,
-                    "func_name": "multiply",
-                    "is_highlighted": true,
-                    "is_zombie": false,
-                    "ordered_varnames": [
-                        "result"
-                    ]
-                }
-            ],
-            "stdout": ""
-        },
-        {
-            "event": "return",
-            "func_name": "multiply",
-            "globals": {},
-            "heap": {},
-            "line": 5,
-            "ordered_globals": [],
-            "stack_to_render": [
-                {
-                    "encoded_locals": {
-                        "a": 4,
-                        "b": 5
-                    },
-                    "frame_id": 0,
-                    "func_name": "main",
-                    "is_highlighted": false,
-                    "is_zombie": false,
-                    "ordered_varnames": [
-                        "a",
-                        "b"
-                    ]
-                },
-                {
-                    "encoded_locals": {
-                        "result": 20
-                    },
-                    "frame_id": 1,
-                    "func_name": "multiply",
-                    "is_highlighted": true,
-                    "is_zombie": false,
-                    "ordered_varnames": [
-                        "result"
-                    ]
-                }
-            ],
-            "stdout": ""
-        },
-        {
-            "event": "step_line",
-            "func_name": "main",
-            "globals": {},
-            "heap": {},
-            "line": 0,
-            "ordered_globals": [],
-            "stack_to_render": [
-                {
-                    "encoded_locals": {
-                        "a": 4,
-                        "b": 5,
-                        "product": 20
-                    },
-                    "frame_id": 0,
-                    "func_name": "main",
-                    "is_highlighted": true,
-                    "is_zombie": false,
-                    "ordered_varnames": [
-                        "a",
-                        "b",
-                        "product"
-                    ]
-                }
-            ],
-            "stdout": ""
-        },
-        {
-            "event": "return",
-            "func_name": "main",
-            "globals": {},
-            "heap": {},
-            "line": 12,
-            "ordered_globals": [],
-            "stack_to_render": [
-                {
-                    "encoded_locals": {
-                        "a": 4,
-                        "b": 5,
-                        "product": 20
-                    },
-                    "frame_id": 0,
-                    "func_name": "main",
-                    "is_highlighted": true,
-                    "is_zombie": false,
-                    "ordered_varnames": [
-                        "a",
-                        "b",
-                        "product"
-                    ]
-                }
-            ],
-            "stdout": ""
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
         }
-    ]
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 4
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 4,
+            "b": 5
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "multiply",
+      "globals": {},
+      "heap": {},
+      "line": 3,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 4,
+            "b": 5
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "multiply",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "multiply",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 4,
+            "b": 5
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "result": 20
+          },
+          "frame_id": 1,
+          "func_name": "multiply",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "result"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "multiply",
+      "globals": {},
+      "heap": {},
+      "line": 5,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 4,
+            "b": 5
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "result": 20
+          },
+          "frame_id": 1,
+          "func_name": "multiply",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "result"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 4,
+            "b": 5,
+            "product": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "product"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 12,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 4,
+            "b": 5,
+            "product": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "product"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
 }
