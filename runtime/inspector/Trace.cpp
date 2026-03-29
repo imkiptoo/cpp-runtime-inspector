@@ -3,6 +3,7 @@
 
 #include "Trace.h"
 #include "Heap.h"
+#include "StlEncoders.h"
 
 #include <algorithm>
 #include <cstring>
@@ -135,6 +136,15 @@ Frame* TraceState::currentFrame() {
 
 void TraceState::emitStep(EventKind kind, const std::string& funcName,
                            int line) {
+    // Check event limit (Tier 6 resource limits)
+    if (m_eventLimitReached) {
+        return;  // Stop recording once limit is reached
+    }
+    if (m_steps.size() >= m_maxEvents) {
+        m_eventLimitReached = true;
+        return;
+    }
+
     TraceStep step;
     step.line = line;
     step.event = kind;
@@ -512,6 +522,65 @@ void TraceState::checkLeaks() {
             : "<untyped>";
         m_leakedAllocations.push_back({alloc->heap_id, typeName});
     }
+}
+
+EncodedValue TraceState::encodeValueAtAddress(const void* addr,
+                                               const TypeDescriptor* type) {
+    if (!type) {
+        return static_cast<long long>(0);
+    }
+
+    // Check if this is an STL container type
+    if (type->spelling) {
+        StlContainerKind stlKind = identifyStlContainer(type->spelling);
+
+        switch (stlKind) {
+        case StlContainerKind::Vector:
+            return encodeStdVector(addr, type->element_type, *this);
+
+        case StlContainerKind::String:
+            return encodeStdString(addr);
+
+        case StlContainerKind::Array:
+            return encodeStdArray(addr, type->element_type,
+                                  type->element_count, *this);
+
+        case StlContainerKind::Pair:
+            // For pair, we'd need first/second types - use struct encoding
+            return encodeStruct(addr, type);
+
+        case StlContainerKind::UniquePtr:
+            return encodeStdUniquePtr(addr, type->element_type, *this);
+
+        case StlContainerKind::SharedPtr:
+            return encodeStdSharedPtr(addr, type->element_type, *this);
+
+        case StlContainerKind::Optional:
+            return encodeStdOptional(addr, type->element_type, *this);
+
+        case StlContainerKind::Map:
+        case StlContainerKind::Set:
+            // Complex tree traversal - use placeholder for now
+            return encodeStdMap(addr, nullptr, nullptr, *this);
+
+        case StlContainerKind::None:
+        default:
+            // Not an STL container, use regular encoding
+            break;
+        }
+    }
+
+    return encodeValue(addr, type);
+}
+
+void TraceState::recordThrow(const std::string& funcName, int line) {
+    emitStep(EventKind::Throw, funcName, line);
+}
+
+void TraceState::recordCatch(const std::string& funcName,
+                              const std::string& typeName, int line) {
+    (void)typeName;  // For now, we just record the event
+    emitStep(EventKind::Catch, funcName, line);
 }
 
 } // namespace inspector

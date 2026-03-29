@@ -135,6 +135,8 @@ enum class EventKind {
     Call,
     Return,
     StepLine,
+    Throw,     //!< Exception thrown (Tier 5)
+    Catch,     //!< Exception caught (Tier 5)
     // Variable events are rolled into step_line in OPT format
 };
 
@@ -229,6 +231,10 @@ public:
     //! Recursively encode any value based on its type descriptor.
     EncodedValue encodeValue(const void* addr, const TypeDescriptor* type);
 
+    //! Encode a value at a given address (used by STL encoders).
+    //! This is a public wrapper for encodeValue that handles STL detection.
+    EncodedValue encodeValueAtAddress(const void* addr, const TypeDescriptor* type);
+
     //! Record a heap allocation.
     //! @return The assigned heap ID.
     int recordAlloc(void* ptr, size_t size, const TypeDescriptor* type,
@@ -251,6 +257,19 @@ public:
         return m_leakedAllocations;
     }
 
+    //! Record a throw expression (Tier 5).
+    void recordThrow(const std::string& funcName, int line);
+
+    //! Record entering a catch block (Tier 5).
+    void recordCatch(const std::string& funcName, const std::string& typeName, int line);
+
+    //! Set the maximum number of trace events (Tier 6 resource limits).
+    //! Default is 100000. When exceeded, recording stops.
+    void setMaxEvents(size_t maxEvents) { m_maxEvents = maxEvents; }
+
+    //! Check if event limit has been reached.
+    bool isEventLimitReached() const { return m_eventLimitReached; }
+
 private:
     TraceState() = default;
 
@@ -272,6 +291,10 @@ private:
 
     // Leaked allocations detected at exit (heap_id, type_name)
     std::vector<std::pair<int, std::string>> m_leakedAllocations;
+
+    // Resource limits (Tier 6)
+    size_t m_maxEvents = 100000;
+    bool m_eventLimitReached = false;
 };
 
 } // namespace inspector
