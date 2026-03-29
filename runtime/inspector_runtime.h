@@ -141,6 +141,16 @@ void __inspector_alloc_malloc(void* ptr, size_t size);
 void __inspector_dealloc_malloc(void* ptr);
 
 // ---------------------------------------------------------------------------
+// Tier 5: Exception tracking
+// ---------------------------------------------------------------------------
+
+//! Record a throw expression.
+void __inspector_throw(const char* funcName, int line);
+
+//! Record entering a catch block.
+void __inspector_catch(const char* funcName, const char* typeName, int line);
+
+// ---------------------------------------------------------------------------
 // Legacy compatibility (Tier 0)
 // ---------------------------------------------------------------------------
 
