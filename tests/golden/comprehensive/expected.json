@@ -1,0 +1,1170 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "count": 5
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "count": 5,
+            "pi": 3.14159
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "count": 5,
+            "pi": 3.14159
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 25,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "count": 5,
+            "letter": "A",
+            "pi": 3.14159
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "count": 5,
+            "letter": "A",
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pi": 3.14159
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter",
+            "p"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 33,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "count": 5,
+            "letter": "A",
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pi": 3.14159,
+            "rect": [
+              "C_STRUCT",
+              "struct Rectangle",
+              {
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter",
+            "p",
+            "rect"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "area",
+      "globals": {},
+      "heap": {},
+      "line": 13,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "count": 5,
+            "letter": "A",
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pi": 3.14159,
+            "rect": [
+              "C_STRUCT",
+              "struct Rectangle",
+              {
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter",
+            "p",
+            "rect"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "area",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "area",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "count": 5,
+            "letter": "A",
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pi": 3.14159,
+            "rect": [
+              "C_STRUCT",
+              "struct Rectangle",
+              {
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter",
+            "p",
+            "rect"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "width": 100
+          },
+          "frame_id": 1,
+          "func_name": "area",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "width"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "area",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "count": 5,
+            "letter": "A",
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pi": 3.14159,
+            "rect": [
+              "C_STRUCT",
+              "struct Rectangle",
+              {
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter",
+            "p",
+            "rect"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "height": 50,
+            "width": 100
+          },
+          "frame_id": 1,
+          "func_name": "area",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "width",
+            "height"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "area",
+      "globals": {},
+      "heap": {},
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "count": 5,
+            "letter": "A",
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pi": 3.14159,
+            "rect": [
+              "C_STRUCT",
+              "struct Rectangle",
+              {
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter",
+            "p",
+            "rect"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "height": 50,
+            "width": 100
+          },
+          "frame_id": 1,
+          "func_name": "area",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "width",
+            "height"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "area": 5000,
+            "count": 5,
+            "letter": "A",
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pi": 3.14159,
+            "rect": [
+              "C_STRUCT",
+              "struct Rectangle",
+              {
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter",
+            "p",
+            "rect",
+            "area"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Point",
+          [
+            [
+              "x",
+              0
+            ],
+            [
+              "y",
+              0
+            ]
+          ]
+        ]
+      },
+      "line": 42,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "area": 5000,
+            "count": 5,
+            "hp": [
+              "REF",
+              1
+            ],
+            "letter": "A",
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pi": 3.14159,
+            "rect": [
+              "C_STRUCT",
+              "struct Rectangle",
+              {
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter",
+            "p",
+            "rect",
+            "area",
+            "hp"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Point",
+          [
+            [
+              "x",
+              30
+            ],
+            [
+              "y",
+              40
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_ARRAY",
+          "int",
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "line": 47,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "area": 5000,
+            "arr": [
+              "REF",
+              2
+            ],
+            "count": 5,
+            "hp": [
+              "REF",
+              1
+            ],
+            "letter": "A",
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pi": 3.14159,
+            "rect": [
+              "C_STRUCT",
+              "struct Rectangle",
+              {
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter",
+            "p",
+            "rect",
+            "area",
+            "hp",
+            "arr"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Point",
+          [
+            [
+              "x",
+              30
+            ],
+            [
+              "y",
+              40
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_ARRAY",
+          "int",
+          [
+            1,
+            2,
+            3
+          ]
+        ]
+      },
+      "line": 53,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "area": 5000,
+            "arr": [
+              "REF",
+              2
+            ],
+            "count": 5,
+            "hp": [
+              "REF",
+              1
+            ],
+            "letter": "A",
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "p2": [
+              "REF_OFFSET",
+              2,
+              4
+            ],
+            "pi": 3.14159,
+            "rect": [
+              "C_STRUCT",
+              "struct Rectangle",
+              {
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter",
+            "p",
+            "rect",
+            "area",
+            "hp",
+            "arr",
+            "p2"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Point",
+          [
+            [
+              "x",
+              30
+            ],
+            [
+              "y",
+              40
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_ARRAY",
+          "int",
+          [
+            1,
+            2,
+            3
+          ]
+        ]
+      },
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "area": 5000,
+            "arr": [
+              "REF",
+              2
+            ],
+            "count": 5,
+            "hp": [
+              "REF",
+              1
+            ],
+            "letter": "A",
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "p2": [
+              "REF_OFFSET",
+              2,
+              4
+            ],
+            "pi": 3.14159,
+            "rect": [
+              "C_STRUCT",
+              "struct Rectangle",
+              {
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ],
+            "val": 2
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter",
+            "p",
+            "rect",
+            "area",
+            "hp",
+            "arr",
+            "p2",
+            "val"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Point",
+          [
+            [
+              "x",
+              30
+            ],
+            [
+              "y",
+              40
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_ARRAY",
+          "int",
+          [
+            1,
+            2,
+            3
+          ]
+        ]
+      },
+      "line": 57,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "area": 5000,
+            "arr": [
+              "REF",
+              2
+            ],
+            "count": 5,
+            "hp": [
+              "REF",
+              1
+            ],
+            "letter": "A",
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "p2": [
+              "REF_OFFSET",
+              2,
+              4
+            ],
+            "pi": 3.14159,
+            "rect": [
+              "C_STRUCT",
+              "struct Rectangle",
+              {
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ],
+            "refCount": [
+              "C_ADDRESS",
+              "0x16bb7ac68",
+              "int &",
+              "unknown"
+            ],
+            "val": 2
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter",
+            "p",
+            "rect",
+            "area",
+            "hp",
+            "arr",
+            "p2",
+            "val",
+            "refCount"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 64,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "active": true,
+            "area": 5000,
+            "arr": [
+              "REF",
+              2
+            ],
+            "count": 5,
+            "hp": [
+              "REF",
+              1
+            ],
+            "letter": "A",
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "p2": [
+              "REF_OFFSET",
+              2,
+              4
+            ],
+            "pi": 3.14159,
+            "rect": [
+              "C_STRUCT",
+              "struct Rectangle",
+              {
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ],
+            "refCount": [
+              "C_ADDRESS",
+              "0x16bb7ac68",
+              "int &",
+              "unknown"
+            ],
+            "val": 2
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "count",
+            "pi",
+            "active",
+            "letter",
+            "p",
+            "rect",
+            "area",
+            "hp",
+            "arr",
+            "p2",
+            "val",
+            "refCount"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}
