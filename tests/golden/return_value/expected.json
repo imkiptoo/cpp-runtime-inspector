@@ -1,0 +1,377 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 22,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "add",
+      "globals": {},
+      "heap": {},
+      "line": 4,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "add",
+      "globals": {},
+      "heap": {},
+      "line": 5,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "sum": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "multiply",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "sum": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "multiply",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "multiply",
+      "globals": {},
+      "heap": {},
+      "line": 9,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "sum": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "multiply",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "product": 10.0,
+            "sum": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum",
+            "product"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "makePoint",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "product": 10.0,
+            "sum": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum",
+            "product"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "makePoint",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "makePoint",
+      "globals": {},
+      "heap": {},
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "product": 10.0,
+            "sum": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum",
+            "product"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ]
+          },
+          "frame_id": 3,
+          "func_name": "makePoint",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "makePoint",
+      "globals": {},
+      "heap": {},
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "product": 10.0,
+            "sum": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum",
+            "product"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ]
+          },
+          "frame_id": 3,
+          "func_name": "makePoint",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 25,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "product": 10.0,
+            "sum": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum",
+            "product",
+            "p"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 27,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "product": 10.0,
+            "sum": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum",
+            "product",
+            "p"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}

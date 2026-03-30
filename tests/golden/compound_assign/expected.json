@@ -1,0 +1,97 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 4,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "x": 10
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "x": 6,
+            "y": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "x": 6,
+            "y": 7
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}
