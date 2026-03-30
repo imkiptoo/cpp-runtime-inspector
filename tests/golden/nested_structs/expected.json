@@ -1,0 +1,149 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 14,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 15,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "o": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "inner": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "x": -157548520,
+                    "y": 1
+                  }
+                ],
+                "z": -157548368
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "o"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "o": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "inner": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "x": -157548520,
+                    "y": 1
+                  }
+                ],
+                "z": -157548368
+              }
+            ],
+            "pi": [
+              "C_ADDRESS",
+              "0x16ef16c60",
+              "struct Inner *",
+              "unknown"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "o",
+            "pi"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "o": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "inner": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "x": -157548520,
+                    "y": 1
+                  }
+                ],
+                "z": -157548368
+              }
+            ],
+            "pi": [
+              "C_ADDRESS",
+              "0x16ef16c60",
+              "struct Inner *",
+              "unknown"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "o",
+            "pi"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}

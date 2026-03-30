@@ -1,0 +1,128 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "d": [
+              "C_STRUCT",
+              "class Derived",
+              {
+                "baseVal": 1,
+                "derivedVal": -157548368
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "d"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 21,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "bp": [
+              "C_ADDRESS",
+              "0x16bc2ac64",
+              "class Base *",
+              "unknown"
+            ],
+            "d": [
+              "C_STRUCT",
+              "class Derived",
+              {
+                "baseVal": 1,
+                "derivedVal": -157548368
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "d",
+            "bp"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "bp": [
+              "C_ADDRESS",
+              "0x16bc2ac64",
+              "class Base *",
+              "unknown"
+            ],
+            "d": [
+              "C_STRUCT",
+              "class Derived",
+              {
+                "baseVal": 1,
+                "derivedVal": -157548368
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "d",
+            "bp"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}
