@@ -1,0 +1,275 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 4,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "x": 42
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "x": 42,
+            "y": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 9,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ptr": [
+              "C_ADDRESS",
+              "0x16b5d6c68",
+              "int *",
+              "unknown"
+            ],
+            "x": 42,
+            "y": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ptr"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ptr": [
+              "C_ADDRESS",
+              "0x16b5d6c68",
+              "int *",
+              "unknown"
+            ],
+            "val": 42,
+            "x": 42,
+            "y": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ptr",
+            "val"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "null_ptr": [
+              "C_ADDRESS",
+              "0x0",
+              "int *",
+              "null"
+            ],
+            "ptr": [
+              "C_ADDRESS",
+              "0x16b5d6c64",
+              "int *",
+              "unknown"
+            ],
+            "val": 100,
+            "x": 42,
+            "y": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ptr",
+            "val",
+            "null_ptr"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 22,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "null_ptr": [
+              "C_ADDRESS",
+              "0x0",
+              "int *",
+              "null"
+            ],
+            "pptr": [
+              "C_ADDRESS",
+              "0x16b5d6c58",
+              "int **",
+              "unknown"
+            ],
+            "ptr": [
+              "C_ADDRESS",
+              "0x16b5d6c64",
+              "int *",
+              "unknown"
+            ],
+            "val": 100,
+            "x": 42,
+            "y": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ptr",
+            "val",
+            "null_ptr",
+            "pptr"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 25,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "null_ptr": [
+              "C_ADDRESS",
+              "0x0",
+              "int *",
+              "null"
+            ],
+            "pptr": [
+              "C_ADDRESS",
+              "0x16b5d6c58",
+              "int **",
+              "unknown"
+            ],
+            "ptr": [
+              "C_ADDRESS",
+              "0x16b5d6c64",
+              "int *",
+              "unknown"
+            ],
+            "val": 100,
+            "x": 42,
+            "y": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ptr",
+            "val",
+            "null_ptr",
+            "pptr"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}

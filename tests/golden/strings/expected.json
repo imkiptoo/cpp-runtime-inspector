@@ -1,0 +1,372 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 6,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "str1": "hello"
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "str1"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "str1": "hello",
+            "str2": "world"
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "str1",
+            "str2"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "len1": 5,
+            "str1": "hello",
+            "str2": "world"
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "str1",
+            "str2",
+            "len1"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "len1": 5,
+            "len2": 5,
+            "str1": "hello",
+            "str2": "world"
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "str1",
+            "str2",
+            "len1",
+            "len2"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "first": "h",
+            "len1": 5,
+            "len2": 5,
+            "str1": "hello",
+            "str2": "world"
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "str1",
+            "str2",
+            "len1",
+            "len2",
+            "first"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "first": "h",
+            "last": "o",
+            "len1": 5,
+            "len2": 5,
+            "str1": "hello",
+            "str2": "world"
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "str1",
+            "str2",
+            "len1",
+            "len2",
+            "first",
+            "last"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 25,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "empty": [
+              "C_ADDRESS",
+              "0x102c5f460",
+              "char*",
+              "unknown"
+            ],
+            "first": "h",
+            "last": "o",
+            "len1": 5,
+            "len2": 5,
+            "str1": "world",
+            "str2": "world"
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "str1",
+            "str2",
+            "len1",
+            "len2",
+            "first",
+            "last",
+            "empty"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "empty": [
+              "C_ADDRESS",
+              "0x102c5f460",
+              "char*",
+              "unknown"
+            ],
+            "empty_len": 0,
+            "first": "h",
+            "last": "o",
+            "len1": 5,
+            "len2": 5,
+            "str1": "world",
+            "str2": "world"
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "str1",
+            "str2",
+            "len1",
+            "len2",
+            "first",
+            "last",
+            "empty",
+            "empty_len"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 29,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "empty": [
+              "C_ADDRESS",
+              "0x102c5f460",
+              "char*",
+              "unknown"
+            ],
+            "empty_len": 0,
+            "first": "h",
+            "last": "o",
+            "len1": 5,
+            "len2": 5,
+            "null_str": [
+              "C_ADDRESS",
+              "0x0",
+              "char*",
+              "null"
+            ],
+            "str1": "world",
+            "str2": "world"
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "str1",
+            "str2",
+            "len1",
+            "len2",
+            "first",
+            "last",
+            "empty",
+            "empty_len",
+            "null_str"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 31,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "empty": [
+              "C_ADDRESS",
+              "0x102c5f460",
+              "char*",
+              "unknown"
+            ],
+            "empty_len": 0,
+            "first": "h",
+            "last": "o",
+            "len1": 5,
+            "len2": 5,
+            "null_str": [
+              "C_ADDRESS",
+              "0x0",
+              "char*",
+              "null"
+            ],
+            "str1": "world",
+            "str2": "world"
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "str1",
+            "str2",
+            "len1",
+            "len2",
+            "first",
+            "last",
+            "empty",
+            "empty_len",
+            "null_str"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}
