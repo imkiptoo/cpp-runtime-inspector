@@ -7,6 +7,78 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- **Tier 6 Implementation - COMPLETE** - Production polish
+  - Crash signal handlers (`runtime/inspector/Signals.cpp`)
+    - SIGSEGV, SIGABRT, SIGFPE, SIGBUS, SIGILL handling
+    - Async-signal-safe crash message output
+    - Trace emission before process termination
+  - Resource limits for protection
+    - Event count limit: default 100,000 events
+    - Output size limit: default 50MB with truncation
+    - `TraceState::setMaxEvents()` and `JsonEmitter::emit()` size parameter
+  - Sandboxing infrastructure (`sandbox/`)
+    - `Dockerfile` - Multi-stage build for minimal runtime image
+    - `run-traced.sh` - Entry point script with resource limits
+    - `seccomp-profile.json` - Syscall whitelist for security
+    - `docker-compose.yml` - Security-hardened container config
+  - Frontend adapter HTTP service (`frontend-adapter/`)
+    - `server.py` - Python HTTP server accepting C++ source
+    - POST /trace endpoint returns OPT-format JSON
+    - GET /health for service health checks
+    - CORS support for browser-based frontends
+  - CI/CD pipeline (`.github/workflows/ci.yml`)
+    - Build matrix: Clang 17/18/19 × Ubuntu 22.04/24.04
+    - Golden test suite execution
+    - Docker sandbox build and test
+    - Documentation check
+  - Documentation (`docs/`)
+    - `trace-format.md` - Complete OPT format specification
+    - `architecture.md` - System design and internals
+    - `supported-language-subset.md` - Supported C++ features
+    - `extending-stl-encoders.md` - How to add new containers
+    - `frontend-integration.md` - Frontend consumption guide
+  - Additional golden tests
+    - `deep_recursion` - Stack frame handling
+    - `large_output` - Event handling
+    - `many_variables` - Variable tracking
+    - `mixed_types` - Type combination handling
+  - Crash handler test script (`scripts/test-crash-handler.sh`)
+
+- **Tier 5 Implementation** - Control flow special cases
+  - Compound assignment operator tracking (`+=`, `-=`, `*=`, `/=`, etc.)
+    - `VisitCompoundAssignOperator()` in Visitor.cpp
+  - Pre/post increment/decrement tracking (`++x`, `x++`, `--x`, `x--`)
+    - `VisitUnaryOperator()` for increment/decrement ops
+    - Proper handling when used in variable initializers
+  - Exception tracking
+    - `VisitCXXThrowExpr()` for throw expression instrumentation
+    - `VisitCXXCatchStmt()` for catch block entry tracking
+    - `__inspector_throw()` and `__inspector_catch()` runtime hooks
+    - New event types: `"exception"` and `"catch"`
+  - Fixed exception variable instrumentation (skip catch clause parameters)
+  - Fixed variable initializer conflicts with operator instrumentation
+  - Golden tests for compound_assign, increment, exceptions, return_value, globals
+
+- **Tier 4 Implementation** - Templates and STL support
+  - STL container encoders (`runtime/inspector/StlEncoders.cpp`)
+    - `std::vector<T>` - encodes elements as array
+    - `std::string` - SSO-aware string content extraction
+    - `std::array<T, N>` - fixed-size array encoding
+    - `std::pair<T1, T2>` - tuple-like encoding
+    - `std::unique_ptr<T>` - smart pointer with heap resolution
+    - `std::shared_ptr<T>` - smart pointer encoding
+    - `std::optional<T>` - optional value encoding (placeholder)
+    - `std::map<K, V>` / `std::set<T>` - placeholder for tree traversal
+  - STL container detection via regex pattern matching on type names
+  - Lambda support with friendly naming (`<lambda#1>`, etc.)
+  - Template instantiation type descriptor generation
+  - `TypeEncoder::isStlContainer()`, `isLambda()`, `getLambdaFriendlyName()`
+  - `TypeEncoder::getStlElementType()` for extracting container element types
+  - `TraceState::encodeValueAtAddress()` for STL-aware encoding
+  - Golden tests for STL (stl_vector, stl_string, stl_unique_ptr)
+  - Golden tests for lambdas and template functions
+  - Additional edge case tests (pointer_arithmetic, nested_structs, inheritance, multi_function)
+
 - **Tier 3 Implementation** - Heap and pointer semantics
   - Heap allocation tracking with interval tree (sorted vector implementation)
   - `CXXNewExpr` instrumentation for `new` and `new[]` expressions
