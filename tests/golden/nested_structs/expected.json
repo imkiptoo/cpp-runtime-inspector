@@ -38,11 +38,11 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "x": -157548520,
-                    "y": 1
+                    "x": 0,
+                    "y": 0
                   }
                 ],
-                "z": -157548368
+                "z": 0
               }
             ]
           },
@@ -75,18 +75,18 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "x": -157548520,
-                    "y": 1
+                    "x": 0,
+                    "y": 0
                   }
                 ],
-                "z": -157548368
+                "z": 0
               }
             ],
             "pi": [
               "C_ADDRESS",
-              "0x16ef16c60",
+              "0x7ffd6172a110",
               "struct Inner *",
-              "unknown"
+              "stack"
             ]
           },
           "frame_id": 0,
@@ -119,18 +119,18 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "x": -157548520,
-                    "y": 1
+                    "x": 0,
+                    "y": 0
                   }
                 ],
-                "z": -157548368
+                "z": 0
               }
             ],
             "pi": [
               "C_ADDRESS",
-              "0x16ef16c60",
+              "0x7ffd6172a110",
               "struct Inner *",
-              "unknown"
+              "stack"
             ]
           },
           "frame_id": 0,

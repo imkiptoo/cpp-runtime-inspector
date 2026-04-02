@@ -34,8 +34,8 @@
               "C_STRUCT",
               "class Derived",
               {
-                "baseVal": 1,
-                "derivedVal": -157548368
+                "baseVal": 0,
+                "derivedVal": 0
               }
             ]
           },
@@ -62,16 +62,16 @@
           "encoded_locals": {
             "bp": [
               "C_ADDRESS",
-              "0x16bc2ac64",
+              "0x7ffc96f73084",
               "class Base *",
-              "unknown"
+              "stack"
             ],
             "d": [
               "C_STRUCT",
               "class Derived",
               {
-                "baseVal": 1,
-                "derivedVal": -157548368
+                "baseVal": 0,
+                "derivedVal": 0
               }
             ]
           },
@@ -99,16 +99,16 @@
           "encoded_locals": {
             "bp": [
               "C_ADDRESS",
-              "0x16bc2ac64",
+              "0x7ffc96f73084",
               "class Base *",
-              "unknown"
+              "stack"
             ],
             "d": [
               "C_STRUCT",
               "class Derived",
               {
-                "baseVal": 1,
-                "derivedVal": -157548368
+                "baseVal": 0,
+                "derivedVal": 0
               }
             ]
           },

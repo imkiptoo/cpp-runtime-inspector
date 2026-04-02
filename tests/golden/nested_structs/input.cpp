@@ -12,7 +12,7 @@ struct Outer {
 };
 
 int main() {
-    Outer o;
+    Outer o{};
     o.inner.x = 1;
     o.inner.y = 2;
     o.z = 3;

@@ -153,9 +153,18 @@ run_test() {
     fi
 
     # Pass 3: Link
+    # On Linux, -rdynamic exports the executable's symbols so an LD_PRELOAD
+    # shim (libinspector_malloc_shim.so) can resolve __inspector_alloc_malloc
+    # back to the runtime statically linked into the test binary. macOS dyld
+    # exports symbols by default, so the flag is unnecessary there.
+    LINK_EXTRA=()
+    if [[ "$(uname)" != "Darwin" ]]; then
+        LINK_EXTRA+=(-rdynamic)
+    fi
     if ! "${CLANGXX}" \
         "${workdir}/test.o" \
         "${RUNTIME}" \
+        "${LINK_EXTRA[@]}" \
         -o "${workdir}/test" 2>"${workdir}/link.log"; then
         echo "FAIL (linking)"
         cat "${workdir}/link.log"

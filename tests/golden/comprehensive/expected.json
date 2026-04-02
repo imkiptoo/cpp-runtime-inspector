@@ -1050,9 +1050,9 @@
             ],
             "refCount": [
               "C_ADDRESS",
-              "0x16bb7ac68",
+              "0x7ffec63c2e28",
               "int &",
-              "unknown"
+              "stack"
             ],
             "val": 2
           },
@@ -1138,9 +1138,9 @@
             ],
             "refCount": [
               "C_ADDRESS",
-              "0x16bb7ac68",
+              "0x7ffec63c2e28",
               "int &",
-              "unknown"
+              "stack"
             ],
             "val": 2
           },

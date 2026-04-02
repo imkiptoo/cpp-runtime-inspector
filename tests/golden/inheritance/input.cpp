@@ -14,7 +14,7 @@ public:
 };
 
 int main() {
-    Derived d;
+    Derived d{};
     d.baseVal = 10;
     d.derivedVal = 20;
 

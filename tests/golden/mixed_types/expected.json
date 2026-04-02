@@ -286,9 +286,9 @@
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16d77ec50",
+              "0x7ffe91538378",
               "int *",
-              "unknown"
+              "stack"
             ]
           },
           "frame_id": 0,
@@ -343,15 +343,15 @@
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16d77ec50",
+              "0x7ffe91538378",
               "int *",
-              "unknown"
+              "stack"
             ],
             "ref": [
               "C_ADDRESS",
-              "0x16d77ec50",
+              "0x7ffe91538378",
               "int &",
-              "unknown"
+              "stack"
             ]
           },
           "frame_id": 0,
@@ -407,15 +407,15 @@
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16d77ec50",
+              "0x7ffe91538378",
               "int *",
-              "unknown"
+              "stack"
             ],
             "ref": [
               "C_ADDRESS",
-              "0x16d77ec50",
+              "0x7ffe91538378",
               "int &",
-              "unknown"
+              "stack"
             ]
           },
           "frame_id": 0,

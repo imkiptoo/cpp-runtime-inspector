@@ -1,11 +1,289 @@
 {
   "code": "",
+  "memory_leaks": [
+    [
+      "leaked",
+      1,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      2,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      15,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      3,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      79,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      84,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      7,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      8,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      9,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      14,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      16,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      17,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      34,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      35,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      36,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      37,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      39,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      41,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      45,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      82,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      40,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      23,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      24,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      25,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      26,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      27,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      28,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      29,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      30,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      31,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      32,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      33,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      66,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      67,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      68,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      69,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      70,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      71,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      72,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      73,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      74,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      75,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      83,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      85,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      86,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      87,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      49,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      50,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      51,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      52,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      53,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      54,
+      "<untyped>"
+    ]
+  ],
   "trace": [
     {
       "event": "call",
       "func_name": "main",
       "globals": {},
-      "heap": {},
+      "heap": {
+        "1": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ]
+      },
       "line": 6,
       "ordered_globals": [],
       "stack_to_render": [
@@ -24,17 +302,86 @@
       "event": "step_line",
       "func_name": "main",
       "globals": {},
-      "heap": {},
+      "heap": {
+        "1": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "10": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "11": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "12": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "13": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "14": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "15": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "16": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "17": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "7": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "8": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "9": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ]
+      },
       "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "p": [
-              "C_ADDRESS",
-              "0x6000037c8020",
-              "int *",
-              "unknown"
+              "REF",
+              11
             ]
           },
           "frame_id": 0,
@@ -52,17 +399,151 @@
       "event": "return",
       "func_name": "main",
       "globals": {},
-      "heap": {},
+      "heap": {
+        "1": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "12": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "13": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "14": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "15": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "16": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "17": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "18": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "24": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "25": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "26": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "27": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "34": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "35": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "36": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "37": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "38": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "39": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "40": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "41": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "42": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "48": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "7": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "8": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "9": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ]
+      },
       "line": 10,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "p": [
-              "C_ADDRESS",
-              "0x6000037c8020",
-              "int *",
-              "unknown"
+              "REF",
+              11
             ]
           },
           "frame_id": 0,
