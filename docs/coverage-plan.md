@@ -8,11 +8,11 @@ The audit that produced this plan is summarized in
 [`supported-language-subset.md`](supported-language-subset.md). The
 five-tier structure below sorts work by cost, not by importance.
 
-## Tier 1 — Tests for already-supported features (~1 day)
+## Tier 1 — Tests for already-supported features (~1 day) — **DONE**
 
 The plugin and runtime already understand these constructs; we just
-have no golden test that exercises them. Each item below should become
-a single directory under `tests/golden/` with `input.cpp` plus an
+have no golden test that exercises them. Each item below has a
+directory under `tests/golden/` with `input.cpp` plus an
 `expected.json` produced by `scripts/update-expected.sh`.
 
 - `overloading` — same name, different signatures
@@ -32,6 +32,46 @@ a single directory under `tests/golden/` with `input.cpp` plus an
 - `rethrow` — `catch (...) { throw; }`
 - `mutual_recursion` — `is_even`/`is_odd` calling each other
 - `argc_argv` — read program arguments
+
+### Caveats surfaced by the new tests
+
+These are pre-existing instrumenter limitations the new tests
+*expose* but do not *cause*. They are tracked under their natural
+tier and do not block Tier 1 closure.
+
+- `static_members`: `++this->self` inside `bump()` does not update
+  `a.self` / `b.self` in the trace. The visitor handles `BinaryOperator`
+  / `UnaryOperator` whose LHS is a `DeclRefExpr`, but a write through
+  `this` is a `MemberExpr`, which is not instrumented. → Tier 3
+  (method-body / `this` tracking).
+- `structured_bindings`: each `BindingDecl` is captured, but the
+  source `std::pair p` is skipped because pair has no runtime
+  encoder yet. → Tier 2 (`std::optional` / `std::variant` /
+  associative-container encoders include richer pair handling).
+- `constexpr`: function bodies are deliberately untraced
+  (instrumenting them would break the constexpr contract). The
+  trace still shows compile-time-evaluated values and the runtime
+  result of constexpr functions called with non-constexpr arguments.
+  Not a gap; a design choice.
+
+### Plugin / runtime fixes Tier 1 required
+
+- `Hooks` and `TraceState` now take `const void* addr` so `const`
+  locals can be captured.
+- `TraverseFunctionDecl` (and `CXXMethodDecl` / `Constructor` /
+  `Destructor` / `ConversionDecl`) skip constexpr bodies.
+- `ensureCompoundBody` advances past a trailing `;` before placing
+  the closing brace; the `__inspector_leave` / `__inspector_throw`
+  / operator wrappers use `InsertAfter=true` so they sit *inside*
+  any synthetic braces.
+- `DecompositionDecl` is unrolled into one `__inspector_var_init`
+  per `BindingDecl`.
+- `VisitCXXForRangeStmt` injects an init call for the loop variable
+  at the top of each iteration body.
+- `VisitFunctionDecl` and `findEnclosingFunctionName` use
+  `getQualifiedNameAsString()` so `func_name` shows
+  `math::square`, `Counter::bump`, `Box::get`, etc.
+- Test harness honors a per-test `.args` file.
 
 Definition of done: 17 new green goldens, total suite ≥ 51 tests, two
 consecutive `run-golden-tests.sh` runs pass with no diff.
