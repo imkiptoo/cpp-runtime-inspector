@@ -88,7 +88,7 @@
     },
     {
       "event": "call",
-      "func_name": "bump",
+      "func_name": "Counter::bump",
       "globals": {},
       "heap": {},
       "line": 8,
@@ -123,7 +123,7 @@
         {
           "encoded_locals": {},
           "frame_id": 1,
-          "func_name": "bump",
+          "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -133,7 +133,7 @@
     },
     {
       "event": "return",
-      "func_name": "bump",
+      "func_name": "Counter::bump",
       "globals": {},
       "heap": {},
       "line": 11,
@@ -170,7 +170,7 @@
             "total": 1
           },
           "frame_id": 1,
-          "func_name": "bump",
+          "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
@@ -182,7 +182,7 @@
     },
     {
       "event": "call",
-      "func_name": "bump",
+      "func_name": "Counter::bump",
       "globals": {},
       "heap": {},
       "line": 8,
@@ -217,7 +217,7 @@
         {
           "encoded_locals": {},
           "frame_id": 2,
-          "func_name": "bump",
+          "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -227,7 +227,7 @@
     },
     {
       "event": "return",
-      "func_name": "bump",
+      "func_name": "Counter::bump",
       "globals": {},
       "heap": {},
       "line": 11,
@@ -264,7 +264,7 @@
             "total": 2
           },
           "frame_id": 2,
-          "func_name": "bump",
+          "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
@@ -276,7 +276,7 @@
     },
     {
       "event": "call",
-      "func_name": "bump",
+      "func_name": "Counter::bump",
       "globals": {},
       "heap": {},
       "line": 8,
@@ -311,7 +311,7 @@
         {
           "encoded_locals": {},
           "frame_id": 3,
-          "func_name": "bump",
+          "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -321,7 +321,7 @@
     },
     {
       "event": "return",
-      "func_name": "bump",
+      "func_name": "Counter::bump",
       "globals": {},
       "heap": {},
       "line": 11,
@@ -358,7 +358,7 @@
             "total": 3
           },
           "frame_id": 3,
-          "func_name": "bump",
+          "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
@@ -370,7 +370,7 @@
     },
     {
       "event": "call",
-      "func_name": "globalTotal",
+      "func_name": "Counter::globalTotal",
       "globals": {},
       "heap": {},
       "line": 13,
@@ -405,7 +405,7 @@
         {
           "encoded_locals": {},
           "frame_id": 4,
-          "func_name": "globalTotal",
+          "func_name": "Counter::globalTotal",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -415,7 +415,7 @@
     },
     {
       "event": "return",
-      "func_name": "globalTotal",
+      "func_name": "Counter::globalTotal",
       "globals": {},
       "heap": {},
       "line": 13,
@@ -450,7 +450,7 @@
         {
           "encoded_locals": {},
           "frame_id": 4,
-          "func_name": "globalTotal",
+          "func_name": "Counter::globalTotal",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []

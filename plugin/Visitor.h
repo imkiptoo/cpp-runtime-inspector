@@ -65,6 +65,9 @@ public:
     //! Visit for statements to ensure compound bodies.
     bool VisitForStmt(clang::ForStmt* stmt);
 
+    //! Visit range-based for loops to instrument the loop variable.
+    bool VisitCXXForRangeStmt(clang::CXXForRangeStmt* stmt);
+
     //! Visit while statements to ensure compound bodies.
     bool VisitWhileStmt(clang::WhileStmt* stmt);
 
@@ -89,6 +92,9 @@ private:
 
     //! Generate the appropriate hook call for a variable declaration.
     std::string generateVarInitCall(clang::VarDecl* decl) const;
+
+    //! Like generateVarInitCall but for a structured-binding BindingDecl.
+    std::string generateInitCallForBinding(clang::BindingDecl* binding) const;
 
     //! Generate the appropriate hook call for a variable update.
     std::string generateVarUpdateCall(clang::VarDecl* decl) const;

@@ -81,7 +81,10 @@ bool InspectorVisitor::VisitFunctionDecl(clang::FunctionDecl* decl) {
     if (!compound)
         return true;
 
-    std::string funcName = decl->getNameAsString();
+    // Use qualified name so namespace and class scopes are visible:
+    // math::square, Counter::bump. Free functions in the global namespace
+    // are unchanged.
+    std::string funcName = decl->getQualifiedNameAsString();
     m_currentFunction = funcName;
 
     // Use the first top-level function as the insertion point for type descriptors
@@ -137,12 +140,30 @@ bool InspectorVisitor::VisitVarDecl(clang::VarDecl* decl) {
     if (decl->isExceptionVariable())
         return true;
 
-    // Structured bindings (DecompositionDecl) and the BindingDecls they
-    // produce don't have a regular name + lvalue we can take the address of
-    // safely. Skip them: the program runs unchanged but the bindings won't
-    // appear in the trace. Proper support is tracked in Tier 3.
-    if (llvm::isa<clang::DecompositionDecl>(decl))
+    // Structured bindings: emit one __inspector_var_init per BindingDecl.
+    // The DecompositionDecl itself has no name, so we inject after the
+    // statement's last token (the initializer's end). Each binding is a
+    // valid lvalue that supports unary &.
+    if (auto* decomp = llvm::dyn_cast<clang::DecompositionDecl>(decl)) {
+        std::string injected;
+        for (clang::BindingDecl* binding : decomp->bindings()) {
+            clang::QualType bt = binding->getType();
+            if (!m_typeEncoder.isSupported(bt))
+                continue;
+            if (m_typeEncoder.isStlContainer(bt))
+                continue;
+            TypeKind k = m_typeEncoder.getTypeKind(bt);
+            if (k == TypeKind::Struct || k == TypeKind::Union ||
+                k == TypeKind::Array || k == TypeKind::Enum ||
+                k == TypeKind::Pointer || k == TypeKind::Reference) {
+                ensureTypeDescriptor(bt);
+            }
+            injected += generateInitCallForBinding(binding);
+        }
+        if (!injected.empty())
+            m_rewriter.InsertTextAfterToken(decl->getEndLoc(), injected);
         return true;
+    }
 
     // Skip variables declared in for-loop init expressions
     // These cannot be instrumented because inserting text after them breaks the for syntax
@@ -437,6 +458,51 @@ bool InspectorVisitor::VisitForStmt(clang::ForStmt* stmt) {
     return true;
 }
 
+bool InspectorVisitor::VisitCXXForRangeStmt(clang::CXXForRangeStmt* stmt) {
+    if (!m_helpers.isInMainFile(stmt->getBeginLoc()))
+        return true;
+
+    clang::Stmt* body = stmt->getBody();
+    if (!body)
+        return true;
+
+    bool wasCompound = llvm::isa<clang::CompoundStmt>(body);
+    if (!wasCompound)
+        m_helpers.ensureCompoundBody(body);
+
+    clang::VarDecl* loopVar = stmt->getLoopVariable();
+    if (!loopVar || !m_typeEncoder.isSupported(loopVar->getType()))
+        return true;
+    if (m_typeEncoder.isStlContainer(loopVar->getType()))
+        return true;
+
+    clang::QualType type = loopVar->getType();
+    TypeKind kind = m_typeEncoder.getTypeKind(type);
+    if (kind == TypeKind::Struct || kind == TypeKind::Union ||
+        kind == TypeKind::Array || kind == TypeKind::Enum ||
+        kind == TypeKind::Pointer || kind == TypeKind::Reference) {
+        ensureTypeDescriptor(type);
+    }
+
+    // generateVarInitCall produces "; __inspector_var_init(...)". We're
+    // inserting at the start of the body, so we want a leading space and
+    // a trailing ';'.
+    std::string call = generateVarInitCall(loopVar);
+    if (!call.empty() && call.front() == ';')
+        call.erase(0, 1); // drop leading ';'
+    std::string injected = " " + call + "; ";
+
+    if (wasCompound) {
+        auto* compound = llvm::cast<clang::CompoundStmt>(body);
+        m_rewriter.InsertTextAfterToken(compound->getLBracLoc(), injected);
+    } else {
+        m_rewriter.InsertText(body->getBeginLoc(), injected,
+                              /*InsertAfter=*/true);
+    }
+
+    return true;
+}
+
 bool InspectorVisitor::VisitWhileStmt(clang::WhileStmt* stmt) {
     if (!m_helpers.isInMainFile(stmt->getBeginLoc()))
         return true;
@@ -451,7 +517,7 @@ std::string InspectorVisitor::findEnclosingFunctionName(clang::Stmt* stmt) const
     const auto& parents = m_context.getParents(*stmt);
     for (const auto& parent : parents) {
         if (const auto* fn = parent.get<clang::FunctionDecl>())
-            return fn->getNameAsString();
+            return fn->getQualifiedNameAsString();
         if (const auto* parentStmt = parent.get<clang::Stmt>())
             return findEnclosingFunctionName(
                 const_cast<clang::Stmt*>(parentStmt));
@@ -485,6 +551,46 @@ std::string InspectorVisitor::generateVarInitCall(clang::VarDecl* decl) const {
            << varName << ", " << typeRef << ", " << value << ", " << line << ")";
     }
 
+    return ss.str();
+}
+
+std::string InspectorVisitor::generateInitCallForBinding(
+    clang::BindingDecl* binding) const {
+    clang::QualType type = binding->getType();
+    std::string varName = binding->getNameAsString();
+    std::string suffix = m_typeEncoder.getHookSuffix(type);
+    unsigned line = m_helpers.getLineNumber(binding->getLocation());
+    TypeKind kind = m_typeEncoder.getTypeKind(type);
+
+    std::ostringstream ss;
+    if (kind == TypeKind::Int && type->isSpecificBuiltinType(clang::BuiltinType::Int)) {
+        ss << "; __inspector_var_init(\"" << varName << "\", &" << varName
+           << ", " << varName << ")";
+    } else if (kind == TypeKind::Struct || kind == TypeKind::Union ||
+               kind == TypeKind::Array) {
+        std::string typeRef = m_typeEncoder.getDescriptorRef(type);
+        ss << "; __inspector_var_init_" << suffix << "(\"" << varName
+           << "\", &" << varName << ", " << typeRef << ", " << line << ")";
+    } else {
+        // Reuse the value-expr scheme. Bindings have no VarDecl, so we
+        // inline the cast logic here.
+        std::string value;
+        switch (kind) {
+        case TypeKind::Int:    value = "(long long)" + varName; break;
+        case TypeKind::UInt:   value = "(unsigned long long)" + varName; break;
+        case TypeKind::Float:  value = "(double)" + varName; break;
+        case TypeKind::Bool:   value = varName; break;
+        case TypeKind::Char:   value = "(int)" + varName; break;
+        case TypeKind::Pointer:   value = "(const void*)" + varName; break;
+        case TypeKind::Reference: value = "(const void*)&" + varName; break;
+        case TypeKind::Enum:   value = "(long long)" + varName; break;
+        default:               value = varName; break;
+        }
+        std::string typeRef = m_typeEncoder.getDescriptorRef(type);
+        ss << "; __inspector_var_init_" << suffix << "(\"" << varName
+           << "\", &" << varName << ", " << typeRef << ", " << value
+           << ", " << line << ")";
+    }
     return ss.str();
 }
 

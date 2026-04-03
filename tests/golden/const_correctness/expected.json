@@ -165,7 +165,7 @@
     },
     {
       "event": "call",
-      "func_name": "value",
+      "func_name": "Counter::value",
       "globals": {},
       "heap": {},
       "line": 6,
@@ -196,7 +196,7 @@
         {
           "encoded_locals": {},
           "frame_id": 2,
-          "func_name": "value",
+          "func_name": "Counter::value",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -206,7 +206,7 @@
     },
     {
       "event": "return",
-      "func_name": "value",
+      "func_name": "Counter::value",
       "globals": {},
       "heap": {},
       "line": 6,
@@ -237,7 +237,7 @@
         {
           "encoded_locals": {},
           "frame_id": 2,
-          "func_name": "value",
+          "func_name": "Counter::value",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []

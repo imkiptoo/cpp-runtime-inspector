@@ -67,6 +67,81 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "sum": 0,
+            "x": 10
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum",
+            "x"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "sum": 10,
+            "x": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum",
+            "x"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "sum": 30,
+            "x": 30
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum",
+            "x"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
       "event": "return",
       "func_name": "main",
       "globals": {},
@@ -76,14 +151,16 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "sum": 60
+            "sum": 60,
+            "x": 30
           },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
-            "sum"
+            "sum",
+            "x"
           ]
         }
       ],

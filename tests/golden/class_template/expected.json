@@ -51,7 +51,7 @@
     },
     {
       "event": "call",
-      "func_name": "set",
+      "func_name": "Box::set",
       "globals": {},
       "heap": {},
       "line": 8,
@@ -78,7 +78,7 @@
         {
           "encoded_locals": {},
           "frame_id": 1,
-          "func_name": "set",
+          "func_name": "Box::set",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -88,7 +88,7 @@
     },
     {
       "event": "return",
-      "func_name": "set",
+      "func_name": "Box::set",
       "globals": {},
       "heap": {},
       "line": 8,
@@ -115,7 +115,7 @@
         {
           "encoded_locals": {},
           "frame_id": 1,
-          "func_name": "set",
+          "func_name": "Box::set",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -125,7 +125,7 @@
     },
     {
       "event": "call",
-      "func_name": "get",
+      "func_name": "Box::get",
       "globals": {},
       "heap": {},
       "line": 7,
@@ -152,7 +152,7 @@
         {
           "encoded_locals": {},
           "frame_id": 2,
-          "func_name": "get",
+          "func_name": "Box::get",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -162,7 +162,7 @@
     },
     {
       "event": "return",
-      "func_name": "get",
+      "func_name": "Box::get",
       "globals": {},
       "heap": {},
       "line": 7,
@@ -189,7 +189,7 @@
         {
           "encoded_locals": {},
           "frame_id": 2,
-          "func_name": "get",
+          "func_name": "Box::get",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -269,7 +269,7 @@
     },
     {
       "event": "call",
-      "func_name": "set",
+      "func_name": "Box::set",
       "globals": {},
       "heap": {},
       "line": 8,
@@ -306,7 +306,7 @@
         {
           "encoded_locals": {},
           "frame_id": 3,
-          "func_name": "set",
+          "func_name": "Box::set",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -316,7 +316,7 @@
     },
     {
       "event": "return",
-      "func_name": "set",
+      "func_name": "Box::set",
       "globals": {},
       "heap": {},
       "line": 8,
@@ -353,7 +353,7 @@
         {
           "encoded_locals": {},
           "frame_id": 3,
-          "func_name": "set",
+          "func_name": "Box::set",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -363,7 +363,7 @@
     },
     {
       "event": "call",
-      "func_name": "get",
+      "func_name": "Box::get",
       "globals": {},
       "heap": {},
       "line": 7,
@@ -400,7 +400,7 @@
         {
           "encoded_locals": {},
           "frame_id": 4,
-          "func_name": "get",
+          "func_name": "Box::get",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -410,7 +410,7 @@
     },
     {
       "event": "return",
-      "func_name": "get",
+      "func_name": "Box::get",
       "globals": {},
       "heap": {},
       "line": 7,
@@ -447,7 +447,7 @@
         {
           "encoded_locals": {},
           "frame_id": 4,
-          "func_name": "get",
+          "func_name": "Box::get",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []

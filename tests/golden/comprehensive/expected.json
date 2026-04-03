@@ -225,7 +225,7 @@
     },
     {
       "event": "call",
-      "func_name": "area",
+      "func_name": "Rectangle::area",
       "globals": {},
       "heap": {},
       "line": 13,
@@ -284,7 +284,7 @@
         {
           "encoded_locals": {},
           "frame_id": 1,
-          "func_name": "area",
+          "func_name": "Rectangle::area",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -294,7 +294,7 @@
     },
     {
       "event": "step_line",
-      "func_name": "area",
+      "func_name": "Rectangle::area",
       "globals": {},
       "heap": {},
       "line": 0,
@@ -355,7 +355,7 @@
             "width": 100
           },
           "frame_id": 1,
-          "func_name": "area",
+          "func_name": "Rectangle::area",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
@@ -367,7 +367,7 @@
     },
     {
       "event": "step_line",
-      "func_name": "area",
+      "func_name": "Rectangle::area",
       "globals": {},
       "heap": {},
       "line": 0,
@@ -429,7 +429,7 @@
             "width": 100
           },
           "frame_id": 1,
-          "func_name": "area",
+          "func_name": "Rectangle::area",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
@@ -442,7 +442,7 @@
     },
     {
       "event": "return",
-      "func_name": "area",
+      "func_name": "Rectangle::area",
       "globals": {},
       "heap": {},
       "line": 16,
@@ -504,7 +504,7 @@
             "width": 100
           },
           "frame_id": 1,
-          "func_name": "area",
+          "func_name": "Rectangle::area",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
