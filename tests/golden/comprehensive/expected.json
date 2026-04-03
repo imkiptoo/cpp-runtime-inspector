@@ -1050,7 +1050,7 @@
             ],
             "refCount": [
               "C_ADDRESS",
-              "0x7ffec63c2e28",
+              "0xPTR",
               "int &",
               "stack"
             ],
@@ -1138,7 +1138,7 @@
             ],
             "refCount": [
               "C_ADDRESS",
-              "0x7ffec63c2e28",
+              "0xPTR",
               "int &",
               "stack"
             ],

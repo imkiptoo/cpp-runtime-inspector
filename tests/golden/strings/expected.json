@@ -200,7 +200,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0x102c5f460",
+              "0xPTR",
               "char*",
               "unknown"
             ],
@@ -240,7 +240,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0x102c5f460",
+              "0xPTR",
               "char*",
               "unknown"
             ],
@@ -282,7 +282,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0x102c5f460",
+              "0xPTR",
               "char*",
               "unknown"
             ],
@@ -293,7 +293,7 @@
             "len2": 5,
             "null_str": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "char*",
               "null"
             ],
@@ -331,7 +331,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0x102c5f460",
+              "0xPTR",
               "char*",
               "unknown"
             ],
@@ -342,7 +342,7 @@
             "len2": 5,
             "null_str": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "char*",
               "null"
             ],

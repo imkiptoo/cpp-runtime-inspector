@@ -80,7 +80,7 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x7ffcbfd0ea98",
+              "0xPTR",
               "int &",
               "stack"
             ],
@@ -112,7 +112,7 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x7ffcbfd0ea98",
+              "0xPTR",
               "int &",
               "stack"
             ],
@@ -152,7 +152,7 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x7ffcbfd0ea98",
+              "0xPTR",
               "int &",
               "stack"
             ],
@@ -173,7 +173,7 @@
           "encoded_locals": {
             "x": [
               "C_ADDRESS",
-              "0x7ffcbfd0ea98",
+              "0xPTR",
               "int &",
               "stack"
             ]
@@ -201,7 +201,7 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x7ffcbfd0ea98",
+              "0xPTR",
               "int &",
               "stack"
             ],
@@ -241,7 +241,7 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x7ffcbfd0ea98",
+              "0xPTR",
               "int &",
               "stack"
             ],
@@ -285,7 +285,7 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x7ffcbfd0ea98",
+              "0xPTR",
               "int &",
               "stack"
             ],
@@ -306,13 +306,13 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0x7ffcbfd0ea98",
+              "0xPTR",
               "int &",
               "stack"
             ],
             "b": [
               "C_ADDRESS",
-              "0x7ffcbfd0ea94",
+              "0xPTR",
               "int &",
               "stack"
             ],
@@ -343,7 +343,7 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x7ffcbfd0ea98",
+              "0xPTR",
               "int &",
               "stack"
             ],

@@ -80,7 +80,7 @@
           "encoded_locals": {
             "ptr": [
               "C_ADDRESS",
-              "0x7ffff85b2a58",
+              "0xPTR",
               "int *",
               "stack"
             ],
@@ -112,7 +112,7 @@
           "encoded_locals": {
             "ptr": [
               "C_ADDRESS",
-              "0x7ffff85b2a58",
+              "0xPTR",
               "int *",
               "stack"
             ],
@@ -146,13 +146,13 @@
           "encoded_locals": {
             "null_ptr": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "int *",
               "null"
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x7ffff85b2a54",
+              "0xPTR",
               "int *",
               "stack"
             ],
@@ -187,19 +187,19 @@
           "encoded_locals": {
             "null_ptr": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "int *",
               "null"
             ],
             "pptr": [
               "C_ADDRESS",
-              "0x7ffff85b2a48",
+              "0xPTR",
               "int **",
               "stack"
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x7ffff85b2a54",
+              "0xPTR",
               "int *",
               "stack"
             ],
@@ -235,19 +235,19 @@
           "encoded_locals": {
             "null_ptr": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "int *",
               "null"
             ],
             "pptr": [
               "C_ADDRESS",
-              "0x7ffff85b2a48",
+              "0xPTR",
               "int **",
               "stack"
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x7ffff85b2a54",
+              "0xPTR",
               "int *",
               "stack"
             ],

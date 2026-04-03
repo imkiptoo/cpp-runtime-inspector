@@ -83,7 +83,7 @@ def normalize(obj, heap_map=None):
         # Normalize absolute paths to anything under tests/golden/ so that
         # checkout location does not affect the comparison. Lambda type
         # strings, for example, embed the full source path.
-        obj = re.sub(r'/[^\s\"]*?(tests/golden/)', r'<ROOT>/\1', obj)
+        obj = re.sub(r'(?:<ROOT>/|/[^\s\"]*?/)(tests/golden/)', r'<ROOT>/\1', obj)
         return obj
     else:
         return obj

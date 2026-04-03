@@ -62,7 +62,7 @@
           "encoded_locals": {
             "bp": [
               "C_ADDRESS",
-              "0x7ffc96f73084",
+              "0xPTR",
               "class Base *",
               "stack"
             ],
@@ -99,7 +99,7 @@
           "encoded_locals": {
             "bp": [
               "C_ADDRESS",
-              "0x7ffc96f73084",
+              "0xPTR",
               "class Base *",
               "stack"
             ],

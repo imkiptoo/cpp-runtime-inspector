@@ -144,13 +144,26 @@ update_test() {
         return 1
     fi
 
-    # Pretty-print and save as expected.json
+    # Pretty-print, normalize, and save as expected.json. Normalization
+    # must match run-golden-tests.sh so the saved file is exactly what
+    # the comparison sees - no machine-specific addresses or paths.
     python3 -c "
-import json
+import json, re
 with open('${workdir}/actual.json', 'r') as f:
     data = json.load(f)
+
+def normalize(obj):
+    if isinstance(obj, dict):
+        return {k: normalize(v) for k, v in sorted(obj.items())}
+    if isinstance(obj, list):
+        return [normalize(v) for v in obj]
+    if isinstance(obj, str):
+        obj = re.sub(r'0x[0-9a-fA-F]+', '0xPTR', obj)
+        obj = re.sub(r'(?:<ROOT>/|/[^\s\"]*?/)(tests/golden/)', r'<ROOT>/\1', obj)
+    return obj
+
 with open('${expected}', 'w') as f:
-    json.dump(data, f, indent=2)
+    json.dump(normalize(data), f, indent=2, sort_keys=True)
 "
 
     echo "OK"

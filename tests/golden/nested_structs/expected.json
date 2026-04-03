@@ -84,7 +84,7 @@
             ],
             "pi": [
               "C_ADDRESS",
-              "0x7ffd6172a110",
+              "0xPTR",
               "struct Inner *",
               "stack"
             ]
@@ -128,7 +128,7 @@
             ],
             "pi": [
               "C_ADDRESS",
-              "0x7ffd6172a110",
+              "0xPTR",
               "struct Inner *",
               "stack"
             ]
