@@ -92,10 +92,16 @@ bool RewriteHelpers::ensureCompoundBody(clang::Stmt* body) {
     // Insert braces around the statement
     m_rewriter.InsertTextBefore(body->getBeginLoc(), "{ ");
 
-    clang::SourceLocation endLoc = clang::Lexer::getLocForEndOfToken(
-        body->getEndLoc(), 0, m_context.getSourceManager(),
-        m_context.getLangOpts());
-    m_rewriter.InsertTextAfterToken(body->getEndLoc(), " }");
+    // Most statements end with a `;` that is *not* part of getEndLoc().
+    // Place the closing brace after that semicolon if one is there, otherwise
+    // immediately after the last token of the body.
+    clang::SourceLocation endLoc = body->getEndLoc();
+    auto& sm = m_context.getSourceManager();
+    auto& lo = m_context.getLangOpts();
+    auto next = clang::Lexer::findNextToken(endLoc, sm, lo);
+    if (next && next->is(clang::tok::semi))
+        endLoc = next->getLocation();
+    m_rewriter.InsertTextAfterToken(endLoc, " }");
 
     return true;
 }

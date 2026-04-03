@@ -30,6 +30,14 @@ public:
     //! Custom traversal to track parent stack.
     bool TraverseStmt(clang::Stmt* stmt);
 
+    //! Skip traversal of constexpr/consteval functions: their bodies cannot
+    //! contain side-effecting hook calls.
+    bool TraverseFunctionDecl(clang::FunctionDecl* decl);
+    bool TraverseCXXMethodDecl(clang::CXXMethodDecl* decl);
+    bool TraverseCXXConstructorDecl(clang::CXXConstructorDecl* decl);
+    bool TraverseCXXDestructorDecl(clang::CXXDestructorDecl* decl);
+    bool TraverseCXXConversionDecl(clang::CXXConversionDecl* decl);
+
     //! Visit function definitions to inject enter/leave calls.
     bool VisitFunctionDecl(clang::FunctionDecl* decl);
 

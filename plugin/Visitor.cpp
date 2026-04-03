@@ -42,6 +42,36 @@ bool InspectorVisitor::hasCompoundStmtParent() const {
         m_parentStack[m_parentStack.size() - 2]);
 }
 
+bool InspectorVisitor::TraverseFunctionDecl(clang::FunctionDecl* decl) {
+    if (decl && decl->isConstexpr())
+        return true;
+    return clang::RecursiveASTVisitor<InspectorVisitor>::TraverseFunctionDecl(decl);
+}
+
+bool InspectorVisitor::TraverseCXXMethodDecl(clang::CXXMethodDecl* decl) {
+    if (decl && decl->isConstexpr())
+        return true;
+    return clang::RecursiveASTVisitor<InspectorVisitor>::TraverseCXXMethodDecl(decl);
+}
+
+bool InspectorVisitor::TraverseCXXConstructorDecl(clang::CXXConstructorDecl* decl) {
+    if (decl && decl->isConstexpr())
+        return true;
+    return clang::RecursiveASTVisitor<InspectorVisitor>::TraverseCXXConstructorDecl(decl);
+}
+
+bool InspectorVisitor::TraverseCXXDestructorDecl(clang::CXXDestructorDecl* decl) {
+    if (decl && decl->isConstexpr())
+        return true;
+    return clang::RecursiveASTVisitor<InspectorVisitor>::TraverseCXXDestructorDecl(decl);
+}
+
+bool InspectorVisitor::TraverseCXXConversionDecl(clang::CXXConversionDecl* decl) {
+    if (decl && decl->isConstexpr())
+        return true;
+    return clang::RecursiveASTVisitor<InspectorVisitor>::TraverseCXXConversionDecl(decl);
+}
+
 bool InspectorVisitor::VisitFunctionDecl(clang::FunctionDecl* decl) {
     if (!decl->hasBody() || !m_helpers.isInMainFile(decl->getLocation()))
         return true;
@@ -86,7 +116,11 @@ bool InspectorVisitor::VisitReturnStmt(clang::ReturnStmt* stmt) {
     unsigned line = m_helpers.getLineNumber(stmt->getBeginLoc());
     std::string call =
         "__inspector_leave(\"" + funcName + "\", " + std::to_string(line) + "); ";
-    m_rewriter.InsertTextBefore(stmt->getBeginLoc(), call);
+    // InsertAfter=true so the leave call sits *inside* any synthetic braces
+    // added by ensureCompoundBody for if/else/while/for bodies that consist
+    // of a single return statement. With InsertTextBefore the leave would
+    // land outside the braces and produce invalid syntax.
+    m_rewriter.InsertText(stmt->getBeginLoc(), call, /*InsertAfter=*/true);
 
     return true;
 }
@@ -101,6 +135,13 @@ bool InspectorVisitor::VisitVarDecl(clang::VarDecl* decl) {
 
     // Skip exception catch clause declarations
     if (decl->isExceptionVariable())
+        return true;
+
+    // Structured bindings (DecompositionDecl) and the BindingDecls they
+    // produce don't have a regular name + lvalue we can take the address of
+    // safely. Skip them: the program runs unchanged but the bindings won't
+    // appear in the trace. Proper support is tracked in Tier 3.
+    if (llvm::isa<clang::DecompositionDecl>(decl))
         return true;
 
     // Skip variables declared in for-loop init expressions
@@ -233,7 +274,7 @@ bool InspectorVisitor::VisitBinaryOperator(clang::BinaryOperator* op) {
     std::string call = generateVarUpdateCall(var);
 
     // Wrap in comma operator: (x = expr, __inspector_var_update_...(...))
-    m_rewriter.InsertTextBefore(op->getBeginLoc(), "(");
+    m_rewriter.InsertText(op->getBeginLoc(), "(", /*InsertAfter=*/true);
     m_rewriter.InsertTextAfterToken(op->getEndLoc(),
                                     RewriteHelpers::commaWrap(call));
 
@@ -280,7 +321,7 @@ bool InspectorVisitor::VisitCompoundAssignOperator(
     std::string call = generateVarUpdateCall(var);
 
     // Wrap in comma operator
-    m_rewriter.InsertTextBefore(op->getBeginLoc(), "(");
+    m_rewriter.InsertText(op->getBeginLoc(), "(", /*InsertAfter=*/true);
     m_rewriter.InsertTextAfterToken(op->getEndLoc(),
                                     RewriteHelpers::commaWrap(call));
 
@@ -329,7 +370,7 @@ bool InspectorVisitor::VisitUnaryOperator(clang::UnaryOperator* op) {
     std::string call = generateVarUpdateCall(var);
 
     // Wrap in comma operator
-    m_rewriter.InsertTextBefore(op->getBeginLoc(), "(");
+    m_rewriter.InsertText(op->getBeginLoc(), "(", /*InsertAfter=*/true);
     m_rewriter.InsertTextAfterToken(op->getEndLoc(),
                                     RewriteHelpers::commaWrap(call));
 
@@ -646,9 +687,11 @@ bool InspectorVisitor::VisitCXXThrowExpr(clang::CXXThrowExpr* expr) {
     unsigned line = m_helpers.getLineNumber(expr->getBeginLoc());
     std::string funcName = m_currentFunction.empty() ? "<unknown>" : m_currentFunction;
 
-    // Insert throw event before the throw expression
+    // Insert throw event before the throw expression. Use InsertAfter=true
+    // so the wrapper sits inside any synthetic braces ensureCompoundBody
+    // adds for if/else/while/for bodies that consist of a single throw.
     std::string call = "(__inspector_throw(\"" + funcName + "\", " + std::to_string(line) + "), ";
-    m_rewriter.InsertTextBefore(expr->getBeginLoc(), call);
+    m_rewriter.InsertText(expr->getBeginLoc(), call, /*InsertAfter=*/true);
     m_rewriter.InsertTextAfterToken(expr->getEndLoc(), ")");
 
     return true;

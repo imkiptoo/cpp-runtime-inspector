@@ -1,0 +1,949 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 13,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 6,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 7,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "exception",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 7,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "catch",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 6,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 7,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "exception",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "catch",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 21,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 3,
+            "hits": 11
+          },
+          "frame_id": 2,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 6,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 3,
+            "hits": 11
+          },
+          "frame_id": 2,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 7,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 3,
+            "hits": 11
+          },
+          "frame_id": 2,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 3,
+            "hits": 11
+          },
+          "frame_id": 2,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 9,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 3,
+            "hits": 11
+          },
+          "frame_id": 2,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "exception",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 9,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 3,
+            "hits": 11
+          },
+          "frame_id": 2,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "catch",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 3,
+            "hits": 11
+          },
+          "frame_id": 2,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "classify",
+      "globals": {},
+      "heap": {},
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "hits": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 2,
+            "hits": 1
+          },
+          "frame_id": 1,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 3,
+            "hits": 11
+          },
+          "frame_id": 2,
+          "func_name": "classify",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "code": 4,
+            "hits": 111
+          },
+          "frame_id": 3,
+          "func_name": "classify",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "hits",
+            "code"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}

@@ -125,14 +125,20 @@ update_test() {
         fi
     fi
 
+    # Optional CLI args from .args file (whitespace-separated).
+    local -a test_args=()
+    if [[ -f "${test_dir}/.args" ]]; then
+        read -r -a test_args < "${test_dir}/.args"
+    fi
+
     if [[ ${use_shim} -eq 1 ]]; then
         if [[ "$(uname)" == "Darwin" ]]; then
-            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" 2>"${workdir}/actual.json" || true
+            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json" || true
         else
-            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" 2>"${workdir}/actual.json" || true
+            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json" || true
         fi
     else
-        "${workdir}/test" 2>"${workdir}/actual.json" || true
+        "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json" || true
     fi
 
     # Check if output is valid JSON

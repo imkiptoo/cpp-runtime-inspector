@@ -76,7 +76,7 @@ void TraceState::popFrame(int line) {
     }
 }
 
-void TraceState::recordVarInit(const std::string& name, void* addr,
+void TraceState::recordVarInit(const std::string& name, const void* addr,
                                 const TypeDescriptor* type, EncodedValue value,
                                 int line) {
     Frame* frame = currentFrame();
@@ -100,7 +100,7 @@ void TraceState::recordVarInit(const std::string& name, void* addr,
     emitStep(EventKind::StepLine, frame->funcName, line);
 }
 
-void TraceState::recordVarUpdate(const std::string& name, void* addr,
+void TraceState::recordVarUpdate(const std::string& name, const void* addr,
                                   const TypeDescriptor* type,
                                   EncodedValue value) {
     Frame* frame = currentFrame();
