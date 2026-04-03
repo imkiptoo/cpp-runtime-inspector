@@ -80,6 +80,10 @@ def normalize(obj, heap_map=None):
     elif isinstance(obj, str):
         # Normalize addresses
         obj = re.sub(r'0x[0-9a-fA-F]+', '0xPTR', obj)
+        # Normalize absolute paths to anything under tests/golden/ so that
+        # checkout location does not affect the comparison. Lambda type
+        # strings, for example, embed the full source path.
+        obj = re.sub(r'/[^\s\"]*?(tests/golden/)', r'<ROOT>/\1', obj)
         return obj
     else:
         return obj
