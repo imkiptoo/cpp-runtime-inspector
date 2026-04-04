@@ -401,7 +401,7 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 10,
+                "x": 30,
                 "y": 20
               }
             ],

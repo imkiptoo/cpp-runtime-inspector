@@ -1,0 +1,192 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 9,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "n": [
+              "C_UNION",
+              "union Number",
+              {
+                "__raw": "00000000",
+                "as_int": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "i": 1078530011,
+            "n": [
+              "C_UNION",
+              "union Number",
+              {
+                "__raw": "db0f4940",
+                "as_int": 1078530011
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n",
+            "i"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 14,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "f": 3.1415927410125732,
+            "i": 1078530011,
+            "n": [
+              "C_UNION",
+              "union Number",
+              {
+                "__raw": "db0f4940",
+                "as_int": 1078530011
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n",
+            "i",
+            "f"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "f": 3.1415927410125732,
+            "i": 1078530011,
+            "n": [
+              "C_UNION",
+              "union Number",
+              {
+                "__raw": "0000c03f",
+                "as_int": 1069547520
+              }
+            ],
+            "reinterpreted": 1069547520
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n",
+            "i",
+            "f",
+            "reinterpreted"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "f": 3.1415927410125732,
+            "i": 1078530011,
+            "n": [
+              "C_UNION",
+              "union Number",
+              {
+                "__raw": "0000c03f",
+                "as_int": 1069547520
+              }
+            ],
+            "reinterpreted": 1069547520
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n",
+            "i",
+            "f",
+            "reinterpreted"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}

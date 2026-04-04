@@ -278,13 +278,34 @@ bool InspectorVisitor::VisitBinaryOperator(clang::BinaryOperator* op) {
         }
     }
 
-    // Get the LHS variable
+    // Get the LHS variable. Two shapes are supported:
+    //   x = expr              (DeclRefExpr LHS)
+    //   x.member = expr       (MemberExpr whose base is a DeclRefExpr to a
+    //                          local var; we re-encode the whole base var)
     clang::Expr* lhs = op->getLHS()->IgnoreParenCasts();
-    auto* ref = llvm::dyn_cast<clang::DeclRefExpr>(lhs);
-    if (!ref)
-        return true;
-
-    auto* var = llvm::dyn_cast<clang::VarDecl>(ref->getDecl());
+    clang::VarDecl* var = nullptr;
+    if (auto* ref = llvm::dyn_cast<clang::DeclRefExpr>(lhs)) {
+        var = llvm::dyn_cast<clang::VarDecl>(ref->getDecl());
+    } else if (auto* member = llvm::dyn_cast<clang::MemberExpr>(lhs)) {
+        // Walk through nested member exprs to find a base DeclRefExpr. We
+        // only recapture writes through `.` (or nested `.` chains), not
+        // through `->` — pointer-target writes mutate the heap, not the
+        // pointer itself, and conflict with the new-capture wrapping in
+        // VisitCXXNewExpr.
+        bool throughPointer = false;
+        clang::Expr* base = member;
+        while (auto* m = llvm::dyn_cast<clang::MemberExpr>(base)) {
+            if (m->isArrow()) {
+                throughPointer = true;
+                break;
+            }
+            base = m->getBase()->IgnoreParenCasts();
+        }
+        if (!throughPointer) {
+            if (auto* baseRef = llvm::dyn_cast<clang::DeclRefExpr>(base))
+                var = llvm::dyn_cast<clang::VarDecl>(baseRef->getDecl());
+        }
+    }
     if (!var)
         return true;
 

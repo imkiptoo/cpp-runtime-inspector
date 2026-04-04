@@ -70,8 +70,8 @@
               "C_STRUCT",
               "class Derived",
               {
-                "baseVal": 0,
-                "derivedVal": 0
+                "baseVal": 10,
+                "derivedVal": 20
               }
             ]
           },
@@ -107,8 +107,8 @@
               "C_STRUCT",
               "class Derived",
               {
-                "baseVal": 0,
-                "derivedVal": 0
+                "baseVal": 10,
+                "derivedVal": 20
               }
             ]
           },
