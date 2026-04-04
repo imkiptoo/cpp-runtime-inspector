@@ -161,8 +161,8 @@
               "C_STRUCT",
               "std::optional",
               {
-                "has_value": true,
-                "value": 42
+                "has_value": false,
+                "value": "<empty>"
               }
             ]
           },
@@ -194,8 +194,8 @@
               "C_STRUCT",
               "std::optional",
               {
-                "has_value": false,
-                "value": "<empty>"
+                "has_value": true,
+                "value": 7
               }
             ],
             "empty": [
@@ -211,8 +211,8 @@
               "C_STRUCT",
               "std::optional",
               {
-                "has_value": true,
-                "value": 42
+                "has_value": false,
+                "value": "<empty>"
               }
             ]
           },

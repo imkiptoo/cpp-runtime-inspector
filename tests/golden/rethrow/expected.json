@@ -333,7 +333,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "caught": 0
+            "caught": 1
           },
           "frame_id": 0,
           "func_name": "main",

@@ -150,6 +150,19 @@ void TraceState::emitStep(EventKind kind, const std::string& funcName,
     step.event = kind;
     step.funcName = funcName;
 
+    // Re-encode each frame's locals from their current memory contents.
+    // Without this, mutations that happen via method calls or
+    // CXXOperatorCallExpr (e.g. std::variant::operator=, std::optional::reset)
+    // would not show up because the visitor only instruments built-in
+    // BinaryOperator / UnaryOperator writes.
+    for (auto& frame : m_stack) {
+        for (auto& [name, var] : frame.locals) {
+            if (var.addr && var.type) {
+                var.value = encodeValue(var.addr, var.type);
+            }
+        }
+    }
+
     // Snapshot the stack
     step.stack = m_stack;
 
@@ -441,7 +454,11 @@ EncodedValue TraceState::encodeValue(const void* addr,
         return encodePrimitive(addr, type);
 
     case TypeKind::Struct:
-        return encodeStruct(addr, type);
+        // Struct kind covers user types AND STL containers (which the
+        // plugin classifies as Struct). encodeValueAtAddress dispatches
+        // to the right STL encoder when applicable; otherwise it falls
+        // through to encodeStruct.
+        return encodeValueAtAddress(addr, type);
 
     case TypeKind::Array:
         return encodeArray(addr, type);
@@ -558,6 +575,12 @@ EncodedValue TraceState::encodeValueAtAddress(const void* addr,
         case StlContainerKind::Optional:
             return encodeStdOptional(addr, type->element_type, *this);
 
+        case StlContainerKind::Variant:
+            return encodeStdVariant(addr, type->size, type->element_type, *this);
+
+        case StlContainerKind::Function:
+            return encodeStdFunction(addr);
+
         case StlContainerKind::Map:
         case StlContainerKind::Set:
             // Complex tree traversal - use placeholder for now
@@ -570,7 +593,14 @@ EncodedValue TraceState::encodeValueAtAddress(const void* addr,
         }
     }
 
-    return encodeValue(addr, type);
+    // Direct dispatch on kind to avoid infinite recursion through
+    // encodeValue (which delegates struct types back to us).
+    switch (type->kind) {
+    case TypeKind::Struct: return encodeStruct(addr, type);
+    case TypeKind::Array:  return encodeArray(addr, type);
+    case TypeKind::Union:  return encodeUnion(addr, type);
+    default:               return encodeValue(addr, type);
+    }
 }
 
 void TraceState::recordThrow(const std::string& funcName, int line) {

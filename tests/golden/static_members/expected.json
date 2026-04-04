@@ -145,7 +145,7 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 1
               }
             ],
             "b": [
@@ -194,7 +194,7 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 1
               }
             ],
             "b": [
@@ -239,7 +239,7 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 2
               }
             ],
             "b": [
@@ -288,7 +288,7 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 2
               }
             ],
             "b": [
@@ -333,14 +333,14 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 2
               }
             ],
             "b": [
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 1
               }
             ]
           },
@@ -382,14 +382,14 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 2
               }
             ],
             "b": [
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 1
               }
             ]
           },
@@ -427,14 +427,14 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 2
               }
             ],
             "b": [
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 1
               }
             ]
           },
@@ -472,14 +472,14 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 2
               }
             ],
             "b": [
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 1
               }
             ],
             "t": 3
@@ -511,14 +511,14 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 2
               }
             ],
             "b": [
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 1
               }
             ],
             "t": 3,
@@ -552,14 +552,14 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 2
               }
             ],
             "b": [
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 0
+                "self": 1
               }
             ],
             "t": 3,

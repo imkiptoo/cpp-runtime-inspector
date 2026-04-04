@@ -137,12 +137,7 @@
             "c": "X",
             "d": 3.14,
             "i": 42,
-            "r": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
+            "r": 0,
             "x": 10
           },
           "frame_id": 0,
@@ -174,13 +169,8 @@
             "d": 3.14,
             "i": 42,
             "k": 100,
-            "r": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
-            "x": 10
+            "r": 0,
+            "x": 20
           },
           "frame_id": 0,
           "func_name": "main",
@@ -212,13 +202,8 @@
             "d": 3.14,
             "i": 42,
             "k": 100,
-            "r": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
-            "x": 10
+            "r": 0,
+            "x": 20
           },
           "frame_id": 0,
           "func_name": "main",

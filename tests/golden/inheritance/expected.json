@@ -107,7 +107,7 @@
               "C_STRUCT",
               "class Derived",
               {
-                "baseVal": 10,
+                "baseVal": 30,
                 "derivedVal": 20
               }
             ]

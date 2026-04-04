@@ -339,7 +339,9 @@ bool TypeEncoder::isStlContainer(clang::QualType type) const {
         typeName.find("std::set") != std::string::npos ||
         typeName.find("std::unique_ptr") != std::string::npos ||
         typeName.find("std::shared_ptr") != std::string::npos ||
-        typeName.find("std::optional") != std::string::npos) {
+        typeName.find("std::optional") != std::string::npos ||
+        typeName.find("std::variant") != std::string::npos ||
+        typeName.find("std::function") != std::string::npos) {
         return true;
     }
 
@@ -389,13 +391,25 @@ std::string TypeEncoder::getLambdaFriendlyName(clang::QualType type) const {
 clang::QualType TypeEncoder::getStlElementType(clang::QualType type) const {
     type = type.getCanonicalType();
 
+    auto firstTypeFromArg = [](const clang::TemplateArgument& arg) -> clang::QualType {
+        if (arg.getKind() == clang::TemplateArgument::Type)
+            return arg.getAsType();
+        // Variadic templates (e.g. std::variant<Ts...>) wrap arguments in a
+        // Pack. Drill into the pack and return its first Type argument.
+        if (arg.getKind() == clang::TemplateArgument::Pack) {
+            for (const auto& packArg : arg.pack_elements()) {
+                if (packArg.getKind() == clang::TemplateArgument::Type)
+                    return packArg.getAsType();
+            }
+        }
+        return clang::QualType();
+    };
+
     // For template types, get the first template argument
     if (const auto* tst = type->getAs<clang::TemplateSpecializationType>()) {
         if (tst->template_arguments().size() > 0) {
-            const auto& arg = tst->template_arguments()[0];
-            if (arg.getKind() == clang::TemplateArgument::Type) {
-                return arg.getAsType();
-            }
+            clang::QualType q = firstTypeFromArg(tst->template_arguments()[0]);
+            if (!q.isNull()) return q;
         }
     }
 
@@ -403,8 +417,9 @@ clang::QualType TypeEncoder::getStlElementType(clang::QualType type) const {
     if (const auto* record = type->getAsCXXRecordDecl()) {
         if (const auto* spec = llvm::dyn_cast<clang::ClassTemplateSpecializationDecl>(record)) {
             const auto& args = spec->getTemplateArgs();
-            if (args.size() > 0 && args[0].getKind() == clang::TemplateArgument::Type) {
-                return args[0].getAsType();
+            if (args.size() > 0) {
+                clang::QualType q = firstTypeFromArg(args[0]);
+                if (!q.isNull()) return q;
             }
         }
     }

@@ -119,7 +119,7 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "x": 1,
+                    "x": 10,
                     "y": 2
                   }
                 ],

@@ -223,7 +223,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 1
           },
           "frame_id": 0,
           "func_name": "main",
@@ -260,7 +260,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 1
           },
           "frame_id": 0,
           "func_name": "main",
@@ -305,7 +305,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 1
           },
           "frame_id": 0,
           "func_name": "main",
@@ -350,7 +350,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 1
           },
           "frame_id": 0,
           "func_name": "main",
@@ -395,7 +395,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 1
           },
           "frame_id": 0,
           "func_name": "main",
@@ -440,7 +440,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 1
           },
           "frame_id": 0,
           "func_name": "main",
@@ -485,7 +485,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 11
           },
           "frame_id": 0,
           "func_name": "main",
@@ -497,8 +497,8 @@
         },
         {
           "encoded_locals": {
-            "code": 2,
-            "hits": 1
+            "code": 3,
+            "hits": 11
           },
           "frame_id": 1,
           "func_name": "classify",
@@ -536,7 +536,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 11
           },
           "frame_id": 0,
           "func_name": "main",
@@ -548,8 +548,8 @@
         },
         {
           "encoded_locals": {
-            "code": 2,
-            "hits": 1
+            "code": 3,
+            "hits": 11
           },
           "frame_id": 1,
           "func_name": "classify",
@@ -595,7 +595,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 11
           },
           "frame_id": 0,
           "func_name": "main",
@@ -607,8 +607,8 @@
         },
         {
           "encoded_locals": {
-            "code": 2,
-            "hits": 1
+            "code": 3,
+            "hits": 11
           },
           "frame_id": 1,
           "func_name": "classify",
@@ -654,7 +654,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 11
           },
           "frame_id": 0,
           "func_name": "main",
@@ -666,8 +666,8 @@
         },
         {
           "encoded_locals": {
-            "code": 2,
-            "hits": 1
+            "code": 3,
+            "hits": 11
           },
           "frame_id": 1,
           "func_name": "classify",
@@ -713,7 +713,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 11
           },
           "frame_id": 0,
           "func_name": "main",
@@ -725,8 +725,8 @@
         },
         {
           "encoded_locals": {
-            "code": 2,
-            "hits": 1
+            "code": 3,
+            "hits": 11
           },
           "frame_id": 1,
           "func_name": "classify",
@@ -772,7 +772,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 11
           },
           "frame_id": 0,
           "func_name": "main",
@@ -784,8 +784,8 @@
         },
         {
           "encoded_locals": {
-            "code": 2,
-            "hits": 1
+            "code": 3,
+            "hits": 11
           },
           "frame_id": 1,
           "func_name": "classify",
@@ -831,7 +831,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 11
           },
           "frame_id": 0,
           "func_name": "main",
@@ -843,8 +843,8 @@
         },
         {
           "encoded_locals": {
-            "code": 2,
-            "hits": 1
+            "code": 3,
+            "hits": 11
           },
           "frame_id": 1,
           "func_name": "classify",
@@ -890,7 +890,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "hits": 0
+            "hits": 111
           },
           "frame_id": 0,
           "func_name": "main",
@@ -902,8 +902,8 @@
         },
         {
           "encoded_locals": {
-            "code": 2,
-            "hits": 1
+            "code": 4,
+            "hits": 111
           },
           "frame_id": 1,
           "func_name": "classify",
@@ -916,8 +916,8 @@
         },
         {
           "encoded_locals": {
-            "code": 3,
-            "hits": 11
+            "code": 4,
+            "hits": 111
           },
           "frame_id": 2,
           "func_name": "classify",

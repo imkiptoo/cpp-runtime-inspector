@@ -63,7 +63,7 @@
         {
           "encoded_locals": {
             "p": [
-              "REF",
+              "DANGLING",
               1
             ],
             "q": [
@@ -94,7 +94,7 @@
         {
           "encoded_locals": {
             "p": [
-              "REF",
+              "DANGLING",
               1
             ],
             "q": [

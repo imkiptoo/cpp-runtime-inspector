@@ -1048,12 +1048,7 @@
                 ]
               }
             ],
-            "refCount": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
+            "refCount": 0,
             "val": 2
           },
           "frame_id": 0,
@@ -1091,12 +1086,12 @@
             "active": true,
             "area": 5000,
             "arr": [
-              "REF",
+              "DANGLING",
               2
             ],
-            "count": 5,
+            "count": 10,
             "hp": [
-              "REF",
+              "DANGLING",
               1
             ],
             "letter": "A",
@@ -1109,9 +1104,8 @@
               }
             ],
             "p2": [
-              "REF_OFFSET",
-              2,
-              4
+              "DANGLING",
+              2
             ],
             "pi": 3.14159,
             "rect": [
@@ -1136,12 +1130,7 @@
                 ]
               }
             ],
-            "refCount": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
+            "refCount": 0,
             "val": 2
           },
           "frame_id": 0,

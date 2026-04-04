@@ -78,12 +78,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "ref": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
+            "ref": 0,
             "x": 10,
             "y": 20
           },
@@ -110,13 +105,8 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "ref": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
-            "x": 10,
+            "ref": 0,
+            "x": 15,
             "y": 20
           },
           "frame_id": 0,
@@ -150,13 +140,8 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "ref": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
-            "x": 10,
+            "ref": 0,
+            "x": 16,
             "y": 20
           },
           "frame_id": 0,
@@ -171,12 +156,7 @@
         },
         {
           "encoded_locals": {
-            "x": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ]
+            "x": 0
           },
           "frame_id": 1,
           "func_name": "increment",
@@ -199,13 +179,8 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "ref": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
-            "x": 10,
+            "ref": 0,
+            "x": 16,
             "y": 20
           },
           "frame_id": 0,
@@ -239,13 +214,8 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "ref": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
-            "x": 10,
+            "ref": 0,
+            "x": 16,
             "y": 20
           },
           "frame_id": 0,
@@ -283,14 +253,9 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "ref": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
-            "x": 10,
-            "y": 20
+            "ref": 0,
+            "x": 20,
+            "y": 16
           },
           "frame_id": 0,
           "func_name": "main",
@@ -304,18 +269,8 @@
         },
         {
           "encoded_locals": {
-            "a": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
-            "b": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
+            "a": 0,
+            "b": 0,
             "temp": 16
           },
           "frame_id": 2,
@@ -341,14 +296,9 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "ref": [
-              "C_ADDRESS",
-              "0xPTR",
-              "int &",
-              "stack"
-            ],
-            "x": 10,
-            "y": 20
+            "ref": 0,
+            "x": 20,
+            "y": 16
           },
           "frame_id": 0,
           "func_name": "main",

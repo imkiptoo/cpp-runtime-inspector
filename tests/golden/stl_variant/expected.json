@@ -6,7 +6,7 @@
       "func_name": "main",
       "globals": {},
       "heap": {},
-      "line": 4,
+      "line": 6,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -24,27 +24,19 @@
       "event": "step_line",
       "func_name": "main",
       "globals": {},
-      "heap": {
-        "1": [
-          "HEAP_ARRAY",
-          "int",
-          [
-            0,
-            0,
-            0,
-            0,
-            0
-          ]
-        ]
-      },
-      "line": 5,
+      "heap": {},
+      "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
-            "arr": [
-              "REF",
-              1
+            "v": [
+              "C_STRUCT",
+              "std::variant",
+              {
+                "index": 0,
+                "value": 0
+              }
             ]
           },
           "frame_id": 0,
@@ -52,7 +44,7 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
-            "arr"
+            "v"
           ]
         }
       ],
@@ -62,87 +54,99 @@
       "event": "step_line",
       "func_name": "main",
       "globals": {},
-      "heap": {
-        "1": [
-          "HEAP_ARRAY",
-          "int",
-          [
-            10,
-            20,
-            30,
-            40,
-            50
-          ]
-        ]
-      },
-      "line": 12,
-      "ordered_globals": [],
-      "stack_to_render": [
-        {
-          "encoded_locals": {
-            "arr": [
-              "REF",
-              1
-            ],
-            "p": [
-              "REF_OFFSET",
-              1,
-              8
-            ]
-          },
-          "frame_id": 0,
-          "func_name": "main",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": [
-            "arr",
-            "p"
-          ]
-        }
-      ],
-      "stdout": ""
-    },
-    {
-      "event": "step_line",
-      "func_name": "main",
-      "globals": {},
-      "heap": {
-        "1": [
-          "HEAP_ARRAY",
-          "int",
-          [
-            10,
-            20,
-            30,
-            40,
-            50
-          ]
-        ]
-      },
+      "heap": {},
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
-            "arr": [
-              "REF",
-              1
-            ],
-            "p": [
-              "REF_OFFSET",
-              1,
-              8
-            ],
-            "val": 30
+            "idx0": 0,
+            "v": [
+              "C_STRUCT",
+              "std::variant",
+              {
+                "index": 0,
+                "value": 0
+              }
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
-            "arr",
-            "p",
-            "val"
+            "v",
+            "idx0"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "idx0": 0,
+            "idx_after_int": 0,
+            "v": [
+              "C_STRUCT",
+              "std::variant",
+              {
+                "index": 0,
+                "value": 42
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "v",
+            "idx0",
+            "idx_after_int"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "idx0": 0,
+            "idx_after_double": 1,
+            "idx_after_int": 0,
+            "v": [
+              "C_STRUCT",
+              "std::variant",
+              {
+                "index": 1,
+                "value": "<alternative beyond first; payload not introspectable>"
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "v",
+            "idx0",
+            "idx_after_int",
+            "idx_after_double"
           ]
         }
       ],
@@ -153,29 +157,32 @@
       "func_name": "main",
       "globals": {},
       "heap": {},
-      "line": 19,
+      "line": 17,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
-            "arr": [
-              "DANGLING",
-              1
-            ],
-            "p": [
-              "DANGLING",
-              1
-            ],
-            "val": 40
+            "idx0": 0,
+            "idx_after_double": 1,
+            "idx_after_int": 0,
+            "v": [
+              "C_STRUCT",
+              "std::variant",
+              {
+                "index": 1,
+                "value": "<alternative beyond first; payload not introspectable>"
+              }
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
-            "arr",
-            "p",
-            "val"
+            "v",
+            "idx0",
+            "idx_after_int",
+            "idx_after_double"
           ]
         }
       ],

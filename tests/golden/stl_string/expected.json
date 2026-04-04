@@ -54,7 +54,7 @@
         {
           "encoded_locals": {
             "len": 11,
-            "s": "hello"
+            "s": "hello world"
           },
           "frame_id": 0,
           "func_name": "main",
@@ -79,7 +79,7 @@
         {
           "encoded_locals": {
             "len": 11,
-            "s": "hello"
+            "s": ""
           },
           "frame_id": 0,
           "func_name": "main",

@@ -66,6 +66,16 @@ StlContainerKind identifyStlContainer(const std::string& typeName) {
         return StlContainerKind::Optional;
     }
 
+    if (typeName.find("std::variant") != std::string::npos ||
+        typeName.find("std::__1::variant") != std::string::npos) {
+        return StlContainerKind::Variant;
+    }
+
+    if (typeName.find("std::function") != std::string::npos ||
+        typeName.find("std::__1::function") != std::string::npos) {
+        return StlContainerKind::Function;
+    }
+
     return StlContainerKind::None;
 }
 
@@ -316,6 +326,73 @@ EncodedValue encodeStdOptional(const void* addr, const TypeDescriptor* valueType
     }
     sv.fields["value"] = val;
 
+    return sv;
+}
+
+EncodedValue encodeStdVariant(const void* addr, size_t variantSize,
+                              const TypeDescriptor* firstAlternativeType,
+                              TraceState& state) {
+    StructValue sv;
+    sv.typeName = "std::variant";
+    sv.fieldOrder.push_back("index");
+    sv.fieldOrder.push_back("value");
+
+    if (!addr || variantSize < 9) {
+        auto idx = std::make_shared<EncodedValueHolder>();
+        idx->value = static_cast<long long>(-1);
+        sv.fields["index"] = idx;
+        auto val = std::make_shared<EncodedValueHolder>();
+        val->value = std::string("<invalid variant>");
+        sv.fields["value"] = val;
+        return sv;
+    }
+
+    // libstdc++ Linux: discriminator is a small unsigned integer in the last
+    // alignof(variant)==8 byte slot. The lowest byte holds the index for any
+    // variant with <=255 alternatives.
+    const auto* base = reinterpret_cast<const unsigned char*>(addr);
+    size_t discOffset = variantSize - 8;
+    long long index = static_cast<long long>(base[discOffset]);
+    // valueless_by_exception() returns 0xff for "no value".
+    if (base[discOffset] == 0xff) index = -1;
+
+    auto idx = std::make_shared<EncodedValueHolder>();
+    idx->value = index;
+    sv.fields["index"] = idx;
+
+    auto val = std::make_shared<EncodedValueHolder>();
+    if (index == 0 && firstAlternativeType) {
+        val->type = firstAlternativeType;
+        val->value = state.encodeValue(addr, firstAlternativeType);
+    } else if (index < 0) {
+        val->value = std::string("<valueless>");
+    } else {
+        val->value = std::string("<alternative beyond first; payload not introspectable>");
+    }
+    sv.fields["value"] = val;
+    return sv;
+}
+
+EncodedValue encodeStdFunction(const void* addr) {
+    StructValue sv;
+    sv.typeName = "std::function";
+    sv.fieldOrder.push_back("engaged");
+
+    if (!addr) {
+        auto eng = std::make_shared<EncodedValueHolder>();
+        eng->value = false;
+        sv.fields["engaged"] = eng;
+        return sv;
+    }
+
+    // libstdc++ std::function stores _M_invoker (a function pointer) and
+    // _M_manager (another function pointer). Both are nullptr for an empty
+    // std::function. We just need to know whether either is non-null.
+    const void* const* slots = reinterpret_cast<const void* const*>(addr);
+    bool engaged = slots[2] != nullptr || slots[3] != nullptr;
+    auto eng = std::make_shared<EncodedValueHolder>();
+    eng->value = engaged;
+    sv.fields["engaged"] = eng;
     return sv;
 }
 

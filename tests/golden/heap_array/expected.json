@@ -67,7 +67,7 @@
         {
           "encoded_locals": {
             "arr": [
-              "REF",
+              "DANGLING",
               1
             ]
           },

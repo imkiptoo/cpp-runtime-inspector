@@ -542,7 +542,7 @@
         {
           "encoded_locals": {
             "p": [
-              "REF",
+              "DANGLING",
               11
             ]
           },

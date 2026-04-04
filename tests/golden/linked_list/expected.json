@@ -378,7 +378,7 @@
               2
             ],
             "head": [
-              "REF",
+              "DANGLING",
               1
             ],
             "next": [
@@ -434,7 +434,7 @@
               3
             ],
             "head": [
-              "REF",
+              "DANGLING",
               1
             ],
             "next": [
@@ -474,7 +474,7 @@
               "null"
             ],
             "head": [
-              "REF",
+              "DANGLING",
               1
             ],
             "next": [

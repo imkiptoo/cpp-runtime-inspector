@@ -140,7 +140,7 @@
               "C_ADDRESS",
               "0xPTR",
               "struct Resource",
-              "unknown"
+              "null"
             ],
             "via_a": 100,
             "via_b": 100
@@ -173,13 +173,13 @@
               "C_ADDRESS",
               "0xPTR",
               "struct Resource",
-              "unknown"
+              "null"
             ],
             "b": [
               "C_ADDRESS",
               "0xPTR",
               "struct Resource",
-              "unknown"
+              "null"
             ],
             "via_a": 100,
             "via_b": 100
