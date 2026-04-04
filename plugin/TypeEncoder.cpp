@@ -677,6 +677,12 @@ std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
         }
     }
 
+    if (isStlContainer(type)) {
+        clang::QualType elem = getStlElementType(type);
+        if (!elem.isNull() && !elem->isVoidType())
+            dependencies += generateTypeDescriptorCode(elem);
+    }
+
     // Output extern declarations for circular references
     ss << externDecls.str();
     ss << dependencies;
@@ -741,7 +747,8 @@ std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
         ss << "    nullptr, 0,\n";
     }
 
-    // Element type (for arrays and pointers)
+    // Element type (for arrays, pointers, and STL containers with one
+    // template type argument that the runtime knows how to decode).
     if (type->isConstantArrayType()) {
         auto [elemType, count] = getArrayInfo(type);
         ss << "    " << getDescriptorRef(elemType) << ", " << count << ",\n";
@@ -749,6 +756,13 @@ std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
         clang::QualType pointee = getPointeeType(type);
         if (!pointee.isNull() && !pointee->isVoidType()) {
             ss << "    " << getDescriptorRef(pointee) << ", 0,\n";
+        } else {
+            ss << "    nullptr, 0,\n";
+        }
+    } else if (isStlContainer(type)) {
+        clang::QualType elem = getStlElementType(type);
+        if (!elem.isNull()) {
+            ss << "    " << getDescriptorRef(elem) << ", 0,\n";
         } else {
             ss << "    nullptr, 0,\n";
         }

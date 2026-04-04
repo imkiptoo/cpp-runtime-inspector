@@ -281,15 +281,40 @@ EncodedValue encodeStdSharedPtr(const void* addr, const TypeDescriptor* pointeeT
 
 EncodedValue encodeStdOptional(const void* addr, const TypeDescriptor* valueType,
                                TraceState& state) {
-    // std::optional layout varies by implementation
-    // For now, return a simplified representation
+    // libstdc++ / libc++ on Linux lay out optional<T> as
+    //   union { char _M_empty; T _M_payload; } + bool _M_engaged;
+    // so the engaged flag sits at offset sizeof(T) (bool aligns to 1).
+    // We only inspect the engaged byte and the payload at offset 0.
     StructValue sv;
     sv.typeName = "std::optional";
-    sv.fieldOrder.push_back("<value>");
+    sv.fieldOrder.push_back("has_value");
+    sv.fieldOrder.push_back("value");
 
-    auto holder = std::make_shared<EncodedValueHolder>();
-    holder->value = std::string("<optional inspection not yet implemented>");
-    sv.fields["<value>"] = holder;
+    if (!addr || !valueType || valueType->size == 0) {
+        auto eng = std::make_shared<EncodedValueHolder>();
+        eng->value = false;
+        sv.fields["has_value"] = eng;
+        auto val = std::make_shared<EncodedValueHolder>();
+        val->value = std::string("<unknown payload type>");
+        sv.fields["value"] = val;
+        return sv;
+    }
+
+    const auto* base = reinterpret_cast<const unsigned char*>(addr);
+    bool engaged = base[valueType->size] != 0;
+
+    auto eng = std::make_shared<EncodedValueHolder>();
+    eng->value = engaged;
+    sv.fields["has_value"] = eng;
+
+    auto val = std::make_shared<EncodedValueHolder>();
+    if (engaged) {
+        val->type = valueType;
+        val->value = state.encodeValue(addr, valueType);
+    } else {
+        val->value = std::string("<empty>");
+    }
+    sv.fields["value"] = val;
 
     return sv;
 }

@@ -194,11 +194,10 @@ bool InspectorVisitor::VisitVarDecl(clang::VarDecl* decl) {
     if (!m_typeEncoder.isSupported(type))
         return true;
 
-    // Skip STL container types - their internals are library-specific
-    // and should be handled by the runtime STL encoders, not plugin instrumentation
-    if (m_typeEncoder.isStlContainer(type)) {
-        return true;
-    }
+    // STL containers reach var_init_struct, which forwards to the runtime
+    // STL encoder. We still skip plugin-side field walks (handled by the
+    // type-descriptor block below not running for these types) but we now
+    // emit the init call so the local variable shows up in the trace.
 
     // For composite types and pointers, ensure type descriptor is emitted
     TypeKind kind = m_typeEncoder.getTypeKind(type);

@@ -3,6 +3,7 @@
 
 #include "JsonEmit.h"
 #include "Signals.h"
+#include "StlEncoders.h"
 #include "Trace.h"
 #include "TypeInfo.h"
 #include "StringSafe.h"
@@ -208,15 +209,29 @@ void __inspector_var_update_ref(const char* name, const void* addr,
 
 void __inspector_var_init_struct(const char* name, const void* addr,
                            const inspector::TypeDescriptor* type, int line) {
-    inspector::EncodedValue value = inspector::TraceState::instance().encodeStruct(addr, type);
-    inspector::TraceState::instance().recordVarInit(name, addr, type, std::move(value),
-                                               line);
+    // STL containers reach this hook because the plugin classifies them as
+    // TypeKind::Struct. Route via encodeValueAtAddress so they go through
+    // their dedicated encoder instead of generic field traversal.
+    auto& state = inspector::TraceState::instance();
+    bool isStl = type && type->spelling &&
+                 inspector::identifyStlContainer(type->spelling) !=
+                     inspector::StlContainerKind::None;
+    inspector::EncodedValue value = isStl
+        ? state.encodeValueAtAddress(addr, type)
+        : state.encodeStruct(addr, type);
+    state.recordVarInit(name, addr, type, std::move(value), line);
 }
 
 void __inspector_var_update_struct(const char* name, const void* addr,
                              const inspector::TypeDescriptor* type) {
-    inspector::EncodedValue value = inspector::TraceState::instance().encodeStruct(addr, type);
-    inspector::TraceState::instance().recordVarUpdate(name, addr, type, std::move(value));
+    auto& state = inspector::TraceState::instance();
+    bool isStl = type && type->spelling &&
+                 inspector::identifyStlContainer(type->spelling) !=
+                     inspector::StlContainerKind::None;
+    inspector::EncodedValue value = isStl
+        ? state.encodeValueAtAddress(addr, type)
+        : state.encodeStruct(addr, type);
+    state.recordVarUpdate(name, addr, type, std::move(value));
 }
 
 void __inspector_var_init_enum(const char* name, const void* addr,

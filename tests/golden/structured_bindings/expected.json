@@ -25,18 +25,57 @@
       "func_name": "main",
       "globals": {},
       "heap": {},
-      "line": 0,
+      "line": 12,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
-            "a": 1
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {
+                "first": 1,
+                "second": 2
+              }
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "p"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 1,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {
+                "first": 1,
+                "second": 2
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
             "a"
           ]
         }
@@ -54,13 +93,22 @@
         {
           "encoded_locals": {
             "a": 1,
-            "b": 2
+            "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {
+                "first": 1,
+                "second": 2
+              }
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "p",
             "a",
             "b"
           ]
@@ -80,6 +128,14 @@
           "encoded_locals": {
             "a": 1,
             "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {
+                "first": 1,
+                "second": 2
+              }
+            ],
             "pt": [
               "C_STRUCT",
               "struct Point",
@@ -94,6 +150,7 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "p",
             "a",
             "b",
             "pt"
@@ -114,6 +171,14 @@
           "encoded_locals": {
             "a": 1,
             "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {
+                "first": 1,
+                "second": 2
+              }
+            ],
             "pt": [
               "C_STRUCT",
               "struct Point",
@@ -129,6 +194,7 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "p",
             "a",
             "b",
             "pt",
@@ -150,6 +216,14 @@
           "encoded_locals": {
             "a": 1,
             "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {
+                "first": 1,
+                "second": 2
+              }
+            ],
             "pt": [
               "C_STRUCT",
               "struct Point",
@@ -166,6 +240,7 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "p",
             "a",
             "b",
             "pt",
@@ -197,6 +272,14 @@
               ]
             ],
             "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {
+                "first": 1,
+                "second": 2
+              }
+            ],
             "pt": [
               "C_STRUCT",
               "struct Point",
@@ -213,6 +296,7 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "p",
             "a",
             "b",
             "pt",
@@ -245,6 +329,14 @@
               ]
             ],
             "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {
+                "first": 1,
+                "second": 2
+              }
+            ],
             "pt": [
               "C_STRUCT",
               "struct Point",
@@ -262,6 +354,7 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "p",
             "a",
             "b",
             "pt",
@@ -295,6 +388,14 @@
               ]
             ],
             "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {
+                "first": 1,
+                "second": 2
+              }
+            ],
             "pt": [
               "C_STRUCT",
               "struct Point",
@@ -313,6 +414,7 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "p",
             "a",
             "b",
             "pt",
@@ -347,6 +449,14 @@
               ]
             ],
             "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {
+                "first": 1,
+                "second": 2
+              }
+            ],
             "pt": [
               "C_STRUCT",
               "struct Point",
@@ -366,6 +476,7 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "p",
             "a",
             "b",
             "pt",
@@ -401,6 +512,14 @@
               ]
             ],
             "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {
+                "first": 1,
+                "second": 2
+              }
+            ],
             "pt": [
               "C_STRUCT",
               "struct Point",
@@ -420,6 +539,7 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "p",
             "a",
             "b",
             "pt",

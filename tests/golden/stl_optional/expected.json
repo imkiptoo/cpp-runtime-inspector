@@ -30,10 +30,13 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "v": [
-              "C_ARRAY",
-              "int",
-              []
+            "empty": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
             ]
           },
           "frame_id": 0,
@@ -41,6 +44,86 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "empty"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "empty": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
+            ],
+            "with_value": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": true,
+                "value": 42
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "empty",
+            "with_value"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "empty": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
+            ],
+            "v": 42,
+            "with_value": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": true,
+                "value": 42
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "empty",
+            "with_value",
             "v"
           ]
         }
@@ -52,16 +135,35 @@
       "func_name": "main",
       "globals": {},
       "heap": {},
-      "line": 0,
+      "line": 14,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
-            "sum": 0,
-            "v": [
-              "C_ARRAY",
-              "int",
-              []
+            "assigned": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
+            ],
+            "empty": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
+            ],
+            "v": 42,
+            "with_value": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": true,
+                "value": 42
+              }
             ]
           },
           "frame_id": 0,
@@ -69,130 +171,10 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "empty",
+            "with_value",
             "v",
-            "sum"
-          ]
-        }
-      ],
-      "stdout": ""
-    },
-    {
-      "event": "step_line",
-      "func_name": "main",
-      "globals": {},
-      "heap": {},
-      "line": 13,
-      "ordered_globals": [],
-      "stack_to_render": [
-        {
-          "encoded_locals": {
-            "sum": 0,
-            "v": [
-              "C_ARRAY",
-              "int",
-              []
-            ]
-          },
-          "frame_id": 0,
-          "func_name": "main",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": [
-            "v",
-            "sum"
-          ]
-        }
-      ],
-      "stdout": ""
-    },
-    {
-      "event": "step_line",
-      "func_name": "main",
-      "globals": {},
-      "heap": {},
-      "line": 0,
-      "ordered_globals": [],
-      "stack_to_render": [
-        {
-          "encoded_locals": {
-            "sum": 0,
-            "v": [
-              "C_ARRAY",
-              "int",
-              []
-            ],
-            "x": 10
-          },
-          "frame_id": 0,
-          "func_name": "main",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": [
-            "v",
-            "sum",
-            "x"
-          ]
-        }
-      ],
-      "stdout": ""
-    },
-    {
-      "event": "step_line",
-      "func_name": "main",
-      "globals": {},
-      "heap": {},
-      "line": 0,
-      "ordered_globals": [],
-      "stack_to_render": [
-        {
-          "encoded_locals": {
-            "sum": 10,
-            "v": [
-              "C_ARRAY",
-              "int",
-              []
-            ],
-            "x": 20
-          },
-          "frame_id": 0,
-          "func_name": "main",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": [
-            "v",
-            "sum",
-            "x"
-          ]
-        }
-      ],
-      "stdout": ""
-    },
-    {
-      "event": "step_line",
-      "func_name": "main",
-      "globals": {},
-      "heap": {},
-      "line": 0,
-      "ordered_globals": [],
-      "stack_to_render": [
-        {
-          "encoded_locals": {
-            "sum": 30,
-            "v": [
-              "C_ARRAY",
-              "int",
-              []
-            ],
-            "x": 30
-          },
-          "frame_id": 0,
-          "func_name": "main",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": [
-            "v",
-            "sum",
-            "x"
+            "assigned"
           ]
         }
       ],
@@ -203,27 +185,46 @@
       "func_name": "main",
       "globals": {},
       "heap": {},
-      "line": 18,
+      "line": 17,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
-            "sum": 60,
-            "v": [
-              "C_ARRAY",
-              "int",
-              []
+            "assigned": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
             ],
-            "x": 30
+            "empty": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
+            ],
+            "v": 42,
+            "with_value": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": true,
+                "value": 42
+              }
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "empty",
+            "with_value",
             "v",
-            "sum",
-            "x"
+            "assigned"
           ]
         }
       ],

@@ -25,11 +25,86 @@
       "func_name": "main",
       "globals": {},
       "heap": {},
+      "line": 12,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Resource",
+              "unknown"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Resource",
+              "unknown"
+            ],
+            "b": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Resource",
+              "unknown"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
+            "a": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Resource",
+              "unknown"
+            ],
+            "b": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Resource",
+              "unknown"
+            ],
             "via_b": 100
           },
           "frame_id": 0,
@@ -37,6 +112,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "a",
+            "b",
             "via_b"
           ]
         }
@@ -53,6 +130,18 @@
       "stack_to_render": [
         {
           "encoded_locals": {
+            "a": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Resource",
+              "unknown"
+            ],
+            "b": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Resource",
+              "unknown"
+            ],
             "via_a": 100,
             "via_b": 100
           },
@@ -61,6 +150,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "a",
+            "b",
             "via_b",
             "via_a"
           ]
@@ -78,6 +169,18 @@
       "stack_to_render": [
         {
           "encoded_locals": {
+            "a": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Resource",
+              "unknown"
+            ],
+            "b": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Resource",
+              "unknown"
+            ],
             "via_a": 100,
             "via_b": 100
           },
@@ -86,6 +189,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "a",
+            "b",
             "via_b",
             "via_a"
           ]
