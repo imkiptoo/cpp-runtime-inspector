@@ -42,6 +42,9 @@ struct FieldInfo {
     const TypeDescriptor* type;   //!< Field type descriptor
     AccessLevel access;           //!< Access level (public/protected/private)
     bool is_vptr;                 //!< True if this is a vptr field
+    bool is_bitfield;             //!< True if this is a bitfield
+    size_t bit_offset;            //!< Bit offset within the struct (only when is_bitfield)
+    size_t bit_width;             //!< Bit width (only when is_bitfield)
 };
 
 //! Base class information for inheritance.

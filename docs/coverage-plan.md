@@ -76,23 +76,57 @@ tier and do not block Tier 1 closure.
 Definition of done: 17 new green goldens, total suite ≥ 51 tests, two
 consecutive `run-golden-tests.sh` runs pass with no diff.
 
-## Tier 2 — Runtime encoders, no plugin work (~2–3 days)
+## Tier 2 — Runtime encoders + minor plugin work (~2–3 days) — **DONE**
 
-Plugin already identifies these types in `plugin/TypeEncoder.cpp`; the
-runtime needs to decode them in `runtime/inspector/StlEncoders.cpp`.
+Each item below has a green golden under `tests/golden/`.
 
-- **`std::map` / `std::set`** — biggest piece. Walk the libstdc++/libc++
-  red-black tree (`_M_t._M_impl._M_header`). Define a `tree`-shaped
-  encoded value so the frontend can render it.
-- **`std::shared_ptr`** — encoder field already exists; needs golden +
-  ref-count display test.
-- **`std::optional`** — engaged-flag + payload encoder.
-- **`std::variant`** — active-alternative index + payload encoder.
-- **`std::function`** — target-type display.
-- **Bitfields** — encoder reads bit offsets from `TypeDescriptor`.
-- **Unions** — show all members with active-member hint.
+- **`std::map` / `std::set`** — `encodeStdMap` walks the libstdc++
+  red-black tree using header offsets at `(size − 32)`, in-order
+  iteration via parent pointers, capped at 256 entries.
+  Goldens: `stl_set`, `stl_map` (keys only — value-type plumbing
+  for `pair<const K, V>` is a follow-up).
+- **`std::shared_ptr`** — golden `stl_shared_ptr` exercises shared
+  ownership + `reset`.
+- **`std::optional`** — `encodeStdOptional` reads engaged byte at
+  offset `sizeof(T)` and decodes payload via `state.encodeValue`.
+  Golden `stl_optional`.
+- **`std::variant`** — `encodeStdVariant` reads discriminator at
+  `(size − 8)`. Decodes payload only when index == 0
+  (TypeDescriptor only carries one element_type; multi-alternative
+  decode needs a second descriptor field). Golden `stl_variant`.
+- **`std::function`** — `encodeStdFunction` reports `engaged` flag
+  via libstdc++'s `_M_invoker` / `_M_manager` slots. Golden
+  `stl_function`.
+- **Bitfields** — `FieldInfo` extended with `is_bitfield`,
+  `bit_offset`, `bit_width`. Plugin populates them via
+  `field->getBitWidthValue` / `getFieldOffset`. Runtime extracts the
+  value by shifting and masking the surrounding bytes, with
+  sign-extension for signed bitfields. Golden `bitfields`.
+- **Unions** — golden `unions` (the encoder existed already; this
+  required member-write tracking, which was added in Tier 2).
 
-Definition of done: golden test for every container/wrapper above.
+### Side effects of Tier 2
+
+- `__inspector_var_init_struct` and `var_update_struct` now route
+  STL containers to `encodeValueAtAddress` so their dedicated
+  encoders run. Without this, a top-level STL local was rendered as
+  a generic field walk over libstdc++ private members.
+- `VisitVarDecl` no longer skips STL containers — they emit their
+  init call so the local variable is visible in the trace.
+- `VisitBinaryOperator` recognises member-expression LHS
+  (`x.field = …`) so writes through structs/unions update the trace.
+- `emitStep` re-encodes every local from its address before
+  snapshotting. Without this, mutations through method calls or
+  CXXOperatorCallExpr (e.g. `vector::push_back`,
+  `variant::operator=`, `optional::reset`) did not appear in the
+  trace because the visitor only instruments built-in
+  `BinaryOperator` / `UnaryOperator` writes.
+- `getStlElementType` now drills into `TemplateArgument::Pack` so
+  variadic templates (`variant<Ts...>`) report a concrete first
+  argument.
+- The descriptor generator skips field/base walks for STL types,
+  preventing libstdc++ implementation types like `_Rb_tree_node_base`
+  from being pulled into the descriptor table.
 
 ## Tier 3 — New plugin AST visitors (~3–5 days)
 

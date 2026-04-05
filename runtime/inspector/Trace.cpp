@@ -358,7 +358,35 @@ void TraceState::addFieldsFromType(StructValue& sv, const void* addr,
 
         auto holder = std::make_shared<EncodedValueHolder>();
         holder->type = field.type;
-        holder->value = encodeValue(fieldAddr, field.type);
+        if (field.is_bitfield) {
+            // Read up to a 64-bit container starting at the byte that holds
+            // the bitfield's first bit, then mask out the field bits.
+            size_t bitInByteOffset = field.bit_offset % 8;
+            size_t firstByte = field.bit_offset / 8;
+            const auto* base = reinterpret_cast<const unsigned char*>(baseAddr);
+            uint64_t container = 0;
+            size_t totalBits = bitInByteOffset + field.bit_width;
+            size_t bytesNeeded = (totalBits + 7) / 8;
+            for (size_t b = 0; b < bytesNeeded && b < 8; ++b)
+                container |= static_cast<uint64_t>(base[firstByte + b]) << (b * 8);
+            uint64_t mask = field.bit_width >= 64
+                                ? ~uint64_t{0}
+                                : ((uint64_t{1} << field.bit_width) - 1);
+            uint64_t raw = (container >> bitInByteOffset) & mask;
+            // Sign-extend if the field type is a signed integer.
+            bool isSigned = field.type && field.type->kind == TypeKind::Int;
+            if (isSigned && field.bit_width > 0 &&
+                (raw >> (field.bit_width - 1)) & 1) {
+                uint64_t signMask = ~uint64_t{0} << field.bit_width;
+                raw |= signMask;
+            }
+            if (isSigned)
+                holder->value = static_cast<long long>(static_cast<int64_t>(raw));
+            else
+                holder->value = static_cast<long long>(raw);
+        } else {
+            holder->value = encodeValue(fieldAddr, field.type);
+        }
         sv.fields[fieldName] = holder;
     }
 }

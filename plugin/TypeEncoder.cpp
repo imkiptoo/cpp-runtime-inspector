@@ -492,23 +492,35 @@ TypeEncoder::generateFieldInfoArray(const clang::RecordDecl* record,
     const clang::ASTRecordLayout& layout =
         m_context.getASTRecordLayout(record);
 
-    // Collect fields
-    std::vector<std::tuple<std::string, size_t, clang::QualType, AccessLevel>>
-        fields;
+    // Collect fields. Bitfields carry extra information.
+    struct FieldEntry {
+        std::string name;
+        size_t byte_offset;
+        clang::QualType type;
+        AccessLevel access;
+        bool is_bitfield;
+        size_t bit_offset;
+        size_t bit_width;
+    };
+    std::vector<FieldEntry> fields;
 
     unsigned fieldIdx = 0;
     for (const auto* field : record->fields()) {
-        size_t offset = layout.getFieldOffset(fieldIdx) / 8;
+        size_t bitOffset = layout.getFieldOffset(fieldIdx);
+        size_t byteOffset = bitOffset / 8;
         AccessLevel access = AccessLevel::Public;
-
-        // For C++ classes, get access specifier
-        if (const auto* cxxRecord =
-                llvm::dyn_cast<clang::CXXRecordDecl>(record)) {
+        if (llvm::isa<clang::CXXRecordDecl>(record))
             access = convertAccess(field->getAccess());
-        }
 
-        fields.emplace_back(field->getNameAsString(), offset, field->getType(),
-                            access);
+        FieldEntry e{
+            field->getNameAsString(), byteOffset, field->getType(),
+            access, /*is_bitfield=*/false, /*bit_offset=*/0, /*bit_width=*/0};
+        if (field->isBitField()) {
+            e.is_bitfield = true;
+            e.bit_offset = bitOffset;
+            e.bit_width = field->getBitWidthValue(m_context);
+        }
+        fields.push_back(std::move(e));
         ++fieldIdx;
     }
 
@@ -517,10 +529,12 @@ TypeEncoder::generateFieldInfoArray(const clang::RecordDecl* record,
 
     ss << "static const inspector::FieldInfo " << baseName << "_fields[] = {\n";
     for (size_t i = 0; i < fields.size(); ++i) {
-        const auto& [name, offset, type, access] = fields[i];
-        ss << "    {\"" << name << "\", " << offset << ", "
-           << getDescriptorRef(type) << ", inspector::AccessLevel::"
-           << accessToString(access) << ", false}";
+        const auto& f = fields[i];
+        ss << "    {\"" << f.name << "\", " << f.byte_offset << ", "
+           << getDescriptorRef(f.type) << ", inspector::AccessLevel::"
+           << accessToString(f.access) << ", false, "
+           << (f.is_bitfield ? "true" : "false") << ", " << f.bit_offset
+           << ", " << f.bit_width << "}";
         if (i + 1 < fields.size())
             ss << ",";
         ss << "\n";
