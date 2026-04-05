@@ -583,8 +583,8 @@ EncodedValue TraceState::encodeValueAtAddress(const void* addr,
 
         case StlContainerKind::Map:
         case StlContainerKind::Set:
-            // Complex tree traversal - use placeholder for now
-            return encodeStdMap(addr, nullptr, nullptr, *this);
+            return encodeStdMap(addr, type, type->element_type,
+                                stlKind == StlContainerKind::Set, *this);
 
         case StlContainerKind::None:
         default:

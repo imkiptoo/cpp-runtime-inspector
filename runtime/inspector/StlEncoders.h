@@ -81,8 +81,9 @@ EncodedValue encodeStdPair(const void* addr, const TypeDescriptor* firstType,
 //! @param valueType Type descriptor for values.
 //! @param state TraceState for recursive encoding.
 //! @return Encoded value representing the map contents.
-EncodedValue encodeStdMap(const void* addr, const TypeDescriptor* keyType,
-                          const TypeDescriptor* valueType, TraceState& state);
+EncodedValue encodeStdMap(const void* addr, const TypeDescriptor* mapType,
+                          const TypeDescriptor* elementType, bool isSet,
+                          TraceState& state);
 
 //! Encode an std::unique_ptr's contents.
 //! @param addr Address of the unique_ptr object.

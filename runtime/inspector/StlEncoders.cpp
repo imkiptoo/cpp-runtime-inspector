@@ -216,19 +216,110 @@ EncodedValue encodeStdPair(const void* addr, const TypeDescriptor* firstType,
     return sv;
 }
 
-EncodedValue encodeStdMap(const void* addr, const TypeDescriptor* keyType,
-                          const TypeDescriptor* valueType, TraceState& state) {
-    // std::map uses a red-black tree internally
-    // This is very complex to traverse without the type information
-    // For now, return a placeholder indicating it's a map
+EncodedValue encodeStdMap(const void* addr, const TypeDescriptor* mapType,
+                          const TypeDescriptor* elementType, bool isSet,
+                          TraceState& state) {
+    // libstdc++ x86_64 std::map / std::set layout:
+    //
+    //   class _Rb_tree {
+    //     _Rb_tree_impl _M_impl;       // contains _Rb_tree_header
+    //   };
+    //
+    //   _Rb_tree_header is at offset 8 within map/set (the leading 8 bytes
+    //   appear to come from a non-EBO'd allocator slot in this build), so:
+    //
+    //     offset (size-32): root pointer (_M_parent)
+    //     offset (size-24): leftmost node (_M_left)
+    //     offset (size-16): rightmost node (_M_right)
+    //     offset (size-8):  size_t count
+    //
+    //   Each node lives in a _Rb_tree_node which begins with a 32-byte
+    //   _Rb_tree_node_base (4 color + 4 pad + 8 parent + 8 left + 8 right)
+    //   followed by the stored value at offset 32.
+    constexpr size_t NODE_BASE_SIZE = 32;
+    constexpr size_t MAP_FOOTER_OFFSET = 32; // count is at the very end (-8)
+
     StructValue sv;
-    sv.typeName = "std::map";
-    sv.fieldOrder.push_back("<contents>");
+    sv.typeName = isSet ? "std::set" : "std::map";
+    sv.fieldOrder.push_back("size");
+    sv.fieldOrder.push_back("entries");
 
-    auto holder = std::make_shared<EncodedValueHolder>();
-    holder->value = std::string("<map traversal not yet implemented>");
-    sv.fields["<contents>"] = holder;
+    auto sizeHolder = std::make_shared<EncodedValueHolder>();
+    auto entriesHolder = std::make_shared<EncodedValueHolder>();
 
+    if (!addr || !mapType || mapType->size < 40) {
+        sizeHolder->value = static_cast<long long>(0);
+        ArrayValue av;
+        av.elements.clear();
+        entriesHolder->value = av;
+        sv.fields["size"] = sizeHolder;
+        sv.fields["entries"] = entriesHolder;
+        return sv;
+    }
+
+    const auto* base = reinterpret_cast<const unsigned char*>(addr);
+    size_t totalSize = mapType->size;
+    const void* root = *reinterpret_cast<const void* const*>(base + totalSize - MAP_FOOTER_OFFSET);
+    size_t count = *reinterpret_cast<const size_t*>(base + totalSize - 8);
+
+    sizeHolder->value = static_cast<long long>(count);
+    sv.fields["size"] = sizeHolder;
+
+    ArrayValue av;
+    av.elementTypeName = elementType && elementType->spelling
+                            ? elementType->spelling
+                            : "<unknown>";
+
+    // In-order tree walk. Stop early at large sizes so we can never blow up
+    // the trace if the tree is corrupted.
+    constexpr size_t MAX_ENTRIES = 256;
+    size_t emitted = 0;
+
+    // Iterative in-order traversal using parent pointers (libstdc++ stores
+    // parent in _M_parent at offset +8 of node base).
+    auto leftOf = [](const void* n) -> const void* {
+        return *reinterpret_cast<const void* const*>(reinterpret_cast<const unsigned char*>(n) + 16);
+    };
+    auto rightOf = [](const void* n) -> const void* {
+        return *reinterpret_cast<const void* const*>(reinterpret_cast<const unsigned char*>(n) + 24);
+    };
+    auto parentOf = [](const void* n) -> const void* {
+        return *reinterpret_cast<const void* const*>(reinterpret_cast<const unsigned char*>(n) + 8);
+    };
+
+    if (root && count > 0 && elementType) {
+        // Find leftmost from root.
+        const void* node = root;
+        while (leftOf(node)) node = leftOf(node);
+
+        const void* headerEnd = base + totalSize - MAP_FOOTER_OFFSET;
+        while (node && emitted < count && emitted < MAX_ENTRIES) {
+            const void* valueAddr = reinterpret_cast<const unsigned char*>(node) + NODE_BASE_SIZE;
+            auto holder = std::make_shared<EncodedValueHolder>();
+            holder->type = elementType;
+            holder->value = state.encodeValue(valueAddr, elementType);
+            av.elements.push_back(holder);
+            ++emitted;
+
+            // In-order successor.
+            if (rightOf(node)) {
+                node = rightOf(node);
+                while (leftOf(node)) node = leftOf(node);
+            } else {
+                const void* p = parentOf(node);
+                while (p && rightOf(p) == node) {
+                    node = p;
+                    p = parentOf(node);
+                    if (p == headerEnd) { p = nullptr; break; }
+                }
+                if (p == headerEnd) break;
+                node = p;
+            }
+        }
+    }
+
+    entriesHolder->value = av;
+    sv.fields["entries"] = entriesHolder;
     return sv;
 }
 

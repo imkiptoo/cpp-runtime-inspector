@@ -1,0 +1,182 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 7,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "m": [
+              "C_STRUCT",
+              "std::map",
+              {
+                "entries": [
+                  "C_ARRAY",
+                  "int",
+                  []
+                ],
+                "size": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "m"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "m": [
+              "C_STRUCT",
+              "std::map",
+              {
+                "entries": [
+                  "C_ARRAY",
+                  "int",
+                  [
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "size": 3
+              }
+            ],
+            "n": 3
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "m",
+            "n"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "m": [
+              "C_STRUCT",
+              "std::map",
+              {
+                "entries": [
+                  "C_ARRAY",
+                  "int",
+                  [
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "size": 3
+              }
+            ],
+            "n": 3,
+            "v": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "m",
+            "n",
+            "v"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "m": [
+              "C_STRUCT",
+              "std::map",
+              {
+                "entries": [
+                  "C_ARRAY",
+                  "int",
+                  [
+                    1,
+                    2,
+                    3
+                  ]
+                ],
+                "size": 3
+              }
+            ],
+            "n": 3,
+            "v": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "m",
+            "n",
+            "v"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}

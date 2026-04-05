@@ -1,0 +1,142 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 6,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 7,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "s": [
+              "C_STRUCT",
+              "std::set",
+              {
+                "entries": [
+                  "C_ARRAY",
+                  "int",
+                  []
+                ],
+                "size": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "s"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "n": 5,
+            "s": [
+              "C_STRUCT",
+              "std::set",
+              {
+                "entries": [
+                  "C_ARRAY",
+                  "int",
+                  [
+                    1,
+                    5,
+                    13,
+                    20,
+                    40
+                  ]
+                ],
+                "size": 5
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "s",
+            "n"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 15,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "n": 5,
+            "s": [
+              "C_STRUCT",
+              "std::set",
+              {
+                "entries": [
+                  "C_ARRAY",
+                  "int",
+                  [
+                    1,
+                    5,
+                    13,
+                    20,
+                    40
+                  ]
+                ],
+                "size": 5
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "s",
+            "n"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}

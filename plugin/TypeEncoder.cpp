@@ -662,7 +662,13 @@ std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
     // For composite types, first generate dependency descriptors
     std::string dependencies;
 
-    if (type->isRecordType()) {
+    // STL containers are decoded by their dedicated runtime encoders, not by
+    // generic field walks. Skip walking their internals so we don't drag in
+    // libstdc++ implementation types (_Rb_tree_node_base, _Vector_base, ...)
+    // and emit broken descriptors for them.
+    bool isStlType = isStlContainer(type);
+
+    if (type->isRecordType() && !isStlType) {
         const clang::RecordDecl* record = type->getAsRecordDecl();
         if (record && record->isCompleteDefinition()) {
             // Generate descriptors for field types
@@ -714,7 +720,7 @@ std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
     bool isPolymorphic = false;
     bool isUnionType = type->isUnionType();
 
-    if (type->isRecordType()) {
+    if (type->isRecordType() && !isStlType) {
         const clang::RecordDecl* record = type->getAsRecordDecl();
         if (record && record->isCompleteDefinition()) {
             fieldArrayCode =

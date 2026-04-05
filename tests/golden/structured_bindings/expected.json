@@ -33,10 +33,7 @@
             "p": [
               "C_STRUCT",
               "struct std::pair<int, int>",
-              {
-                "first": 1,
-                "second": 2
-              }
+              {}
             ]
           },
           "frame_id": 0,
@@ -64,10 +61,7 @@
             "p": [
               "C_STRUCT",
               "struct std::pair<int, int>",
-              {
-                "first": 1,
-                "second": 2
-              }
+              {}
             ]
           },
           "frame_id": 0,
@@ -97,10 +91,7 @@
             "p": [
               "C_STRUCT",
               "struct std::pair<int, int>",
-              {
-                "first": 1,
-                "second": 2
-              }
+              {}
             ]
           },
           "frame_id": 0,
@@ -131,10 +122,7 @@
             "p": [
               "C_STRUCT",
               "struct std::pair<int, int>",
-              {
-                "first": 1,
-                "second": 2
-              }
+              {}
             ],
             "pt": [
               "C_STRUCT",
@@ -174,10 +162,7 @@
             "p": [
               "C_STRUCT",
               "struct std::pair<int, int>",
-              {
-                "first": 1,
-                "second": 2
-              }
+              {}
             ],
             "pt": [
               "C_STRUCT",
@@ -219,10 +204,7 @@
             "p": [
               "C_STRUCT",
               "struct std::pair<int, int>",
-              {
-                "first": 1,
-                "second": 2
-              }
+              {}
             ],
             "pt": [
               "C_STRUCT",
@@ -275,10 +257,7 @@
             "p": [
               "C_STRUCT",
               "struct std::pair<int, int>",
-              {
-                "first": 1,
-                "second": 2
-              }
+              {}
             ],
             "pt": [
               "C_STRUCT",
@@ -332,10 +311,7 @@
             "p": [
               "C_STRUCT",
               "struct std::pair<int, int>",
-              {
-                "first": 1,
-                "second": 2
-              }
+              {}
             ],
             "pt": [
               "C_STRUCT",
@@ -391,10 +367,7 @@
             "p": [
               "C_STRUCT",
               "struct std::pair<int, int>",
-              {
-                "first": 1,
-                "second": 2
-              }
+              {}
             ],
             "pt": [
               "C_STRUCT",
@@ -452,10 +425,7 @@
             "p": [
               "C_STRUCT",
               "struct std::pair<int, int>",
-              {
-                "first": 1,
-                "second": 2
-              }
+              {}
             ],
             "pt": [
               "C_STRUCT",
@@ -515,10 +485,7 @@
             "p": [
               "C_STRUCT",
               "struct std::pair<int, int>",
-              {
-                "first": 1,
-                "second": 2
-              }
+              {}
             ],
             "pt": [
               "C_STRUCT",
