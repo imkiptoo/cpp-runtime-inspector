@@ -99,7 +99,7 @@ update_test() {
     # See run-golden-tests.sh for the rationale behind -rdynamic on Linux.
     LINK_EXTRA=()
     if [[ "$(uname)" != "Darwin" ]]; then
-        LINK_EXTRA+=(-rdynamic)
+        LINK_EXTRA+=(-rdynamic -ldl)
     fi
     if ! "${CLANGXX}" \
         "${workdir}/test.o" \

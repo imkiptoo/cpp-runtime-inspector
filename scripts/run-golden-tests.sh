@@ -163,7 +163,11 @@ run_test() {
     # exports symbols by default, so the flag is unnecessary there.
     LINK_EXTRA=()
     if [[ "$(uname)" != "Darwin" ]]; then
-        LINK_EXTRA+=(-rdynamic)
+        # -rdynamic exports the executable's symbols so the LD_PRELOAD shim
+        # can resolve hook functions, AND so the dynamic-type resolver
+        # (Dynamic.cpp) can map vtable pointers back to symbol names via
+        # dladdr. -ldl links the dynamic-loader API.
+        LINK_EXTRA+=(-rdynamic -ldl)
     fi
     if ! "${CLANGXX}" \
         "${workdir}/test.o" \

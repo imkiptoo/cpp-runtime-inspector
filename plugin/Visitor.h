@@ -83,7 +83,21 @@ public:
     //! Visit catch statements to track exception handling (Tier 5).
     bool VisitCXXCatchStmt(clang::CXXCatchStmt* stmt);
 
+    //! Visit constructor declarations to instrument member-initializer-list
+    //! values (Tier 3). Each CXXCtorInitializer that targets a data member
+    //! gets a step call so the trace can show fields filling in.
+    bool VisitCXXConstructorDecl(clang::CXXConstructorDecl* decl);
+
 private:
+    //! Walk an LHS expression to determine if it's a write through `this->`.
+    //! Returns true if the LHS chain ultimately roots in a CXXThisExpr.
+    bool isWriteThroughThis(clang::Expr* lhs) const;
+
+    //! Wrap an expression that writes through `this->` so a step fires
+    //! after the write. Live re-encoding then snapshots the receiver in
+    //! the caller's frame.
+    void wrapThisWriteWithStep(clang::Expr* expr, unsigned line);
+
     //! Check if current statement's parent is a CompoundStmt.
     bool hasCompoundStmtParent() const;
 

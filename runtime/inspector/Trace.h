@@ -22,6 +22,7 @@ struct Allocation;
 //! Encoded struct value: ordered map of field name -> value
 struct StructValue {
     std::string typeName;
+    std::string dynamicType;              //!< Dynamic (most-derived) class name; empty if non-polymorphic or unknown
     std::vector<std::string> fieldOrder;  //!< Ordered field names
     std::map<std::string, std::shared_ptr<struct EncodedValueHolder>> fields;
 };

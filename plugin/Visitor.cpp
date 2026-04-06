@@ -305,6 +305,17 @@ bool InspectorVisitor::VisitBinaryOperator(clang::BinaryOperator* op) {
                 var = llvm::dyn_cast<clang::VarDecl>(baseRef->getDecl());
         }
     }
+
+    // If the LHS is a write through `this->...`, we can't update a specific
+    // local — `this` points into the caller's frame. Instead, fire a step
+    // post-write so live re-encoding in emitStep snapshots every frame
+    // (including the caller's, where the receiver actually lives).
+    if (!var && isWriteThroughThis(lhs)) {
+        unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
+        wrapThisWriteWithStep(op, line);
+        return true;
+    }
+
     if (!var)
         return true;
 
@@ -348,6 +359,14 @@ bool InspectorVisitor::VisitCompoundAssignOperator(
     // Get the LHS variable
     clang::Expr* lhs = op->getLHS()->IgnoreParenCasts();
     auto* ref = llvm::dyn_cast<clang::DeclRefExpr>(lhs);
+
+    // Handle compound assign through `this->` (e.g., this->total += n).
+    if (!ref && isWriteThroughThis(lhs)) {
+        unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
+        wrapThisWriteWithStep(op, line);
+        return true;
+    }
+
     if (!ref)
         return true;
 
@@ -397,6 +416,14 @@ bool InspectorVisitor::VisitUnaryOperator(clang::UnaryOperator* op) {
 
     clang::Expr* sub = op->getSubExpr()->IgnoreParenCasts();
     auto* ref = llvm::dyn_cast<clang::DeclRefExpr>(sub);
+
+    // Handle ++this->x / --this->x.
+    if (!ref && isWriteThroughThis(sub)) {
+        unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
+        wrapThisWriteWithStep(op, line);
+        return true;
+    }
+
     if (!ref)
         return true;
 
@@ -820,6 +847,40 @@ bool InspectorVisitor::VisitCXXThrowExpr(clang::CXXThrowExpr* expr) {
     m_rewriter.InsertText(expr->getBeginLoc(), call, /*InsertAfter=*/true);
     m_rewriter.InsertTextAfterToken(expr->getEndLoc(), ")");
 
+    return true;
+}
+
+bool InspectorVisitor::isWriteThroughThis(clang::Expr* lhs) const {
+    if (!lhs)
+        return false;
+    auto* member = llvm::dyn_cast<clang::MemberExpr>(lhs);
+    if (!member)
+        return false;
+    // Walk down the member chain, then check the innermost base.
+    clang::Expr* base = member;
+    while (auto* m = llvm::dyn_cast<clang::MemberExpr>(base)) {
+        base = m->getBase()->IgnoreParenImpCasts();
+    }
+    return llvm::isa<clang::CXXThisExpr>(base);
+}
+
+void InspectorVisitor::wrapThisWriteWithStep(clang::Expr* expr, unsigned line) {
+    // Wrap as (expr, __inspector_step(line)). The step fires post-write so
+    // emitStep's live re-encoder snapshots the receiver's caller frame.
+    std::string suffix =
+        ", __inspector_step(" + std::to_string(line) + "))";
+    m_rewriter.InsertText(expr->getBeginLoc(), "(", /*InsertAfter=*/true);
+    m_rewriter.InsertTextAfterToken(expr->getEndLoc(), suffix);
+}
+
+bool InspectorVisitor::VisitCXXConstructorDecl(clang::CXXConstructorDecl* decl) {
+    // Constructors are also FunctionDecls, so VisitFunctionDecl handles
+    // body enter/leave instrumentation. The function-enter event fires
+    // *after* the member initializer list runs, so the first snapshot
+    // already shows fields fully initialized — no extra wrapping needed.
+    // Keeping this override as a placeholder for future ctor-specific work
+    // (e.g. annotating the event kind as "ctor_enter").
+    (void)decl;
     return true;
 }
 

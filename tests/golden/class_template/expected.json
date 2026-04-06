@@ -87,6 +87,43 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "Box::set",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "bi": [
+              "C_STRUCT",
+              "struct Box<int>",
+              {
+                "value": 42
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "bi"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Box::set",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
       "event": "return",
       "func_name": "Box::set",
       "globals": {},
@@ -282,6 +319,53 @@
               "struct Box<double>",
               {
                 "value": 0.0
+              }
+            ],
+            "bi": [
+              "C_STRUCT",
+              "struct Box<int>",
+              {
+                "value": 42
+              }
+            ],
+            "xi": 42
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "bi",
+            "xi",
+            "bd"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Box::set",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Box::set",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "bd": [
+              "C_STRUCT",
+              "struct Box<double>",
+              {
+                "value": 3.14
               }
             ],
             "bi": [

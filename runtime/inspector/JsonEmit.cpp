@@ -63,6 +63,7 @@ nlohmann::json JsonEmitter::heapObjectToJson(const HeapObject& obj) {
         }
     } else if (std::holds_alternative<StructValue>(obj.value)) {
         // Struct: ["HEAP_STRUCT", typeName, [[field1, value1], ...]]
+        // For polymorphic types, append the dynamic type as a 4th element.
         result.push_back("HEAP_STRUCT");
         result.push_back(obj.typeName);
 
@@ -78,6 +79,9 @@ nlohmann::json JsonEmitter::heapObjectToJson(const HeapObject& obj) {
             }
         }
         result.push_back(fields);
+        if (!sv.dynamicType.empty()) {
+            result.push_back(sv.dynamicType);
+        }
     } else {
         // Primitive: ["HEAP_PRIMITIVE", typeName, value]
         result.push_back("HEAP_PRIMITIVE");
@@ -188,6 +192,9 @@ nlohmann::json JsonEmitter::valueToJson(const EncodedValue& value,
                 return arg;
             } else if constexpr (std::is_same_v<T, StructValue>) {
                 // Struct: ["C_STRUCT", typeName, {field1: value1, ...}]
+                // For polymorphic objects whose dynamic type differs from
+                // the static type, append the dynamic type as a 4th element:
+                //   ["C_STRUCT", "Shape", {fields}, "Circle"]
                 nlohmann::json result = nlohmann::json::array();
                 result.push_back("C_STRUCT");
                 result.push_back(arg.typeName);
@@ -201,6 +208,9 @@ nlohmann::json JsonEmitter::valueToJson(const EncodedValue& value,
                     }
                 }
                 result.push_back(fields);
+                if (!arg.dynamicType.empty()) {
+                    result.push_back(arg.dynamicType);
+                }
                 return result;
             } else if constexpr (std::is_same_v<T, ArrayValue>) {
                 // Array: ["C_ARRAY", elementType, [elem1, elem2, ...]]

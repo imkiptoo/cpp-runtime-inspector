@@ -13,7 +13,7 @@
     ],
     [
       "leaked",
-      15,
+      16,
       "<untyped>"
     ],
     [
@@ -23,12 +23,12 @@
     ],
     [
       "leaked",
-      79,
+      6,
       "<untyped>"
     ],
     [
       "leaked",
-      84,
+      90,
       "<untyped>"
     ],
     [
@@ -53,7 +53,7 @@
     ],
     [
       "leaked",
-      16,
+      15,
       "<untyped>"
     ],
     [
@@ -83,6 +83,11 @@
     ],
     [
       "leaked",
+      38,
+      "<untyped>"
+    ],
+    [
+      "leaked",
       39,
       "<untyped>"
     ],
@@ -93,27 +98,17 @@
     ],
     [
       "leaked",
-      45,
+      43,
       "<untyped>"
     ],
     [
       "leaked",
-      82,
+      81,
       "<untyped>"
     ],
     [
       "leaked",
-      40,
-      "<untyped>"
-    ],
-    [
-      "leaked",
-      23,
-      "<untyped>"
-    ],
-    [
-      "leaked",
-      24,
+      85,
       "<untyped>"
     ],
     [
@@ -213,27 +208,17 @@
     ],
     [
       "leaked",
-      83,
+      76,
       "<untyped>"
     ],
     [
       "leaked",
-      85,
+      77,
       "<untyped>"
     ],
     [
       "leaked",
-      86,
-      "<untyped>"
-    ],
-    [
-      "leaked",
-      87,
-      "<untyped>"
-    ],
-    [
-      "leaked",
-      49,
+      78,
       "<untyped>"
     ],
     [
@@ -243,7 +228,22 @@
     ],
     [
       "leaked",
+      87,
+      "<untyped>"
+    ],
+    [
+      "leaked",
       51,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      89,
+      "<untyped>"
+    ],
+    [
+      "leaked",
+      91,
       "<untyped>"
     ],
     [
@@ -348,17 +348,17 @@
           "<untyped>",
           0
         ],
+        "18": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
         "2": [
           "HEAP_PRIMITIVE",
           "<untyped>",
           0
         ],
         "3": [
-          "HEAP_PRIMITIVE",
-          "<untyped>",
-          0
-        ],
-        "7": [
           "HEAP_PRIMITIVE",
           "<untyped>",
           0
@@ -381,7 +381,7 @@
           "encoded_locals": {
             "p": [
               "REF",
-              11
+              12
             ]
           },
           "frame_id": 0,
@@ -405,7 +405,7 @@
           "<untyped>",
           0
         ],
-        "12": [
+        "10": [
           "HEAP_PRIMITIVE",
           "<untyped>",
           0
@@ -440,17 +440,12 @@
           "<untyped>",
           0
         ],
+        "19": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
         "2": [
-          "HEAP_PRIMITIVE",
-          "<untyped>",
-          0
-        ],
-        "24": [
-          "HEAP_PRIMITIVE",
-          "<untyped>",
-          0
-        ],
-        "25": [
           "HEAP_PRIMITIVE",
           "<untyped>",
           0
@@ -465,7 +460,22 @@
           "<untyped>",
           0
         ],
+        "28": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "29": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
         "3": [
+          "HEAP_PRIMITIVE",
+          "<untyped>",
+          0
+        ],
+        "30": [
           "HEAP_PRIMITIVE",
           "<untyped>",
           0
@@ -515,12 +525,7 @@
           "<untyped>",
           0
         ],
-        "48": [
-          "HEAP_PRIMITIVE",
-          "<untyped>",
-          0
-        ],
-        "7": [
+        "43": [
           "HEAP_PRIMITIVE",
           "<untyped>",
           0
@@ -543,7 +548,7 @@
           "encoded_locals": {
             "p": [
               "DANGLING",
-              11
+              12
             ]
           },
           "frame_id": 0,

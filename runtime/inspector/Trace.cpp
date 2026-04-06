@@ -2,6 +2,7 @@
 //! @brief Trace state management implementation.
 
 #include "Trace.h"
+#include "Dynamic.h"
 #include "Heap.h"
 #include "StlEncoders.h"
 
@@ -166,39 +167,57 @@ void TraceState::emitStep(EventKind kind, const std::string& funcName,
     // Snapshot the stack
     step.stack = m_stack;
 
-    // Snapshot the heap state
+    // Snapshot the heap state.
+    //
+    // CAREFUL: any allocation made *inside* this loop (e.g. by std::map's
+    // insert allocating a node, or by encodeValue allocating shared
+    // pointers) goes through the LD_PRELOAD malloc shim, which calls
+    // HeapTracker::insert, which may push_back onto m_allocations and
+    // invalidate the `const Allocation*` pointers handed back by
+    // getLiveAllocations(). To keep the iteration stable we snapshot the
+    // Allocation values into a local vector first; subsequent reallocations
+    // of m_allocations during the loop are then safe.
     HeapTracker& heap = HeapTracker::instance();
-    for (const Allocation* alloc : heap.getLiveAllocations()) {
+    std::vector<Allocation> liveSnapshot;
+    {
+        const auto live = heap.getLiveAllocations();
+        liveSnapshot.reserve(live.size());
+        for (const Allocation* a : live) {
+            liveSnapshot.push_back(*a);
+        }
+    }
+
+    for (const Allocation& alloc : liveSnapshot) {
         HeapObject obj;
-        obj.heapId = alloc->heap_id;
-        obj.typeName = alloc->type ? (alloc->type->spelling ? alloc->type->spelling : "<type>") : "<untyped>";
-        obj.isArray = alloc->is_array;
-        obj.arrayCount = alloc->array_count;
+        obj.heapId = alloc.heap_id;
+        obj.typeName = alloc.type ? (alloc.type->spelling ? alloc.type->spelling : "<type>") : "<untyped>";
+        obj.isArray = alloc.is_array;
+        obj.arrayCount = alloc.array_count;
 
         // Encode the heap object's value
-        if (alloc->type) {
-            if (alloc->is_array && alloc->type->kind != TypeKind::Array) {
+        if (alloc.type) {
+            if (alloc.is_array && alloc.type->kind != TypeKind::Array) {
                 // Create a temporary array descriptor for encoding
                 ArrayValue av;
                 av.elementTypeName = obj.typeName;
-                const char* base = static_cast<const char*>(alloc->base);
-                for (size_t i = 0; i < alloc->array_count; ++i) {
-                    const void* elemAddr = base + (i * alloc->type->size);
+                const char* base = static_cast<const char*>(alloc.base);
+                for (size_t i = 0; i < alloc.array_count; ++i) {
+                    const void* elemAddr = base + (i * alloc.type->size);
                     auto holder = std::make_shared<EncodedValueHolder>();
-                    holder->type = alloc->type;
-                    holder->value = encodeValue(elemAddr, alloc->type);
+                    holder->type = alloc.type;
+                    holder->value = encodeValue(elemAddr, alloc.type);
                     av.elements.push_back(holder);
                 }
                 obj.value = av;
             } else {
-                obj.value = encodeValue(alloc->base, alloc->type);
+                obj.value = encodeValue(alloc.base, alloc.type);
             }
         } else {
             // Untyped allocation (from malloc) - just show as integer
             obj.value = static_cast<long long>(0);
         }
 
-        step.heap[alloc->heap_id] = std::move(obj);
+        step.heap[alloc.heap_id] = std::move(obj);
     }
 
     m_steps.push_back(std::move(step));
@@ -299,6 +318,18 @@ EncodedValue TraceState::encodeStruct(const void* addr,
                                        const TypeDescriptor* type) {
     StructValue sv;
     sv.typeName = type->spelling ? type->spelling : "<struct>";
+
+    // Resolve the dynamic (most-derived) type for polymorphic objects so the
+    // trace can show "Shape* p ↦ Circle" rather than reporting only the
+    // static type. Skips when the descriptor isn't marked polymorphic, or
+    // when the resolver can't read a vtable symbol (no dladdr support, or
+    // a stripped binary).
+    if (type && type->is_polymorphic && addr) {
+        std::string dyn = resolveDynamicTypeName(addr);
+        if (!dyn.empty() && dyn != sv.typeName) {
+            sv.dynamicType = dyn;
+        }
+    }
 
     const char* baseAddr = static_cast<const char*>(addr);
 
