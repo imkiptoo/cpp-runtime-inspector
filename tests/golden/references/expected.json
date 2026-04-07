@@ -131,6 +131,41 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "increment",
+      "globals": {},
+      "heap": {},
+      "line": 5,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ref": 0,
+            "x": 16,
+            "y": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ref"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "increment",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
       "event": "return",
       "func_name": "increment",
       "globals": {},
@@ -155,16 +190,12 @@
           ]
         },
         {
-          "encoded_locals": {
-            "x": 0
-          },
+          "encoded_locals": {},
           "frame_id": 1,
           "func_name": "increment",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": [
-            "x"
-          ]
+          "ordered_varnames": []
         }
       ],
       "stdout": ""
@@ -244,6 +275,84 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "swap",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ref": 0,
+            "x": 20,
+            "y": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ref"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "temp": 16
+          },
+          "frame_id": 2,
+          "func_name": "swap",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "temp"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "swap",
+      "globals": {},
+      "heap": {},
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ref": 0,
+            "x": 20,
+            "y": 16
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ref"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "temp": 16
+          },
+          "frame_id": 2,
+          "func_name": "swap",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "temp"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
       "event": "return",
       "func_name": "swap",
       "globals": {},
@@ -269,8 +378,6 @@
         },
         {
           "encoded_locals": {
-            "a": 0,
-            "b": 0,
             "temp": 16
           },
           "frame_id": 2,
@@ -278,9 +385,7 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
-            "temp",
-            "a",
-            "b"
+            "temp"
           ]
         }
       ],

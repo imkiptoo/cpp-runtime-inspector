@@ -4,6 +4,7 @@
 #include "Visitor.h"
 
 #include "clang/AST/ParentMapContext.h"
+#include "clang/Basic/SourceManager.h"
 #include "clang/Lex/Lexer.h"
 
 #include <sstream>
@@ -87,11 +88,45 @@ bool InspectorVisitor::VisitFunctionDecl(clang::FunctionDecl* decl) {
     std::string funcName = decl->getQualifiedNameAsString();
     m_currentFunction = funcName;
 
-    // Use the first top-level function as the insertion point for type descriptors
-    // Skip member functions (methods) - we only want free functions
-    if (!m_hasInsertionPoint && !decl->isCXXClassMember()) {
-        m_insertionPoint = decl->getBeginLoc();
-        m_hasInsertionPoint = true;
+    // Pick an insertion point for type descriptors. Descriptors must come
+    // *before* any code that references them; that includes member
+    // functions defined inline inside a class.
+    //
+    // For free functions we use the function's own start location. For
+    // methods we walk up to the outermost enclosing class — and if that
+    // class is the body of a class template, up once more to the
+    // ClassTemplateDecl, so descriptors don't land between
+    // `template <...>` and `struct Foo`. We keep the earliest seen.
+    {
+        clang::SourceLocation candidate;
+        if (decl->isCXXClassMember()) {
+            const clang::DeclContext* ctx = decl->getDeclContext();
+            const clang::CXXRecordDecl* outer = nullptr;
+            while (ctx) {
+                if (auto* rec = llvm::dyn_cast<clang::CXXRecordDecl>(ctx)) {
+                    outer = rec;
+                }
+                ctx = ctx->getParent();
+            }
+            if (outer) {
+                if (auto* tmpl = outer->getDescribedClassTemplate()) {
+                    candidate = tmpl->getBeginLoc();
+                } else {
+                    candidate = outer->getBeginLoc();
+                }
+            }
+        } else {
+            candidate = decl->getBeginLoc();
+        }
+
+        if (candidate.isValid()) {
+            const auto& sm = m_context.getSourceManager();
+            if (!m_hasInsertionPoint ||
+                sm.isBeforeInTranslationUnit(candidate, m_insertionPoint)) {
+                m_insertionPoint = candidate;
+                m_hasInsertionPoint = true;
+            }
+        }
     }
 
     // Inject __inspector_enter after opening brace
@@ -323,6 +358,25 @@ bool InspectorVisitor::VisitBinaryOperator(clang::BinaryOperator* op) {
     if (!m_typeEncoder.isSupported(type))
         return true;
 
+    // Skip non-local VarDecl writes that we can't safely emit a descriptor
+    // for at the LHS use-site. This covers:
+    //   - global/static struct members: descriptor only emitted for locals
+    //   - reference parameters whose member is written: the descriptor is
+    //     for the *referent* (also unemitted), and the runtime would track
+    //     the parameter as a fake local
+    //   - struct-typed parameters by value: same — we don't track params
+    // Drop in a step instead so live re-encoding snapshots the caller's
+    // frame, which is where the mutated object actually lives.
+    if (!var->isLocalVarDecl()) {
+        TypeKind kind = m_typeEncoder.getTypeKind(type);
+        if (kind == TypeKind::Struct || kind == TypeKind::Union ||
+            kind == TypeKind::Array || kind == TypeKind::Reference) {
+            unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
+            wrapThisWriteWithStep(op, line);
+            return true;
+        }
+    }
+
     std::string call = generateVarUpdateCall(var);
 
     // Wrap in comma operator: (x = expr, __inspector_var_update_...(...))
@@ -377,6 +431,17 @@ bool InspectorVisitor::VisitCompoundAssignOperator(
     clang::QualType type = var->getType();
     if (!m_typeEncoder.isSupported(type))
         return true;
+
+    // Same composite-non-local guard as in VisitBinaryOperator.
+    if (!var->isLocalVarDecl()) {
+        TypeKind kind = m_typeEncoder.getTypeKind(type);
+        if (kind == TypeKind::Struct || kind == TypeKind::Union ||
+            kind == TypeKind::Array || kind == TypeKind::Reference) {
+            unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
+            wrapThisWriteWithStep(op, line);
+            return true;
+        }
+    }
 
     std::string call = generateVarUpdateCall(var);
 
@@ -434,6 +499,17 @@ bool InspectorVisitor::VisitUnaryOperator(clang::UnaryOperator* op) {
     clang::QualType type = var->getType();
     if (!m_typeEncoder.isSupported(type))
         return true;
+
+    // Same composite-non-local guard as in VisitBinaryOperator.
+    if (!var->isLocalVarDecl()) {
+        TypeKind kind = m_typeEncoder.getTypeKind(type);
+        if (kind == TypeKind::Struct || kind == TypeKind::Union ||
+            kind == TypeKind::Array || kind == TypeKind::Reference) {
+            unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
+            wrapThisWriteWithStep(op, line);
+            return true;
+        }
+    }
 
     std::string call = generateVarUpdateCall(var);
 
