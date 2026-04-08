@@ -1,0 +1,2456 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 53,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 13,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 14,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 15,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 54,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 21,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 22,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 55,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 25,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 26,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 27,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 29,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 30,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 56,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 13,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 14,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 15,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 58,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Tracer::operator=",
+      "globals": {},
+      "heap": {},
+      "line": 32,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Tracer::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::operator=",
+      "globals": {},
+      "heap": {},
+      "line": 33,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 3,
+                "sourceId": -1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Tracer::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::operator=",
+      "globals": {},
+      "heap": {},
+      "line": 34,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Tracer::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Tracer::operator=",
+      "globals": {},
+      "heap": {},
+      "line": 35,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Tracer::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 13,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 14,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 15,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Tracer::Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Tracer::Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 60,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Tracer::operator=",
+      "globals": {},
+      "heap": {},
+      "line": 38,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Tracer::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::operator=",
+      "globals": {},
+      "heap": {},
+      "line": 39,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 4,
+                "sourceId": -1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Tracer::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::operator=",
+      "globals": {},
+      "heap": {},
+      "line": 40,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 4,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Tracer::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Tracer::operator=",
+      "globals": {},
+      "heap": {},
+      "line": 41,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -2,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 4,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Tracer::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Tracer::operator=",
+      "globals": {},
+      "heap": {},
+      "line": 42,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -2,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 4,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Tracer::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 63,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -2,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 4,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Tracer::~Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 45,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 8,
+          "func_name": "Tracer::~Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Tracer::~Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 45,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 8,
+          "func_name": "Tracer::~Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Tracer::~Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 45,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 9,
+          "func_name": "Tracer::~Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Tracer::~Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 45,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 9,
+          "func_name": "Tracer::~Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Tracer::~Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 45,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 10,
+          "func_name": "Tracer::~Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Tracer::~Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 45,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 10,
+          "func_name": "Tracer::~Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Tracer::~Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 45,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 11,
+          "func_name": "Tracer::~Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Tracer::~Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 45,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 11,
+          "func_name": "Tracer::~Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Tracer::~Tracer",
+      "globals": {},
+      "heap": {},
+      "line": 45,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 12,
+          "func_name": "Tracer::~Tracer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}
