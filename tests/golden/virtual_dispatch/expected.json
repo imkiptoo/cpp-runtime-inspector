@@ -1,0 +1,1346 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 44,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Shape::Shape",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Shape::Shape",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Shape::Shape",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Shape::Shape",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Shape::Shape",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Shape::Shape",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Circle::Circle",
+      "globals": {},
+      "heap": {},
+      "line": 21,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Circle::Circle",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Circle::Circle",
+      "globals": {},
+      "heap": {},
+      "line": 22,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Circle::Circle",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Circle::Circle",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Circle::Circle",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Circle::Circle",
+      "globals": {},
+      "heap": {},
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Circle::Circle",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 45,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Shape::Shape",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Shape::Shape",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Shape::Shape",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Shape::Shape",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Shape::Shape",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Shape::Shape",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Square::Square",
+      "globals": {},
+      "heap": {},
+      "line": 34,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Square::Square",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Square::Square",
+      "globals": {},
+      "heap": {},
+      "line": 35,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Square::Square",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Square::Square",
+      "globals": {},
+      "heap": {},
+      "line": 36,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Square::Square",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Square::Square",
+      "globals": {},
+      "heap": {},
+      "line": 37,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Square::Square",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 46,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ],
+            "s": [
+              "C_STRUCT",
+              "struct Square",
+              {
+                "side": 5,
+                "tag": 2
+              },
+              "Square"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c",
+            "s"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 48,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ],
+            "p1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "s": [
+              "C_STRUCT",
+              "struct Square",
+              {
+                "side": 5,
+                "tag": 2
+              },
+              "Square"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c",
+            "s",
+            "p1"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 49,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ],
+            "p1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "p2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "s": [
+              "C_STRUCT",
+              "struct Square",
+              {
+                "side": 5,
+                "tag": 2
+              },
+              "Square"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c",
+            "s",
+            "p1",
+            "p2"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Circle::area",
+      "globals": {},
+      "heap": {},
+      "line": 26,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ],
+            "p1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "p2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "s": [
+              "C_STRUCT",
+              "struct Square",
+              {
+                "side": 5,
+                "tag": 2
+              },
+              "Square"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c",
+            "s",
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Circle::area",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Circle::area",
+      "globals": {},
+      "heap": {},
+      "line": 27,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ],
+            "p1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "p2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "s": [
+              "C_STRUCT",
+              "struct Square",
+              {
+                "side": 5,
+                "tag": 2
+              },
+              "Square"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c",
+            "s",
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Circle::area",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a1": 48,
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ],
+            "p1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "p2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "s": [
+              "C_STRUCT",
+              "struct Square",
+              {
+                "side": 5,
+                "tag": 2
+              },
+              "Square"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c",
+            "s",
+            "p1",
+            "p2",
+            "a1"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Square::area",
+      "globals": {},
+      "heap": {},
+      "line": 39,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a1": 48,
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ],
+            "p1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "p2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "s": [
+              "C_STRUCT",
+              "struct Square",
+              {
+                "side": 5,
+                "tag": 2
+              },
+              "Square"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c",
+            "s",
+            "p1",
+            "p2",
+            "a1"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Square::area",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Square::area",
+      "globals": {},
+      "heap": {},
+      "line": 40,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a1": 48,
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ],
+            "p1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "p2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "s": [
+              "C_STRUCT",
+              "struct Square",
+              {
+                "side": 5,
+                "tag": 2
+              },
+              "Square"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c",
+            "s",
+            "p1",
+            "p2",
+            "a1"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Square::area",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a1": 48,
+            "a2": 25,
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ],
+            "p1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "p2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "s": [
+              "C_STRUCT",
+              "struct Square",
+              {
+                "side": 5,
+                "tag": 2
+              },
+              "Square"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c",
+            "s",
+            "p1",
+            "p2",
+            "a1",
+            "a2"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Square::area",
+      "globals": {},
+      "heap": {},
+      "line": 39,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a1": 48,
+            "a2": 25,
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ],
+            "p1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "p2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "s": [
+              "C_STRUCT",
+              "struct Square",
+              {
+                "side": 5,
+                "tag": 2
+              },
+              "Square"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c",
+            "s",
+            "p1",
+            "p2",
+            "a1",
+            "a2"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Square::area",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Square::area",
+      "globals": {},
+      "heap": {},
+      "line": 40,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a1": 48,
+            "a2": 25,
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ],
+            "p1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "p2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "s": [
+              "C_STRUCT",
+              "struct Square",
+              {
+                "side": 5,
+                "tag": 2
+              },
+              "Square"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c",
+            "s",
+            "p1",
+            "p2",
+            "a1",
+            "a2"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Square::area",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a1": 48,
+            "a2": 25,
+            "a3": 25,
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ],
+            "p1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "p2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "s": [
+              "C_STRUCT",
+              "struct Square",
+              {
+                "side": 5,
+                "tag": 2
+              },
+              "Square"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c",
+            "s",
+            "p1",
+            "p2",
+            "a1",
+            "a2",
+            "a3"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 59,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a1": 48,
+            "a2": 25,
+            "a3": 25,
+            "c": [
+              "C_STRUCT",
+              "struct Circle",
+              {
+                "radius": 4,
+                "tag": 1
+              },
+              "Circle"
+            ],
+            "p1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "p2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Shape *",
+              "stack"
+            ],
+            "s": [
+              "C_STRUCT",
+              "struct Square",
+              {
+                "side": 5,
+                "tag": 2
+              },
+              "Square"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c",
+            "s",
+            "p1",
+            "p2",
+            "a1",
+            "a2",
+            "a3"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Shape::~Shape",
+      "globals": {},
+      "heap": {},
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 8,
+          "func_name": "Shape::~Shape",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Shape::~Shape",
+      "globals": {},
+      "heap": {},
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 8,
+          "func_name": "Shape::~Shape",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Shape::~Shape",
+      "globals": {},
+      "heap": {},
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 9,
+          "func_name": "Shape::~Shape",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}
