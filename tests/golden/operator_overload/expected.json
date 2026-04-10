@@ -1,0 +1,1866 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 55,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 56,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 60,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 1,
+                "y": 2
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Vec2::operator+",
+      "globals": {},
+      "heap": {},
+      "line": 13,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 1,
+                "y": 2
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Vec2::operator+",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Vec2::operator+",
+      "globals": {},
+      "heap": {},
+      "line": 14,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 1,
+                "y": 2
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "r": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "frame_id": 1,
+          "func_name": "Vec2::operator+",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "r"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Vec2::operator+",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 1,
+                "y": 2
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "r": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 1,
+          "func_name": "Vec2::operator+",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "r"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 64,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 1,
+                "y": 2
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Vec2::operator+=",
+      "globals": {},
+      "heap": {},
+      "line": 21,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 1,
+                "y": 2
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Vec2::operator+=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Vec2::operator+=",
+      "globals": {},
+      "heap": {},
+      "line": 22,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 2
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Vec2::operator+=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Vec2::operator+=",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Vec2::operator+=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Vec2::operator+=",
+      "globals": {},
+      "heap": {},
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Vec2::operator+=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Vec2::operator++",
+      "globals": {},
+      "heap": {},
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Vec2::operator++",
+      "globals": {},
+      "heap": {},
+      "line": 29,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 22
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Vec2::operator++",
+      "globals": {},
+      "heap": {},
+      "line": 30,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Vec2::operator++",
+      "globals": {},
+      "heap": {},
+      "line": 31,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Vec2::operator++",
+      "globals": {},
+      "heap": {},
+      "line": 35,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Vec2::operator++",
+      "globals": {},
+      "heap": {},
+      "line": 36,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "copy": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 4,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "copy"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Vec2::operator++",
+      "globals": {},
+      "heap": {},
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "copy": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 4,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "copy"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Vec2::operator++",
+      "globals": {},
+      "heap": {},
+      "line": 29,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 13,
+                "y": 23
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "copy": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 4,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "copy"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Vec2::operator++",
+      "globals": {},
+      "heap": {},
+      "line": 30,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 13,
+                "y": 24
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "copy": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 4,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "copy"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Vec2::operator++",
+      "globals": {},
+      "heap": {},
+      "line": 31,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 13,
+                "y": 24
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "copy": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 4,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "copy"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Vec2::operator++",
+      "globals": {},
+      "heap": {},
+      "line": 38,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 13,
+                "y": 24
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "copy": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 4,
+          "func_name": "Vec2::operator++",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "copy"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 67,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 13,
+                "y": 24
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ],
+            "prev": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "prev"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "operator-",
+      "globals": {},
+      "heap": {},
+      "line": 48,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 13,
+                "y": 24
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ],
+            "prev": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "prev"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "operator-",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "operator-",
+      "globals": {},
+      "heap": {},
+      "line": 49,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 13,
+                "y": 24
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ],
+            "prev": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "prev"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "r": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "frame_id": 6,
+          "func_name": "operator-",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "r"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "operator-",
+      "globals": {},
+      "heap": {},
+      "line": 52,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 13,
+                "y": 24
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ],
+            "prev": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "prev"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "r": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": -11,
+                "y": -22
+              }
+            ]
+          },
+          "frame_id": 6,
+          "func_name": "operator-",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "r"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 68,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 13,
+                "y": 24
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ],
+            "neg": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": -11,
+                "y": -22
+              }
+            ],
+            "prev": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "prev",
+            "neg"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Vec2::operator==",
+      "globals": {},
+      "heap": {},
+      "line": 42,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 13,
+                "y": 24
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ],
+            "neg": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": -11,
+                "y": -22
+              }
+            ],
+            "prev": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "prev",
+            "neg"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Vec2::operator==",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Vec2::operator==",
+      "globals": {},
+      "heap": {},
+      "line": 43,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 13,
+                "y": 24
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ],
+            "neg": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": -11,
+                "y": -22
+              }
+            ],
+            "prev": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "prev",
+            "neg"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Vec2::operator==",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 69,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 13,
+                "y": 24
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ],
+            "eq": false,
+            "neg": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": -11,
+                "y": -22
+              }
+            ],
+            "prev": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "prev",
+            "neg",
+            "eq"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 71,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 13,
+                "y": 24
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 11,
+                "y": 22
+              }
+            ],
+            "eq": false,
+            "neg": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": -11,
+                "y": -22
+              }
+            ],
+            "prev": [
+              "C_STRUCT",
+              "struct Vec2",
+              {
+                "x": 12,
+                "y": 23
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "prev",
+            "neg",
+            "eq"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}
