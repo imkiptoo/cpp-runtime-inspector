@@ -304,7 +304,12 @@ EncodedValue TraceState::encodePrimitive(const void* addr,
     case TypeKind::Char:
         return *static_cast<const char*>(addr);
 
-    case TypeKind::Pointer: {
+    case TypeKind::Pointer:
+    case TypeKind::Reference: {
+        // A reference is laid out as a pointer in storage. Read it as
+        // such so reference fields (e.g. lambda-by-ref captures or
+        // members of reference type) are decoded the same way as
+        // pointers, rather than falling through to the zero default.
         const void* ptr = *static_cast<const void* const*>(addr);
         return encodePointer(ptr, type);
     }

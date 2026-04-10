@@ -492,6 +492,26 @@ TypeEncoder::generateFieldInfoArray(const clang::RecordDecl* record,
     const clang::ASTRecordLayout& layout =
         m_context.getASTRecordLayout(record);
 
+    // For lambda closure types, the synthesized capture fields have empty
+    // names. Map FieldDecl back to its capturing variable to recover a
+    // human-readable name like "x" or "y" instead of "".
+    llvm::DenseMap<const clang::FieldDecl*, std::string> lambdaFieldNames;
+    if (const auto* cxx = llvm::dyn_cast<clang::CXXRecordDecl>(record)) {
+        if (cxx->isLambda()) {
+            llvm::DenseMap<const clang::ValueDecl*, clang::FieldDecl*> caps;
+            clang::FieldDecl* thisField = nullptr;
+            cxx->getCaptureFields(caps, thisField);
+            for (const auto& [valDecl, fieldDecl] : caps) {
+                if (fieldDecl && valDecl) {
+                    lambdaFieldNames[fieldDecl] = valDecl->getNameAsString();
+                }
+            }
+            if (thisField) {
+                lambdaFieldNames[thisField] = "this";
+            }
+        }
+    }
+
     // Collect fields. Bitfields carry extra information.
     struct FieldEntry {
         std::string name;
@@ -512,8 +532,15 @@ TypeEncoder::generateFieldInfoArray(const clang::RecordDecl* record,
         if (llvm::isa<clang::CXXRecordDecl>(record))
             access = convertAccess(field->getAccess());
 
+        std::string name = field->getNameAsString();
+        if (name.empty()) {
+            auto it = lambdaFieldNames.find(field);
+            if (it != lambdaFieldNames.end())
+                name = it->second;
+        }
+
         FieldEntry e{
-            field->getNameAsString(), byteOffset, field->getType(),
+            name, byteOffset, field->getType(),
             access, /*is_bitfield=*/false, /*bit_offset=*/0, /*bit_width=*/0};
         if (field->isBitField()) {
             e.is_bitfield = true;
