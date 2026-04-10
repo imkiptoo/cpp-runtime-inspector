@@ -128,23 +128,73 @@ Each item below has a green golden under `tests/golden/`.
   preventing libstdc++ implementation types like `_Rb_tree_node_base`
   from being pulled into the descriptor table.
 
-## Tier 3 — New plugin AST visitors (~3–5 days)
+## Tier 3 — New plugin AST visitors (~3–5 days) — **DONE**
 
-Add to `plugin/Visitor.cpp` plus matching runtime hooks:
+Each item below has a green golden under `tests/golden/`.
 
-- `VisitCXXConstructorDecl` / `VisitCXXDestructorDecl` — emit
-  `ctor_enter` / `dtor_enter` events. Unlocks RAII visualization, which
-  is the biggest pedagogical hole.
-- `VisitCXXOperatorCallExpr` — instrument user-defined operator
-  overloads (current visitor only handles built-in operators).
-- `VisitCXXMemberCallExpr` annotated with virtual-dispatch flag — show
-  dynamic vs static type at virtual call sites. Unlocks polymorphism
-  teaching.
-- Richer `VisitLambdaExpr` — capture struct/STL captures, not just
-  primitives.
+- **`this->member` write tracking** — `VisitBinaryOperator`,
+  `VisitCompoundAssignOperator`, `VisitUnaryOperator` recognize
+  `MemberExpr` whose innermost base is a `CXXThisExpr` and wrap the
+  write with a post-mutation `__inspector_step` call. Live re-encoding
+  in `emitStep` snapshots every stack frame, so the receiver living in
+  a caller's frame is updated. Closes the Tier 1
+  `static_members` caveat about `++this->self`.
+  Goldens: `this_member_writes`, plus richer `static_members` and
+  `class_template` traces.
+- **Constructor / destructor instrumentation** — ctors/dtors are
+  `FunctionDecl`s, so `VisitFunctionDecl` already handles entry/exit
+  events with qualified names like `Guard::Guard` and `Guard::~Guard`.
+  The first snapshot inside the body fires *after* the member-init
+  list runs, so fields are already populated. Goldens: `raii`,
+  `ctor_dtor_lifecycle` (covers default/copy/move ctors plus
+  copy/move assignment plus dtor).
+- **User-defined operator overloads** — operator overloads are also
+  `FunctionDecl`s and instrument identically. The
+  `wrapThisWriteWithStep` path covers `this->x += n` etc. inside
+  the operator body. Golden: `operator_overload` (binary +, +=,
+  pre/post ++, free-function unary -, member ==).
+- **Virtual dispatch + dynamic type tagging** — when encoding a
+  polymorphic struct, `Trace::encodeStruct` reads the vtable pointer
+  at offset 0 and resolves it to a class name via `dladdr` +
+  `abi::__cxa_demangle` (`runtime/inspector/Dynamic.cpp`). The result
+  is emitted as a 4th array element after the field map:
+  `["C_STRUCT", "Shape", {fields}, "Circle"]` — backward-compatible
+  for non-polymorphic types. Goldens: `virtual_dispatch` (call through
+  `Shape*` reaches `Circle::area`/`Square::area`), `abstract_class`
+  (pure virtual + polymorphic `delete` through base pointer).
 
-Definition of done: goldens for `ctor_dtor_lifecycle`, `raii`,
-`operator_overload`, `virtual_dispatch`, `abstract_class`.
+### Plugin / runtime fixes Tier 3 required
+
+- `wrapThisWriteWithStep` helper: wraps `(write, __inspector_step(line))`
+  so a step fires post-write and live re-encoding picks up the change
+  in every frame, including the caller's where the receiver actually
+  lives.
+- Insertion-point selection now keeps the *earliest* TU-scope position
+  (computed via `SourceManager::isBeforeInTranslationUnit`); for
+  methods we walk to the enclosing `CXXRecordDecl` and, for class
+  templates, up once more to the `ClassTemplateDecl`. Without this, a
+  test with member functions that reference type descriptors (e.g.
+  `operator_overload`) would emit references before the descriptor's
+  declaration.
+- VisitBinaryOperator/Compound/Unary now emit a step (not a
+  var_update) when the LHS is a non-local var of composite/reference
+  type — that covers global struct member writes and reference
+  parameters whose types we never emit a descriptor for.
+- `Trace::encodeStruct` skips dynamic-type resolution unless
+  `is_polymorphic` is set, so non-polymorphic structs are unchanged.
+- `emitStep`'s heap-snapshot loop now copies `Allocation` values into
+  a local vector before iterating. `std::map` insert in the loop body
+  triggers operator `new` → `malloc` → the LD_PRELOAD shim →
+  `HeapTracker::insert` → potential `m_allocations.push_back` resize,
+  which previously invalidated the `const Allocation*` pointers
+  handed back by `getLiveAllocations()`. The bug was latent before
+  Tier 3; growing `StructValue` shifted timing and made it
+  deterministic.
+
+Definition of done: 6 new green goldens (`this_member_writes`,
+`raii`, `ctor_dtor_lifecycle`, `operator_overload`, `virtual_dispatch`,
+`abstract_class`), suite size 65/65 deterministic across three
+consecutive runs.
 
 ## Tier 4 — Semantic concept work (~1–2 weeks)
 
@@ -171,10 +221,10 @@ placement new.
 
 ## Recommended order
 
-1. Tier 1 (cheap, payoff = "the docs are honest").
-2. Tier 3's ctor/dtor support (highest pedagogical value).
-3. Tier 2's `map`/`set`.
-4. Remainder of Tier 2.
-5. Tier 4's rule-of-5 lifecycle, then iterators, then multi-file.
+1. Tier 1 (cheap, payoff = "the docs are honest"). **Done.**
+2. Tier 2 — STL encoders + bitfields. **Done.**
+3. Tier 3 — ctor/dtor visibility, operator overloads, virtual dispatch
+   with dynamic-type tagging. **Done.**
+4. Tier 4's rule-of-5 lifecycle, then iterators, then multi-file.
 
 Tracked in this file; tick off as tiers complete.
