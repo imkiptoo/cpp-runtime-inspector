@@ -82,7 +82,13 @@
               "C_STRUCT",
               "class (lambda at <ROOT>/tests/golden/lambda/input.cpp:9:14)",
               {
-                "": 10
+                "x": 10,
+                "y": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "int &",
+                  "stack"
+                ]
               }
             ],
             "x": 10,
@@ -115,7 +121,13 @@
               "C_STRUCT",
               "class (lambda at <ROOT>/tests/golden/lambda/input.cpp:9:14)",
               {
-                "": 10
+                "x": 10,
+                "y": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "int &",
+                  "stack"
+                ]
               }
             ],
             "x": 10,

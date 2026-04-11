@@ -347,7 +347,12 @@
               "int *",
               "stack"
             ],
-            "ref": 0
+            "ref": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
@@ -406,7 +411,12 @@
               "int *",
               "stack"
             ],
-            "ref": 0
+            "ref": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ]
           },
           "frame_id": 0,
           "func_name": "main",

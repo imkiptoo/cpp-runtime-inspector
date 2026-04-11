@@ -1048,7 +1048,12 @@
                 ]
               }
             ],
-            "refCount": 0,
+            "refCount": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
             "val": 2
           },
           "frame_id": 0,
@@ -1130,7 +1135,12 @@
                 ]
               }
             ],
-            "refCount": 0,
+            "refCount": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
             "val": 2
           },
           "frame_id": 0,
