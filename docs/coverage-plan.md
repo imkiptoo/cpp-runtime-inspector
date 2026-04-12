@@ -162,6 +162,15 @@ Each item below has a green golden under `tests/golden/`.
   for non-polymorphic types. Goldens: `virtual_dispatch` (call through
   `Shape*` reaches `Circle::area`/`Square::area`), `abstract_class`
   (pure virtual + polymorphic `delete` through base pointer).
+- **Richer lambda captures** — the synthesized fields of a lambda
+  closure type carry empty source-level names; we now look them up via
+  `CXXRecordDecl::getCaptureFields` and re-key them by the capturing
+  variable's name. Reference captures are decoded properly because
+  `encodePrimitive` learned a `TypeKind::Reference` case (it was
+  silently returning 0 before). Struct-by-value captures are
+  recursively encoded, so nested fields are visible. Goldens: refreshed
+  `lambda` plus new `lambda_captures` (primitive value + primitive ref
+  + struct value + struct ref + `[=]` + `[&]`).
 
 ### Plugin / runtime fixes Tier 3 required
 
@@ -182,6 +191,12 @@ Each item below has a green golden under `tests/golden/`.
   parameters whose types we never emit a descriptor for.
 - `Trace::encodeStruct` skips dynamic-type resolution unless
   `is_polymorphic` is set, so non-polymorphic structs are unchanged.
+- `Trace::encodePrimitive` now handles `TypeKind::Reference` the same
+  way as `Pointer` (read the slot as a pointer and dispatch through
+  `encodePointer`). Reference-typed struct fields previously hit the
+  default branch and rendered as `0`; this fix flowed through
+  `auto_deduction`, `comprehensive`, `mixed_types`, and `references`,
+  which were regenerated.
 - `emitStep`'s heap-snapshot loop now copies `Allocation` values into
   a local vector before iterating. `std::map` insert in the loop body
   triggers operator `new` → `malloc` → the LD_PRELOAD shim →
@@ -191,10 +206,10 @@ Each item below has a green golden under `tests/golden/`.
   Tier 3; growing `StructValue` shifted timing and made it
   deterministic.
 
-Definition of done: 6 new green goldens (`this_member_writes`,
+Definition of done: 7 new green goldens (`this_member_writes`,
 `raii`, `ctor_dtor_lifecycle`, `operator_overload`, `virtual_dispatch`,
-`abstract_class`), suite size 65/65 deterministic across three
-consecutive runs.
+`abstract_class`, `lambda_captures`), suite size 66/66 deterministic
+across three consecutive runs.
 
 ## Tier 4 — Semantic concept work (~1–2 weeks)
 
