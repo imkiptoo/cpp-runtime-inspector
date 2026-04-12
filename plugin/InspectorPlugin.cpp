@@ -31,7 +31,7 @@ public:
         // Write instrumented output
         clang::SourceManager& sm = context.getSourceManager();
         clang::FileID mainFid = sm.getMainFileID();
-        const clang::RewriteBuffer* buf = rewriter.getRewriteBufferFor(mainFid);
+        const llvm::RewriteBuffer* buf = rewriter.getRewriteBufferFor(mainFid);
 
         clang::OptionalFileEntryRef fe = sm.getFileEntryRefForID(mainFid);
         if (!fe) {

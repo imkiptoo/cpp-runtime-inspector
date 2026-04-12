@@ -545,7 +545,7 @@ TypeEncoder::generateFieldInfoArray(const clang::RecordDecl* record,
         if (field->isBitField()) {
             e.is_bitfield = true;
             e.bit_offset = bitOffset;
-            e.bit_width = field->getBitWidthValue(m_context);
+            e.bit_width = field->getBitWidthValue();
         }
         fields.push_back(std::move(e));
         ++fieldIdx;
