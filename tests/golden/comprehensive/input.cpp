@@ -39,12 +39,12 @@ int main() {
     int area = rect.area();
 
     // Heap allocation
-    Point* hp = new Point;
+    Point* hp = new Point{};
     hp->x = 30;
     hp->y = 40;
 
     // Array on heap
-    int* arr = new int[3];
+    int* arr = new int[3]{};
     arr[0] = 1;
     arr[1] = 2;
     arr[2] = 3;

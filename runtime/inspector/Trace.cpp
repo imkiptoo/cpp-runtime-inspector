@@ -2,6 +2,7 @@
 //! @brief Trace state management implementation.
 
 #include "Trace.h"
+#include "Dynamic.h"
 #include "Heap.h"
 #include "StlEncoders.h"
 
@@ -76,7 +77,7 @@ void TraceState::popFrame(int line) {
     }
 }
 
-void TraceState::recordVarInit(const std::string& name, void* addr,
+void TraceState::recordVarInit(const std::string& name, const void* addr,
                                 const TypeDescriptor* type, EncodedValue value,
                                 int line) {
     Frame* frame = currentFrame();
@@ -100,7 +101,7 @@ void TraceState::recordVarInit(const std::string& name, void* addr,
     emitStep(EventKind::StepLine, frame->funcName, line);
 }
 
-void TraceState::recordVarUpdate(const std::string& name, void* addr,
+void TraceState::recordVarUpdate(const std::string& name, const void* addr,
                                   const TypeDescriptor* type,
                                   EncodedValue value) {
     Frame* frame = currentFrame();
@@ -150,42 +151,73 @@ void TraceState::emitStep(EventKind kind, const std::string& funcName,
     step.event = kind;
     step.funcName = funcName;
 
+    // Re-encode each frame's locals from their current memory contents.
+    // Without this, mutations that happen via method calls or
+    // CXXOperatorCallExpr (e.g. std::variant::operator=, std::optional::reset)
+    // would not show up because the visitor only instruments built-in
+    // BinaryOperator / UnaryOperator writes.
+    for (auto& frame : m_stack) {
+        for (auto& [name, var] : frame.locals) {
+            if (var.addr && var.type) {
+                var.value = encodeValue(var.addr, var.type);
+            }
+        }
+    }
+
     // Snapshot the stack
     step.stack = m_stack;
 
-    // Snapshot the heap state
+    // Snapshot the heap state.
+    //
+    // CAREFUL: any allocation made *inside* this loop (e.g. by std::map's
+    // insert allocating a node, or by encodeValue allocating shared
+    // pointers) goes through the LD_PRELOAD malloc shim, which calls
+    // HeapTracker::insert, which may push_back onto m_allocations and
+    // invalidate the `const Allocation*` pointers handed back by
+    // getLiveAllocations(). To keep the iteration stable we snapshot the
+    // Allocation values into a local vector first; subsequent reallocations
+    // of m_allocations during the loop are then safe.
     HeapTracker& heap = HeapTracker::instance();
-    for (const Allocation* alloc : heap.getLiveAllocations()) {
+    std::vector<Allocation> liveSnapshot;
+    {
+        const auto live = heap.getLiveAllocations();
+        liveSnapshot.reserve(live.size());
+        for (const Allocation* a : live) {
+            liveSnapshot.push_back(*a);
+        }
+    }
+
+    for (const Allocation& alloc : liveSnapshot) {
         HeapObject obj;
-        obj.heapId = alloc->heap_id;
-        obj.typeName = alloc->type ? (alloc->type->spelling ? alloc->type->spelling : "<type>") : "<untyped>";
-        obj.isArray = alloc->is_array;
-        obj.arrayCount = alloc->array_count;
+        obj.heapId = alloc.heap_id;
+        obj.typeName = alloc.type ? (alloc.type->spelling ? alloc.type->spelling : "<type>") : "<untyped>";
+        obj.isArray = alloc.is_array;
+        obj.arrayCount = alloc.array_count;
 
         // Encode the heap object's value
-        if (alloc->type) {
-            if (alloc->is_array && alloc->type->kind != TypeKind::Array) {
+        if (alloc.type) {
+            if (alloc.is_array && alloc.type->kind != TypeKind::Array) {
                 // Create a temporary array descriptor for encoding
                 ArrayValue av;
                 av.elementTypeName = obj.typeName;
-                const char* base = static_cast<const char*>(alloc->base);
-                for (size_t i = 0; i < alloc->array_count; ++i) {
-                    const void* elemAddr = base + (i * alloc->type->size);
+                const char* base = static_cast<const char*>(alloc.base);
+                for (size_t i = 0; i < alloc.array_count; ++i) {
+                    const void* elemAddr = base + (i * alloc.type->size);
                     auto holder = std::make_shared<EncodedValueHolder>();
-                    holder->type = alloc->type;
-                    holder->value = encodeValue(elemAddr, alloc->type);
+                    holder->type = alloc.type;
+                    holder->value = encodeValue(elemAddr, alloc.type);
                     av.elements.push_back(holder);
                 }
                 obj.value = av;
             } else {
-                obj.value = encodeValue(alloc->base, alloc->type);
+                obj.value = encodeValue(alloc.base, alloc.type);
             }
         } else {
             // Untyped allocation (from malloc) - just show as integer
             obj.value = static_cast<long long>(0);
         }
 
-        step.heap[alloc->heap_id] = std::move(obj);
+        step.heap[alloc.heap_id] = std::move(obj);
     }
 
     m_steps.push_back(std::move(step));
@@ -272,7 +304,12 @@ EncodedValue TraceState::encodePrimitive(const void* addr,
     case TypeKind::Char:
         return *static_cast<const char*>(addr);
 
-    case TypeKind::Pointer: {
+    case TypeKind::Pointer:
+    case TypeKind::Reference: {
+        // A reference is laid out as a pointer in storage. Read it as
+        // such so reference fields (e.g. lambda-by-ref captures or
+        // members of reference type) are decoded the same way as
+        // pointers, rather than falling through to the zero default.
         const void* ptr = *static_cast<const void* const*>(addr);
         return encodePointer(ptr, type);
     }
@@ -286,6 +323,18 @@ EncodedValue TraceState::encodeStruct(const void* addr,
                                        const TypeDescriptor* type) {
     StructValue sv;
     sv.typeName = type->spelling ? type->spelling : "<struct>";
+
+    // Resolve the dynamic (most-derived) type for polymorphic objects so the
+    // trace can show "Shape* p ↦ Circle" rather than reporting only the
+    // static type. Skips when the descriptor isn't marked polymorphic, or
+    // when the resolver can't read a vtable symbol (no dladdr support, or
+    // a stripped binary).
+    if (type && type->is_polymorphic && addr) {
+        std::string dyn = resolveDynamicTypeName(addr);
+        if (!dyn.empty() && dyn != sv.typeName) {
+            sv.dynamicType = dyn;
+        }
+    }
 
     const char* baseAddr = static_cast<const char*>(addr);
 
@@ -345,7 +394,35 @@ void TraceState::addFieldsFromType(StructValue& sv, const void* addr,
 
         auto holder = std::make_shared<EncodedValueHolder>();
         holder->type = field.type;
-        holder->value = encodeValue(fieldAddr, field.type);
+        if (field.is_bitfield) {
+            // Read up to a 64-bit container starting at the byte that holds
+            // the bitfield's first bit, then mask out the field bits.
+            size_t bitInByteOffset = field.bit_offset % 8;
+            size_t firstByte = field.bit_offset / 8;
+            const auto* base = reinterpret_cast<const unsigned char*>(baseAddr);
+            uint64_t container = 0;
+            size_t totalBits = bitInByteOffset + field.bit_width;
+            size_t bytesNeeded = (totalBits + 7) / 8;
+            for (size_t b = 0; b < bytesNeeded && b < 8; ++b)
+                container |= static_cast<uint64_t>(base[firstByte + b]) << (b * 8);
+            uint64_t mask = field.bit_width >= 64
+                                ? ~uint64_t{0}
+                                : ((uint64_t{1} << field.bit_width) - 1);
+            uint64_t raw = (container >> bitInByteOffset) & mask;
+            // Sign-extend if the field type is a signed integer.
+            bool isSigned = field.type && field.type->kind == TypeKind::Int;
+            if (isSigned && field.bit_width > 0 &&
+                (raw >> (field.bit_width - 1)) & 1) {
+                uint64_t signMask = ~uint64_t{0} << field.bit_width;
+                raw |= signMask;
+            }
+            if (isSigned)
+                holder->value = static_cast<long long>(static_cast<int64_t>(raw));
+            else
+                holder->value = static_cast<long long>(raw);
+        } else {
+            holder->value = encodeValue(fieldAddr, field.type);
+        }
         sv.fields[fieldName] = holder;
     }
 }
@@ -441,7 +518,11 @@ EncodedValue TraceState::encodeValue(const void* addr,
         return encodePrimitive(addr, type);
 
     case TypeKind::Struct:
-        return encodeStruct(addr, type);
+        // Struct kind covers user types AND STL containers (which the
+        // plugin classifies as Struct). encodeValueAtAddress dispatches
+        // to the right STL encoder when applicable; otherwise it falls
+        // through to encodeStruct.
+        return encodeValueAtAddress(addr, type);
 
     case TypeKind::Array:
         return encodeArray(addr, type);
@@ -558,10 +639,16 @@ EncodedValue TraceState::encodeValueAtAddress(const void* addr,
         case StlContainerKind::Optional:
             return encodeStdOptional(addr, type->element_type, *this);
 
+        case StlContainerKind::Variant:
+            return encodeStdVariant(addr, type->size, type->element_type, *this);
+
+        case StlContainerKind::Function:
+            return encodeStdFunction(addr);
+
         case StlContainerKind::Map:
         case StlContainerKind::Set:
-            // Complex tree traversal - use placeholder for now
-            return encodeStdMap(addr, nullptr, nullptr, *this);
+            return encodeStdMap(addr, type, type->element_type,
+                                stlKind == StlContainerKind::Set, *this);
 
         case StlContainerKind::None:
         default:
@@ -570,7 +657,14 @@ EncodedValue TraceState::encodeValueAtAddress(const void* addr,
         }
     }
 
-    return encodeValue(addr, type);
+    // Direct dispatch on kind to avoid infinite recursion through
+    // encodeValue (which delegates struct types back to us).
+    switch (type->kind) {
+    case TypeKind::Struct: return encodeStruct(addr, type);
+    case TypeKind::Array:  return encodeArray(addr, type);
+    case TypeKind::Union:  return encodeUnion(addr, type);
+    default:               return encodeValue(addr, type);
+    }
 }
 
 void TraceState::recordThrow(const std::string& funcName, int line) {

@@ -25,18 +25,55 @@
       "func_name": "main",
       "globals": {},
       "heap": {},
-      "line": 0,
+      "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
-            "sum": 0
+            "v": [
+              "C_ARRAY",
+              "int",
+              []
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "v"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "sum": 0,
+            "v": [
+              "C_ARRAY",
+              "int",
+              [
+                10,
+                20,
+                30
+              ]
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "v",
             "sum"
           ]
         }
@@ -53,14 +90,129 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "sum": 0
+            "sum": 0,
+            "v": [
+              "C_ARRAY",
+              "int",
+              [
+                10,
+                20,
+                30
+              ]
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "v",
             "sum"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "sum": 0,
+            "v": [
+              "C_ARRAY",
+              "int",
+              [
+                10,
+                20,
+                30
+              ]
+            ],
+            "x": 10
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "v",
+            "sum",
+            "x"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "sum": 10,
+            "v": [
+              "C_ARRAY",
+              "int",
+              [
+                10,
+                20,
+                30
+              ]
+            ],
+            "x": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "v",
+            "sum",
+            "x"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "sum": 30,
+            "v": [
+              "C_ARRAY",
+              "int",
+              [
+                10,
+                20,
+                30
+              ]
+            ],
+            "x": 30
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "v",
+            "sum",
+            "x"
           ]
         }
       ],
@@ -76,14 +228,22 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "sum": 60
+            "sum": 60,
+            "v": [
+              "C_ARRAY",
+              "int",
+              []
+            ],
+            "x": 30
           },
           "frame_id": 0,
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
-            "sum"
+            "v",
+            "sum",
+            "x"
           ]
         }
       ],

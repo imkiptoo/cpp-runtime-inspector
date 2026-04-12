@@ -37,7 +37,7 @@
               "next",
               [
                 "C_ADDRESS",
-                "0x0",
+                "0xPTR",
                 "struct Node *",
                 "null"
               ]
@@ -117,7 +117,7 @@
               "next",
               [
                 "C_ADDRESS",
-                "0x0",
+                "0xPTR",
                 "struct Node *",
                 "null"
               ]
@@ -202,7 +202,7 @@
               "next",
               [
                 "C_ADDRESS",
-                "0x0",
+                "0xPTR",
                 "struct Node *",
                 "null"
               ]
@@ -287,7 +287,7 @@
               "next",
               [
                 "C_ADDRESS",
-                "0x0",
+                "0xPTR",
                 "struct Node *",
                 "null"
               ]
@@ -360,7 +360,7 @@
               "next",
               [
                 "C_ADDRESS",
-                "0x0",
+                "0xPTR",
                 "struct Node *",
                 "null"
               ]
@@ -378,7 +378,7 @@
               2
             ],
             "head": [
-              "REF",
+              "DANGLING",
               1
             ],
             "next": [
@@ -416,7 +416,7 @@
               "next",
               [
                 "C_ADDRESS",
-                "0x0",
+                "0xPTR",
                 "struct Node *",
                 "null"
               ]
@@ -434,12 +434,12 @@
               3
             ],
             "head": [
-              "REF",
+              "DANGLING",
               1
             ],
             "next": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "struct Node *",
               "null"
             ]
@@ -469,17 +469,17 @@
           "encoded_locals": {
             "current": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "struct Node *",
               "null"
             ],
             "head": [
-              "REF",
+              "DANGLING",
               1
             ],
             "next": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "struct Node *",
               "null"
             ]

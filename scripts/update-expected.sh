@@ -25,9 +25,18 @@ fi
 
 RUNTIME="${BUILD}/libinspector_runtime.a"
 
+# Malloc shim for tests that need it
+if [[ "$(uname)" == "Darwin" ]]; then
+    MALLOC_SHIM="${BUILD}/libinspector_malloc_shim.dylib"
+else
+    MALLOC_SHIM="${BUILD}/libinspector_malloc_shim.so"
+fi
+
 # Check dependencies
 [[ -f "${PLUGIN}"  ]] || { echo "Plugin not built at ${PLUGIN}. Run cmake first."  >&2; exit 1; }
 [[ -f "${RUNTIME}" ]] || { echo "Runtime not built at ${RUNTIME}. Run cmake first." >&2; exit 1; }
+HAVE_MALLOC_SHIM=0
+[[ -f "${MALLOC_SHIM}" ]] && HAVE_MALLOC_SHIM=1
 
 # Counters
 UPDATED=0
@@ -87,9 +96,15 @@ update_test() {
     fi
 
     # Pass 3: Link
+    # See run-golden-tests.sh for the rationale behind -rdynamic on Linux.
+    LINK_EXTRA=()
+    if [[ "$(uname)" != "Darwin" ]]; then
+        LINK_EXTRA+=(-rdynamic -ldl)
+    fi
     if ! "${CLANGXX}" \
         "${workdir}/test.o" \
         "${RUNTIME}" \
+        "${LINK_EXTRA[@]}" \
         -o "${workdir}/test" 2>"${workdir}/link.log"; then
         echo "FAIL (linking)"
         cat "${workdir}/link.log"
@@ -98,8 +113,33 @@ update_test() {
         return 1
     fi
 
-    # Run
-    "${workdir}/test" 2>"${workdir}/actual.json" || true
+    # Run - check if test needs malloc shim
+    local use_shim=0
+    if [[ -f "${test_dir}/.use_shim" ]]; then
+        use_shim=1
+        if [[ ${HAVE_MALLOC_SHIM} -eq 0 ]]; then
+            echo "SKIP (needs malloc shim, not built)"
+            ((SKIPPED++))
+            rm -f "${instrumented}"
+            return 0
+        fi
+    fi
+
+    # Optional CLI args from .args file (whitespace-separated).
+    local -a test_args=()
+    if [[ -f "${test_dir}/.args" ]]; then
+        read -r -a test_args < "${test_dir}/.args"
+    fi
+
+    if [[ ${use_shim} -eq 1 ]]; then
+        if [[ "$(uname)" == "Darwin" ]]; then
+            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json" || true
+        else
+            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json" || true
+        fi
+    else
+        "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json" || true
+    fi
 
     # Check if output is valid JSON
     if ! python3 -c "import json; json.load(open('${workdir}/actual.json'))" 2>/dev/null; then
@@ -110,13 +150,26 @@ update_test() {
         return 1
     fi
 
-    # Pretty-print and save as expected.json
+    # Pretty-print, normalize, and save as expected.json. Normalization
+    # must match run-golden-tests.sh so the saved file is exactly what
+    # the comparison sees - no machine-specific addresses or paths.
     python3 -c "
-import json
+import json, re
 with open('${workdir}/actual.json', 'r') as f:
     data = json.load(f)
+
+def normalize(obj):
+    if isinstance(obj, dict):
+        return {k: normalize(v) for k, v in sorted(obj.items())}
+    if isinstance(obj, list):
+        return [normalize(v) for v in obj]
+    if isinstance(obj, str):
+        obj = re.sub(r'0x[0-9a-fA-F]+', '0xPTR', obj)
+        obj = re.sub(r'(?:<ROOT>/|/[^\s\"]*?/)(tests/golden/)', r'<ROOT>/\1', obj)
+    return obj
+
 with open('${expected}', 'w') as f:
-    json.dump(data, f, indent=2)
+    json.dump(normalize(data), f, indent=2, sort_keys=True)
 "
 
     echo "OK"
@@ -131,6 +184,26 @@ with open('${expected}', 'w') as f:
 echo "=== Updating expected.json files ==="
 echo ""
 
+# Optional filter: when TESTS is set to a space-separated list of test names,
+# only those tests are updated. All others are left untouched.
+declare -a TEST_FILTER=()
+if [[ -n "${TESTS:-}" ]]; then
+    read -r -a TEST_FILTER <<< "${TESTS}"
+    echo "(filter: ${TEST_FILTER[*]})"
+fi
+
+filter_allows() {
+    local name="$1"
+    if [[ ${#TEST_FILTER[@]} -eq 0 ]]; then
+        return 0
+    fi
+    local f
+    for f in "${TEST_FILTER[@]}"; do
+        [[ "${f}" == "${name}" ]] && return 0
+    done
+    return 1
+}
+
 # Find all test directories
 for test_dir in "${GOLDEN_DIR}"/*; do
     if [[ -d "${test_dir}" ]]; then
@@ -139,12 +212,12 @@ for test_dir in "${GOLDEN_DIR}"/*; do
             # Has subdirectories with tests
             for subdir in "${test_dir}"/*; do
                 if [[ -d "${subdir}" ]]; then
-                    update_test "${subdir}" || true
+                    filter_allows "$(basename "${subdir}")" && update_test "${subdir}" || true
                 fi
             done
         elif [[ -f "${test_dir}/input.cpp" ]]; then
             # Direct test directory
-            update_test "${test_dir}" || true
+            filter_allows "$(basename "${test_dir}")" && update_test "${test_dir}" || true
         fi
     fi
 done

@@ -22,6 +22,7 @@ struct Allocation;
 //! Encoded struct value: ordered map of field name -> value
 struct StructValue {
     std::string typeName;
+    std::string dynamicType;              //!< Dynamic (most-derived) class name; empty if non-polymorphic or unknown
     std::vector<std::string> fieldOrder;  //!< Ordered field names
     std::map<std::string, std::shared_ptr<struct EncodedValueHolder>> fields;
 };
@@ -111,7 +112,7 @@ const char* regionToString(MemoryRegion region);
 //! A single local variable's state.
 struct VarState {
     std::string name;
-    void* addr;
+    const void* addr;
     EncodedValue value;
     const TypeDescriptor* type;
 };
@@ -173,11 +174,11 @@ public:
     void popFrame(int line);
 
     //! Record a variable initialization in the current frame.
-    void recordVarInit(const std::string& name, void* addr,
+    void recordVarInit(const std::string& name, const void* addr,
                        const TypeDescriptor* type, EncodedValue value, int line);
 
     //! Record a variable update in the current frame.
-    void recordVarUpdate(const std::string& name, void* addr,
+    void recordVarUpdate(const std::string& name, const void* addr,
                          const TypeDescriptor* type, EncodedValue value);
 
     //! Record a step at a line.

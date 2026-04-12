@@ -39,52 +39,52 @@ void __inspector_step(int line);
 // ---------------------------------------------------------------------------
 
 // Integer types (signed)
-void __inspector_var_init_int(const char* name, void* addr,
+void __inspector_var_init_int(const char* name, const void* addr,
                          const inspector::TypeDescriptor* type, long long value,
                          int line);
-void __inspector_var_update_int(const char* name, void* addr,
+void __inspector_var_update_int(const char* name, const void* addr,
                            const inspector::TypeDescriptor* type, long long value);
 
 // Integer types (unsigned)
-void __inspector_var_init_uint(const char* name, void* addr,
+void __inspector_var_init_uint(const char* name, const void* addr,
                           const inspector::TypeDescriptor* type,
                           unsigned long long value, int line);
-void __inspector_var_update_uint(const char* name, void* addr,
+void __inspector_var_update_uint(const char* name, const void* addr,
                             const inspector::TypeDescriptor* type,
                             unsigned long long value);
 
 // Floating point types
-void __inspector_var_init_float(const char* name, void* addr,
+void __inspector_var_init_float(const char* name, const void* addr,
                            const inspector::TypeDescriptor* type, double value,
                            int line);
-void __inspector_var_update_float(const char* name, void* addr,
+void __inspector_var_update_float(const char* name, const void* addr,
                              const inspector::TypeDescriptor* type, double value);
 
 // Boolean type
-void __inspector_var_init_bool(const char* name, void* addr,
+void __inspector_var_init_bool(const char* name, const void* addr,
                           const inspector::TypeDescriptor* type, bool value, int line);
-void __inspector_var_update_bool(const char* name, void* addr,
+void __inspector_var_update_bool(const char* name, const void* addr,
                             const inspector::TypeDescriptor* type, bool value);
 
 // Character type
-void __inspector_var_init_char(const char* name, void* addr,
+void __inspector_var_init_char(const char* name, const void* addr,
                           const inspector::TypeDescriptor* type, int value, int line);
-void __inspector_var_update_char(const char* name, void* addr,
+void __inspector_var_update_char(const char* name, const void* addr,
                             const inspector::TypeDescriptor* type, int value);
 
 // Pointer types
-void __inspector_var_init_ptr(const char* name, void* addr,
+void __inspector_var_init_ptr(const char* name, const void* addr,
                          const inspector::TypeDescriptor* type, const void* ptr_value,
                          int line);
-void __inspector_var_update_ptr(const char* name, void* addr,
+void __inspector_var_update_ptr(const char* name, const void* addr,
                            const inspector::TypeDescriptor* type,
                            const void* ptr_value);
 
 // Reference types
-void __inspector_var_init_ref(const char* name, void* addr,
+void __inspector_var_init_ref(const char* name, const void* addr,
                          const inspector::TypeDescriptor* type,
                          const void* referent_addr, int line);
-void __inspector_var_update_ref(const char* name, void* addr,
+void __inspector_var_update_ref(const char* name, const void* addr,
                            const inspector::TypeDescriptor* type,
                            const void* referent_addr);
 
@@ -93,28 +93,28 @@ void __inspector_var_update_ref(const char* name, void* addr,
 // ---------------------------------------------------------------------------
 
 // Struct/class types (value is the struct address for field traversal)
-void __inspector_var_init_struct(const char* name, void* addr,
+void __inspector_var_init_struct(const char* name, const void* addr,
                             const inspector::TypeDescriptor* type, int line);
-void __inspector_var_update_struct(const char* name, void* addr,
+void __inspector_var_update_struct(const char* name, const void* addr,
                               const inspector::TypeDescriptor* type);
 
 // Enum types
-void __inspector_var_init_enum(const char* name, void* addr,
+void __inspector_var_init_enum(const char* name, const void* addr,
                           const inspector::TypeDescriptor* type, long long value,
                           int line);
-void __inspector_var_update_enum(const char* name, void* addr,
+void __inspector_var_update_enum(const char* name, const void* addr,
                             const inspector::TypeDescriptor* type, long long value);
 
 // Union types
-void __inspector_var_init_union(const char* name, void* addr,
+void __inspector_var_init_union(const char* name, const void* addr,
                            const inspector::TypeDescriptor* type, int line);
-void __inspector_var_update_union(const char* name, void* addr,
+void __inspector_var_update_union(const char* name, const void* addr,
                              const inspector::TypeDescriptor* type);
 
 // Array types (fixed-size)
-void __inspector_var_init_array(const char* name, void* addr,
+void __inspector_var_init_array(const char* name, const void* addr,
                            const inspector::TypeDescriptor* type, int line);
-void __inspector_var_update_array(const char* name, void* addr,
+void __inspector_var_update_array(const char* name, const void* addr,
                              const inspector::TypeDescriptor* type);
 
 // ---------------------------------------------------------------------------
@@ -155,10 +155,10 @@ void __inspector_catch(const char* funcName, const char* typeName, int line);
 // ---------------------------------------------------------------------------
 
 //! @deprecated Use __inspector_var_init_int instead.
-void __inspector_var_init(const char* name, void* addr, int value);
+void __inspector_var_init(const char* name, const void* addr, int value);
 
 //! @deprecated Use __inspector_var_update_int instead.
-void __inspector_var_update(const char* name, void* addr, int value);
+void __inspector_var_update(const char* name, const void* addr, int value);
 
 #ifdef __cplusplus
 }

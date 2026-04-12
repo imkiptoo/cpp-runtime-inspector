@@ -159,13 +159,12 @@
         {
           "encoded_locals": {
             "arr": [
-              "REF",
+              "DANGLING",
               1
             ],
             "p": [
-              "REF_OFFSET",
-              1,
-              12
+              "DANGLING",
+              1
             ],
             "val": 40
           },

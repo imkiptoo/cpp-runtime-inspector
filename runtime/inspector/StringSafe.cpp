@@ -5,6 +5,7 @@
 
 #include <csignal>
 #include <csetjmp>
+#include <cstdint>
 
 #if defined(__APPLE__) || defined(__linux__)
 #include <sys/mman.h>

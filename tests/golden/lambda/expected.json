@@ -80,9 +80,15 @@
           "encoded_locals": {
             "f": [
               "C_STRUCT",
-              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda/input.cpp:9:14)",
+              "class (lambda at <ROOT>/tests/golden/lambda/input.cpp:9:14)",
               {
-                "": 10
+                "x": 10,
+                "y": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "int &",
+                  "stack"
+                ]
               }
             ],
             "x": 10,
@@ -113,9 +119,15 @@
           "encoded_locals": {
             "f": [
               "C_STRUCT",
-              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda/input.cpp:9:14)",
+              "class (lambda at <ROOT>/tests/golden/lambda/input.cpp:9:14)",
               {
-                "": 10
+                "x": 10,
+                "y": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "int &",
+                  "stack"
+                ]
               }
             ],
             "x": 10,

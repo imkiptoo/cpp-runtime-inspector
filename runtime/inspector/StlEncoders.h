@@ -35,6 +35,8 @@ enum class StlContainerKind {
     UniquePtr,      //!< std::unique_ptr<T>
     SharedPtr,      //!< std::shared_ptr<T>
     Optional,       //!< std::optional<T>
+    Variant,        //!< std::variant<Ts...>
+    Function,       //!< std::function<R(Args...)>
 };
 
 //! Check if a type name is an STL container we can encode.
@@ -79,8 +81,9 @@ EncodedValue encodeStdPair(const void* addr, const TypeDescriptor* firstType,
 //! @param valueType Type descriptor for values.
 //! @param state TraceState for recursive encoding.
 //! @return Encoded value representing the map contents.
-EncodedValue encodeStdMap(const void* addr, const TypeDescriptor* keyType,
-                          const TypeDescriptor* valueType, TraceState& state);
+EncodedValue encodeStdMap(const void* addr, const TypeDescriptor* mapType,
+                          const TypeDescriptor* elementType, bool isSet,
+                          TraceState& state);
 
 //! Encode an std::unique_ptr's contents.
 //! @param addr Address of the unique_ptr object.
@@ -105,6 +108,22 @@ EncodedValue encodeStdSharedPtr(const void* addr, const TypeDescriptor* pointeeT
 //! @return Encoded value representing the optional (engaged or empty).
 EncodedValue encodeStdOptional(const void* addr, const TypeDescriptor* valueType,
                                TraceState& state);
+
+//! Encode a std::variant.
+//! Reports the runtime index plus, for index 0 only, the decoded payload
+//! using `firstAlternativeType`. Other alternatives are listed by raw
+//! storage hex because their TypeDescriptors are not currently emitted.
+//! @param addr Address of the variant object.
+//! @param variantSize sizeof(variant) — used to locate the discriminator.
+//! @param firstAlternativeType Type descriptor for the first template argument.
+EncodedValue encodeStdVariant(const void* addr, size_t variantSize,
+                              const TypeDescriptor* firstAlternativeType,
+                              TraceState& state);
+
+//! Encode a std::function.
+//! Reports whether the target is engaged (non-empty) and, for libstdc++,
+//! the rough target representation. Layout-pinned to libstdc++ Linux.
+EncodedValue encodeStdFunction(const void* addr);
 
 //! Extract element type descriptor from an STL container type descriptor.
 //! For vector<T>, returns the descriptor for T.

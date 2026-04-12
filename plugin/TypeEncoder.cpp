@@ -339,7 +339,9 @@ bool TypeEncoder::isStlContainer(clang::QualType type) const {
         typeName.find("std::set") != std::string::npos ||
         typeName.find("std::unique_ptr") != std::string::npos ||
         typeName.find("std::shared_ptr") != std::string::npos ||
-        typeName.find("std::optional") != std::string::npos) {
+        typeName.find("std::optional") != std::string::npos ||
+        typeName.find("std::variant") != std::string::npos ||
+        typeName.find("std::function") != std::string::npos) {
         return true;
     }
 
@@ -389,13 +391,25 @@ std::string TypeEncoder::getLambdaFriendlyName(clang::QualType type) const {
 clang::QualType TypeEncoder::getStlElementType(clang::QualType type) const {
     type = type.getCanonicalType();
 
+    auto firstTypeFromArg = [](const clang::TemplateArgument& arg) -> clang::QualType {
+        if (arg.getKind() == clang::TemplateArgument::Type)
+            return arg.getAsType();
+        // Variadic templates (e.g. std::variant<Ts...>) wrap arguments in a
+        // Pack. Drill into the pack and return its first Type argument.
+        if (arg.getKind() == clang::TemplateArgument::Pack) {
+            for (const auto& packArg : arg.pack_elements()) {
+                if (packArg.getKind() == clang::TemplateArgument::Type)
+                    return packArg.getAsType();
+            }
+        }
+        return clang::QualType();
+    };
+
     // For template types, get the first template argument
     if (const auto* tst = type->getAs<clang::TemplateSpecializationType>()) {
         if (tst->template_arguments().size() > 0) {
-            const auto& arg = tst->template_arguments()[0];
-            if (arg.getKind() == clang::TemplateArgument::Type) {
-                return arg.getAsType();
-            }
+            clang::QualType q = firstTypeFromArg(tst->template_arguments()[0]);
+            if (!q.isNull()) return q;
         }
     }
 
@@ -403,8 +417,9 @@ clang::QualType TypeEncoder::getStlElementType(clang::QualType type) const {
     if (const auto* record = type->getAsCXXRecordDecl()) {
         if (const auto* spec = llvm::dyn_cast<clang::ClassTemplateSpecializationDecl>(record)) {
             const auto& args = spec->getTemplateArgs();
-            if (args.size() > 0 && args[0].getKind() == clang::TemplateArgument::Type) {
-                return args[0].getAsType();
+            if (args.size() > 0) {
+                clang::QualType q = firstTypeFromArg(args[0]);
+                if (!q.isNull()) return q;
             }
         }
     }
@@ -477,23 +492,62 @@ TypeEncoder::generateFieldInfoArray(const clang::RecordDecl* record,
     const clang::ASTRecordLayout& layout =
         m_context.getASTRecordLayout(record);
 
-    // Collect fields
-    std::vector<std::tuple<std::string, size_t, clang::QualType, AccessLevel>>
-        fields;
+    // For lambda closure types, the synthesized capture fields have empty
+    // names. Map FieldDecl back to its capturing variable to recover a
+    // human-readable name like "x" or "y" instead of "".
+    llvm::DenseMap<const clang::FieldDecl*, std::string> lambdaFieldNames;
+    if (const auto* cxx = llvm::dyn_cast<clang::CXXRecordDecl>(record)) {
+        if (cxx->isLambda()) {
+            llvm::DenseMap<const clang::ValueDecl*, clang::FieldDecl*> caps;
+            clang::FieldDecl* thisField = nullptr;
+            cxx->getCaptureFields(caps, thisField);
+            for (const auto& [valDecl, fieldDecl] : caps) {
+                if (fieldDecl && valDecl) {
+                    lambdaFieldNames[fieldDecl] = valDecl->getNameAsString();
+                }
+            }
+            if (thisField) {
+                lambdaFieldNames[thisField] = "this";
+            }
+        }
+    }
+
+    // Collect fields. Bitfields carry extra information.
+    struct FieldEntry {
+        std::string name;
+        size_t byte_offset;
+        clang::QualType type;
+        AccessLevel access;
+        bool is_bitfield;
+        size_t bit_offset;
+        size_t bit_width;
+    };
+    std::vector<FieldEntry> fields;
 
     unsigned fieldIdx = 0;
     for (const auto* field : record->fields()) {
-        size_t offset = layout.getFieldOffset(fieldIdx) / 8;
+        size_t bitOffset = layout.getFieldOffset(fieldIdx);
+        size_t byteOffset = bitOffset / 8;
         AccessLevel access = AccessLevel::Public;
-
-        // For C++ classes, get access specifier
-        if (const auto* cxxRecord =
-                llvm::dyn_cast<clang::CXXRecordDecl>(record)) {
+        if (llvm::isa<clang::CXXRecordDecl>(record))
             access = convertAccess(field->getAccess());
+
+        std::string name = field->getNameAsString();
+        if (name.empty()) {
+            auto it = lambdaFieldNames.find(field);
+            if (it != lambdaFieldNames.end())
+                name = it->second;
         }
 
-        fields.emplace_back(field->getNameAsString(), offset, field->getType(),
-                            access);
+        FieldEntry e{
+            name, byteOffset, field->getType(),
+            access, /*is_bitfield=*/false, /*bit_offset=*/0, /*bit_width=*/0};
+        if (field->isBitField()) {
+            e.is_bitfield = true;
+            e.bit_offset = bitOffset;
+            e.bit_width = field->getBitWidthValue(m_context);
+        }
+        fields.push_back(std::move(e));
         ++fieldIdx;
     }
 
@@ -502,10 +556,12 @@ TypeEncoder::generateFieldInfoArray(const clang::RecordDecl* record,
 
     ss << "static const inspector::FieldInfo " << baseName << "_fields[] = {\n";
     for (size_t i = 0; i < fields.size(); ++i) {
-        const auto& [name, offset, type, access] = fields[i];
-        ss << "    {\"" << name << "\", " << offset << ", "
-           << getDescriptorRef(type) << ", inspector::AccessLevel::"
-           << accessToString(access) << ", false}";
+        const auto& f = fields[i];
+        ss << "    {\"" << f.name << "\", " << f.byte_offset << ", "
+           << getDescriptorRef(f.type) << ", inspector::AccessLevel::"
+           << accessToString(f.access) << ", false, "
+           << (f.is_bitfield ? "true" : "false") << ", " << f.bit_offset
+           << ", " << f.bit_width << "}";
         if (i + 1 < fields.size())
             ss << ",";
         ss << "\n";
@@ -647,7 +703,13 @@ std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
     // For composite types, first generate dependency descriptors
     std::string dependencies;
 
-    if (type->isRecordType()) {
+    // STL containers are decoded by their dedicated runtime encoders, not by
+    // generic field walks. Skip walking their internals so we don't drag in
+    // libstdc++ implementation types (_Rb_tree_node_base, _Vector_base, ...)
+    // and emit broken descriptors for them.
+    bool isStlType = isStlContainer(type);
+
+    if (type->isRecordType() && !isStlType) {
         const clang::RecordDecl* record = type->getAsRecordDecl();
         if (record && record->isCompleteDefinition()) {
             // Generate descriptors for field types
@@ -677,6 +739,12 @@ std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
         }
     }
 
+    if (isStlContainer(type)) {
+        clang::QualType elem = getStlElementType(type);
+        if (!elem.isNull() && !elem->isVoidType())
+            dependencies += generateTypeDescriptorCode(elem);
+    }
+
     // Output extern declarations for circular references
     ss << externDecls.str();
     ss << dependencies;
@@ -693,7 +761,7 @@ std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
     bool isPolymorphic = false;
     bool isUnionType = type->isUnionType();
 
-    if (type->isRecordType()) {
+    if (type->isRecordType() && !isStlType) {
         const clang::RecordDecl* record = type->getAsRecordDecl();
         if (record && record->isCompleteDefinition()) {
             fieldArrayCode =
@@ -741,7 +809,8 @@ std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
         ss << "    nullptr, 0,\n";
     }
 
-    // Element type (for arrays and pointers)
+    // Element type (for arrays, pointers, and STL containers with one
+    // template type argument that the runtime knows how to decode).
     if (type->isConstantArrayType()) {
         auto [elemType, count] = getArrayInfo(type);
         ss << "    " << getDescriptorRef(elemType) << ", " << count << ",\n";
@@ -749,6 +818,13 @@ std::string TypeEncoder::generateTypeDescriptorCode(clang::QualType type) {
         clang::QualType pointee = getPointeeType(type);
         if (!pointee.isNull() && !pointee->isVoidType()) {
             ss << "    " << getDescriptorRef(pointee) << ", 0,\n";
+        } else {
+            ss << "    nullptr, 0,\n";
+        }
+    } else if (isStlContainer(type)) {
+        clang::QualType elem = getStlElementType(type);
+        if (!elem.isNull()) {
+            ss << "    " << getDescriptorRef(elem) << ", 0,\n";
         } else {
             ss << "    nullptr, 0,\n";
         }

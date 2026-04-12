@@ -1,0 +1,192 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 6,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 7,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "v": [
+              "C_STRUCT",
+              "std::variant",
+              {
+                "index": 0,
+                "value": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "v"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "idx0": 0,
+            "v": [
+              "C_STRUCT",
+              "std::variant",
+              {
+                "index": 0,
+                "value": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "v",
+            "idx0"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "idx0": 0,
+            "idx_after_int": 0,
+            "v": [
+              "C_STRUCT",
+              "std::variant",
+              {
+                "index": 0,
+                "value": 42
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "v",
+            "idx0",
+            "idx_after_int"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "idx0": 0,
+            "idx_after_double": 1,
+            "idx_after_int": 0,
+            "v": [
+              "C_STRUCT",
+              "std::variant",
+              {
+                "index": 1,
+                "value": "<alternative beyond first; payload not introspectable>"
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "v",
+            "idx0",
+            "idx_after_int",
+            "idx_after_double"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "idx0": 0,
+            "idx_after_double": 1,
+            "idx_after_int": 0,
+            "v": [
+              "C_STRUCT",
+              "std::variant",
+              {
+                "index": 1,
+                "value": "<alternative beyond first; payload not introspectable>"
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "v",
+            "idx0",
+            "idx_after_int",
+            "idx_after_double"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}

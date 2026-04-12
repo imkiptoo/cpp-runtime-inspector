@@ -80,7 +80,7 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x16d512c68",
+              "0xPTR",
               "int &",
               "unknown"
             ],
@@ -112,11 +112,51 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x16d512c68",
+              "0xPTR",
               "int &",
               "unknown"
             ],
-            "x": 10,
+            "x": 15,
+            "y": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ref"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "increment",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "increment",
+      "globals": {},
+      "heap": {},
+      "line": 5,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ref": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
+            "x": 16,
             "y": 20
           },
           "frame_id": 0,
@@ -152,11 +192,11 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x16d512c68",
+              "0xPTR",
               "int &",
               "unknown"
             ],
-            "x": 10,
+            "x": 16,
             "y": 20
           },
           "frame_id": 0,
@@ -170,21 +210,12 @@
           ]
         },
         {
-          "encoded_locals": {
-            "x": [
-              "C_ADDRESS",
-              "0x16d512c68",
-              "int &",
-              "unknown"
-            ]
-          },
+          "encoded_locals": {},
           "frame_id": 1,
           "func_name": "increment",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": [
-            "x"
-          ]
+          "ordered_varnames": []
         }
       ],
       "stdout": ""
@@ -201,11 +232,11 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x16d512c68",
+              "0xPTR",
               "int &",
               "unknown"
             ],
-            "x": 10,
+            "x": 16,
             "y": 20
           },
           "frame_id": 0,
@@ -241,12 +272,100 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x16d512c68",
+              "0xPTR",
               "int &",
               "unknown"
             ],
-            "x": 10,
+            "x": 16,
             "y": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ref"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "temp": 16
+          },
+          "frame_id": 2,
+          "func_name": "swap",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "temp"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "swap",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ref": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
+            "x": 20,
+            "y": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ref"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "temp": 16
+          },
+          "frame_id": 2,
+          "func_name": "swap",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "temp"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "swap",
+      "globals": {},
+      "heap": {},
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ref": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
+            "x": 20,
+            "y": 16
           },
           "frame_id": 0,
           "func_name": "main",
@@ -285,12 +404,12 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x16d512c68",
+              "0xPTR",
               "int &",
               "unknown"
             ],
-            "x": 10,
-            "y": 20
+            "x": 20,
+            "y": 16
           },
           "frame_id": 0,
           "func_name": "main",
@@ -304,18 +423,6 @@
         },
         {
           "encoded_locals": {
-            "a": [
-              "C_ADDRESS",
-              "0x16d512c68",
-              "int &",
-              "unknown"
-            ],
-            "b": [
-              "C_ADDRESS",
-              "0x16d512c64",
-              "int &",
-              "unknown"
-            ],
             "temp": 16
           },
           "frame_id": 2,
@@ -323,9 +430,7 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
-            "temp",
-            "a",
-            "b"
+            "temp"
           ]
         }
       ],
@@ -343,12 +448,12 @@
           "encoded_locals": {
             "ref": [
               "C_ADDRESS",
-              "0x16d512c68",
+              "0xPTR",
               "int &",
               "unknown"
             ],
-            "x": 10,
-            "y": 20
+            "x": 20,
+            "y": 16
           },
           "frame_id": 0,
           "func_name": "main",

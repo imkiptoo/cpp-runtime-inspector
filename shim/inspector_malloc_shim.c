@@ -14,7 +14,7 @@
 //! variable.
 
 // _GNU_SOURCE is needed on Linux for RTLD_NEXT
-#ifndef __APPLE__
+#if !defined(__APPLE__) && !defined(_GNU_SOURCE)
 #define _GNU_SOURCE
 #endif
 

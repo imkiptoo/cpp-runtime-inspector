@@ -1,0 +1,1419 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 37,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Animal::Animal",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Animal::Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Animal::Animal",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Animal::Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Animal::Animal",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Animal::Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Dog::Dog",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Dog::Dog",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Dog::Dog",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Dog::Dog",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Dog::Dog",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Dog::Dog",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Dog::Dog",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Dog::Dog",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Dog",
+          [
+            [
+              "kind",
+              1
+            ],
+            [
+              "sentinel",
+              99
+            ]
+          ],
+          "Dog"
+        ]
+      },
+      "line": 38,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "REF",
+              1
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Dog::legs",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Dog",
+          [
+            [
+              "kind",
+              1
+            ],
+            [
+              "sentinel",
+              99
+            ]
+          ],
+          "Dog"
+        ]
+      },
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "REF",
+              1
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Dog::legs",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Dog::legs",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Dog",
+          [
+            [
+              "kind",
+              1
+            ],
+            [
+              "sentinel",
+              99
+            ]
+          ],
+          "Dog"
+        ]
+      },
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "REF",
+              1
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Dog::legs",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Dog",
+          [
+            [
+              "kind",
+              1
+            ],
+            [
+              "sentinel",
+              99
+            ]
+          ],
+          "Dog"
+        ]
+      },
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "REF",
+              1
+            ],
+            "l1": 4
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "l1"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Dog::sound",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Dog",
+          [
+            [
+              "kind",
+              1
+            ],
+            [
+              "sentinel",
+              99
+            ]
+          ],
+          "Dog"
+        ]
+      },
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "REF",
+              1
+            ],
+            "l1": 4
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "l1"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Dog::sound",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Dog::sound",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Dog",
+          [
+            [
+              "kind",
+              1
+            ],
+            [
+              "sentinel",
+              99
+            ]
+          ],
+          "Dog"
+        ]
+      },
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "REF",
+              1
+            ],
+            "l1": 4
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "l1"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Dog::sound",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct Dog",
+          [
+            [
+              "kind",
+              1
+            ],
+            [
+              "sentinel",
+              99
+            ]
+          ],
+          "Dog"
+        ]
+      },
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "REF",
+              1
+            ],
+            "l1": 4,
+            "s1": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "l1",
+            "s1"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Dog::~Dog",
+      "globals": {},
+      "heap": {},
+      "line": 21,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "DANGLING",
+              1
+            ],
+            "l1": 4,
+            "s1": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "l1",
+            "s1"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Dog::~Dog",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Dog::~Dog",
+      "globals": {},
+      "heap": {},
+      "line": 21,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "DANGLING",
+              1
+            ],
+            "l1": 4,
+            "s1": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "l1",
+            "s1"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Dog::~Dog",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Dog::~Dog",
+      "globals": {},
+      "heap": {},
+      "line": 21,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "DANGLING",
+              1
+            ],
+            "l1": 4,
+            "s1": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "l1",
+            "s1"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Dog::~Dog",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "DANGLING",
+              1
+            ],
+            "l1": 4,
+            "s1": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "l1",
+            "s1"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Animal::~Animal",
+      "globals": {},
+      "heap": {},
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Animal::Animal",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Animal::Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Animal::Animal",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Animal::Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Animal::Animal",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Animal::Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Cat::Cat",
+      "globals": {},
+      "heap": {},
+      "line": 30,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 8,
+          "func_name": "Cat::Cat",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Cat::Cat",
+      "globals": {},
+      "heap": {},
+      "line": 30,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 8,
+          "func_name": "Cat::Cat",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Cat::Cat",
+      "globals": {},
+      "heap": {},
+      "line": 30,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 8,
+          "func_name": "Cat::Cat",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Cat::Cat",
+      "globals": {},
+      "heap": {},
+      "line": 30,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 8,
+          "func_name": "Cat::Cat",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Animal::~Animal",
+      "globals": {},
+      "heap": {
+        "2": [
+          "HEAP_STRUCT",
+          "struct Cat",
+          [
+            [
+              "kind",
+              2
+            ],
+            [
+              "whiskers",
+              6
+            ]
+          ],
+          "Cat"
+        ]
+      },
+      "line": 43,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "b": [
+              "REF",
+              2
+            ]
+          },
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "b"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Cat::legs",
+      "globals": {},
+      "heap": {
+        "2": [
+          "HEAP_STRUCT",
+          "struct Cat",
+          [
+            [
+              "kind",
+              2
+            ],
+            [
+              "whiskers",
+              6
+            ]
+          ],
+          "Cat"
+        ]
+      },
+      "line": 33,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "b": [
+              "REF",
+              2
+            ]
+          },
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 9,
+          "func_name": "Cat::legs",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Cat::legs",
+      "globals": {},
+      "heap": {
+        "2": [
+          "HEAP_STRUCT",
+          "struct Cat",
+          [
+            [
+              "kind",
+              2
+            ],
+            [
+              "whiskers",
+              6
+            ]
+          ],
+          "Cat"
+        ]
+      },
+      "line": 33,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "b": [
+              "REF",
+              2
+            ]
+          },
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 9,
+          "func_name": "Cat::legs",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Animal::~Animal",
+      "globals": {},
+      "heap": {
+        "2": [
+          "HEAP_STRUCT",
+          "struct Cat",
+          [
+            [
+              "kind",
+              2
+            ],
+            [
+              "whiskers",
+              6
+            ]
+          ],
+          "Cat"
+        ]
+      },
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "b": [
+              "REF",
+              2
+            ],
+            "l2": 4
+          },
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "b",
+            "l2"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Cat::sound",
+      "globals": {},
+      "heap": {
+        "2": [
+          "HEAP_STRUCT",
+          "struct Cat",
+          [
+            [
+              "kind",
+              2
+            ],
+            [
+              "whiskers",
+              6
+            ]
+          ],
+          "Cat"
+        ]
+      },
+      "line": 34,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "b": [
+              "REF",
+              2
+            ],
+            "l2": 4
+          },
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "b",
+            "l2"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 10,
+          "func_name": "Cat::sound",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Cat::sound",
+      "globals": {},
+      "heap": {
+        "2": [
+          "HEAP_STRUCT",
+          "struct Cat",
+          [
+            [
+              "kind",
+              2
+            ],
+            [
+              "whiskers",
+              6
+            ]
+          ],
+          "Cat"
+        ]
+      },
+      "line": 34,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "b": [
+              "REF",
+              2
+            ],
+            "l2": 4
+          },
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "b",
+            "l2"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 10,
+          "func_name": "Cat::sound",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Animal::~Animal",
+      "globals": {},
+      "heap": {
+        "2": [
+          "HEAP_STRUCT",
+          "struct Cat",
+          [
+            [
+              "kind",
+              2
+            ],
+            [
+              "whiskers",
+              6
+            ]
+          ],
+          "Cat"
+        ]
+      },
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "b": [
+              "REF",
+              2
+            ],
+            "l2": 4,
+            "s2": 200
+          },
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "b",
+            "l2",
+            "s2"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Cat::~Cat",
+      "globals": {},
+      "heap": {},
+      "line": 31,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "b": [
+              "DANGLING",
+              2
+            ],
+            "l2": 4,
+            "s2": 200
+          },
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "b",
+            "l2",
+            "s2"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 11,
+          "func_name": "Cat::~Cat",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Cat::~Cat",
+      "globals": {},
+      "heap": {},
+      "line": 31,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "b": [
+              "DANGLING",
+              2
+            ],
+            "l2": 4,
+            "s2": 200
+          },
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "b",
+            "l2",
+            "s2"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 11,
+          "func_name": "Cat::~Cat",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Cat::~Cat",
+      "globals": {},
+      "heap": {},
+      "line": 31,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "b": [
+              "DANGLING",
+              2
+            ],
+            "l2": 4,
+            "s2": 200
+          },
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "b",
+            "l2",
+            "s2"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 11,
+          "func_name": "Cat::~Cat",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Animal::~Animal",
+      "globals": {},
+      "heap": {},
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "b": [
+              "DANGLING",
+              2
+            ],
+            "l2": 4,
+            "s2": 200
+          },
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "b",
+            "l2",
+            "s2"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Animal::~Animal",
+      "globals": {},
+      "heap": {},
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 12,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Animal::~Animal",
+      "globals": {},
+      "heap": {},
+      "line": 48,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 12,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}

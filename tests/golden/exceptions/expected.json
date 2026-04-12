@@ -293,7 +293,7 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "result": 5
+            "result": -1
           },
           "frame_id": 0,
           "func_name": "main",

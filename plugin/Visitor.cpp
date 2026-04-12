@@ -4,6 +4,7 @@
 #include "Visitor.h"
 
 #include "clang/AST/ParentMapContext.h"
+#include "clang/Basic/SourceManager.h"
 #include "clang/Lex/Lexer.h"
 
 #include <sstream>
@@ -42,6 +43,36 @@ bool InspectorVisitor::hasCompoundStmtParent() const {
         m_parentStack[m_parentStack.size() - 2]);
 }
 
+bool InspectorVisitor::TraverseFunctionDecl(clang::FunctionDecl* decl) {
+    if (decl && decl->isConstexpr())
+        return true;
+    return clang::RecursiveASTVisitor<InspectorVisitor>::TraverseFunctionDecl(decl);
+}
+
+bool InspectorVisitor::TraverseCXXMethodDecl(clang::CXXMethodDecl* decl) {
+    if (decl && decl->isConstexpr())
+        return true;
+    return clang::RecursiveASTVisitor<InspectorVisitor>::TraverseCXXMethodDecl(decl);
+}
+
+bool InspectorVisitor::TraverseCXXConstructorDecl(clang::CXXConstructorDecl* decl) {
+    if (decl && decl->isConstexpr())
+        return true;
+    return clang::RecursiveASTVisitor<InspectorVisitor>::TraverseCXXConstructorDecl(decl);
+}
+
+bool InspectorVisitor::TraverseCXXDestructorDecl(clang::CXXDestructorDecl* decl) {
+    if (decl && decl->isConstexpr())
+        return true;
+    return clang::RecursiveASTVisitor<InspectorVisitor>::TraverseCXXDestructorDecl(decl);
+}
+
+bool InspectorVisitor::TraverseCXXConversionDecl(clang::CXXConversionDecl* decl) {
+    if (decl && decl->isConstexpr())
+        return true;
+    return clang::RecursiveASTVisitor<InspectorVisitor>::TraverseCXXConversionDecl(decl);
+}
+
 bool InspectorVisitor::VisitFunctionDecl(clang::FunctionDecl* decl) {
     if (!decl->hasBody() || !m_helpers.isInMainFile(decl->getLocation()))
         return true;
@@ -51,14 +82,51 @@ bool InspectorVisitor::VisitFunctionDecl(clang::FunctionDecl* decl) {
     if (!compound)
         return true;
 
-    std::string funcName = decl->getNameAsString();
+    // Use qualified name so namespace and class scopes are visible:
+    // math::square, Counter::bump. Free functions in the global namespace
+    // are unchanged.
+    std::string funcName = decl->getQualifiedNameAsString();
     m_currentFunction = funcName;
 
-    // Use the first top-level function as the insertion point for type descriptors
-    // Skip member functions (methods) - we only want free functions
-    if (!m_hasInsertionPoint && !decl->isCXXClassMember()) {
-        m_insertionPoint = decl->getBeginLoc();
-        m_hasInsertionPoint = true;
+    // Pick an insertion point for type descriptors. Descriptors must come
+    // *before* any code that references them; that includes member
+    // functions defined inline inside a class.
+    //
+    // For free functions we use the function's own start location. For
+    // methods we walk up to the outermost enclosing class — and if that
+    // class is the body of a class template, up once more to the
+    // ClassTemplateDecl, so descriptors don't land between
+    // `template <...>` and `struct Foo`. We keep the earliest seen.
+    {
+        clang::SourceLocation candidate;
+        if (decl->isCXXClassMember()) {
+            const clang::DeclContext* ctx = decl->getDeclContext();
+            const clang::CXXRecordDecl* outer = nullptr;
+            while (ctx) {
+                if (auto* rec = llvm::dyn_cast<clang::CXXRecordDecl>(ctx)) {
+                    outer = rec;
+                }
+                ctx = ctx->getParent();
+            }
+            if (outer) {
+                if (auto* tmpl = outer->getDescribedClassTemplate()) {
+                    candidate = tmpl->getBeginLoc();
+                } else {
+                    candidate = outer->getBeginLoc();
+                }
+            }
+        } else {
+            candidate = decl->getBeginLoc();
+        }
+
+        if (candidate.isValid()) {
+            const auto& sm = m_context.getSourceManager();
+            if (!m_hasInsertionPoint ||
+                sm.isBeforeInTranslationUnit(candidate, m_insertionPoint)) {
+                m_insertionPoint = candidate;
+                m_hasInsertionPoint = true;
+            }
+        }
     }
 
     // Inject __inspector_enter after opening brace
@@ -86,7 +154,11 @@ bool InspectorVisitor::VisitReturnStmt(clang::ReturnStmt* stmt) {
     unsigned line = m_helpers.getLineNumber(stmt->getBeginLoc());
     std::string call =
         "__inspector_leave(\"" + funcName + "\", " + std::to_string(line) + "); ";
-    m_rewriter.InsertTextBefore(stmt->getBeginLoc(), call);
+    // InsertAfter=true so the leave call sits *inside* any synthetic braces
+    // added by ensureCompoundBody for if/else/while/for bodies that consist
+    // of a single return statement. With InsertTextBefore the leave would
+    // land outside the braces and produce invalid syntax.
+    m_rewriter.InsertText(stmt->getBeginLoc(), call, /*InsertAfter=*/true);
 
     return true;
 }
@@ -102,6 +174,31 @@ bool InspectorVisitor::VisitVarDecl(clang::VarDecl* decl) {
     // Skip exception catch clause declarations
     if (decl->isExceptionVariable())
         return true;
+
+    // Structured bindings: emit one __inspector_var_init per BindingDecl.
+    // The DecompositionDecl itself has no name, so we inject after the
+    // statement's last token (the initializer's end). Each binding is a
+    // valid lvalue that supports unary &.
+    if (auto* decomp = llvm::dyn_cast<clang::DecompositionDecl>(decl)) {
+        std::string injected;
+        for (clang::BindingDecl* binding : decomp->bindings()) {
+            clang::QualType bt = binding->getType();
+            if (!m_typeEncoder.isSupported(bt))
+                continue;
+            if (m_typeEncoder.isStlContainer(bt))
+                continue;
+            TypeKind k = m_typeEncoder.getTypeKind(bt);
+            if (k == TypeKind::Struct || k == TypeKind::Union ||
+                k == TypeKind::Array || k == TypeKind::Enum ||
+                k == TypeKind::Pointer || k == TypeKind::Reference) {
+                ensureTypeDescriptor(bt);
+            }
+            injected += generateInitCallForBinding(binding);
+        }
+        if (!injected.empty())
+            m_rewriter.InsertTextAfterToken(decl->getEndLoc(), injected);
+        return true;
+    }
 
     // Skip variables declared in for-loop init expressions
     // These cannot be instrumented because inserting text after them breaks the for syntax
@@ -132,11 +229,10 @@ bool InspectorVisitor::VisitVarDecl(clang::VarDecl* decl) {
     if (!m_typeEncoder.isSupported(type))
         return true;
 
-    // Skip STL container types - their internals are library-specific
-    // and should be handled by the runtime STL encoders, not plugin instrumentation
-    if (m_typeEncoder.isStlContainer(type)) {
-        return true;
-    }
+    // STL containers reach var_init_struct, which forwards to the runtime
+    // STL encoder. We still skip plugin-side field walks (handled by the
+    // type-descriptor block below not running for these types) but we now
+    // emit the init call so the local variable shows up in the trace.
 
     // For composite types and pointers, ensure type descriptor is emitted
     TypeKind kind = m_typeEncoder.getTypeKind(type);
@@ -216,13 +312,45 @@ bool InspectorVisitor::VisitBinaryOperator(clang::BinaryOperator* op) {
         }
     }
 
-    // Get the LHS variable
+    // Get the LHS variable. Two shapes are supported:
+    //   x = expr              (DeclRefExpr LHS)
+    //   x.member = expr       (MemberExpr whose base is a DeclRefExpr to a
+    //                          local var; we re-encode the whole base var)
     clang::Expr* lhs = op->getLHS()->IgnoreParenCasts();
-    auto* ref = llvm::dyn_cast<clang::DeclRefExpr>(lhs);
-    if (!ref)
-        return true;
+    clang::VarDecl* var = nullptr;
+    if (auto* ref = llvm::dyn_cast<clang::DeclRefExpr>(lhs)) {
+        var = llvm::dyn_cast<clang::VarDecl>(ref->getDecl());
+    } else if (auto* member = llvm::dyn_cast<clang::MemberExpr>(lhs)) {
+        // Walk through nested member exprs to find a base DeclRefExpr. We
+        // only recapture writes through `.` (or nested `.` chains), not
+        // through `->` — pointer-target writes mutate the heap, not the
+        // pointer itself, and conflict with the new-capture wrapping in
+        // VisitCXXNewExpr.
+        bool throughPointer = false;
+        clang::Expr* base = member;
+        while (auto* m = llvm::dyn_cast<clang::MemberExpr>(base)) {
+            if (m->isArrow()) {
+                throughPointer = true;
+                break;
+            }
+            base = m->getBase()->IgnoreParenCasts();
+        }
+        if (!throughPointer) {
+            if (auto* baseRef = llvm::dyn_cast<clang::DeclRefExpr>(base))
+                var = llvm::dyn_cast<clang::VarDecl>(baseRef->getDecl());
+        }
+    }
 
-    auto* var = llvm::dyn_cast<clang::VarDecl>(ref->getDecl());
+    // If the LHS is a write through `this->...`, we can't update a specific
+    // local — `this` points into the caller's frame. Instead, fire a step
+    // post-write so live re-encoding in emitStep snapshots every frame
+    // (including the caller's, where the receiver actually lives).
+    if (!var && isWriteThroughThis(lhs)) {
+        unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
+        wrapThisWriteWithStep(op, line);
+        return true;
+    }
+
     if (!var)
         return true;
 
@@ -230,10 +358,29 @@ bool InspectorVisitor::VisitBinaryOperator(clang::BinaryOperator* op) {
     if (!m_typeEncoder.isSupported(type))
         return true;
 
+    // Skip non-local VarDecl writes that we can't safely emit a descriptor
+    // for at the LHS use-site. This covers:
+    //   - global/static struct members: descriptor only emitted for locals
+    //   - reference parameters whose member is written: the descriptor is
+    //     for the *referent* (also unemitted), and the runtime would track
+    //     the parameter as a fake local
+    //   - struct-typed parameters by value: same — we don't track params
+    // Drop in a step instead so live re-encoding snapshots the caller's
+    // frame, which is where the mutated object actually lives.
+    if (!var->isLocalVarDecl()) {
+        TypeKind kind = m_typeEncoder.getTypeKind(type);
+        if (kind == TypeKind::Struct || kind == TypeKind::Union ||
+            kind == TypeKind::Array || kind == TypeKind::Reference) {
+            unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
+            wrapThisWriteWithStep(op, line);
+            return true;
+        }
+    }
+
     std::string call = generateVarUpdateCall(var);
 
     // Wrap in comma operator: (x = expr, __inspector_var_update_...(...))
-    m_rewriter.InsertTextBefore(op->getBeginLoc(), "(");
+    m_rewriter.InsertText(op->getBeginLoc(), "(", /*InsertAfter=*/true);
     m_rewriter.InsertTextAfterToken(op->getEndLoc(),
                                     RewriteHelpers::commaWrap(call));
 
@@ -266,6 +413,14 @@ bool InspectorVisitor::VisitCompoundAssignOperator(
     // Get the LHS variable
     clang::Expr* lhs = op->getLHS()->IgnoreParenCasts();
     auto* ref = llvm::dyn_cast<clang::DeclRefExpr>(lhs);
+
+    // Handle compound assign through `this->` (e.g., this->total += n).
+    if (!ref && isWriteThroughThis(lhs)) {
+        unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
+        wrapThisWriteWithStep(op, line);
+        return true;
+    }
+
     if (!ref)
         return true;
 
@@ -277,10 +432,21 @@ bool InspectorVisitor::VisitCompoundAssignOperator(
     if (!m_typeEncoder.isSupported(type))
         return true;
 
+    // Same composite-non-local guard as in VisitBinaryOperator.
+    if (!var->isLocalVarDecl()) {
+        TypeKind kind = m_typeEncoder.getTypeKind(type);
+        if (kind == TypeKind::Struct || kind == TypeKind::Union ||
+            kind == TypeKind::Array || kind == TypeKind::Reference) {
+            unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
+            wrapThisWriteWithStep(op, line);
+            return true;
+        }
+    }
+
     std::string call = generateVarUpdateCall(var);
 
     // Wrap in comma operator
-    m_rewriter.InsertTextBefore(op->getBeginLoc(), "(");
+    m_rewriter.InsertText(op->getBeginLoc(), "(", /*InsertAfter=*/true);
     m_rewriter.InsertTextAfterToken(op->getEndLoc(),
                                     RewriteHelpers::commaWrap(call));
 
@@ -315,6 +481,14 @@ bool InspectorVisitor::VisitUnaryOperator(clang::UnaryOperator* op) {
 
     clang::Expr* sub = op->getSubExpr()->IgnoreParenCasts();
     auto* ref = llvm::dyn_cast<clang::DeclRefExpr>(sub);
+
+    // Handle ++this->x / --this->x.
+    if (!ref && isWriteThroughThis(sub)) {
+        unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
+        wrapThisWriteWithStep(op, line);
+        return true;
+    }
+
     if (!ref)
         return true;
 
@@ -326,10 +500,21 @@ bool InspectorVisitor::VisitUnaryOperator(clang::UnaryOperator* op) {
     if (!m_typeEncoder.isSupported(type))
         return true;
 
+    // Same composite-non-local guard as in VisitBinaryOperator.
+    if (!var->isLocalVarDecl()) {
+        TypeKind kind = m_typeEncoder.getTypeKind(type);
+        if (kind == TypeKind::Struct || kind == TypeKind::Union ||
+            kind == TypeKind::Array || kind == TypeKind::Reference) {
+            unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
+            wrapThisWriteWithStep(op, line);
+            return true;
+        }
+    }
+
     std::string call = generateVarUpdateCall(var);
 
     // Wrap in comma operator
-    m_rewriter.InsertTextBefore(op->getBeginLoc(), "(");
+    m_rewriter.InsertText(op->getBeginLoc(), "(", /*InsertAfter=*/true);
     m_rewriter.InsertTextAfterToken(op->getEndLoc(),
                                     RewriteHelpers::commaWrap(call));
 
@@ -396,6 +581,51 @@ bool InspectorVisitor::VisitForStmt(clang::ForStmt* stmt) {
     return true;
 }
 
+bool InspectorVisitor::VisitCXXForRangeStmt(clang::CXXForRangeStmt* stmt) {
+    if (!m_helpers.isInMainFile(stmt->getBeginLoc()))
+        return true;
+
+    clang::Stmt* body = stmt->getBody();
+    if (!body)
+        return true;
+
+    bool wasCompound = llvm::isa<clang::CompoundStmt>(body);
+    if (!wasCompound)
+        m_helpers.ensureCompoundBody(body);
+
+    clang::VarDecl* loopVar = stmt->getLoopVariable();
+    if (!loopVar || !m_typeEncoder.isSupported(loopVar->getType()))
+        return true;
+    if (m_typeEncoder.isStlContainer(loopVar->getType()))
+        return true;
+
+    clang::QualType type = loopVar->getType();
+    TypeKind kind = m_typeEncoder.getTypeKind(type);
+    if (kind == TypeKind::Struct || kind == TypeKind::Union ||
+        kind == TypeKind::Array || kind == TypeKind::Enum ||
+        kind == TypeKind::Pointer || kind == TypeKind::Reference) {
+        ensureTypeDescriptor(type);
+    }
+
+    // generateVarInitCall produces "; __inspector_var_init(...)". We're
+    // inserting at the start of the body, so we want a leading space and
+    // a trailing ';'.
+    std::string call = generateVarInitCall(loopVar);
+    if (!call.empty() && call.front() == ';')
+        call.erase(0, 1); // drop leading ';'
+    std::string injected = " " + call + "; ";
+
+    if (wasCompound) {
+        auto* compound = llvm::cast<clang::CompoundStmt>(body);
+        m_rewriter.InsertTextAfterToken(compound->getLBracLoc(), injected);
+    } else {
+        m_rewriter.InsertText(body->getBeginLoc(), injected,
+                              /*InsertAfter=*/true);
+    }
+
+    return true;
+}
+
 bool InspectorVisitor::VisitWhileStmt(clang::WhileStmt* stmt) {
     if (!m_helpers.isInMainFile(stmt->getBeginLoc()))
         return true;
@@ -410,7 +640,7 @@ std::string InspectorVisitor::findEnclosingFunctionName(clang::Stmt* stmt) const
     const auto& parents = m_context.getParents(*stmt);
     for (const auto& parent : parents) {
         if (const auto* fn = parent.get<clang::FunctionDecl>())
-            return fn->getNameAsString();
+            return fn->getQualifiedNameAsString();
         if (const auto* parentStmt = parent.get<clang::Stmt>())
             return findEnclosingFunctionName(
                 const_cast<clang::Stmt*>(parentStmt));
@@ -444,6 +674,46 @@ std::string InspectorVisitor::generateVarInitCall(clang::VarDecl* decl) const {
            << varName << ", " << typeRef << ", " << value << ", " << line << ")";
     }
 
+    return ss.str();
+}
+
+std::string InspectorVisitor::generateInitCallForBinding(
+    clang::BindingDecl* binding) const {
+    clang::QualType type = binding->getType();
+    std::string varName = binding->getNameAsString();
+    std::string suffix = m_typeEncoder.getHookSuffix(type);
+    unsigned line = m_helpers.getLineNumber(binding->getLocation());
+    TypeKind kind = m_typeEncoder.getTypeKind(type);
+
+    std::ostringstream ss;
+    if (kind == TypeKind::Int && type->isSpecificBuiltinType(clang::BuiltinType::Int)) {
+        ss << "; __inspector_var_init(\"" << varName << "\", &" << varName
+           << ", " << varName << ")";
+    } else if (kind == TypeKind::Struct || kind == TypeKind::Union ||
+               kind == TypeKind::Array) {
+        std::string typeRef = m_typeEncoder.getDescriptorRef(type);
+        ss << "; __inspector_var_init_" << suffix << "(\"" << varName
+           << "\", &" << varName << ", " << typeRef << ", " << line << ")";
+    } else {
+        // Reuse the value-expr scheme. Bindings have no VarDecl, so we
+        // inline the cast logic here.
+        std::string value;
+        switch (kind) {
+        case TypeKind::Int:    value = "(long long)" + varName; break;
+        case TypeKind::UInt:   value = "(unsigned long long)" + varName; break;
+        case TypeKind::Float:  value = "(double)" + varName; break;
+        case TypeKind::Bool:   value = varName; break;
+        case TypeKind::Char:   value = "(int)" + varName; break;
+        case TypeKind::Pointer:   value = "(const void*)" + varName; break;
+        case TypeKind::Reference: value = "(const void*)&" + varName; break;
+        case TypeKind::Enum:   value = "(long long)" + varName; break;
+        default:               value = varName; break;
+        }
+        std::string typeRef = m_typeEncoder.getDescriptorRef(type);
+        ss << "; __inspector_var_init_" << suffix << "(\"" << varName
+           << "\", &" << varName << ", " << typeRef << ", " << value
+           << ", " << line << ")";
+    }
     return ss.str();
 }
 
@@ -646,11 +916,47 @@ bool InspectorVisitor::VisitCXXThrowExpr(clang::CXXThrowExpr* expr) {
     unsigned line = m_helpers.getLineNumber(expr->getBeginLoc());
     std::string funcName = m_currentFunction.empty() ? "<unknown>" : m_currentFunction;
 
-    // Insert throw event before the throw expression
+    // Insert throw event before the throw expression. Use InsertAfter=true
+    // so the wrapper sits inside any synthetic braces ensureCompoundBody
+    // adds for if/else/while/for bodies that consist of a single throw.
     std::string call = "(__inspector_throw(\"" + funcName + "\", " + std::to_string(line) + "), ";
-    m_rewriter.InsertTextBefore(expr->getBeginLoc(), call);
+    m_rewriter.InsertText(expr->getBeginLoc(), call, /*InsertAfter=*/true);
     m_rewriter.InsertTextAfterToken(expr->getEndLoc(), ")");
 
+    return true;
+}
+
+bool InspectorVisitor::isWriteThroughThis(clang::Expr* lhs) const {
+    if (!lhs)
+        return false;
+    auto* member = llvm::dyn_cast<clang::MemberExpr>(lhs);
+    if (!member)
+        return false;
+    // Walk down the member chain, then check the innermost base.
+    clang::Expr* base = member;
+    while (auto* m = llvm::dyn_cast<clang::MemberExpr>(base)) {
+        base = m->getBase()->IgnoreParenImpCasts();
+    }
+    return llvm::isa<clang::CXXThisExpr>(base);
+}
+
+void InspectorVisitor::wrapThisWriteWithStep(clang::Expr* expr, unsigned line) {
+    // Wrap as (expr, __inspector_step(line)). The step fires post-write so
+    // emitStep's live re-encoder snapshots the receiver's caller frame.
+    std::string suffix =
+        ", __inspector_step(" + std::to_string(line) + "))";
+    m_rewriter.InsertText(expr->getBeginLoc(), "(", /*InsertAfter=*/true);
+    m_rewriter.InsertTextAfterToken(expr->getEndLoc(), suffix);
+}
+
+bool InspectorVisitor::VisitCXXConstructorDecl(clang::CXXConstructorDecl* decl) {
+    // Constructors are also FunctionDecls, so VisitFunctionDecl handles
+    // body enter/leave instrumentation. The function-enter event fires
+    // *after* the member initializer list runs, so the first snapshot
+    // already shows fields fully initialized — no extra wrapping needed.
+    // Keeping this override as a placeholder for future ctor-specific work
+    // (e.g. annotating the event kind as "ctor_enter").
+    (void)decl;
     return true;
 }
 

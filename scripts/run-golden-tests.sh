@@ -80,6 +80,10 @@ def normalize(obj, heap_map=None):
     elif isinstance(obj, str):
         # Normalize addresses
         obj = re.sub(r'0x[0-9a-fA-F]+', '0xPTR', obj)
+        # Normalize absolute paths to anything under tests/golden/ so that
+        # checkout location does not affect the comparison. Lambda type
+        # strings, for example, embed the full source path.
+        obj = re.sub(r'(?:<ROOT>/|/[^\s\"]*?/)(tests/golden/)', r'<ROOT>/\1', obj)
         return obj
     else:
         return obj
@@ -153,9 +157,22 @@ run_test() {
     fi
 
     # Pass 3: Link
+    # On Linux, -rdynamic exports the executable's symbols so an LD_PRELOAD
+    # shim (libinspector_malloc_shim.so) can resolve __inspector_alloc_malloc
+    # back to the runtime statically linked into the test binary. macOS dyld
+    # exports symbols by default, so the flag is unnecessary there.
+    LINK_EXTRA=()
+    if [[ "$(uname)" != "Darwin" ]]; then
+        # -rdynamic exports the executable's symbols so the LD_PRELOAD shim
+        # can resolve hook functions, AND so the dynamic-type resolver
+        # (Dynamic.cpp) can map vtable pointers back to symbol names via
+        # dladdr. -ldl links the dynamic-loader API.
+        LINK_EXTRA+=(-rdynamic -ldl)
+    fi
     if ! "${CLANGXX}" \
         "${workdir}/test.o" \
         "${RUNTIME}" \
+        "${LINK_EXTRA[@]}" \
         -o "${workdir}/test" 2>"${workdir}/link.log"; then
         echo "FAIL (linking)"
         cat "${workdir}/link.log"
@@ -175,15 +192,23 @@ run_test() {
         fi
     fi
 
+    # Optional CLI args: a .args file in the test dir is split on whitespace
+    # and passed to the binary. Used by argc_argv to produce deterministic
+    # output without depending on the runner's tmpdir path.
+    local -a test_args=()
+    if [[ -f "${test_dir}/.args" ]]; then
+        read -r -a test_args < "${test_dir}/.args"
+    fi
+
     if [[ ${use_shim} -eq 1 ]]; then
         # Run with malloc shim
         if [[ "$(uname)" == "Darwin" ]]; then
-            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" 2>"${workdir}/actual.json" || true
+            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json" || true
         else
-            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" 2>"${workdir}/actual.json" || true
+            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json" || true
         fi
     else
-        if ! "${workdir}/test" 2>"${workdir}/actual.json"; then
+        if ! "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json"; then
             # Non-zero exit is OK for some tests
             :
         fi

@@ -80,9 +80,9 @@
           "encoded_locals": {
             "ptr": [
               "C_ADDRESS",
-              "0x16b5d6c68",
+              "0xPTR",
               "int *",
-              "unknown"
+              "stack"
             ],
             "x": 42,
             "y": 100
@@ -112,9 +112,9 @@
           "encoded_locals": {
             "ptr": [
               "C_ADDRESS",
-              "0x16b5d6c68",
+              "0xPTR",
               "int *",
-              "unknown"
+              "stack"
             ],
             "val": 42,
             "x": 42,
@@ -146,15 +146,15 @@
           "encoded_locals": {
             "null_ptr": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "int *",
               "null"
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16b5d6c64",
+              "0xPTR",
               "int *",
-              "unknown"
+              "stack"
             ],
             "val": 100,
             "x": 42,
@@ -187,21 +187,21 @@
           "encoded_locals": {
             "null_ptr": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "int *",
               "null"
             ],
             "pptr": [
               "C_ADDRESS",
-              "0x16b5d6c58",
+              "0xPTR",
               "int **",
-              "unknown"
+              "stack"
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16b5d6c64",
+              "0xPTR",
               "int *",
-              "unknown"
+              "stack"
             ],
             "val": 100,
             "x": 42,
@@ -235,21 +235,21 @@
           "encoded_locals": {
             "null_ptr": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "int *",
               "null"
             ],
             "pptr": [
               "C_ADDRESS",
-              "0x16b5d6c58",
+              "0xPTR",
               "int **",
-              "unknown"
+              "stack"
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16b5d6c64",
+              "0xPTR",
               "int *",
-              "unknown"
+              "stack"
             ],
             "val": 100,
             "x": 42,

@@ -179,8 +179,8 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 0,
-                "y": 0
+                "x": 10,
+                "y": 20
               }
             ],
             "pi": 3.14159,
@@ -225,7 +225,7 @@
     },
     {
       "event": "call",
-      "func_name": "area",
+      "func_name": "Rectangle::area",
       "globals": {},
       "heap": {},
       "line": 13,
@@ -240,8 +240,8 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 0,
-                "y": 0
+                "x": 10,
+                "y": 20
               }
             ],
             "pi": 3.14159,
@@ -253,8 +253,8 @@
                   "C_STRUCT",
                   "struct Point",
                   {
-                    "x": 0,
-                    "y": 0
+                    "x": 100,
+                    "y": 50
                   }
                 ],
                 "topLeft": [
@@ -284,7 +284,7 @@
         {
           "encoded_locals": {},
           "frame_id": 1,
-          "func_name": "area",
+          "func_name": "Rectangle::area",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
@@ -294,7 +294,7 @@
     },
     {
       "event": "step_line",
-      "func_name": "area",
+      "func_name": "Rectangle::area",
       "globals": {},
       "heap": {},
       "line": 0,
@@ -309,8 +309,8 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 0,
-                "y": 0
+                "x": 10,
+                "y": 20
               }
             ],
             "pi": 3.14159,
@@ -322,8 +322,8 @@
                   "C_STRUCT",
                   "struct Point",
                   {
-                    "x": 0,
-                    "y": 0
+                    "x": 100,
+                    "y": 50
                   }
                 ],
                 "topLeft": [
@@ -355,7 +355,7 @@
             "width": 100
           },
           "frame_id": 1,
-          "func_name": "area",
+          "func_name": "Rectangle::area",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
@@ -367,7 +367,7 @@
     },
     {
       "event": "step_line",
-      "func_name": "area",
+      "func_name": "Rectangle::area",
       "globals": {},
       "heap": {},
       "line": 0,
@@ -382,8 +382,8 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 0,
-                "y": 0
+                "x": 10,
+                "y": 20
               }
             ],
             "pi": 3.14159,
@@ -395,8 +395,8 @@
                   "C_STRUCT",
                   "struct Point",
                   {
-                    "x": 0,
-                    "y": 0
+                    "x": 100,
+                    "y": 50
                   }
                 ],
                 "topLeft": [
@@ -429,7 +429,7 @@
             "width": 100
           },
           "frame_id": 1,
-          "func_name": "area",
+          "func_name": "Rectangle::area",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
@@ -442,7 +442,7 @@
     },
     {
       "event": "return",
-      "func_name": "area",
+      "func_name": "Rectangle::area",
       "globals": {},
       "heap": {},
       "line": 16,
@@ -457,8 +457,8 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 0,
-                "y": 0
+                "x": 10,
+                "y": 20
               }
             ],
             "pi": 3.14159,
@@ -470,8 +470,8 @@
                   "C_STRUCT",
                   "struct Point",
                   {
-                    "x": 0,
-                    "y": 0
+                    "x": 100,
+                    "y": 50
                   }
                 ],
                 "topLeft": [
@@ -504,7 +504,7 @@
             "width": 100
           },
           "frame_id": 1,
-          "func_name": "area",
+          "func_name": "Rectangle::area",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
@@ -533,8 +533,8 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 0,
-                "y": 0
+                "x": 10,
+                "y": 20
               }
             ],
             "pi": 3.14159,
@@ -546,8 +546,8 @@
                   "C_STRUCT",
                   "struct Point",
                   {
-                    "x": 0,
-                    "y": 0
+                    "x": 100,
+                    "y": 50
                   }
                 ],
                 "topLeft": [
@@ -615,8 +615,8 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 0,
-                "y": 0
+                "x": 10,
+                "y": 20
               }
             ],
             "pi": 3.14159,
@@ -628,8 +628,8 @@
                   "C_STRUCT",
                   "struct Point",
                   {
-                    "x": 0,
-                    "y": 0
+                    "x": 100,
+                    "y": 50
                   }
                 ],
                 "topLeft": [
@@ -711,8 +711,8 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 0,
-                "y": 0
+                "x": 10,
+                "y": 20
               }
             ],
             "pi": 3.14159,
@@ -724,8 +724,8 @@
                   "C_STRUCT",
                   "struct Point",
                   {
-                    "x": 0,
-                    "y": 0
+                    "x": 100,
+                    "y": 50
                   }
                 ],
                 "topLeft": [
@@ -808,8 +808,8 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 0,
-                "y": 0
+                "x": 10,
+                "y": 20
               }
             ],
             "p2": [
@@ -826,8 +826,8 @@
                   "C_STRUCT",
                   "struct Point",
                   {
-                    "x": 0,
-                    "y": 0
+                    "x": 100,
+                    "y": 50
                   }
                 ],
                 "topLeft": [
@@ -911,8 +911,8 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 0,
-                "y": 0
+                "x": 10,
+                "y": 20
               }
             ],
             "p2": [
@@ -929,8 +929,8 @@
                   "C_STRUCT",
                   "struct Point",
                   {
-                    "x": 0,
-                    "y": 0
+                    "x": 100,
+                    "y": 50
                   }
                 ],
                 "topLeft": [
@@ -1016,8 +1016,8 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 0,
-                "y": 0
+                "x": 10,
+                "y": 20
               }
             ],
             "p2": [
@@ -1034,8 +1034,8 @@
                   "C_STRUCT",
                   "struct Point",
                   {
-                    "x": 0,
-                    "y": 0
+                    "x": 100,
+                    "y": 50
                   }
                 ],
                 "topLeft": [
@@ -1050,7 +1050,7 @@
             ],
             "refCount": [
               "C_ADDRESS",
-              "0x16bb7ac68",
+              "0xPTR",
               "int &",
               "unknown"
             ],
@@ -1091,12 +1091,12 @@
             "active": true,
             "area": 5000,
             "arr": [
-              "REF",
+              "DANGLING",
               2
             ],
-            "count": 5,
+            "count": 10,
             "hp": [
-              "REF",
+              "DANGLING",
               1
             ],
             "letter": "A",
@@ -1104,14 +1104,13 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 0,
-                "y": 0
+                "x": 10,
+                "y": 20
               }
             ],
             "p2": [
-              "REF_OFFSET",
-              2,
-              4
+              "DANGLING",
+              2
             ],
             "pi": 3.14159,
             "rect": [
@@ -1122,8 +1121,8 @@
                   "C_STRUCT",
                   "struct Point",
                   {
-                    "x": 0,
-                    "y": 0
+                    "x": 100,
+                    "y": 50
                   }
                 ],
                 "topLeft": [
@@ -1138,7 +1137,7 @@
             ],
             "refCount": [
               "C_ADDRESS",
-              "0x16bb7ac68",
+              "0xPTR",
               "int &",
               "unknown"
             ],

@@ -1,0 +1,1423 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 27,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 29,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 31,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 32,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Guard::~Guard",
+      "globals": {},
+      "heap": {},
+      "line": 22,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Guard::~Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Guard::~Guard",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Guard::~Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Guard::~Guard",
+      "globals": {},
+      "heap": {},
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Guard::~Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Guard::~Guard",
+      "globals": {},
+      "heap": {},
+      "line": 22,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Guard::~Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Guard::~Guard",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Guard::~Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Guard::~Guard",
+      "globals": {},
+      "heap": {},
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Guard::~Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Guard::~Guard",
+      "globals": {},
+      "heap": {},
+      "line": 22,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Guard::~Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Guard::~Guard",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Guard::~Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Guard::~Guard",
+      "globals": {},
+      "heap": {},
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Guard::~Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Guard::Guard",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3"
+          ]
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Guard::Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 36,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "final_guard": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 99
+              }
+            ],
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3",
+            "final_guard"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 37,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "final_guard": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 99
+              }
+            ],
+            "g1": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 1
+              }
+            ],
+            "g2": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 2
+              }
+            ],
+            "g3": [
+              "C_STRUCT",
+              "struct Guard",
+              {
+                "id": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "g1",
+            "g2",
+            "g3",
+            "final_guard"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Guard::~Guard",
+      "globals": {},
+      "heap": {},
+      "line": 22,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 8,
+          "func_name": "Guard::~Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Guard::~Guard",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 8,
+          "func_name": "Guard::~Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Guard::~Guard",
+      "globals": {},
+      "heap": {},
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 8,
+          "func_name": "Guard::~Guard",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}

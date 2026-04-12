@@ -1,0 +1,234 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 6,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 7,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "empty": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "empty"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "empty": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
+            ],
+            "with_value": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": true,
+                "value": 42
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "empty",
+            "with_value"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "empty": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
+            ],
+            "v": 42,
+            "with_value": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": true,
+                "value": 42
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "empty",
+            "with_value",
+            "v"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 14,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "assigned": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
+            ],
+            "empty": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
+            ],
+            "v": 42,
+            "with_value": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "empty",
+            "with_value",
+            "v",
+            "assigned"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "assigned": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": true,
+                "value": 7
+              }
+            ],
+            "empty": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
+            ],
+            "v": 42,
+            "with_value": [
+              "C_STRUCT",
+              "std::optional",
+              {
+                "has_value": false,
+                "value": "<empty>"
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "empty",
+            "with_value",
+            "v",
+            "assigned"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}

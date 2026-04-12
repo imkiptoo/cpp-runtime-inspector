@@ -1,0 +1,607 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 5
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 5,
+            "b": 10
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 5,
+            "b": 10,
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "p"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 5,
+            "b": 10,
+            "f1": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+              {
+                "a": 5,
+                "b": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "int &",
+                  "stack"
+                ]
+              }
+            ],
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 100,
+                "y": 200
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "p",
+            "f1"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 33,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 5,
+            "b": 10,
+            "f1": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+              {
+                "a": 5,
+                "b": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "int &",
+                  "stack"
+                ]
+              }
+            ],
+            "f2": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:33:15)",
+              {
+                "p": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 100,
+                    "y": 200
+                  }
+                ]
+              }
+            ],
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 100,
+                "y": 200
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "p",
+            "f1",
+            "f2"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 38,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 5,
+            "b": 10,
+            "f1": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+              {
+                "a": 5,
+                "b": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "int &",
+                  "stack"
+                ]
+              }
+            ],
+            "f2": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:33:15)",
+              {
+                "p": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 100,
+                    "y": 200
+                  }
+                ]
+              }
+            ],
+            "f3": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:38:15)",
+              {
+                "p": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "struct Point &",
+                  "stack"
+                ]
+              }
+            ],
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 100,
+                "y": 200
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "p",
+            "f1",
+            "f2",
+            "f3"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 43,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 5,
+            "b": 10,
+            "f1": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+              {
+                "a": 5,
+                "b": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "int &",
+                  "stack"
+                ]
+              }
+            ],
+            "f2": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:33:15)",
+              {
+                "p": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 100,
+                    "y": 200
+                  }
+                ]
+              }
+            ],
+            "f3": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:38:15)",
+              {
+                "p": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "struct Point &",
+                  "stack"
+                ]
+              }
+            ],
+            "f4": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:43:15)",
+              {
+                "a": 5,
+                "p": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 100,
+                    "y": 200
+                  }
+                ]
+              }
+            ],
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 100,
+                "y": 200
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "p",
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 48,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 5,
+            "b": 10,
+            "f1": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+              {
+                "a": 5,
+                "b": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "int &",
+                  "stack"
+                ]
+              }
+            ],
+            "f2": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:33:15)",
+              {
+                "p": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 100,
+                    "y": 200
+                  }
+                ]
+              }
+            ],
+            "f3": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:38:15)",
+              {
+                "p": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "struct Point &",
+                  "stack"
+                ]
+              }
+            ],
+            "f4": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:43:15)",
+              {
+                "a": 5,
+                "p": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 100,
+                    "y": 200
+                  }
+                ]
+              }
+            ],
+            "f5": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:48:15)",
+              {
+                "b": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "int &",
+                  "stack"
+                ],
+                "p": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "struct Point &",
+                  "stack"
+                ]
+              }
+            ],
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 100,
+                "y": 200
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "p",
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 29,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 5,
+            "b": 10,
+            "f1": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+              {
+                "a": 5,
+                "b": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "int &",
+                  "stack"
+                ]
+              }
+            ],
+            "f2": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:33:15)",
+              {
+                "p": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 100,
+                    "y": 200
+                  }
+                ]
+              }
+            ],
+            "f3": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:38:15)",
+              {
+                "p": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "struct Point &",
+                  "stack"
+                ]
+              }
+            ],
+            "f4": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:43:15)",
+              {
+                "a": 5,
+                "p": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 100,
+                    "y": 200
+                  }
+                ]
+              }
+            ],
+            "f5": [
+              "C_STRUCT",
+              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:48:15)",
+              {
+                "b": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "int &",
+                  "stack"
+                ],
+                "p": [
+                  "C_ADDRESS",
+                  "0xPTR",
+                  "struct Point &",
+                  "stack"
+                ]
+              }
+            ],
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 100,
+                "y": 200
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b",
+            "p",
+            "f1",
+            "f2",
+            "f3",
+            "f4",
+            "f5"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}

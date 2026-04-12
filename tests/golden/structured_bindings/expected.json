@@ -1,0 +1,525 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 12,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {}
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 1,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {}
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "a"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 1,
+            "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {}
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "a",
+            "b"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 15,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 1,
+            "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {}
+            ],
+            "pt": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "a",
+            "b",
+            "pt"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 1,
+            "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {}
+            ],
+            "pt": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "px": 10
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "a",
+            "b",
+            "pt",
+            "px"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 1,
+            "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {}
+            ],
+            "pt": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "px": 10,
+            "py": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "a",
+            "b",
+            "pt",
+            "px",
+            "py"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 1,
+            "arr": [
+              "C_ARRAY",
+              "int",
+              [
+                7,
+                8,
+                9
+              ]
+            ],
+            "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {}
+            ],
+            "pt": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "px": 10,
+            "py": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "a",
+            "b",
+            "pt",
+            "px",
+            "py",
+            "arr"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 1,
+            "arr": [
+              "C_ARRAY",
+              "int",
+              [
+                7,
+                8,
+                9
+              ]
+            ],
+            "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {}
+            ],
+            "pt": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "px": 10,
+            "py": 20,
+            "r": 7
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "a",
+            "b",
+            "pt",
+            "px",
+            "py",
+            "arr",
+            "r"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 1,
+            "arr": [
+              "C_ARRAY",
+              "int",
+              [
+                7,
+                8,
+                9
+              ]
+            ],
+            "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {}
+            ],
+            "pt": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "px": 10,
+            "py": 20,
+            "r": 7,
+            "s": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "a",
+            "b",
+            "pt",
+            "px",
+            "py",
+            "arr",
+            "r",
+            "s"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 1,
+            "arr": [
+              "C_ARRAY",
+              "int",
+              [
+                7,
+                8,
+                9
+              ]
+            ],
+            "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {}
+            ],
+            "pt": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "px": 10,
+            "py": 20,
+            "r": 7,
+            "s": 8,
+            "t": 9
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "a",
+            "b",
+            "pt",
+            "px",
+            "py",
+            "arr",
+            "r",
+            "s",
+            "t"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 21,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 1,
+            "arr": [
+              "C_ARRAY",
+              "int",
+              [
+                7,
+                8,
+                9
+              ]
+            ],
+            "b": 2,
+            "p": [
+              "C_STRUCT",
+              "struct std::pair<int, int>",
+              {}
+            ],
+            "pt": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "px": 10,
+            "py": 20,
+            "r": 7,
+            "s": 8,
+            "t": 9
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "a",
+            "b",
+            "pt",
+            "px",
+            "py",
+            "arr",
+            "r",
+            "s",
+            "t"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ]
+}

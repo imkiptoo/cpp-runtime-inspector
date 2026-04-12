@@ -286,9 +286,9 @@
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16d77ec50",
+              "0xPTR",
               "int *",
-              "unknown"
+              "stack"
             ]
           },
           "frame_id": 0,
@@ -343,13 +343,13 @@
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16d77ec50",
+              "0xPTR",
               "int *",
-              "unknown"
+              "stack"
             ],
             "ref": [
               "C_ADDRESS",
-              "0x16d77ec50",
+              "0xPTR",
               "int &",
               "unknown"
             ]
@@ -388,7 +388,7 @@
               "int",
               [
                 1,
-                2,
+                42,
                 3
               ]
             ],
@@ -401,19 +401,19 @@
               "C_STRUCT",
               "struct Point",
               {
-                "x": 10,
+                "x": 30,
                 "y": 20
               }
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16d77ec50",
+              "0xPTR",
               "int *",
-              "unknown"
+              "stack"
             ],
             "ref": [
               "C_ADDRESS",
-              "0x16d77ec50",
+              "0xPTR",
               "int &",
               "unknown"
             ]

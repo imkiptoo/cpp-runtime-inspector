@@ -30,7 +30,12 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "str1": "hello"
+            "str1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
@@ -53,8 +58,18 @@
       "stack_to_render": [
         {
           "encoded_locals": {
-            "str1": "hello",
-            "str2": "world"
+            "str1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ],
+            "str2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
@@ -79,8 +94,18 @@
         {
           "encoded_locals": {
             "len1": 5,
-            "str1": "hello",
-            "str2": "world"
+            "str1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ],
+            "str2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
@@ -107,8 +132,18 @@
           "encoded_locals": {
             "len1": 5,
             "len2": 5,
-            "str1": "hello",
-            "str2": "world"
+            "str1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ],
+            "str2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
@@ -137,8 +172,18 @@
             "first": "h",
             "len1": 5,
             "len2": 5,
-            "str1": "hello",
-            "str2": "world"
+            "str1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ],
+            "str2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
@@ -169,8 +214,18 @@
             "last": "o",
             "len1": 5,
             "len2": 5,
-            "str1": "hello",
-            "str2": "world"
+            "str1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ],
+            "str2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
@@ -200,7 +255,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0x102c5f460",
+              "0xPTR",
               "char*",
               "unknown"
             ],
@@ -208,8 +263,18 @@
             "last": "o",
             "len1": 5,
             "len2": 5,
-            "str1": "world",
-            "str2": "world"
+            "str1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ],
+            "str2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
@@ -240,7 +305,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0x102c5f460",
+              "0xPTR",
               "char*",
               "unknown"
             ],
@@ -249,8 +314,18 @@
             "last": "o",
             "len1": 5,
             "len2": 5,
-            "str1": "world",
-            "str2": "world"
+            "str1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ],
+            "str2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
@@ -282,7 +357,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0x102c5f460",
+              "0xPTR",
               "char*",
               "unknown"
             ],
@@ -293,12 +368,22 @@
             "len2": 5,
             "null_str": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "char*",
               "null"
             ],
-            "str1": "world",
-            "str2": "world"
+            "str1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ],
+            "str2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
@@ -331,7 +416,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0x102c5f460",
+              "0xPTR",
               "char*",
               "unknown"
             ],
@@ -342,12 +427,22 @@
             "len2": 5,
             "null_str": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "char*",
               "null"
             ],
-            "str1": "world",
-            "str2": "world"
+            "str1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ],
+            "str2": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ]
           },
           "frame_id": 0,
           "func_name": "main",
