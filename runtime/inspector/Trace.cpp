@@ -11,6 +11,10 @@
 #include <iomanip>
 #include <sstream>
 
+#if defined(__APPLE__)
+#include <pthread.h>
+#endif
+
 namespace inspector {
 
 namespace {
@@ -38,12 +42,40 @@ const char* regionToString(MemoryRegion region) {
     }
 }
 
+namespace {
+
+//! Detect the main thread's stack bounds using platform-specific APIs.
+//! Returns {low, high} addresses where low < high.
+std::pair<const void*, const void*> detectStackBounds() {
+#if defined(__APPLE__)
+    pthread_t self = pthread_self();
+    void* stack_addr = pthread_get_stackaddr_np(self);
+    size_t stack_size = pthread_get_stacksize_np(self);
+    const void* stack_low = static_cast<const char*>(stack_addr) - stack_size;
+    const void* stack_high = stack_addr;
+    return {stack_low, stack_high};
+#else
+    // On Linux, could parse /proc/self/maps for [stack].
+    // For now, return nullptr to fall back to heuristics.
+    return {nullptr, nullptr};
+#endif
+}
+
+} // anonymous namespace
+
 TraceState& TraceState::instance() {
     // Use a heap-allocated instance that is never deleted to ensure
     // it survives past atexit handlers. This is intentional - we need
     // the trace state to be available when the atexit handler runs to
     // emit the final JSON output.
-    static TraceState* state = new TraceState();
+    static TraceState* state = []() {
+        auto* s = new TraceState();
+        auto [low, high] = detectStackBounds();
+        if (low && high) {
+            s->setStackBounds(low, high);
+        }
+        return s;
+    }();
     return *state;
 }
 
