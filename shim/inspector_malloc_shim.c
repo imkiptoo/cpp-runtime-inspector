@@ -12,6 +12,9 @@
 //! The shim records allocations with type=nullptr (unknown type). The runtime
 //! can backfill type information when the pointer is assigned to a typed
 //! variable.
+//!
+//! On macOS, this uses DYLD_INTERPOSE to intercept function calls. On Linux,
+//! simple symbol overriding via LD_PRELOAD with dlsym(RTLD_NEXT) works.
 
 // _GNU_SOURCE is needed on Linux for RTLD_NEXT
 #if !defined(__APPLE__) && !defined(_GNU_SOURCE)
@@ -23,9 +26,144 @@
 #include <stdint.h>
 #include <string.h>
 
-// Forward declarations for the runtime hooks
+// Forward declarations for the runtime hooks.
+// On macOS, mark as weak so the shim can load even without the runtime
+// (the hooks simply won't be called if not present).
+#if defined(__APPLE__)
+extern void __inspector_alloc_malloc(void* ptr, size_t size) __attribute__((weak));
+extern void __inspector_dealloc_malloc(void* ptr) __attribute__((weak));
+
+// Helper to safely call the hook only if it exists
+static inline void safe_alloc_hook(void* ptr, size_t size) {
+    if (__inspector_alloc_malloc) {
+        __inspector_alloc_malloc(ptr, size);
+    }
+}
+static inline void safe_dealloc_hook(void* ptr) {
+    if (__inspector_dealloc_malloc) {
+        __inspector_dealloc_malloc(ptr);
+    }
+}
+#else
 extern void __inspector_alloc_malloc(void* ptr, size_t size);
 extern void __inspector_dealloc_malloc(void* ptr);
+
+#define safe_alloc_hook __inspector_alloc_malloc
+#define safe_dealloc_hook __inspector_dealloc_malloc
+#endif
+
+// Thread-local reentrancy guard to prevent infinite recursion
+// (dlsym and other functions we call may use malloc internally)
+static __thread int in_hook = 0;
+
+// ---------------------------------------------------------------------------
+// macOS: DYLD_INTERPOSE-based implementation
+// ---------------------------------------------------------------------------
+#if defined(__APPLE__)
+
+// On macOS, DYLD_INTERPOSE allows us to intercept calls while still being
+// able to call the original function directly.
+
+// Interposition structure
+typedef struct {
+    const void* replacement;
+    const void* replacee;
+} interpose_t;
+
+// Declare original functions
+extern void* malloc(size_t size);
+extern void free(void* ptr);
+extern void* calloc(size_t nmemb, size_t size);
+extern void* realloc(void* ptr, size_t size);
+extern int posix_memalign(void** memptr, size_t alignment, size_t size);
+
+// Interposed implementations
+static void* interposed_malloc(size_t size) {
+    if (in_hook) {
+        return malloc(size);
+    }
+    in_hook = 1;
+    void* ptr = malloc(size);
+    if (ptr) {
+        safe_alloc_hook(ptr, size);
+    }
+    in_hook = 0;
+    return ptr;
+}
+
+static void interposed_free(void* ptr) {
+    if (!ptr) return;
+    if (in_hook) {
+        free(ptr);
+        return;
+    }
+    in_hook = 1;
+    safe_dealloc_hook(ptr);
+    free(ptr);
+    in_hook = 0;
+}
+
+static void* interposed_calloc(size_t nmemb, size_t size) {
+    if (in_hook) {
+        return calloc(nmemb, size);
+    }
+    in_hook = 1;
+    void* ptr = calloc(nmemb, size);
+    if (ptr) {
+        safe_alloc_hook(ptr, nmemb * size);
+    }
+    in_hook = 0;
+    return ptr;
+}
+
+static void* interposed_realloc(void* ptr, size_t size) {
+    if (!ptr) {
+        return interposed_malloc(size);
+    }
+    if (size == 0) {
+        interposed_free(ptr);
+        return NULL;
+    }
+    if (in_hook) {
+        return realloc(ptr, size);
+    }
+    in_hook = 1;
+    safe_dealloc_hook(ptr);
+    void* new_ptr = realloc(ptr, size);
+    if (new_ptr) {
+        safe_alloc_hook(new_ptr, size);
+    }
+    in_hook = 0;
+    return new_ptr;
+}
+
+static int interposed_posix_memalign(void** memptr, size_t alignment, size_t size) {
+    if (in_hook) {
+        return posix_memalign(memptr, alignment, size);
+    }
+    in_hook = 1;
+    int result = posix_memalign(memptr, alignment, size);
+    if (result == 0 && *memptr) {
+        safe_alloc_hook(*memptr, size);
+    }
+    in_hook = 0;
+    return result;
+}
+
+// Interposition table - placed in __DATA,__interpose section
+__attribute__((used, section("__DATA,__interpose")))
+static interpose_t interpose_table[] = {
+    { (const void*)interposed_malloc,         (const void*)malloc },
+    { (const void*)interposed_free,           (const void*)free },
+    { (const void*)interposed_calloc,         (const void*)calloc },
+    { (const void*)interposed_realloc,        (const void*)realloc },
+    { (const void*)interposed_posix_memalign, (const void*)posix_memalign },
+};
+
+// ---------------------------------------------------------------------------
+// Linux: LD_PRELOAD-based implementation with dlsym(RTLD_NEXT)
+// ---------------------------------------------------------------------------
+#else
 
 // Real function pointers (populated lazily)
 static void* (*real_malloc)(size_t) = NULL;
@@ -33,10 +171,6 @@ static void  (*real_free)(void*) = NULL;
 static void* (*real_calloc)(size_t, size_t) = NULL;
 static void* (*real_realloc)(void*, size_t) = NULL;
 static int   (*real_posix_memalign)(void**, size_t, size_t) = NULL;
-
-// Thread-local reentrancy guard to prevent infinite recursion
-// (dlsym and other functions we call may use malloc internally)
-static __thread int in_hook = 0;
 
 // Bootstrap buffer for allocations during dlsym initialization
 // dlsym may call malloc before we have the real malloc pointer
@@ -82,10 +216,6 @@ static void init_real_functions(void) {
     in_hook = 0;
 }
 
-// ---------------------------------------------------------------------------
-// Interposed functions
-// ---------------------------------------------------------------------------
-
 void* malloc(size_t size) {
     // Early bootstrap phase
     if (!initialized || in_hook) {
@@ -102,7 +232,7 @@ void* malloc(size_t size) {
     in_hook = 1;
     void* ptr = real_malloc(size);
     if (ptr) {
-        __inspector_alloc_malloc(ptr, size);
+        safe_alloc_hook(ptr, size);
     }
     in_hook = 0;
 
@@ -123,7 +253,7 @@ void free(void* ptr) {
     }
 
     in_hook = 1;
-    __inspector_dealloc_malloc(ptr);
+    safe_dealloc_hook(ptr);
     real_free(ptr);
     in_hook = 0;
 }
@@ -148,7 +278,7 @@ void* calloc(size_t nmemb, size_t size) {
     in_hook = 1;
     void* ptr = real_calloc(nmemb, size);
     if (ptr) {
-        __inspector_alloc_malloc(ptr, nmemb * size);
+        safe_alloc_hook(ptr, nmemb * size);
     }
     in_hook = 0;
 
@@ -186,12 +316,12 @@ void* realloc(void* ptr, size_t size) {
 
     in_hook = 1;
     // Record deallocation of old pointer
-    __inspector_dealloc_malloc(ptr);
+    safe_dealloc_hook(ptr);
 
     void* new_ptr = real_realloc(ptr, size);
     if (new_ptr) {
         // Record allocation of new pointer
-        __inspector_alloc_malloc(new_ptr, size);
+        safe_alloc_hook(new_ptr, size);
     }
     in_hook = 0;
 
@@ -212,12 +342,14 @@ int posix_memalign(void** memptr, size_t alignment, size_t size) {
     in_hook = 1;
     int result = real_posix_memalign(memptr, alignment, size);
     if (result == 0 && *memptr) {
-        __inspector_alloc_malloc(*memptr, size);
+        safe_alloc_hook(*memptr, size);
     }
     in_hook = 0;
 
     return result;
 }
+
+#endif // __APPLE__
 
 // ---------------------------------------------------------------------------
 // Notes on platform-specific behavior
@@ -226,9 +358,8 @@ int posix_memalign(void** memptr, size_t alignment, size_t size) {
 // Linux:   Use LD_PRELOAD=libinspector_malloc_shim.so ./program
 // macOS:   Use DYLD_INSERT_LIBRARIES=libinspector_malloc_shim.dylib ./program
 //
-// Both platforms use dlsym(RTLD_NEXT, ...) to find the real allocator
-// functions. On macOS, this works with DYLD_INSERT_LIBRARIES because the
-// shim is loaded before libc.
+// macOS uses DYLD_INTERPOSE which allows the interposed function to call
+// the original directly. Linux uses dlsym(RTLD_NEXT) to find the original.
 //
 // Note: On macOS with System Integrity Protection (SIP) enabled,
 // DYLD_INSERT_LIBRARIES only works for binaries in non-protected
