@@ -34,7 +34,7 @@
               "C_STRUCT",
               "std::function",
               {
-                "engaged": false
+                "engaged": true
               }
             ]
           },
@@ -63,7 +63,7 @@
               "C_STRUCT",
               "std::function",
               {
-                "engaged": false
+                "engaged": true
               }
             ],
             "has1": 0
@@ -244,7 +244,7 @@
               "C_STRUCT",
               "std::function",
               {
-                "engaged": false
+                "engaged": true
               }
             ],
             "has1": 0,
