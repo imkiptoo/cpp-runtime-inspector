@@ -135,6 +135,7 @@
       "heap": {},
       "line": 16,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -166,5 +167,17 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "class std::map<int, int>": {
+      "kind": "struct",
+      "name": "class std::map<int, int>",
+      "sizeof": 24
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

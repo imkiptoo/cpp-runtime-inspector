@@ -4,10 +4,14 @@
     {
       "event": "call",
       "func_name": "main",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 18,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {},
@@ -23,10 +27,14 @@
     {
       "event": "step_line",
       "func_name": "main",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 19,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -52,10 +60,14 @@
     {
       "event": "step_line",
       "func_name": "main",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 20,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -89,10 +101,14 @@
     {
       "event": "call",
       "func_name": "Counter::bump",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 8,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -134,10 +150,14 @@
     {
       "event": "step_line",
       "func_name": "Counter::bump",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 9,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -145,7 +165,7 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 1
+                "self": 0
               }
             ],
             "b": [
@@ -179,10 +199,14 @@
     {
       "event": "return",
       "func_name": "Counter::bump",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 11,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -190,7 +214,7 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 1
+                "self": 0
               }
             ],
             "b": [
@@ -228,10 +252,14 @@
     {
       "event": "call",
       "func_name": "Counter::bump",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 8,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -239,7 +267,7 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 1
+                "self": 0
               }
             ],
             "b": [
@@ -273,10 +301,14 @@
     {
       "event": "step_line",
       "func_name": "Counter::bump",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 9,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -284,7 +316,7 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 2
+                "self": 0
               }
             ],
             "b": [
@@ -318,10 +350,14 @@
     {
       "event": "return",
       "func_name": "Counter::bump",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 11,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -329,7 +365,7 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 2
+                "self": 0
               }
             ],
             "b": [
@@ -367,10 +403,14 @@
     {
       "event": "call",
       "func_name": "Counter::bump",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 8,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -378,7 +418,7 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 2
+                "self": 0
               }
             ],
             "b": [
@@ -412,10 +452,14 @@
     {
       "event": "step_line",
       "func_name": "Counter::bump",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 9,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -423,14 +467,14 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 2
+                "self": 0
               }
             ],
             "b": [
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 1
+                "self": 0
               }
             ]
           },
@@ -457,10 +501,14 @@
     {
       "event": "return",
       "func_name": "Counter::bump",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 11,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -468,14 +516,14 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 2
+                "self": 0
               }
             ],
             "b": [
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 1
+                "self": 0
               }
             ]
           },
@@ -506,10 +554,14 @@
     {
       "event": "call",
       "func_name": "Counter::globalTotal",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 13,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -517,14 +569,14 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 2
+                "self": 0
               }
             ],
             "b": [
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 1
+                "self": 0
               }
             ]
           },
@@ -551,10 +603,15 @@
     {
       "event": "return",
       "func_name": "Counter::globalTotal",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 13,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
+      "return_value": 3,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -562,14 +619,14 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 2
+                "self": 0
               }
             ],
             "b": [
               "C_STRUCT",
               "struct Counter",
               {
-                "self": 1
+                "self": 0
               }
             ]
           },
@@ -596,10 +653,14 @@
     {
       "event": "step_line",
       "func_name": "main",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 0,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -635,10 +696,14 @@
     {
       "event": "step_line",
       "func_name": "main",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 0,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -676,10 +741,15 @@
     {
       "event": "return",
       "func_name": "main",
-      "globals": {},
+      "globals": {
+        "total": 0
+      },
       "heap": {},
       "line": 27,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "total"
+      ],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -714,5 +784,25 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "struct Counter": {
+      "fields": [
+        {
+          "name": "self",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "int"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Counter",
+      "sizeof": 4
+    }
+  }
 }

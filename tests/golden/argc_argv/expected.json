@@ -30,6 +30,66 @@
       "stack_to_render": [
         {
           "encoded_locals": {
+            "argc": 4
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "argc"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 5,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
+              "stack"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "argc",
+            "argv"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
+              "stack"
+            ],
             "n": 4
           },
           "frame_id": 0,
@@ -37,6 +97,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "argc",
+            "argv",
             "n"
           ]
         }
@@ -53,6 +115,13 @@
       "stack_to_render": [
         {
           "encoded_locals": {
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
+              "stack"
+            ],
             "n": 4,
             "total_chars": 0
           },
@@ -61,6 +130,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "argc",
+            "argv",
             "n",
             "total_chars"
           ]
@@ -78,6 +149,13 @@
       "stack_to_render": [
         {
           "encoded_locals": {
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
+              "stack"
+            ],
             "n": 4,
             "total_chars": 0
           },
@@ -86,6 +164,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "argc",
+            "argv",
             "n",
             "total_chars"
           ]
@@ -109,6 +189,13 @@
               "char*",
               "stack"
             ],
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
+              "stack"
+            ],
             "n": 4,
             "total_chars": 0
           },
@@ -117,6 +204,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "argc",
+            "argv",
             "n",
             "total_chars",
             "a"
@@ -141,6 +230,13 @@
               "char*",
               "stack"
             ],
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
+              "stack"
+            ],
             "len": 0,
             "n": 4,
             "total_chars": 0
@@ -150,6 +246,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "argc",
+            "argv",
             "n",
             "total_chars",
             "a",
@@ -175,6 +273,13 @@
               "char*",
               "stack"
             ],
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
+              "stack"
+            ],
             "len": 0,
             "n": 4,
             "total_chars": 0
@@ -184,6 +289,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "argc",
+            "argv",
             "n",
             "total_chars",
             "a",
@@ -207,6 +314,13 @@
               "C_ADDRESS",
               "0xPTR",
               "char*",
+              "stack"
+            ],
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
               "stack"
             ],
             "i": 2,
@@ -219,6 +333,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "argc",
+            "argv",
             "n",
             "total_chars",
             "a",
@@ -245,6 +361,13 @@
               "char*",
               "stack"
             ],
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
+              "stack"
+            ],
             "i": 2,
             "len": 0,
             "n": 4,
@@ -255,6 +378,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "argc",
+            "argv",
             "n",
             "total_chars",
             "a",
@@ -281,6 +406,13 @@
               "char*",
               "stack"
             ],
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
+              "stack"
+            ],
             "i": 2,
             "len": 0,
             "n": 4,
@@ -291,6 +423,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "argc",
+            "argv",
             "n",
             "total_chars",
             "a",
@@ -317,6 +451,13 @@
               "char*",
               "stack"
             ],
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
+              "stack"
+            ],
             "i": 3,
             "len": 6,
             "n": 4,
@@ -327,6 +468,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "argc",
+            "argv",
             "n",
             "total_chars",
             "a",
@@ -353,6 +496,13 @@
               "char*",
               "stack"
             ],
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
+              "stack"
+            ],
             "i": 3,
             "len": 0,
             "n": 4,
@@ -363,6 +513,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "argc",
+            "argv",
             "n",
             "total_chars",
             "a",
@@ -389,6 +541,13 @@
               "char*",
               "stack"
             ],
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
+              "stack"
+            ],
             "i": 3,
             "len": 0,
             "n": 4,
@@ -399,6 +558,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "argc",
+            "argv",
             "n",
             "total_chars",
             "a",
@@ -416,6 +577,7 @@
       "heap": {},
       "line": 16,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -423,6 +585,13 @@
               "C_ADDRESS",
               "0xPTR",
               "char*",
+              "stack"
+            ],
+            "argc": 4,
+            "argv": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char **",
               "stack"
             ],
             "i": 4,
@@ -435,6 +604,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "argc",
+            "argv",
             "n",
             "total_chars",
             "a",
@@ -445,5 +616,22 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "char **": {
+      "kind": "pointer",
+      "name": "char **",
+      "sizeof": 8
+    },
+    "char*": {
+      "kind": "pointer",
+      "name": "char*",
+      "sizeof": 8
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

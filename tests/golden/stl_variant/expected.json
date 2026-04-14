@@ -159,6 +159,7 @@
       "heap": {},
       "line": 17,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -188,5 +189,17 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "class std::variant<int, double>": {
+      "kind": "struct",
+      "name": "class std::variant<int, double>",
+      "sizeof": 16
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

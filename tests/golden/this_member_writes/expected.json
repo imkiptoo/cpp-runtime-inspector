@@ -93,6 +93,48 @@
       "func_name": "Counter::set",
       "globals": {},
       "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Counter",
+              {
+                "prev": 0,
+                "value": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "v": 10
+          },
+          "frame_id": 1,
+          "func_name": "Counter::set",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "v"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Counter::set",
+      "globals": {},
+      "heap": {},
       "line": 12,
       "ordered_globals": [],
       "stack_to_render": [
@@ -116,12 +158,16 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "v": 10
+          },
           "frame_id": 1,
           "func_name": "Counter::set",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "v"
+          ]
         }
       ],
       "stdout": ""
@@ -141,7 +187,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 10
+                "value": 0
               }
             ]
           },
@@ -154,12 +200,16 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "v": 10
+          },
           "frame_id": 1,
           "func_name": "Counter::set",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "v"
+          ]
         }
       ],
       "stdout": ""
@@ -179,7 +229,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 10
+                "value": 0
               }
             ]
           },
@@ -192,12 +242,16 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "v": 10
+          },
           "frame_id": 1,
           "func_name": "Counter::set",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "v"
+          ]
         }
       ],
       "stdout": ""
@@ -217,7 +271,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 10
+                "value": 0
               }
             ]
           },
@@ -255,7 +309,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 11
+                "value": 0
               }
             ]
           },
@@ -293,7 +347,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 11
+                "value": 0
               }
             ]
           },
@@ -331,7 +385,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 11
+                "value": 0
               }
             ]
           },
@@ -359,7 +413,7 @@
       "func_name": "Counter::add",
       "globals": {},
       "heap": {},
-      "line": 21,
+      "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -369,7 +423,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 16
+                "value": 0
               }
             ]
           },
@@ -382,12 +436,58 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 5
+          },
           "frame_id": 3,
           "func_name": "Counter::add",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Counter::add",
+      "globals": {},
+      "heap": {},
+      "line": 21,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Counter",
+              {
+                "prev": 0,
+                "value": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "c"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "n": 5
+          },
+          "frame_id": 3,
+          "func_name": "Counter::add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
         }
       ],
       "stdout": ""
@@ -407,7 +507,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 16
+                "value": 0
               }
             ]
           },
@@ -420,12 +520,16 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 5
+          },
           "frame_id": 3,
           "func_name": "Counter::add",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         }
       ],
       "stdout": ""
@@ -445,7 +549,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 16
+                "value": 0
               }
             ]
           },
@@ -482,8 +586,8 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "prev": -1,
-                "value": 16
+                "prev": 0,
+                "value": 0
               }
             ]
           },
@@ -520,8 +624,8 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "prev": -1,
-                "value": 17
+                "prev": 0,
+                "value": 0
               }
             ]
           },
@@ -558,8 +662,8 @@
               "C_STRUCT",
               "struct Counter",
               {
-                "prev": -1,
-                "value": 17
+                "prev": 0,
+                "value": 0
               }
             ]
           },
@@ -589,6 +693,7 @@
       "heap": {},
       "line": 36,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -612,5 +717,31 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "struct Counter": {
+      "fields": [
+        {
+          "name": "value",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "int"
+        },
+        {
+          "name": "prev",
+          "offset": 4,
+          "sizeof": 4,
+          "type": "int"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Counter",
+      "sizeof": 8
+    }
+  }
 }

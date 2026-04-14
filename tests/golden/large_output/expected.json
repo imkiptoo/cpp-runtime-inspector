@@ -165,6 +165,7 @@
       "heap": {},
       "line": 22,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -189,5 +190,17 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "class std::vector<int>": {
+      "kind": "struct",
+      "name": "class std::vector<int>",
+      "sizeof": 24
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

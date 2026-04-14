@@ -187,6 +187,7 @@
       "heap": {},
       "line": 17,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -230,5 +231,17 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "class std::optional<int>": {
+      "kind": "struct",
+      "name": "class std::optional<int>",
+      "sizeof": 8
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

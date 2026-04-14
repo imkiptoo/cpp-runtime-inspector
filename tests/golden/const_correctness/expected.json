@@ -75,11 +75,11 @@
       "stdout": ""
     },
     {
-      "event": "return",
+      "event": "step_line",
       "func_name": "doubled",
       "globals": {},
       "heap": {},
-      "line": 10,
+      "line": 9,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -95,12 +95,62 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "x": [
+              "C_ADDRESS",
+              "0xPTR",
+              "const int &",
+              "unknown"
+            ]
+          },
           "frame_id": 1,
           "func_name": "doubled",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "x"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "doubled",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "return_value": 20,
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "limit": 10
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "limit"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "x": [
+              "C_ADDRESS",
+              "0xPTR",
+              "const int &",
+              "unknown"
+            ]
+          },
+          "frame_id": 1,
+          "func_name": "doubled",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x"
+          ]
         }
       ],
       "stdout": ""
@@ -211,6 +261,7 @@
       "heap": {},
       "line": 6,
       "ordered_globals": [],
+      "return_value": 7,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -287,6 +338,7 @@
       "heap": {},
       "line": 21,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -315,5 +367,30 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "const int &": {
+      "kind": "reference",
+      "name": "const int &",
+      "sizeof": 8
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "struct Counter": {
+      "fields": [
+        {
+          "name": "n",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "int"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Counter",
+      "sizeof": 4
+    }
+  }
 }

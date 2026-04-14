@@ -59,6 +59,7 @@
       "heap": {},
       "line": 6,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -78,5 +79,12 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "int *": {
+      "kind": "pointer",
+      "name": "int *",
+      "sizeof": 8
+    }
+  }
 }

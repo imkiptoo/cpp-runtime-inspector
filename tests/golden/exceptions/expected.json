@@ -102,6 +102,78 @@
       "func_name": "divide",
       "globals": {},
       "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "result": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "result"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "a": 10
+          },
+          "frame_id": 1,
+          "func_name": "divide",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "divide",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "result": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "result"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "a": 10,
+            "b": 2
+          },
+          "frame_id": 1,
+          "func_name": "divide",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "divide",
+      "globals": {},
+      "heap": {},
       "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
@@ -118,12 +190,18 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "a": 10,
+            "b": 2
+          },
           "frame_id": 1,
           "func_name": "divide",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
         }
       ],
       "stdout": ""
@@ -135,6 +213,7 @@
       "heap": {},
       "line": 10,
       "ordered_globals": [],
+      "return_value": 5,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -149,12 +228,18 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "a": 10,
+            "b": 2
+          },
           "frame_id": 1,
           "func_name": "divide",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
         }
       ],
       "stdout": ""
@@ -195,6 +280,78 @@
       "func_name": "divide",
       "globals": {},
       "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "result": 5
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "result"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "a": 10
+          },
+          "frame_id": 2,
+          "func_name": "divide",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "divide",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "result": 5
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "result"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "a": 10,
+            "b": 0
+          },
+          "frame_id": 2,
+          "func_name": "divide",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "divide",
+      "globals": {},
+      "heap": {},
       "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
@@ -211,12 +368,18 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "a": 10,
+            "b": 0
+          },
           "frame_id": 2,
           "func_name": "divide",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
         }
       ],
       "stdout": ""
@@ -242,12 +405,18 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "a": 10,
+            "b": 0
+          },
           "frame_id": 2,
           "func_name": "divide",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
         }
       ],
       "stdout": ""
@@ -271,25 +440,18 @@
           "ordered_varnames": [
             "result"
           ]
-        },
-        {
-          "encoded_locals": {},
-          "frame_id": 2,
-          "func_name": "divide",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": []
         }
       ],
       "stdout": ""
     },
     {
       "event": "return",
-      "func_name": "divide",
+      "func_name": "main",
       "globals": {},
       "heap": {},
       "line": 23,
       "ordered_globals": [],
+      "return_value": -1,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -302,21 +464,16 @@
           "ordered_varnames": [
             "result"
           ]
-        },
-        {
-          "encoded_locals": {
-            "result": -1
-          },
-          "frame_id": 2,
-          "func_name": "divide",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": [
-            "result"
-          ]
         }
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

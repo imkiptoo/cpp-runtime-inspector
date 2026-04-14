@@ -48,11 +48,11 @@
       "stdout": ""
     },
     {
-      "event": "return",
+      "event": "step_line",
       "func_name": "add",
       "globals": {},
       "heap": {},
-      "line": 5,
+      "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -64,12 +64,83 @@
           "ordered_varnames": []
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "a": 3
+          },
           "frame_id": 1,
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
           "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {
+            "a": 3,
+            "b": 5
+          },
+          "frame_id": 1,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "add",
+      "globals": {},
+      "heap": {},
+      "line": 5,
+      "ordered_globals": [],
+      "return_value": 8,
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {
+            "a": 3,
+            "b": 5
+          },
+          "frame_id": 1,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
         }
       ],
       "stdout": ""
@@ -129,11 +200,11 @@
       "stdout": ""
     },
     {
-      "event": "return",
+      "event": "step_line",
       "func_name": "multiply",
       "globals": {},
       "heap": {},
-      "line": 9,
+      "line": 8,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -149,12 +220,91 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "x": 2.5
+          },
           "frame_id": 2,
           "func_name": "multiply",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "x"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "multiply",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "sum": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "x": 2.5,
+            "y": 4.0
+          },
+          "frame_id": 2,
+          "func_name": "multiply",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "multiply",
+      "globals": {},
+      "heap": {},
+      "line": 9,
+      "ordered_globals": [],
+      "return_value": 10.0,
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "sum": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "x": 2.5,
+            "y": 4.0
+          },
+          "frame_id": 2,
+          "func_name": "multiply",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y"
+          ]
         }
       ],
       "stdout": ""
@@ -222,6 +372,82 @@
       "func_name": "makePoint",
       "globals": {},
       "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "product": 10.0,
+            "sum": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum",
+            "product"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "x": 10
+          },
+          "frame_id": 3,
+          "func_name": "makePoint",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "makePoint",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "product": 10.0,
+            "sum": 8
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "sum",
+            "product"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "x": 10,
+            "y": 20
+          },
+          "frame_id": 3,
+          "func_name": "makePoint",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "makePoint",
+      "globals": {},
+      "heap": {},
       "line": 18,
       "ordered_globals": [],
       "stack_to_render": [
@@ -248,13 +474,17 @@
                 "x": 10,
                 "y": 20
               }
-            ]
+            ],
+            "x": 10,
+            "y": 20
           },
           "frame_id": 3,
           "func_name": "makePoint",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "x",
+            "y",
             "p"
           ]
         }
@@ -292,13 +522,17 @@
                 "x": 10,
                 "y": 20
               }
-            ]
+            ],
+            "x": 10,
+            "y": 20
           },
           "frame_id": 3,
           "func_name": "makePoint",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "x",
+            "y",
             "p"
           ]
         }
@@ -346,6 +580,7 @@
       "heap": {},
       "line": 27,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -373,5 +608,36 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "double": {
+      "kind": "float",
+      "name": "double",
+      "sizeof": 8
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "struct Point": {
+      "fields": [
+        {
+          "name": "x",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "int"
+        },
+        {
+          "name": "y",
+          "offset": 4,
+          "sizeof": 4,
+          "type": "int"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Point",
+      "sizeof": 8
+    }
+  }
 }

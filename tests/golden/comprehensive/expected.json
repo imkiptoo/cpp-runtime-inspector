@@ -447,6 +447,7 @@
       "heap": {},
       "line": 16,
       "ordered_globals": [],
+      "return_value": 5000,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -1085,6 +1086,7 @@
       "heap": {},
       "line": 64,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -1165,5 +1167,80 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "bool": {
+      "kind": "bool",
+      "name": "bool",
+      "sizeof": 1
+    },
+    "char": {
+      "kind": "char",
+      "name": "char",
+      "sizeof": 1
+    },
+    "double": {
+      "kind": "float",
+      "name": "double",
+      "sizeof": 8
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "int &": {
+      "kind": "reference",
+      "name": "int &",
+      "sizeof": 8
+    },
+    "int *": {
+      "kind": "pointer",
+      "name": "int *",
+      "sizeof": 8
+    },
+    "struct Point": {
+      "fields": [
+        {
+          "name": "x",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "int"
+        },
+        {
+          "name": "y",
+          "offset": 4,
+          "sizeof": 4,
+          "type": "int"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Point",
+      "sizeof": 8
+    },
+    "struct Point *": {
+      "kind": "pointer",
+      "name": "struct Point *",
+      "sizeof": 8
+    },
+    "struct Rectangle": {
+      "fields": [
+        {
+          "name": "topLeft",
+          "offset": 0,
+          "sizeof": 8,
+          "type": "struct Point"
+        },
+        {
+          "name": "bottomRight",
+          "offset": 8,
+          "sizeof": 8,
+          "type": "struct Point"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Rectangle",
+      "sizeof": 16
+    }
+  }
 }

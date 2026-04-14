@@ -85,6 +85,7 @@
       "heap": {},
       "line": 17,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -108,5 +109,17 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "class std::unique_ptr<struct Data>": {
+      "kind": "struct",
+      "name": "class std::unique_ptr<struct Data>",
+      "sizeof": 8
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

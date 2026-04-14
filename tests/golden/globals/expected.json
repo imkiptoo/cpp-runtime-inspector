@@ -4,10 +4,16 @@
     {
       "event": "call",
       "func_name": "main",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 17,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {},
@@ -23,10 +29,16 @@
     {
       "event": "call",
       "func_name": "getNext",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 11,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {},
@@ -50,10 +62,16 @@
     {
       "event": "step_line",
       "func_name": "getNext",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 0,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {},
@@ -81,10 +99,17 @@
     {
       "event": "return",
       "func_name": "getNext",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 14,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
+      "return_value": 1,
       "stack_to_render": [
         {
           "encoded_locals": {},
@@ -112,10 +137,16 @@
     {
       "event": "step_line",
       "func_name": "main",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 0,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -135,10 +166,16 @@
     {
       "event": "call",
       "func_name": "getNext",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 11,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -166,10 +203,16 @@
     {
       "event": "step_line",
       "func_name": "getNext",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 0,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -201,10 +244,17 @@
     {
       "event": "return",
       "func_name": "getNext",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 14,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
+      "return_value": 2,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -236,10 +286,16 @@
     {
       "event": "step_line",
       "func_name": "main",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 0,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -261,10 +317,16 @@
     {
       "event": "call",
       "func_name": "getNext",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 11,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -294,10 +356,16 @@
     {
       "event": "step_line",
       "func_name": "getNext",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 0,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -331,10 +399,17 @@
     {
       "event": "return",
       "func_name": "getNext",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 14,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
+      "return_value": 3,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -368,10 +443,16 @@
     {
       "event": "step_line",
       "func_name": "main",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 0,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -395,10 +476,16 @@
     {
       "event": "call",
       "func_name": "incrementGlobal",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 7,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -430,10 +517,16 @@
     {
       "event": "return",
       "func_name": "incrementGlobal",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 9,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -469,10 +562,16 @@
     {
       "event": "call",
       "func_name": "incrementGlobal",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 7,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -504,10 +603,16 @@
     {
       "event": "return",
       "func_name": "incrementGlobal",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 9,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -543,10 +648,16 @@
     {
       "event": "step_line",
       "func_name": "main",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 0,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -572,10 +683,17 @@
     {
       "event": "return",
       "func_name": "main",
-      "globals": {},
+      "globals": {
+        "globalCounter": 0,
+        "globalPi": 3.14159
+      },
       "heap": {},
       "line": 26,
-      "ordered_globals": [],
+      "ordered_globals": [
+        "globalCounter",
+        "globalPi"
+      ],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -598,5 +716,17 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "double": {
+      "kind": "float",
+      "name": "double",
+      "sizeof": 8
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

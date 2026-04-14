@@ -48,11 +48,11 @@
       "stdout": ""
     },
     {
-      "event": "return",
+      "event": "step_line",
       "func_name": "identity",
       "globals": {},
       "heap": {},
-      "line": 9,
+      "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -64,12 +64,48 @@
           "ordered_varnames": []
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "x": 5
+          },
           "frame_id": 1,
           "func_name": "identity",
           "is_highlighted": true,
           "is_zombie": false,
+          "ordered_varnames": [
+            "x"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "identity",
+      "globals": {},
+      "heap": {},
+      "line": 9,
+      "ordered_globals": [],
+      "return_value": 10,
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
           "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {
+            "x": 5
+          },
+          "frame_id": 1,
+          "func_name": "identity",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x"
+          ]
         }
       ],
       "stdout": ""
@@ -284,6 +320,7 @@
       "heap": {},
       "line": 15,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -304,5 +341,22 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "char": {
+      "kind": "char",
+      "name": "char",
+      "sizeof": 1
+    },
+    "double": {
+      "kind": "float",
+      "name": "double",
+      "sizeof": 8
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

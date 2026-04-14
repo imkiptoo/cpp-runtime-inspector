@@ -52,7 +52,7 @@
       "func_name": "factorial",
       "globals": {},
       "heap": {},
-      "line": 5,
+      "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -64,47 +64,16 @@
           "ordered_varnames": []
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 4
+          },
           "frame_id": 1,
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
-        }
-      ],
-      "stdout": ""
-    },
-    {
-      "event": "call",
-      "func_name": "factorial",
-      "globals": {},
-      "heap": {},
-      "line": 4,
-      "ordered_globals": [],
-      "stack_to_render": [
-        {
-          "encoded_locals": {},
-          "frame_id": 0,
-          "func_name": "main",
-          "is_highlighted": false,
-          "is_zombie": false,
-          "ordered_varnames": []
-        },
-        {
-          "encoded_locals": {},
-          "frame_id": 1,
-          "func_name": "factorial",
-          "is_highlighted": false,
-          "is_zombie": false,
-          "ordered_varnames": []
-        },
-        {
-          "encoded_locals": {},
-          "frame_id": 2,
-          "func_name": "factorial",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         }
       ],
       "stdout": ""
@@ -126,20 +95,16 @@
           "ordered_varnames": []
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 4
+          },
           "frame_id": 1,
-          "func_name": "factorial",
-          "is_highlighted": false,
-          "is_zombie": false,
-          "ordered_varnames": []
-        },
-        {
-          "encoded_locals": {},
-          "frame_id": 2,
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         }
       ],
       "stdout": ""
@@ -161,28 +126,67 @@
           "ordered_varnames": []
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 4
+          },
           "frame_id": 1,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
           "encoded_locals": {},
           "frame_id": 2,
           "func_name": "factorial",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "factorial",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
           "ordered_varnames": []
         },
         {
-          "encoded_locals": {},
-          "frame_id": 3,
+          "encoded_locals": {
+            "n": 4
+          },
+          "frame_id": 1,
+          "func_name": "factorial",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "n": 3
+          },
+          "frame_id": 2,
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         }
       ],
       "stdout": ""
@@ -204,28 +208,28 @@
           "ordered_varnames": []
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 4
+          },
           "frame_id": 1,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 3
+          },
           "frame_id": 2,
-          "func_name": "factorial",
-          "is_highlighted": false,
-          "is_zombie": false,
-          "ordered_varnames": []
-        },
-        {
-          "encoded_locals": {},
-          "frame_id": 3,
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         }
       ],
       "stdout": ""
@@ -247,28 +251,201 @@
           "ordered_varnames": []
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 4
+          },
           "frame_id": 1,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 3
+          },
           "frame_id": 2,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
           "encoded_locals": {},
           "frame_id": 3,
           "func_name": "factorial",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "factorial",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
           "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {
+            "n": 4
+          },
+          "frame_id": 1,
+          "func_name": "factorial",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "n": 3
+          },
+          "frame_id": 2,
+          "func_name": "factorial",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "n": 2
+          },
+          "frame_id": 3,
+          "func_name": "factorial",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "factorial",
+      "globals": {},
+      "heap": {},
+      "line": 5,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {
+            "n": 4
+          },
+          "frame_id": 1,
+          "func_name": "factorial",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "n": 3
+          },
+          "frame_id": 2,
+          "func_name": "factorial",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "n": 2
+          },
+          "frame_id": 3,
+          "func_name": "factorial",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "factorial",
+      "globals": {},
+      "heap": {},
+      "line": 4,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {
+            "n": 4
+          },
+          "frame_id": 1,
+          "func_name": "factorial",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "n": 3
+          },
+          "frame_id": 2,
+          "func_name": "factorial",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "n": 2
+          },
+          "frame_id": 3,
+          "func_name": "factorial",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
           "encoded_locals": {},
@@ -286,6 +463,73 @@
       "func_name": "factorial",
       "globals": {},
       "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {
+            "n": 4
+          },
+          "frame_id": 1,
+          "func_name": "factorial",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "n": 3
+          },
+          "frame_id": 2,
+          "func_name": "factorial",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "n": 2
+          },
+          "frame_id": 3,
+          "func_name": "factorial",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "n": 1
+          },
+          "frame_id": 4,
+          "func_name": "factorial",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "factorial",
+      "globals": {},
+      "heap": {},
       "line": 5,
       "ordered_globals": [],
       "stack_to_render": [
@@ -298,36 +542,52 @@
           "ordered_varnames": []
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 4
+          },
           "frame_id": 1,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 3
+          },
           "frame_id": 2,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 2
+          },
           "frame_id": 3,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 1
+          },
           "frame_id": 4,
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         }
       ],
       "stdout": ""
@@ -339,6 +599,7 @@
       "heap": {},
       "line": 6,
       "ordered_globals": [],
+      "return_value": 1,
       "stack_to_render": [
         {
           "encoded_locals": {},
@@ -349,36 +610,52 @@
           "ordered_varnames": []
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 4
+          },
           "frame_id": 1,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 3
+          },
           "frame_id": 2,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 2
+          },
           "frame_id": 3,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 1
+          },
           "frame_id": 4,
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         }
       ],
       "stdout": ""
@@ -400,23 +677,32 @@
           "ordered_varnames": []
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 4
+          },
           "frame_id": 1,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 3
+          },
           "frame_id": 2,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
           "encoded_locals": {
+            "n": 2,
             "sub": 1
           },
           "frame_id": 3,
@@ -424,6 +710,7 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "n",
             "sub"
           ]
         }
@@ -437,6 +724,7 @@
       "heap": {},
       "line": 9,
       "ordered_globals": [],
+      "return_value": 2,
       "stack_to_render": [
         {
           "encoded_locals": {},
@@ -447,23 +735,32 @@
           "ordered_varnames": []
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 4
+          },
           "frame_id": 1,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "n": 3
+          },
           "frame_id": 2,
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "n"
+          ]
         },
         {
           "encoded_locals": {
+            "n": 2,
             "sub": 1
           },
           "frame_id": 3,
@@ -471,84 +768,7 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
-            "sub"
-          ]
-        }
-      ],
-      "stdout": ""
-    },
-    {
-      "event": "step_line",
-      "func_name": "factorial",
-      "globals": {},
-      "heap": {},
-      "line": 0,
-      "ordered_globals": [],
-      "stack_to_render": [
-        {
-          "encoded_locals": {},
-          "frame_id": 0,
-          "func_name": "main",
-          "is_highlighted": false,
-          "is_zombie": false,
-          "ordered_varnames": []
-        },
-        {
-          "encoded_locals": {},
-          "frame_id": 1,
-          "func_name": "factorial",
-          "is_highlighted": false,
-          "is_zombie": false,
-          "ordered_varnames": []
-        },
-        {
-          "encoded_locals": {
-            "sub": 2
-          },
-          "frame_id": 2,
-          "func_name": "factorial",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": [
-            "sub"
-          ]
-        }
-      ],
-      "stdout": ""
-    },
-    {
-      "event": "return",
-      "func_name": "factorial",
-      "globals": {},
-      "heap": {},
-      "line": 9,
-      "ordered_globals": [],
-      "stack_to_render": [
-        {
-          "encoded_locals": {},
-          "frame_id": 0,
-          "func_name": "main",
-          "is_highlighted": false,
-          "is_zombie": false,
-          "ordered_varnames": []
-        },
-        {
-          "encoded_locals": {},
-          "frame_id": 1,
-          "func_name": "factorial",
-          "is_highlighted": false,
-          "is_zombie": false,
-          "ordered_varnames": []
-        },
-        {
-          "encoded_locals": {
-            "sub": 2
-          },
-          "frame_id": 2,
-          "func_name": "factorial",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": [
+            "n",
             "sub"
           ]
         }
@@ -573,13 +793,27 @@
         },
         {
           "encoded_locals": {
-            "sub": 6
+            "n": 4
           },
           "frame_id": 1,
+          "func_name": "factorial",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "n": 3,
+            "sub": 2
+          },
+          "frame_id": 2,
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "n",
             "sub"
           ]
         }
@@ -593,6 +827,7 @@
       "heap": {},
       "line": 9,
       "ordered_globals": [],
+      "return_value": 6,
       "stack_to_render": [
         {
           "encoded_locals": {},
@@ -604,6 +839,52 @@
         },
         {
           "encoded_locals": {
+            "n": 4
+          },
+          "frame_id": 1,
+          "func_name": "factorial",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "n": 3,
+            "sub": 2
+          },
+          "frame_id": 2,
+          "func_name": "factorial",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n",
+            "sub"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "factorial",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {
+            "n": 4,
             "sub": 6
           },
           "frame_id": 1,
@@ -611,6 +892,41 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "n",
+            "sub"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "factorial",
+      "globals": {},
+      "heap": {},
+      "line": 9,
+      "ordered_globals": [],
+      "return_value": 24,
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": []
+        },
+        {
+          "encoded_locals": {
+            "n": 4,
+            "sub": 6
+          },
+          "frame_id": 1,
+          "func_name": "factorial",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "n",
             "sub"
           ]
         }
@@ -647,6 +963,7 @@
       "heap": {},
       "line": 14,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -663,5 +980,12 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

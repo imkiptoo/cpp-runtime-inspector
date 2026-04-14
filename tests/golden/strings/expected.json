@@ -411,6 +411,7 @@
       "heap": {},
       "line": 31,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -463,5 +464,22 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "char": {
+      "kind": "char",
+      "name": "char",
+      "sizeof": 1
+    },
+    "char*": {
+      "kind": "pointer",
+      "name": "char*",
+      "sizeof": 8
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

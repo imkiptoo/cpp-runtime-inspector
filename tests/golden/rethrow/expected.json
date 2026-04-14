@@ -233,14 +233,6 @@
           "is_highlighted": false,
           "is_zombie": false,
           "ordered_varnames": []
-        },
-        {
-          "encoded_locals": {},
-          "frame_id": 2,
-          "func_name": "inner",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": []
         }
       ],
       "stdout": ""
@@ -272,14 +264,6 @@
           "is_highlighted": false,
           "is_zombie": false,
           "ordered_varnames": []
-        },
-        {
-          "encoded_locals": {},
-          "frame_id": 2,
-          "func_name": "inner",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": []
         }
       ],
       "stdout": ""
@@ -303,33 +287,18 @@
           "ordered_varnames": [
             "caught"
           ]
-        },
-        {
-          "encoded_locals": {},
-          "frame_id": 1,
-          "func_name": "middle",
-          "is_highlighted": false,
-          "is_zombie": false,
-          "ordered_varnames": []
-        },
-        {
-          "encoded_locals": {},
-          "frame_id": 2,
-          "func_name": "inner",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": []
         }
       ],
       "stdout": ""
     },
     {
       "event": "return",
-      "func_name": "inner",
+      "func_name": "main",
       "globals": {},
       "heap": {},
       "line": 26,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -342,29 +311,16 @@
           "ordered_varnames": [
             "caught"
           ]
-        },
-        {
-          "encoded_locals": {},
-          "frame_id": 1,
-          "func_name": "middle",
-          "is_highlighted": false,
-          "is_zombie": false,
-          "ordered_varnames": []
-        },
-        {
-          "encoded_locals": {
-            "caught": 1
-          },
-          "frame_id": 2,
-          "func_name": "inner",
-          "is_highlighted": true,
-          "is_zombie": false,
-          "ordered_varnames": [
-            "caught"
-          ]
         }
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

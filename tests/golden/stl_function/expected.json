@@ -155,11 +155,11 @@
       "stdout": ""
     },
     {
-      "event": "return",
+      "event": "step_line",
       "func_name": "doubled",
       "globals": {},
       "heap": {},
-      "line": 6,
+      "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -185,12 +185,62 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "x": 5
+          },
           "frame_id": 1,
           "func_name": "doubled",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "x"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "doubled",
+      "globals": {},
+      "heap": {},
+      "line": 6,
+      "ordered_globals": [],
+      "return_value": 10,
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "f": [
+              "C_STRUCT",
+              "std::function",
+              {
+                "engaged": true
+              }
+            ],
+            "has1": 0,
+            "has2": 1
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "f",
+            "has1",
+            "has2"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "x": 5
+          },
+          "frame_id": 1,
+          "func_name": "doubled",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x"
+          ]
         }
       ],
       "stdout": ""
@@ -313,6 +363,7 @@
       "heap": {},
       "line": 19,
       "ordered_globals": [],
+      "return_value": 11,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -345,5 +396,17 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "class std::function<int (int)>": {
+      "kind": "struct",
+      "name": "class std::function<int (int)>",
+      "sizeof": 32
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

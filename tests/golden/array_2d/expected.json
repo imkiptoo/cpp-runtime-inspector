@@ -389,6 +389,7 @@
       "heap": {},
       "line": 14,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -446,5 +447,20 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "int[3][4]": {
+      "element_count": 3,
+      "element_sizeof": 16,
+      "element_type": "int[4]",
+      "kind": "array",
+      "name": "int[3][4]",
+      "sizeof": 48
+    }
+  }
 }

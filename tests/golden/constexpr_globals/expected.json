@@ -1,0 +1,108 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {
+        "one": "summer",
+        "pi": 3.14259
+      },
+      "heap": {},
+      "line": 13,
+      "ordered_globals": [
+        "pi",
+        "one"
+      ],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {
+        "one": "summer",
+        "pi": 3.14259
+      },
+      "heap": {},
+      "line": 14,
+      "ordered_globals": [
+        "pi",
+        "one"
+      ],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "first": "spring"
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "first"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {
+        "one": "summer",
+        "pi": 3.14259
+      },
+      "heap": {},
+      "line": 15,
+      "ordered_globals": [
+        "pi",
+        "one"
+      ],
+      "return_value": 0,
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "first": "spring"
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "first"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ],
+  "type_metadata": {
+    "double": {
+      "kind": "float",
+      "name": "double",
+      "sizeof": 8
+    },
+    "enum Season": {
+      "enum_values": {
+        "autumn": 8,
+        "spring": 0,
+        "summer": 4,
+        "winter": 12
+      },
+      "is_scoped": true,
+      "kind": "enum",
+      "name": "enum Season",
+      "sizeof": 4
+    }
+  }
+}

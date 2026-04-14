@@ -205,6 +205,7 @@
       "heap": {},
       "line": 14,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -236,5 +237,27 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "char": {
+      "kind": "char",
+      "name": "char",
+      "sizeof": 1
+    },
+    "double": {
+      "kind": "float",
+      "name": "double",
+      "sizeof": 8
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "int &": {
+      "kind": "reference",
+      "name": "int &",
+      "sizeof": 8
+    }
+  }
 }

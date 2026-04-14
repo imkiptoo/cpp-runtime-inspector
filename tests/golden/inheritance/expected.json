@@ -94,6 +94,7 @@
       "heap": {},
       "line": 24,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -124,5 +125,32 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "class Base *": {
+      "kind": "pointer",
+      "name": "class Base *",
+      "sizeof": 8
+    },
+    "class Derived": {
+      "bases": [
+        {
+          "offset": 0,
+          "type": "class Base",
+          "virtual": false
+        }
+      ],
+      "fields": [
+        {
+          "name": "derivedVal",
+          "offset": 4,
+          "sizeof": 4,
+          "type": "int"
+        }
+      ],
+      "kind": "struct",
+      "name": "class Derived",
+      "sizeof": 8
+    }
+  }
 }

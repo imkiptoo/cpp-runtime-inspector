@@ -125,25 +125,25 @@
         },
         {
           "encoded_locals": {
-            "result": 20
+            "x": 4
           },
           "frame_id": 1,
           "func_name": "multiply",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
-            "result"
+            "x"
           ]
         }
       ],
       "stdout": ""
     },
     {
-      "event": "return",
+      "event": "step_line",
       "func_name": "multiply",
       "globals": {},
       "heap": {},
-      "line": 5,
+      "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -162,13 +162,98 @@
         },
         {
           "encoded_locals": {
-            "result": 20
+            "x": 4,
+            "y": 5
           },
           "frame_id": 1,
           "func_name": "multiply",
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "multiply",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 4,
+            "b": 5
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "result": 20,
+            "x": 4,
+            "y": 5
+          },
+          "frame_id": 1,
+          "func_name": "multiply",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "result"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "multiply",
+      "globals": {},
+      "heap": {},
+      "line": 5,
+      "ordered_globals": [],
+      "return_value": 20,
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": 4,
+            "b": 5
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "result": 20,
+            "x": 4,
+            "y": 5
+          },
+          "frame_id": 1,
+          "func_name": "multiply",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
             "result"
           ]
         }
@@ -209,6 +294,7 @@
       "heap": {},
       "line": 12,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -229,5 +315,12 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

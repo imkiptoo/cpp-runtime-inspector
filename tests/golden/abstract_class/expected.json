@@ -25,6 +25,7 @@
       "func_name": "Animal::Animal",
       "globals": {},
       "heap": {},
+      "lifecycle": "default_ctor",
       "line": 10,
       "ordered_globals": [],
       "stack_to_render": [
@@ -106,6 +107,7 @@
       "func_name": "Dog::Dog",
       "globals": {},
       "heap": {},
+      "lifecycle": "default_ctor",
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -324,6 +326,7 @@
       },
       "line": 23,
       "ordered_globals": [],
+      "return_value": 4,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -470,6 +473,7 @@
       },
       "line": 24,
       "ordered_globals": [],
+      "return_value": 100,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -550,13 +554,14 @@
       "func_name": "Dog::~Dog",
       "globals": {},
       "heap": {},
+      "lifecycle": "dtor",
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "a": [
-              "DANGLING",
+              "REF",
               1
             ],
             "l1": 4,
@@ -594,7 +599,7 @@
         {
           "encoded_locals": {
             "a": [
-              "DANGLING",
+              "REF",
               1
             ],
             "l1": 4,
@@ -632,7 +637,7 @@
         {
           "encoded_locals": {
             "a": [
-              "DANGLING",
+              "REF",
               1
             ],
             "l1": 4,
@@ -694,6 +699,7 @@
       "func_name": "Animal::~Animal",
       "globals": {},
       "heap": {},
+      "lifecycle": "dtor",
       "line": 11,
       "ordered_globals": [],
       "stack_to_render": [
@@ -713,6 +719,7 @@
       "func_name": "Animal::Animal",
       "globals": {},
       "heap": {},
+      "lifecycle": "default_ctor",
       "line": 10,
       "ordered_globals": [],
       "stack_to_render": [
@@ -794,6 +801,7 @@
       "func_name": "Cat::Cat",
       "globals": {},
       "heap": {},
+      "lifecycle": "default_ctor",
       "line": 30,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1012,6 +1020,7 @@
       },
       "line": 33,
       "ordered_globals": [],
+      "return_value": 4,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -1158,6 +1167,7 @@
       },
       "line": 34,
       "ordered_globals": [],
+      "return_value": 200,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -1238,13 +1248,14 @@
       "func_name": "Cat::~Cat",
       "globals": {},
       "heap": {},
+      "lifecycle": "dtor",
       "line": 31,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "b": [
-              "DANGLING",
+              "REF",
               2
             ],
             "l2": 4,
@@ -1282,7 +1293,7 @@
         {
           "encoded_locals": {
             "b": [
-              "DANGLING",
+              "REF",
               2
             ],
             "l2": 4,
@@ -1320,7 +1331,7 @@
         {
           "encoded_locals": {
             "b": [
-              "DANGLING",
+              "REF",
               2
             ],
             "l2": 4,
@@ -1382,6 +1393,7 @@
       "func_name": "Animal::~Animal",
       "globals": {},
       "heap": {},
+      "lifecycle": "dtor",
       "line": 11,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1403,6 +1415,7 @@
       "heap": {},
       "line": 48,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {},
@@ -1415,5 +1428,17 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "struct Animal *": {
+      "kind": "pointer",
+      "name": "struct Animal *",
+      "sizeof": 8
+    }
+  }
 }

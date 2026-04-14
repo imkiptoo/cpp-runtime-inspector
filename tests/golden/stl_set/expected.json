@@ -97,6 +97,7 @@
       "heap": {},
       "line": 15,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -126,5 +127,17 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "class std::set<int>": {
+      "kind": "struct",
+      "name": "class std::set<int>",
+      "sizeof": 24
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    }
+  }
 }

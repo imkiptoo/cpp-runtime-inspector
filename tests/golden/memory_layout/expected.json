@@ -1,0 +1,400 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 22,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "r": [
+              "C_STRUCT",
+              "struct Rect",
+              {
+                "area": 5000.0,
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 100,
+                    "y": 50
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "r"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 25,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "pad": [
+              "C_STRUCT",
+              "struct Padded",
+              {
+                "a": "A",
+                "b": 42,
+                "c": "Z"
+              }
+            ],
+            "r": [
+              "C_STRUCT",
+              "struct Rect",
+              {
+                "area": 5000.0,
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 100,
+                    "y": 50
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "r",
+            "pad"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 27,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "pad": [
+              "C_STRUCT",
+              "struct Padded",
+              {
+                "a": "A",
+                "b": 42,
+                "c": "Z"
+              }
+            ],
+            "r": [
+              "C_STRUCT",
+              "struct Rect",
+              {
+                "area": 5000.0,
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 100,
+                    "y": 50
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ],
+            "sizes": [
+              "C_ARRAY",
+              "int",
+              [
+                1,
+                -157548520,
+                1
+              ]
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "r",
+            "pad",
+            "sizes"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 32,
+      "ordered_globals": [],
+      "return_value": 0,
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "pad": [
+              "C_STRUCT",
+              "struct Padded",
+              {
+                "a": "A",
+                "b": 42,
+                "c": "Z"
+              }
+            ],
+            "r": [
+              "C_STRUCT",
+              "struct Rect",
+              {
+                "area": 5000.0,
+                "bottomRight": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 100,
+                    "y": 50
+                  }
+                ],
+                "topLeft": [
+                  "C_STRUCT",
+                  "struct Point",
+                  {
+                    "x": 0,
+                    "y": 0
+                  }
+                ]
+              }
+            ],
+            "sizes": [
+              "C_ARRAY",
+              "int",
+              [
+                8,
+                24,
+                12
+              ]
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "p",
+            "r",
+            "pad",
+            "sizes"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ],
+  "type_metadata": {
+    "int[3]": {
+      "element_count": 3,
+      "element_sizeof": 4,
+      "element_type": "int",
+      "kind": "array",
+      "name": "int[3]",
+      "sizeof": 12
+    },
+    "struct Padded": {
+      "fields": [
+        {
+          "name": "a",
+          "offset": 0,
+          "sizeof": 1,
+          "type": "char"
+        },
+        {
+          "name": "b",
+          "offset": 4,
+          "sizeof": 4,
+          "type": "int"
+        },
+        {
+          "name": "c",
+          "offset": 8,
+          "sizeof": 1,
+          "type": "char"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Padded",
+      "sizeof": 12
+    },
+    "struct Point": {
+      "fields": [
+        {
+          "name": "x",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "int"
+        },
+        {
+          "name": "y",
+          "offset": 4,
+          "sizeof": 4,
+          "type": "int"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Point",
+      "sizeof": 8
+    },
+    "struct Rect": {
+      "fields": [
+        {
+          "name": "topLeft",
+          "offset": 0,
+          "sizeof": 8,
+          "type": "struct Point"
+        },
+        {
+          "name": "bottomRight",
+          "offset": 8,
+          "sizeof": 8,
+          "type": "struct Point"
+        },
+        {
+          "name": "area",
+          "offset": 16,
+          "sizeof": 8,
+          "type": "double"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Rect",
+      "sizeof": 24
+    }
+  }
+}

@@ -159,6 +159,7 @@
       "heap": {},
       "line": 19,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -188,5 +189,37 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "float": {
+      "kind": "float",
+      "name": "float",
+      "sizeof": 4
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "union Number": {
+      "fields": [
+        {
+          "name": "as_int",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "int"
+        },
+        {
+          "name": "as_float",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "float"
+        }
+      ],
+      "kind": "union",
+      "name": "union Number",
+      "sizeof": 4,
+      "union": true
+    }
+  }
 }

@@ -114,9 +114,9 @@
               "C_ADDRESS",
               "0xPTR",
               "int &",
-              "unknown"
+              "stack"
             ],
-            "x": 15,
+            "x": 10,
             "y": 20
           },
           "frame_id": 0,
@@ -136,6 +136,55 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "increment",
+      "globals": {},
+      "heap": {},
+      "line": 4,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ref": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "stack"
+            ],
+            "x": 10,
+            "y": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ref"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "x": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ]
+          },
+          "frame_id": 1,
+          "func_name": "increment",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x"
+          ]
         }
       ],
       "stdout": ""
@@ -154,9 +203,9 @@
               "C_ADDRESS",
               "0xPTR",
               "int &",
-              "unknown"
+              "stack"
             ],
-            "x": 16,
+            "x": 10,
             "y": 20
           },
           "frame_id": 0,
@@ -170,12 +219,21 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "x": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ]
+          },
           "frame_id": 1,
           "func_name": "increment",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "x"
+          ]
         }
       ],
       "stdout": ""
@@ -194,9 +252,9 @@
               "C_ADDRESS",
               "0xPTR",
               "int &",
-              "unknown"
+              "stack"
             ],
-            "x": 16,
+            "x": 10,
             "y": 20
           },
           "frame_id": 0,
@@ -210,12 +268,21 @@
           ]
         },
         {
-          "encoded_locals": {},
+          "encoded_locals": {
+            "x": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ]
+          },
           "frame_id": 1,
           "func_name": "increment",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "ordered_varnames": [
+            "x"
+          ]
         }
       ],
       "stdout": ""
@@ -234,9 +301,9 @@
               "C_ADDRESS",
               "0xPTR",
               "int &",
-              "unknown"
+              "stack"
             ],
-            "x": 16,
+            "x": 10,
             "y": 20
           },
           "frame_id": 0,
@@ -265,7 +332,7 @@
       "func_name": "swap",
       "globals": {},
       "heap": {},
-      "line": 0,
+      "line": 8,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -274,9 +341,9 @@
               "C_ADDRESS",
               "0xPTR",
               "int &",
-              "unknown"
+              "stack"
             ],
-            "x": 16,
+            "x": 10,
             "y": 20
           },
           "frame_id": 0,
@@ -291,6 +358,123 @@
         },
         {
           "encoded_locals": {
+            "a": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ]
+          },
+          "frame_id": 2,
+          "func_name": "swap",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "swap",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ref": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "stack"
+            ],
+            "x": 10,
+            "y": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ref"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "a": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
+            "b": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ]
+          },
+          "frame_id": 2,
+          "func_name": "swap",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "a",
+            "b"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "swap",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ref": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "stack"
+            ],
+            "x": 10,
+            "y": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ref"
+          ]
+        },
+        {
+          "encoded_locals": {
+            "a": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
+            "b": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
             "temp": 16
           },
           "frame_id": 2,
@@ -298,6 +482,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "a",
+            "b",
             "temp"
           ]
         }
@@ -318,9 +504,9 @@
               "C_ADDRESS",
               "0xPTR",
               "int &",
-              "unknown"
+              "stack"
             ],
-            "x": 20,
+            "x": 10,
             "y": 20
           },
           "frame_id": 0,
@@ -335,6 +521,18 @@
         },
         {
           "encoded_locals": {
+            "a": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
+            "b": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
             "temp": 16
           },
           "frame_id": 2,
@@ -342,6 +540,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "a",
+            "b",
             "temp"
           ]
         }
@@ -362,10 +562,10 @@
               "C_ADDRESS",
               "0xPTR",
               "int &",
-              "unknown"
+              "stack"
             ],
-            "x": 20,
-            "y": 16
+            "x": 10,
+            "y": 20
           },
           "frame_id": 0,
           "func_name": "main",
@@ -379,6 +579,18 @@
         },
         {
           "encoded_locals": {
+            "a": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
+            "b": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
             "temp": 16
           },
           "frame_id": 2,
@@ -386,6 +598,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "a",
+            "b",
             "temp"
           ]
         }
@@ -406,10 +620,10 @@
               "C_ADDRESS",
               "0xPTR",
               "int &",
-              "unknown"
+              "stack"
             ],
-            "x": 20,
-            "y": 16
+            "x": 10,
+            "y": 20
           },
           "frame_id": 0,
           "func_name": "main",
@@ -423,6 +637,18 @@
         },
         {
           "encoded_locals": {
+            "a": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
+            "b": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ],
             "temp": 16
           },
           "frame_id": 2,
@@ -430,6 +656,8 @@
           "is_highlighted": true,
           "is_zombie": false,
           "ordered_varnames": [
+            "a",
+            "b",
             "temp"
           ]
         }
@@ -443,6 +671,7 @@
       "heap": {},
       "line": 24,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -468,5 +697,17 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "int &": {
+      "kind": "reference",
+      "name": "int &",
+      "sizeof": 8
+    }
+  }
 }

@@ -100,7 +100,7 @@
               "C_STRUCT",
               "struct Box<int>",
               {
-                "value": 42
+                "value": 0
               }
             ]
           },
@@ -137,7 +137,7 @@
               "C_STRUCT",
               "struct Box<int>",
               {
-                "value": 42
+                "value": 0
               }
             ]
           },
@@ -174,7 +174,7 @@
               "C_STRUCT",
               "struct Box<int>",
               {
-                "value": 42
+                "value": 0
               }
             ]
           },
@@ -211,7 +211,7 @@
               "C_STRUCT",
               "struct Box<int>",
               {
-                "value": 42
+                "value": 0
               }
             ]
           },
@@ -365,7 +365,7 @@
               "C_STRUCT",
               "struct Box<double>",
               {
-                "value": 3.14
+                "value": 0.0
               }
             ],
             "bi": [
@@ -412,7 +412,7 @@
               "C_STRUCT",
               "struct Box<double>",
               {
-                "value": 3.14
+                "value": 0.0
               }
             ],
             "bi": [
@@ -459,7 +459,7 @@
               "C_STRUCT",
               "struct Box<double>",
               {
-                "value": 3.14
+                "value": 0.0
               }
             ],
             "bi": [
@@ -506,7 +506,7 @@
               "C_STRUCT",
               "struct Box<double>",
               {
-                "value": 3.14
+                "value": 0.0
               }
             ],
             "bi": [
@@ -587,6 +587,7 @@
       "heap": {},
       "line": 20,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -621,5 +622,43 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "double": {
+      "kind": "float",
+      "name": "double",
+      "sizeof": 8
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "struct Box<double>": {
+      "fields": [
+        {
+          "name": "value",
+          "offset": 0,
+          "sizeof": 8,
+          "type": "double"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Box<double>",
+      "sizeof": 8
+    },
+    "struct Box<int>": {
+      "fields": [
+        {
+          "name": "value",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "int"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Box<int>",
+      "sizeof": 4
+    }
+  }
 }

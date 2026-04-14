@@ -464,6 +464,7 @@
       "heap": {},
       "line": 23,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -497,5 +498,12 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "struct Node *": {
+      "kind": "pointer",
+      "name": "struct Node *",
+      "sizeof": 8
+    }
+  }
 }

@@ -572,6 +572,7 @@
       "func_name": "Guard::~Guard",
       "globals": {},
       "heap": {},
+      "lifecycle": "dtor",
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -731,6 +732,7 @@
       "func_name": "Guard::~Guard",
       "globals": {},
       "heap": {},
+      "lifecycle": "dtor",
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -890,6 +892,7 @@
       "func_name": "Guard::~Guard",
       "globals": {},
       "heap": {},
+      "lifecycle": "dtor",
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1316,6 +1319,7 @@
       "heap": {},
       "line": 37,
       "ordered_globals": [],
+      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -1367,6 +1371,7 @@
       "func_name": "Guard::~Guard",
       "globals": {},
       "heap": {},
+      "lifecycle": "dtor",
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1419,5 +1424,20 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "struct Guard": {
+      "fields": [
+        {
+          "name": "id",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "int"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Guard",
+      "sizeof": 4
+    }
+  }
 }

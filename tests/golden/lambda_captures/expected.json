@@ -499,6 +499,7 @@
       "heap": {},
       "line": 29,
       "ordered_globals": [],
+      "return_value": 15,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -603,5 +604,114 @@
       ],
       "stdout": ""
     }
-  ]
+  ],
+  "type_metadata": {
+    "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:28:15)": {
+      "fields": [
+        {
+          "name": "a",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "int"
+        },
+        {
+          "name": "b",
+          "offset": 8,
+          "sizeof": 8,
+          "type": "int &"
+        }
+      ],
+      "kind": "struct",
+      "name": "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+      "sizeof": 16
+    },
+    "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:33:15)": {
+      "fields": [
+        {
+          "name": "p",
+          "offset": 0,
+          "sizeof": 8,
+          "type": "struct Point"
+        }
+      ],
+      "kind": "struct",
+      "name": "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:33:15)",
+      "sizeof": 8
+    },
+    "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:38:15)": {
+      "fields": [
+        {
+          "name": "p",
+          "offset": 0,
+          "sizeof": 8,
+          "type": "struct Point &"
+        }
+      ],
+      "kind": "struct",
+      "name": "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:38:15)",
+      "sizeof": 8
+    },
+    "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:43:15)": {
+      "fields": [
+        {
+          "name": "a",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "int"
+        },
+        {
+          "name": "p",
+          "offset": 4,
+          "sizeof": 8,
+          "type": "struct Point"
+        }
+      ],
+      "kind": "struct",
+      "name": "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:43:15)",
+      "sizeof": 12
+    },
+    "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:48:15)": {
+      "fields": [
+        {
+          "name": "b",
+          "offset": 0,
+          "sizeof": 8,
+          "type": "int &"
+        },
+        {
+          "name": "p",
+          "offset": 8,
+          "sizeof": 8,
+          "type": "struct Point &"
+        }
+      ],
+      "kind": "struct",
+      "name": "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:48:15)",
+      "sizeof": 16
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "struct Point": {
+      "fields": [
+        {
+          "name": "x",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "int"
+        },
+        {
+          "name": "y",
+          "offset": 4,
+          "sizeof": 4,
+          "type": "int"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Point",
+      "sizeof": 8
+    }
+  }
 }
