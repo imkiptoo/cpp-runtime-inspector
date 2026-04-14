@@ -208,15 +208,21 @@ run_test() {
         read -r -a test_args < "${test_dir}/.args"
     fi
 
+    # Optional stdin input: a .stdin file provides input to the program
+    local stdin_file="/dev/null"
+    if [[ -f "${test_dir}/.stdin" ]]; then
+        stdin_file="${test_dir}/.stdin"
+    fi
+
     if [[ ${use_shim} -eq 1 ]]; then
         # Run with malloc shim
         if [[ "$(uname)" == "Darwin" ]]; then
-            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} 2>"${workdir}/actual.json" || true
+            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} <"${stdin_file}" 2>"${workdir}/actual.json" || true
         else
-            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} 2>"${workdir}/actual.json" || true
+            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} <"${stdin_file}" 2>"${workdir}/actual.json" || true
         fi
     else
-        if ! "${workdir}/test" ${test_args[@]+"${test_args[@]}"} 2>"${workdir}/actual.json"; then
+        if ! "${workdir}/test" ${test_args[@]+"${test_args[@]}"} <"${stdin_file}" 2>"${workdir}/actual.json"; then
             # Non-zero exit is OK for some tests
             :
         fi

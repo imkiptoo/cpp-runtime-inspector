@@ -47,6 +47,9 @@ public:
     //! Visit variable declarations to inject init calls.
     bool VisitVarDecl(clang::VarDecl* decl);
 
+    //! Visit declaration statements to handle multi-variable declarations.
+    bool VisitDeclStmt(clang::DeclStmt* stmt);
+
     //! Visit binary operators to inject update calls for assignments.
     bool VisitBinaryOperator(clang::BinaryOperator* op);
 
@@ -83,12 +86,21 @@ public:
     //! Visit catch statements to track exception handling (Tier 5).
     bool VisitCXXCatchStmt(clang::CXXCatchStmt* stmt);
 
-    //! Visit constructor declarations to instrument member-initializer-list
-    //! values (Tier 3). Each CXXCtorInitializer that targets a data member
-    //! gets a step call so the trace can show fields filling in.
+    //! Visit constructor declarations to instrument with lifecycle tracking.
+    //! Detects default, copy, and move constructors.
     bool VisitCXXConstructorDecl(clang::CXXConstructorDecl* decl);
 
+    //! Visit destructor declarations to instrument with lifecycle tracking.
+    bool VisitCXXDestructorDecl(clang::CXXDestructorDecl* decl);
+
+    //! Visit expressions with cleanups to track temporary destructions.
+    //! These wrap full-expressions that have temporaries needing cleanup.
+    bool VisitExprWithCleanups(clang::ExprWithCleanups* expr);
+
 private:
+    //! Collect CXXBindTemporaryExpr nodes from a subtree.
+    //! Returns the types of temporaries that will be destroyed.
+    void collectTemporaries(clang::Stmt* stmt, std::vector<std::pair<std::string, unsigned>>& temps);
     //! Walk an LHS expression to determine if it's a write through `this->`.
     //! Returns true if the LHS chain ultimately roots in a CXXThisExpr.
     bool isWriteThroughThis(clang::Expr* lhs) const;
@@ -134,6 +146,12 @@ private:
 
     //! Stack of parent statements for context tracking.
     std::vector<clang::Stmt*> m_parentStack;
+
+    //! Track DeclStmts with multiple VarDecls that are handled by VisitDeclStmt.
+    std::unordered_set<const clang::DeclStmt*> m_multiVarDeclStmts;
+
+    //! Track function bodies that have already been instrumented.
+    std::unordered_set<const clang::FunctionDecl*> m_instrumentedFunctions;
 
     //! Current function name (set during function visitation).
     std::string m_currentFunction;

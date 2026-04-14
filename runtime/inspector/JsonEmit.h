@@ -31,6 +31,9 @@ public:
     //! Convert a heap object to JSON.
     static nlohmann::json heapObjectToJson(const HeapObject& obj);
 
+    //! Convert a type descriptor to JSON (for sizeof/layout info).
+    static nlohmann::json typeDescriptorToJson(const TypeDescriptor* type);
+
     //! Emit trace to stderr with optional size limit.
     //! @param state The trace state to emit.
     //! @param maxOutputSize Maximum output size in bytes (0 = unlimited).

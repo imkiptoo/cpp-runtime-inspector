@@ -86,6 +86,8 @@ add_library(inspector_runtime STATIC
     runtime/inspector/StlEncoders.cpp
     runtime/inspector/Signals.cpp
     runtime/inspector/Dynamic.cpp
+    runtime/inspector/StdoutCapture.cpp
+    runtime/inspector/StdinCapture.cpp
 )
 target_include_directories(inspector_runtime PUBLIC runtime)
 target_link_libraries(inspector_runtime PRIVATE nlohmann_json::nlohmann_json)

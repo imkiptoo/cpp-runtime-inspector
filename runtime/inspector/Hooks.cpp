@@ -4,6 +4,8 @@
 #include "JsonEmit.h"
 #include "Signals.h"
 #include "StlEncoders.h"
+#include "StdinCapture.h"
+#include "StdoutCapture.h"
 #include "Trace.h"
 #include "TypeInfo.h"
 #include "StringSafe.h"
@@ -34,6 +36,10 @@ void ensureExitHandlerRegistered() {
     static std::atomic<bool> registered{false};
     bool expected = false;
     if (registered.compare_exchange_strong(expected, true)) {
+        // Install stdout/stdin capture before any I/O happens
+        StdoutCapture::install();
+        StdinCapture::install();
+
         // Install crash handlers for SIGSEGV, SIGABRT, etc.
         installCrashHandlers();
 
@@ -43,6 +49,11 @@ void ensureExitHandlerRegistered() {
                 // Check for memory leaks and emit events
                 state.checkLeaks();
                 state.finalize();
+
+                // Uninstall I/O capture before emitting JSON to stderr
+                StdoutCapture::uninstall();
+                StdinCapture::uninstall();
+
                 JsonEmitter::emit(state);
             }
         });
@@ -62,6 +73,13 @@ extern "C" {
 void __inspector_enter(const char* funcName, int line) {
     inspector::ensureExitHandlerRegistered();
     inspector::TraceState::instance().pushFrame(funcName ? funcName : "<null>", line);
+}
+
+void __inspector_enter_lifecycle(const char* funcName, int line, int lifecycleKind) {
+    inspector::ensureExitHandlerRegistered();
+    inspector::TraceState::instance().pushFrameWithLifecycle(
+        funcName ? funcName : "<null>", line,
+        static_cast<inspector::LifecycleKind>(lifecycleKind));
 }
 
 void __inspector_leave(const char* funcName, int line) {
@@ -326,6 +344,101 @@ void __inspector_catch(const char* funcName, const char* typeName, int line) {
         funcName ? funcName : "<null>",
         typeName ? typeName : "...",
         line);
+}
+
+// ---------------------------------------------------------------------------
+// Phase 5: Ghost frames for temporary destruction
+// ---------------------------------------------------------------------------
+
+void __inspector_ghost_dtor(const char* typeName, int line) {
+    inspector::TraceState::instance().recordGhostDtor(
+        typeName ? typeName : "<temp>", line);
+}
+
+// ---------------------------------------------------------------------------
+// Return value capture
+// ---------------------------------------------------------------------------
+
+void __inspector_return_int(long long value) {
+    inspector::TraceState::instance().recordReturnValue(inspector::EncodedValue{value});
+}
+
+void __inspector_return_uint(unsigned long long value) {
+    inspector::TraceState::instance().recordReturnValue(inspector::EncodedValue{value});
+}
+
+void __inspector_return_float(double value) {
+    inspector::TraceState::instance().recordReturnValue(inspector::EncodedValue{value});
+}
+
+void __inspector_return_bool(bool value) {
+    inspector::TraceState::instance().recordReturnValue(inspector::EncodedValue{value});
+}
+
+void __inspector_return_char(char value) {
+    inspector::TraceState::instance().recordReturnValue(inspector::EncodedValue{value});
+}
+
+void __inspector_return_ptr(const void* value) {
+    auto& state = inspector::TraceState::instance();
+    // Encode as address string
+    std::vector<std::string> addr;
+    addr.push_back("C_ADDRESS");
+    std::ostringstream ss;
+    ss << "0x" << std::hex << reinterpret_cast<uintptr_t>(value);
+    addr.push_back(ss.str());
+    addr.push_back("void*");
+    addr.push_back(inspector::regionToString(state.classifyAddress(value)));
+    state.recordReturnValue(inspector::EncodedValue{addr});
+}
+
+// ---------------------------------------------------------------------------
+// Global/constexpr variable tracking
+// ---------------------------------------------------------------------------
+
+void __inspector_global_int(const char* name, const inspector::TypeDescriptor* type,
+                            long long value) {
+    // Don't call ensureExitHandlerRegistered() here - it's not safe during
+    // static initialization. Just register the global; the exit handler will
+    // be set up when __inspector_enter is called.
+    inspector::TraceState::instance().registerGlobal(
+        name ? name : "<global>", type, inspector::EncodedValue{value});
+}
+
+void __inspector_global_uint(const char* name, const inspector::TypeDescriptor* type,
+                             unsigned long long value) {
+    inspector::TraceState::instance().registerGlobal(
+        name ? name : "<global>", type, inspector::EncodedValue{value});
+}
+
+void __inspector_global_float(const char* name, const inspector::TypeDescriptor* type,
+                              double value) {
+    inspector::TraceState::instance().registerGlobal(
+        name ? name : "<global>", type, inspector::EncodedValue{value});
+}
+
+void __inspector_global_bool(const char* name, const inspector::TypeDescriptor* type,
+                             bool value) {
+    inspector::TraceState::instance().registerGlobal(
+        name ? name : "<global>", type, inspector::EncodedValue{value});
+}
+
+void __inspector_global_char(const char* name, const inspector::TypeDescriptor* type,
+                             int value) {
+    // Convert to char string representation
+    char c = static_cast<char>(value);
+    std::string charStr(1, c);
+    inspector::TraceState::instance().registerGlobal(
+        name ? name : "<global>", type, inspector::EncodedValue{charStr});
+}
+
+void __inspector_global_enum(const char* name, const inspector::TypeDescriptor* type,
+                             long long value) {
+    // For enums, try to find the enumerator name
+    const char* enumNamePtr = inspector::lookupEnumName(type, value);
+    std::string enumName = enumNamePtr ? enumNamePtr : std::to_string(value);
+    inspector::TraceState::instance().registerGlobal(
+        name ? name : "<global>", type, inspector::EncodedValue{enumName});
 }
 
 } // extern "C"

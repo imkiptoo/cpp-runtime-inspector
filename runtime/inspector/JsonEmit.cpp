@@ -36,6 +36,16 @@ nlohmann::json JsonEmitter::toOPT(const TraceState& state) {
         result["memory_leaks"] = leakedArray;
     }
 
+    // Include type metadata (sizeof, memory layout) for encountered types
+    const auto& types = state.getEncounteredTypes();
+    if (!types.empty()) {
+        nlohmann::json typeMeta = nlohmann::json::object();
+        for (const auto& [name, type] : types) {
+            typeMeta[name] = typeDescriptorToJson(type);
+        }
+        result["type_metadata"] = typeMeta;
+    }
+
     return result;
 }
 
@@ -119,6 +129,14 @@ nlohmann::json JsonEmitter::stepToJson(const TraceStep& step) {
 
     result["func_name"] = step.funcName;
 
+    // Emit lifecycle field for Rule-of-5 tracking (only if not None)
+    if (step.lifecycle != LifecycleKind::None) {
+        const char* lifecycleStr = lifecycleKindToString(step.lifecycle);
+        if (lifecycleStr) {
+            result["lifecycle"] = lifecycleStr;
+        }
+    }
+
     // Stack to render
     nlohmann::json stackToRender = nlohmann::json::array();
     for (const auto& frame : step.stack) {
@@ -126,9 +144,18 @@ nlohmann::json JsonEmitter::stepToJson(const TraceStep& step) {
     }
     result["stack_to_render"] = stackToRender;
 
-    // Globals (empty for now)
-    result["globals"] = nlohmann::json::object();
-    result["ordered_globals"] = nlohmann::json::array();
+    // Globals
+    nlohmann::json globalsJson = nlohmann::json::object();
+    for (const auto& [name, vs] : step.globals) {
+        globalsJson[name] = valueToJson(vs.value, vs.type);
+    }
+    result["globals"] = globalsJson;
+
+    nlohmann::json orderedGlobals = nlohmann::json::array();
+    for (const auto& name : step.orderedGlobals) {
+        orderedGlobals.push_back(name);
+    }
+    result["ordered_globals"] = orderedGlobals;
 
     // Heap state
     nlohmann::json heapJson = nlohmann::json::object();
@@ -140,6 +167,16 @@ nlohmann::json JsonEmitter::stepToJson(const TraceStep& step) {
     // Stdout
     result["stdout"] = step.stdout_capture;
 
+    // Stdin (input read since last step)
+    if (!step.stdin_input.empty()) {
+        result["stdin_input"] = step.stdin_input;
+    }
+
+    // Return value (for return events)
+    if (step.return_value.has_value()) {
+        result["return_value"] = valueToJson(step.return_value.value(), nullptr);
+    }
+
     return result;
 }
 
@@ -150,6 +187,11 @@ nlohmann::json JsonEmitter::frameToJson(const Frame& frame) {
     result["func_name"] = frame.funcName;
     result["is_highlighted"] = frame.isHighlighted;
     result["is_zombie"] = frame.isZombie;
+
+    // Emit is_ghost_dtor only when true (for temporary destruction tracking)
+    if (frame.isGhostDtor) {
+        result["is_ghost_dtor"] = true;
+    }
 
     // Encoded locals
     nlohmann::json encodedLocals = nlohmann::json::object();
@@ -274,6 +316,89 @@ nlohmann::json JsonEmitter::valueToJson(const EncodedValue& value,
             }
         },
         value);
+}
+
+nlohmann::json JsonEmitter::typeDescriptorToJson(const TypeDescriptor* type) {
+    if (!type) return nullptr;
+
+    nlohmann::json result;
+    result["sizeof"] = static_cast<int>(type->size);
+    result["kind"] = typeKindToString(type->kind);
+
+    if (type->spelling) {
+        result["name"] = type->spelling;
+    }
+
+    // For struct/class types, include field layout
+    if ((type->kind == TypeKind::Struct || type->kind == TypeKind::Union) &&
+        type->fields && type->field_count > 0) {
+        nlohmann::json fields = nlohmann::json::array();
+        for (size_t i = 0; i < type->field_count; ++i) {
+            const FieldInfo& field = type->fields[i];
+            nlohmann::json fieldInfo;
+            fieldInfo["name"] = field.name ? field.name : "<unnamed>";
+            fieldInfo["offset"] = static_cast<int>(field.offset);
+            if (field.type) {
+                fieldInfo["sizeof"] = static_cast<int>(field.type->size);
+                if (field.type->spelling) {
+                    fieldInfo["type"] = field.type->spelling;
+                }
+            }
+            if (field.is_bitfield) {
+                fieldInfo["bitfield"] = true;
+                fieldInfo["bit_offset"] = static_cast<int>(field.bit_offset);
+                fieldInfo["bit_width"] = static_cast<int>(field.bit_width);
+            }
+            fields.push_back(fieldInfo);
+        }
+        result["fields"] = fields;
+    }
+
+    // For array types, include element info
+    if (type->kind == TypeKind::Array && type->element_type) {
+        result["element_type"] = type->element_type->spelling ? type->element_type->spelling : "unknown";
+        result["element_count"] = static_cast<int>(type->element_count);
+        result["element_sizeof"] = static_cast<int>(type->element_type->size);
+    }
+
+    // For enum types, include values
+    if (type->kind == TypeKind::Enum && type->enum_values && type->enum_value_count > 0) {
+        nlohmann::json values = nlohmann::json::object();
+        for (size_t i = 0; i < type->enum_value_count; ++i) {
+            const EnumValue& ev = type->enum_values[i];
+            if (ev.name) {
+                values[ev.name] = ev.value;
+            }
+        }
+        result["enum_values"] = values;
+        result["is_scoped"] = type->is_scoped_enum;
+    }
+
+    // Inheritance info
+    if (type->bases && type->base_count > 0) {
+        nlohmann::json bases = nlohmann::json::array();
+        for (size_t i = 0; i < type->base_count; ++i) {
+            const BaseInfo& base = type->bases[i];
+            nlohmann::json baseInfo;
+            if (base.type && base.type->spelling) {
+                baseInfo["type"] = base.type->spelling;
+            }
+            baseInfo["offset"] = static_cast<int>(base.offset);
+            baseInfo["virtual"] = base.is_virtual;
+            bases.push_back(baseInfo);
+        }
+        result["bases"] = bases;
+    }
+
+    // Flags
+    if (type->is_polymorphic) {
+        result["polymorphic"] = true;
+    }
+    if (type->is_union) {
+        result["union"] = true;
+    }
+
+    return result;
 }
 
 size_t JsonEmitter::estimateOutputSize(const TraceState& state) {

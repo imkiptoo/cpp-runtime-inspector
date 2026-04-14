@@ -140,14 +140,20 @@ update_test() {
         read -r -a test_args < "${test_dir}/.args"
     fi
 
+    # Optional stdin input from .stdin file.
+    local stdin_file="/dev/null"
+    if [[ -f "${test_dir}/.stdin" ]]; then
+        stdin_file="${test_dir}/.stdin"
+    fi
+
     if [[ ${use_shim} -eq 1 ]]; then
         if [[ "$(uname)" == "Darwin" ]]; then
-            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} 2>"${workdir}/actual.json" || true
+            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} <"${stdin_file}" 2>"${workdir}/actual.json" || true
         else
-            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} 2>"${workdir}/actual.json" || true
+            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} <"${stdin_file}" 2>"${workdir}/actual.json" || true
         fi
     else
-        "${workdir}/test" ${test_args[@]+"${test_args[@]}"} 2>"${workdir}/actual.json" || true
+        "${workdir}/test" ${test_args[@]+"${test_args[@]}"} <"${stdin_file}" 2>"${workdir}/actual.json" || true
     fi
 
     # Check if output is valid JSON

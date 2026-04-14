@@ -77,16 +77,38 @@ bool InspectorVisitor::VisitFunctionDecl(clang::FunctionDecl* decl) {
     if (!decl->hasBody() || !m_helpers.isInMainFile(decl->getLocation()))
         return true;
 
+    // Skip constructors and destructors - they have their own visitor methods
+    if (llvm::isa<clang::CXXConstructorDecl>(decl) ||
+        llvm::isa<clang::CXXDestructorDecl>(decl))
+        return true;
+
     clang::Stmt* body = decl->getBody();
     auto* compound = llvm::dyn_cast<clang::CompoundStmt>(body);
     if (!compound)
         return true;
+
+    // Skip if already instrumented (handles forward declarations + definitions)
+    // Use canonical declaration so forward decl and definition map to same key
+    const clang::FunctionDecl* canonical = decl->getCanonicalDecl();
+    if (m_instrumentedFunctions.count(canonical))
+        return true;
+    m_instrumentedFunctions.insert(canonical);
 
     // Use qualified name so namespace and class scopes are visible:
     // math::square, Counter::bump. Free functions in the global namespace
     // are unchanged.
     std::string funcName = decl->getQualifiedNameAsString();
     m_currentFunction = funcName;
+
+    // Check if this is a copy or move assignment operator
+    int lifecycleKind = 0;  // None
+    if (auto* method = llvm::dyn_cast<clang::CXXMethodDecl>(decl)) {
+        if (method->isCopyAssignmentOperator()) {
+            lifecycleKind = 4;  // CopyAssign
+        } else if (method->isMoveAssignmentOperator()) {
+            lifecycleKind = 5;  // MoveAssign
+        }
+    }
 
     // Pick an insertion point for type descriptors. Descriptors must come
     // *before* any code that references them; that includes member
@@ -129,12 +151,71 @@ bool InspectorVisitor::VisitFunctionDecl(clang::FunctionDecl* decl) {
         }
     }
 
-    // Inject __inspector_enter after opening brace
+    // Inject __inspector_enter or __inspector_enter_lifecycle after opening brace
     unsigned enterLine = m_helpers.getLineNumber(compound->getLBracLoc());
-    std::string enterCall =
-        "__inspector_enter(\"" + funcName + "\", " + std::to_string(enterLine) + "); ";
+    std::string enterCall;
+    if (lifecycleKind != 0) {
+        enterCall = "__inspector_enter_lifecycle(\"" + funcName + "\", " +
+                    std::to_string(enterLine) + ", " + std::to_string(lifecycleKind) + "); ";
+    } else {
+        enterCall = "__inspector_enter(\"" + funcName + "\", " + std::to_string(enterLine) + "); ";
+    }
+
+    // Generate parameter init calls
+    std::string paramCalls;
+    for (const clang::ParmVarDecl* param : decl->parameters()) {
+        clang::QualType type = param->getType();
+        std::string paramName = param->getNameAsString();
+        if (paramName.empty()) continue;  // Skip unnamed parameters
+
+        // Skip dependent types (template parameters)
+        if (type->isDependentType())
+            continue;
+
+        if (!m_typeEncoder.isSupported(type))
+            continue;
+
+        // Ensure type descriptor for composite types
+        TypeKind kind = m_typeEncoder.getTypeKind(type);
+        if (kind == TypeKind::Struct || kind == TypeKind::Union ||
+            kind == TypeKind::Array || kind == TypeKind::Enum ||
+            kind == TypeKind::Pointer || kind == TypeKind::Reference) {
+            ensureTypeDescriptor(type);
+        }
+
+        // Generate param init call (reuse var_init format)
+        std::string suffix = m_typeEncoder.getHookSuffix(type);
+        unsigned paramLine = m_helpers.getLineNumber(param->getLocation());
+
+        if (kind == TypeKind::Int && type->isSpecificBuiltinType(clang::BuiltinType::Int)) {
+            paramCalls += " __inspector_var_init(\"" + paramName + "\", &" + paramName + ", " + paramName + ");";
+        } else if (kind == TypeKind::Struct || kind == TypeKind::Union || kind == TypeKind::Array) {
+            std::string typeRef = m_typeEncoder.getDescriptorRef(type);
+            paramCalls += " __inspector_var_init_" + suffix + "(\"" + paramName + "\", &" +
+                          paramName + ", " + typeRef + ", " + std::to_string(paramLine) + ");";
+        } else {
+            std::string typeRef = m_typeEncoder.getDescriptorRef(type);
+            std::string value;
+            switch (kind) {
+            case TypeKind::Int:    value = std::string("(long long)") + paramName; break;
+            case TypeKind::UInt:   value = std::string("(unsigned long long)") + paramName; break;
+            case TypeKind::Float:  value = std::string("(double)") + paramName; break;
+            case TypeKind::Bool:   value = paramName; break;
+            case TypeKind::Char:   value = std::string("(int)") + paramName; break;
+            case TypeKind::Pointer:
+            case TypeKind::Reference:
+                value = std::string("(const void*)") + (kind == TypeKind::Reference ? "&" : "") + paramName;
+                break;
+            case TypeKind::Enum:   value = std::string("(long long)") + paramName; break;
+            default:               value = "0"; break;
+            }
+            paramCalls += " __inspector_var_init_" + suffix + "(\"" + paramName + "\", &" +
+                          paramName + ", " + typeRef + ", " + value + ", " + std::to_string(paramLine) + ");";
+        }
+    }
+
     m_rewriter.InsertTextAfterToken(compound->getLBracLoc(),
-                                    "\n    " + enterCall);
+                                    "\n    " + enterCall + paramCalls);
 
     // Inject __inspector_leave before closing brace
     unsigned leaveLine = m_helpers.getLineNumber(compound->getRBracLoc());
@@ -152,13 +233,100 @@ bool InspectorVisitor::VisitReturnStmt(clang::ReturnStmt* stmt) {
 
     std::string funcName = findEnclosingFunctionName(stmt);
     unsigned line = m_helpers.getLineNumber(stmt->getBeginLoc());
-    std::string call =
-        "__inspector_leave(\"" + funcName + "\", " + std::to_string(line) + "); ";
-    // InsertAfter=true so the leave call sits *inside* any synthetic braces
-    // added by ensureCompoundBody for if/else/while/for bodies that consist
-    // of a single return statement. With InsertTextBefore the leave would
-    // land outside the braces and produce invalid syntax.
-    m_rewriter.InsertText(stmt->getBeginLoc(), call, /*InsertAfter=*/true);
+
+    // Capture return value if present
+    std::string retCapture;
+    bool needsReplacement = false;  // True if we need to replace the entire return stmt
+    std::string replacementStmt;    // The replacement code
+
+    if (const clang::Expr* retVal = stmt->getRetValue()) {
+        clang::QualType retType = retVal->getType();
+
+        // Check if return expression contains a function call
+        const clang::Expr* retValNoParens = retVal->IgnoreParenImpCasts();
+        bool isCallExpr = llvm::isa<clang::CallExpr>(retValNoParens) ||
+                          llvm::isa<clang::CXXMemberCallExpr>(retValNoParens) ||
+                          llvm::isa<clang::CXXOperatorCallExpr>(retValNoParens);
+
+        if (m_typeEncoder.isSupported(retType) && !retType->isVoidType()) {
+            TypeKind kind = m_typeEncoder.getTypeKind(retType);
+
+            // Get source text for return expression
+            clang::SourceRange range = retVal->getSourceRange();
+            std::string retExpr = clang::Lexer::getSourceText(
+                clang::CharSourceRange::getTokenRange(range),
+                m_context.getSourceManager(), m_context.getLangOpts()).str();
+
+            // Build the capture call based on type
+            std::string captureCall;
+            if (kind == TypeKind::Int && retType->isSpecificBuiltinType(clang::BuiltinType::Int)) {
+                captureCall = "__inspector_return_int";
+            } else if (kind == TypeKind::Int) {
+                captureCall = "__inspector_return_int";
+            } else if (kind == TypeKind::UInt) {
+                captureCall = "__inspector_return_uint";
+            } else if (kind == TypeKind::Float) {
+                captureCall = "__inspector_return_float";
+            } else if (kind == TypeKind::Bool) {
+                captureCall = "__inspector_return_bool";
+            } else if (kind == TypeKind::Char) {
+                captureCall = "__inspector_return_char";
+            } else if (kind == TypeKind::Pointer) {
+                captureCall = "__inspector_return_ptr";
+            }
+
+            if (!captureCall.empty()) {
+                if (isCallExpr) {
+                    // For function calls, use a temp variable to avoid double execution
+                    // { auto __ret = expr; capture(__ret); leave(); return __ret; }
+                    needsReplacement = true;
+                    std::string leave = "__inspector_leave(\"" + funcName + "\", " +
+                                        std::to_string(line) + ")";
+                    replacementStmt = "{ auto __inspector_ret = " + retExpr + "; " +
+                                      captureCall + "(__inspector_ret); " +
+                                      leave + "; return __inspector_ret; }";
+                } else {
+                    // For simple expressions, capture directly (no double execution)
+                    if (kind == TypeKind::Int && !retType->isSpecificBuiltinType(clang::BuiltinType::Int)) {
+                        retCapture = captureCall + "((long long)(" + retExpr + ")); ";
+                    } else if (kind == TypeKind::UInt) {
+                        retCapture = captureCall + "((unsigned long long)(" + retExpr + ")); ";
+                    } else if (kind == TypeKind::Float) {
+                        retCapture = captureCall + "((double)(" + retExpr + ")); ";
+                    } else if (kind == TypeKind::Pointer) {
+                        retCapture = captureCall + "((const void*)(" + retExpr + ")); ";
+                    } else {
+                        retCapture = captureCall + "(" + retExpr + "); ";
+                    }
+                }
+            }
+            // Skip complex types (struct, array) for now - would need temporary storage
+        }
+    }
+
+    if (needsReplacement) {
+        // Replace the entire return statement
+        clang::SourceRange stmtRange = stmt->getSourceRange();
+        // Need to include the semicolon
+        clang::SourceLocation endLoc = clang::Lexer::findLocationAfterToken(
+            stmtRange.getEnd(), clang::tok::semi, m_context.getSourceManager(),
+            m_context.getLangOpts(), /*SkipTrailingWhitespaceAndNewLine=*/false);
+        if (endLoc.isValid()) {
+            m_rewriter.ReplaceText(clang::SourceRange(stmtRange.getBegin(),
+                                   endLoc.getLocWithOffset(-1)), replacementStmt);
+        } else {
+            // Fallback: just replace the statement without the semicolon
+            m_rewriter.ReplaceText(stmtRange, replacementStmt);
+        }
+    } else {
+        std::string call = retCapture +
+            "__inspector_leave(\"" + funcName + "\", " + std::to_string(line) + "); ";
+        // InsertAfter=true so the leave call sits *inside* any synthetic braces
+        // added by ensureCompoundBody for if/else/while/for bodies that consist
+        // of a single return statement. With InsertTextBefore the leave would
+        // land outside the braces and produce invalid syntax.
+        m_rewriter.InsertText(stmt->getBeginLoc(), call, /*InsertAfter=*/true);
+    }
 
     return true;
 }
@@ -167,9 +335,82 @@ bool InspectorVisitor::VisitVarDecl(clang::VarDecl* decl) {
     if (!m_helpers.isInMainFile(decl->getLocation()))
         return true;
 
-    // Only instrument local variables
-    if (!decl->isLocalVarDecl())
+    // Handle global/constexpr variables at file scope
+    if (!decl->isLocalVarDecl()) {
+        // Only instrument variables with initializers (so we can capture their value)
+        if (!decl->hasInit())
+            return true;
+
+        // Only support primitive types for globals
+        clang::QualType type = decl->getType();
+        if (!m_typeEncoder.isSupported(type))
+            return true;
+
+        TypeKind kind = m_typeEncoder.getTypeKind(type);
+        // Only primitives and enums for now
+        if (kind != TypeKind::Int && kind != TypeKind::UInt &&
+            kind != TypeKind::Float && kind != TypeKind::Bool &&
+            kind != TypeKind::Char && kind != TypeKind::Enum)
+            return true;
+
+        std::string name = decl->getNameAsString();
+        if (name.empty())
+            return true;
+
+        // Ensure type descriptor is emitted
+        ensureTypeDescriptor(type);
+        std::string typeRef = m_typeEncoder.getDescriptorRef(type);
+
+        // Build the global registration call
+        std::string hookCall;
+        // Use qualified name for static members (Counter::total), simple name otherwise
+        std::string valueExpr = decl->getQualifiedNameAsString();
+
+        if (kind == TypeKind::Int) {
+            hookCall = "__inspector_global_int(\"" + name + "\", " + typeRef +
+                       ", (long long)(" + valueExpr + "))";
+        } else if (kind == TypeKind::UInt) {
+            hookCall = "__inspector_global_uint(\"" + name + "\", " + typeRef +
+                       ", (unsigned long long)(" + valueExpr + "))";
+        } else if (kind == TypeKind::Float) {
+            hookCall = "__inspector_global_float(\"" + name + "\", " + typeRef +
+                       ", (double)(" + valueExpr + "))";
+        } else if (kind == TypeKind::Bool) {
+            hookCall = "__inspector_global_bool(\"" + name + "\", " + typeRef + ", " + valueExpr + ")";
+        } else if (kind == TypeKind::Char) {
+            hookCall = "__inspector_global_char(\"" + name + "\", " + typeRef +
+                       ", (int)(" + valueExpr + "))";
+        } else if (kind == TypeKind::Enum) {
+            hookCall = "__inspector_global_enum(\"" + name + "\", " + typeRef +
+                       ", (long long)(" + valueExpr + "))";
+        }
+
+        if (!hookCall.empty()) {
+            // Find the semicolon after the declaration
+            clang::SourceLocation semiLoc = clang::Lexer::findLocationAfterToken(
+                decl->getEndLoc(), clang::tok::semi, m_context.getSourceManager(),
+                m_context.getLangOpts(), /*SkipTrailingWhitespaceAndNewLine=*/false);
+
+            if (semiLoc.isValid()) {
+                std::string staticInit;
+
+                // For enum globals, we need an extern declaration for the type descriptor
+                // since it will be defined later in the file
+                if (kind == TypeKind::Enum) {
+                    std::string mangledName = m_typeEncoder.getMangledName(type);
+                    staticInit = "\nextern const inspector::TypeDescriptor __inspector_type_" +
+                                 mangledName + ";";
+                }
+
+                // Generate a static initializer to register the global
+                staticInit += "\nstatic int __inspector_init_" + name +
+                              " = (" + hookCall + ", 0);";
+                m_rewriter.InsertText(semiLoc, staticInit);
+            }
+        }
+
         return true;
+    }
 
     // Skip exception catch clause declarations
     if (decl->isExceptionVariable())
@@ -200,11 +441,17 @@ bool InspectorVisitor::VisitVarDecl(clang::VarDecl* decl) {
         return true;
     }
 
-    // Skip variables declared in for-loop init expressions
-    // These cannot be instrumented because inserting text after them breaks the for syntax
+    // Check parent DeclStmt for:
+    // 1. Multi-variable declarations (e.g., "int a, b;") - already handled by VisitDeclStmt
+    // 2. For-loop init expressions - cannot be instrumented
     const auto& parents = m_context.getParents(*decl);
     for (const auto& parent : parents) {
         if (const auto* declStmt = parent.get<clang::DeclStmt>()) {
+            // If this DeclStmt was already processed by VisitDeclStmt, skip
+            if (m_multiVarDeclStmts.count(declStmt) > 0) {
+                return true;
+            }
+
             // Check if this DeclStmt is the init part of a ForStmt
             const auto& declStmtParents = m_context.getParents(*declStmt);
             for (const auto& dsParent : declStmtParents) {
@@ -283,6 +530,80 @@ bool InspectorVisitor::VisitVarDecl(clang::VarDecl* decl) {
 
     // Insert after the declaration's semicolon
     m_rewriter.InsertTextAfterToken(decl->getEndLoc(), call);
+
+    return true;
+}
+
+bool InspectorVisitor::VisitDeclStmt(clang::DeclStmt* stmt) {
+    if (!m_helpers.isInMainFile(stmt->getBeginLoc()))
+        return true;
+
+    // Count VarDecls in this DeclStmt to detect multi-variable declarations
+    int varDeclCount = 0;
+    for (const auto* d : stmt->decls()) {
+        if (llvm::isa<clang::VarDecl>(d))
+            varDeclCount++;
+    }
+
+    // Only handle multi-variable declarations (e.g., "int a, b;")
+    // Single variable declarations are handled by VisitVarDecl
+    if (varDeclCount <= 1)
+        return true;
+
+    // Mark this DeclStmt so VisitVarDecl knows to skip its VarDecls
+    m_multiVarDeclStmts.insert(stmt);
+
+    // Check if this DeclStmt is in a for-loop init - skip if so
+    const auto& parents = m_context.getParents(*stmt);
+    for (const auto& parent : parents) {
+        if (const auto* forStmt = parent.get<clang::ForStmt>()) {
+            if (forStmt->getInit() == stmt)
+                return true;  // Skip for-loop init variables
+        }
+        if (parent.get<clang::CXXForRangeStmt>())
+            return true;  // Skip range-based for loop variables
+    }
+
+    // Collect all VarDecls and generate instrumentation for each
+    std::string allCalls;
+    for (const auto* d : stmt->decls()) {
+        const auto* varDecl = llvm::dyn_cast<clang::VarDecl>(d);
+        if (!varDecl)
+            continue;
+
+        // Skip non-local variables
+        if (!varDecl->isLocalVarDecl())
+            continue;
+
+        clang::QualType type = varDecl->getType();
+
+        // Check if type is supported
+        if (!m_typeEncoder.isSupported(type))
+            continue;
+
+        // For composite types and pointers, ensure type descriptor is emitted
+        TypeKind kind = m_typeEncoder.getTypeKind(type);
+        if (kind == TypeKind::Struct || kind == TypeKind::Union ||
+            kind == TypeKind::Array || kind == TypeKind::Enum ||
+            kind == TypeKind::Pointer || kind == TypeKind::Reference) {
+            ensureTypeDescriptor(type);
+        }
+
+        // Generate the init call for this variable
+        allCalls += generateVarInitCall(const_cast<clang::VarDecl*>(varDecl));
+    }
+
+    // Insert all calls after the entire DeclStmt (after the semicolon)
+    // generateVarInitCall prepends "; " to each call, which works when inserting
+    // after a VarDecl. But for DeclStmt, we're already after the semicolon,
+    // so we need to trim the leading "; " and add a trailing semicolon.
+    if (!allCalls.empty()) {
+        // Remove leading "; " (2 chars) and add trailing ";"
+        if (allCalls.size() >= 2 && allCalls[0] == ';' && allCalls[1] == ' ') {
+            allCalls = " " + allCalls.substr(2) + ";";
+        }
+        m_rewriter.InsertTextAfterToken(stmt->getEndLoc(), allCalls);
+    }
 
     return true;
 }
@@ -950,13 +1271,133 @@ void InspectorVisitor::wrapThisWriteWithStep(clang::Expr* expr, unsigned line) {
 }
 
 bool InspectorVisitor::VisitCXXConstructorDecl(clang::CXXConstructorDecl* decl) {
-    // Constructors are also FunctionDecls, so VisitFunctionDecl handles
-    // body enter/leave instrumentation. The function-enter event fires
-    // *after* the member initializer list runs, so the first snapshot
-    // already shows fields fully initialized — no extra wrapping needed.
-    // Keeping this override as a placeholder for future ctor-specific work
-    // (e.g. annotating the event kind as "ctor_enter").
-    (void)decl;
+    if (!decl->hasBody() || !m_helpers.isInMainFile(decl->getLocation()))
+        return true;
+
+    clang::Stmt* body = decl->getBody();
+    auto* compound = llvm::dyn_cast<clang::CompoundStmt>(body);
+    if (!compound)
+        return true;
+
+    std::string funcName = decl->getQualifiedNameAsString();
+    m_currentFunction = funcName;
+
+    // Determine the lifecycle kind
+    int lifecycleKind = 0;  // None
+    if (decl->isDefaultConstructor()) {
+        lifecycleKind = 1;  // DefaultCtor
+    } else if (decl->isCopyConstructor()) {
+        lifecycleKind = 2;  // CopyCtor
+    } else if (decl->isMoveConstructor()) {
+        lifecycleKind = 3;  // MoveCtor
+    }
+
+    // Set insertion point for type descriptors (same logic as VisitFunctionDecl)
+    {
+        clang::SourceLocation candidate;
+        const clang::DeclContext* ctx = decl->getDeclContext();
+        const clang::CXXRecordDecl* outer = nullptr;
+        while (ctx) {
+            if (auto* rec = llvm::dyn_cast<clang::CXXRecordDecl>(ctx)) {
+                outer = rec;
+            }
+            ctx = ctx->getParent();
+        }
+        if (outer) {
+            if (auto* tmpl = outer->getDescribedClassTemplate()) {
+                candidate = tmpl->getBeginLoc();
+            } else {
+                candidate = outer->getBeginLoc();
+            }
+        }
+
+        if (candidate.isValid()) {
+            const auto& sm = m_context.getSourceManager();
+            if (!m_hasInsertionPoint ||
+                sm.isBeforeInTranslationUnit(candidate, m_insertionPoint)) {
+                m_insertionPoint = candidate;
+                m_hasInsertionPoint = true;
+            }
+        }
+    }
+
+    // Inject __inspector_enter_lifecycle after opening brace
+    unsigned enterLine = m_helpers.getLineNumber(compound->getLBracLoc());
+    std::string enterCall =
+        "__inspector_enter_lifecycle(\"" + funcName + "\", " +
+        std::to_string(enterLine) + ", " + std::to_string(lifecycleKind) + "); ";
+    m_rewriter.InsertTextAfterToken(compound->getLBracLoc(),
+                                    "\n    " + enterCall);
+
+    // Inject __inspector_leave before closing brace
+    unsigned leaveLine = m_helpers.getLineNumber(compound->getRBracLoc());
+    std::string leaveCall =
+        "    __inspector_leave(\"" + funcName + "\", " + std::to_string(leaveLine) +
+        ");\n";
+    m_rewriter.InsertTextBefore(compound->getRBracLoc(), leaveCall);
+
+    return true;
+}
+
+bool InspectorVisitor::VisitCXXDestructorDecl(clang::CXXDestructorDecl* decl) {
+    if (!decl->hasBody() || !m_helpers.isInMainFile(decl->getLocation()))
+        return true;
+
+    clang::Stmt* body = decl->getBody();
+    auto* compound = llvm::dyn_cast<clang::CompoundStmt>(body);
+    if (!compound)
+        return true;
+
+    std::string funcName = decl->getQualifiedNameAsString();
+    m_currentFunction = funcName;
+
+    // Lifecycle kind 6 = Dtor
+    int lifecycleKind = 6;
+
+    // Set insertion point for type descriptors
+    {
+        clang::SourceLocation candidate;
+        const clang::DeclContext* ctx = decl->getDeclContext();
+        const clang::CXXRecordDecl* outer = nullptr;
+        while (ctx) {
+            if (auto* rec = llvm::dyn_cast<clang::CXXRecordDecl>(ctx)) {
+                outer = rec;
+            }
+            ctx = ctx->getParent();
+        }
+        if (outer) {
+            if (auto* tmpl = outer->getDescribedClassTemplate()) {
+                candidate = tmpl->getBeginLoc();
+            } else {
+                candidate = outer->getBeginLoc();
+            }
+        }
+
+        if (candidate.isValid()) {
+            const auto& sm = m_context.getSourceManager();
+            if (!m_hasInsertionPoint ||
+                sm.isBeforeInTranslationUnit(candidate, m_insertionPoint)) {
+                m_insertionPoint = candidate;
+                m_hasInsertionPoint = true;
+            }
+        }
+    }
+
+    // Inject __inspector_enter_lifecycle after opening brace
+    unsigned enterLine = m_helpers.getLineNumber(compound->getLBracLoc());
+    std::string enterCall =
+        "__inspector_enter_lifecycle(\"" + funcName + "\", " +
+        std::to_string(enterLine) + ", " + std::to_string(lifecycleKind) + "); ";
+    m_rewriter.InsertTextAfterToken(compound->getLBracLoc(),
+                                    "\n    " + enterCall);
+
+    // Inject __inspector_leave before closing brace
+    unsigned leaveLine = m_helpers.getLineNumber(compound->getRBracLoc());
+    std::string leaveCall =
+        "    __inspector_leave(\"" + funcName + "\", " + std::to_string(leaveLine) +
+        ");\n";
+    m_rewriter.InsertTextBefore(compound->getRBracLoc(), leaveCall);
+
     return true;
 }
 
@@ -981,6 +1422,98 @@ bool InspectorVisitor::VisitCXXCatchStmt(clang::CXXCatchStmt* stmt) {
             m_rewriter.InsertTextAfterToken(compound->getLBracLoc(), "\n        " + call);
         }
     }
+
+    return true;
+}
+
+void InspectorVisitor::collectTemporaries(clang::Stmt* stmt,
+    std::vector<std::pair<std::string, unsigned>>& temps) {
+    if (!stmt)
+        return;
+
+    // If this is a CXXBindTemporaryExpr, record the temporary's type
+    if (auto* bindTemp = llvm::dyn_cast<clang::CXXBindTemporaryExpr>(stmt)) {
+        clang::QualType type = bindTemp->getType();
+        std::string typeName = type.getAsString();
+
+        // Clean up the type name - remove references and const qualifiers for display
+        clang::QualType cleanType = type.getNonReferenceType();
+        cleanType.removeLocalConst();
+        typeName = cleanType.getAsString();
+
+        // Get the line number for this temporary
+        unsigned line = m_helpers.getLineNumber(bindTemp->getBeginLoc());
+
+        temps.push_back({typeName, line});
+    }
+
+    // Recursively check children
+    for (clang::Stmt* child : stmt->children()) {
+        collectTemporaries(child, temps);
+    }
+}
+
+bool InspectorVisitor::VisitExprWithCleanups(clang::ExprWithCleanups* expr) {
+    if (!m_helpers.isInMainFile(expr->getBeginLoc()))
+        return true;
+
+    // Note: getNumObjects() may return 0 even when there are temporaries to clean up
+    // because Clang may handle cleanup differently. We check for CXXBindTemporaryExpr
+    // children instead.
+
+    // Skip if this is part of a VarDecl initializer - those are handled by VisitVarDecl
+    // and wrapping them would break the variable declaration
+    const auto& parents = m_context.getParents(*expr);
+    for (const auto& parent : parents) {
+        if (parent.get<clang::VarDecl>()) {
+            return true;
+        }
+        // Also check if wrapped in another expression that's a VarDecl initializer
+        if (const auto* parentExpr = parent.get<clang::Expr>()) {
+            const auto& grandParents = m_context.getParents(*parentExpr);
+            for (const auto& grandParent : grandParents) {
+                if (grandParent.get<clang::VarDecl>()) {
+                    return true;
+                }
+            }
+        }
+    }
+
+    // Skip if this is the condition of an if/while/for - wrapping would break syntax
+    for (const auto& parent : parents) {
+        if (parent.get<clang::IfStmt>() || parent.get<clang::WhileStmt>() ||
+            parent.get<clang::ForStmt>() || parent.get<clang::DoStmt>() ||
+            parent.get<clang::SwitchStmt>()) {
+            return true;
+        }
+    }
+
+    // Skip return statements - they're handled separately
+    for (const auto& parent : parents) {
+        if (parent.get<clang::ReturnStmt>()) {
+            return true;
+        }
+    }
+
+    // Collect all temporaries that will be destroyed
+    std::vector<std::pair<std::string, unsigned>> temps;
+    collectTemporaries(expr->getSubExpr(), temps);
+
+    if (temps.empty())
+        return true;
+
+    // Build the ghost dtor calls - temporaries are destroyed in reverse order
+    std::string ghostCalls;
+    for (auto it = temps.rbegin(); it != temps.rend(); ++it) {
+        ghostCalls += ", __inspector_ghost_dtor(\"" + it->first + "\", " +
+                      std::to_string(it->second) + ")";
+    }
+
+    // Wrap the expression: (original_expr, __inspector_ghost_dtor(...), void())
+    // We add void() at the end to make the comma expression evaluate to void
+    // This helps avoid issues with the expression's value being changed
+    m_rewriter.InsertText(expr->getBeginLoc(), "(", /*InsertAfter=*/true);
+    m_rewriter.InsertTextAfterToken(expr->getEndLoc(), ghostCalls + ", (void)0)");
 
     return true;
 }

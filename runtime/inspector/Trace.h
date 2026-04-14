@@ -7,6 +7,7 @@
 
 #include <map>
 #include <memory>
+#include <optional>
 #include <string>
 #include <unordered_map>
 #include <variant>
@@ -123,6 +124,7 @@ struct Frame {
     int frameId;
     bool isHighlighted;
     bool isZombie;
+    bool isGhostDtor = false;  //!< True if this is a synthetic frame for temporary destruction
 
     //! Ordered variable names for consistent rendering.
     std::vector<std::string> orderedLocalNames;
@@ -141,11 +143,29 @@ enum class EventKind {
     // Variable events are rolled into step_line in OPT format
 };
 
+//! Lifecycle kind for Rule-of-5 special member functions.
+enum class LifecycleKind : uint8_t {
+    None = 0,
+    DefaultCtor,
+    CopyCtor,
+    MoveCtor,
+    CopyAssign,
+    MoveAssign,
+    Dtor,
+};
+
+//! Convert LifecycleKind to string representation.
+const char* lifecycleKindToString(LifecycleKind kind);
+
 //! A single trace step in OPT format.
 struct TraceStep {
     int line;
     EventKind event;
     std::string funcName;
+
+    //! Lifecycle kind for special member functions (Rule-of-5).
+    //! Only set for constructor/destructor/assignment operator calls.
+    LifecycleKind lifecycle = LifecycleKind::None;
 
     //! Stack snapshot at this step.
     std::vector<Frame> stack;
@@ -159,6 +179,12 @@ struct TraceStep {
 
     //! Captured stdout.
     std::string stdout_capture;
+
+    //! Captured stdin (input read since last step).
+    std::string stdin_input;
+
+    //! Return value (for return events).
+    std::optional<EncodedValue> return_value;
 };
 
 //! Process-wide trace state.
@@ -169,6 +195,13 @@ public:
 
     //! Push a new frame onto the stack.
     void pushFrame(const std::string& funcName, int line);
+
+    //! Push a new frame with lifecycle annotation (for Rule-of-5 tracking).
+    void pushFrameWithLifecycle(const std::string& funcName, int line, LifecycleKind lifecycle);
+
+    //! Record a ghost destructor frame for temporary object destruction.
+    //! Creates an ephemeral frame that appears briefly to show the destruction event.
+    void recordGhostDtor(const std::string& typeName, int line);
 
     //! Pop the top frame from the stack.
     void popFrame(int line);
@@ -264,6 +297,13 @@ public:
     //! Record entering a catch block (Tier 5).
     void recordCatch(const std::string& funcName, const std::string& typeName, int line);
 
+    //! Record a return value (called before popFrame).
+    void recordReturnValue(EncodedValue value);
+
+    //! Register a global/constexpr variable.
+    void registerGlobal(const std::string& name, const TypeDescriptor* type,
+                        EncodedValue value);
+
     //! Set the maximum number of trace events (Tier 6 resource limits).
     //! Default is 100000. When exceeded, recording stops.
     void setMaxEvents(size_t maxEvents) { m_maxEvents = maxEvents; }
@@ -274,7 +314,8 @@ public:
 private:
     TraceState() = default;
 
-    void emitStep(EventKind kind, const std::string& funcName, int line);
+    void emitStep(EventKind kind, const std::string& funcName, int line,
+                  LifecycleKind lifecycle = LifecycleKind::None);
 
     //! Helper to add fields from a type (including inherited fields).
     void addFieldsFromType(StructValue& sv, const void* addr,
@@ -296,6 +337,25 @@ private:
     // Resource limits (Tier 6)
     size_t m_maxEvents = 100000;
     bool m_eventLimitReached = false;
+
+    // Pending return value (set by recordReturnValue, consumed by next return event)
+    std::optional<EncodedValue> m_pendingReturnValue;
+
+    // Global/constexpr variables
+    std::unordered_map<std::string, VarState> m_globals;
+    std::vector<std::string> m_orderedGlobals;
+
+    // Unique types encountered during trace (for type metadata output)
+    std::unordered_map<std::string, const TypeDescriptor*> m_encounteredTypes;
+
+public:
+    //! Get the types encountered during trace (for type metadata output).
+    const std::unordered_map<std::string, const TypeDescriptor*>& getEncounteredTypes() const {
+        return m_encounteredTypes;
+    }
+
+    //! Register a type as encountered.
+    void registerType(const TypeDescriptor* type);
 };
 
 } // namespace inspector

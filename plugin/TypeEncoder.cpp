@@ -4,6 +4,7 @@
 #include "TypeEncoder.h"
 #include "clang/AST/Mangle.h"
 #include "clang/AST/RecordLayout.h"
+#include "llvm/Config/llvm-config.h"
 
 #include <algorithm>
 #include <sstream>
@@ -545,7 +546,11 @@ TypeEncoder::generateFieldInfoArray(const clang::RecordDecl* record,
         if (field->isBitField()) {
             e.is_bitfield = true;
             e.bit_offset = bitOffset;
+#if LLVM_VERSION_MAJOR >= 18
             e.bit_width = field->getBitWidthValue();
+#else
+            e.bit_width = field->getBitWidthValue(m_context);
+#endif
         }
         fields.push_back(std::move(e));
         ++fieldIdx;

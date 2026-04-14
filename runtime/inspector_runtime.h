@@ -24,6 +24,11 @@ extern "C" {
 //! Called when execution enters a function.
 void __inspector_enter(const char* funcName, int line);
 
+//! Called when execution enters a function with lifecycle annotation (Rule-of-5).
+//! @param lifecycleKind: 0=None, 1=DefaultCtor, 2=CopyCtor, 3=MoveCtor,
+//!                       4=CopyAssign, 5=MoveAssign, 6=Dtor
+void __inspector_enter_lifecycle(const char* funcName, int line, int lifecycleKind);
+
 //! Called when execution leaves a function.
 void __inspector_leave(const char* funcName, int line);
 
@@ -149,6 +154,54 @@ void __inspector_throw(const char* funcName, int line);
 
 //! Record entering a catch block.
 void __inspector_catch(const char* funcName, const char* typeName, int line);
+
+// ---------------------------------------------------------------------------
+// Ghost frames for temporary object destruction
+// ---------------------------------------------------------------------------
+
+//! Record a ghost destructor frame for a temporary object.
+//! Creates an ephemeral frame that shows the temporary's destruction.
+void __inspector_ghost_dtor(const char* typeName, int line);
+
+// ---------------------------------------------------------------------------
+// Return value capture
+// ---------------------------------------------------------------------------
+
+//! Record the return value of a function (called before __inspector_leave).
+void __inspector_return_int(long long value);
+void __inspector_return_uint(unsigned long long value);
+void __inspector_return_float(double value);
+void __inspector_return_bool(bool value);
+void __inspector_return_char(char value);
+void __inspector_return_ptr(const void* value);
+
+// ---------------------------------------------------------------------------
+// Global/constexpr variable tracking
+// ---------------------------------------------------------------------------
+
+//! Register a global integer variable (including constexpr).
+void __inspector_global_int(const char* name, const inspector::TypeDescriptor* type,
+                            long long value);
+
+//! Register a global unsigned integer variable (including constexpr).
+void __inspector_global_uint(const char* name, const inspector::TypeDescriptor* type,
+                             unsigned long long value);
+
+//! Register a global floating point variable (including constexpr).
+void __inspector_global_float(const char* name, const inspector::TypeDescriptor* type,
+                              double value);
+
+//! Register a global boolean variable (including constexpr).
+void __inspector_global_bool(const char* name, const inspector::TypeDescriptor* type,
+                             bool value);
+
+//! Register a global character variable (including constexpr).
+void __inspector_global_char(const char* name, const inspector::TypeDescriptor* type,
+                             int value);
+
+//! Register a global enum variable (including constexpr).
+void __inspector_global_enum(const char* name, const inspector::TypeDescriptor* type,
+                             long long value);
 
 // ---------------------------------------------------------------------------
 // Legacy compatibility (Tier 0)

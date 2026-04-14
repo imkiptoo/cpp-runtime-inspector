@@ -4,7 +4,9 @@
 #include "Trace.h"
 #include "Dynamic.h"
 #include "Heap.h"
+#include "StdinCapture.h"
 #include "StlEncoders.h"
+#include "StdoutCapture.h"
 
 #include <algorithm>
 #include <cstring>
@@ -39,6 +41,27 @@ const char* regionToString(MemoryRegion region) {
     case MemoryRegion::Unknown:
     default:
         return "unknown";
+    }
+}
+
+const char* lifecycleKindToString(LifecycleKind kind) {
+    switch (kind) {
+    case LifecycleKind::None:
+        return nullptr;  // Don't emit field for None
+    case LifecycleKind::DefaultCtor:
+        return "default_ctor";
+    case LifecycleKind::CopyCtor:
+        return "copy_ctor";
+    case LifecycleKind::MoveCtor:
+        return "move_ctor";
+    case LifecycleKind::CopyAssign:
+        return "copy_assign";
+    case LifecycleKind::MoveAssign:
+        return "move_assign";
+    case LifecycleKind::Dtor:
+        return "dtor";
+    default:
+        return nullptr;
     }
 }
 
@@ -80,6 +103,10 @@ TraceState& TraceState::instance() {
 }
 
 void TraceState::pushFrame(const std::string& funcName, int line) {
+    pushFrameWithLifecycle(funcName, line, LifecycleKind::None);
+}
+
+void TraceState::pushFrameWithLifecycle(const std::string& funcName, int line, LifecycleKind lifecycle) {
     Frame frame;
     frame.funcName = funcName;
     frame.frameId = nextFrameId();
@@ -92,7 +119,7 @@ void TraceState::pushFrame(const std::string& funcName, int line) {
     }
 
     m_stack.push_back(std::move(frame));
-    emitStep(EventKind::Call, funcName, line);
+    emitStep(EventKind::Call, funcName, line, lifecycle);
 }
 
 void TraceState::popFrame(int line) {
@@ -115,6 +142,9 @@ void TraceState::recordVarInit(const std::string& name, const void* addr,
     Frame* frame = currentFrame();
     if (!frame)
         return;
+
+    // Register this type for metadata output
+    registerType(type);
 
     // Add to ordered names if not already present
     auto it = std::find(frame->orderedLocalNames.begin(),
@@ -168,7 +198,7 @@ Frame* TraceState::currentFrame() {
 }
 
 void TraceState::emitStep(EventKind kind, const std::string& funcName,
-                           int line) {
+                           int line, LifecycleKind lifecycle) {
     // Check event limit (Tier 6 resource limits)
     if (m_eventLimitReached) {
         return;  // Stop recording once limit is reached
@@ -182,13 +212,19 @@ void TraceState::emitStep(EventKind kind, const std::string& funcName,
     step.line = line;
     step.event = kind;
     step.funcName = funcName;
+    step.lifecycle = lifecycle;
 
-    // Re-encode each frame's locals from their current memory contents.
+    // Re-encode the current (top) frame's locals from their current memory contents.
     // Without this, mutations that happen via method calls or
     // CXXOperatorCallExpr (e.g. std::variant::operator=, std::optional::reset)
     // would not show up because the visitor only instruments built-in
     // BinaryOperator / UnaryOperator writes.
-    for (auto& frame : m_stack) {
+    //
+    // NOTE: We only re-encode the top frame. Re-encoding lower frames causes
+    // issues with recursion where stack memory is reused and old addresses
+    // contain garbage values from later calls.
+    if (!m_stack.empty()) {
+        auto& frame = m_stack.back();
         for (auto& [name, var] : frame.locals) {
             if (var.addr && var.type) {
                 var.value = encodeValue(var.addr, var.type);
@@ -252,7 +288,47 @@ void TraceState::emitStep(EventKind kind, const std::string& funcName,
         step.heap[alloc.heap_id] = std::move(obj);
     }
 
+    // Capture current stdout
+    step.stdout_capture = StdoutCapture::getCaptured();
+
+    // Capture stdin input since last step
+    step.stdin_input = StdinCapture::getLastInput();
+    StdinCapture::clearLastInput();
+
+    // Capture return value if pending (for Return events)
+    if (kind == EventKind::Return && m_pendingReturnValue.has_value()) {
+        step.return_value = std::move(m_pendingReturnValue);
+        m_pendingReturnValue.reset();
+    }
+
+    // Copy globals to this step
+    step.globals = m_globals;
+    step.orderedGlobals = m_orderedGlobals;
+
     m_steps.push_back(std::move(step));
+}
+
+void TraceState::recordReturnValue(EncodedValue value) {
+    m_pendingReturnValue = std::move(value);
+}
+
+void TraceState::registerGlobal(const std::string& name, const TypeDescriptor* type,
+                                EncodedValue value) {
+    // Only register each global once
+    if (m_globals.find(name) != m_globals.end())
+        return;
+
+    VarState vs;
+    vs.addr = nullptr;  // Constexpr/globals may not have runtime address
+    vs.type = type;
+    vs.value = std::move(value);
+    m_globals[name] = vs;
+    m_orderedGlobals.push_back(name);
+
+    // Register the type for type_metadata output
+    if (type) {
+        registerType(type);
+    }
 }
 
 MemoryRegion TraceState::classifyAddress(const void* addr) const {
@@ -699,6 +775,50 @@ EncodedValue TraceState::encodeValueAtAddress(const void* addr,
     }
 }
 
+void TraceState::recordGhostDtor(const std::string& typeName, int line) {
+    // Check event limit (Tier 6 resource limits)
+    if (m_eventLimitReached) {
+        return;
+    }
+    if (m_steps.size() >= m_maxEvents - 1) {  // Need room for 2 steps
+        m_eventLimitReached = true;
+        return;
+    }
+
+    // Create a synthetic function name for the destructor
+    std::string ghostFuncName = typeName + "::~" + typeName.substr(typeName.rfind(':') == std::string::npos ? 0 : typeName.rfind(':') + 1);
+
+    // Create a ghost frame
+    Frame ghostFrame;
+    ghostFrame.funcName = ghostFuncName;
+    ghostFrame.frameId = nextFrameId();
+    ghostFrame.isHighlighted = true;
+    ghostFrame.isZombie = false;
+    ghostFrame.isGhostDtor = true;
+
+    // Mark previous top as not highlighted
+    if (!m_stack.empty()) {
+        m_stack.back().isHighlighted = false;
+    }
+
+    // Push ghost frame temporarily
+    m_stack.push_back(ghostFrame);
+
+    // Emit call event with Dtor lifecycle
+    emitStep(EventKind::Call, ghostFuncName, line, LifecycleKind::Dtor);
+
+    // Emit return immediately (ghost frames are ephemeral)
+    emitStep(EventKind::Return, ghostFuncName, line, LifecycleKind::Dtor);
+
+    // Pop the ghost frame
+    m_stack.pop_back();
+
+    // Restore previous frame highlighting
+    if (!m_stack.empty()) {
+        m_stack.back().isHighlighted = true;
+    }
+}
+
 void TraceState::recordThrow(const std::string& funcName, int line) {
     emitStep(EventKind::Throw, funcName, line);
 }
@@ -706,7 +826,22 @@ void TraceState::recordThrow(const std::string& funcName, int line) {
 void TraceState::recordCatch(const std::string& funcName,
                               const std::string& typeName, int line) {
     (void)typeName;  // For now, we just record the event
+
+    // Pop frames that were unwound due to the exception.
+    // Keep popping until we find the catching function.
+    while (!m_stack.empty() && m_stack.back().funcName != funcName) {
+        m_stack.pop_back();
+    }
+
     emitStep(EventKind::Catch, funcName, line);
+}
+
+void TraceState::registerType(const TypeDescriptor* type) {
+    if (!type || !type->spelling) return;
+    std::string key = type->spelling;
+    if (m_encounteredTypes.find(key) == m_encounteredTypes.end()) {
+        m_encounteredTypes[key] = type;
+    }
 }
 
 } // namespace inspector
