@@ -1,0 +1,1270 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 5,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": []
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 7,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "i8": -128
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "i16": -32768,
+            "i8": -128
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "i16": -32768,
+            "i32": -2147483648,
+            "i8": -128
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 13,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "u8": 255
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 14,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "u16": 65535,
+            "u8": 255
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 15,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u8": 255
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "pd": 42,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "pd": 42,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "pd": 42,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 25,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "C",
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "pd": 42,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc",
+            "c"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "C",
+            "f": 3.140000104904175,
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "pd": 42,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc",
+            "c",
+            "f"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 29,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "C",
+            "d": 2.71828,
+            "f": 3.140000104904175,
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "pd": 42,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc",
+            "c",
+            "f",
+            "d"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 30,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "C",
+            "d": 2.71828,
+            "f": 3.140000104904175,
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "ld": 1.41421,
+            "pd": 42,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc",
+            "c",
+            "f",
+            "d",
+            "ld"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 33,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "C",
+            "d": 2.71828,
+            "f": 3.140000104904175,
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "ld": 1.41421,
+            "pd": 42,
+            "s": 100,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc",
+            "c",
+            "f",
+            "d",
+            "ld",
+            "s"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 34,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "C",
+            "d": 2.71828,
+            "f": 3.140000104904175,
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "ld": 1.41421,
+            "pd": 42,
+            "s": 100,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66,
+            "us": 200
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc",
+            "c",
+            "f",
+            "d",
+            "ld",
+            "s",
+            "us"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 0,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "C",
+            "d": 2.71828,
+            "f": 3.140000104904175,
+            "i": 300,
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "ld": 1.41421,
+            "pd": 42,
+            "s": 100,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66,
+            "us": 200
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc",
+            "c",
+            "f",
+            "d",
+            "ld",
+            "s",
+            "us",
+            "i"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 36,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "C",
+            "d": 2.71828,
+            "f": 3.140000104904175,
+            "i": 300,
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "ld": 1.41421,
+            "pd": 42,
+            "s": 100,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66,
+            "ui": 400,
+            "us": 200
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc",
+            "c",
+            "f",
+            "d",
+            "ld",
+            "s",
+            "us",
+            "i",
+            "ui"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 37,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "C",
+            "d": 2.71828,
+            "f": 3.140000104904175,
+            "i": 300,
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "l": 500,
+            "ld": 1.41421,
+            "pd": 42,
+            "s": 100,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66,
+            "ui": 400,
+            "us": 200
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc",
+            "c",
+            "f",
+            "d",
+            "ld",
+            "s",
+            "us",
+            "i",
+            "ui",
+            "l"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 38,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "C",
+            "d": 2.71828,
+            "f": 3.140000104904175,
+            "i": 300,
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "l": 500,
+            "ld": 1.41421,
+            "pd": 42,
+            "s": 100,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66,
+            "ui": 400,
+            "ul": 600,
+            "us": 200
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc",
+            "c",
+            "f",
+            "d",
+            "ld",
+            "s",
+            "us",
+            "i",
+            "ui",
+            "l",
+            "ul"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 39,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "C",
+            "d": 2.71828,
+            "f": 3.140000104904175,
+            "i": 300,
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "l": 500,
+            "ld": 1.41421,
+            "ll": 700,
+            "pd": 42,
+            "s": 100,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66,
+            "ui": 400,
+            "ul": 600,
+            "us": 200
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc",
+            "c",
+            "f",
+            "d",
+            "ld",
+            "s",
+            "us",
+            "i",
+            "ui",
+            "l",
+            "ul",
+            "ll"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 40,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "C",
+            "d": 2.71828,
+            "f": 3.140000104904175,
+            "i": 300,
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "l": 500,
+            "ld": 1.41421,
+            "ll": 700,
+            "pd": 42,
+            "s": 100,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66,
+            "ui": 400,
+            "ul": 600,
+            "ull": 800,
+            "us": 200
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc",
+            "c",
+            "f",
+            "d",
+            "ld",
+            "s",
+            "us",
+            "i",
+            "ui",
+            "l",
+            "ul",
+            "ll",
+            "ull"
+          ]
+        }
+      ],
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "globals": {},
+      "heap": {},
+      "line": 42,
+      "ordered_globals": [],
+      "return_value": 0,
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "C",
+            "d": 2.71828,
+            "f": 3.140000104904175,
+            "i": 300,
+            "i16": -32768,
+            "i32": -2147483648,
+            "i64": -9223372036854775807,
+            "i8": -128,
+            "l": 500,
+            "ld": 1.41421,
+            "ll": 700,
+            "pd": 42,
+            "s": 100,
+            "sc": 65,
+            "sz": 4,
+            "u16": 65535,
+            "u32": 4294967295,
+            "u64": 18446744073709551615,
+            "u8": 255,
+            "uc": 66,
+            "ui": 400,
+            "ul": 600,
+            "ull": 800,
+            "us": 200
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "ordered_varnames": [
+            "i8",
+            "i16",
+            "i32",
+            "i64",
+            "u8",
+            "u16",
+            "u32",
+            "u64",
+            "sz",
+            "pd",
+            "sc",
+            "uc",
+            "c",
+            "f",
+            "d",
+            "ld",
+            "s",
+            "us",
+            "i",
+            "ui",
+            "l",
+            "ul",
+            "ll",
+            "ull"
+          ]
+        }
+      ],
+      "stdout": ""
+    }
+  ],
+  "type_metadata": {
+    "char": {
+      "kind": "char",
+      "name": "char",
+      "sizeof": 1
+    },
+    "double": {
+      "kind": "float",
+      "name": "double",
+      "sizeof": 8
+    },
+    "float": {
+      "kind": "float",
+      "name": "float",
+      "sizeof": 4
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "long": {
+      "kind": "int",
+      "name": "long",
+      "sizeof": 8
+    },
+    "long double": {
+      "kind": "float",
+      "name": "long double",
+      "sizeof": 8
+    },
+    "long long": {
+      "kind": "int",
+      "name": "long long",
+      "sizeof": 8
+    },
+    "short": {
+      "kind": "int",
+      "name": "short",
+      "sizeof": 2
+    },
+    "signed char": {
+      "kind": "int",
+      "name": "signed char",
+      "sizeof": 1
+    },
+    "unsigned char": {
+      "kind": "uint",
+      "name": "unsigned char",
+      "sizeof": 1
+    },
+    "unsigned int": {
+      "kind": "uint",
+      "name": "unsigned int",
+      "sizeof": 4
+    },
+    "unsigned long": {
+      "kind": "uint",
+      "name": "unsigned long",
+      "sizeof": 8
+    },
+    "unsigned long long": {
+      "kind": "uint",
+      "name": "unsigned long long",
+      "sizeof": 8
+    },
+    "unsigned short": {
+      "kind": "uint",
+      "name": "unsigned short",
+      "sizeof": 2
+    }
+  }
+}

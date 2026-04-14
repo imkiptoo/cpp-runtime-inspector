@@ -100,17 +100,28 @@ const char* accessLevelToString(AccessLevel level);
 const char* lookupEnumName(const TypeDescriptor* type, long long value);
 
 //! Built-in type descriptors for common types.
-extern const TypeDescriptor TYPE_INT;
-extern const TypeDescriptor TYPE_UINT;
-extern const TypeDescriptor TYPE_LONG;
-extern const TypeDescriptor TYPE_ULONG;
-extern const TypeDescriptor TYPE_LLONG;
-extern const TypeDescriptor TYPE_ULLONG;
-extern const TypeDescriptor TYPE_FLOAT;
-extern const TypeDescriptor TYPE_DOUBLE;
-extern const TypeDescriptor TYPE_BOOL;
-extern const TypeDescriptor TYPE_CHAR;
-extern const TypeDescriptor TYPE_UCHAR;
+// Signed integers
+extern const TypeDescriptor TYPE_SCHAR;       // signed char (int8_t)
+extern const TypeDescriptor TYPE_SHORT;       // short (int16_t)
+extern const TypeDescriptor TYPE_INT;         // int (int32_t on most platforms)
+extern const TypeDescriptor TYPE_LONG;        // long
+extern const TypeDescriptor TYPE_LLONG;       // long long (int64_t)
+
+// Unsigned integers
+extern const TypeDescriptor TYPE_UCHAR;       // unsigned char (uint8_t)
+extern const TypeDescriptor TYPE_USHORT;      // unsigned short (uint16_t)
+extern const TypeDescriptor TYPE_UINT;        // unsigned int (uint32_t)
+extern const TypeDescriptor TYPE_ULONG;       // unsigned long (size_t on LP64)
+extern const TypeDescriptor TYPE_ULLONG;      // unsigned long long (uint64_t)
+
+// Floating point
+extern const TypeDescriptor TYPE_FLOAT;       // float
+extern const TypeDescriptor TYPE_DOUBLE;      // double
+extern const TypeDescriptor TYPE_LDOUBLE;     // long double
+
+// Other
+extern const TypeDescriptor TYPE_BOOL;        // bool
+extern const TypeDescriptor TYPE_CHAR;        // char (may be signed or unsigned)
 extern const TypeDescriptor TYPE_PTR_CHAR;    // char*
 extern const TypeDescriptor TYPE_PTR_VOID;    // void*
 

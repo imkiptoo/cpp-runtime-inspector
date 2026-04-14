@@ -81,17 +81,29 @@ const char* lookupEnumName(const TypeDescriptor* type, long long value) {
     {TypeKind::Pointer, s, sizeof(void*), nullptr, 0, elem, 0, nullptr, 0, nullptr, 0, false, false, false}
 
 // Built-in type descriptors
+
+// Signed integers
+const TypeDescriptor TYPE_SCHAR = BUILTIN_TYPE(TypeKind::Int, "signed char", sizeof(signed char));
+const TypeDescriptor TYPE_SHORT = BUILTIN_TYPE(TypeKind::Int, "short", sizeof(short));
 const TypeDescriptor TYPE_INT = BUILTIN_TYPE(TypeKind::Int, "int", sizeof(int));
-const TypeDescriptor TYPE_UINT = BUILTIN_TYPE(TypeKind::UInt, "unsigned int", sizeof(unsigned int));
 const TypeDescriptor TYPE_LONG = BUILTIN_TYPE(TypeKind::Int, "long", sizeof(long));
-const TypeDescriptor TYPE_ULONG = BUILTIN_TYPE(TypeKind::UInt, "unsigned long", sizeof(unsigned long));
 const TypeDescriptor TYPE_LLONG = BUILTIN_TYPE(TypeKind::Int, "long long", sizeof(long long));
+
+// Unsigned integers
+const TypeDescriptor TYPE_UCHAR = BUILTIN_TYPE(TypeKind::UInt, "unsigned char", sizeof(unsigned char));
+const TypeDescriptor TYPE_USHORT = BUILTIN_TYPE(TypeKind::UInt, "unsigned short", sizeof(unsigned short));
+const TypeDescriptor TYPE_UINT = BUILTIN_TYPE(TypeKind::UInt, "unsigned int", sizeof(unsigned int));
+const TypeDescriptor TYPE_ULONG = BUILTIN_TYPE(TypeKind::UInt, "unsigned long", sizeof(unsigned long));
 const TypeDescriptor TYPE_ULLONG = BUILTIN_TYPE(TypeKind::UInt, "unsigned long long", sizeof(unsigned long long));
+
+// Floating point
 const TypeDescriptor TYPE_FLOAT = BUILTIN_TYPE(TypeKind::Float, "float", sizeof(float));
 const TypeDescriptor TYPE_DOUBLE = BUILTIN_TYPE(TypeKind::Float, "double", sizeof(double));
+const TypeDescriptor TYPE_LDOUBLE = BUILTIN_TYPE(TypeKind::Float, "long double", sizeof(long double));
+
+// Other
 const TypeDescriptor TYPE_BOOL = BUILTIN_TYPE(TypeKind::Bool, "bool", sizeof(bool));
 const TypeDescriptor TYPE_CHAR = BUILTIN_TYPE(TypeKind::Char, "char", sizeof(char));
-const TypeDescriptor TYPE_UCHAR = BUILTIN_TYPE(TypeKind::Char, "unsigned char", sizeof(unsigned char));
 const TypeDescriptor TYPE_PTR_CHAR = BUILTIN_PTR("char*", &TYPE_CHAR);
 const TypeDescriptor TYPE_PTR_VOID = BUILTIN_PTR("void*", nullptr);
 

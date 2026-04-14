@@ -34,8 +34,23 @@ TypeKind TypeEncoder::getTypeKind(clang::QualType type) const {
     if (type->isBooleanType())
         return TypeKind::Bool;
 
-    if (type->isCharType())
-        return TypeKind::Char;
+    // Distinguish between plain char (Char) and signed char/unsigned char (Int/UInt).
+    // signed char (SChar) and unsigned char (UChar) are commonly used as small integers
+    // (int8_t, uint8_t), so they should be classified as integer types.
+    // Only plain char (Char_S or Char_U) should be TypeKind::Char.
+    if (const auto* builtin = type->getAs<clang::BuiltinType>()) {
+        switch (builtin->getKind()) {
+        case clang::BuiltinType::Char_S:
+        case clang::BuiltinType::Char_U:
+            return TypeKind::Char;
+        case clang::BuiltinType::SChar:
+            return TypeKind::Int;
+        case clang::BuiltinType::UChar:
+            return TypeKind::UInt;
+        default:
+            break;
+        }
+    }
 
     if (type->isFloatingType())
         return TypeKind::Float;
@@ -442,30 +457,45 @@ std::string TypeEncoder::getDescriptorRef(clang::QualType type) const {
     if (type->isBuiltinType()) {
         const auto* builtin = type->getAs<clang::BuiltinType>();
         switch (builtin->getKind()) {
+        // Signed integers
+        case clang::BuiltinType::SChar:
+            return "&inspector::TYPE_SCHAR";
+        case clang::BuiltinType::Short:
+            return "&inspector::TYPE_SHORT";
         case clang::BuiltinType::Int:
             return "&inspector::TYPE_INT";
-        case clang::BuiltinType::UInt:
-            return "&inspector::TYPE_UINT";
         case clang::BuiltinType::Long:
             return "&inspector::TYPE_LONG";
-        case clang::BuiltinType::ULong:
-            return "&inspector::TYPE_ULONG";
         case clang::BuiltinType::LongLong:
             return "&inspector::TYPE_LLONG";
+
+        // Unsigned integers
+        case clang::BuiltinType::UChar:
+            return "&inspector::TYPE_UCHAR";
+        case clang::BuiltinType::UShort:
+            return "&inspector::TYPE_USHORT";
+        case clang::BuiltinType::UInt:
+            return "&inspector::TYPE_UINT";
+        case clang::BuiltinType::ULong:
+            return "&inspector::TYPE_ULONG";
         case clang::BuiltinType::ULongLong:
             return "&inspector::TYPE_ULLONG";
+
+        // Floating point
         case clang::BuiltinType::Float:
             return "&inspector::TYPE_FLOAT";
         case clang::BuiltinType::Double:
             return "&inspector::TYPE_DOUBLE";
+        case clang::BuiltinType::LongDouble:
+            return "&inspector::TYPE_LDOUBLE";
+
+        // Other
         case clang::BuiltinType::Bool:
             return "&inspector::TYPE_BOOL";
         case clang::BuiltinType::Char_S:
         case clang::BuiltinType::Char_U:
-        case clang::BuiltinType::SChar:
             return "&inspector::TYPE_CHAR";
-        case clang::BuiltinType::UChar:
-            return "&inspector::TYPE_UCHAR";
+
         default:
             break;
         }
