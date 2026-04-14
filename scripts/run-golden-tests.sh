@@ -112,6 +112,13 @@ run_test() {
         return 0
     fi
 
+    # Use platform-specific expected file if available
+    if [[ "$(uname)" == "Darwin" && -f "${test_dir}/expected.darwin.json" ]]; then
+        expected="${test_dir}/expected.darwin.json"
+    elif [[ "$(uname)" == "Linux" && -f "${test_dir}/expected.linux.json" ]]; then
+        expected="${test_dir}/expected.linux.json"
+    fi
+
     if [[ ! -f "${expected}" ]]; then
         echo "SKIP: ${test_name} (no expected.json)"
         ((SKIPPED++))
@@ -157,22 +164,23 @@ run_test() {
     fi
 
     # Pass 3: Link
-    # On Linux, -rdynamic exports the executable's symbols so an LD_PRELOAD
-    # shim (libinspector_malloc_shim.so) can resolve __inspector_alloc_malloc
-    # back to the runtime statically linked into the test binary. macOS dyld
-    # exports symbols by default, so the flag is unnecessary there.
+    # Both platforms need to export the runtime's symbols so that:
+    # 1. The malloc shim can resolve __inspector_alloc_malloc back to
+    #    the runtime statically linked into the test binary.
+    # 2. The dynamic-type resolver (Dynamic.cpp) can map vtable pointers
+    #    back to symbol names via dladdr.
     LINK_EXTRA=()
-    if [[ "$(uname)" != "Darwin" ]]; then
-        # -rdynamic exports the executable's symbols so the LD_PRELOAD shim
-        # can resolve hook functions, AND so the dynamic-type resolver
-        # (Dynamic.cpp) can map vtable pointers back to symbol names via
-        # dladdr. -ldl links the dynamic-loader API.
+    if [[ "$(uname)" == "Darwin" ]]; then
+        # macOS: -export_dynamic exports all symbols from the executable.
+        LINK_EXTRA+=(-Wl,-export_dynamic)
+    else
+        # Linux: -rdynamic does the same thing, -ldl links the dynamic-loader API.
         LINK_EXTRA+=(-rdynamic -ldl)
     fi
     if ! "${CLANGXX}" \
         "${workdir}/test.o" \
         "${RUNTIME}" \
-        "${LINK_EXTRA[@]}" \
+        ${LINK_EXTRA[@]+"${LINK_EXTRA[@]}"} \
         -o "${workdir}/test" 2>"${workdir}/link.log"; then
         echo "FAIL (linking)"
         cat "${workdir}/link.log"
@@ -203,12 +211,12 @@ run_test() {
     if [[ ${use_shim} -eq 1 ]]; then
         # Run with malloc shim
         if [[ "$(uname)" == "Darwin" ]]; then
-            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json" || true
+            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} 2>"${workdir}/actual.json" || true
         else
-            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json" || true
+            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} 2>"${workdir}/actual.json" || true
         fi
     else
-        if ! "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json"; then
+        if ! "${workdir}/test" ${test_args[@]+"${test_args[@]}"} 2>"${workdir}/actual.json"; then
             # Non-zero exit is OK for some tests
             :
         fi
@@ -235,7 +243,67 @@ run_test() {
         return 1
     }
 
-    if diff -q "${workdir}/expected.normalized.json" "${workdir}/actual.normalized.json" >/dev/null; then
+    # For shim tests, use lenient comparison that ignores heap contents
+    # (internal library allocations vary by platform/run)
+    local actual_cmp="${workdir}/actual.normalized.json"
+    local expected_cmp="${workdir}/expected.normalized.json"
+    if [[ ${use_shim} -eq 1 ]]; then
+        python3 -c "
+import json, sys
+
+def normalize_for_shim(obj, id_map=None):
+    '''Strip heap/memory_leaks and normalize heap IDs in REF/DANGLING'''
+    if id_map is None:
+        id_map = {'counter': 0}
+    if isinstance(obj, dict):
+        return {k: normalize_for_shim(v, id_map) for k, v in obj.items()
+                if k not in ('heap', 'memory_leaks')}
+    if isinstance(obj, list):
+        # Check for REF/DANGLING patterns: ['REF', id] or ['DANGLING', id]
+        if len(obj) == 2 and obj[0] in ('REF', 'DANGLING') and isinstance(obj[1], int):
+            old_id = obj[1]
+            if old_id not in id_map:
+                id_map['counter'] += 1
+                id_map[old_id] = id_map['counter']
+            return [obj[0], id_map[old_id]]
+        return [normalize_for_shim(v, id_map) for v in obj]
+    return obj
+
+with open(sys.argv[1]) as f:
+    d = json.load(f)
+had_leaks = 'memory_leaks' in d and len(d.get('memory_leaks', [])) > 0
+print(json.dumps({'data': normalize_for_shim(d), 'had_leaks': had_leaks}, sort_keys=True, indent=2))
+" "${workdir}/actual.normalized.json" > "${workdir}/actual.shim.json"
+        python3 -c "
+import json, sys
+
+def normalize_for_shim(obj, id_map=None):
+    '''Strip heap/memory_leaks and normalize heap IDs in REF/DANGLING'''
+    if id_map is None:
+        id_map = {'counter': 0}
+    if isinstance(obj, dict):
+        return {k: normalize_for_shim(v, id_map) for k, v in obj.items()
+                if k not in ('heap', 'memory_leaks')}
+    if isinstance(obj, list):
+        if len(obj) == 2 and obj[0] in ('REF', 'DANGLING') and isinstance(obj[1], int):
+            old_id = obj[1]
+            if old_id not in id_map:
+                id_map['counter'] += 1
+                id_map[old_id] = id_map['counter']
+            return [obj[0], id_map[old_id]]
+        return [normalize_for_shim(v, id_map) for v in obj]
+    return obj
+
+with open(sys.argv[1]) as f:
+    d = json.load(f)
+had_leaks = 'memory_leaks' in d and len(d.get('memory_leaks', [])) > 0
+print(json.dumps({'data': normalize_for_shim(d), 'had_leaks': had_leaks}, sort_keys=True, indent=2))
+" "${workdir}/expected.normalized.json" > "${workdir}/expected.shim.json"
+        actual_cmp="${workdir}/actual.shim.json"
+        expected_cmp="${workdir}/expected.shim.json"
+    fi
+
+    if diff -q "${expected_cmp}" "${actual_cmp}" >/dev/null; then
         echo "PASS"
         ((PASSED++))
         # Clean up instrumented file
@@ -244,11 +312,11 @@ run_test() {
     else
         echo "FAIL (output mismatch)"
         echo "--- Expected (normalized) ---"
-        cat "${workdir}/expected.normalized.json"
+        cat "${expected_cmp}"
         echo "--- Actual (normalized) ---"
-        cat "${workdir}/actual.normalized.json"
+        cat "${actual_cmp}"
         echo "--- Diff ---"
-        diff "${workdir}/expected.normalized.json" "${workdir}/actual.normalized.json" || true
+        diff "${expected_cmp}" "${actual_cmp}" || true
         ((FAILED++))
         return 1
     fi

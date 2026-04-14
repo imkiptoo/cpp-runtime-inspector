@@ -50,6 +50,13 @@ update_test() {
     local input="${test_dir}/input.cpp"
     local expected="${test_dir}/expected.json"
 
+    # Use platform-specific expected file if it exists
+    if [[ "$(uname)" == "Darwin" && -f "${test_dir}/expected.darwin.json" ]]; then
+        expected="${test_dir}/expected.darwin.json"
+    elif [[ "$(uname)" == "Linux" && -f "${test_dir}/expected.linux.json" ]]; then
+        expected="${test_dir}/expected.linux.json"
+    fi
+
     if [[ ! -f "${input}" ]]; then
         echo "SKIP: ${test_name} (no input.cpp)"
         ((SKIPPED++))
@@ -96,15 +103,17 @@ update_test() {
     fi
 
     # Pass 3: Link
-    # See run-golden-tests.sh for the rationale behind -rdynamic on Linux.
+    # See run-golden-tests.sh for the rationale behind export flags.
     LINK_EXTRA=()
-    if [[ "$(uname)" != "Darwin" ]]; then
+    if [[ "$(uname)" == "Darwin" ]]; then
+        LINK_EXTRA+=(-Wl,-export_dynamic)
+    else
         LINK_EXTRA+=(-rdynamic -ldl)
     fi
     if ! "${CLANGXX}" \
         "${workdir}/test.o" \
         "${RUNTIME}" \
-        "${LINK_EXTRA[@]}" \
+        ${LINK_EXTRA[@]+"${LINK_EXTRA[@]}"} \
         -o "${workdir}/test" 2>"${workdir}/link.log"; then
         echo "FAIL (linking)"
         cat "${workdir}/link.log"
@@ -133,12 +142,12 @@ update_test() {
 
     if [[ ${use_shim} -eq 1 ]]; then
         if [[ "$(uname)" == "Darwin" ]]; then
-            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json" || true
+            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} 2>"${workdir}/actual.json" || true
         else
-            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json" || true
+            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} 2>"${workdir}/actual.json" || true
         fi
     else
-        "${workdir}/test" "${test_args[@]}" 2>"${workdir}/actual.json" || true
+        "${workdir}/test" ${test_args[@]+"${test_args[@]}"} 2>"${workdir}/actual.json" || true
     fi
 
     # Check if output is valid JSON
