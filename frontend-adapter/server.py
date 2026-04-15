@@ -23,6 +23,7 @@ import argparse
 import json
 import logging
 import os
+import platform
 import subprocess
 import tempfile
 import shutil
@@ -36,6 +37,9 @@ DEFAULT_HOST = "0.0.0.0"
 TIMEOUT = int(os.environ.get("TIMEOUT", 10))
 MAX_SOURCE_SIZE = int(os.environ.get("MAX_SOURCE_SIZE", 1024 * 1024))  # 1MB
 
+# Platform-specific plugin extension
+PLUGIN_EXT = ".dylib" if platform.system() == "Darwin" else ".so"
+
 # Paths - can be overridden via environment
 INSPECTOR_ROOT = Path(os.environ.get(
     "INSPECTOR_ROOT",
@@ -43,7 +47,7 @@ INSPECTOR_ROOT = Path(os.environ.get(
 ))
 PLUGIN_PATH = Path(os.environ.get(
     "INSPECTOR_PLUGIN",
-    INSPECTOR_ROOT / "cmake-build-debug" / "libInspectorPlugin.so"
+    INSPECTOR_ROOT / "cmake-build-debug" / f"libInspectorPlugin{PLUGIN_EXT}"
 ))
 RUNTIME_PATH = Path(os.environ.get(
     "INSPECTOR_RUNTIME",
@@ -53,6 +57,12 @@ INCLUDE_PATH = Path(os.environ.get(
     "INSPECTOR_INCLUDE",
     INSPECTOR_ROOT / "runtime"
 ))
+
+# Use Homebrew LLVM clang++ on macOS (plugin requires matching LLVM version)
+if platform.system() == "Darwin":
+    CLANGXX = os.environ.get("CLANGXX", "/opt/homebrew/opt/llvm/bin/clang++")
+else:
+    CLANGXX = os.environ.get("CLANGXX", "clang++")
 
 logging.basicConfig(
     level=logging.INFO,
@@ -105,7 +115,7 @@ def instrument_and_run(source_code: str) -> str:
         logger.info("Instrumenting source...")
         result = subprocess.run(
             [
-                "clang++", "-std=c++17", "-fsyntax-only",
+                CLANGXX, "-std=c++17", "-fsyntax-only",
                 f"-fplugin={PLUGIN_PATH}",
                 f"-I{INCLUDE_PATH}",
                 str(input_file)
@@ -131,7 +141,7 @@ def instrument_and_run(source_code: str) -> str:
         logger.info("Compiling instrumented code...")
         result = subprocess.run(
             [
-                "clang++", "-std=c++17", "-O0", "-g",
+                CLANGXX, "-std=c++17", "-O0", "-g",
                 f"-I{INCLUDE_PATH}",
                 str(instrumented_file),
                 str(RUNTIME_PATH),
