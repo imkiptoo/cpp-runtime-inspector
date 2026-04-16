@@ -4,8 +4,11 @@
     {
       "event": "call",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 4,
       "ordered_globals": [],
       "stack_to_render": [
@@ -15,16 +18,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 5,
       "ordered_globals": [],
       "stack_to_render": [
@@ -71,18 +80,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "arr": 48
+          },
           "ordered_varnames": [
             "arr"
-          ]
+          ],
+          "stack_size_bytes": 48
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
@@ -129,18 +146,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "arr": 48
+          },
           "ordered_varnames": [
             "arr"
-          ]
+          ],
+          "stack_size_bytes": 48
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 8,
       "ordered_globals": [],
       "stack_to_render": [
@@ -187,18 +212,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "arr": 48
+          },
           "ordered_varnames": [
             "arr"
-          ]
+          ],
+          "stack_size_bytes": 48
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 8,
       "ordered_globals": [],
       "stack_to_render": [
@@ -247,20 +280,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "arr": 48,
+            "i": 4,
+            "j": 4
+          },
           "ordered_varnames": [
             "arr",
             "j",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 56
         }
       ],
+      "stack_total_bytes": 56,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 8,
       "ordered_globals": [],
       "stack_to_render": [
@@ -309,20 +352,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "arr": 48,
+            "i": 4,
+            "j": 4
+          },
           "ordered_varnames": [
             "arr",
             "j",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 56
         }
       ],
+      "stack_total_bytes": 56,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -372,21 +425,32 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "arr": 48,
+            "i": 4,
+            "j": 4,
+            "val": 4
+          },
           "ordered_varnames": [
             "arr",
             "j",
             "i",
             "val"
-          ]
+          ],
+          "stack_size_bytes": 60
         }
       ],
+      "stack_total_bytes": 60,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 14,
       "ordered_globals": [],
       "return_value": 0,
@@ -437,14 +501,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "arr": 48,
+            "i": 4,
+            "j": 4,
+            "val": 4
+          },
           "ordered_varnames": [
             "arr",
             "j",
             "i",
             "val"
-          ]
+          ],
+          "stack_size_bytes": 60
         }
       ],
+      "stack_total_bytes": 60,
       "stdout": ""
     }
   ],

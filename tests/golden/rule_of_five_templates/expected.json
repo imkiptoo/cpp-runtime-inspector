@@ -4,8 +4,11 @@
     {
       "event": "call",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 112,
       "ordered_globals": [],
       "stack_to_render": [
@@ -15,16 +18,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 15,
       "ordered_globals": [],
@@ -35,7 +44,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -43,16 +54,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 17,
       "ordered_globals": [],
       "stack_to_render": [
@@ -62,7 +79,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -70,16 +89,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 114,
       "ordered_globals": [],
       "stack_to_render": [
@@ -97,18 +122,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "bi1": 4
+          },
           "ordered_varnames": [
             "bi1"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 19,
       "ordered_globals": [],
       "stack_to_render": [
@@ -126,18 +159,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "bi1": 4
+          },
           "ordered_varnames": [
             "bi1"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 19,
       "ordered_globals": [],
       "stack_to_render": [
@@ -147,16 +188,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 115,
       "ordered_globals": [],
       "stack_to_render": [
@@ -174,18 +221,26 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "bi2": 4
+          },
           "ordered_varnames": [
             "bi2"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_ctor",
       "line": 21,
       "ordered_globals": [],
@@ -204,9 +259,13 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bi2": 4
+          },
           "ordered_varnames": [
             "bi2"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -214,16 +273,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -241,9 +306,13 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bi2": 4
+          },
           "ordered_varnames": [
             "bi2"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -251,16 +320,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 23,
       "ordered_globals": [],
       "stack_to_render": [
@@ -278,9 +353,13 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bi2": 4
+          },
           "ordered_varnames": [
             "bi2"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -288,16 +367,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 116,
       "ordered_globals": [],
       "stack_to_render": [
@@ -322,19 +407,28 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "bi2": 4,
+            "bi3": 4
+          },
           "ordered_varnames": [
             "bi2",
             "bi3"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "move_ctor",
       "line": 25,
       "ordered_globals": [],
@@ -360,10 +454,15 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bi2": 4,
+            "bi3": 4
+          },
           "ordered_varnames": [
             "bi2",
             "bi3"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -371,16 +470,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 26,
       "ordered_globals": [],
       "stack_to_render": [
@@ -405,10 +510,15 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bi2": 4,
+            "bi3": 4
+          },
           "ordered_varnames": [
             "bi2",
             "bi3"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -416,16 +526,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 27,
       "ordered_globals": [],
       "stack_to_render": [
@@ -450,10 +566,15 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bi2": 4,
+            "bi3": 4
+          },
           "ordered_varnames": [
             "bi2",
             "bi3"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -461,16 +582,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 117,
       "ordered_globals": [],
       "stack_to_render": [
@@ -502,20 +629,30 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "bi2": 4,
+            "bi3": 4,
+            "bi4": 4
+          },
           "ordered_varnames": [
             "bi2",
             "bi3",
             "bi4"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 15,
       "ordered_globals": [],
@@ -548,11 +685,17 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bi2": 4,
+            "bi3": 4,
+            "bi4": 4
+          },
           "ordered_varnames": [
             "bi2",
             "bi3",
             "bi4"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -560,16 +703,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 17,
       "ordered_globals": [],
       "stack_to_render": [
@@ -601,11 +750,17 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bi2": 4,
+            "bi3": 4,
+            "bi4": 4
+          },
           "ordered_varnames": [
             "bi2",
             "bi3",
             "bi4"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -613,16 +768,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 120,
       "ordered_globals": [],
       "stack_to_render": [
@@ -661,21 +822,32 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "bd1": 8,
+            "bi2": 4,
+            "bi3": 4,
+            "bi4": 4
+          },
           "ordered_varnames": [
             "bi2",
             "bi3",
             "bi4",
             "bd1"
-          ]
+          ],
+          "stack_size_bytes": 20
         }
       ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 19,
       "ordered_globals": [],
       "stack_to_render": [
@@ -714,21 +886,32 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "bd1": 8,
+            "bi2": 4,
+            "bi3": 4,
+            "bi4": 4
+          },
           "ordered_varnames": [
             "bi2",
             "bi3",
             "bi4",
             "bd1"
-          ]
+          ],
+          "stack_size_bytes": 20
         }
       ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 19,
       "ordered_globals": [],
       "stack_to_render": [
@@ -738,16 +921,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 121,
       "ordered_globals": [],
       "stack_to_render": [
@@ -765,18 +954,26 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8
+          },
           "ordered_varnames": [
             "bd2"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_assign",
       "line": 29,
       "ordered_globals": [],
@@ -795,9 +992,13 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8
+          },
           "ordered_varnames": [
             "bd2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -805,16 +1006,22 @@
           "func_name": "Box::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Box::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 30,
       "ordered_globals": [],
       "stack_to_render": [
@@ -832,9 +1039,13 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8
+          },
           "ordered_varnames": [
             "bd2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -842,16 +1053,22 @@
           "func_name": "Box::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 31,
       "ordered_globals": [],
       "stack_to_render": [
@@ -869,9 +1086,13 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8
+          },
           "ordered_varnames": [
             "bd2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -879,16 +1100,22 @@
           "func_name": "Box::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Inner::Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 76,
       "ordered_globals": [],
@@ -907,9 +1134,13 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8
+          },
           "ordered_varnames": [
             "bd2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -917,16 +1148,22 @@
           "func_name": "Inner::Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Inner::Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 76,
       "ordered_globals": [],
       "stack_to_render": [
@@ -944,9 +1181,13 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8
+          },
           "ordered_varnames": [
             "bd2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -954,16 +1195,22 @@
           "func_name": "Inner::Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Inner::Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 76,
       "ordered_globals": [],
       "stack_to_render": [
@@ -981,9 +1228,13 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8
+          },
           "ordered_varnames": [
             "bd2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -991,16 +1242,22 @@
           "func_name": "Inner::Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 15,
       "ordered_globals": [],
@@ -1019,9 +1276,13 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8
+          },
           "ordered_varnames": [
             "bd2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -1029,16 +1290,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 17,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1056,9 +1323,13 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8
+          },
           "ordered_varnames": [
             "bd2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -1066,16 +1337,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 125,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1106,19 +1383,28 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8,
+            "bin1": 4
+          },
           "ordered_varnames": [
             "bd2",
             "bin1"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Inner::Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 76,
       "ordered_globals": [],
@@ -1150,10 +1436,15 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8,
+            "bin1": 4
+          },
           "ordered_varnames": [
             "bd2",
             "bin1"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -1161,16 +1452,22 @@
           "func_name": "Inner::Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Inner::Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 76,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1201,10 +1498,15 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8,
+            "bin1": 4
+          },
           "ordered_varnames": [
             "bd2",
             "bin1"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -1212,16 +1514,22 @@
           "func_name": "Inner::Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Inner::Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 76,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1252,10 +1560,15 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8,
+            "bin1": 4
+          },
           "ordered_varnames": [
             "bd2",
             "bin1"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -1263,16 +1576,22 @@
           "func_name": "Inner::Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 15,
       "ordered_globals": [],
@@ -1304,10 +1623,15 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8,
+            "bin1": 4
+          },
           "ordered_varnames": [
             "bd2",
             "bin1"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -1315,16 +1639,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 17,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1355,10 +1685,15 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8,
+            "bin1": 4
+          },
           "ordered_varnames": [
             "bd2",
             "bin1"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -1366,16 +1701,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 126,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1419,20 +1760,30 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8,
+            "bin1": 4,
+            "bin2": 4
+          },
           "ordered_varnames": [
             "bd2",
             "bin1",
             "bin2"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 77,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1476,20 +1827,30 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8,
+            "bin1": 4,
+            "bin2": 4
+          },
           "ordered_varnames": [
             "bd2",
             "bin1",
             "bin2"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Inner::Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 77,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1499,16 +1860,22 @@
           "func_name": "Inner::Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Inner::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "move_assign",
       "line": 81,
       "ordered_globals": [],
@@ -1519,7 +1886,9 @@
           "func_name": "Inner::Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -1527,16 +1896,22 @@
           "func_name": "Inner::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Inner::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 81,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1546,7 +1921,9 @@
           "func_name": "Inner::Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {
@@ -1561,18 +1938,26 @@
           "func_name": "Inner::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Inner::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 81,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1582,7 +1967,9 @@
           "func_name": "Inner::Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {
@@ -1597,18 +1984,26 @@
           "func_name": "Inner::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Inner::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 81,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1618,7 +2013,9 @@
           "func_name": "Inner::Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {
@@ -1633,18 +2030,26 @@
           "func_name": "Inner::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Inner::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 81,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1654,7 +2059,9 @@
           "func_name": "Inner::Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {
@@ -1669,18 +2076,26 @@
           "func_name": "Inner::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Inner::~Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 127,
       "ordered_globals": [],
@@ -1691,7 +2106,9 @@
           "func_name": "Inner::Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -1700,16 +2117,22 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Inner::~Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 127,
       "ordered_globals": [],
@@ -1720,7 +2143,9 @@
           "func_name": "Inner::Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -1729,16 +2154,22 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Inner::Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 82,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1748,16 +2179,22 @@
           "func_name": "Inner::Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Inner::~Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 82,
       "ordered_globals": [],
@@ -1768,16 +2205,22 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Inner::Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 76,
       "ordered_globals": [],
@@ -1788,7 +2231,9 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -1796,16 +2241,22 @@
           "func_name": "Inner::Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Inner::Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 76,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1815,7 +2266,9 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -1823,16 +2276,22 @@
           "func_name": "Inner::Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Inner::Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 76,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1842,7 +2301,9 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -1850,16 +2311,22 @@
           "func_name": "Inner::Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_ctor",
       "line": 21,
       "ordered_globals": [],
@@ -1870,7 +2337,9 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -1878,16 +2347,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Inner::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_assign",
       "line": 80,
       "ordered_globals": [],
@@ -1898,7 +2373,9 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -1906,7 +2383,9 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -1914,16 +2393,22 @@
           "func_name": "Inner::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Inner::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 80,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1933,7 +2418,9 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -1941,7 +2428,9 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {
@@ -1956,18 +2445,26 @@
           "func_name": "Inner::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Inner::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 80,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1977,7 +2474,9 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -1985,7 +2484,9 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {
@@ -2000,18 +2501,26 @@
           "func_name": "Inner::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Inner::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 80,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2021,7 +2530,9 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -2029,7 +2540,9 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {
@@ -2044,18 +2557,26 @@
           "func_name": "Inner::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2065,7 +2586,9 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -2073,16 +2596,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 23,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2092,7 +2621,9 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -2100,16 +2631,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Inner::~Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 128,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2133,18 +2670,26 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "bin3": 4
+          },
           "ordered_varnames": [
             "bin3"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Inner::~Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 48,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2168,18 +2713,26 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "bin3": 4
+          },
           "ordered_varnames": [
             "bin3"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 48,
       "ordered_globals": [],
@@ -2190,16 +2743,22 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 131,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2218,18 +2777,26 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "p1": 16
+          },
           "ordered_varnames": [
             "p1"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 50,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2248,18 +2815,26 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "p1": 16
+          },
           "ordered_varnames": [
             "p1"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 50,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2269,16 +2844,22 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 132,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2297,18 +2878,26 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "p2": 16
+          },
           "ordered_varnames": [
             "p2"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 52,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2327,18 +2916,26 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "p2": 16
+          },
           "ordered_varnames": [
             "p2"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_ctor",
       "line": 52,
       "ordered_globals": [],
@@ -2349,16 +2946,22 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 133,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2377,18 +2980,26 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "p3": 16
+          },
           "ordered_varnames": [
             "p3"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_assign",
       "line": 57,
       "ordered_globals": [],
@@ -2408,9 +3019,13 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "p3": 16
+          },
           "ordered_varnames": [
             "p3"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -2418,16 +3033,22 @@
           "func_name": "Pair::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 58,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2446,9 +3067,13 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "p3": 16
+          },
           "ordered_varnames": [
             "p3"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -2456,16 +3081,22 @@
           "func_name": "Pair::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 59,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2484,9 +3115,13 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "p3": 16
+          },
           "ordered_varnames": [
             "p3"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -2494,16 +3129,22 @@
           "func_name": "Pair::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 60,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2522,9 +3163,13 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "p3": 16
+          },
           "ordered_varnames": [
             "p3"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -2532,16 +3177,22 @@
           "func_name": "Pair::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 48,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2560,18 +3211,26 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "p3": 16
+          },
           "ordered_varnames": [
             "p3"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 48,
       "ordered_globals": [],
@@ -2582,16 +3241,22 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 15,
       "ordered_globals": [],
@@ -2602,7 +3267,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -2610,16 +3277,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 17,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2629,7 +3302,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -2637,16 +3312,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 137,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2671,18 +3352,26 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "nested1": 8
+          },
           "ordered_varnames": [
             "nested1"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 50,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2707,18 +3396,26 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "nested1": 8
+          },
           "ordered_varnames": [
             "nested1"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 50,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2728,16 +3425,22 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "move_assign",
       "line": 63,
       "ordered_globals": [],
@@ -2748,7 +3451,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -2756,16 +3461,22 @@
           "func_name": "Pair::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 64,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2775,7 +3486,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -2783,16 +3496,22 @@
           "func_name": "Pair::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 65,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2802,7 +3521,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -2810,16 +3531,22 @@
           "func_name": "Pair::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 66,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2829,7 +3556,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -2837,16 +3566,22 @@
           "func_name": "Pair::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair<int, int>::~Pair<int, int>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 138,
       "ordered_globals": [],
@@ -2857,7 +3592,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -2866,16 +3603,22 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair<int, int>::~Pair<int, int>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 138,
       "ordered_globals": [],
@@ -2886,7 +3629,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -2895,16 +3640,22 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 69,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2914,16 +3665,22 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::~Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 69,
       "ordered_globals": [],
@@ -2934,16 +3691,22 @@
           "func_name": "Pair::~Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::~Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 48,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2953,16 +3716,22 @@
           "func_name": "Pair::~Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 48,
       "ordered_globals": [],
@@ -2973,16 +3742,22 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_ctor",
       "line": 21,
       "ordered_globals": [],
@@ -2993,7 +3768,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -3001,16 +3778,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_assign",
       "line": 57,
       "ordered_globals": [],
@@ -3021,7 +3804,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -3029,7 +3814,9 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -3037,16 +3824,22 @@
           "func_name": "Pair::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 58,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3056,7 +3849,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -3064,7 +3859,9 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -3072,16 +3869,22 @@
           "func_name": "Pair::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 59,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3091,7 +3894,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -3099,7 +3904,9 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -3107,16 +3914,22 @@
           "func_name": "Pair::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 60,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3126,7 +3939,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -3134,7 +3949,9 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -3142,16 +3959,22 @@
           "func_name": "Pair::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3161,7 +3984,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -3169,16 +3994,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 23,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3188,7 +4019,9 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -3196,16 +4029,22 @@
           "func_name": "Box::Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 139,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3230,18 +4069,26 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "CRTPBase::CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 90,
       "ordered_globals": [],
@@ -3267,9 +4114,13 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -3277,16 +4128,22 @@
           "func_name": "CRTPBase::CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "CRTPBase::CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 90,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3311,9 +4168,13 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -3321,16 +4182,22 @@
           "func_name": "CRTPBase::CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "CRTPBase::CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 90,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3355,9 +4222,13 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -3365,16 +4236,22 @@
           "func_name": "CRTPBase::CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "CRTPDerived::CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 101,
       "ordered_globals": [],
@@ -3400,9 +4277,13 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -3410,16 +4291,22 @@
           "func_name": "CRTPDerived::CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "CRTPDerived::CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 101,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3444,9 +4331,13 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -3454,16 +4345,22 @@
           "func_name": "CRTPDerived::CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "CRTPDerived::CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 101,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3488,9 +4385,13 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -3498,16 +4399,22 @@
           "func_name": "CRTPDerived::CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 142,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3540,19 +4447,28 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "CRTPBase::CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_ctor",
       "line": 91,
       "ordered_globals": [],
@@ -3586,10 +4502,15 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -3597,16 +4518,22 @@
           "func_name": "CRTPBase::CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "CRTPBase::CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 91,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3639,10 +4566,15 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -3650,16 +4582,22 @@
           "func_name": "CRTPBase::CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "CRTPBase::CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 91,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3692,10 +4630,15 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -3703,16 +4646,22 @@
           "func_name": "CRTPBase::CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "CRTPDerived::CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_ctor",
       "line": 102,
       "ordered_globals": [],
@@ -3746,10 +4695,15 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -3757,16 +4711,22 @@
           "func_name": "CRTPDerived::CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "CRTPDerived::CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 103,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3799,10 +4759,15 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -3810,16 +4775,22 @@
           "func_name": "CRTPDerived::CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "CRTPDerived::CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 104,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3852,10 +4823,15 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -3863,16 +4839,22 @@
           "func_name": "CRTPDerived::CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 143,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3913,20 +4895,30 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "cd2": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1",
             "cd2"
-          ]
+          ],
+          "stack_size_bytes": 24
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "CRTPBase::CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "move_ctor",
       "line": 92,
       "ordered_globals": [],
@@ -3968,11 +4960,17 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "cd2": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1",
             "cd2"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -3980,16 +4978,22 @@
           "func_name": "CRTPBase::CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "CRTPBase::CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 92,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4030,11 +5034,17 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "cd2": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1",
             "cd2"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -4042,16 +5052,22 @@
           "func_name": "CRTPBase::CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "CRTPBase::CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 92,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4092,11 +5108,17 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "cd2": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1",
             "cd2"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -4104,16 +5126,22 @@
           "func_name": "CRTPBase::CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "CRTPBase::CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 92,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4154,11 +5182,17 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "cd2": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1",
             "cd2"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -4166,16 +5200,22 @@
           "func_name": "CRTPBase::CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "CRTPDerived::CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "move_ctor",
       "line": 105,
       "ordered_globals": [],
@@ -4217,11 +5257,17 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "cd2": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1",
             "cd2"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -4229,16 +5275,22 @@
           "func_name": "CRTPDerived::CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "CRTPDerived::CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 106,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4279,11 +5331,17 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "cd2": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1",
             "cd2"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -4291,16 +5349,22 @@
           "func_name": "CRTPDerived::CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "CRTPDerived::CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 107,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4341,11 +5405,17 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "cd2": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1",
             "cd2"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -4353,16 +5423,22 @@
           "func_name": "CRTPDerived::CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "CRTPDerived::CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 108,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4403,11 +5479,17 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "cd2": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1",
             "cd2"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -4415,16 +5497,22 @@
           "func_name": "CRTPDerived::CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 144,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4473,21 +5561,32 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "cd2": 8,
+            "cd3": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1",
             "cd2",
             "cd3"
-          ]
+          ],
+          "stack_size_bytes": 32
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 146,
       "ordered_globals": [],
       "return_value": 0,
@@ -4537,21 +5636,32 @@
           "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "cd1": 8,
+            "cd2": 8,
+            "cd3": 8,
+            "nested2": 8
+          },
           "ordered_varnames": [
             "nested2",
             "cd1",
             "cd2",
             "cd3"
-          ]
+          ],
+          "stack_size_bytes": 32
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "CRTPDerived::~CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 109,
       "ordered_globals": [],
@@ -4562,16 +5672,22 @@
           "func_name": "CRTPDerived::~CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "CRTPDerived::~CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 93,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4581,16 +5697,22 @@
           "func_name": "CRTPDerived::~CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "CRTPBase::~CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 93,
       "ordered_globals": [],
@@ -4601,16 +5723,22 @@
           "func_name": "CRTPBase::~CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "CRTPBase::~CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 109,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4620,16 +5748,22 @@
           "func_name": "CRTPBase::~CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "CRTPDerived::~CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 109,
       "ordered_globals": [],
@@ -4640,16 +5774,22 @@
           "func_name": "CRTPDerived::~CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "CRTPDerived::~CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 93,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4659,16 +5799,22 @@
           "func_name": "CRTPDerived::~CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "CRTPBase::~CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 93,
       "ordered_globals": [],
@@ -4679,16 +5825,22 @@
           "func_name": "CRTPBase::~CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "CRTPBase::~CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 109,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4698,16 +5850,22 @@
           "func_name": "CRTPBase::~CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "CRTPDerived::~CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 109,
       "ordered_globals": [],
@@ -4718,16 +5876,22 @@
           "func_name": "CRTPDerived::~CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "CRTPDerived::~CRTPDerived",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 93,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4737,16 +5901,22 @@
           "func_name": "CRTPDerived::~CRTPDerived",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "CRTPBase::~CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 93,
       "ordered_globals": [],
@@ -4757,16 +5927,22 @@
           "func_name": "CRTPBase::~CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "CRTPBase::~CRTPBase<Derived>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4776,16 +5952,22 @@
           "func_name": "CRTPBase::~CRTPBase<Derived>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 39,
       "ordered_globals": [],
@@ -4796,16 +5978,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 69,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4815,16 +6003,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::~Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 69,
       "ordered_globals": [],
@@ -4835,16 +6029,22 @@
           "func_name": "Pair::~Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::~Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4854,16 +6054,22 @@
           "func_name": "Pair::~Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 39,
       "ordered_globals": [],
@@ -4874,16 +6080,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 69,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4893,16 +6105,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::~Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 69,
       "ordered_globals": [],
@@ -4913,16 +6131,22 @@
           "func_name": "Pair::~Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::~Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 69,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4932,16 +6156,22 @@
           "func_name": "Pair::~Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::~Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 69,
       "ordered_globals": [],
@@ -4952,16 +6182,22 @@
           "func_name": "Pair::~Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::~Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 69,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4971,16 +6207,22 @@
           "func_name": "Pair::~Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::~Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 69,
       "ordered_globals": [],
@@ -4991,16 +6233,22 @@
           "func_name": "Pair::~Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::~Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 69,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5010,16 +6258,22 @@
           "func_name": "Pair::~Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Pair::~Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 69,
       "ordered_globals": [],
@@ -5030,16 +6284,22 @@
           "func_name": "Pair::~Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Pair::~Pair<T, U>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5049,16 +6309,22 @@
           "func_name": "Pair::~Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 39,
       "ordered_globals": [],
@@ -5069,16 +6335,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 82,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5088,16 +6360,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Inner::~Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 82,
       "ordered_globals": [],
@@ -5108,16 +6386,22 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Inner::~Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5127,16 +6411,22 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 39,
       "ordered_globals": [],
@@ -5147,16 +6437,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 82,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5166,16 +6462,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Inner::~Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 82,
       "ordered_globals": [],
@@ -5186,16 +6488,22 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Inner::~Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5205,16 +6513,22 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 39,
       "ordered_globals": [],
@@ -5225,16 +6539,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 82,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5244,16 +6564,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Inner::~Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 82,
       "ordered_globals": [],
@@ -5264,16 +6590,22 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Inner::~Inner",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5283,16 +6615,22 @@
           "func_name": "Inner::~Inner",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 39,
       "ordered_globals": [],
@@ -5303,16 +6641,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5322,16 +6666,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 39,
       "ordered_globals": [],
@@ -5342,16 +6692,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5361,16 +6717,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 39,
       "ordered_globals": [],
@@ -5381,16 +6743,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5400,16 +6768,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 39,
       "ordered_globals": [],
@@ -5420,16 +6794,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5439,16 +6819,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 39,
       "ordered_globals": [],
@@ -5459,16 +6845,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5478,16 +6870,22 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Box::~Box<T>",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 39,
       "ordered_globals": [],
@@ -5498,9 +6896,12 @@
           "func_name": "Box::~Box<T>",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     }
   ],

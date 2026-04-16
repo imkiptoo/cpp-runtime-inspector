@@ -4,8 +4,11 @@
     {
       "event": "call",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 106,
       "ordered_globals": [],
       "stack_to_render": [
@@ -15,16 +18,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 18,
       "ordered_globals": [],
@@ -35,7 +44,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -43,16 +54,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 19,
       "ordered_globals": [],
       "stack_to_render": [
@@ -62,7 +79,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -70,16 +89,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -89,7 +114,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -97,16 +124,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -116,7 +149,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -124,16 +159,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -143,7 +184,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -151,16 +194,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 108,
       "ordered_globals": [],
       "stack_to_render": [
@@ -180,18 +229,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 25,
       "ordered_globals": [],
       "stack_to_render": [
@@ -211,9 +268,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -221,16 +282,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 26,
       "ordered_globals": [],
       "stack_to_render": [
@@ -250,9 +317,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -260,16 +331,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 27,
       "ordered_globals": [],
       "stack_to_render": [
@@ -289,9 +366,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -299,16 +380,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 28,
       "ordered_globals": [],
       "stack_to_render": [
@@ -328,9 +415,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -338,16 +429,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 29,
       "ordered_globals": [],
       "stack_to_render": [
@@ -367,9 +464,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -377,16 +478,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 111,
       "ordered_globals": [],
       "stack_to_render": [
@@ -415,19 +522,28 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 24
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 32,
       "ordered_globals": [],
       "stack_to_render": [
@@ -456,10 +572,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -467,16 +588,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 33,
       "ordered_globals": [],
       "stack_to_render": [
@@ -505,10 +632,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -516,16 +648,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 34,
       "ordered_globals": [],
       "stack_to_render": [
@@ -554,10 +692,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -565,16 +708,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 35,
       "ordered_globals": [],
       "stack_to_render": [
@@ -603,10 +752,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -614,16 +768,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 36,
       "ordered_globals": [],
       "stack_to_render": [
@@ -652,10 +812,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -663,16 +828,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 112,
       "ordered_globals": [],
       "stack_to_render": [
@@ -710,20 +881,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_assign",
       "line": 51,
       "ordered_globals": [],
@@ -762,11 +943,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {},
@@ -774,16 +961,22 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 51,
       "ordered_globals": [],
       "stack_to_render": [
@@ -821,11 +1014,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {
@@ -840,18 +1039,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 44,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 53,
       "ordered_globals": [],
       "stack_to_render": [
@@ -889,11 +1096,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {
@@ -908,18 +1121,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 44,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 57,
       "ordered_globals": [],
       "stack_to_render": [
@@ -957,11 +1178,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {
@@ -976,18 +1203,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 44,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_assign",
       "line": 51,
       "ordered_globals": [],
@@ -1026,11 +1261,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {},
@@ -1038,16 +1279,22 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 51,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1085,11 +1332,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {
@@ -1104,18 +1357,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 44,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 53,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1153,11 +1414,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {
@@ -1172,18 +1439,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 44,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 54,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1221,11 +1496,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {
@@ -1240,18 +1521,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 44,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 55,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1289,11 +1578,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {
@@ -1308,18 +1603,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 44,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 57,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1357,11 +1660,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {
@@ -1376,18 +1685,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 44,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 18,
       "ordered_globals": [],
@@ -1426,11 +1743,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {},
@@ -1438,16 +1761,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 19,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1485,11 +1814,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {},
@@ -1497,16 +1832,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1544,11 +1885,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {},
@@ -1556,16 +1903,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1603,11 +1956,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {},
@@ -1615,16 +1974,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1662,11 +2027,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {},
@@ -1674,16 +2045,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 121,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1730,21 +2107,32 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 18,
       "ordered_globals": [],
@@ -1792,12 +2180,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {},
@@ -1805,16 +2200,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 19,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1861,12 +2262,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {},
@@ -1874,16 +2282,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1930,12 +2344,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {},
@@ -1943,16 +2364,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1999,12 +2426,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {},
@@ -2012,16 +2446,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2068,12 +2508,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {},
@@ -2081,16 +2528,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 122,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2146,22 +2599,34 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         }
       ],
+      "stack_total_bytes": 60,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 18,
       "ordered_globals": [],
@@ -2218,13 +2683,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         },
         {
           "encoded_locals": {},
@@ -2232,16 +2705,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 60,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 19,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2297,13 +2776,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         },
         {
           "encoded_locals": {},
@@ -2311,16 +2798,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 60,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2376,13 +2869,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         },
         {
           "encoded_locals": {},
@@ -2390,16 +2891,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 60,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2455,13 +2962,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         },
         {
           "encoded_locals": {},
@@ -2469,16 +2984,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 60,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2534,13 +3055,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         },
         {
           "encoded_locals": {},
@@ -2548,16 +3077,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 60,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 123,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2622,6 +3157,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -2629,16 +3172,21 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         }
       ],
+      "stack_total_bytes": 72,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_assign",
       "line": 51,
       "ordered_globals": [],
@@ -2704,6 +3252,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -2711,7 +3267,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {},
@@ -2719,16 +3276,22 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 72,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 51,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2793,6 +3356,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -2800,7 +3371,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {
@@ -2815,18 +3387,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 80,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 53,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2891,6 +3471,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -2898,7 +3486,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {
@@ -2913,18 +3502,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 80,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 54,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2989,6 +3586,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -2996,7 +3601,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {
@@ -3011,18 +3617,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 80,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 55,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3087,6 +3701,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -3094,7 +3716,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {
@@ -3109,18 +3732,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 80,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 57,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3185,6 +3816,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -3192,7 +3831,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {
@@ -3207,18 +3847,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 80,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_assign",
       "line": 51,
       "ordered_globals": [],
@@ -3284,6 +3932,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -3291,7 +3947,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {},
@@ -3299,16 +3956,22 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 72,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 51,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3373,6 +4036,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -3380,7 +4051,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {
@@ -3395,18 +4067,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 80,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 53,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3471,6 +4151,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -3478,7 +4166,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {
@@ -3493,18 +4182,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 80,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 54,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3569,6 +4266,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -3576,7 +4281,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {
@@ -3591,18 +4297,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 80,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 55,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3667,6 +4381,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -3674,7 +4396,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {
@@ -3689,18 +4412,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 80,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 57,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3765,6 +4496,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -3772,7 +4511,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {
@@ -3787,18 +4527,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 80,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 18,
       "ordered_globals": [],
@@ -3864,6 +4612,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -3871,7 +4627,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {},
@@ -3879,16 +4636,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 72,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 19,
       "ordered_globals": [],
       "stack_to_render": [
@@ -3953,6 +4716,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -3960,7 +4731,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {},
@@ -3968,16 +4740,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 72,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4042,6 +4820,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -4049,7 +4835,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {},
@@ -4057,16 +4844,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 72,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4131,6 +4924,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -4138,7 +4939,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {},
@@ -4146,16 +4948,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 72,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4220,6 +5028,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -4227,7 +5043,8 @@
             "d",
             "e",
             "f"
-          ]
+          ],
+          "stack_size_bytes": 72
         },
         {
           "encoded_locals": {},
@@ -4235,16 +5052,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 72,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 127,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4318,6 +5141,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -4326,16 +5158,21 @@
             "e",
             "f",
             "g"
-          ]
+          ],
+          "stack_size_bytes": 84
         }
       ],
+      "stack_total_bytes": 84,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "move_assign",
       "line": 60,
       "ordered_globals": [],
@@ -4410,6 +5247,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -4418,7 +5264,8 @@
             "e",
             "f",
             "g"
-          ]
+          ],
+          "stack_size_bytes": 84
         },
         {
           "encoded_locals": {},
@@ -4426,16 +5273,22 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 84,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 60,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4509,6 +5362,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -4517,7 +5379,8 @@
             "e",
             "f",
             "g"
-          ]
+          ],
+          "stack_size_bytes": 84
         },
         {
           "encoded_locals": {
@@ -4532,18 +5395,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 92,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 62,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4617,6 +5488,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -4625,7 +5505,8 @@
             "e",
             "f",
             "g"
-          ]
+          ],
+          "stack_size_bytes": 84
         },
         {
           "encoded_locals": {
@@ -4640,18 +5521,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 92,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 67,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4725,6 +5614,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -4733,7 +5631,8 @@
             "e",
             "f",
             "g"
-          ]
+          ],
+          "stack_size_bytes": 84
         },
         {
           "encoded_locals": {
@@ -4748,18 +5647,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 92,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 18,
       "ordered_globals": [],
@@ -4834,6 +5741,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -4842,7 +5758,8 @@
             "e",
             "f",
             "g"
-          ]
+          ],
+          "stack_size_bytes": 84
         },
         {
           "encoded_locals": {},
@@ -4850,16 +5767,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 84,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 19,
       "ordered_globals": [],
       "stack_to_render": [
@@ -4933,6 +5856,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -4941,7 +5873,8 @@
             "e",
             "f",
             "g"
-          ]
+          ],
+          "stack_size_bytes": 84
         },
         {
           "encoded_locals": {},
@@ -4949,16 +5882,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 84,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5032,6 +5971,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -5040,7 +5988,8 @@
             "e",
             "f",
             "g"
-          ]
+          ],
+          "stack_size_bytes": 84
         },
         {
           "encoded_locals": {},
@@ -5048,16 +5997,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 84,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5131,6 +6086,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -5139,7 +6103,8 @@
             "e",
             "f",
             "g"
-          ]
+          ],
+          "stack_size_bytes": 84
         },
         {
           "encoded_locals": {},
@@ -5147,16 +6112,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 84,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5230,6 +6201,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -5238,7 +6218,8 @@
             "e",
             "f",
             "g"
-          ]
+          ],
+          "stack_size_bytes": 84
         },
         {
           "encoded_locals": {},
@@ -5246,16 +6227,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 84,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 131,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5338,6 +6325,16 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -5347,16 +6344,21 @@
             "f",
             "g",
             "h"
-          ]
+          ],
+          "stack_size_bytes": 96
         }
       ],
+      "stack_total_bytes": 96,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 18,
       "ordered_globals": [],
@@ -5440,6 +6442,16 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -5449,7 +6461,8 @@
             "f",
             "g",
             "h"
-          ]
+          ],
+          "stack_size_bytes": 96
         },
         {
           "encoded_locals": {},
@@ -5457,16 +6470,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 96,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 19,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5549,6 +6568,16 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -5558,7 +6587,8 @@
             "f",
             "g",
             "h"
-          ]
+          ],
+          "stack_size_bytes": 96
         },
         {
           "encoded_locals": {},
@@ -5566,16 +6596,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 96,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5658,6 +6694,16 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -5667,7 +6713,8 @@
             "f",
             "g",
             "h"
-          ]
+          ],
+          "stack_size_bytes": 96
         },
         {
           "encoded_locals": {},
@@ -5675,16 +6722,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 96,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5767,6 +6820,16 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -5776,7 +6839,8 @@
             "f",
             "g",
             "h"
-          ]
+          ],
+          "stack_size_bytes": 96
         },
         {
           "encoded_locals": {},
@@ -5784,16 +6848,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 96,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5876,6 +6946,16 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -5885,7 +6965,8 @@
             "f",
             "g",
             "h"
-          ]
+          ],
+          "stack_size_bytes": 96
         },
         {
           "encoded_locals": {},
@@ -5893,16 +6974,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 96,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 132,
       "ordered_globals": [],
       "stack_to_render": [
@@ -5994,6 +7081,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -6004,16 +7102,21 @@
             "g",
             "h",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 108
         }
       ],
+      "stack_total_bytes": 108,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "move_assign",
       "line": 60,
       "ordered_globals": [],
@@ -6106,6 +7209,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -6116,7 +7230,8 @@
             "g",
             "h",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 108
         },
         {
           "encoded_locals": {},
@@ -6124,16 +7239,22 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 108,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 60,
       "ordered_globals": [],
       "stack_to_render": [
@@ -6225,6 +7346,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -6235,7 +7367,8 @@
             "g",
             "h",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 108
         },
         {
           "encoded_locals": {
@@ -6250,18 +7383,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 116,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 62,
       "ordered_globals": [],
       "stack_to_render": [
@@ -6353,6 +7494,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -6363,7 +7515,8 @@
             "g",
             "h",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 108
         },
         {
           "encoded_locals": {
@@ -6378,18 +7531,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 116,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 63,
       "ordered_globals": [],
       "stack_to_render": [
@@ -6481,6 +7642,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -6491,7 +7663,8 @@
             "g",
             "h",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 108
         },
         {
           "encoded_locals": {
@@ -6506,18 +7679,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 116,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 64,
       "ordered_globals": [],
       "stack_to_render": [
@@ -6609,6 +7790,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -6619,7 +7811,8 @@
             "g",
             "h",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 108
         },
         {
           "encoded_locals": {
@@ -6634,18 +7827,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 116,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 65,
       "ordered_globals": [],
       "stack_to_render": [
@@ -6737,6 +7938,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -6747,7 +7959,8 @@
             "g",
             "h",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 108
         },
         {
           "encoded_locals": {
@@ -6762,18 +7975,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 116,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 67,
       "ordered_globals": [],
       "stack_to_render": [
@@ -6865,6 +8086,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -6875,7 +8107,8 @@
             "g",
             "h",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 108
         },
         {
           "encoded_locals": {
@@ -6890,18 +8123,26 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 116,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_ctor",
       "line": 38,
       "ordered_globals": [],
@@ -6994,6 +8235,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -7004,7 +8256,8 @@
             "g",
             "h",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 108
         },
         {
           "encoded_locals": {},
@@ -7012,16 +8265,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 108,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -7113,6 +8372,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -7123,7 +8393,8 @@
             "g",
             "h",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 108
         },
         {
           "encoded_locals": {},
@@ -7131,16 +8402,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 108,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 40,
       "ordered_globals": [],
       "stack_to_render": [
@@ -7232,6 +8509,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -7242,7 +8530,8 @@
             "g",
             "h",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 108
         },
         {
           "encoded_locals": {},
@@ -7250,16 +8539,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 108,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 41,
       "ordered_globals": [],
       "stack_to_render": [
@@ -7351,6 +8646,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -7361,7 +8667,8 @@
             "g",
             "h",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 108
         },
         {
           "encoded_locals": {},
@@ -7369,16 +8676,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 108,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 42,
       "ordered_globals": [],
       "stack_to_render": [
@@ -7470,6 +8783,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -7480,7 +8804,8 @@
             "g",
             "h",
             "i"
-          ]
+          ],
+          "stack_size_bytes": 108
         },
         {
           "encoded_locals": {},
@@ -7488,16 +8813,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 108,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 136,
       "ordered_globals": [],
       "stack_to_render": [
@@ -7598,6 +8929,18 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12,
+            "j": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -7609,16 +8952,21 @@
             "h",
             "i",
             "j"
-          ]
+          ],
+          "stack_size_bytes": 120
         }
       ],
+      "stack_total_bytes": 120,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -7720,6 +9068,19 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12,
+            "j": 12,
+            "result": 4
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -7732,16 +9093,21 @@
             "i",
             "j",
             "result"
-          ]
+          ],
+          "stack_size_bytes": 124
         }
       ],
+      "stack_total_bytes": 124,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 76,
       "ordered_globals": [],
       "stack_to_render": [
@@ -7843,6 +9209,19 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12,
+            "j": 12,
+            "result": 4
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -7855,16 +9234,21 @@
             "i",
             "j",
             "result"
-          ]
+          ],
+          "stack_size_bytes": 124
         }
       ],
+      "stack_total_bytes": 124,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Empty::Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 76,
       "ordered_globals": [],
@@ -7875,16 +9259,22 @@
           "func_name": "Empty::Empty",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Empty::Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 141,
       "ordered_globals": [],
       "stack_to_render": [
@@ -7900,18 +9290,26 @@
           "func_name": "Empty::Empty",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "em1": 1
+          },
           "ordered_varnames": [
             "em1"
-          ]
+          ],
+          "stack_size_bytes": 1
         }
       ],
+      "stack_total_bytes": 1,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Empty::Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 77,
       "ordered_globals": [],
       "stack_to_render": [
@@ -7927,18 +9325,26 @@
           "func_name": "Empty::Empty",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "em1": 1
+          },
           "ordered_varnames": [
             "em1"
-          ]
+          ],
+          "stack_size_bytes": 1
         }
       ],
+      "stack_total_bytes": 1,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Empty::Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_ctor",
       "line": 77,
       "ordered_globals": [],
@@ -7949,16 +9355,22 @@
           "func_name": "Empty::Empty",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Empty::Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 142,
       "ordered_globals": [],
       "stack_to_render": [
@@ -7974,18 +9386,26 @@
           "func_name": "Empty::Empty",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "em2": 1
+          },
           "ordered_varnames": [
             "em2"
-          ]
+          ],
+          "stack_size_bytes": 1
         }
       ],
+      "stack_total_bytes": 1,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Empty::Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 76,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8001,18 +9421,26 @@
           "func_name": "Empty::Empty",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "em2": 1
+          },
           "ordered_varnames": [
             "em2"
-          ]
+          ],
+          "stack_size_bytes": 1
         }
       ],
+      "stack_total_bytes": 1,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Empty::Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 76,
       "ordered_globals": [],
@@ -8023,16 +9451,22 @@
           "func_name": "Empty::Empty",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Empty::Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 143,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8048,18 +9482,26 @@
           "func_name": "Empty::Empty",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "em3": 1
+          },
           "ordered_varnames": [
             "em3"
-          ]
+          ],
+          "stack_size_bytes": 1
         }
       ],
+      "stack_total_bytes": 1,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Empty::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_assign",
       "line": 79,
       "ordered_globals": [],
@@ -8076,9 +9518,13 @@
           "func_name": "Empty::Empty",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "em3": 1
+          },
           "ordered_varnames": [
             "em3"
-          ]
+          ],
+          "stack_size_bytes": 1
         },
         {
           "encoded_locals": {},
@@ -8086,16 +9532,22 @@
           "func_name": "Empty::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 1,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Empty::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 79,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8111,9 +9563,13 @@
           "func_name": "Empty::Empty",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "em3": 1
+          },
           "ordered_varnames": [
             "em3"
-          ]
+          ],
+          "stack_size_bytes": 1
         },
         {
           "encoded_locals": {},
@@ -8121,16 +9577,22 @@
           "func_name": "Empty::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 1,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Empty::Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 88,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8146,18 +9608,26 @@
           "func_name": "Empty::Empty",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "em3": 1
+          },
           "ordered_varnames": [
             "em3"
-          ]
+          ],
+          "stack_size_bytes": 1
         }
       ],
+      "stack_total_bytes": 1,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "WithConst::WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 88,
       "ordered_globals": [],
@@ -8168,16 +9638,22 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "WithConst::WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 147,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8195,18 +9671,26 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "wc1": 4
+          },
           "ordered_varnames": [
             "wc1"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "WithConst::WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 89,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8224,18 +9708,26 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "wc1": 4
+          },
           "ordered_varnames": [
             "wc1"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "WithConst::WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 89,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8245,16 +9737,22 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "WithConst::WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 148,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8272,18 +9770,26 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "wc2": 4
+          },
           "ordered_varnames": [
             "wc2"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "WithConst::WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 90,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8301,18 +9807,26 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "wc2": 4
+          },
           "ordered_varnames": [
             "wc2"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "WithConst::WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_ctor",
       "line": 90,
       "ordered_globals": [],
@@ -8323,16 +9837,22 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "WithConst::WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 149,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8350,18 +9870,26 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 25,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8379,9 +9907,13 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -8389,16 +9921,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 26,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8416,9 +9954,13 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -8426,16 +9968,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 27,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8453,9 +10001,13 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -8463,16 +10015,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 28,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8490,9 +10048,13 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -8500,16 +10062,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 29,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8527,9 +10095,13 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -8537,16 +10109,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "WithConst::WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 152,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8573,19 +10151,28 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_ctor",
       "line": 38,
       "ordered_globals": [],
@@ -8613,10 +10200,15 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -8624,16 +10216,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8660,10 +10258,15 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -8671,16 +10274,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 40,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8707,10 +10316,15 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -8718,16 +10332,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 41,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8754,10 +10374,15 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -8765,16 +10390,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 42,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8801,10 +10432,15 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -8812,16 +10448,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "consumeWidget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 102,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8848,10 +10490,15 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -8859,16 +10506,22 @@
           "func_name": "consumeWidget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "consumeWidget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 102,
       "ordered_globals": [],
       "stack_to_render": [
@@ -8895,10 +10548,15 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -8916,18 +10574,26 @@
           "func_name": "consumeWidget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "w": 12
+          },
           "ordered_varnames": [
             "w"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 28,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "consumeWidget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 103,
       "ordered_globals": [],
       "return_value": 500,
@@ -8955,10 +10621,15 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -8976,18 +10647,26 @@
           "func_name": "consumeWidget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "w": 12
+          },
           "ordered_varnames": [
             "w"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 28,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 70,
       "ordered_globals": [],
@@ -9015,10 +10694,15 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -9026,16 +10710,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9062,10 +10752,15 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -9073,16 +10768,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "WithConst::WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9110,20 +10811,30 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "consumed": 4,
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k",
             "consumed"
-          ]
+          ],
+          "stack_size_bytes": 20
         }
       ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "makeWidget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 96,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9151,11 +10862,17 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "consumed": 4,
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k",
             "consumed"
-          ]
+          ],
+          "stack_size_bytes": 20
         },
         {
           "encoded_locals": {},
@@ -9163,16 +10880,22 @@
           "func_name": "makeWidget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "makeWidget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9200,11 +10923,17 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "consumed": 4,
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k",
             "consumed"
-          ]
+          ],
+          "stack_size_bytes": 20
         },
         {
           "encoded_locals": {
@@ -9214,18 +10943,26 @@
           "func_name": "makeWidget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "val": 4
+          },
           "ordered_varnames": [
             "val"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 25,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9253,11 +10990,17 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "consumed": 4,
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k",
             "consumed"
-          ]
+          ],
+          "stack_size_bytes": 20
         },
         {
           "encoded_locals": {
@@ -9267,9 +11010,13 @@
           "func_name": "makeWidget",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "val": 4
+          },
           "ordered_varnames": [
             "val"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -9277,16 +11024,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 26,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9314,11 +11067,17 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "consumed": 4,
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k",
             "consumed"
-          ]
+          ],
+          "stack_size_bytes": 20
         },
         {
           "encoded_locals": {
@@ -9328,9 +11087,13 @@
           "func_name": "makeWidget",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "val": 4
+          },
           "ordered_varnames": [
             "val"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -9338,16 +11101,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 27,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9375,11 +11144,17 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "consumed": 4,
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k",
             "consumed"
-          ]
+          ],
+          "stack_size_bytes": 20
         },
         {
           "encoded_locals": {
@@ -9389,9 +11164,13 @@
           "func_name": "makeWidget",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "val": 4
+          },
           "ordered_varnames": [
             "val"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -9399,16 +11178,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 28,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9436,11 +11221,17 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "consumed": 4,
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k",
             "consumed"
-          ]
+          ],
+          "stack_size_bytes": 20
         },
         {
           "encoded_locals": {
@@ -9450,9 +11241,13 @@
           "func_name": "makeWidget",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "val": 4
+          },
           "ordered_varnames": [
             "val"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -9460,16 +11255,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 29,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9497,11 +11298,17 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "consumed": 4,
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k",
             "consumed"
-          ]
+          ],
+          "stack_size_bytes": 20
         },
         {
           "encoded_locals": {
@@ -9511,9 +11318,13 @@
           "func_name": "makeWidget",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "val": 4
+          },
           "ordered_varnames": [
             "val"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -9521,16 +11332,22 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "makeWidget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 97,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9558,11 +11375,17 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "consumed": 4,
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k",
             "consumed"
-          ]
+          ],
+          "stack_size_bytes": 20
         },
         {
           "encoded_locals": {
@@ -9581,19 +11404,28 @@
           "func_name": "makeWidget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "val": 4,
+            "w": 12
+          },
           "ordered_varnames": [
             "val",
             "w"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "makeWidget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 98,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9621,11 +11453,17 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "consumed": 4,
+            "k": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k",
             "consumed"
-          ]
+          ],
+          "stack_size_bytes": 20
         },
         {
           "encoded_locals": {
@@ -9644,19 +11482,28 @@
           "func_name": "makeWidget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "val": 4,
+            "w": 12
+          },
           "ordered_varnames": [
             "val",
             "w"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "WithConst::WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 157,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9693,21 +11540,32 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "consumed": 4,
+            "k": 12,
+            "l": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k",
             "consumed",
             "l"
-          ]
+          ],
+          "stack_size_bytes": 32
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "WithConst::WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 159,
       "ordered_globals": [],
       "return_value": 0,
@@ -9745,21 +11603,32 @@
           "func_name": "WithConst::WithConst",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "consumed": 4,
+            "k": 12,
+            "l": 12,
+            "wc3": 4
+          },
           "ordered_varnames": [
             "wc3",
             "k",
             "consumed",
             "l"
-          ]
+          ],
+          "stack_size_bytes": 32
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 70,
       "ordered_globals": [],
@@ -9770,16 +11639,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9789,16 +11664,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 70,
       "ordered_globals": [],
@@ -9809,16 +11690,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9828,16 +11715,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "WithConst::~WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 92,
       "ordered_globals": [],
@@ -9848,16 +11741,22 @@
           "func_name": "WithConst::~WithConst",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "WithConst::~WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 92,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9867,16 +11766,22 @@
           "func_name": "WithConst::~WithConst",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "WithConst::~WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 92,
       "ordered_globals": [],
@@ -9887,16 +11792,22 @@
           "func_name": "WithConst::~WithConst",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "WithConst::~WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 92,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9906,16 +11817,22 @@
           "func_name": "WithConst::~WithConst",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "WithConst::~WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 92,
       "ordered_globals": [],
@@ -9926,16 +11843,22 @@
           "func_name": "WithConst::~WithConst",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "WithConst::~WithConst",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 81,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9945,16 +11868,22 @@
           "func_name": "WithConst::~WithConst",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Empty::~Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 81,
       "ordered_globals": [],
@@ -9965,16 +11894,22 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Empty::~Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 81,
       "ordered_globals": [],
       "stack_to_render": [
@@ -9984,16 +11919,22 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Empty::~Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 81,
       "ordered_globals": [],
@@ -10004,16 +11945,22 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Empty::~Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 81,
       "ordered_globals": [],
       "stack_to_render": [
@@ -10023,16 +11970,22 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Empty::~Empty",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 81,
       "ordered_globals": [],
@@ -10043,16 +11996,22 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 70,
       "ordered_globals": [],
@@ -10063,7 +12022,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10071,16 +12032,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "stack_to_render": [
@@ -10090,7 +12057,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10098,16 +12067,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 70,
       "ordered_globals": [],
@@ -10118,7 +12093,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10126,16 +12103,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "stack_to_render": [
@@ -10145,7 +12128,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10153,16 +12138,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 70,
       "ordered_globals": [],
@@ -10173,7 +12164,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10181,16 +12174,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "stack_to_render": [
@@ -10200,7 +12199,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10208,16 +12209,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 70,
       "ordered_globals": [],
@@ -10228,7 +12235,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10236,16 +12245,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "stack_to_render": [
@@ -10255,7 +12270,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10263,16 +12280,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 70,
       "ordered_globals": [],
@@ -10283,7 +12306,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10291,16 +12316,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "stack_to_render": [
@@ -10310,7 +12341,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10318,16 +12351,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 70,
       "ordered_globals": [],
@@ -10338,7 +12377,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10346,16 +12387,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "stack_to_render": [
@@ -10365,7 +12412,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10373,16 +12422,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 70,
       "ordered_globals": [],
@@ -10393,7 +12448,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10401,16 +12458,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "stack_to_render": [
@@ -10420,7 +12483,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10428,16 +12493,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 70,
       "ordered_globals": [],
@@ -10448,7 +12519,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10456,16 +12529,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "stack_to_render": [
@@ -10475,7 +12554,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10483,16 +12564,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 70,
       "ordered_globals": [],
@@ -10503,7 +12590,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10511,16 +12600,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "stack_to_render": [
@@ -10530,7 +12625,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10538,16 +12635,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 70,
       "ordered_globals": [],
@@ -10558,7 +12661,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10566,16 +12671,22 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Widget::~Widget",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "stack_to_render": [
@@ -10585,7 +12696,9 @@
           "func_name": "Empty::~Empty",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -10593,9 +12706,12 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     }
   ],

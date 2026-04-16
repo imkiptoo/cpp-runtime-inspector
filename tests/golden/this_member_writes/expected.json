@@ -4,8 +4,11 @@
     {
       "event": "call",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 30,
       "ordered_globals": [],
       "stack_to_render": [
@@ -15,16 +18,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 31,
       "ordered_globals": [],
       "stack_to_render": [
@@ -43,18 +52,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Counter::set",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 11,
       "ordered_globals": [],
       "stack_to_render": [
@@ -73,9 +90,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -83,16 +104,22 @@
           "func_name": "Counter::set",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Counter::set",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -111,9 +138,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -123,18 +154,26 @@
           "func_name": "Counter::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "v": 4
+          },
           "ordered_varnames": [
             "v"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Counter::set",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 12,
       "ordered_globals": [],
       "stack_to_render": [
@@ -153,9 +192,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -165,18 +208,26 @@
           "func_name": "Counter::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "v": 4
+          },
           "ordered_varnames": [
             "v"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Counter::set",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 13,
       "ordered_globals": [],
       "stack_to_render": [
@@ -195,9 +246,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -207,18 +262,26 @@
           "func_name": "Counter::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "v": 4
+          },
           "ordered_varnames": [
             "v"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Counter::set",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 14,
       "ordered_globals": [],
       "stack_to_render": [
@@ -237,9 +300,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -249,18 +316,26 @@
           "func_name": "Counter::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "v": 4
+          },
           "ordered_varnames": [
             "v"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Counter::bump",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 16,
       "ordered_globals": [],
       "stack_to_render": [
@@ -279,9 +354,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -289,16 +368,22 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Counter::bump",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 17,
       "ordered_globals": [],
       "stack_to_render": [
@@ -317,9 +402,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -327,16 +416,22 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Counter::bump",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 18,
       "ordered_globals": [],
       "stack_to_render": [
@@ -355,9 +450,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -365,16 +464,22 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Counter::add",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -393,9 +498,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -403,16 +512,22 @@
           "func_name": "Counter::add",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Counter::add",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -431,9 +546,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -443,18 +562,26 @@
           "func_name": "Counter::add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "n": 4
+          },
           "ordered_varnames": [
             "n"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Counter::add",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -473,9 +600,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -485,18 +616,26 @@
           "func_name": "Counter::add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "n": 4
+          },
           "ordered_varnames": [
             "n"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Counter::add",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -515,9 +654,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -527,18 +670,26 @@
           "func_name": "Counter::add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "n": 4
+          },
           "ordered_varnames": [
             "n"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Counter::decAndBump",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 24,
       "ordered_globals": [],
       "stack_to_render": [
@@ -557,9 +708,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -567,16 +722,22 @@
           "func_name": "Counter::decAndBump",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Counter::decAndBump",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 25,
       "ordered_globals": [],
       "stack_to_render": [
@@ -595,9 +756,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -605,16 +770,22 @@
           "func_name": "Counter::decAndBump",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Counter::decAndBump",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 26,
       "ordered_globals": [],
       "stack_to_render": [
@@ -633,9 +804,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -643,16 +818,22 @@
           "func_name": "Counter::decAndBump",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Counter::decAndBump",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 27,
       "ordered_globals": [],
       "stack_to_render": [
@@ -671,9 +852,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -681,16 +866,22 @@
           "func_name": "Counter::decAndBump",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 36,
       "ordered_globals": [],
       "return_value": 0,
@@ -710,11 +901,16 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
           "ordered_varnames": [
             "c"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     }
   ],

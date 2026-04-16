@@ -4,8 +4,11 @@
     {
       "event": "call",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 53,
       "ordered_globals": [],
       "stack_to_render": [
@@ -15,16 +18,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 13,
       "ordered_globals": [],
@@ -35,7 +44,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -43,16 +54,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 14,
       "ordered_globals": [],
       "stack_to_render": [
@@ -62,7 +79,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -70,16 +89,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 15,
       "ordered_globals": [],
       "stack_to_render": [
@@ -89,7 +114,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -97,16 +124,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 16,
       "ordered_globals": [],
       "stack_to_render": [
@@ -116,7 +149,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -124,16 +159,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 17,
       "ordered_globals": [],
       "stack_to_render": [
@@ -143,7 +184,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -151,16 +194,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 54,
       "ordered_globals": [],
       "stack_to_render": [
@@ -180,18 +229,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_ctor",
       "line": 19,
       "ordered_globals": [],
@@ -212,9 +269,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -222,16 +283,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -251,9 +318,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -261,16 +332,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -290,9 +367,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -300,16 +381,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -329,9 +416,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -339,16 +430,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 23,
       "ordered_globals": [],
       "stack_to_render": [
@@ -368,9 +465,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -378,16 +479,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 55,
       "ordered_globals": [],
       "stack_to_render": [
@@ -416,19 +523,28 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 24
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "move_ctor",
       "line": 25,
       "ordered_globals": [],
@@ -458,10 +574,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -469,16 +590,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 26,
       "ordered_globals": [],
       "stack_to_render": [
@@ -507,10 +634,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -518,16 +650,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 27,
       "ordered_globals": [],
       "stack_to_render": [
@@ -556,10 +694,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -567,16 +710,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 28,
       "ordered_globals": [],
       "stack_to_render": [
@@ -605,10 +754,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -616,16 +770,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 29,
       "ordered_globals": [],
       "stack_to_render": [
@@ -654,10 +814,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -665,16 +830,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 30,
       "ordered_globals": [],
       "stack_to_render": [
@@ -703,10 +874,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -714,16 +890,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 56,
       "ordered_globals": [],
       "stack_to_render": [
@@ -761,20 +943,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 13,
       "ordered_globals": [],
@@ -813,11 +1005,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {},
@@ -825,16 +1023,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 14,
       "ordered_globals": [],
       "stack_to_render": [
@@ -872,11 +1076,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {},
@@ -884,16 +1094,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 15,
       "ordered_globals": [],
       "stack_to_render": [
@@ -931,11 +1147,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {},
@@ -943,16 +1165,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 16,
       "ordered_globals": [],
       "stack_to_render": [
@@ -990,11 +1218,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {},
@@ -1002,16 +1236,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 17,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1049,11 +1289,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 36
         },
         {
           "encoded_locals": {},
@@ -1061,16 +1307,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 58,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1117,21 +1369,32 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Tracer::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "copy_assign",
       "line": 32,
       "ordered_globals": [],
@@ -1179,12 +1442,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {},
@@ -1192,16 +1462,22 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 32,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1248,12 +1524,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {
@@ -1268,18 +1551,26 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 56,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 33,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1326,12 +1617,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {
@@ -1346,18 +1644,26 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 56,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 34,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1404,12 +1710,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {
@@ -1424,18 +1737,26 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 56,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Tracer::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 35,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1482,12 +1803,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {
@@ -1502,18 +1830,26 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 56,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 13,
       "ordered_globals": [],
@@ -1561,12 +1897,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {},
@@ -1574,16 +1917,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 14,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1630,12 +1979,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {},
@@ -1643,16 +1999,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 15,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1699,12 +2061,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {},
@@ -1712,16 +2081,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 16,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1768,12 +2143,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {},
@@ -1781,16 +2163,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Tracer::Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 17,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1837,12 +2225,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d"
-          ]
+          ],
+          "stack_size_bytes": 48
         },
         {
           "encoded_locals": {},
@@ -1850,16 +2245,22 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 60,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1915,22 +2316,34 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         }
       ],
+      "stack_total_bytes": 60,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Tracer::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "move_assign",
       "line": 38,
       "ordered_globals": [],
@@ -1987,13 +2400,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         },
         {
           "encoded_locals": {},
@@ -2001,16 +2422,22 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 60,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 38,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2066,13 +2493,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         },
         {
           "encoded_locals": {
@@ -2087,18 +2522,26 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 68,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2154,13 +2597,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         },
         {
           "encoded_locals": {
@@ -2175,18 +2626,26 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 68,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 40,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2242,13 +2701,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         },
         {
           "encoded_locals": {
@@ -2263,18 +2730,26 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 68,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Tracer::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 41,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2330,13 +2805,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         },
         {
           "encoded_locals": {
@@ -2351,18 +2834,26 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 68,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Tracer::operator=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 42,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2418,13 +2909,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         },
         {
           "encoded_locals": {
@@ -2439,18 +2938,26 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 68,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 63,
       "ordered_globals": [],
       "return_value": 0,
@@ -2507,22 +3014,34 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "d",
             "e"
-          ]
+          ],
+          "stack_size_bytes": 60
         }
       ],
+      "stack_total_bytes": 60,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Tracer::~Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 45,
       "ordered_globals": [],
@@ -2533,16 +3052,22 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Tracer::~Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 45,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2552,16 +3077,22 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Tracer::~Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 45,
       "ordered_globals": [],
@@ -2572,16 +3103,22 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Tracer::~Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 45,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2591,16 +3128,22 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Tracer::~Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 45,
       "ordered_globals": [],
@@ -2611,16 +3154,22 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Tracer::~Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 45,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2630,16 +3179,22 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Tracer::~Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 45,
       "ordered_globals": [],
@@ -2650,16 +3205,22 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Tracer::~Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 45,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2669,16 +3230,22 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Tracer::~Tracer",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 45,
       "ordered_globals": [],
@@ -2689,9 +3256,12 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     }
   ],

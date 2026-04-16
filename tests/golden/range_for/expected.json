@@ -4,8 +4,11 @@
     {
       "event": "call",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 4,
       "ordered_globals": [],
       "stack_to_render": [
@@ -15,16 +18,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 5,
       "ordered_globals": [],
       "stack_to_render": [
@@ -46,18 +55,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "nums": 20
+          },
           "ordered_varnames": [
             "nums"
-          ]
+          ],
+          "stack_size_bytes": 20
         }
       ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -80,19 +97,28 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "nums": 20,
+            "sum": 4
+          },
           "ordered_varnames": [
             "nums",
             "sum"
-          ]
+          ],
+          "stack_size_bytes": 24
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
@@ -115,19 +141,28 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "nums": 20,
+            "sum": 4
+          },
           "ordered_varnames": [
             "nums",
             "sum"
-          ]
+          ],
+          "stack_size_bytes": 24
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -151,20 +186,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "n": 4,
+            "nums": 20,
+            "sum": 4
+          },
           "ordered_varnames": [
             "nums",
             "sum",
             "n"
-          ]
+          ],
+          "stack_size_bytes": 28
         }
       ],
+      "stack_total_bytes": 28,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -188,20 +233,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "n": 4,
+            "nums": 20,
+            "sum": 4
+          },
           "ordered_varnames": [
             "nums",
             "sum",
             "n"
-          ]
+          ],
+          "stack_size_bytes": 28
         }
       ],
+      "stack_total_bytes": 28,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -225,20 +280,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "n": 4,
+            "nums": 20,
+            "sum": 4
+          },
           "ordered_varnames": [
             "nums",
             "sum",
             "n"
-          ]
+          ],
+          "stack_size_bytes": 28
         }
       ],
+      "stack_total_bytes": 28,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -262,20 +327,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "n": 4,
+            "nums": 20,
+            "sum": 4
+          },
           "ordered_varnames": [
             "nums",
             "sum",
             "n"
-          ]
+          ],
+          "stack_size_bytes": 28
         }
       ],
+      "stack_total_bytes": 28,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -299,20 +374,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "n": 4,
+            "nums": 20,
+            "sum": 4
+          },
           "ordered_varnames": [
             "nums",
             "sum",
             "n"
-          ]
+          ],
+          "stack_size_bytes": 28
         }
       ],
+      "stack_total_bytes": 28,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 10,
       "ordered_globals": [],
       "return_value": 0,
@@ -337,13 +422,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "n": 4,
+            "nums": 20,
+            "sum": 4
+          },
           "ordered_varnames": [
             "nums",
             "sum",
             "n"
-          ]
+          ],
+          "stack_size_bytes": 28
         }
       ],
+      "stack_total_bytes": 28,
       "stdout": ""
     }
   ],

@@ -4,8 +4,11 @@
     {
       "event": "call",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 37,
       "ordered_globals": [],
       "stack_to_render": [
@@ -15,16 +18,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Animal::Animal",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 10,
       "ordered_globals": [],
@@ -35,7 +44,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -43,16 +54,22 @@
           "func_name": "Animal::Animal",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Animal::Animal",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 10,
       "ordered_globals": [],
       "stack_to_render": [
@@ -62,7 +79,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -70,16 +89,22 @@
           "func_name": "Animal::Animal",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Animal::Animal",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 10,
       "ordered_globals": [],
       "stack_to_render": [
@@ -89,7 +114,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -97,16 +124,22 @@
           "func_name": "Animal::Animal",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Dog::Dog",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 20,
       "ordered_globals": [],
@@ -117,7 +150,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -125,16 +160,22 @@
           "func_name": "Dog::Dog",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Dog::Dog",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -144,7 +185,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -152,16 +195,22 @@
           "func_name": "Dog::Dog",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Dog::Dog",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -171,7 +220,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -179,16 +230,22 @@
           "func_name": "Dog::Dog",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Dog::Dog",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -198,7 +255,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -206,14 +265,18 @@
           "func_name": "Dog::Dog",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "1": [
@@ -232,6 +295,10 @@
           "Dog"
         ]
       },
+      "heap_sizes": {
+        "1": 16
+      },
+      "heap_total_bytes": 16,
       "line": 38,
       "ordered_globals": [],
       "stack_to_render": [
@@ -246,16 +313,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Dog::legs",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "1": [
@@ -274,6 +347,10 @@
           "Dog"
         ]
       },
+      "heap_sizes": {
+        "1": 16
+      },
+      "heap_total_bytes": 16,
       "line": 23,
       "ordered_globals": [],
       "stack_to_render": [
@@ -288,9 +365,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -298,14 +379,18 @@
           "func_name": "Dog::legs",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Dog::legs",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "1": [
@@ -324,6 +409,10 @@
           "Dog"
         ]
       },
+      "heap_sizes": {
+        "1": 16
+      },
+      "heap_total_bytes": 16,
       "line": 23,
       "ordered_globals": [],
       "return_value": 4,
@@ -339,9 +428,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -349,14 +442,18 @@
           "func_name": "Dog::legs",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "1": [
@@ -375,6 +472,10 @@
           "Dog"
         ]
       },
+      "heap_sizes": {
+        "1": 16
+      },
+      "heap_total_bytes": 16,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -390,17 +491,24 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "l1": 4
+          },
           "ordered_varnames": [
             "a",
             "l1"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Dog::sound",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "1": [
@@ -419,6 +527,10 @@
           "Dog"
         ]
       },
+      "heap_sizes": {
+        "1": 16
+      },
+      "heap_total_bytes": 16,
       "line": 24,
       "ordered_globals": [],
       "stack_to_render": [
@@ -434,10 +546,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "l1": 4
+          },
           "ordered_varnames": [
             "a",
             "l1"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -445,14 +562,18 @@
           "func_name": "Dog::sound",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Dog::sound",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "1": [
@@ -471,6 +592,10 @@
           "Dog"
         ]
       },
+      "heap_sizes": {
+        "1": 16
+      },
+      "heap_total_bytes": 16,
       "line": 24,
       "ordered_globals": [],
       "return_value": 100,
@@ -487,10 +612,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "l1": 4
+          },
           "ordered_varnames": [
             "a",
             "l1"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -498,14 +628,18 @@
           "func_name": "Dog::sound",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "1": [
@@ -524,6 +658,10 @@
           "Dog"
         ]
       },
+      "heap_sizes": {
+        "1": 16
+      },
+      "heap_total_bytes": 16,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -540,20 +678,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "l1": 4,
+            "s1": 4
+          },
           "ordered_varnames": [
             "a",
             "l1",
             "s1"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Dog::~Dog",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 21,
       "ordered_globals": [],
@@ -571,11 +719,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "l1": 4,
+            "s1": 4
+          },
           "ordered_varnames": [
             "a",
             "l1",
             "s1"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -583,16 +737,22 @@
           "func_name": "Dog::~Dog",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Dog::~Dog",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -609,11 +769,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "l1": 4,
+            "s1": 4
+          },
           "ordered_varnames": [
             "a",
             "l1",
             "s1"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -621,16 +787,22 @@
           "func_name": "Dog::~Dog",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Dog::~Dog",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -647,11 +819,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "l1": 4,
+            "s1": 4
+          },
           "ordered_varnames": [
             "a",
             "l1",
             "s1"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -659,16 +837,22 @@
           "func_name": "Dog::~Dog",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 11,
       "ordered_globals": [],
       "stack_to_render": [
@@ -685,20 +869,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "l1": 4,
+            "s1": 4
+          },
           "ordered_varnames": [
             "a",
             "l1",
             "s1"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Animal::~Animal",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 11,
       "ordered_globals": [],
@@ -709,16 +903,22 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Animal::Animal",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 10,
       "ordered_globals": [],
@@ -729,7 +929,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -737,16 +939,22 @@
           "func_name": "Animal::Animal",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Animal::Animal",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 10,
       "ordered_globals": [],
       "stack_to_render": [
@@ -756,7 +964,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -764,16 +974,22 @@
           "func_name": "Animal::Animal",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Animal::Animal",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 10,
       "ordered_globals": [],
       "stack_to_render": [
@@ -783,7 +999,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -791,16 +1009,22 @@
           "func_name": "Animal::Animal",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Cat::Cat",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
       "line": 30,
       "ordered_globals": [],
@@ -811,7 +1035,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -819,16 +1045,22 @@
           "func_name": "Cat::Cat",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Cat::Cat",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 30,
       "ordered_globals": [],
       "stack_to_render": [
@@ -838,7 +1070,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -846,16 +1080,22 @@
           "func_name": "Cat::Cat",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Cat::Cat",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 30,
       "ordered_globals": [],
       "stack_to_render": [
@@ -865,7 +1105,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -873,16 +1115,22 @@
           "func_name": "Cat::Cat",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Cat::Cat",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 30,
       "ordered_globals": [],
       "stack_to_render": [
@@ -892,7 +1140,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -900,14 +1150,18 @@
           "func_name": "Cat::Cat",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Animal::~Animal",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "2": [
@@ -926,6 +1180,10 @@
           "Cat"
         ]
       },
+      "heap_sizes": {
+        "2": 16
+      },
+      "heap_total_bytes": 16,
       "line": 43,
       "ordered_globals": [],
       "stack_to_render": [
@@ -940,16 +1198,22 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "b": 8
+          },
           "ordered_varnames": [
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Cat::legs",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "2": [
@@ -968,6 +1232,10 @@
           "Cat"
         ]
       },
+      "heap_sizes": {
+        "2": 16
+      },
+      "heap_total_bytes": 16,
       "line": 33,
       "ordered_globals": [],
       "stack_to_render": [
@@ -982,9 +1250,13 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "b": 8
+          },
           "ordered_varnames": [
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -992,14 +1264,18 @@
           "func_name": "Cat::legs",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Cat::legs",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "2": [
@@ -1018,6 +1294,10 @@
           "Cat"
         ]
       },
+      "heap_sizes": {
+        "2": 16
+      },
+      "heap_total_bytes": 16,
       "line": 33,
       "ordered_globals": [],
       "return_value": 4,
@@ -1033,9 +1313,13 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "b": 8
+          },
           "ordered_varnames": [
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -1043,14 +1327,18 @@
           "func_name": "Cat::legs",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Animal::~Animal",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "2": [
@@ -1069,6 +1357,10 @@
           "Cat"
         ]
       },
+      "heap_sizes": {
+        "2": 16
+      },
+      "heap_total_bytes": 16,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1084,17 +1376,24 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "b": 8,
+            "l2": 4
+          },
           "ordered_varnames": [
             "b",
             "l2"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Cat::sound",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "2": [
@@ -1113,6 +1412,10 @@
           "Cat"
         ]
       },
+      "heap_sizes": {
+        "2": 16
+      },
+      "heap_total_bytes": 16,
       "line": 34,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1128,10 +1431,15 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "b": 8,
+            "l2": 4
+          },
           "ordered_varnames": [
             "b",
             "l2"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -1139,14 +1447,18 @@
           "func_name": "Cat::sound",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Cat::sound",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "2": [
@@ -1165,6 +1477,10 @@
           "Cat"
         ]
       },
+      "heap_sizes": {
+        "2": 16
+      },
+      "heap_total_bytes": 16,
       "line": 34,
       "ordered_globals": [],
       "return_value": 200,
@@ -1181,10 +1497,15 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "b": 8,
+            "l2": 4
+          },
           "ordered_varnames": [
             "b",
             "l2"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -1192,14 +1513,18 @@
           "func_name": "Cat::sound",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Animal::~Animal",
+      "global_sizes": {},
       "globals": {},
       "heap": {
         "2": [
@@ -1218,6 +1543,10 @@
           "Cat"
         ]
       },
+      "heap_sizes": {
+        "2": 16
+      },
+      "heap_total_bytes": 16,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1234,20 +1563,30 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "b": 8,
+            "l2": 4,
+            "s2": 4
+          },
           "ordered_varnames": [
             "b",
             "l2",
             "s2"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Cat::~Cat",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 31,
       "ordered_globals": [],
@@ -1265,11 +1604,17 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "b": 8,
+            "l2": 4,
+            "s2": 4
+          },
           "ordered_varnames": [
             "b",
             "l2",
             "s2"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -1277,16 +1622,22 @@
           "func_name": "Cat::~Cat",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Cat::~Cat",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 31,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1303,11 +1654,17 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "b": 8,
+            "l2": 4,
+            "s2": 4
+          },
           "ordered_varnames": [
             "b",
             "l2",
             "s2"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -1315,16 +1672,22 @@
           "func_name": "Cat::~Cat",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Cat::~Cat",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 31,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1341,11 +1704,17 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "b": 8,
+            "l2": 4,
+            "s2": 4
+          },
           "ordered_varnames": [
             "b",
             "l2",
             "s2"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -1353,16 +1722,22 @@
           "func_name": "Cat::~Cat",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Animal::~Animal",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 11,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1379,20 +1754,30 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "b": 8,
+            "l2": 4,
+            "s2": 4
+          },
           "ordered_varnames": [
             "b",
             "l2",
             "s2"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Animal::~Animal",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 11,
       "ordered_globals": [],
@@ -1403,16 +1788,22 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Animal::~Animal",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 48,
       "ordered_globals": [],
       "return_value": 0,
@@ -1423,9 +1814,12 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     }
   ],

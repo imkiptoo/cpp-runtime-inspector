@@ -4,8 +4,11 @@
     {
       "event": "call",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 8,
       "ordered_globals": [],
       "stack_to_render": [
@@ -15,16 +18,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -36,18 +45,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -60,19 +77,28 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "multiply",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 3,
       "ordered_globals": [],
       "stack_to_render": [
@@ -85,10 +111,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -96,16 +127,22 @@
           "func_name": "multiply",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "multiply",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -118,10 +155,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -131,18 +173,26 @@
           "func_name": "multiply",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "x": 4
+          },
           "ordered_varnames": [
             "x"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "multiply",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -155,10 +205,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -169,19 +224,28 @@
           "func_name": "multiply",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "x": 4,
+            "y": 4
+          },
           "ordered_varnames": [
             "x",
             "y"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "multiply",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -194,10 +258,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -209,20 +278,30 @@
           "func_name": "multiply",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "result": 4,
+            "x": 4,
+            "y": 4
+          },
           "ordered_varnames": [
             "x",
             "y",
             "result"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "multiply",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 5,
       "ordered_globals": [],
       "return_value": 20,
@@ -236,10 +315,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -251,20 +335,30 @@
           "func_name": "multiply",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "result": 4,
+            "x": 4,
+            "y": 4
+          },
           "ordered_varnames": [
             "x",
             "y",
             "result"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -278,20 +372,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "product": 4
+          },
           "ordered_varnames": [
             "a",
             "b",
             "product"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 12,
       "ordered_globals": [],
       "return_value": 0,
@@ -306,13 +410,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "product": 4
+          },
           "ordered_varnames": [
             "a",
             "b",
             "product"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     }
   ],

@@ -96,6 +96,7 @@ struct HeapObject {
     std::string typeName;            //!< Type name for display
     bool isArray;                    //!< True if array allocation
     size_t arrayCount;               //!< Number of elements (for arrays)
+    size_t sizeBytes;                //!< Size of allocation in bytes
     EncodedValue value;              //!< Encoded value (primitive, struct, or array)
 };
 
@@ -116,6 +117,7 @@ struct VarState {
     const void* addr;
     EncodedValue value;
     const TypeDescriptor* type;
+    size_t sizeBytes = 0;            //!< Size of variable in bytes
 };
 
 //! One stack frame in the simulated call stack.
@@ -131,6 +133,9 @@ struct Frame {
 
     //! Variable states by name.
     std::unordered_map<std::string, VarState> locals;
+
+    //! Total size of local variables in this frame in bytes.
+    size_t stackSizeBytes = 0;
 };
 
 //! OPT trace event types.
@@ -185,6 +190,12 @@ struct TraceStep {
 
     //! Return value (for return events).
     std::optional<EncodedValue> return_value;
+
+    //! Total stack memory (all frames) in bytes.
+    size_t stackTotalBytes = 0;
+
+    //! Total heap memory (all live allocations) in bytes.
+    size_t heapTotalBytes = 0;
 };
 
 //! Process-wide trace state.

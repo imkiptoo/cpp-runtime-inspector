@@ -4,6 +4,16 @@
     {
       "event": "call",
       "func_name": "main",
+      "global_sizes": {
+        "big_num": 8,
+        "buffer_size": 8,
+        "byte_val": 1,
+        "current_season": 4,
+        "flag": 1,
+        "magic": 4,
+        "pi": 8,
+        "ratio": 4
+      },
       "globals": {
         "big_num": 9223372036854775807,
         "buffer_size": 1024,
@@ -15,6 +25,8 @@
         "ratio": 1.6180000305175781
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 24,
       "ordered_globals": [
         "pi",
@@ -33,14 +45,27 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {
+        "big_num": 8,
+        "buffer_size": 8,
+        "byte_val": 1,
+        "current_season": 4,
+        "flag": 1,
+        "magic": 4,
+        "pi": 8,
+        "ratio": 4
+      },
       "globals": {
         "big_num": 9223372036854775807,
         "buffer_size": 1024,
@@ -52,6 +77,8 @@
         "ratio": 1.6180000305175781
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 25,
       "ordered_globals": [
         "pi",
@@ -72,16 +99,31 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "first": 4
+          },
           "ordered_varnames": [
             "first"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {
+        "big_num": 8,
+        "buffer_size": 8,
+        "byte_val": 1,
+        "current_season": 4,
+        "flag": 1,
+        "magic": 4,
+        "pi": 8,
+        "ratio": 4
+      },
       "globals": {
         "big_num": 9223372036854775807,
         "buffer_size": 1024,
@@ -93,6 +135,8 @@
         "ratio": 1.6180000305175781
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [
         "pi",
@@ -114,17 +158,33 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "first": 4,
+            "local": 4
+          },
           "ordered_varnames": [
             "first",
             "local"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "main",
+      "global_sizes": {
+        "big_num": 8,
+        "buffer_size": 8,
+        "byte_val": 1,
+        "current_season": 4,
+        "flag": 1,
+        "magic": 4,
+        "pi": 8,
+        "ratio": 4
+      },
       "globals": {
         "big_num": 9223372036854775807,
         "buffer_size": 1024,
@@ -136,6 +196,8 @@
         "ratio": 1.6180000305175781
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 27,
       "ordered_globals": [
         "pi",
@@ -158,12 +220,18 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "first": 4,
+            "local": 4
+          },
           "ordered_varnames": [
             "first",
             "local"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     }
   ],

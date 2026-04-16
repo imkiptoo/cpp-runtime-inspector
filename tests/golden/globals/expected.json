@@ -4,11 +4,17 @@
     {
       "event": "call",
       "func_name": "main",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 17,
       "ordered_globals": [
         "globalCounter",
@@ -21,19 +27,28 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "getNext",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 11,
       "ordered_globals": [
         "globalCounter",
@@ -46,7 +61,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {},
@@ -54,19 +71,28 @@
           "func_name": "getNext",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "getNext",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [
         "globalCounter",
@@ -79,7 +105,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {
@@ -89,21 +117,32 @@
           "func_name": "getNext",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "counter": 4
+          },
           "ordered_varnames": [
             "counter"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "getNext",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 14,
       "ordered_globals": [
         "globalCounter",
@@ -117,7 +156,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         },
         {
           "encoded_locals": {
@@ -127,21 +168,32 @@
           "func_name": "getNext",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "counter": 4
+          },
           "ordered_varnames": [
             "counter"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [
         "globalCounter",
@@ -156,21 +208,32 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "getNext",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 11,
       "ordered_globals": [
         "globalCounter",
@@ -185,9 +248,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {},
@@ -195,19 +262,28 @@
           "func_name": "getNext",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "getNext",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [
         "globalCounter",
@@ -222,9 +298,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {
@@ -234,21 +314,32 @@
           "func_name": "getNext",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "counter": 4
+          },
           "ordered_varnames": [
             "counter"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "getNext",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 14,
       "ordered_globals": [
         "globalCounter",
@@ -264,9 +355,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 4
         },
         {
           "encoded_locals": {
@@ -276,21 +371,32 @@
           "func_name": "getNext",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "counter": 4
+          },
           "ordered_varnames": [
             "counter"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [
         "globalCounter",
@@ -306,22 +412,34 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "getNext",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 11,
       "ordered_globals": [
         "globalCounter",
@@ -337,10 +455,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -348,19 +471,28 @@
           "func_name": "getNext",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "getNext",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [
         "globalCounter",
@@ -376,10 +508,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -389,21 +526,32 @@
           "func_name": "getNext",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "counter": 4
+          },
           "ordered_varnames": [
             "counter"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "getNext",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 14,
       "ordered_globals": [
         "globalCounter",
@@ -420,10 +568,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -433,21 +586,32 @@
           "func_name": "getNext",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "counter": 4
+          },
           "ordered_varnames": [
             "counter"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [
         "globalCounter",
@@ -464,23 +628,36 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "incrementGlobal",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 7,
       "ordered_globals": [
         "globalCounter",
@@ -497,11 +674,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -509,19 +692,28 @@
           "func_name": "incrementGlobal",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "incrementGlobal",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 9,
       "ordered_globals": [
         "globalCounter",
@@ -538,11 +730,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {
@@ -552,21 +750,32 @@
           "func_name": "incrementGlobal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "globalCounter": 4
+          },
           "ordered_varnames": [
             "globalCounter"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "incrementGlobal",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 7,
       "ordered_globals": [
         "globalCounter",
@@ -583,11 +792,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -595,19 +810,28 @@
           "func_name": "incrementGlobal",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "incrementGlobal",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 9,
       "ordered_globals": [
         "globalCounter",
@@ -624,11 +848,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {
@@ -638,21 +868,32 @@
           "func_name": "incrementGlobal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "globalCounter": 4
+          },
           "ordered_varnames": [
             "globalCounter"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [
         "globalCounter",
@@ -670,24 +911,38 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "g": 4
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "g"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "main",
+      "global_sizes": {
+        "globalCounter": 4,
+        "globalPi": 8
+      },
       "globals": {
         "globalCounter": 0,
         "globalPi": 3.14159
       },
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 26,
       "ordered_globals": [
         "globalCounter",
@@ -706,14 +961,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "g": 4
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "g"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     }
   ],

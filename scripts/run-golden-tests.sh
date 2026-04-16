@@ -258,12 +258,13 @@ run_test() {
 import json, sys
 
 def normalize_for_shim(obj, id_map=None):
-    '''Strip heap/memory_leaks and normalize heap IDs in REF/DANGLING'''
+    '''Strip heap/memory_leaks/heap_sizes and normalize heap IDs in REF/DANGLING'''
     if id_map is None:
         id_map = {'counter': 0}
     if isinstance(obj, dict):
+        # Strip heap, memory_leaks, heap_sizes, heap_total_bytes (internal allocations vary)
         return {k: normalize_for_shim(v, id_map) for k, v in obj.items()
-                if k not in ('heap', 'memory_leaks')}
+                if k not in ('heap', 'memory_leaks', 'heap_sizes', 'heap_total_bytes')}
     if isinstance(obj, list):
         # Check for REF/DANGLING patterns: ['REF', id] or ['DANGLING', id]
         if len(obj) == 2 and obj[0] in ('REF', 'DANGLING') and isinstance(obj[1], int):
@@ -284,12 +285,13 @@ print(json.dumps({'data': normalize_for_shim(d), 'had_leaks': had_leaks}, sort_k
 import json, sys
 
 def normalize_for_shim(obj, id_map=None):
-    '''Strip heap/memory_leaks and normalize heap IDs in REF/DANGLING'''
+    '''Strip heap/memory_leaks/heap_sizes and normalize heap IDs in REF/DANGLING'''
     if id_map is None:
         id_map = {'counter': 0}
     if isinstance(obj, dict):
+        # Strip heap, memory_leaks, heap_sizes, heap_total_bytes (internal allocations vary)
         return {k: normalize_for_shim(v, id_map) for k, v in obj.items()
-                if k not in ('heap', 'memory_leaks')}
+                if k not in ('heap', 'memory_leaks', 'heap_sizes', 'heap_total_bytes')}
     if isinstance(obj, list):
         if len(obj) == 2 and obj[0] in ('REF', 'DANGLING') and isinstance(obj[1], int):
             old_id = obj[1]

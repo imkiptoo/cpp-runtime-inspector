@@ -153,11 +153,20 @@ void TraceState::recordVarInit(const std::string& name, const void* addr,
         frame->orderedLocalNames.push_back(name);
     }
 
+    // Get size from type descriptor
+    size_t varSize = type ? type->size : 0;
+
     VarState var;
     var.name = name;
     var.addr = addr;
     var.value = std::move(value);
     var.type = type;
+    var.sizeBytes = varSize;
+
+    // Update frame's stack size (only add if this is a new variable)
+    if (frame->locals.find(name) == frame->locals.end()) {
+        frame->stackSizeBytes += varSize;
+    }
     frame->locals[name] = std::move(var);
 
     emitStep(EventKind::StepLine, frame->funcName, line);
@@ -170,6 +179,8 @@ void TraceState::recordVarUpdate(const std::string& name, const void* addr,
     if (!frame)
         return;
 
+    size_t varSize = type ? type->size : 0;
+
     auto it = frame->locals.find(name);
     if (it != frame->locals.end()) {
         it->second.value = std::move(value);
@@ -181,7 +192,9 @@ void TraceState::recordVarUpdate(const std::string& name, const void* addr,
         var.addr = addr;
         var.value = std::move(value);
         var.type = type;
+        var.sizeBytes = varSize;
         frame->locals[name] = std::move(var);
+        frame->stackSizeBytes += varSize;
     }
 }
 
@@ -261,6 +274,7 @@ void TraceState::emitStep(EventKind kind, const std::string& funcName,
         obj.typeName = alloc.type ? (alloc.type->spelling ? alloc.type->spelling : "<type>") : "<untyped>";
         obj.isArray = alloc.is_array;
         obj.arrayCount = alloc.array_count;
+        obj.sizeBytes = alloc.size;
 
         // Encode the heap object's value
         if (alloc.type) {
@@ -305,6 +319,18 @@ void TraceState::emitStep(EventKind kind, const std::string& funcName,
     step.globals = m_globals;
     step.orderedGlobals = m_orderedGlobals;
 
+    // Compute total stack size (sum of all frames)
+    step.stackTotalBytes = 0;
+    for (const auto& frame : step.stack) {
+        step.stackTotalBytes += frame.stackSizeBytes;
+    }
+
+    // Compute total heap size (sum of all live allocations)
+    step.heapTotalBytes = 0;
+    for (const auto& [heapId, obj] : step.heap) {
+        step.heapTotalBytes += obj.sizeBytes;
+    }
+
     m_steps.push_back(std::move(step));
 }
 
@@ -322,6 +348,7 @@ void TraceState::registerGlobal(const std::string& name, const TypeDescriptor* t
     vs.addr = nullptr;  // Constexpr/globals may not have runtime address
     vs.type = type;
     vs.value = std::move(value);
+    vs.sizeBytes = type ? type->size : 0;
     m_globals[name] = vs;
     m_orderedGlobals.push_back(name);
 

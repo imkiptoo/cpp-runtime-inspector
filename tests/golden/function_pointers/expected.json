@@ -4,8 +4,11 @@
     {
       "event": "call",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 11,
       "ordered_globals": [],
       "stack_to_render": [
@@ -15,16 +18,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 12,
       "ordered_globals": [],
       "stack_to_render": [
@@ -41,18 +50,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8
+          },
           "ordered_varnames": [
             "fp"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "add",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 4,
       "ordered_globals": [],
       "stack_to_render": [
@@ -69,9 +86,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8
+          },
           "ordered_varnames": [
             "fp"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -79,16 +100,22 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "add",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -105,9 +132,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8
+          },
           "ordered_varnames": [
             "fp"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -117,18 +148,26 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "add",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -145,9 +184,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8
+          },
           "ordered_varnames": [
             "fp"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -158,19 +201,28 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "add",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 4,
       "ordered_globals": [],
       "return_value": 7,
@@ -188,9 +240,13 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8
+          },
           "ordered_varnames": [
             "fp"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {
@@ -201,19 +257,28 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -231,19 +296,28 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "mul",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 5,
       "ordered_globals": [],
       "stack_to_render": [
@@ -261,10 +335,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {},
@@ -272,16 +351,22 @@
           "func_name": "mul",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "mul",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -299,10 +384,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {
@@ -312,18 +402,26 @@
           "func_name": "mul",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "mul",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -341,10 +439,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {
@@ -355,19 +458,28 @@
           "func_name": "mul",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "mul",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 5,
       "ordered_globals": [],
       "return_value": 12,
@@ -386,10 +498,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s"
-          ]
+          ],
+          "stack_size_bytes": 12
         },
         {
           "encoded_locals": {
@@ -400,19 +517,28 @@
           "func_name": "mul",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -431,20 +557,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "p": 4,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s",
             "p"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "apply",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
@@ -463,11 +599,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "p": 4,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s",
             "p"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -475,16 +617,22 @@
           "func_name": "apply",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "apply",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
@@ -503,11 +651,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "p": 4,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s",
             "p"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -522,18 +676,26 @@
           "func_name": "apply",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "op": 8
+          },
           "ordered_varnames": [
             "op"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "apply",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -552,11 +714,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "p": 4,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s",
             "p"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -572,19 +740,28 @@
           "func_name": "apply",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "op": 8,
+            "x": 4
+          },
           "ordered_varnames": [
             "op",
             "x"
-          ]
+          ],
+          "stack_size_bytes": 12
         }
       ],
+      "stack_total_bytes": 28,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "apply",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -603,11 +780,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "p": 4,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s",
             "p"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -624,20 +807,30 @@
           "func_name": "apply",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "op": 8,
+            "x": 4,
+            "y": 4
+          },
           "ordered_varnames": [
             "op",
             "x",
             "y"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "add",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 4,
       "ordered_globals": [],
       "stack_to_render": [
@@ -656,11 +849,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "p": 4,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s",
             "p"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -677,11 +876,17 @@
           "func_name": "apply",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "op": 8,
+            "x": 4,
+            "y": 4
+          },
           "ordered_varnames": [
             "op",
             "x",
             "y"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -689,16 +894,22 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "add",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -717,11 +928,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "p": 4,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s",
             "p"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -738,11 +955,17 @@
           "func_name": "apply",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "op": 8,
+            "x": 4,
+            "y": 4
+          },
           "ordered_varnames": [
             "op",
             "x",
             "y"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -752,18 +975,26 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 4
         }
       ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "add",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -782,11 +1013,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "p": 4,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s",
             "p"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -803,11 +1040,17 @@
           "func_name": "apply",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "op": 8,
+            "x": 4,
+            "y": 4
+          },
           "ordered_varnames": [
             "op",
             "x",
             "y"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -818,19 +1061,28 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 40,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "add",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 4,
       "ordered_globals": [],
       "return_value": 30,
@@ -850,11 +1102,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "p": 4,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s",
             "p"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -871,11 +1129,17 @@
           "func_name": "apply",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "op": 8,
+            "x": 4,
+            "y": 4
+          },
           "ordered_varnames": [
             "op",
             "x",
             "y"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -886,19 +1150,28 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 40,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "apply",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 8,
       "ordered_globals": [],
       "return_value": 30,
@@ -918,11 +1191,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "p": 4,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s",
             "p"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -939,20 +1218,30 @@
           "func_name": "apply",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "op": 8,
+            "x": 4,
+            "y": 4
+          },
           "ordered_varnames": [
             "op",
             "x",
             "y"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 0,
       "ordered_globals": [],
       "stack_to_render": [
@@ -972,21 +1261,32 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "fp": 8,
+            "p": 4,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s",
             "p",
             "a"
-          ]
+          ],
+          "stack_size_bytes": 20
         }
       ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 17,
       "ordered_globals": [],
       "return_value": 0,
@@ -1007,14 +1307,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "fp": 8,
+            "p": 4,
+            "s": 4
+          },
           "ordered_varnames": [
             "fp",
             "s",
             "p",
             "a"
-          ]
+          ],
+          "stack_size_bytes": 20
         }
       ],
+      "stack_total_bytes": 20,
       "stdout": ""
     }
   ],

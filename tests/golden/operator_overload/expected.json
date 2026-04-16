@@ -4,8 +4,11 @@
     {
       "event": "call",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 55,
       "ordered_globals": [],
       "stack_to_render": [
@@ -15,16 +18,22 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 56,
       "ordered_globals": [],
       "stack_to_render": [
@@ -43,18 +52,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8
+          },
           "ordered_varnames": [
             "a"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 8,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 60,
       "ordered_globals": [],
       "stack_to_render": [
@@ -81,19 +98,28 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Vec2::operator+",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 13,
       "ordered_globals": [],
       "stack_to_render": [
@@ -120,10 +146,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {},
@@ -131,16 +162,22 @@
           "func_name": "Vec2::operator+",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 16,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Vec2::operator+",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 13,
       "ordered_globals": [],
       "stack_to_render": [
@@ -167,10 +204,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -185,18 +227,26 @@
           "func_name": "Vec2::operator+",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Vec2::operator+",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 14,
       "ordered_globals": [],
       "stack_to_render": [
@@ -223,10 +273,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -249,19 +304,28 @@
           "func_name": "Vec2::operator+",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8,
+            "r": 8
+          },
           "ordered_varnames": [
             "o",
             "r"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Vec2::operator+",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 17,
       "ordered_globals": [],
       "stack_to_render": [
@@ -288,10 +352,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8
+          },
           "ordered_varnames": [
             "a",
             "b"
-          ]
+          ],
+          "stack_size_bytes": 16
         },
         {
           "encoded_locals": {
@@ -314,19 +383,28 @@
           "func_name": "Vec2::operator+",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8,
+            "r": 8
+          },
           "ordered_varnames": [
             "o",
             "r"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 64,
       "ordered_globals": [],
       "stack_to_render": [
@@ -361,20 +439,30 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Vec2::operator+=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -409,11 +497,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -421,16 +515,22 @@
           "func_name": "Vec2::operator+=",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Vec2::operator+=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -465,11 +565,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {
@@ -484,18 +590,26 @@
           "func_name": "Vec2::operator+=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Vec2::operator+=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 22,
       "ordered_globals": [],
       "stack_to_render": [
@@ -530,11 +644,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {
@@ -549,18 +669,26 @@
           "func_name": "Vec2::operator+=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Vec2::operator+=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 23,
       "ordered_globals": [],
       "stack_to_render": [
@@ -595,11 +723,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {
@@ -614,18 +748,26 @@
           "func_name": "Vec2::operator+=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Vec2::operator+=",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 24,
       "ordered_globals": [],
       "stack_to_render": [
@@ -660,11 +802,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {
@@ -679,18 +827,26 @@
           "func_name": "Vec2::operator+=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Vec2::operator++",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 28,
       "ordered_globals": [],
       "stack_to_render": [
@@ -725,11 +881,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -737,16 +899,22 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Vec2::operator++",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 29,
       "ordered_globals": [],
       "stack_to_render": [
@@ -781,11 +949,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -793,16 +967,22 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Vec2::operator++",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 30,
       "ordered_globals": [],
       "stack_to_render": [
@@ -837,11 +1017,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -849,16 +1035,22 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Vec2::operator++",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 31,
       "ordered_globals": [],
       "stack_to_render": [
@@ -893,11 +1085,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -905,16 +1103,22 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Vec2::operator++",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 35,
       "ordered_globals": [],
       "stack_to_render": [
@@ -949,11 +1153,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {},
@@ -961,16 +1171,22 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Vec2::operator++",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 36,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1005,11 +1221,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {
@@ -1026,18 +1248,26 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "copy": 8
+          },
           "ordered_varnames": [
             "copy"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Vec2::operator++",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 28,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1072,11 +1302,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {
@@ -1093,9 +1329,13 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "copy": 8
+          },
           "ordered_varnames": [
             "copy"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -1103,16 +1343,22 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Vec2::operator++",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 29,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1147,11 +1393,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {
@@ -1168,9 +1420,13 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "copy": 8
+          },
           "ordered_varnames": [
             "copy"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -1178,16 +1434,22 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Vec2::operator++",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 30,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1222,11 +1484,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {
@@ -1243,9 +1511,13 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "copy": 8
+          },
           "ordered_varnames": [
             "copy"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -1253,16 +1525,22 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Vec2::operator++",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 31,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1297,11 +1575,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {
@@ -1318,9 +1602,13 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "copy": 8
+          },
           "ordered_varnames": [
             "copy"
-          ]
+          ],
+          "stack_size_bytes": 8
         },
         {
           "encoded_locals": {},
@@ -1328,16 +1616,22 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Vec2::operator++",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 38,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1372,11 +1666,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c"
-          ]
+          ],
+          "stack_size_bytes": 24
         },
         {
           "encoded_locals": {
@@ -1393,18 +1693,26 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "copy": 8
+          },
           "ordered_varnames": [
             "copy"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 67,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1447,21 +1755,32 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8,
+            "prev": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "prev"
-          ]
+          ],
+          "stack_size_bytes": 32
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "operator-",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 48,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1504,12 +1823,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8,
+            "prev": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "prev"
-          ]
+          ],
+          "stack_size_bytes": 32
         },
         {
           "encoded_locals": {},
@@ -1517,16 +1843,22 @@
           "func_name": "operator-",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "operator-",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 48,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1569,12 +1901,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8,
+            "prev": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "prev"
-          ]
+          ],
+          "stack_size_bytes": 32
         },
         {
           "encoded_locals": {
@@ -1589,18 +1928,26 @@
           "func_name": "operator-",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "v": 8
+          },
           "ordered_varnames": [
             "v"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 40,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "operator-",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 49,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1643,12 +1990,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8,
+            "prev": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "prev"
-          ]
+          ],
+          "stack_size_bytes": 32
         },
         {
           "encoded_locals": {
@@ -1671,19 +2025,28 @@
           "func_name": "operator-",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "r": 8,
+            "v": 8
+          },
           "ordered_varnames": [
             "v",
             "r"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "operator-",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 52,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1726,12 +2089,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8,
+            "prev": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "prev"
-          ]
+          ],
+          "stack_size_bytes": 32
         },
         {
           "encoded_locals": {
@@ -1754,19 +2124,28 @@
           "func_name": "operator-",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "r": 8,
+            "v": 8
+          },
           "ordered_varnames": [
             "v",
             "r"
-          ]
+          ],
+          "stack_size_bytes": 16
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 68,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1817,22 +2196,34 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8,
+            "neg": 8,
+            "prev": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "prev",
             "neg"
-          ]
+          ],
+          "stack_size_bytes": 40
         }
       ],
+      "stack_total_bytes": 40,
       "stdout": ""
     },
     {
       "event": "call",
       "func_name": "Vec2::operator==",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 42,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1883,13 +2274,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8,
+            "neg": 8,
+            "prev": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "prev",
             "neg"
-          ]
+          ],
+          "stack_size_bytes": 40
         },
         {
           "encoded_locals": {},
@@ -1897,16 +2296,22 @@
           "func_name": "Vec2::operator==",
           "is_highlighted": true,
           "is_zombie": false,
-          "ordered_varnames": []
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
         }
       ],
+      "stack_total_bytes": 40,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "Vec2::operator==",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 42,
       "ordered_globals": [],
       "stack_to_render": [
@@ -1957,13 +2362,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8,
+            "neg": 8,
+            "prev": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "prev",
             "neg"
-          ]
+          ],
+          "stack_size_bytes": 40
         },
         {
           "encoded_locals": {
@@ -1978,18 +2391,26 @@
           "func_name": "Vec2::operator==",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "Vec2::operator==",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 43,
       "ordered_globals": [],
       "return_value": false,
@@ -2041,13 +2462,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8,
+            "neg": 8,
+            "prev": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
             "c",
             "prev",
             "neg"
-          ]
+          ],
+          "stack_size_bytes": 40
         },
         {
           "encoded_locals": {
@@ -2062,18 +2491,26 @@
           "func_name": "Vec2::operator==",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
           "ordered_varnames": [
             "o"
-          ]
+          ],
+          "stack_size_bytes": 8
         }
       ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
       "event": "step_line",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 69,
       "ordered_globals": [],
       "stack_to_render": [
@@ -2125,6 +2562,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8,
+            "eq": 1,
+            "neg": 8,
+            "prev": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -2132,16 +2577,21 @@
             "prev",
             "neg",
             "eq"
-          ]
+          ],
+          "stack_size_bytes": 41
         }
       ],
+      "stack_total_bytes": 41,
       "stdout": ""
     },
     {
       "event": "return",
       "func_name": "main",
+      "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 71,
       "ordered_globals": [],
       "return_value": 0,
@@ -2194,6 +2644,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_sizes": {
+            "a": 8,
+            "b": 8,
+            "c": 8,
+            "eq": 1,
+            "neg": 8,
+            "prev": 8
+          },
           "ordered_varnames": [
             "a",
             "b",
@@ -2201,9 +2659,11 @@
             "prev",
             "neg",
             "eq"
-          ]
+          ],
+          "stack_size_bytes": 41
         }
       ],
+      "stack_total_bytes": 41,
       "stdout": ""
     }
   ],

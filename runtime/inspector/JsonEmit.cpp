@@ -144,12 +144,15 @@ nlohmann::json JsonEmitter::stepToJson(const TraceStep& step) {
     }
     result["stack_to_render"] = stackToRender;
 
-    // Globals
+    // Globals with sizes
     nlohmann::json globalsJson = nlohmann::json::object();
+    nlohmann::json globalSizes = nlohmann::json::object();
     for (const auto& [name, vs] : step.globals) {
         globalsJson[name] = valueToJson(vs.value, vs.type);
+        globalSizes[name] = static_cast<int>(vs.sizeBytes);
     }
     result["globals"] = globalsJson;
+    result["global_sizes"] = globalSizes;
 
     nlohmann::json orderedGlobals = nlohmann::json::array();
     for (const auto& name : step.orderedGlobals) {
@@ -157,12 +160,19 @@ nlohmann::json JsonEmitter::stepToJson(const TraceStep& step) {
     }
     result["ordered_globals"] = orderedGlobals;
 
-    // Heap state
+    // Heap state with sizes
     nlohmann::json heapJson = nlohmann::json::object();
+    nlohmann::json heapSizes = nlohmann::json::object();
     for (const auto& [heapId, obj] : step.heap) {
         heapJson[std::to_string(heapId)] = heapObjectToJson(obj);
+        heapSizes[std::to_string(heapId)] = static_cast<int>(obj.sizeBytes);
     }
     result["heap"] = heapJson;
+    result["heap_sizes"] = heapSizes;
+
+    // Memory totals
+    result["stack_total_bytes"] = static_cast<int>(step.stackTotalBytes);
+    result["heap_total_bytes"] = static_cast<int>(step.heapTotalBytes);
 
     // Stdout
     result["stdout"] = step.stdout_capture;
@@ -193,15 +203,21 @@ nlohmann::json JsonEmitter::frameToJson(const Frame& frame) {
         result["is_ghost_dtor"] = true;
     }
 
-    // Encoded locals
+    // Encoded locals with size information
     nlohmann::json encodedLocals = nlohmann::json::object();
+    nlohmann::json localSizes = nlohmann::json::object();
     for (const auto& [name, var] : frame.locals) {
         encodedLocals[name] = valueToJson(var.value, var.type);
+        localSizes[name] = static_cast<int>(var.sizeBytes);
     }
     result["encoded_locals"] = encodedLocals;
+    result["local_sizes"] = localSizes;
 
     // Ordered variable names
     result["ordered_varnames"] = frame.orderedLocalNames;
+
+    // Frame stack size (total of all local variables)
+    result["stack_size_bytes"] = static_cast<int>(frame.stackSizeBytes);
 
     return result;
 }
