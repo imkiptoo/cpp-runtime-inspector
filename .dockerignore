@@ -1,0 +1,36 @@
+# Build directories
+cmake-build-debug/
+cmake-build-release/
+cmake-build/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Test outputs
+tests/golden/*/*.instrumented.cpp
+tests/examples/*.instrumented.cpp
+
+# Documentation
+*.md
+docs/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.log
