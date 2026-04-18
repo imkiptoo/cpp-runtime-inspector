@@ -489,47 +489,31 @@ bool InspectorVisitor::VisitVarDecl(clang::VarDecl* decl) {
         ensureTypeDescriptor(type);
     }
 
-    // Check if the initializer is a new expression - wrap it with capture
-    if (const clang::Expr* init = decl->getInit()) {
-        // Skip implicit casts to get to the actual expression
-        const clang::Expr* initExpr = init->IgnoreImplicit();
-        if (const auto* newExpr = llvm::dyn_cast<clang::CXXNewExpr>(initExpr)) {
-            clang::QualType allocType = newExpr->getAllocatedType();
-            if (m_typeEncoder.isSupported(allocType)) {
-                ensureTypeDescriptor(allocType);
-                std::string typeRef = m_typeEncoder.getDescriptorRef(allocType);
-                std::string typeName = allocType.getAsString();
-
-                bool isArray = newExpr->isArray();
-
-                if (isArray) {
-                    const clang::Expr* sizeExpr = newExpr->getArraySize().value_or(nullptr);
-                    std::string sizeStr = "1";
-                    if (sizeExpr) {
-                        clang::SourceRange sizeRange = sizeExpr->getSourceRange();
-                        sizeStr = clang::Lexer::getSourceText(
-                                      clang::CharSourceRange::getTokenRange(sizeRange),
-                                      m_context.getSourceManager(), m_context.getLangOpts())
-                                      .str();
-                    }
-                    std::string prefix = "::inspector::__inspector_capture_new_array<" + typeName + ">(";
-                    std::string suffix = ", " + typeRef + ", " + sizeStr + ")";
-                    m_rewriter.InsertTextBefore(newExpr->getBeginLoc(), prefix);
-                    m_rewriter.InsertTextAfterToken(newExpr->getEndLoc(), suffix);
-                } else {
-                    std::string prefix = "::inspector::__inspector_capture_new<" + typeName + ">(";
-                    std::string suffix = ", " + typeRef + ")";
-                    m_rewriter.InsertTextBefore(newExpr->getBeginLoc(), prefix);
-                    m_rewriter.InsertTextAfterToken(newExpr->getEndLoc(), suffix);
-                }
-            }
-        }
-    }
+    // Note: new expressions in initializers are handled by VisitCXXNewExpr,
+    // so we don't wrap them here to avoid double-wrapping.
 
     std::string call = generateVarInitCall(decl);
 
-    // Insert after the declaration's semicolon
-    m_rewriter.InsertTextAfterToken(decl->getEndLoc(), call);
+    // Find the semicolon after the declaration to insert after it.
+    // This is important when the initializer contains a new expression that
+    // gets wrapped - we need var_init to come AFTER the capture_new wrapper.
+    clang::SourceLocation semiLoc = clang::Lexer::findLocationAfterToken(
+        decl->getEndLoc(), clang::tok::semi, m_context.getSourceManager(),
+        m_context.getLangOpts(), /*SkipTrailingWhitespaceAndNewLine=*/false);
+
+    if (semiLoc.isValid()) {
+        // Insert after the semicolon (the call already starts with ";")
+        // Remove the leading ";" from call since we're inserting after the existing semicolon
+        // and add a trailing ";" since we're now a separate statement
+        std::string callWithoutSemi = call;
+        if (!callWithoutSemi.empty() && callWithoutSemi[0] == ';') {
+            callWithoutSemi = callWithoutSemi.substr(1);
+        }
+        m_rewriter.InsertText(semiLoc, callWithoutSemi + ";");
+    } else {
+        // Fallback to old behavior if semicolon not found
+        m_rewriter.InsertTextAfterToken(decl->getEndLoc(), call);
+    }
 
     return true;
 }
@@ -1128,24 +1112,26 @@ bool InspectorVisitor::VisitCXXNewExpr(clang::CXXNewExpr* expr) {
     if (!m_helpers.isInMainFile(expr->getBeginLoc()))
         return true;
 
-    // Check if this new expression is the direct initializer of a VarDecl.
-    // If so, skip here - VisitVarDecl will handle both the capture and the var init.
-    const auto& parents = m_context.getParents(*expr);
-    for (const auto& parent : parents) {
-        if (const auto* varDecl = parent.get<clang::VarDecl>()) {
-            // The new expression is the initializer of a variable - skip here
-            return true;
-        }
-        // Also check if wrapped in an implicit cast that's a VarDecl initializer
-        if (const auto* castExpr = parent.get<clang::ImplicitCastExpr>()) {
-            const auto& castParents = m_context.getParents(*castExpr);
-            for (const auto& castParent : castParents) {
-                if (castParent.get<clang::VarDecl>()) {
-                    return true;
-                }
-            }
-        }
+    // Guard against processing the same new expression twice (by pointer)
+    if (m_processedNewExprs.count(expr)) {
+        llvm::errs() << "inspector-instrument: SKIPPING duplicate new expr (by pointer)\n";
+        return true;
     }
+
+    // Also guard by source location to catch different AST nodes for same source
+    clang::SourceLocation loc = expr->getBeginLoc();
+    unsigned locOffset = m_context.getSourceManager().getFileOffset(loc);
+    if (m_processedNewLocations.count(locOffset)) {
+        llvm::errs() << "inspector-instrument: SKIPPING duplicate new expr (by location " << locOffset << ")\n";
+        return true;
+    }
+
+    llvm::errs() << "inspector-instrument: wrapping new expr at offset " << locOffset << "\n";
+    m_processedNewExprs.insert(expr);
+    m_processedNewLocations.insert(locOffset);
+
+    // All new expressions are handled here - VisitVarDecl only handles the
+    // variable initialization tracking, not the new expression wrapping.
 
     // Get the allocated type
     clang::QualType allocType = expr->getAllocatedType();
@@ -1184,6 +1170,11 @@ bool InspectorVisitor::VisitCXXNewExpr(clang::CXXNewExpr* expr) {
         // Wrap: ::inspector::__inspector_capture_new<T>(new T(args), &type)
         std::string prefix = "::inspector::__inspector_capture_new<" + typeName + ">(";
         std::string suffix = ", " + typeRef + ")";
+
+        unsigned beginOffset = m_context.getSourceManager().getFileOffset(expr->getBeginLoc());
+        unsigned endOffset = m_context.getSourceManager().getFileOffset(expr->getEndLoc());
+        llvm::errs() << "inspector-instrument: inserting at begin=" << beginOffset
+                     << " end=" << endOffset << " type=" << typeName << "\n";
 
         m_rewriter.InsertTextBefore(expr->getBeginLoc(), prefix);
         m_rewriter.InsertTextAfterToken(expr->getEndLoc(), suffix);
@@ -1274,6 +1265,12 @@ bool InspectorVisitor::VisitCXXConstructorDecl(clang::CXXConstructorDecl* decl) 
     if (!decl->hasBody() || !m_helpers.isInMainFile(decl->getLocation()))
         return true;
 
+    // Skip if already instrumented (VisitFunctionDecl may also visit constructors)
+    const clang::FunctionDecl* canonical = decl->getCanonicalDecl();
+    if (m_instrumentedFunctions.count(canonical))
+        return true;
+    m_instrumentedFunctions.insert(canonical);
+
     clang::Stmt* body = decl->getBody();
     auto* compound = llvm::dyn_cast<clang::CompoundStmt>(body);
     if (!compound)
@@ -1342,6 +1339,12 @@ bool InspectorVisitor::VisitCXXConstructorDecl(clang::CXXConstructorDecl* decl) 
 bool InspectorVisitor::VisitCXXDestructorDecl(clang::CXXDestructorDecl* decl) {
     if (!decl->hasBody() || !m_helpers.isInMainFile(decl->getLocation()))
         return true;
+
+    // Skip if already instrumented (VisitFunctionDecl may also visit destructors)
+    const clang::FunctionDecl* canonical = decl->getCanonicalDecl();
+    if (m_instrumentedFunctions.count(canonical))
+        return true;
+    m_instrumentedFunctions.insert(canonical);
 
     clang::Stmt* body = decl->getBody();
     auto* compound = llvm::dyn_cast<clang::CompoundStmt>(body);

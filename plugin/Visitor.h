@@ -153,6 +153,12 @@ private:
     //! Track function bodies that have already been instrumented.
     std::unordered_set<const clang::FunctionDecl*> m_instrumentedFunctions;
 
+    //! Track new expressions that have already been wrapped (by pointer).
+    std::unordered_set<const clang::CXXNewExpr*> m_processedNewExprs;
+
+    //! Track new expressions by source location (in case of different AST nodes).
+    std::unordered_set<unsigned> m_processedNewLocations;
+
     //! Current function name (set during function visitation).
     std::string m_currentFunction;
 
