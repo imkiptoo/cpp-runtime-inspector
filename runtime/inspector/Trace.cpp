@@ -272,6 +272,7 @@ void TraceState::emitStep(EventKind kind, const std::string& funcName,
         HeapObject obj;
         obj.heapId = alloc.heap_id;
         obj.typeName = alloc.type ? (alloc.type->spelling ? alloc.type->spelling : "<type>") : "<untyped>";
+        obj.address = formatAddress(alloc.base);
         obj.isArray = alloc.is_array;
         obj.arrayCount = alloc.array_count;
         obj.sizeBytes = alloc.size;

@@ -163,12 +163,15 @@ nlohmann::json JsonEmitter::stepToJson(const TraceStep& step) {
     // Heap state with sizes
     nlohmann::json heapJson = nlohmann::json::object();
     nlohmann::json heapSizes = nlohmann::json::object();
+    nlohmann::json heapAddresses = nlohmann::json::object();
     for (const auto& [heapId, obj] : step.heap) {
         heapJson[std::to_string(heapId)] = heapObjectToJson(obj);
         heapSizes[std::to_string(heapId)] = static_cast<int>(obj.sizeBytes);
+        heapAddresses[std::to_string(heapId)] = obj.address;
     }
     result["heap"] = heapJson;
     result["heap_sizes"] = heapSizes;
+    result["heap_addresses"] = heapAddresses;
 
     // Memory totals
     result["stack_total_bytes"] = static_cast<int>(step.stackTotalBytes);

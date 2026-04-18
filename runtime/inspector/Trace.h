@@ -94,6 +94,7 @@ using EncodedValue = EncodedValueVariant;
 struct HeapObject {
     int heapId;                      //!< Heap allocation ID
     std::string typeName;            //!< Type name for display
+    std::string address;             //!< Base address as hex string (e.g., "0x7f1234567890")
     bool isArray;                    //!< True if array allocation
     size_t arrayCount;               //!< Number of elements (for arrays)
     size_t sizeBytes;                //!< Size of allocation in bytes
