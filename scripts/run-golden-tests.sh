@@ -15,6 +15,48 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 GOLDEN_DIR="${ROOT}/tests/golden"
 RUNTIME_HDR="${ROOT}/runtime"
 
+# Parse command line arguments
+SINGLE_TEST=""
+VERBOSE=0
+INSTRUMENT_ONLY=0
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        -t|--test)
+            SINGLE_TEST="$2"
+            shift 2
+            ;;
+        -v|--verbose)
+            VERBOSE=1
+            shift
+            ;;
+        -i|--instrument-only)
+            INSTRUMENT_ONLY=1
+            VERBOSE=1  # Automatically enable verbose to show the output
+            shift
+            ;;
+        -h|--help)
+            echo "Usage: $0 [OPTIONS]"
+            echo ""
+            echo "Options:"
+            echo "  -t, --test NAME       Run only the specified test"
+            echo "  -v, --verbose         Show more output (instrumented code)"
+            echo "  -i, --instrument-only Just instrument, don't compile or run"
+            echo "  -h, --help            Show this help"
+            echo ""
+            echo "Examples:"
+            echo "  $0                              # Run all tests"
+            echo "  $0 -t new_struct_ptr            # Run only new_struct_ptr test"
+            echo "  $0 -t heap_basic -v             # Run heap_basic with verbose output"
+            echo "  $0 -t new_struct_ptr -i         # Just show instrumented code"
+            exit 0
+            ;;
+        *)
+            echo "Unknown option: $1"
+            exit 1
+            ;;
+    esac
+done
+
 # Determine build directory (env var takes priority)
 if [[ -n "${BUILD_DIR:-}" ]]; then
     BUILD="${ROOT}/${BUILD_DIR}"
@@ -119,7 +161,7 @@ run_test() {
         expected="${test_dir}/expected.linux.json"
     fi
 
-    if [[ ! -f "${expected}" ]]; then
+    if [[ ! -f "${expected}" && ${INSTRUMENT_ONLY} -eq 0 ]]; then
         echo "SKIP: ${test_name} (no expected.json)"
         ((SKIPPED++))
         return 0
@@ -148,6 +190,22 @@ run_test() {
         echo "FAIL (no instrumented output)"
         ((FAILED++))
         return 1
+    fi
+
+    # Show instrumented code in verbose mode
+    if [[ ${VERBOSE} -eq 1 ]]; then
+        echo ""
+        echo "--- Instrumented code ---"
+        cat "${instrumented}"
+        echo "--- End instrumented code ---"
+        echo ""
+    fi
+
+    # Stop here if instrument-only mode
+    if [[ ${INSTRUMENT_ONLY} -eq 1 ]]; then
+        echo "DONE (instrument only)"
+        ((PASSED++))
+        return 0
     fi
 
     # Pass 2: Compile
@@ -334,23 +392,43 @@ print(json.dumps({'data': normalize_for_shim(d), 'had_leaks': had_leaks}, sort_k
 echo "=== C++ Runtime Inspector Golden Tests ==="
 echo ""
 
-# Find all test directories
-for test_dir in "${GOLDEN_DIR}"/*; do
-    if [[ -d "${test_dir}" ]]; then
-        # Check for subdirectories (category/test structure)
-        if ls "${test_dir}"/*/input.cpp >/dev/null 2>&1; then
-            # Has subdirectories with tests
-            for subdir in "${test_dir}"/*; do
-                if [[ -d "${subdir}" ]]; then
-                    run_test "${subdir}" || true
-                fi
-            done
-        elif [[ -f "${test_dir}/input.cpp" ]]; then
-            # Direct test directory
-            run_test "${test_dir}" || true
-        fi
+# If a single test is specified, run only that
+if [[ -n "${SINGLE_TEST}" ]]; then
+    test_dir="${GOLDEN_DIR}/${SINGLE_TEST}"
+    if [[ -d "${test_dir}" && -f "${test_dir}/input.cpp" ]]; then
+        echo "Running single test: ${SINGLE_TEST}"
+        echo ""
+        run_test "${test_dir}" || true
+    else
+        echo "Error: Test '${SINGLE_TEST}' not found at ${test_dir}"
+        echo ""
+        echo "Available tests:"
+        for d in "${GOLDEN_DIR}"/*; do
+            if [[ -d "$d" && -f "$d/input.cpp" ]]; then
+                echo "  $(basename "$d")"
+            fi
+        done
+        exit 1
     fi
-done
+else
+    # Find all test directories
+    for test_dir in "${GOLDEN_DIR}"/*; do
+        if [[ -d "${test_dir}" ]]; then
+            # Check for subdirectories (category/test structure)
+            if ls "${test_dir}"/*/input.cpp >/dev/null 2>&1; then
+                # Has subdirectories with tests
+                for subdir in "${test_dir}"/*; do
+                    if [[ -d "${subdir}" ]]; then
+                        run_test "${subdir}" || true
+                    fi
+                done
+            elif [[ -f "${test_dir}/input.cpp" ]]; then
+                # Direct test directory
+                run_test "${test_dir}" || true
+            fi
+        fi
+    done
+fi
 
 echo ""
 echo "=== Results ==="
