@@ -1,0 +1,816 @@
+@import 'tailwindcss';
+
+/* JetBrains Islands-inspired Design Tokens */
+@theme {
+	/* Base colors */
+	--color-white: #FFFFFF;
+	--color-black: #000000;
+
+	/* Islands Gray Palette (Blue-tinted grays) */
+	--color-islands-50: #F7F8FA;
+	--color-islands-100: #EBECF0;
+	--color-islands-200: #DFE1E5;
+	--color-islands-300: #C9CCD6;
+	--color-islands-400: #9DA0A8;
+	--color-islands-500: #6E7179;
+	--color-islands-600: #4E5157;
+	--color-islands-700: #393B40;
+	--color-islands-800: #2B2D30;
+	--color-islands-900: #1E1F22;
+	--color-islands-950: #18191C;
+
+	/* Islands Accent Blue */
+	--color-brand-50: #E8F1FC;
+	--color-brand-100: #D1E3F9;
+	--color-brand-200: #A3C7F3;
+	--color-brand-300: #75ABEC;
+	--color-brand-400: #478FE6;
+	--color-brand-500: #3574F0;
+	--color-brand-600: #2B5FC7;
+	--color-brand-700: #224B9E;
+	--color-brand-800: #183775;
+	--color-brand-900: #0F234C;
+	--color-brand-950: #0A1833;
+
+	/* Trace Highlight */
+	--color-trace-light: #FEF9E7;
+	--color-trace-dark: rgba(255, 193, 7, 0.15);
+	--color-trace-stripe-light: #F59E0B;
+	--color-trace-stripe-dark: #FBBF24;
+
+	/* Orphan/Warning Colors */
+	--color-orphan-light: #FCD34D;
+	--color-orphan-dark: #F59E0B;
+
+	/* Typography */
+	--font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+	--font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', Menlo, monospace;
+
+	/* Semantic border color */
+	--color-line: var(--color-islands-200);
+
+	/* Semantic faded text color */
+	--color-faded: var(--color-islands-500);
+}
+
+/* Dark mode overrides */
+.dark {
+	--color-line: var(--color-islands-700);
+	--color-faded: var(--color-islands-400);
+}
+
+/* Base Styles */
+html {
+	font-family: var(--font-sans);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	@apply bg-islands-50 text-islands-900;
+	@apply dark:bg-islands-900 dark:text-islands-200;
+}
+
+code, pre, .font-mono {
+	font-family: var(--font-mono);
+	font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+	@apply w-2.5 h-2.5;
+}
+
+::-webkit-scrollbar-track {
+	@apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-islands-300 rounded-[5px] border-2 border-transparent bg-clip-padding;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+	@apply bg-islands-600 border-2 border-transparent bg-clip-padding;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	@apply bg-islands-400 border-2 border-transparent bg-clip-padding;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+	@apply bg-islands-500 border-2 border-transparent bg-clip-padding;
+}
+
+/* Trace Line Highlight */
+.trace-line-highlight {
+	@apply relative;
+	background-color: var(--color-trace-light);
+}
+
+.dark .trace-line-highlight {
+	background-color: var(--color-trace-dark);
+}
+
+.trace-line-highlight::before {
+	@apply content-[''] absolute left-0 top-0 bottom-0 w-[3px];
+	background-color: var(--color-trace-stripe-light);
+}
+
+.dark .trace-line-highlight::before {
+	background-color: var(--color-trace-stripe-dark);
+}
+
+/* Orphan Heap Node */
+.heap-orphan {
+	@apply border-dashed border-amber-300;
+}
+
+.dark .heap-orphan {
+	@apply border-amber-500;
+}
+
+/* Pointer Value Chip */
+.pointer-chip {
+	@apply inline-flex items-center gap-1 px-2 py-0.5 text-xs font-mono;
+	@apply rounded-sm bg-brand-100 text-brand-700;
+	@apply transition-all duration-100 ease-out;
+}
+
+.dark .pointer-chip {
+	@apply bg-brand-500/15 text-brand-400;
+}
+
+.pointer-chip:hover,
+.pointer-chip.highlighted {
+	@apply bg-brand-200;
+}
+
+.dark .pointer-chip:hover,
+.dark .pointer-chip.highlighted {
+	@apply bg-brand-500/25;
+}
+
+.pointer-chip.dangling {
+	@apply bg-red-100 text-red-600;
+}
+
+.dark .pointer-chip.dangling {
+	@apply bg-red-500/15 text-red-400;
+}
+
+/* SVG Pointer Arrows */
+.pointer-arrow {
+	@apply fill-none stroke-brand-500 stroke-[1.5];
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.pointer-arrow.highlighted {
+	@apply stroke-brand-400 stroke-2;
+}
+
+.pointer-arrow.dangling {
+	@apply stroke-red-500;
+	stroke-dasharray: 4 4;
+}
+
+.pointer-arrow-head {
+	@apply fill-brand-500;
+}
+
+.pointer-arrow-head.highlighted {
+	@apply fill-brand-400;
+}
+
+.pointer-arrow-head.dangling {
+	@apply fill-red-500;
+}
+
+/* Frame Card */
+.frame-card {
+	@apply bg-white border border-line rounded-lg shadow-sm;
+}
+
+.dark .frame-card {
+	@apply bg-islands-800;
+}
+
+.frame-card.highlighted {
+	@apply border-brand-500;
+	box-shadow: 0 0 0 3px rgba(53, 116, 240, 0.1);
+}
+
+.dark .frame-card.highlighted {
+	@apply border-brand-400;
+	box-shadow: 0 0 0 3px rgba(53, 116, 240, 0.15);
+}
+
+.frame-card.zombie {
+	@apply opacity-50;
+}
+
+/* Heap Node */
+.heap-node {
+	@apply bg-white border border-line rounded-lg shadow-md;
+}
+
+.dark .heap-node {
+	@apply bg-islands-800;
+}
+
+/* Value Type Colors */
+.value-int {
+	@apply text-brand-500;
+}
+
+.dark .value-int {
+	@apply text-brand-400;
+}
+
+.value-float {
+	@apply text-green-600;
+}
+
+.dark .value-float {
+	@apply text-green-400;
+}
+
+.value-bool {
+	@apply text-purple-600;
+}
+
+.dark .value-bool {
+	@apply text-purple-400;
+}
+
+.value-char {
+	@apply text-amber-600;
+}
+
+.dark .value-char {
+	@apply text-amber-400;
+}
+
+.value-string {
+	@apply text-red-600;
+}
+
+.dark .value-string {
+	@apply text-red-400;
+}
+
+.value-null {
+	@apply text-islands-400 italic;
+}
+
+.dark .value-null {
+	@apply text-islands-500;
+}
+
+/* Splitter */
+.splitter {
+	@apply bg-transparent rounded-sm transition-colors duration-100;
+}
+
+.splitter:hover {
+	@apply bg-islands-300;
+}
+
+.dark .splitter:hover {
+	@apply bg-islands-600;
+}
+
+.splitter.dragging {
+	@apply bg-brand-500;
+}
+
+/* Console */
+.console-output {
+	@apply font-mono text-[13px] leading-relaxed whitespace-pre-wrap break-all;
+}
+
+/* Execution Bar Buttons */
+.exec-button {
+	@apply p-2 rounded-md text-islands-600 transition-all duration-100;
+}
+
+.dark .exec-button {
+	@apply text-islands-400;
+}
+
+.exec-button:hover:not(:disabled) {
+	@apply bg-islands-100 text-islands-900;
+}
+
+.dark .exec-button:hover:not(:disabled) {
+	@apply bg-islands-700 text-islands-100;
+}
+
+.exec-button:disabled {
+	@apply opacity-40 cursor-not-allowed;
+}
+
+.exec-button.primary {
+	@apply bg-brand-500 text-white;
+}
+
+.exec-button.primary:hover:not(:disabled) {
+	@apply bg-brand-600 text-white;
+}
+
+/* Modal */
+.modal-backdrop {
+	@apply fixed inset-0 bg-black/40 backdrop-blur-sm;
+}
+
+.dark .modal-backdrop {
+	@apply bg-black/60;
+}
+
+.modal-content {
+	@apply bg-white rounded-xl border border-line;
+}
+
+.dark .modal-content {
+	@apply bg-islands-800;
+}
+
+/* Scrubber */
+.scrubber-track {
+	@apply h-1 rounded-sm bg-islands-200;
+}
+
+.dark .scrubber-track {
+	@apply bg-islands-700;
+}
+
+.scrubber-fill {
+	@apply h-full rounded-sm bg-brand-500;
+}
+
+.scrubber-thumb {
+	@apply w-3.5 h-3.5 rounded-full bg-white border-2 border-brand-500 shadow-sm cursor-grab;
+}
+
+.scrubber-thumb:active {
+	@apply cursor-grabbing;
+}
+
+/* CodeMirror */
+.cm-editor {
+	@apply h-full font-mono text-[13px] bg-white;
+}
+
+.dark .cm-editor {
+	@apply bg-islands-900;
+}
+
+.cm-editor.cm-focused {
+	@apply outline-none;
+}
+
+.cm-scroller {
+	@apply overflow-auto;
+}
+
+.cm-content {
+	@apply py-2;
+}
+
+.cm-line {
+	@apply px-3;
+}
+
+/* Gutters */
+.cm-gutters {
+	@apply bg-islands-50 border-r border-line;
+}
+
+.dark .cm-gutters {
+	@apply bg-islands-950 border-islands-800;
+}
+
+.cm-lineNumbers .cm-gutterElement {
+	@apply text-islands-400 px-3 pl-2 min-w-[40px] cursor-pointer text-xs;
+}
+
+.dark .cm-lineNumbers .cm-gutterElement {
+	@apply text-islands-500;
+}
+
+.cm-lineNumbers .cm-gutterElement:hover {
+	@apply text-islands-600 bg-islands-100;
+}
+
+.dark .cm-lineNumbers .cm-gutterElement:hover {
+	@apply text-islands-300 bg-islands-800;
+}
+
+/* Active line */
+.cm-activeLine {
+	@apply bg-black/[0.02];
+}
+
+.dark .cm-activeLine {
+	@apply bg-white/[0.02];
+}
+
+.cm-activeLineGutter {
+	@apply bg-islands-100;
+}
+
+.dark .cm-activeLineGutter {
+	@apply bg-islands-800;
+}
+
+/* Selection */
+.cm-selectionBackground {
+	@apply !bg-brand-100;
+}
+
+.dark .cm-selectionBackground {
+	background: rgba(53, 116, 240, 0.25) !important;
+}
+
+.cm-editor.cm-focused .cm-selectionBackground {
+	@apply !bg-brand-200;
+}
+
+.dark .cm-editor.cm-focused .cm-selectionBackground {
+	background: rgba(53, 116, 240, 0.35) !important;
+}
+
+/* Stale indicator */
+.stale-indicator {
+	@apply w-2 h-2 rounded-full bg-amber-300 animate-pulse;
+}
+
+/* FLIP Animation Classes */
+.flip-enter {
+	animation: flipEnter 200ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.flip-exit {
+	animation: flipExit 200ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes flipEnter {
+	from {
+		opacity: 0;
+		transform: scale(0.95) translateY(0.25rem);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1) translateY(0);
+	}
+}
+
+@keyframes flipExit {
+	from {
+		opacity: 1;
+		transform: scale(1) translateY(0);
+	}
+	to {
+		opacity: 0;
+		transform: scale(0.95) translateY(-0.25rem);
+	}
+}
+
+/* Focus visible */
+:focus-visible {
+	@apply outline-none ring-2 ring-brand-500;
+}
+
+.dark :focus-visible {
+	@apply ring-brand-400;
+}
+
+/* Selection */
+::selection {
+	@apply bg-brand-200;
+}
+
+.dark ::selection {
+	background: rgba(53, 116, 240, 0.35);
+}
+
+/* Panel headers */
+.panel-header {
+	@apply text-[11px] font-medium tracking-wide uppercase text-islands-500 py-2.5 px-3.5 border-b border-line;
+}
+
+.dark .panel-header {
+	@apply text-islands-400;
+}
+
+/* Toolbar */
+.toolbar {
+	@apply bg-islands-50 border-b border-line;
+}
+
+.dark .toolbar {
+	@apply bg-islands-800;
+}
+
+/* Islands button styles */
+.btn-islands {
+	@apply px-3 py-1.5 rounded-md text-[13px] font-medium transition-all duration-100 border border-transparent;
+}
+
+.btn-islands-primary {
+	@apply bg-brand-500 text-white;
+}
+
+.btn-islands-primary:hover {
+	@apply bg-brand-600;
+}
+
+.btn-islands-secondary {
+	@apply bg-islands-100 text-islands-700 border-line;
+}
+
+.dark .btn-islands-secondary {
+	@apply bg-islands-700 text-islands-200 border-islands-600;
+}
+
+.btn-islands-secondary:hover {
+	@apply bg-islands-200;
+}
+
+.dark .btn-islands-secondary:hover {
+	@apply bg-islands-600;
+}
+
+/* Islands Panel */
+.islands-panel {
+	@apply bg-white rounded-md border border-line;
+	/* Note: no overflow:hidden to allow dropdowns to extend outside */
+}
+
+.dark .islands-panel {
+	@apply bg-islands-900;
+}
+
+/* Islands gap */
+.islands-gap {
+	@apply gap-1.5;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+	.hide-mobile {
+		@apply hidden;
+	}
+}
+
+/* Sentry-style Chonky Buttons */
+.btn-chonky {
+	--btn-elevation: 2px;
+	--btn-hover-elevation: 1px;
+	--btn-surface: theme(colors.islands.100);
+	--btn-chonk: theme(colors.islands.300);
+	--btn-color: theme(colors.islands.700);
+	--btn-y: calc(-1 * var(--btn-elevation));
+	--btn-shadow: 0 var(--btn-elevation) 0 0 var(--btn-chonk);
+
+	@apply relative inline-flex items-center justify-center gap-2;
+	@apply px-3 py-1.25 border-none rounded-lg;
+	@apply text-[13px] font-medium leading-5 whitespace-nowrap;
+	@apply bg-transparent cursor-pointer;
+	color: var(--btn-color);
+}
+
+.btn-chonky::before {
+	@apply content-[''] absolute inset-0 rounded-[inherit];
+	height: calc(100% - var(--btn-elevation));
+	top: var(--btn-elevation);
+	transform: translateY(calc(-1 * var(--btn-elevation)));
+	box-shadow: var(--btn-shadow);
+	background: var(--btn-chonk);
+}
+
+.btn-chonky::after {
+	@apply content-[''] absolute inset-0 rounded-[inherit];
+	transition: transform 100ms cubic-bezier(0.3, 0.7, 0.4, 1);
+	background: var(--btn-surface);
+	border: 1px solid var(--btn-chonk);
+	transform: translateY(var(--btn-y));
+}
+
+.btn-chonky > span {
+	@apply relative z-10 flex items-center justify-center gap-2;
+	transition: transform 100ms cubic-bezier(0.3, 0.7, 0.4, 1);
+	transform: translateY(var(--btn-y));
+}
+
+.btn-chonky:hover {
+	--btn-y: calc(-1 * var(--btn-elevation) - var(--btn-hover-elevation));
+}
+
+.btn-chonky:active,
+.btn-chonky[aria-expanded="true"] {
+	--btn-y: 0px;
+	--btn-shadow: none;
+}
+
+.btn-chonky:active::after,
+.btn-chonky:active > span,
+.btn-chonky[aria-expanded="true"]::after,
+.btn-chonky[aria-expanded="true"] > span {
+	transition: none;
+}
+
+.btn-chonky:disabled {
+	@apply opacity-60 cursor-not-allowed;
+	--btn-y: 0px;
+	--btn-shadow: none;
+}
+
+.btn-chonky:focus-visible {
+	@apply outline-none;
+}
+
+.btn-chonky:focus-visible::after {
+	border-color: theme(colors.brand.500);
+	box-shadow: 0 0 0 1px theme(colors.brand.500);
+}
+
+/* Primary (green) variant */
+.btn-chonky-primary {
+	--btn-surface: theme(colors.green.600);
+	--btn-chonk: theme(colors.green.900);
+	--btn-color: theme(colors.white);
+}
+
+/* Secondary (neutral) variant */
+.btn-chonky-secondary {
+	--btn-surface: theme(colors.islands.100);
+	--btn-chonk: theme(colors.islands.300);
+	--btn-color: theme(colors.islands.700);
+}
+
+.dark .btn-chonky-secondary {
+	--btn-surface: theme(colors.islands.600);
+	--btn-chonk: theme(colors.islands.700);
+	--btn-color: theme(colors.islands.200);
+}
+
+/* Danger (red) variant */
+.btn-chonky-danger {
+	--btn-surface: theme(colors.red.100);
+	--btn-chonk: theme(colors.red.300);
+	--btn-color: theme(colors.red.700);
+}
+
+.dark .btn-chonky-danger {
+	--btn-surface: theme(colors.red.900);
+	--btn-chonk: theme(colors.red.950);
+	--btn-color: theme(colors.red.300);
+}
+
+/* Warning (amber) variant */
+.btn-chonky-warning {
+	--btn-surface: theme(colors.amber.100);
+	--btn-chonk: theme(colors.amber.300);
+	--btn-color: theme(colors.amber.700);
+}
+
+.dark .btn-chonky-warning {
+	--btn-surface: theme(colors.amber.900);
+	--btn-chonk: theme(colors.amber.950);
+	--btn-color: theme(colors.amber.300);
+}
+
+/* Active/selected variant (for toggle groups) */
+.btn-chonky-active {
+	--btn-surface: theme(colors.brand.500);
+	--btn-chonk: theme(colors.brand.700);
+	--btn-color: theme(colors.white);
+	--btn-y: 0px;
+	--btn-shadow: none;
+}
+
+.btn-chonky-active:hover {
+	--btn-y: 0px;
+}
+
+/* Busy state */
+.btn-chonky-busy {
+	@apply cursor-progress;
+	--btn-y: 0px;
+	--btn-shadow: none;
+}
+
+/* Small size variant */
+.btn-chonky-sm {
+	@apply px-2.5 py-0.5 rounded-md;
+	--btn-elevation: 1px;
+}
+
+/* Square (icon-only) variant */
+.btn-chonky-square {
+	@apply px-1.75 py-1.25;
+}
+
+/* Button Bar - groups buttons into a seamless pill */
+.btn-bar {
+	@apply inline-flex items-center;
+}
+
+.btn-bar > .active {
+	@apply z-10;
+}
+
+/* Horizontal button bar (default) */
+.btn-bar > button,
+.btn-bar > a {
+	@apply relative;
+}
+
+/* First button: square on right */
+.btn-bar > button:first-child:not(:last-child),
+.btn-bar > a:first-child:not(:last-child) {
+	@apply rounded-r-none;
+}
+
+.btn-bar > button:first-child:not(:last-child)::before,
+.btn-bar > button:first-child:not(:last-child)::after,
+.btn-bar > a:first-child:not(:last-child)::before,
+.btn-bar > a:first-child:not(:last-child)::after {
+	@apply rounded-r-none;
+}
+
+/* Middle buttons: fully square */
+.btn-bar > button:not(:first-child):not(:last-child),
+.btn-bar > a:not(:first-child):not(:last-child) {
+	@apply rounded-none -ml-px;
+}
+
+.btn-bar > button:not(:first-child):not(:last-child)::before,
+.btn-bar > button:not(:first-child):not(:last-child)::after,
+.btn-bar > a:not(:first-child):not(:last-child)::before,
+.btn-bar > a:not(:first-child):not(:last-child)::after {
+	@apply rounded-none;
+}
+
+/* Last button: square on left */
+.btn-bar > button:last-child:not(:first-child),
+.btn-bar > a:last-child:not(:first-child) {
+	@apply rounded-l-none -ml-px;
+}
+
+.btn-bar > button:last-child:not(:first-child)::before,
+.btn-bar > button:last-child:not(:first-child)::after,
+.btn-bar > a:last-child:not(:first-child)::before,
+.btn-bar > a:last-child:not(:first-child)::after {
+	@apply rounded-l-none;
+}
+
+/* Vertical button bar */
+.btn-bar-vertical {
+	@apply inline-flex flex-col items-stretch;
+}
+
+.btn-bar-vertical > button,
+.btn-bar-vertical > a {
+	@apply relative;
+}
+
+/* First button: square on bottom */
+.btn-bar-vertical > button:first-child:not(:last-child),
+.btn-bar-vertical > a:first-child:not(:last-child) {
+	@apply rounded-b-none;
+}
+
+.btn-bar-vertical > button:first-child:not(:last-child)::before,
+.btn-bar-vertical > button:first-child:not(:last-child)::after,
+.btn-bar-vertical > a:first-child:not(:last-child)::before,
+.btn-bar-vertical > a:first-child:not(:last-child)::after {
+	@apply rounded-b-none;
+}
+
+/* Middle buttons: fully square */
+.btn-bar-vertical > button:not(:first-child):not(:last-child),
+.btn-bar-vertical > a:not(:first-child):not(:last-child) {
+	@apply rounded-none -mt-px;
+}
+
+.btn-bar-vertical > button:not(:first-child):not(:last-child)::before,
+.btn-bar-vertical > button:not(:first-child):not(:last-child)::after,
+.btn-bar-vertical > a:not(:first-child):not(:last-child)::before,
+.btn-bar-vertical > a:not(:first-child):not(:last-child)::after {
+	@apply rounded-none;
+}
+
+/* Last button: square on top */
+.btn-bar-vertical > button:last-child:not(:first-child),
+.btn-bar-vertical > a:last-child:not(:first-child) {
+	@apply rounded-t-none -mt-px;
+}
+
+.btn-bar-vertical > button:last-child:not(:first-child)::before,
+.btn-bar-vertical > button:last-child:not(:first-child)::after,
+.btn-bar-vertical > a:last-child:not(:first-child)::before,
+.btn-bar-vertical > a:last-child:not(:first-child)::after {
+	@apply rounded-t-none;
+}
