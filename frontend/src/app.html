@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="C++ Runtime Inspector - Visualize C++ program execution step by step" />
+		<link rel="icon" id="favicon" href="%sveltekit.assets%/favicon.svg" type="image/svg+xml" />
+		<!-- Preload fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+		<!-- FOUC prevention: Apply theme before render + dynamic favicon -->
+		<script>
+			(function() {
+				const stored = localStorage.getItem('theme-preference');
+				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				const theme = stored === 'dark' || (stored === 'system' || !stored) && prefersDark ? 'dark' : 'light';
+				document.documentElement.classList.toggle('dark', theme === 'dark');
+
+				// Dynamic favicon based on color scheme
+				function updateFavicon() {
+					const favicon = document.getElementById('favicon');
+					if (!favicon) return;
+					const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+					favicon.href = isDark ? '/logo-white.svg' : '/favicon.svg';
+				}
+				updateFavicon();
+				window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
+			})();
+		</script>
+		%sveltekit.head%
+	</head>
+	<body class="h-full bg-white text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100 antialiased" data-sveltekit-preload-data="hover">
+		<div class="h-full" style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
