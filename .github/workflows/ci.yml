@@ -58,10 +58,15 @@ jobs:
 
       - name: Configure
         run: |
+          # Pin cmake to the matrix-installed LLVM. Ubuntu 24.04 runners ship
+          # with llvm-17 preinstalled, which find_package would otherwise pick
+          # over the matrix-requested clang version.
           cmake -B build -G Ninja \
             -DCMAKE_BUILD_TYPE=Release \
             -DCMAKE_CXX_COMPILER=clang++ \
-            -DCMAKE_C_COMPILER=clang
+            -DCMAKE_C_COMPILER=clang \
+            -DLLVM_DIR=/usr/lib/llvm-${{ matrix.clang }}/lib/cmake/llvm \
+            -DClang_DIR=/usr/lib/llvm-${{ matrix.clang }}/lib/cmake/clang
 
       - name: Build
         run: cmake --build build
