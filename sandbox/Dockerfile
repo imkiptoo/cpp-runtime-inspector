@@ -48,6 +48,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY --from=builder /build/build/libInspectorPlugin.so /opt/inspector/lib/
 COPY --from=builder /build/build/libinspector_runtime.a /opt/inspector/lib/
 COPY --from=builder /build/runtime/inspector_runtime.h /opt/inspector/include/
+COPY --from=builder /build/runtime/inspector/ /opt/inspector/include/inspector/
 COPY --from=builder /build/sandbox/run-traced.sh /opt/inspector/bin/
 
 # Create working directory
