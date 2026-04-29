@@ -32,11 +32,7 @@ public:
         // Write instrumented output
         clang::SourceManager& sm = context.getSourceManager();
         clang::FileID mainFid = sm.getMainFileID();
-#if LLVM_VERSION_MAJOR >= 18
-        const llvm::RewriteBuffer* buf = rewriter.getRewriteBufferFor(mainFid);
-#else
         const clang::RewriteBuffer* buf = rewriter.getRewriteBufferFor(mainFid);
-#endif
 
         clang::OptionalFileEntryRef fe = sm.getFileEntryRefForID(mainFid);
         if (!fe) {
