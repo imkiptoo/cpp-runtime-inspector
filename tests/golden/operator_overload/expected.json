@@ -7,6 +7,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 55,
@@ -32,6 +33,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 56,
@@ -70,6 +72,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 60,
@@ -118,6 +121,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 13,
@@ -176,6 +180,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 13,
@@ -218,7 +223,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x140000000a",
               "const struct Vec2 &",
               "unknown"
             ]
@@ -245,6 +250,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 14,
@@ -287,7 +293,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x140000000a",
               "const struct Vec2 &",
               "unknown"
             ],
@@ -324,6 +330,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 17,
@@ -366,7 +373,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x140000000a",
               "const struct Vec2 &",
               "unknown"
             ],
@@ -403,6 +410,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 64,
@@ -461,6 +469,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 21,
@@ -529,6 +538,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 21,
@@ -581,7 +591,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x140000000a",
               "const struct Vec2 &",
               "unknown"
             ]
@@ -608,6 +618,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 22,
@@ -660,7 +671,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x140000000a",
               "const struct Vec2 &",
               "unknown"
             ]
@@ -687,6 +698,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 23,
@@ -739,7 +751,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x140000000a",
               "const struct Vec2 &",
               "unknown"
             ]
@@ -766,6 +778,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 24,
@@ -818,7 +831,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x140000000a",
               "const struct Vec2 &",
               "unknown"
             ]
@@ -845,6 +858,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 28,
@@ -913,6 +927,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 29,
@@ -981,6 +996,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 30,
@@ -1049,6 +1065,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 31,
@@ -1117,6 +1134,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 35,
@@ -1185,6 +1203,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 36,
@@ -1266,6 +1285,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 28,
@@ -1357,6 +1377,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 29,
@@ -1448,6 +1469,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 30,
@@ -1539,6 +1561,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 31,
@@ -1630,6 +1653,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 38,
@@ -1711,6 +1735,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 67,
@@ -1779,6 +1804,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 48,
@@ -1857,6 +1883,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 48,
@@ -1919,7 +1946,7 @@
           "encoded_locals": {
             "v": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x160000000b",
               "const struct Vec2 &",
               "unknown"
             ]
@@ -1946,6 +1973,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 49,
@@ -2016,7 +2044,7 @@
             ],
             "v": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x160000000b",
               "const struct Vec2 &",
               "unknown"
             ]
@@ -2045,6 +2073,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 52,
@@ -2115,7 +2144,7 @@
             ],
             "v": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x160000000b",
               "const struct Vec2 &",
               "unknown"
             ]
@@ -2144,6 +2173,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 68,
@@ -2222,6 +2252,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 42,
@@ -2310,6 +2341,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 42,
@@ -2382,7 +2414,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x140000000a",
               "const struct Vec2 &",
               "unknown"
             ]
@@ -2409,6 +2441,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 43,
@@ -2482,7 +2515,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x140000000a",
               "const struct Vec2 &",
               "unknown"
             ]
@@ -2509,6 +2542,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 69,
@@ -2590,6 +2624,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 71,

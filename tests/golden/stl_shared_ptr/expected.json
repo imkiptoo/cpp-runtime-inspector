@@ -7,6 +7,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 11,
@@ -32,6 +33,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 12,
@@ -41,7 +43,7 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x129606058",
               "struct Resource",
               "unknown"
             ]
@@ -68,6 +70,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 17,
@@ -77,13 +80,13 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x129606058",
               "struct Resource",
               "unknown"
             ],
             "b": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x129606058",
               "struct Resource",
               "unknown"
             ]
@@ -112,6 +115,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -121,13 +125,13 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x129606058",
               "struct Resource",
               "unknown"
             ],
             "b": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x129606058",
               "struct Resource",
               "unknown"
             ],
@@ -159,6 +163,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -168,13 +173,13 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x129606058",
               "struct Resource",
               "unknown"
             ],
             "b": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x0",
               "struct Resource",
               "null"
             ],
@@ -209,6 +214,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 25,
@@ -219,13 +225,13 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x0",
               "struct Resource",
               "null"
             ],
             "b": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x0",
               "struct Resource",
               "null"
             ],

@@ -25,6 +25,7 @@
         "ratio": 1.6180000305175781
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 24,
@@ -77,6 +78,7 @@
         "ratio": 1.6180000305175781
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 25,
@@ -135,6 +137,7 @@
         "ratio": 1.6180000305175781
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -196,6 +199,7 @@
         "ratio": 1.6180000305175781
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 27,

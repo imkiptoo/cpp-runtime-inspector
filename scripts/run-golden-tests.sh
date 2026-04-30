@@ -111,14 +111,18 @@ import json
 import re
 import sys
 
-def normalize(obj, heap_map=None):
+def normalize(obj, heap_map=None, parent_key=None):
     if heap_map is None:
         heap_map = {'counter': 0}
 
     if isinstance(obj, dict):
-        return {k: normalize(v, heap_map) for k, v in sorted(obj.items())}
+        return {k: normalize(v, heap_map, k) for k, v in sorted(obj.items())}
     elif isinstance(obj, list):
-        return [normalize(v, heap_map) for v in obj]
+        normalized = [normalize(v, heap_map) for v in obj]
+        # Sort memory_leaks array for deterministic comparison
+        if parent_key == 'memory_leaks':
+            normalized = sorted(normalized, key=lambda x: str(x))
+        return normalized
     elif isinstance(obj, str):
         # Normalize addresses
         obj = re.sub(r'0x[0-9a-fA-F]+', '0xPTR', obj)
@@ -322,7 +326,7 @@ def normalize_for_shim(obj, id_map=None):
     if isinstance(obj, dict):
         # Strip heap, memory_leaks, heap_sizes, heap_total_bytes (internal allocations vary)
         return {k: normalize_for_shim(v, id_map) for k, v in obj.items()
-                if k not in ('heap', 'memory_leaks', 'heap_sizes', 'heap_total_bytes')}
+                if k not in ('heap', 'memory_leaks', 'heap_sizes', 'heap_total_bytes', 'heap_addresses')}
     if isinstance(obj, list):
         # Check for REF/DANGLING patterns: ['REF', id] or ['DANGLING', id]
         if len(obj) == 2 and obj[0] in ('REF', 'DANGLING') and isinstance(obj[1], int):
@@ -349,7 +353,7 @@ def normalize_for_shim(obj, id_map=None):
     if isinstance(obj, dict):
         # Strip heap, memory_leaks, heap_sizes, heap_total_bytes (internal allocations vary)
         return {k: normalize_for_shim(v, id_map) for k, v in obj.items()
-                if k not in ('heap', 'memory_leaks', 'heap_sizes', 'heap_total_bytes')}
+                if k not in ('heap', 'memory_leaks', 'heap_sizes', 'heap_total_bytes', 'heap_addresses')}
     if isinstance(obj, list):
         if len(obj) == 2 and obj[0] in ('REF', 'DANGLING') and isinstance(obj[1], int):
             old_id = obj[1]

@@ -7,6 +7,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 20,
@@ -32,6 +33,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -63,6 +65,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -97,6 +100,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 23,
@@ -141,6 +145,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 28,
@@ -152,12 +157,12 @@
             "b": 10,
             "f1": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:28:15)",
               {
                 "a": 5,
                 "b": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aac04",
                   "int &",
                   "stack"
                 ]
@@ -200,6 +205,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 33,
@@ -211,12 +217,12 @@
             "b": 10,
             "f1": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:28:15)",
               {
                 "a": 5,
                 "b": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aac04",
                   "int &",
                   "stack"
                 ]
@@ -224,7 +230,7 @@
             ],
             "f2": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:33:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:33:15)",
               {
                 "p": [
                   "C_STRUCT",
@@ -275,6 +281,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 38,
@@ -286,12 +293,12 @@
             "b": 10,
             "f1": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:28:15)",
               {
                 "a": 5,
                 "b": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aac04",
                   "int &",
                   "stack"
                 ]
@@ -299,7 +306,7 @@
             ],
             "f2": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:33:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:33:15)",
               {
                 "p": [
                   "C_STRUCT",
@@ -313,11 +320,11 @@
             ],
             "f3": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:38:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:38:15)",
               {
                 "p": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aabf8",
                   "struct Point &",
                   "stack"
                 ]
@@ -364,6 +371,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 43,
@@ -375,12 +383,12 @@
             "b": 10,
             "f1": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:28:15)",
               {
                 "a": 5,
                 "b": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aac04",
                   "int &",
                   "stack"
                 ]
@@ -388,7 +396,7 @@
             ],
             "f2": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:33:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:33:15)",
               {
                 "p": [
                   "C_STRUCT",
@@ -402,11 +410,11 @@
             ],
             "f3": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:38:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:38:15)",
               {
                 "p": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aabf8",
                   "struct Point &",
                   "stack"
                 ]
@@ -414,7 +422,7 @@
             ],
             "f4": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:43:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:43:15)",
               {
                 "a": 5,
                 "p": [
@@ -470,6 +478,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 48,
@@ -481,12 +490,12 @@
             "b": 10,
             "f1": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:28:15)",
               {
                 "a": 5,
                 "b": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aac04",
                   "int &",
                   "stack"
                 ]
@@ -494,7 +503,7 @@
             ],
             "f2": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:33:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:33:15)",
               {
                 "p": [
                   "C_STRUCT",
@@ -508,11 +517,11 @@
             ],
             "f3": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:38:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:38:15)",
               {
                 "p": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aabf8",
                   "struct Point &",
                   "stack"
                 ]
@@ -520,7 +529,7 @@
             ],
             "f4": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:43:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:43:15)",
               {
                 "a": 5,
                 "p": [
@@ -535,17 +544,17 @@
             ],
             "f5": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:48:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:48:15)",
               {
                 "b": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aac04",
                   "int &",
                   "stack"
                 ],
                 "p": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aabf8",
                   "struct Point &",
                   "stack"
                 ]
@@ -596,6 +605,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 29,
@@ -608,12 +618,12 @@
             "b": 10,
             "f1": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:28:15)",
               {
                 "a": 5,
                 "b": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aac04",
                   "int &",
                   "stack"
                 ]
@@ -621,7 +631,7 @@
             ],
             "f2": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:33:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:33:15)",
               {
                 "p": [
                   "C_STRUCT",
@@ -635,11 +645,11 @@
             ],
             "f3": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:38:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:38:15)",
               {
                 "p": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aabf8",
                   "struct Point &",
                   "stack"
                 ]
@@ -647,7 +657,7 @@
             ],
             "f4": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:43:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:43:15)",
               {
                 "a": 5,
                 "p": [
@@ -662,17 +672,17 @@
             ],
             "f5": [
               "C_STRUCT",
-              "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:48:15)",
+              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:48:15)",
               {
                 "b": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aac04",
                   "int &",
                   "stack"
                 ],
                 "p": [
                   "C_ADDRESS",
-                  "0xPTR",
+                  "0x16b1aabf8",
                   "struct Point &",
                   "stack"
                 ]
@@ -735,7 +745,7 @@
         }
       ],
       "kind": "struct",
-      "name": "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:28:15)",
+      "name": "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:28:15)",
       "sizeof": 16
     },
     "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:33:15)": {
@@ -748,7 +758,7 @@
         }
       ],
       "kind": "struct",
-      "name": "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:33:15)",
+      "name": "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:33:15)",
       "sizeof": 8
     },
     "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:38:15)": {
@@ -761,7 +771,7 @@
         }
       ],
       "kind": "struct",
-      "name": "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:38:15)",
+      "name": "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:38:15)",
       "sizeof": 8
     },
     "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:43:15)": {
@@ -780,7 +790,7 @@
         }
       ],
       "kind": "struct",
-      "name": "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:43:15)",
+      "name": "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:43:15)",
       "sizeof": 12
     },
     "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:48:15)": {
@@ -799,7 +809,7 @@
         }
       ],
       "kind": "struct",
-      "name": "class (lambda at <ROOT>/tests/golden/lambda_captures/input.cpp:48:15)",
+      "name": "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda_captures/input.cpp:48:15)",
       "sizeof": 16
     },
     "int": {

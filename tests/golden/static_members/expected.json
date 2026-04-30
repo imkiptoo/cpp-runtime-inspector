@@ -11,6 +11,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 18,
@@ -42,6 +43,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 19,
@@ -85,6 +87,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 20,
@@ -137,6 +140,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 8,
@@ -199,6 +203,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 9,
@@ -261,6 +266,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 11,
@@ -329,6 +335,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 8,
@@ -391,6 +398,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 9,
@@ -453,6 +461,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 11,
@@ -521,6 +530,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 8,
@@ -583,6 +593,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 9,
@@ -645,6 +656,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 11,
@@ -713,6 +725,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 13,
@@ -775,6 +788,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 13,
@@ -838,6 +852,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -893,6 +908,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -951,6 +967,7 @@
         "total": 0
       },
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 27,

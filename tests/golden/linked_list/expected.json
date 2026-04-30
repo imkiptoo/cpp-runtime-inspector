@@ -7,6 +7,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 9,
@@ -44,13 +45,16 @@
               "next",
               [
                 "C_ADDRESS",
-                "0xPTR",
+                "0x0",
                 "struct Node *",
                 "null"
               ]
             ]
           ]
         ]
+      },
+      "heap_addresses": {
+        "1": "0x122e05f70"
       },
       "heap_sizes": {
         "1": 16
@@ -134,13 +138,18 @@
               "next",
               [
                 "C_ADDRESS",
-                "0xPTR",
+                "0x0",
                 "struct Node *",
                 "null"
               ]
             ]
           ]
         ]
+      },
+      "heap_addresses": {
+        "1": "0x122e05f70",
+        "2": "0x122e06680",
+        "3": "0x122e05eb0"
       },
       "heap_sizes": {
         "1": 16,
@@ -232,13 +241,18 @@
               "next",
               [
                 "C_ADDRESS",
-                "0xPTR",
+                "0x0",
                 "struct Node *",
                 "null"
               ]
             ]
           ]
         ]
+      },
+      "heap_addresses": {
+        "1": "0x122e05f70",
+        "2": "0x122e06680",
+        "3": "0x122e05eb0"
       },
       "heap_sizes": {
         "1": 16,
@@ -330,13 +344,18 @@
               "next",
               [
                 "C_ADDRESS",
-                "0xPTR",
+                "0x0",
                 "struct Node *",
                 "null"
               ]
             ]
           ]
         ]
+      },
+      "heap_addresses": {
+        "1": "0x122e05f70",
+        "2": "0x122e06680",
+        "3": "0x122e05eb0"
       },
       "heap_sizes": {
         "1": 16,
@@ -417,13 +436,17 @@
               "next",
               [
                 "C_ADDRESS",
-                "0xPTR",
+                "0x0",
                 "struct Node *",
                 "null"
               ]
             ]
           ]
         ]
+      },
+      "heap_addresses": {
+        "2": "0x122e06680",
+        "3": "0x122e05eb0"
       },
       "heap_sizes": {
         "2": 16,
@@ -486,13 +509,16 @@
               "next",
               [
                 "C_ADDRESS",
-                "0xPTR",
+                "0x0",
                 "struct Node *",
                 "null"
               ]
             ]
           ]
         ]
+      },
+      "heap_addresses": {
+        "3": "0x122e05eb0"
       },
       "heap_sizes": {
         "3": 16
@@ -513,7 +539,7 @@
             ],
             "next": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x0",
               "struct Node *",
               "null"
             ]
@@ -544,6 +570,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 23,
@@ -554,7 +581,7 @@
           "encoded_locals": {
             "current": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x0",
               "struct Node *",
               "null"
             ],
@@ -564,7 +591,7 @@
             ],
             "next": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x0",
               "struct Node *",
               "null"
             ]

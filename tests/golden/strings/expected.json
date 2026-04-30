@@ -7,6 +7,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 6,
@@ -32,6 +33,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 8,
@@ -41,7 +43,7 @@
           "encoded_locals": {
             "str1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cad1",
               "char*",
               "unknown"
             ]
@@ -68,6 +70,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 11,
@@ -77,13 +80,13 @@
           "encoded_locals": {
             "str1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cad1",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cadc",
               "char*",
               "unknown"
             ]
@@ -112,6 +115,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -122,13 +126,13 @@
             "len1": 5,
             "str1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cad1",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cadc",
               "char*",
               "unknown"
             ]
@@ -159,6 +163,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -170,13 +175,13 @@
             "len2": 5,
             "str1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cad1",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cadc",
               "char*",
               "unknown"
             ]
@@ -209,6 +214,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 18,
@@ -221,13 +227,13 @@
             "len2": 5,
             "str1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cad1",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cadc",
               "char*",
               "unknown"
             ]
@@ -262,6 +268,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 19,
@@ -275,13 +282,13 @@
             "len2": 5,
             "str1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cad1",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cadc",
               "char*",
               "unknown"
             ]
@@ -318,6 +325,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 25,
@@ -327,7 +335,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cafc",
               "char*",
               "unknown"
             ],
@@ -337,13 +345,13 @@
             "len2": 5,
             "str1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cadc",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cadc",
               "char*",
               "unknown"
             ]
@@ -382,6 +390,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -391,7 +400,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cafc",
               "char*",
               "unknown"
             ],
@@ -402,13 +411,13 @@
             "len2": 5,
             "str1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cadc",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cadc",
               "char*",
               "unknown"
             ]
@@ -449,6 +458,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 29,
@@ -458,7 +468,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cafc",
               "char*",
               "unknown"
             ],
@@ -469,19 +479,19 @@
             "len2": 5,
             "null_str": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x0",
               "char*",
               "null"
             ],
             "str1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cadc",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cadc",
               "char*",
               "unknown"
             ]
@@ -524,6 +534,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 31,
@@ -534,7 +545,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cafc",
               "char*",
               "unknown"
             ],
@@ -545,19 +556,19 @@
             "len2": 5,
             "null_str": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x0",
               "char*",
               "null"
             ],
             "str1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cadc",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x10461cadc",
               "char*",
               "unknown"
             ]

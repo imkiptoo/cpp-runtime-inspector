@@ -14,6 +14,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 3,
@@ -44,6 +45,9 @@
           "int",
           42
         ]
+      },
+      "heap_addresses": {
+        "1": "0x159e05f70"
       },
       "heap_sizes": {
         "1": 4
@@ -86,6 +90,9 @@
           "int",
           42
         ]
+      },
+      "heap_addresses": {
+        "1": "0x159e05f70"
       },
       "heap_sizes": {
         "1": 4

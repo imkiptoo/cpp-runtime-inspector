@@ -11,7 +11,6 @@
 #include "clang/Frontend/CompilerInstance.h"
 #include "clang/Frontend/FrontendPluginRegistry.h"
 #include "clang/Rewrite/Core/Rewriter.h"
-#include "llvm/Config/llvm-config.h"
 
 #include <memory>
 
@@ -32,7 +31,7 @@ public:
         // Write instrumented output
         clang::SourceManager& sm = context.getSourceManager();
         clang::FileID mainFid = sm.getMainFileID();
-        const clang::RewriteBuffer* buf = rewriter.getRewriteBufferFor(mainFid);
+        const auto* buf = rewriter.getRewriteBufferFor(mainFid);
 
         clang::OptionalFileEntryRef fe = sm.getFileEntryRefForID(mainFid);
         if (!fe) {

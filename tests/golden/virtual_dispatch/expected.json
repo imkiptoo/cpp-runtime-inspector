@@ -7,6 +7,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 44,
@@ -32,6 +33,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
@@ -68,6 +70,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 10,
@@ -103,6 +106,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 10,
@@ -138,6 +142,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 21,
@@ -173,6 +178,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 22,
@@ -208,6 +214,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 23,
@@ -243,6 +250,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 24,
@@ -278,6 +286,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 45,
@@ -317,6 +326,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
@@ -367,6 +377,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 10,
@@ -416,6 +427,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 10,
@@ -465,6 +477,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 34,
@@ -514,6 +527,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 35,
@@ -563,6 +577,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 36,
@@ -612,6 +627,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 37,
@@ -661,6 +677,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 46,
@@ -711,6 +728,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 48,
@@ -729,7 +747,7 @@
             ],
             "p1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bf8",
               "struct Shape *",
               "stack"
             ],
@@ -769,6 +787,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 49,
@@ -787,13 +806,13 @@
             ],
             "p1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bf8",
               "struct Shape *",
               "stack"
             ],
             "p2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
@@ -835,6 +854,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 26,
@@ -853,13 +873,13 @@
             ],
             "p1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bf8",
               "struct Shape *",
               "stack"
             ],
             "p2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
@@ -911,6 +931,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 27,
@@ -930,13 +951,13 @@
             ],
             "p1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bf8",
               "struct Shape *",
               "stack"
             ],
             "p2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
@@ -988,6 +1009,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -1007,13 +1029,13 @@
             ],
             "p1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bf8",
               "struct Shape *",
               "stack"
             ],
             "p2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
@@ -1057,6 +1079,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 39,
@@ -1076,13 +1099,13 @@
             ],
             "p1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bf8",
               "struct Shape *",
               "stack"
             ],
             "p2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
@@ -1136,6 +1159,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 40,
@@ -1156,13 +1180,13 @@
             ],
             "p1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bf8",
               "struct Shape *",
               "stack"
             ],
             "p2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
@@ -1216,6 +1240,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -1236,13 +1261,13 @@
             ],
             "p1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bf8",
               "struct Shape *",
               "stack"
             ],
             "p2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
@@ -1288,6 +1313,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 39,
@@ -1308,13 +1334,13 @@
             ],
             "p1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
             "p2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
@@ -1370,6 +1396,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 40,
@@ -1391,13 +1418,13 @@
             ],
             "p1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
             "p2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
@@ -1453,6 +1480,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -1474,13 +1502,13 @@
             ],
             "p1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
             "p2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
@@ -1528,6 +1556,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 59,
@@ -1550,13 +1579,13 @@
             ],
             "p1": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
             "p2": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f562bd8",
               "struct Shape *",
               "stack"
             ],
@@ -1604,6 +1633,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "lifecycle": "dtor",
@@ -1630,6 +1660,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 11,
@@ -1655,6 +1686,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "lifecycle": "dtor",

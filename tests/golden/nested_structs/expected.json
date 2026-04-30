@@ -7,6 +7,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 14,
@@ -32,6 +33,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 15,
@@ -77,6 +79,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 20,
@@ -101,7 +104,7 @@
             ],
             "pi": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f5eac00",
               "struct Inner *",
               "stack"
             ]
@@ -130,6 +133,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 23,
@@ -155,7 +159,7 @@
             ],
             "pi": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16f5eac00",
               "struct Inner *",
               "stack"
             ]

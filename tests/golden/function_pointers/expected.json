@@ -7,6 +7,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 11,
@@ -32,6 +33,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 12,
@@ -41,7 +43,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ]
@@ -68,6 +70,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 4,
@@ -77,7 +80,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ]
@@ -114,6 +117,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -123,7 +127,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ]
@@ -166,6 +170,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -175,7 +180,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ]
@@ -221,6 +226,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 4,
@@ -231,7 +237,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ]
@@ -277,6 +283,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -286,7 +293,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -316,6 +323,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 5,
@@ -325,7 +333,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -365,6 +373,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -374,7 +383,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -420,6 +429,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -429,7 +439,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -478,6 +488,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 5,
@@ -488,7 +499,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -537,6 +548,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -546,7 +558,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -579,6 +591,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 7,
@@ -588,7 +601,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -631,6 +644,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 7,
@@ -640,7 +654,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -667,7 +681,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ]
@@ -694,6 +708,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -703,7 +718,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -730,7 +745,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -760,6 +775,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -769,7 +785,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -796,7 +812,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -829,6 +845,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 4,
@@ -838,7 +855,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -865,7 +882,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -908,6 +925,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -917,7 +935,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -944,7 +962,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -993,6 +1011,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -1002,7 +1021,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1029,7 +1048,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1081,6 +1100,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 4,
@@ -1091,7 +1111,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1118,7 +1138,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1170,6 +1190,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 8,
@@ -1180,7 +1201,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1207,7 +1228,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x1040407b0",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1240,6 +1261,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -1250,7 +1272,7 @@
             "a": 30,
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1285,6 +1307,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 17,
@@ -1296,7 +1319,7 @@
             "a": 30,
             "fp": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x104040850",
               "int (*)(int, int)",
               "unknown"
             ],

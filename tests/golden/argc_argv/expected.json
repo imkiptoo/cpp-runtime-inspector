@@ -7,6 +7,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 5,
@@ -32,6 +33,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -63,6 +65,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 5,
@@ -73,7 +76,7 @@
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ]
@@ -102,6 +105,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -112,7 +116,7 @@
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ],
@@ -144,6 +148,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -154,7 +159,7 @@
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ],
@@ -189,6 +194,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 9,
@@ -199,7 +205,7 @@
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ],
@@ -234,6 +240,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 10,
@@ -243,14 +250,14 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df502",
               "char*",
               "stack"
             ],
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ],
@@ -287,6 +294,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -296,14 +304,14 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df502",
               "char*",
               "stack"
             ],
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ],
@@ -343,6 +351,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 12,
@@ -352,14 +361,14 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df502",
               "char*",
               "stack"
             ],
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ],
@@ -399,6 +408,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 10,
@@ -408,14 +418,14 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df508",
               "char*",
               "stack"
             ],
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ],
@@ -458,6 +468,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -467,14 +478,14 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df508",
               "char*",
               "stack"
             ],
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ],
@@ -517,6 +528,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 12,
@@ -526,14 +538,14 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df508",
               "char*",
               "stack"
             ],
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ],
@@ -576,6 +588,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 10,
@@ -585,14 +598,14 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df50f",
               "char*",
               "stack"
             ],
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ],
@@ -635,6 +648,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 0,
@@ -644,14 +658,14 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df50f",
               "char*",
               "stack"
             ],
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ],
@@ -694,6 +708,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 12,
@@ -703,14 +718,14 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df50f",
               "char*",
               "stack"
             ],
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ],
@@ -753,6 +768,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 16,
@@ -763,14 +779,14 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df50f",
               "char*",
               "stack"
             ],
             "argc": 4,
             "argv": [
               "C_ADDRESS",
-              "0xPTR",
+              "0x16d5df2e8",
               "char **",
               "stack"
             ],

@@ -7,6 +7,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 37,
@@ -32,6 +33,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
@@ -68,6 +70,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 10,
@@ -103,6 +106,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 10,
@@ -138,6 +142,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
@@ -174,6 +179,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 20,
@@ -209,6 +215,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 20,
@@ -244,6 +251,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 20,
@@ -294,6 +302,9 @@
           ],
           "Dog"
         ]
+      },
+      "heap_addresses": {
+        "1": "0x138605f70"
       },
       "heap_sizes": {
         "1": 16
@@ -346,6 +357,9 @@
           ],
           "Dog"
         ]
+      },
+      "heap_addresses": {
+        "1": "0x138605f70"
       },
       "heap_sizes": {
         "1": 16
@@ -408,6 +422,9 @@
           ],
           "Dog"
         ]
+      },
+      "heap_addresses": {
+        "1": "0x138605f70"
       },
       "heap_sizes": {
         "1": 16
@@ -472,6 +489,9 @@
           "Dog"
         ]
       },
+      "heap_addresses": {
+        "1": "0x138605f70"
+      },
       "heap_sizes": {
         "1": 16
       },
@@ -526,6 +546,9 @@
           ],
           "Dog"
         ]
+      },
+      "heap_addresses": {
+        "1": "0x138605f70"
       },
       "heap_sizes": {
         "1": 16
@@ -591,6 +614,9 @@
           ],
           "Dog"
         ]
+      },
+      "heap_addresses": {
+        "1": "0x138605f70"
       },
       "heap_sizes": {
         "1": 16
@@ -658,6 +684,9 @@
           "Dog"
         ]
       },
+      "heap_addresses": {
+        "1": "0x138605f70"
+      },
       "heap_sizes": {
         "1": 16
       },
@@ -700,6 +729,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "lifecycle": "dtor",
@@ -751,6 +781,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 21,
@@ -801,6 +832,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 21,
@@ -851,6 +883,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 11,
@@ -891,6 +924,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "lifecycle": "dtor",
@@ -917,6 +951,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
@@ -953,6 +988,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 10,
@@ -988,6 +1024,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 10,
@@ -1023,6 +1060,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "lifecycle": "default_ctor",
@@ -1059,6 +1097,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 30,
@@ -1094,6 +1133,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 30,
@@ -1129,6 +1169,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 30,
@@ -1179,6 +1220,9 @@
           ],
           "Cat"
         ]
+      },
+      "heap_addresses": {
+        "2": "0x138605f70"
       },
       "heap_sizes": {
         "2": 16
@@ -1231,6 +1275,9 @@
           ],
           "Cat"
         ]
+      },
+      "heap_addresses": {
+        "2": "0x138605f70"
       },
       "heap_sizes": {
         "2": 16
@@ -1293,6 +1340,9 @@
           ],
           "Cat"
         ]
+      },
+      "heap_addresses": {
+        "2": "0x138605f70"
       },
       "heap_sizes": {
         "2": 16
@@ -1357,6 +1407,9 @@
           "Cat"
         ]
       },
+      "heap_addresses": {
+        "2": "0x138605f70"
+      },
       "heap_sizes": {
         "2": 16
       },
@@ -1411,6 +1464,9 @@
           ],
           "Cat"
         ]
+      },
+      "heap_addresses": {
+        "2": "0x138605f70"
       },
       "heap_sizes": {
         "2": 16
@@ -1476,6 +1532,9 @@
           ],
           "Cat"
         ]
+      },
+      "heap_addresses": {
+        "2": "0x138605f70"
       },
       "heap_sizes": {
         "2": 16
@@ -1543,6 +1602,9 @@
           "Cat"
         ]
       },
+      "heap_addresses": {
+        "2": "0x138605f70"
+      },
       "heap_sizes": {
         "2": 16
       },
@@ -1585,6 +1647,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "lifecycle": "dtor",
@@ -1636,6 +1699,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 31,
@@ -1686,6 +1750,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 31,
@@ -1736,6 +1801,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 11,
@@ -1776,6 +1842,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "lifecycle": "dtor",
@@ -1802,6 +1869,7 @@
       "global_sizes": {},
       "globals": {},
       "heap": {},
+      "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
       "line": 48,
