@@ -1,0 +1,291 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "global_sizes": {
+        "big_num": 8,
+        "buffer_size": 8,
+        "byte_val": 1,
+        "current_season": 4,
+        "flag": 1,
+        "magic": 4,
+        "pi": 8,
+        "ratio": 4
+      },
+      "globals": {
+        "big_num": 9223372036854775807,
+        "buffer_size": 1024,
+        "byte_val": 255,
+        "current_season": "summer",
+        "flag": true,
+        "magic": 42,
+        "pi": 3.14259,
+        "ratio": 1.6180000305175781
+      },
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 24,
+      "ordered_globals": [
+        "pi",
+        "magic",
+        "byte_val",
+        "big_num",
+        "ratio",
+        "flag",
+        "current_season",
+        "buffer_size"
+      ],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {
+        "big_num": 8,
+        "buffer_size": 8,
+        "byte_val": 1,
+        "current_season": 4,
+        "flag": 1,
+        "magic": 4,
+        "pi": 8,
+        "ratio": 4
+      },
+      "globals": {
+        "big_num": 9223372036854775807,
+        "buffer_size": 1024,
+        "byte_val": 255,
+        "current_season": "summer",
+        "flag": true,
+        "magic": 42,
+        "pi": 3.14259,
+        "ratio": 1.6180000305175781
+      },
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 25,
+      "ordered_globals": [
+        "pi",
+        "magic",
+        "byte_val",
+        "big_num",
+        "ratio",
+        "flag",
+        "current_season",
+        "buffer_size"
+      ],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "first": "spring"
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "first": 4
+          },
+          "ordered_varnames": [
+            "first"
+          ],
+          "stack_size_bytes": 4
+        }
+      ],
+      "stack_total_bytes": 4,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {
+        "big_num": 8,
+        "buffer_size": 8,
+        "byte_val": 1,
+        "current_season": 4,
+        "flag": 1,
+        "magic": 4,
+        "pi": 8,
+        "ratio": 4
+      },
+      "globals": {
+        "big_num": 9223372036854775807,
+        "buffer_size": 1024,
+        "byte_val": 255,
+        "current_season": "summer",
+        "flag": true,
+        "magic": 42,
+        "pi": 3.14259,
+        "ratio": 1.6180000305175781
+      },
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 0,
+      "ordered_globals": [
+        "pi",
+        "magic",
+        "byte_val",
+        "big_num",
+        "ratio",
+        "flag",
+        "current_season",
+        "buffer_size"
+      ],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "first": "spring",
+            "local": 84
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "first": 4,
+            "local": 4
+          },
+          "ordered_varnames": [
+            "first",
+            "local"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "global_sizes": {
+        "big_num": 8,
+        "buffer_size": 8,
+        "byte_val": 1,
+        "current_season": 4,
+        "flag": 1,
+        "magic": 4,
+        "pi": 8,
+        "ratio": 4
+      },
+      "globals": {
+        "big_num": 9223372036854775807,
+        "buffer_size": 1024,
+        "byte_val": 255,
+        "current_season": "summer",
+        "flag": true,
+        "magic": 42,
+        "pi": 3.14259,
+        "ratio": 1.6180000305175781
+      },
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 27,
+      "ordered_globals": [
+        "pi",
+        "magic",
+        "byte_val",
+        "big_num",
+        "ratio",
+        "flag",
+        "current_season",
+        "buffer_size"
+      ],
+      "return_value": 0,
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "first": "spring",
+            "local": 84
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "first": 4,
+            "local": 4
+          },
+          "ordered_varnames": [
+            "first",
+            "local"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    }
+  ],
+  "type_metadata": {
+    "bool": {
+      "kind": "bool",
+      "name": "bool",
+      "sizeof": 1
+    },
+    "double": {
+      "kind": "float",
+      "name": "double",
+      "sizeof": 8
+    },
+    "enum Season": {
+      "enum_values": {
+        "autumn": 8,
+        "spring": 0,
+        "summer": 4,
+        "winter": 12
+      },
+      "is_scoped": true,
+      "kind": "enum",
+      "name": "enum Season",
+      "sizeof": 4
+    },
+    "float": {
+      "kind": "float",
+      "name": "float",
+      "sizeof": 4
+    },
+    "int": {
+      "kind": "int",
+      "name": "int",
+      "sizeof": 4
+    },
+    "long": {
+      "kind": "int",
+      "name": "long",
+      "sizeof": 8
+    },
+    "unsigned char": {
+      "kind": "uint",
+      "name": "unsigned char",
+      "sizeof": 1
+    },
+    "unsigned long": {
+      "kind": "uint",
+      "name": "unsigned long",
+      "sizeof": 8
+    }
+  }
+}
