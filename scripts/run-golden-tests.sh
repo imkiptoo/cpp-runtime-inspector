@@ -111,12 +111,22 @@ import json
 import re
 import sys
 
+def normalize_string(s):
+    # Normalize addresses
+    s = re.sub(r'0x[0-9a-fA-F]+', '0xPTR', s)
+    # Normalize absolute paths to anything under tests/golden/ so that
+    # checkout location does not affect the comparison. Lambda type
+    # strings, for example, embed the full source path.
+    s = re.sub(r'(?:<ROOT>/|/[^\s\"]*?/)(tests/golden/)', r'<ROOT>/\1', s)
+    return s
+
 def normalize(obj, heap_map=None, parent_key=None):
     if heap_map is None:
         heap_map = {'counter': 0}
 
     if isinstance(obj, dict):
-        return {k: normalize(v, heap_map, k) for k, v in sorted(obj.items())}
+        # Normalize both keys and values
+        return {normalize_string(k): normalize(v, heap_map, k) for k, v in sorted(obj.items())}
     elif isinstance(obj, list):
         normalized = [normalize(v, heap_map) for v in obj]
         # Sort memory_leaks array for deterministic comparison
@@ -124,13 +134,7 @@ def normalize(obj, heap_map=None, parent_key=None):
             normalized = sorted(normalized, key=lambda x: str(x))
         return normalized
     elif isinstance(obj, str):
-        # Normalize addresses
-        obj = re.sub(r'0x[0-9a-fA-F]+', '0xPTR', obj)
-        # Normalize absolute paths to anything under tests/golden/ so that
-        # checkout location does not affect the comparison. Lambda type
-        # strings, for example, embed the full source path.
-        obj = re.sub(r'(?:<ROOT>/|/[^\s\"]*?/)(tests/golden/)', r'<ROOT>/\1', obj)
-        return obj
+        return normalize_string(obj)
     else:
         return obj
 
