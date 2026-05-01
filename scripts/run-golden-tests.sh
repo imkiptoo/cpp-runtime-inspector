@@ -280,15 +280,21 @@ run_test() {
         stdin_file="${test_dir}/.stdin"
     fi
 
+    # Set timeout (30 seconds should be plenty for any test)
+    local timeout_prefix=""
+    if command -v timeout &>/dev/null; then
+        timeout_prefix="timeout 30"
+    fi
+
     if [[ ${use_shim} -eq 1 ]]; then
-        # Run with malloc shim
+        # Run with malloc shim - use env to set LD_PRELOAD only for the test binary
         if [[ "$(uname)" == "Darwin" ]]; then
-            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} <"${stdin_file}" 2>"${workdir}/actual.json" || true
+            DYLD_INSERT_LIBRARIES="${MALLOC_SHIM}" ${timeout_prefix} "${workdir}/test" ${test_args[@]+"${test_args[@]}"} <"${stdin_file}" 2>"${workdir}/actual.json" || true
         else
-            LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} <"${stdin_file}" 2>"${workdir}/actual.json" || true
+            ${timeout_prefix} env LD_PRELOAD="${MALLOC_SHIM}" "${workdir}/test" ${test_args[@]+"${test_args[@]}"} <"${stdin_file}" 2>"${workdir}/actual.json" || true
         fi
     else
-        if ! "${workdir}/test" ${test_args[@]+"${test_args[@]}"} <"${stdin_file}" 2>"${workdir}/actual.json"; then
+        if ! ${timeout_prefix} "${workdir}/test" ${test_args[@]+"${test_args[@]}"} <"${stdin_file}" 2>"${workdir}/actual.json"; then
             # Non-zero exit is OK for some tests
             :
         fi
