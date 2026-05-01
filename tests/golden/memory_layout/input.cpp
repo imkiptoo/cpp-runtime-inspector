@@ -24,7 +24,7 @@ int main() {
     Rect r{{0, 0}, {100, 50}, 5000.0};
     Padded pad{'A', 42, 'Z'};
 
-    int sizes[3];
+    int sizes[3] = {0, 0, 0};
     sizes[0] = sizeof(Point);
     sizes[1] = sizeof(Rect);
     sizes[2] = sizeof(Padded);

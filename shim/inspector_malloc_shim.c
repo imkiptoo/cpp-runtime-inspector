@@ -27,9 +27,8 @@
 #include <string.h>
 
 // Forward declarations for the runtime hooks.
-// On macOS, mark as weak so the shim can load even without the runtime
+// Mark as weak so the shim can load even without the runtime
 // (the hooks simply won't be called if not present).
-#if defined(__APPLE__)
 extern void __inspector_alloc_malloc(void* ptr, size_t size) __attribute__((weak));
 extern void __inspector_dealloc_malloc(void* ptr) __attribute__((weak));
 
@@ -44,13 +43,6 @@ static inline void safe_dealloc_hook(void* ptr) {
         __inspector_dealloc_malloc(ptr);
     }
 }
-#else
-extern void __inspector_alloc_malloc(void* ptr, size_t size);
-extern void __inspector_dealloc_malloc(void* ptr);
-
-#define safe_alloc_hook __inspector_alloc_malloc
-#define safe_dealloc_hook __inspector_dealloc_malloc
-#endif
 
 // Thread-local reentrancy guard to prevent infinite recursion
 // (dlsym and other functions we call may use malloc internally)
