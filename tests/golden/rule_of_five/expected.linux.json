@@ -1,0 +1,2383 @@
+{
+  "code": "",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 44,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "lifecycle": "default_ctor",
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 12,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 13,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 1,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 45,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4
+          },
+          "ordered_varnames": [
+            "a"
+          ],
+          "stack_size_bytes": 4
+        }
+      ],
+      "stack_total_bytes": 4,
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "lifecycle": "copy_ctor",
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4
+          },
+          "ordered_varnames": [
+            "a"
+          ],
+          "stack_size_bytes": 4
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 4,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4
+          },
+          "ordered_varnames": [
+            "a"
+          ],
+          "stack_size_bytes": 4
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 4,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4
+          },
+          "ordered_varnames": [
+            "a"
+          ],
+          "stack_size_bytes": 4
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 2,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 4,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 46,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "lifecycle": "move_ctor",
+      "line": 21,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b"
+          ],
+          "stack_size_bytes": 8
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 22,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b"
+          ],
+          "stack_size_bytes": 8
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b"
+          ],
+          "stack_size_bytes": 8
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b"
+          ],
+          "stack_size_bytes": 8
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 3,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 47,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ],
+          "stack_size_bytes": 12
+        }
+      ],
+      "stack_total_bytes": 12,
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "lifecycle": "default_ctor",
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ],
+          "stack_size_bytes": 12
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 12,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 12,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ],
+          "stack_size_bytes": 12
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 12,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 13,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ],
+          "stack_size_bytes": 12
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 4,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 12,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 48,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 16,
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Widget::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "lifecycle": "copy_assign",
+      "line": 27,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "stack_size_bytes": 16
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 5,
+          "func_name": "Widget::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 16,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Widget::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 27,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "stack_size_bytes": 16
+        },
+        {
+          "encoded_locals": {
+            "other": [
+              "C_ADDRESS",
+              "0x100000065",
+              "const struct Widget &",
+              "unknown"
+            ]
+          },
+          "frame_id": 5,
+          "func_name": "Widget::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "other": 8
+          },
+          "ordered_varnames": [
+            "other"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 24,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Widget::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "stack_size_bytes": 16
+        },
+        {
+          "encoded_locals": {
+            "other": [
+              "C_ADDRESS",
+              "0x100000065",
+              "const struct Widget &",
+              "unknown"
+            ]
+          },
+          "frame_id": 5,
+          "func_name": "Widget::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "other": 8
+          },
+          "ordered_varnames": [
+            "other"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 24,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Widget::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 29,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "stack_size_bytes": 16
+        },
+        {
+          "encoded_locals": {
+            "other": [
+              "C_ADDRESS",
+              "0x100000065",
+              "const struct Widget &",
+              "unknown"
+            ]
+          },
+          "frame_id": 5,
+          "func_name": "Widget::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "other": 8
+          },
+          "ordered_varnames": [
+            "other"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 24,
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "lifecycle": "default_ctor",
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "stack_size_bytes": 16
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 16,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 12,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "stack_size_bytes": 16
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 16,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Widget::Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 13,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "stack_size_bytes": 16
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Widget::Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 16,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 50,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4,
+            "e": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ],
+          "stack_size_bytes": 20
+        }
+      ],
+      "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Widget::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "lifecycle": "move_assign",
+      "line": 33,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4,
+            "e": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ],
+          "stack_size_bytes": 20
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 7,
+          "func_name": "Widget::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Widget::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 33,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4,
+            "e": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ],
+          "stack_size_bytes": 20
+        },
+        {
+          "encoded_locals": {
+            "other": [
+              "C_ADDRESS",
+              "0xc90000044d",
+              "struct Widget &&",
+              "unknown"
+            ]
+          },
+          "frame_id": 7,
+          "func_name": "Widget::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "other": 8
+          },
+          "ordered_varnames": [
+            "other"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Widget::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 34,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4,
+            "e": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ],
+          "stack_size_bytes": 20
+        },
+        {
+          "encoded_locals": {
+            "other": [
+              "C_ADDRESS",
+              "0xc90000044d",
+              "struct Widget &&",
+              "unknown"
+            ]
+          },
+          "frame_id": 7,
+          "func_name": "Widget::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "other": 8
+          },
+          "ordered_varnames": [
+            "other"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Widget::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 35,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4,
+            "e": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ],
+          "stack_size_bytes": 20
+        },
+        {
+          "encoded_locals": {
+            "other": [
+              "C_ADDRESS",
+              "0xc9fffffffe",
+              "struct Widget &&",
+              "unknown"
+            ]
+          },
+          "frame_id": 7,
+          "func_name": "Widget::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "other": 8
+          },
+          "ordered_varnames": [
+            "other"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Widget::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 36,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4,
+            "e": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ],
+          "stack_size_bytes": 20
+        },
+        {
+          "encoded_locals": {
+            "other": [
+              "C_ADDRESS",
+              "0xc9fffffffe",
+              "struct Widget &&",
+              "unknown"
+            ]
+          },
+          "frame_id": 7,
+          "func_name": "Widget::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "other": 8
+          },
+          "ordered_varnames": [
+            "other"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 52,
+      "ordered_globals": [],
+      "return_value": 0,
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 101
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 201
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": -2
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "id": 3101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 4,
+            "b": 4,
+            "c": 4,
+            "d": 4,
+            "e": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ],
+          "stack_size_bytes": 20
+        }
+      ],
+      "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Widget::~Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "lifecycle": "dtor",
+      "line": 40,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 8,
+          "func_name": "Widget::~Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Widget::~Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 41,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 8,
+          "func_name": "Widget::~Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Widget::~Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "lifecycle": "dtor",
+      "line": 40,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 9,
+          "func_name": "Widget::~Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Widget::~Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 41,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 9,
+          "func_name": "Widget::~Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Widget::~Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "lifecycle": "dtor",
+      "line": 40,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 10,
+          "func_name": "Widget::~Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Widget::~Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 41,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 10,
+          "func_name": "Widget::~Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Widget::~Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "lifecycle": "dtor",
+      "line": 40,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 11,
+          "func_name": "Widget::~Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Widget::~Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 41,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 11,
+          "func_name": "Widget::~Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "call",
+      "func_name": "Widget::~Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "lifecycle": "dtor",
+      "line": 40,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 12,
+          "func_name": "Widget::~Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "return",
+      "func_name": "Widget::~Widget",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 41,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 12,
+          "func_name": "Widget::~Widget",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    }
+  ],
+  "type_metadata": {
+    "const struct Widget &": {
+      "kind": "reference",
+      "name": "const struct Widget &",
+      "sizeof": 8
+    },
+    "struct Widget": {
+      "fields": [
+        {
+          "name": "id",
+          "offset": 0,
+          "sizeof": 4,
+          "type": "int"
+        }
+      ],
+      "kind": "struct",
+      "name": "struct Widget",
+      "sizeof": 4
+    },
+    "struct Widget &&": {
+      "kind": "reference",
+      "name": "struct Widget &&",
+      "sizeof": 8
+    }
+  }
+}
