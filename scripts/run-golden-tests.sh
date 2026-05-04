@@ -118,6 +118,9 @@ def normalize_string(s):
     # checkout location does not affect the comparison. Lambda type
     # strings, for example, embed the full source path.
     s = re.sub(r'(?:<ROOT>/|/[^\s\"]*?/)(tests/golden/)', r'<ROOT>/\1', s)
+    # Normalize template parameters in function names (e.g., Box::Box<T> -> Box::Box<...>)
+    # This handles differences between Clang versions in how template parameters are displayed
+    s = re.sub(r'<[A-Za-z_, ]+>', '<...>', s)
     return s
 
 def normalize(obj, heap_map=None, parent_key=None):
