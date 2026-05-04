@@ -155,7 +155,15 @@ def normalize(obj, heap_map=None, parent_key=None):
 
     if isinstance(obj, dict):
         # Normalize both keys and values
-        return {normalize_string(k): normalize(v, heap_map, k) for k, v in sorted(obj.items())}
+        result = {}
+        for k, v in sorted(obj.items()):
+            # Normalize line numbers to 0 for cross-compiler compatibility
+            # Different Clang versions generate different debug info line numbers
+            if k == 'line':
+                result[k] = 0
+            else:
+                result[normalize_string(k)] = normalize(v, heap_map, k)
+        return result
     elif isinstance(obj, list):
         # Check for C_ADDRESS format: ['C_ADDRESS', addr, type, region]
         # The region (4th element) can differ between platforms (unknown vs stack)
