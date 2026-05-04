@@ -111,6 +111,32 @@ import json
 import re
 import sys
 
+def normalize_template_params(s):
+    '''Normalize template parameters including nested ones.'''
+    result = []
+    i = 0
+    while i < len(s):
+        if s[i] == '<':
+            # Find matching closing bracket, handling nesting
+            depth = 1
+            j = i + 1
+            while j < len(s) and depth > 0:
+                if s[j] == '<':
+                    depth += 1
+                elif s[j] == '>':
+                    depth -= 1
+                j += 1
+            if depth == 0:
+                result.append('<...>')
+                i = j
+            else:
+                result.append(s[i])
+                i += 1
+        else:
+            result.append(s[i])
+            i += 1
+    return ''.join(result)
+
 def normalize_string(s):
     # Normalize addresses
     s = re.sub(r'0x[0-9a-fA-F]+', '0xPTR', s)
@@ -118,9 +144,9 @@ def normalize_string(s):
     # checkout location does not affect the comparison. Lambda type
     # strings, for example, embed the full source path.
     s = re.sub(r'(?:<ROOT>/|/[^\s\"]*?/)(tests/golden/)', r'<ROOT>/\1', s)
-    # Normalize template parameters in function names (e.g., Box::Box<T> -> Box::Box<...>)
+    # Normalize template parameters including nested ones (e.g., Box<Pair<int, int>> -> Box<...>)
     # This handles differences between Clang versions in how template parameters are displayed
-    s = re.sub(r'<[A-Za-z_, ]+>', '<...>', s)
+    s = normalize_template_params(s)
     return s
 
 def normalize(obj, heap_map=None, parent_key=None):
