@@ -128,6 +128,15 @@ def normalize(obj, heap_map=None, parent_key=None):
         # Normalize both keys and values
         return {normalize_string(k): normalize(v, heap_map, k) for k, v in sorted(obj.items())}
     elif isinstance(obj, list):
+        # Check for C_ADDRESS format: ['C_ADDRESS', addr, type, region]
+        # The region (4th element) can differ between platforms (unknown vs stack)
+        if (len(obj) == 4 and obj[0] == 'C_ADDRESS'):
+            return [
+                obj[0],
+                normalize_string(obj[1]),  # Normalize address
+                obj[2],                     # Keep type as-is
+                'REGION'                    # Normalize region for cross-platform
+            ]
         normalized = [normalize(v, heap_map) for v in obj]
         # Sort memory_leaks array for deterministic comparison
         if parent_key == 'memory_leaks':
