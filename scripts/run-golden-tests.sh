@@ -208,6 +208,13 @@ run_test() {
         return 0
     fi
 
+    # Skip tests marked for Linux CI skip
+    if [[ "$(uname)" == "Linux" && -n "${CI:-}" && -f "${test_dir}/.skip_linux_ci" ]]; then
+        echo "SKIP: ${test_name} (skipped on Linux CI)"
+        ((SKIPPED++))
+        return 0
+    fi
+
     # Use platform-specific expected file if available
     if [[ "$(uname)" == "Darwin" && -f "${test_dir}/expected.darwin.json" ]]; then
         expected="${test_dir}/expected.darwin.json"
