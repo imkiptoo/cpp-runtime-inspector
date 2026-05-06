@@ -7,5 +7,5 @@
 	<img src="/logo.svg" alt="C++ Runtime Inspector" class="w-7 h-7 dark:hidden" />
 	<!-- Logo for dark mode -->
 	<img src="/logo-white.svg" alt="C++ Runtime Inspector" class="w-7 h-7 hidden dark:block" />
-	<span class="font-semibold text-[14px] hidden sm:inline">C++ Runtime Inspector</span>
+	<span class="font-semibold text-[14px] hidden sm:inline">CPP Runtime Inspector</span>
 </a>
