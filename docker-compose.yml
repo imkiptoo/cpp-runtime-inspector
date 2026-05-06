@@ -1,8 +1,9 @@
+name: cpp-runtime-inspector
+
 services:
   inspector:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/imkiptoo/cpp-runtime-inspector-server:latest
+    pull_policy: always
     ports:
       - "8080:8080"
     environment:

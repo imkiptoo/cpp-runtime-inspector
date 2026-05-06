@@ -145,3 +145,94 @@ jobs:
           echo 'int main() { int x = 5; return 0; }' | \
             docker run --rm -i cpp-inspector-sandbox:test 2>&1 | \
             grep -q '"trace"'
+
+  publish:
+    name: Build & Push Images to GHCR
+    runs-on: ubuntu-24.04
+    needs: [build-and-test, docker]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Metadata (sandbox)
+        id: meta-sandbox
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository_owner }}/cpp-runtime-inspector-sandbox
+          tags: |
+            type=raw,value=latest
+            type=sha,format=short
+
+      - name: Build & push sandbox
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: sandbox/Dockerfile
+          push: true
+          tags: ${{ steps.meta-sandbox.outputs.tags }}
+          labels: ${{ steps.meta-sandbox.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Metadata (server)
+        id: meta-server
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository_owner }}/cpp-runtime-inspector-server
+          tags: |
+            type=raw,value=latest
+            type=sha,format=short
+
+      - name: Build & push server
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: Dockerfile
+          push: true
+          tags: ${{ steps.meta-server.outputs.tags }}
+          labels: ${{ steps.meta-server.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  pull-local:
+    name: Pull Images on Dev Machine
+    runs-on: [self-hosted, linux, local-deploy]
+    needs: [publish]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+      packages: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | \
+            docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+      - name: Pull images
+        run: |
+          docker pull ghcr.io/${{ github.repository_owner }}/cpp-runtime-inspector-sandbox:latest
+          docker pull ghcr.io/${{ github.repository_owner }}/cpp-runtime-inspector-server:latest
+
+      - name: Restart server via docker compose
+        run: docker compose up -d --pull always
+
+      - name: Log out of GHCR
+        if: always()
+        run: docker logout ghcr.io
