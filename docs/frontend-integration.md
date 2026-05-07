@@ -22,13 +22,13 @@ clang++ input.cpp.instrumented.cpp libinspector_runtime.a -o program
 cat trace.json | jq '.trace | length'  # Number of steps
 ```
 
-### 2. Frontend Adapter HTTP API
+### 2. API Server HTTP Interface
 
-The adapter provides a simple HTTP interface:
+The API server provides a simple HTTP interface:
 
 ```bash
-# Start the adapter
-python frontend-adapter/server.py --port 8080
+# Start the server
+python services/api/server.py --port 8080
 
 # Submit code and get trace
 curl -X POST http://localhost:8080/trace \
@@ -36,7 +36,7 @@ curl -X POST http://localhost:8080/trace \
      -d 'int main() { int x = 5; return 0; }' | jq
 ```
 
-See [frontend-adapter/README.md](../frontend-adapter/README.md) for details.
+See [services/api/README.md](../services/api/README.md) for details.
 
 ### 3. Docker Container
 
@@ -44,7 +44,7 @@ For isolated execution:
 
 ```bash
 # Build the sandbox
-docker build -t cpp-inspector-sandbox -f sandbox/Dockerfile .
+docker build -t cpp-inspector-sandbox -f services/sandbox/Dockerfile .
 
 # Submit code
 echo 'int main() { int x = 5; return 0; }' | \

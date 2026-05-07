@@ -95,7 +95,7 @@ clang++ user.o libinspector_runtime.a -o user
 - Link the compiled object with the tracing runtime library
 - Run the binary; instrumentation calls write trace events to stderr as JSON
 
-The runtime library (`runtime/inspector_runtime.*`) collects trace data:
+The runtime library (`core/runtime/inspector_runtime.*`) collects trace data:
 - Maintains a call stack with local variables
 - Serializes state changes to JSON format
 - Writes to stderr (so stdout is available for program output)
@@ -106,10 +106,10 @@ The runtime library (`runtime/inspector_runtime.*`) collects trace data:
 
 | Component | Purpose | Size |
 |-----------|---------|------|
-| `plugin/InspectorPlugin.cpp` | Clang AST plugin that rewrites source | ~300 lines |
-| `plugin/Visitor.cpp` | AST node visitor (functions, variables, statements) | ~150 lines |
-| `plugin/TypeEncoder.cpp` | Type information extraction | ~100 lines |
-| `runtime/inspector_runtime.cpp` | Tracing runtime (call stack, JSON emit) | ~250 lines |
+| `core/plugin/InspectorPlugin.cpp` | Clang AST plugin that rewrites source | ~300 lines |
+| `core/plugin/Visitor.cpp` | AST node visitor (functions, variables, statements) | ~150 lines |
+| `core/plugin/TypeEncoder.cpp` | Type information extraction | ~100 lines |
+| `core/runtime/inspector_runtime.cpp` | Tracing runtime (call stack, JSON emit) | ~250 lines |
 | `scripts/instrument-and-run.sh` | Three-stage build driver | ~50 lines |
 
 ### Why Three Stages?
@@ -129,59 +129,42 @@ Currently tracked:
 - **Variable initialization** (declaration with initial value)
 - **Variable updates** (assignment to existing variable)
 - **Call stack state** (locals visible at each step)
-- **Integer primitives** (int, long, short)
+- **All primitive types** (int, float, double, bool, char)
+- **Pointers and references** (with stack/heap region tracking)
+- **Heap allocations** (new/delete, malloc/free via shim)
+- **User-defined types** (structs, classes, enums, unions)
+- **STL containers** (vector, string, unique_ptr, shared_ptr, optional)
+- **Templates** (function and class templates)
+- **Compound assignments** (+=, -=, ++, --, etc.)
+- **Constructors/Destructors** (including copy/move)
+- **Virtual dispatch** (dynamic type tracking)
+- **Lambda expressions** (with capture tracking)
+- **Exception handling** (throw/catch events)
 
-Not tracked (known limitations below):
-
-- ❌ Floating-point, char, bool, other primitives
-- ❌ Pointers and heap allocations
-- ❌ User-defined types (structs, classes)
-- ❌ STL containers (vector, map, string literal content)
-- ❌ Templates (instrumented at definition, not instantiation)
-- ❌ Compound assignments (+=, ++, -=, etc.)
+Partially supported:
+- **std::map/set** (placeholder - tree traversal limited)
+- **Multiple inheritance** (warning emitted, skipped)
 
 ## Known Limitations
 
 These are documented implementation gaps, not design flaws:
 
-### 1. Dead Code After Returns
-The plugin injects `__inspector_leave()` both before each `return` statement and at the function's closing brace. For functions with explicit returns, the closing-brace leave is unreachable and dead code.
+### 1. Multiple Inheritance
+Multiple inheritance and virtual inheritance are not supported. The plugin emits a warning and skips instrumentation for such types.
 
-**Fix:** Track-per-function whether the function "falls off" the end (no explicit return), and only emit closing-brace leave in that case.
+### 2. Threading
+Multi-threaded programs (`std::thread`, `std::async`) are not supported. A warning is emitted. The tracer assumes single-threaded execution.
 
-### 2. Missing Line Numbers
-Line information is disabled (`line: 0` in all events) because naive line injection breaks compound expressions:
-```cpp
-if (cond) stmt;        // becomes if (cond) __step(5); stmt;
-```
-This is grammatically invalid.
+### 3. Optimization Levels
+Programs must be compiled with `-O0`. Higher optimization levels may produce incorrect traces due to inlining, dead code elimination, etc.
 
-**Fix:** Parent-aware visitor that only injects line events at statements that are direct children of a `CompoundStmt`.
+### 4. Complex STL Containers
+`std::map` and `std::set` have limited support (tree traversal placeholder). Hash containers (`std::unordered_*`) are not supported.
 
-### 3. Limited Type Support
-Only `int` is converted to JSON. Other primitives need individual runtime hooks. User-defined types need recursive field encoding.
-
-**Fix:** Add hooks for `long`, `double`, `float`, `bool`; add recursive struct encoding.
-
-### 4. No Heap Tracking
-`new` and `delete` aren't intercepted. Useful for memory safety analysis but requires interval-tree-based allocation tracking.
-
-**Fix:** Intercept `CXXNewExpr`/`CXXDeleteExpr`, maintain live allocation intervals at runtime.
-
-### 5. Template Instantiation
-Templates are instrumented at definition time, not per instantiation. `std::vector<MyType>` won't be traced per instantiation.
-
-**Fix:** Dual instrumentation (AST for names, IR pass for events).
-
-### 6. Incomplete Operators
-Only `=` (assignment) is tracked. Compound `-=`, `+=`, `++`, `--` are not instrumented.
-
-**Fix:** Visit `BinaryOperator` and `UnaryOperator` nodes with all relevant opcodes.
-
-### 7. No Type Encoding
-Traces emit raw integer values. The OPT format (Python Tutor's standard) uses type tags: `["REF", heap_id]` for pointers, structured records for user types.
-
-**Fix:** Add a type-tag system and encode complex types as structured records.
+### 5. Platform Restrictions
+- **Linux x86_64**: Fully supported (libstdc++)
+- **macOS**: Supported with limitations (libc++ differences)
+- **Windows**: Not supported (no MSVC)
 
 ## Golden Tests
 
@@ -225,27 +208,55 @@ Each stack entry is:
 cpp-runtime-inspector/
 ├── CMakeLists.txt                 # Build configuration
 ├── CMakePresets.json              # IDE presets with LLVM/Clang paths
-├── plugin/                        # Clang plugin source
-│   ├── InspectorPlugin.cpp        # Main plugin entry point
-│   ├── Visitor.cpp                # AST visitor implementation
-│   ├── TypeEncoder.cpp            # Type information extraction
-│   └── ...
-├── runtime/                       # Runtime library (linked into instrumented binaries)
-│   ├── inspector_runtime.cpp
-│   ├── inspector/
-│   │   ├── Trace.cpp              # Trace data collection
-│   │   ├── JsonEmit.cpp           # JSON serialization
-│   │   ├── Heap.cpp               # (Unused in current version)
+│
+├── core/                          # C++ components
+│   ├── plugin/                    # Clang plugin source
+│   │   ├── InspectorPlugin.cpp    # Main plugin entry point
+│   │   ├── Visitor.cpp            # AST visitor implementation
+│   │   ├── TypeEncoder.cpp        # Type information extraction
 │   │   └── ...
+│   ├── runtime/                   # Runtime library (linked into instrumented binaries)
+│   │   ├── inspector_runtime.cpp
+│   │   ├── inspector/
+│   │   │   ├── Trace.cpp          # Trace data collection
+│   │   │   ├── JsonEmit.cpp       # JSON serialization
+│   │   │   └── ...
+│   └── shim/                      # malloc/free interception shim
+│       └── inspector_malloc_shim.c
+│
+├── services/
+│   ├── api/                       # HTTP server (Python/Flask)
+│   │   ├── server.py
+│   │   └── Dockerfile
+│   └── sandbox/                   # Docker-based execution sandbox
+│       ├── Dockerfile
+│       ├── docker-compose.yml
+│       └── run-traced.sh
+│
+├── web/                           # SvelteKit frontend
+│   ├── src/
+│   ├── package.json
+│   └── Dockerfile.prod
+│
+├── deploy/                        # Deployment configs
+│   ├── Dockerfile.server
+│   └── docker-compose.yml
+│
 ├── tests/
 │   ├── golden/                    # End-to-end test cases
 │   │   ├── primitives/
 │   │   ├── heap_basic/
 │   │   └── ...
-│   ├── tier2_test.cpp             # Unit tests
-└── scripts/
-    ├── instrument-and-run.sh      # Build driver
-    └── run-golden-tests.sh        # Test runner
+│   └── tier2_test.cpp             # Unit tests
+│
+├── scripts/
+│   ├── instrument-and-run.sh      # Build driver
+│   └── run-golden-tests.sh        # Test runner
+│
+└── docs/                          # Documentation
+    ├── architecture.md
+    ├── trace-format.md
+    └── ...
 ```
 
 ## Building for Different LLVM Versions
@@ -268,19 +279,24 @@ cmake -B build
 
 Note: The plugin must be built against the **exact** LLVM/Clang version you'll use to compile user programs. Mismatches cause crashes in the plugin loader.
 
-## Next Steps
+## Web Interface
 
-Suggested improvements in rough order of impact:
+The project includes a SvelteKit-based visualization frontend in `web/`:
 
-1. **Fix dead-leave bug** (~30 min) — Remove unreachable `__inspector_leave` calls.
-2. **Implement parent-aware line injection** (~2 hrs) — Add real line numbers to trace.
-3. **Support more primitive types** (~1 hr) — Add hooks for `double`, `float`, `bool`, `char`.
-4. **Struct/class recursion** (~4 hrs) — Encode user-defined types as nested records.
-5. **Heap allocation tracking** (~1 day) — Intercept `new`/`delete`, maintain allocation intervals.
-6. **Pointer-to-heap resolution** (~1 day) — Lookup heap object by address in trace.
-7. **Template instantiation** (~3 days) — IR pass for template-specific instrumentation.
-8. **STL support** (~1 week) — Custom matchers for `std::vector`, `std::string`, `std::map`.
-9. **Sandboxed runner** (~2 days) — Docker/seccomp/timeout wrapper for safety.
+```bash
+# Development
+cd web && npm install && npm run dev
+
+# Production (Docker)
+docker compose -f deploy/docker-compose.yml up --build
+```
+
+Features:
+- Interactive code editor with C++ syntax highlighting
+- Step-by-step execution visualization
+- Call stack and variable state display
+- Heap memory visualization with pointer tracking
+- Memory leak detection display
 
 ## License
 

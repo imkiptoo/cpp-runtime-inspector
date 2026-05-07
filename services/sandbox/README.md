@@ -17,7 +17,7 @@ The sandbox provides isolated execution of untrusted C++ code with:
 ### Build the container
 
 ```bash
-docker build -t cpp-inspector-sandbox -f sandbox/Dockerfile .
+docker build -t cpp-inspector-sandbox -f services/sandbox/Dockerfile .
 ```
 
 ### Run a trace
@@ -29,7 +29,7 @@ echo 'int main() { int x = 5; return 0; }' | docker run --rm -i cpp-inspector-sa
 ### Using docker-compose
 
 ```bash
-cd sandbox
+cd services/sandbox
 docker-compose build
 echo 'int main() { int x = 5; return 0; }' | docker-compose run --rm inspector > trace.json
 ```

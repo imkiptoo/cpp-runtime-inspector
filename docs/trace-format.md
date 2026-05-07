@@ -291,7 +291,7 @@ Produces trace with heap tracking:
 
 This format is compatible with:
 - Python Tutor visualization frontend
-- C++ Runtime Inspector web interface
+- C++ Runtime Inspector web interface (`web/` directory)
 - Custom visualization tools implementing OPT format
 
 ## Reference

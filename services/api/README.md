@@ -1,4 +1,4 @@
-# C++ Runtime Inspector - Frontend Adapter
+# C++ Runtime Inspector - API Server
 
 HTTP service that accepts C++ source code and returns OPT-format trace JSON.
 
@@ -15,8 +15,8 @@ trace updates is planned for future versions.
 # Build the inspector first
 cmake -B cmake-build-debug && cmake --build cmake-build-debug
 
-# Run the adapter
-cd frontend-adapter
+# Run the server
+cd services/api
 python3 server.py
 ```
 
@@ -27,11 +27,11 @@ python3 server.py
 cmake -B cmake-build-release -DCMAKE_BUILD_TYPE=Release
 cmake --build cmake-build-release
 
-# Build adapter image
-docker build -t cpp-inspector-adapter -f frontend-adapter/Dockerfile .
+# Build server image
+docker build -t cpp-inspector-api -f deploy/Dockerfile.server .
 
 # Run
-docker run -p 8080:8080 cpp-inspector-adapter
+docker run -p 8080:8080 cpp-inspector-api
 ```
 
 ## API
@@ -86,7 +86,7 @@ Environment variables:
 | `MAX_SOURCE_SIZE`  | 1048576                   | Max source size (bytes, 1MB)   |
 | `INSPECTOR_PLUGIN` | cmake-build-debug/...     | Path to plugin .so             |
 | `INSPECTOR_RUNTIME`| cmake-build-debug/...     | Path to runtime .a             |
-| `INSPECTOR_INCLUDE`| runtime/                  | Path to include directory      |
+| `INSPECTOR_INCLUDE`| core/runtime/             | Path to include directory      |
 
 ## Error Responses
 

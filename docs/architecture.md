@@ -35,7 +35,7 @@ The instrumented binary emits trace events to stderr as it runs.
 ## Plugin Architecture
 
 ```
-plugin/
+core/plugin/
 ├── InspectorPlugin.cpp    # Plugin registration
 ├── Visitor.h/cpp          # AST traversal
 ├── TypeEncoder.h/cpp      # Type descriptor generation
@@ -106,7 +106,7 @@ The plugin uses `clang::Rewriter` to modify source text. Key patterns:
 ## Runtime Architecture
 
 ```
-runtime/
+core/runtime/
 ├── inspector_runtime.h       # Public C API
 └── inspector/
     ├── Trace.h/cpp          # State management
@@ -276,10 +276,10 @@ External limits (enforced by runner):
 find_package(LLVM REQUIRED CONFIG)
 find_package(Clang REQUIRED CONFIG)
 
-add_library(InspectorPlugin MODULE plugin/*.cpp)
+add_library(InspectorPlugin MODULE core/plugin/*.cpp)
 target_link_libraries(InspectorPlugin PRIVATE clangAST clangRewrite ...)
 
-add_library(inspector_runtime STATIC runtime/*.cpp)
+add_library(inspector_runtime STATIC core/runtime/*.cpp)
 ```
 
 ### Usage

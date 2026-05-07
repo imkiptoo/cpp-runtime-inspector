@@ -19,7 +19,7 @@ The current implementation targets:
 Container types are identified by pattern matching on type names:
 
 ```cpp
-// runtime/inspector/StlEncoders.cpp
+// core/runtime/inspector/StlEncoders.cpp
 StlContainerKind identifyStlContainer(const std::string& typeName) {
     if (typeName.find("std::vector") != std::string::npos ||
         typeName.find("std::__1::vector") != std::string::npos) {
@@ -48,7 +48,7 @@ EncodedValue encodeStdUniquePtr(const void* addr, const TypeDescriptor* pointeeT
 The plugin skips instrumentation of STL containers:
 
 ```cpp
-// plugin/Visitor.cpp
+// core/plugin/Visitor.cpp
 if (m_typeEncoder.isStlContainer(type)) {
     return true;  // Skip - handled by runtime
 }
@@ -57,7 +57,7 @@ if (m_typeEncoder.isStlContainer(type)) {
 The runtime encodes them using internal layout knowledge:
 
 ```cpp
-// runtime/inspector/Trace.cpp
+// core/runtime/inspector/Trace.cpp
 if (stlKind != StlContainerKind::None) {
     return encodeStlContainer(addr, type, stlKind);
 }
@@ -67,7 +67,7 @@ if (stlKind != StlContainerKind::None) {
 
 ### Step 1: Add Container Kind
 
-Update the enum in `StlEncoders.h`:
+Update the enum in `core/runtime/inspector/StlEncoders.h`:
 
 ```cpp
 enum class StlContainerKind {
@@ -124,7 +124,7 @@ EncodedValue encodeStdDeque(const void* addr, const TypeDescriptor* elementType,
 
 ### Step 4: Register Encoder
 
-Update the dispatch in `Trace.cpp`:
+Update the dispatch in `core/runtime/inspector/Trace.cpp`:
 
 ```cpp
 case StlContainerKind::Deque:
