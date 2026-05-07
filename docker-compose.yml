@@ -1,11 +1,11 @@
 name: cpp-runtime-inspector
 
 services:
-  inspector:
+  backend:
     image: ghcr.io/imkiptoo/cpp-runtime-inspector-server:latest
     pull_policy: always
     ports:
-      - "8080:8080"
+      - "127.0.0.1:8080:8080"
     environment:
       - TIMEOUT=30
       - MAX_SOURCE_SIZE=1048576
@@ -15,4 +15,14 @@ services:
       timeout: 10s
       retries: 3
       start_period: 10s
+    restart: unless-stopped
+
+  frontend:
+    image: ghcr.io/imkiptoo/cpp-runtime-inspector-frontend:latest
+    pull_policy: always
+    ports:
+      - "127.0.0.1:8081:80"
+    depends_on:
+      backend:
+        condition: service_healthy
     restart: unless-stopped
