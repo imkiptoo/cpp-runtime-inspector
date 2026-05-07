@@ -1,6 +1,8 @@
 # C++ Runtime Inspector
 
-A proof-of-concept tool that automatically instruments C++ programs to trace their execution at runtime. It uses Clang AST plugins to rewrite source code, injecting calls to capture function entries/exits, variable initialization, and state changes. The result is a working binary that emits a JSON execution trace compatible with visualization tools like Python Tutor.
+A C++ instrumentation tool that uses Clang AST plugins to automatically inject tracing hooks into source code. The instrumented binary emits a JSON execution trace showing function calls, variable state, and memory allocations—compatible with Python Tutor and similar visualizers.
+
+**In plain English:** You give it your C++ code, and it shows you exactly what happens when the program runs—step by step. You can see variables change, watch functions get called, and track memory being allocated and freed. It's like a slow-motion replay of your program's execution.
 
 ## Quick Start
 
