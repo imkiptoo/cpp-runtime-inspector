@@ -1,0 +1,15 @@
+@startuml build-pipeline
+!theme plain
+skinparam backgroundColor white
+skinparam defaultFontName Inter
+
+title Two-Pass Build
+
+(input.cpp) --> [Clang + Plugin] : instrument
+[Clang + Plugin] --> (instrumented.cpp)
+(instrumented.cpp) --> [Clang++] : compile
+[libinspector_runtime] --> [Clang++] : link
+[Clang++] --> (program)
+(program) --> (trace.json) : run
+
+@enduml

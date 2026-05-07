@@ -1,0 +1,20 @@
+@startuml system-overview
+!theme plain
+skinparam backgroundColor white
+skinparam defaultFontName Inter
+
+title System Overview
+
+actor User
+rectangle "Web Frontend" as web
+rectangle "API Server" as api
+rectangle "Core C++" as core
+database "Trace JSON" as trace
+
+User --> web : write code
+web --> api : POST /trace
+api --> core : instrument & run
+core --> trace : emit
+trace --> web : visualize
+
+@enduml

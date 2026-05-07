@@ -1,0 +1,16 @@
+@startuml instrumentation-hooks
+!theme plain
+skinparam backgroundColor white
+skinparam defaultFontName Inter
+
+title Hook Injection
+
+map "Code Construct → Hook" as mapping {
+  function => __inspector_enter/leave
+  variable decl => __inspector_var_init_*
+  assignment => __inspector_var_update_*
+  new expr => __inspector_capture_new
+  delete expr => __inspector_pre_delete
+}
+
+@enduml

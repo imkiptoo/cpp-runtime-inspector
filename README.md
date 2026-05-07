@@ -1,12 +1,18 @@
 # C++ Runtime Inspector
 
-A C++ instrumentation tool that uses Clang AST plugins to automatically inject tracing hooks into source code. The instrumented binary emits a JSON execution trace showing function calls, variable state, and memory allocations—compatible with Python Tutor and similar visualizers.
+A C++ instrumentation tool that uses [Clang](https://clang.llvm.org/) [AST](https://clang.llvm.org/docs/IntroductionToTheClangAST.html) [plugins](https://clang.llvm.org/docs/Plugins.html) to automatically inject tracing hooks into source code. The instrumented binary emits a JSON execution trace showing function calls, variable state, and memory allocations—compatible with [Python Tutor](https://pythontutor.com/) and similar visualizers.
 
 **In plain English:** You give it your C++ code, and it shows you exactly what happens when the program runs—step by step. You can see variables change, watch functions get called, and track memory being allocated and freed. It's like a slow-motion replay of your program's execution.
+
+<video src="docs/videos/demo-1.mp4" controls width="100%"></video>
 
 ## Quick Start
 
 ### Prerequisites
+
+- [LLVM/Clang](https://llvm.org/) 17+ (compiler infrastructure)
+- [CMake](https://cmake.org/) 3.20+ (build system)
+- [Ninja](https://ninja-build.org/) (recommended build tool)
 
 **macOS (Homebrew):**
 ```bash
@@ -20,11 +26,18 @@ sudo apt install llvm-dev libclang-dev clang cmake ninja-build
 
 ### Build
 
+**macOS (Homebrew LLVM):**
 ```bash
 cmake -B cmake-build-debug -G Ninja \
   -DCMAKE_BUILD_TYPE=Debug \
   -DLLVM_DIR=/opt/homebrew/opt/llvm/lib/cmake/llvm \
   -DClang_DIR=/opt/homebrew/opt/llvm/lib/cmake/clang
+cmake --build cmake-build-debug -j$(nproc)
+```
+
+**Linux (System LLVM):**
+```bash
+cmake -B cmake-build-debug -G Ninja -DCMAKE_BUILD_TYPE=Debug
 cmake --build cmake-build-debug -j$(nproc)
 ```
 
@@ -39,15 +52,17 @@ This script:
 2. Compiles the instrumented source
 3. Runs the binary and captures the JSON trace to `trace.json`
 
-Example output (10-step trace of a simple program):
+Example trace output:
 ```json
-[
-  { "type": "call",       "name": "main",   "stack": [] },
-  { "type": "var_init",   "name": "a",     "stack": [{"name": "a", "value": 3}] },
-  { "type": "var_init",   "name": "b",     "stack": [{"name": "a", "value": 3}, {"name": "b", "value": 4}] },
-  { "type": "var_update", "name": "sum",   "stack": [...] },
-  ...
-]
+{
+  "code": "int main() { int a = 3; int b = 4; return a + b; }",
+  "trace": [
+    { "event": "call", "func_name": "main", "line": 1, "stack_to_render": [...] },
+    { "event": "step_line", "func_name": "main", "line": 1, "stack_to_render": [{"encoded_locals": {"a": 3}}] },
+    { "event": "step_line", "func_name": "main", "line": 1, "stack_to_render": [{"encoded_locals": {"a": 3, "b": 4}}] },
+    { "event": "return", "func_name": "main", "line": 1, "stack_to_render": [...] }
+  ]
+}
 ```
 
 ## How It Works
@@ -58,9 +73,9 @@ The tool operates in three stages:
 ```
 clang -fsyntax-only -fplugin=libInspectorPlugin.so user.cpp
 ```
-- Clang loads the plugin and walks the AST
+- Clang loads the plugin and walks the [AST](https://clang.llvm.org/docs/IntroductionToTheClangAST.html)
 - Plugin identifies function definitions, variable declarations, assignments, returns
-- Uses `clang::Rewriter` to inject `__inspector_*` function calls at strategic points
+- Uses [`clang::Rewriter`](https://clang.llvm.org/doxygen/classclang_1_1Rewriter.html) to inject `__inspector_*` function calls at strategic points
 - Writes the rewritten source to `user.cpp.instrumented.cpp`
 
 **Example transformation:**
@@ -116,12 +131,12 @@ The runtime library (`core/runtime/inspector_runtime.*`) collects trace data:
 
 ### Why Three Stages?
 
-The Clang `Rewriter` API works on **source text**, not the AST used by codegen. Therefore:
+The Clang [`Rewriter`](https://clang.llvm.org/doxygen/classclang_1_1Rewriter.html) API works on **source text**, not the AST used by codegen. Therefore:
 - A single `clang -fsyntax-only` pass produces instrumented source but won't compile it
 - The instrumented source must be compiled in a separate pass
-- This two-pass model is standard for source-rewriting tools (clang-tidy, linters, etc.)
+- This two-pass model is standard for source-rewriting tools ([clang-tidy](https://clang.llvm.org/extra/clang-tidy/), linters, etc.)
 
-**Future optimization:** A single-pass compiler-integration via Clang libtooling or custom IR passes could eliminate the intermediate file, but would require significantly more code.
+**Future optimization:** A single-pass compiler-integration via [LibTooling](https://clang.llvm.org/docs/LibTooling.html) or custom [LLVM IR](https://llvm.org/docs/LangRef.html) passes could eliminate the intermediate file, but would require significantly more code.
 
 ## What It Traces
 
@@ -135,7 +150,7 @@ Currently tracked:
 - **Pointers and references** (with stack/heap region tracking)
 - **Heap allocations** (new/delete, malloc/free via shim)
 - **User-defined types** (structs, classes, enums, unions)
-- **STL containers** (vector, string, unique_ptr, shared_ptr, optional)
+- **STL containers** (vector, string, array, pair, unique_ptr, shared_ptr, optional, variant, function)
 - **Templates** (function and class templates)
 - **Compound assignments** (+=, -=, ++, --, etc.)
 - **Constructors/Destructors** (including copy/move)
@@ -186,23 +201,27 @@ Each test has an input C++ file and an expected JSON trace. The build system ins
 
 ## Trace Format
 
-The output is a simplified version of the OPT trace format (used by Python Tutor and other visualization tools):
+The output follows the [OPT trace format](https://github.com/pgbovine/OnlinePythonTutor/blob/master/v3/docs/opt-trace-format.md) (used by [Python Tutor](https://pythontutor.com/) and similar visualization tools):
 
 ```json
-[
-  { "type": "call",       "name": "func_name", "stack": [] },
-  { "type": "var_init",   "name": "var_name",  "stack": [...] },
-  { "type": "var_update", "name": "var_name",  "stack": [...] },
-  { "type": "return",     "name": "func_name", "stack": [...] }
-]
+{
+  "code": "int main() { ... }",
+  "trace": [
+    {
+      "event": "call",
+      "func_name": "main",
+      "line": 3,
+      "stack_to_render": [...],
+      "heap": {},
+      "globals": {}
+    }
+  ]
+}
 ```
 
-Each stack entry is:
-```json
-{ "name": "variable_name", "value": value_as_int, "line": 0 }
-```
+Event types: `call`, `return`, `step_line`, `exception`, `catch`
 
-(Line numbers are 0 due to limitation #2 above.)
+See [docs/trace-format.md](docs/trace-format.md) for the complete specification.
 
 ## Project Organization
 
@@ -283,7 +302,7 @@ Note: The plugin must be built against the **exact** LLVM/Clang version you'll u
 
 ## Web Interface
 
-The project includes a SvelteKit-based visualization frontend in `web/`:
+The project includes a [SvelteKit](https://kit.svelte.dev/)-based visualization frontend in `web/`:
 
 ```bash
 # Development
@@ -300,12 +319,29 @@ Features:
 - Heap memory visualization with pointer tracking
 - Memory leak detection display
 
+## Worthy Alternatives
+
+Other tools for understanding C++ program execution:
+
+| Tool | Approach | Best For |
+|------|----------|----------|
+| [Python Tutor C++](https://pythontutor.com/cpp.html) | Valgrind-based tracing | Quick visualization of simple programs |
+| [Compiler Explorer](https://godbolt.org/) | Assembly output comparison | Understanding compiler optimizations |
+| [C++ Insights](https://cppinsights.io/) | Source transformation viewer | Seeing what the compiler generates (templates, lambdas) |
+| [RR](https://rr-project.org/) | Record & replay debugging | Deterministic debugging of complex bugs |
+| [Valgrind](https://valgrind.org/) | Dynamic analysis | Memory leak and error detection |
+| [AddressSanitizer](https://clang.llvm.org/docs/AddressSanitizer.html) | Compile-time instrumentation | Fast memory error detection |
+| [GDB](https://www.gnu.org/software/gdb/) / [LLDB](https://lldb.llvm.org/) | Interactive debugging | Traditional step-through debugging |
+
+**How we differ:** Most tools either interpret binaries (Valgrind) or require interactive debugging sessions (GDB). C++ Runtime Inspector uses Clang AST plugins to rewrite source code *before* compilation, injecting tracing hooks directly. This preserves variable names, type information, and produces a complete JSON trace—ideal for web-based visualizations and automated analysis.
+
 ## License
 
-This is a proof-of-concept and research artifact. Modify and build upon as needed.
+This project is a research artifact and educational tool. MIT License. See [LICENSE](LICENSE) for details.
 
 ## References
 
-- [LLVM Clang Plugin Documentation](https://clang.llvm.org/docs/Plugins.html)
-- [OPT Trace Format](https://github.com/pgbovine/OnlinePythonTutor/blob/master/v3/docs/opt-trace-format.md) (Python Tutor standard)
-- [nlohmann/json](https://github.com/nlohmann/json) — JSON library used by runtime
+- [Clang Plugins Documentation](https://clang.llvm.org/docs/Plugins.html) — How to write Clang plugins
+- [Introduction to the Clang AST](https://clang.llvm.org/docs/IntroductionToTheClangAST.html) — Understanding the AST structure
+- [OPT Trace Format](https://github.com/pgbovine/OnlinePythonTutor/blob/master/v3/docs/opt-trace-format.md) — Python Tutor's trace specification
+- [nlohmann/json](https://github.com/nlohmann/json) — JSON library used by the runtime

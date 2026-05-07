@@ -1,0 +1,21 @@
+@startuml runtime-architecture
+!theme plain
+skinparam backgroundColor white
+skinparam defaultFontName Inter
+
+title Runtime Components
+
+package "core/runtime" {
+  [Hooks] as hooks
+  [TraceState] as trace
+  [TypeInfo] as types
+  [StlEncoders] as stl
+  [JsonEmit] as json
+}
+
+hooks --> trace : record events
+trace --> types : lookup
+trace --> stl : encode containers
+trace --> json : output
+
+@enduml

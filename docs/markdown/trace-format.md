@@ -5,6 +5,8 @@ format, enabling compatibility with existing visualization frontends.
 
 ## Overview
 
+![Trace Structure](../images/trace-structure.svg)
+
 The trace output is a JSON object with these top-level keys:
 
 ```json

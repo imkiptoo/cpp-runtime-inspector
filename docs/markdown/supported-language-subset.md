@@ -67,6 +67,9 @@ introductory and intermediate programming courses.
 - **std::pair<T1, T2>**: Displayed as struct
 - **std::unique_ptr<T>**: Pointer with heap tracking
 - **std::shared_ptr<T>**: Pointer with heap tracking
+- **std::optional<T>**: Displays engaged state and value
+- **std::variant<Ts...>**: Displays active index and value
+- **std::function<T>**: Displays engaged/empty state
 
 ### Templates
 
@@ -87,13 +90,11 @@ introductory and intermediate programming courses.
 
 ### STL Containers (Limited)
 
-| Container       | Support Level                    |
-|-----------------|----------------------------------|
-| `std::map`      | Placeholder (tree traversal TBD) |
-| `std::set`      | Placeholder (tree traversal TBD) |
-| `std::optional` | Placeholder                      |
-| `std::variant`  | Not supported                    |
-| `std::tuple`    | Not supported                    |
+| Container       | Support Level                              |
+|-----------------|--------------------------------------------|
+| `std::map`      | Partial (tree traversal, 256-entry limit)  |
+| `std::set`      | Partial (tree traversal, 256-entry limit)  |
+| `std::tuple`    | Not supported                              |
 
 ### Inheritance
 

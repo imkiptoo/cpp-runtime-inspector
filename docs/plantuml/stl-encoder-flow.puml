@@ -1,0 +1,26 @@
+@startuml stl-encoder-flow
+!theme plain
+skinparam backgroundColor white
+skinparam defaultFontName Inter
+
+title STL Encoding
+
+start
+:identify container;
+switch (type?)
+case (vector)
+  :read elements;
+case (string)
+  :read chars;
+case (map/set)
+  :traverse tree;
+case (smart_ptr)
+  :resolve ref;
+case (optional)
+  :check engaged;
+case (other)
+  :encode struct;
+endswitch
+stop
+
+@enduml

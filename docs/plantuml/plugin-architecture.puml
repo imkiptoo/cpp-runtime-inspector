@@ -1,0 +1,19 @@
+@startuml plugin-architecture
+!theme plain
+skinparam backgroundColor white
+skinparam defaultFontName Inter
+
+title Plugin Components
+
+package "core/plugin" {
+  [InspectorPlugin] as plugin
+  [Visitor] as visitor
+  [TypeEncoder] as encoder
+  [RewriteHelpers] as rewriter
+}
+
+plugin --> visitor : traverse AST
+visitor --> encoder : get types
+visitor --> rewriter : inject hooks
+
+@enduml

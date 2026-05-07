@@ -1,0 +1,18 @@
+@startuml heap-tracking
+!theme plain
+skinparam backgroundColor white
+skinparam defaultFontName Inter
+
+title Heap Tracking
+
+rectangle "Allocate" {
+  (new/malloc) --> [HeapTracker] : insert
+}
+
+rectangle "Deallocate" {
+  (delete/free) --> [HeapTracker] : mark freed
+}
+
+[HeapTracker] --> (Allocation Table) : sorted vector
+
+@enduml

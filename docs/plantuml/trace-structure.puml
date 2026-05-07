@@ -1,0 +1,15 @@
+@startuml trace-structure
+!theme plain
+skinparam backgroundColor white
+skinparam defaultFontName Inter
+
+title Trace JSON
+
+map "Output" as trace {
+  code => source
+  trace => steps[]
+  heap => allocations
+  memory_leaks => unfreed[]
+}
+
+@enduml

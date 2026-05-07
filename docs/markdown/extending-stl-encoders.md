@@ -14,6 +14,8 @@ The current implementation targets:
 
 ## Architecture
 
+![STL Encoder Flow](../images/stl-encoder-flow.svg)
+
 ### Container Detection
 
 Container types are identified by pattern matching on type names:
@@ -299,7 +301,7 @@ matrix:
 
 ### Known Issues
 
-1. **std::map/set traversal**: Complex tree traversal not implemented
+1. **std::map/set traversal**: Tree traversal implemented but limited to libstdc++ x86_64 layout, 256-entry cap
 2. **String SSO**: Different implementations across platforms
 3. **Nested containers**: Deep recursion may hit limits
 
