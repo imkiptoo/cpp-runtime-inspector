@@ -6,6 +6,13 @@ A C++ instrumentation tool that uses [Clang](https://clang.llvm.org/) [AST](http
 
 <video src="docs/videos/demo-1.mp4" controls width="100%"></video>
 
+**Documentation:**
+[Architecture](docs/architecture.md) ·
+[Trace Format](docs/trace-format.md) ·
+[Frontend Integration](docs/frontend-integration.md) ·
+[Extending STL Encoders](docs/extending-stl-encoders.md) ·
+[Supported Language Subset](docs/supported-language-subset.md)
+
 ## Quick Start
 
 ### Prerequisites
