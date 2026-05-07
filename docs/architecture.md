@@ -7,7 +7,7 @@ instrumentation and tracing system.
 
 C++ Runtime Inspector uses a two-pass build model.
 
-![Build Pipeline](../images/build-pipeline.svg)
+![Build Pipeline](./images/build-pipeline.svg)
 
 ### Pass 1: Instrumentation
 
@@ -23,7 +23,7 @@ The instrumented binary emits trace events to stderr as it runs.
 
 ## Plugin Architecture
 
-![Plugin Architecture](../images/plugin-architecture.svg)
+![Plugin Architecture](./images/plugin-architecture.svg)
 
 ```
 core/plugin/
@@ -47,7 +47,7 @@ instruments:
 - **New/Delete** (`VisitCXXNewExpr`, `VisitCXXDeleteExpr`) - Heap tracking
 - **Exceptions** (`VisitCXXThrowExpr`, `VisitCXXCatchStmt`)
 
-![Instrumentation Hooks](../images/instrumentation-hooks.svg)
+![Instrumentation Hooks](./images/instrumentation-hooks.svg)
 
 ### TypeEncoder
 
@@ -98,7 +98,7 @@ The plugin uses `clang::Rewriter` to modify source text. Key patterns:
 
 ## Runtime Architecture
 
-![Runtime Architecture](../images/runtime-architecture.svg)
+![Runtime Architecture](./images/runtime-architecture.svg)
 
 ```
 core/runtime/
@@ -141,7 +141,7 @@ struct TypeDescriptor {
 
 ### Heap Tracking
 
-![Heap Tracking](../images/heap-tracking.svg)
+![Heap Tracking](./images/heap-tracking.svg)
 
 The runtime maintains a sorted vector of allocations:
 
@@ -213,7 +213,7 @@ void __inspector_pre_delete(T* ptr);
 
 ## STL Encoding
 
-![STL Encoder Flow](../images/stl-encoder-flow.svg)
+![STL Encoder Flow](./images/stl-encoder-flow.svg)
 
 STL containers are encoded by reading their internal representation:
 

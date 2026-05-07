@@ -14,7 +14,7 @@ The current implementation targets:
 
 ## Architecture
 
-![STL Encoder Flow](../images/stl-encoder-flow.svg)
+![STL Encoder Flow](./images/stl-encoder-flow.svg)
 
 ### Container Detection
 

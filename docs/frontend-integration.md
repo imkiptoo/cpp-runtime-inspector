@@ -5,7 +5,7 @@ visualization frontends.
 
 ## Overview
 
-![System Overview](../images/system-overview.svg)
+![System Overview](./images/system-overview.svg)
 
 C++ Runtime Inspector produces traces in the OPT (Online Python Tutor) format,
 making it compatible with existing visualization tools.
@@ -26,7 +26,7 @@ cat trace.json | jq '.trace | length'  # Number of steps
 
 ### 2. API Server HTTP Interface
 
-![API Sequence](../images/api-sequence.svg)
+![API Sequence](./images/api-sequence.svg)
 
 The API server provides a simple HTTP interface:
 
