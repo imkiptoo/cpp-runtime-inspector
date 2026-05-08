@@ -168,6 +168,10 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Read version
+        id: version
+        run: echo "version=$(cat VERSION)" >> $GITHUB_OUTPUT
+
       - name: Metadata (sandbox)
         id: meta-sandbox
         uses: docker/metadata-action@v5
@@ -175,6 +179,7 @@ jobs:
           images: ghcr.io/${{ github.repository_owner }}/cpp-runtime-inspector-sandbox
           tags: |
             type=raw,value=latest
+            type=raw,value=${{ steps.version.outputs.version }}
             type=sha,format=short
 
       - name: Build & push sandbox
@@ -195,6 +200,7 @@ jobs:
           images: ghcr.io/${{ github.repository_owner }}/cpp-runtime-inspector-server
           tags: |
             type=raw,value=latest
+            type=raw,value=${{ steps.version.outputs.version }}
             type=sha,format=short
 
       - name: Build & push server
@@ -215,6 +221,7 @@ jobs:
           images: ghcr.io/${{ github.repository_owner }}/cpp-runtime-inspector-frontend
           tags: |
             type=raw,value=latest
+            type=raw,value=${{ steps.version.outputs.version }}
             type=sha,format=short
 
       - name: Build & push frontend
@@ -228,10 +235,52 @@ jobs:
           cache-from: type=gha,scope=frontend
           cache-to: type=gha,mode=max,scope=frontend
 
+  release:
+    name: Create Release
+    runs-on: ubuntu-24.04
+    needs: [publish]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+    outputs:
+      released: ${{ steps.check.outputs.released }}
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read version
+        id: version
+        run: echo "version=$(cat VERSION)" >> $GITHUB_OUTPUT
+
+      - name: Check if release exists
+        id: check
+        run: |
+          if gh release view "v${{ steps.version.outputs.version }}" &>/dev/null; then
+            echo "Release v${{ steps.version.outputs.version }} already exists"
+            echo "released=false" >> $GITHUB_OUTPUT
+          else
+            echo "Release v${{ steps.version.outputs.version }} does not exist, will create"
+            echo "released=true" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Release
+        if: steps.check.outputs.released == 'true'
+        run: |
+          gh release create "v${{ steps.version.outputs.version }}" \
+            --title "v${{ steps.version.outputs.version }}" \
+            --generate-notes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   pull-local:
     name: Pull Images on Dev Machine
     runs-on: [self-hosted, linux, local-deploy]
-    needs: [publish]
+    needs: [publish, release]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     permissions:
       contents: read
