@@ -24,7 +24,9 @@ RUN update-alternatives --install /usr/bin/clang clang /usr/bin/clang-18 100 && 
 
 # Copy source code
 WORKDIR /build
-COPY . .
+COPY CMakeLists.txt CMakePresets.json ./
+COPY core/ ./core/
+COPY services/sandbox/run-traced.sh ./services/sandbox/
 
 # Build the project
 RUN cmake -B build -G Ninja \
@@ -47,9 +49,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Copy built artifacts
 COPY --from=builder /build/build/libInspectorPlugin.so /opt/inspector/lib/
 COPY --from=builder /build/build/libinspector_runtime.a /opt/inspector/lib/
-COPY --from=builder /build/runtime/inspector_runtime.h /opt/inspector/include/
-COPY --from=builder /build/runtime/inspector/ /opt/inspector/include/inspector/
-COPY --from=builder /build/sandbox/run-traced.sh /opt/inspector/bin/
+COPY --from=builder /build/core/runtime/inspector_runtime.h /opt/inspector/include/
+COPY --from=builder /build/core/runtime/inspector/ /opt/inspector/include/inspector/
+COPY --from=builder /build/services/sandbox/run-traced.sh /opt/inspector/bin/
 
 # Create working directory
 WORKDIR /workspace

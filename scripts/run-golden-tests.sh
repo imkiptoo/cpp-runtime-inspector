@@ -13,7 +13,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 GOLDEN_DIR="${ROOT}/tests/golden"
-RUNTIME_HDR="${ROOT}/runtime"
+RUNTIME_HDR="${ROOT}/core/runtime"
 
 # Parse command line arguments
 SINGLE_TEST=""

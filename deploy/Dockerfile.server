@@ -32,10 +32,8 @@ ENV PATH="${LLVM_DIR}/bin:${PATH}"
 
 # Copy source code
 WORKDIR /build
-COPY CMakeLists.txt ./
-COPY plugin/ ./plugin/
-COPY runtime/ ./runtime/
-COPY shim/ ./shim/
+COPY CMakeLists.txt CMakePresets.json ./
+COPY core/ ./core/
 
 # Build the project
 RUN mkdir -p cmake-build && cd cmake-build && \
@@ -79,14 +77,14 @@ COPY --from=builder /build/cmake-build/libInspectorPlugin.so ./lib/
 COPY --from=builder /build/cmake-build/libinspector_runtime.a ./lib/
 
 # Copy runtime headers and server
-COPY runtime/ ./runtime/
-COPY frontend-adapter/ ./frontend-adapter/
+COPY core/runtime/ ./core/runtime/
+COPY services/api/ ./services/api/
 
 # Set environment variables for the server
 ENV INSPECTOR_ROOT=/app
 ENV INSPECTOR_PLUGIN=/app/lib/libInspectorPlugin.so
 ENV INSPECTOR_RUNTIME=/app/lib/libinspector_runtime.a
-ENV INSPECTOR_INCLUDE=/app/runtime
+ENV INSPECTOR_INCLUDE=/app/core/runtime
 ENV CLANGXX=clang++-17
 
 # Expose the server port
@@ -97,4 +95,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:8080/health || exit 1
 
 # Run the server
-CMD ["python3", "frontend-adapter/server.py", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["python3", "services/api/server.py", "--host", "0.0.0.0", "--port", "8080"]

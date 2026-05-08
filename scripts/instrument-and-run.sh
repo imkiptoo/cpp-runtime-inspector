@@ -22,7 +22,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 SRC="${ROOT}/tests/examples/example.cpp"
-RUNTIME_HDR="${ROOT}/runtime"
+RUNTIME_HDR="${ROOT}/core/runtime"
 
 # Use cmake-build-debug if it exists, otherwise build/
 BUILD="${ROOT}/cmake-build-debug"

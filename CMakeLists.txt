@@ -1,10 +1,10 @@
 # Top-level build for the C++ Runtime Inspector.
 #
 # Layout:
-#   plugin/    The Clang AST plugin (a shared library Clang loads).
-#   runtime/   The tracing runtime, linked into instrumented binaries.
-#   test/      A sample user program to instrument.
-#   tests/     Golden tests for validation.
+#   core/plugin/   The Clang AST plugin (a shared library Clang loads).
+#   core/runtime/  The tracing runtime, linked into instrumented binaries.
+#   core/shim/     The malloc shim library.
+#   tests/         Golden tests for validation.
 #
 # Build prerequisites (Ubuntu 22.04+ / Kubuntu 24.04):
 #   sudo apt install llvm-dev libclang-dev clang cmake build-essential
@@ -57,13 +57,13 @@ add_definitions(${LLVM_DEFINITIONS})
 # load time, so we don't link them here (doing so causes "duplicate symbol"
 # errors at runtime). This is the Clang-plugin convention.
 add_library(InspectorPlugin SHARED
-    plugin/InspectorPlugin.cpp
-    plugin/Visitor.cpp
-    plugin/TypeEncoder.cpp
-    plugin/RewriteHelpers.cpp
-    plugin/Diagnostics.cpp
+    core/plugin/InspectorPlugin.cpp
+    core/plugin/Visitor.cpp
+    core/plugin/TypeEncoder.cpp
+    core/plugin/RewriteHelpers.cpp
+    core/plugin/Diagnostics.cpp
 )
-target_include_directories(InspectorPlugin PRIVATE plugin)
+target_include_directories(InspectorPlugin PRIVATE core/plugin)
 target_compile_options(InspectorPlugin PRIVATE -fno-rtti)  # match Clang's build flags
 
 # On macOS, Clang plugins must allow undefined symbols that are resolved at load time.
@@ -76,20 +76,20 @@ endif()
 # be shared; static is simpler for a PoC because there's no LD_LIBRARY_PATH
 # to manage.
 add_library(inspector_runtime STATIC
-    runtime/inspector_runtime.cpp
-    runtime/inspector/TypeInfo.cpp
-    runtime/inspector/Trace.cpp
-    runtime/inspector/JsonEmit.cpp
-    runtime/inspector/Hooks.cpp
-    runtime/inspector/StringSafe.cpp
-    runtime/inspector/Heap.cpp
-    runtime/inspector/StlEncoders.cpp
-    runtime/inspector/Signals.cpp
-    runtime/inspector/Dynamic.cpp
-    runtime/inspector/StdoutCapture.cpp
-    runtime/inspector/StdinCapture.cpp
+    core/runtime/inspector_runtime.cpp
+    core/runtime/inspector/TypeInfo.cpp
+    core/runtime/inspector/Trace.cpp
+    core/runtime/inspector/JsonEmit.cpp
+    core/runtime/inspector/Hooks.cpp
+    core/runtime/inspector/StringSafe.cpp
+    core/runtime/inspector/Heap.cpp
+    core/runtime/inspector/StlEncoders.cpp
+    core/runtime/inspector/Signals.cpp
+    core/runtime/inspector/Dynamic.cpp
+    core/runtime/inspector/StdoutCapture.cpp
+    core/runtime/inspector/StdinCapture.cpp
 )
-target_include_directories(inspector_runtime PUBLIC runtime)
+target_include_directories(inspector_runtime PUBLIC core/runtime)
 target_link_libraries(inspector_runtime PRIVATE nlohmann_json::nlohmann_json)
 
 # --- The malloc shim -----------------------------------------------------
@@ -101,7 +101,7 @@ target_link_libraries(inspector_runtime PRIVATE nlohmann_json::nlohmann_json)
 # and __inspector_dealloc_malloc functions are resolved at load time from the
 # main program (which must be linked with inspector_runtime).
 add_library(inspector_malloc_shim SHARED
-    shim/inspector_malloc_shim.c
+    core/shim/inspector_malloc_shim.c
 )
 target_link_libraries(inspector_malloc_shim PRIVATE ${CMAKE_DL_LIBS})
 

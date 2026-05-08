@@ -4,6 +4,9 @@ services:
   backend:
     image: ghcr.io/imkiptoo/cpp-runtime-inspector-server:latest
     pull_policy: always
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.server
     ports:
       - "127.0.0.1:8080:8080"
     environment:
@@ -20,6 +23,9 @@ services:
   frontend:
     image: ghcr.io/imkiptoo/cpp-runtime-inspector-frontend:latest
     pull_policy: always
+    build:
+      context: ../web
+      dockerfile: Dockerfile.prod
     ports:
       - "127.0.0.1:8081:80"
     depends_on:

@@ -100,7 +100,7 @@ jobs:
 
       - name: Check formatting
         run: |
-          find plugin runtime -name '*.cpp' -o -name '*.h' | \
+          find core/plugin core/runtime core/shim -name '*.cpp' -o -name '*.h' -o -name '*.c' | \
             xargs clang-format-18 --dry-run --Werror
         continue-on-error: true  # Don't fail on format issues for now
 
@@ -133,7 +133,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: sandbox/Dockerfile
+          file: services/sandbox/Dockerfile
           push: false
           load: true
           tags: cpp-inspector-sandbox:test
@@ -181,7 +181,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: sandbox/Dockerfile
+          file: services/sandbox/Dockerfile
           push: true
           tags: ${{ steps.meta-sandbox.outputs.tags }}
           labels: ${{ steps.meta-sandbox.outputs.labels }}
@@ -201,7 +201,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: Dockerfile
+          file: deploy/Dockerfile.server
           push: true
           tags: ${{ steps.meta-server.outputs.tags }}
           labels: ${{ steps.meta-server.outputs.labels }}
@@ -220,8 +220,8 @@ jobs:
       - name: Build & push frontend
         uses: docker/build-push-action@v5
         with:
-          context: ./frontend
-          file: ./frontend/Dockerfile.prod
+          context: ./web
+          file: ./web/Dockerfile.prod
           push: true
           tags: ${{ steps.meta-frontend.outputs.tags }}
           labels: ${{ steps.meta-frontend.outputs.labels }}
@@ -252,7 +252,7 @@ jobs:
           docker pull ghcr.io/${{ github.repository_owner }}/cpp-runtime-inspector-frontend:latest
 
       - name: Restart server via docker compose
-        run: docker compose up -d --pull always --remove-orphans
+        run: docker compose -f deploy/docker-compose.yml up -d --pull always --remove-orphans
 
       - name: Log out of GHCR
         if: always()
