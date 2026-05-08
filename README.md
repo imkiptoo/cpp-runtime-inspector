@@ -1,5 +1,10 @@
 # C++ Runtime Inspector
 
+[![CI](https://github.com/imkiptoo/cpp-runtime-inspector/actions/workflows/ci.yml/badge.svg)](https://github.com/imkiptoo/cpp-runtime-inspector/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![C++17](https://img.shields.io/badge/C%2B%2B-20-blue.svg)](https://isocpp.org/)
+[![LLVM 17+](https://img.shields.io/badge/LLVM-17%2B-blue.svg)](https://llvm.org/)
+
 A C++ instrumentation tool that uses [Clang](https://clang.llvm.org/) [AST](https://clang.llvm.org/docs/IntroductionToTheClangAST.html) [plugins](https://clang.llvm.org/docs/Plugins.html) to automatically inject tracing hooks into source code. The instrumented binary emits a JSON execution trace showing function calls, variable state, and memory allocations—compatible with [Python Tutor](https://pythontutor.com/) and similar visualizers.
 
 **In plain English:** You give it your C++ code, and it shows you exactly what happens when the program runs—step by step. You can see variables change, watch functions get called, and track memory being allocated and freed. It's like a slow-motion replay of your program's execution.
