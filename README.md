@@ -4,7 +4,7 @@ A C++ instrumentation tool that uses [Clang](https://clang.llvm.org/) [AST](http
 
 **In plain English:** You give it your C++ code, and it shows you exactly what happens when the program runs—step by step. You can see variables change, watch functions get called, and track memory being allocated and freed. It's like a slow-motion replay of your program's execution.
 
-<video src="https://github.com/imkiptoo/cpp-runtime-inspector/raw/refs/heads/main/docs/videos/demo-1.mp4" controls width="100%"></video>
+[![Demo](https://img.youtube.com/vi/mvV_oBtvJzo/maxresdefault.jpg)](https://www.youtube.com/watch?v=mvV_oBtvJzo)
 
 **Documentation:**
 [Architecture](docs/architecture.md) ·
