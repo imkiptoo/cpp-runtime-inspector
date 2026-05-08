@@ -208,6 +208,26 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
+      - name: Metadata (frontend)
+        id: meta-frontend
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository_owner }}/cpp-runtime-inspector-frontend
+          tags: |
+            type=raw,value=latest
+            type=sha,format=short
+
+      - name: Build & push frontend
+        uses: docker/build-push-action@v5
+        with:
+          context: ./frontend
+          file: ./frontend/Dockerfile.prod
+          push: true
+          tags: ${{ steps.meta-frontend.outputs.tags }}
+          labels: ${{ steps.meta-frontend.outputs.labels }}
+          cache-from: type=gha,scope=frontend
+          cache-to: type=gha,mode=max,scope=frontend
+
   pull-local:
     name: Pull Images on Dev Machine
     runs-on: [self-hosted, linux, local-deploy]
@@ -229,9 +249,10 @@ jobs:
         run: |
           docker pull ghcr.io/${{ github.repository_owner }}/cpp-runtime-inspector-sandbox:latest
           docker pull ghcr.io/${{ github.repository_owner }}/cpp-runtime-inspector-server:latest
+          docker pull ghcr.io/${{ github.repository_owner }}/cpp-runtime-inspector-frontend:latest
 
       - name: Restart server via docker compose
-        run: docker compose up -d --pull always
+        run: docker compose up -d --pull always --remove-orphans
 
       - name: Log out of GHCR
         if: always()

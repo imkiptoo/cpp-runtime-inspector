@@ -29,6 +29,3 @@ npm-debug.log*
 coverage/
 playwright-report/
 test-results/
-
-# Package lock (use npm ci)
-package-lock.json
