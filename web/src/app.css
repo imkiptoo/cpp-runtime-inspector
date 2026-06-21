@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+/* Drive the `dark:` variant off the `.dark` class (toggled by applyTheme),
+   not the OS `prefers-color-scheme` media query that Tailwind v4 defaults to.
+   Without this, the app chrome follows the OS while CodeMirror follows the
+   in-app theme toggle — producing a light editor inside dark chrome. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* JetBrains Islands-inspired Design Tokens */
 @theme {
 	/* Base colors */
@@ -545,15 +551,31 @@ code, pre, .font-mono {
 .islands-panel {
 	@apply bg-white rounded-md border border-line;
 	/* Note: no overflow:hidden to allow dropdowns to extend outside */
+	/* Soft layered shadow so panels "float" on the light canvas. */
+	box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 6px 16px -4px rgba(16, 24, 40, 0.06);
 }
 
 .dark .islands-panel {
 	@apply bg-islands-900;
+	box-shadow: none;
 }
 
 /* Islands gap */
 .islands-gap {
 	@apply gap-1.5;
+}
+
+/* App canvas — the background the floating panels sit on.
+   Light: a soft cool gradient with a faint top sheen so white panels pop.
+   Dark: solid islands-950 (unchanged from before). */
+.app-shell {
+	background-color: #EBECF0;
+	background-image: linear-gradient(160deg, #EEF1F6 0%, #E6E9EF 100%);
+}
+
+.dark .app-shell {
+	background-color: #18191C;
+	background-image: none;
 }
 
 /* Responsive utilities */

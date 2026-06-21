@@ -94,7 +94,7 @@
 </script>
 
 <!-- Islands layout: panels float on a canvas background -->
-<div class="h-full flex flex-col gap-1.5 p-1.5 bg-islands-100 dark:bg-islands-950">
+<div class="app-shell h-full flex flex-col gap-1.5 p-1.5">
 	<!-- TopBar island (z-20 to ensure dropdown renders above other panels) -->
 	<div class="islands-panel relative z-20">
 		<TopBar onOpenExamples={() => examplesModalOpen = true} />
