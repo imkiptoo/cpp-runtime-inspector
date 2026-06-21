@@ -346,8 +346,10 @@ private:
     // Leaked allocations detected at exit (heap_id, type_name)
     std::vector<std::pair<int, std::string>> m_leakedAllocations;
 
-    // Resource limits (Tier 6)
-    size_t m_maxEvents = 100000;
+    // Resource limits (Tier 6). Cap kept modest so pathological loops (now that
+    // every executed line emits a step) can't blow up the trace JSON; the
+    // frontend surfaces isEventLimitReached when this is hit.
+    size_t m_maxEvents = 5000;
     bool m_eventLimitReached = false;
 
     // Pending return value (set by recordReturnValue, consumed by next return event)

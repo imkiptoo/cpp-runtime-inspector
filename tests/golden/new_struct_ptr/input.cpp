@@ -23,7 +23,7 @@ int add(int x, int y)
   int z = x + y;
   std::cout << z << std::endl;
 
-  for(int i = 0; i < 10000; i++)
+  for(int i = 0; i < 10; i++)
   {
     z++;
   }

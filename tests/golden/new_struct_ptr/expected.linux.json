@@ -3,13 +3,13 @@
   "memory_leaks": [
     [
       "leaked",
-      3,
-      "unsigned char"
+      1,
+      "struct City"
     ],
     [
       "leaked",
-      1,
-      "struct City"
+      3,
+      "unsigned char"
     ]
   ],
   "trace": [
@@ -137,7 +137,7 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x136e06040"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 48
@@ -200,8 +200,8 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x136e06040",
-        "2": "0x136e06890"
+        "1": "0xPTR",
+        "2": "0xPTR"
       },
       "heap_sizes": {
         "1": 48,
@@ -276,9 +276,9 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x136e06040",
-        "2": "0x136e06890",
-        "3": "0x136e05ee0"
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "1": 48,
@@ -360,9 +360,9 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x136e06040",
-        "2": "0x136e06890",
-        "3": "0x136e05ee0"
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "1": 48,
@@ -370,7 +370,7 @@
         "3": 1
       },
       "heap_total_bytes": 53,
-      "line": 0,
+      "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -447,9 +447,9 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x136e06040",
-        "2": "0x136e06890",
-        "3": "0x136e05ee0"
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "1": 48,
@@ -544,9 +544,9 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x136e06040",
-        "2": "0x136e06890",
-        "3": "0x136e05ee0"
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "1": 48,
@@ -554,7 +554,7 @@
         "3": 1
       },
       "heap_total_bytes": 53,
-      "line": 0,
+      "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -647,9 +647,9 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x136e06040",
-        "2": "0x136e06890",
-        "3": "0x136e05ee0"
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "1": 48,
@@ -657,7 +657,7 @@
         "3": 1
       },
       "heap_total_bytes": 53,
-      "line": 0,
+      "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -753,9 +753,9 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x136e06040",
-        "2": "0x136e06890",
-        "3": "0x136e05ee0"
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "1": 48,
@@ -763,7 +763,7 @@
         "3": 1
       },
       "heap_total_bytes": 53,
-      "line": 0,
+      "line": 23,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -862,9 +862,118 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x136e06040",
-        "2": "0x136e06890",
-        "3": "0x136e05ee0"
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "x": 80,
+            "y": 10,
+            "z": 90
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z"
+          ],
+          "stack_size_bytes": 12
+        }
+      ],
+      "stack_total_bytes": 40,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "1": 48,
@@ -936,7 +1045,7 @@
       "stdout": "90\n"
     },
     {
-      "event": "return",
+      "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
       "globals": {},
@@ -971,9 +1080,9 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x136e06040",
-        "2": "0x136e06890",
-        "3": "0x136e05ee0"
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "1": 48,
@@ -981,9 +1090,8 @@
         "3": 1
       },
       "heap_total_bytes": 53,
-      "line": 31,
+      "line": 28,
       "ordered_globals": [],
-      "return_value": 10090,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -1021,10 +1129,2248 @@
         },
         {
           "encoded_locals": {
-            "i": 10000,
             "x": 80,
             "y": 10,
-            "z": 10090
+            "z": 91
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z"
+          ],
+          "stack_size_bytes": 12
+        }
+      ],
+      "stack_total_bytes": 40,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 26,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 1,
+            "x": 80,
+            "y": 10,
+            "z": 91
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 1,
+            "x": 80,
+            "y": 10,
+            "z": 92
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 26,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 2,
+            "x": 80,
+            "y": 10,
+            "z": 92
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 2,
+            "x": 80,
+            "y": 10,
+            "z": 93
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 26,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 3,
+            "x": 80,
+            "y": 10,
+            "z": 93
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 3,
+            "x": 80,
+            "y": 10,
+            "z": 94
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 26,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 4,
+            "x": 80,
+            "y": 10,
+            "z": 94
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 4,
+            "x": 80,
+            "y": 10,
+            "z": 95
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 26,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 5,
+            "x": 80,
+            "y": 10,
+            "z": 95
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 5,
+            "x": 80,
+            "y": 10,
+            "z": 96
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 26,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 6,
+            "x": 80,
+            "y": 10,
+            "z": 96
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 6,
+            "x": 80,
+            "y": 10,
+            "z": 97
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 26,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 7,
+            "x": 80,
+            "y": 10,
+            "z": 97
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 7,
+            "x": 80,
+            "y": 10,
+            "z": 98
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 26,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 8,
+            "x": 80,
+            "y": 10,
+            "z": 98
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 8,
+            "x": 80,
+            "y": 10,
+            "z": 99
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 26,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 9,
+            "x": 80,
+            "y": 10,
+            "z": 99
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 28,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 9,
+            "x": 80,
+            "y": 10,
+            "z": 100
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "step_line",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 26,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 10,
+            "x": 80,
+            "y": 10,
+            "z": 100
+          },
+          "frame_id": 2,
+          "func_name": "add",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "i": 4,
+            "x": 4,
+            "y": 4,
+            "z": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "z",
+            "i"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": "90\n"
+    },
+    {
+      "event": "return",
+      "func_name": "add",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 31,
+      "ordered_globals": [],
+      "return_value": 100,
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y"
+          ],
+          "stack_size_bytes": 28
+        },
+        {
+          "encoded_locals": {
+            "i": 10,
+            "x": 80,
+            "y": 10,
+            "z": 100
           },
           "frame_id": 2,
           "func_name": "add",
@@ -1084,9 +3430,9 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x136e06040",
-        "2": "0x136e06890",
-        "3": "0x136e05ee0"
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "1": 48,
@@ -1094,7 +3440,7 @@
         "3": 1
       },
       "heap_total_bytes": 53,
-      "line": 0,
+      "line": 40,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -1103,7 +3449,7 @@
               "REF",
               1
             ],
-            "sum": 10090,
+            "sum": 100,
             "x": [
               "REF",
               2
@@ -1139,7 +3485,97 @@
       "stdout": "90\n"
     },
     {
-      "event": "return",
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "2": [
+          "HEAP_PRIMITIVE",
+          "int",
+          80
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "2": 4,
+        "3": 1
+      },
+      "heap_total_bytes": 53,
+      "line": 42,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "sum": 100,
+            "x": [
+              "REF",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "sum": 4,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y",
+            "sum"
+          ],
+          "stack_size_bytes": 32
+        }
+      ],
+      "stack_total_bytes": 32,
+      "stdout": "90\nSum: 100\n"
+    },
+    {
+      "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
       "globals": {},
@@ -1169,17 +3605,16 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x136e06040",
-        "3": "0x136e05ee0"
+        "1": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "1": 48,
         "3": 1
       },
       "heap_total_bytes": 49,
-      "line": 46,
+      "line": 44,
       "ordered_globals": [],
-      "return_value": 0,
       "stack_to_render": [
         {
           "encoded_locals": {
@@ -1187,7 +3622,7 @@
               "REF",
               1
             ],
-            "sum": 10090,
+            "sum": 100,
             "x": [
               "DANGLING",
               2
@@ -1220,7 +3655,91 @@
         }
       ],
       "stack_total_bytes": 32,
-      "stdout": "90\nSum: 10090\n"
+      "stdout": "90\nSum: 100\n"
+    },
+    {
+      "event": "return",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_STRUCT",
+          "struct City",
+          [
+            [
+              "m_country",
+              "Germany"
+            ],
+            [
+              "m_population",
+              1000000
+            ],
+            [
+              "m_rivers",
+              2
+            ]
+          ]
+        ],
+        "3": [
+          "HEAP_PRIMITIVE",
+          "unsigned char",
+          4
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 48,
+        "3": 1
+      },
+      "heap_total_bytes": 49,
+      "line": 46,
+      "ordered_globals": [],
+      "return_value": 0,
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "stuttgart": [
+              "REF",
+              1
+            ],
+            "sum": 100,
+            "x": [
+              "DANGLING",
+              2
+            ],
+            "y": 10,
+            "z": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "stuttgart": 8,
+            "sum": 4,
+            "x": 8,
+            "y": 4,
+            "z": 8
+          },
+          "ordered_varnames": [
+            "stuttgart",
+            "x",
+            "z",
+            "y",
+            "sum"
+          ],
+          "stack_size_bytes": 32
+        }
+      ],
+      "stack_total_bytes": 32,
+      "stdout": "90\nSum: 100\n"
     }
   ],
   "type_metadata": {
