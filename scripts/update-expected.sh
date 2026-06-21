@@ -5,12 +5,18 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-BUILD="${ROOT}/cmake-build-debug"
 GOLDEN_DIR="${ROOT}/tests/golden"
 RUNTIME_HDR="${ROOT}/core/runtime"
 
-# Use cmake-build-debug if it exists, otherwise build/
-if [[ ! -d "${BUILD}" ]]; then
+# Build dir: honor BUILD_DIR (as run-golden-tests.sh does), else prefer
+# cmake-build-debug, else build/. BUILD_DIR is how you regenerate the
+# *.linux.json goldens from a Linux build without disturbing a local
+# cmake-build-debug.
+if [[ -n "${BUILD_DIR:-}" ]]; then
+    BUILD="${ROOT}/${BUILD_DIR}"
+elif [[ -d "${ROOT}/cmake-build-debug" ]]; then
+    BUILD="${ROOT}/cmake-build-debug"
+else
     BUILD="${ROOT}/build"
 fi
 
