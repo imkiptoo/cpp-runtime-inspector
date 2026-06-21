@@ -114,7 +114,7 @@ export async function submitTrace(
 		if (err instanceof TypeError && err.message.includes('fetch')) {
 			return {
 				success: false,
-				error: 'Cannot connect to backend server. Is it running on port 8080?'
+				error: 'Cannot connect to backend server. Is it running? (start it with `just run backend`)'
 			};
 		}
 
