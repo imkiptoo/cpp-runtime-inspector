@@ -153,6 +153,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Static singleton destruction order issue with atexit handler
 - Variable init calls now properly placed after semicolons
 
+## [1.0.2] - 2026-06-21
+
+### Added
+- `justfile` task runner with `just <verb> <noun>` recipes (build/run/test/check).
+- `BUILD_DIR` support in `scripts/update-expected.sh` for regenerating
+  `*.linux.json` goldens from a Linux build.
+
+### Changed
+- Instrumentation now emits a trace step for **every executed line** —
+  expression statements (`std::cout`, function calls) and reassignments are
+  stepped, not just declarations.
+- Lowered the runtime event cap from 100,000 to 5,000 so loops (which now step
+  per iteration) cannot blow up the trace JSON.
+
+### Fixed
+- Light mode now follows the in-app theme instead of the OS (`@custom-variant
+  dark` for Tailwind v4); polished light-mode panels and canvas.
+- Output/Build console pane renders correctly in light mode.
+- `int` declarations and parameters now record the correct source line (the
+  legacy var-init hook hard-coded line 0).
+- Web dev proxy targets the configured backend port (`BACKEND_PORT`, default
+  8090) instead of the frequently-occupied 8080.
+
 ## [0.1.0] - Initial PoC
 
 ### Added
