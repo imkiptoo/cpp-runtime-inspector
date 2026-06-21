@@ -124,7 +124,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 11,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -336,6 +336,45 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 32,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Counter",
+              {
+                "prev": 0,
+                "value": 10
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
+          "ordered_varnames": [
+            "c"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Counter::bump",
       "global_sizes": {},
@@ -354,7 +393,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 0
+                "value": 10
               }
             ]
           },
@@ -403,7 +442,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 0
+                "value": 10
               }
             ]
           },
@@ -452,7 +491,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 0
+                "value": 10
               }
             ]
           },
@@ -483,6 +522,45 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 33,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Counter",
+              {
+                "prev": 0,
+                "value": 11
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
+          "ordered_varnames": [
+            "c"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Counter::add",
       "global_sizes": {},
@@ -501,7 +579,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 0
+                "value": 11
               }
             ]
           },
@@ -540,7 +618,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -550,7 +628,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 0
+                "value": 11
               }
             ]
           },
@@ -605,7 +683,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 0
+                "value": 11
               }
             ]
           },
@@ -660,7 +738,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 0
+                "value": 11
               }
             ]
           },
@@ -697,6 +775,45 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 34,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Counter",
+              {
+                "prev": 0,
+                "value": 16
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
+          "ordered_varnames": [
+            "c"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Counter::decAndBump",
       "global_sizes": {},
@@ -715,7 +832,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 0
+                "value": 16
               }
             ]
           },
@@ -764,7 +881,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 0
+                "value": 16
               }
             ]
           },
@@ -813,7 +930,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 0
+                "value": 16
               }
             ]
           },
@@ -862,7 +979,7 @@
               "struct Counter",
               {
                 "prev": 0,
-                "value": 0
+                "value": 16
               }
             ]
           },
@@ -887,6 +1004,45 @@
           "local_sizes": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 35,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Counter",
+              {
+                "prev": -1,
+                "value": 17
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "c": 8
+          },
+          "ordered_varnames": [
+            "c"
+          ],
+          "stack_size_bytes": 8
         }
       ],
       "stack_total_bytes": 8,

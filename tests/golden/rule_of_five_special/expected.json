@@ -1382,7 +1382,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000064",
+              "0xPTR",
               "const struct Explicit &",
               "unknown"
             ]
@@ -1477,7 +1477,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000064",
+              "0xPTR",
               "const struct Explicit &",
               "unknown"
             ]
@@ -1572,7 +1572,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000064",
+              "0xPTR",
               "const struct Explicit &",
               "unknown"
             ]
@@ -1591,6 +1591,80 @@
         }
       ],
       "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 170,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "e1": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": -1
+              }
+            ],
+            "e2": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 100
+              }
+            ],
+            "e4": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 110
+              }
+            ],
+            "e5": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 20
+              }
+            ],
+            "e6": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 200
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "e1": 4,
+            "e2": 4,
+            "e4": 4,
+            "e5": 4,
+            "e6": 4
+          },
+          "ordered_varnames": [
+            "e1",
+            "e2",
+            "e4",
+            "e5",
+            "e6"
+          ],
+          "stack_size_bytes": 20
+        }
+      ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
@@ -1640,7 +1714,7 @@
               "C_STRUCT",
               "struct Explicit",
               {
-                "value": 0
+                "value": 200
               }
             ]
           },
@@ -1724,7 +1798,7 @@
               "C_STRUCT",
               "struct Explicit",
               {
-                "value": 0
+                "value": 200
               }
             ]
           },
@@ -1808,7 +1882,7 @@
               "C_STRUCT",
               "struct Explicit",
               {
-                "value": 0
+                "value": 200
               }
             ]
           },
@@ -2106,7 +2180,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x14000000c8",
+              "0xPTR",
               "struct Explicit &&",
               "unknown"
             ]
@@ -2210,7 +2284,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x14000000c8",
+              "0xPTR",
               "struct Explicit &&",
               "unknown"
             ]
@@ -2314,7 +2388,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x14fffffffe",
+              "0xPTR",
               "struct Explicit &&",
               "unknown"
             ]
@@ -2418,7 +2492,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x14fffffffe",
+              "0xPTR",
               "struct Explicit &&",
               "unknown"
             ]
@@ -2437,6 +2511,89 @@
         }
       ],
       "stack_total_bytes": 32,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 172,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "e1": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": -1
+              }
+            ],
+            "e2": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 100
+              }
+            ],
+            "e4": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 110
+              }
+            ],
+            "e5": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 20
+              }
+            ],
+            "e6": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": -2
+              }
+            ],
+            "e7": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 400
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "e1": 4,
+            "e2": 4,
+            "e4": 4,
+            "e5": 4,
+            "e6": 4,
+            "e7": 4
+          },
+          "ordered_varnames": [
+            "e1",
+            "e2",
+            "e4",
+            "e5",
+            "e6",
+            "e7"
+          ],
+          "stack_size_bytes": 24
+        }
+      ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
@@ -2486,14 +2643,14 @@
               "C_STRUCT",
               "struct Explicit",
               {
-                "value": 200
+                "value": -2
               }
             ],
             "e7": [
               "C_STRUCT",
               "struct Explicit",
               {
-                "value": 0
+                "value": 400
               }
             ]
           },
@@ -2579,14 +2736,14 @@
               "C_STRUCT",
               "struct Explicit",
               {
-                "value": 200
+                "value": -2
               }
             ],
             "e7": [
               "C_STRUCT",
               "struct Explicit",
               {
-                "value": 0
+                "value": 400
               }
             ]
           },
@@ -2672,14 +2829,14 @@
               "C_STRUCT",
               "struct Explicit",
               {
-                "value": 200
+                "value": -2
               }
             ],
             "e7": [
               "C_STRUCT",
               "struct Explicit",
               {
-                "value": 0
+                "value": 400
               }
             ]
           },
@@ -5623,7 +5780,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xffffffff00000032",
+              "0xPTR",
               "const struct Converting &",
               "stack"
             ]
@@ -5781,7 +5938,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xffffffff00000032",
+              "0xPTR",
               "const struct Converting &",
               "stack"
             ]
@@ -5939,7 +6096,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xffffffff00000032",
+              "0xPTR",
               "const struct Converting &",
               "stack"
             ]
@@ -5958,6 +6115,143 @@
         }
       ],
       "stack_total_bytes": 56,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 185,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c1": [
+              "C_STRUCT",
+              "struct Converting",
+              {
+                "value": -1
+              }
+            ],
+            "c2": [
+              "C_STRUCT",
+              "struct Converting",
+              {
+                "value": 50
+              }
+            ],
+            "c3": [
+              "C_STRUCT",
+              "struct Converting",
+              {
+                "value": 3
+              }
+            ],
+            "c4": [
+              "C_STRUCT",
+              "struct Converting",
+              {
+                "value": 150
+              }
+            ],
+            "c5": [
+              "C_STRUCT",
+              "struct Converting",
+              {
+                "value": 200
+              }
+            ],
+            "c6": [
+              "C_STRUCT",
+              "struct Converting",
+              {
+                "value": 1050
+              }
+            ],
+            "e1": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": -1
+              }
+            ],
+            "e2": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 100
+              }
+            ],
+            "e4": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 110
+              }
+            ],
+            "e5": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 20
+              }
+            ],
+            "e6": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": -2
+              }
+            ],
+            "e7": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 400
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "c1": 4,
+            "c2": 4,
+            "c3": 4,
+            "c4": 4,
+            "c5": 4,
+            "c6": 4,
+            "e1": 4,
+            "e2": 4,
+            "e4": 4,
+            "e5": 4,
+            "e6": 4,
+            "e7": 4
+          },
+          "ordered_varnames": [
+            "e1",
+            "e2",
+            "e4",
+            "e5",
+            "e6",
+            "e7",
+            "c1",
+            "c2",
+            "c3",
+            "c4",
+            "c5",
+            "c6"
+          ],
+          "stack_size_bytes": 48
+        }
+      ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
@@ -6014,7 +6308,7 @@
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 0
+                "value": 1050
               }
             ],
             "e1": [
@@ -6161,7 +6455,7 @@
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 0
+                "value": 1050
               }
             ],
             "e1": [
@@ -6308,7 +6602,7 @@
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 0
+                "value": 1050
               }
             ],
             "e1": [
@@ -6851,7 +7145,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xc80000041a",
+              "0xPTR",
               "struct Converting &&",
               "unknown"
             ]
@@ -7018,7 +7312,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xc80000041a",
+              "0xPTR",
               "struct Converting &&",
               "unknown"
             ]
@@ -7185,7 +7479,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xc8fffffffe",
+              "0xPTR",
               "struct Converting &&",
               "unknown"
             ]
@@ -7352,7 +7646,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xc8fffffffe",
+              "0xPTR",
               "struct Converting &&",
               "unknown"
             ]
@@ -7371,6 +7665,152 @@
         }
       ],
       "stack_total_bytes": 60,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 187,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c1": [
+              "C_STRUCT",
+              "struct Converting",
+              {
+                "value": -1
+              }
+            ],
+            "c2": [
+              "C_STRUCT",
+              "struct Converting",
+              {
+                "value": 50
+              }
+            ],
+            "c3": [
+              "C_STRUCT",
+              "struct Converting",
+              {
+                "value": 3
+              }
+            ],
+            "c4": [
+              "C_STRUCT",
+              "struct Converting",
+              {
+                "value": 150
+              }
+            ],
+            "c5": [
+              "C_STRUCT",
+              "struct Converting",
+              {
+                "value": 200
+              }
+            ],
+            "c6": [
+              "C_STRUCT",
+              "struct Converting",
+              {
+                "value": -2
+              }
+            ],
+            "c7": [
+              "C_STRUCT",
+              "struct Converting",
+              {
+                "value": 3050
+              }
+            ],
+            "e1": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": -1
+              }
+            ],
+            "e2": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 100
+              }
+            ],
+            "e4": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 110
+              }
+            ],
+            "e5": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 20
+              }
+            ],
+            "e6": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": -2
+              }
+            ],
+            "e7": [
+              "C_STRUCT",
+              "struct Explicit",
+              {
+                "value": 400
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "c1": 4,
+            "c2": 4,
+            "c3": 4,
+            "c4": 4,
+            "c5": 4,
+            "c6": 4,
+            "c7": 4,
+            "e1": 4,
+            "e2": 4,
+            "e4": 4,
+            "e5": 4,
+            "e6": 4,
+            "e7": 4
+          },
+          "ordered_varnames": [
+            "e1",
+            "e2",
+            "e4",
+            "e5",
+            "e6",
+            "e7",
+            "c1",
+            "c2",
+            "c3",
+            "c4",
+            "c5",
+            "c6",
+            "c7"
+          ],
+          "stack_size_bytes": 52
+        }
+      ],
+      "stack_total_bytes": 52,
       "stdout": ""
     },
     {
@@ -7426,14 +7866,14 @@
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 1050
+                "value": -2
               }
             ],
             "c7": [
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 0
+                "value": 3050
               }
             ],
             "e1": [
@@ -7582,14 +8022,14 @@
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 1050
+                "value": -2
               }
             ],
             "c7": [
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 0
+                "value": 3050
               }
             ],
             "e1": [
@@ -7738,14 +8178,14 @@
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 1050
+                "value": -2
               }
             ],
             "c7": [
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 0
+                "value": 3050
               }
             ],
             "e1": [
@@ -7894,14 +8334,14 @@
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 1050
+                "value": -2
               }
             ],
             "c7": [
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 0
+                "value": 3050
               }
             ],
             "e1": [
@@ -8050,14 +8490,14 @@
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 1050
+                "value": -2
               }
             ],
             "c7": [
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 0
+                "value": 3050
               }
             ],
             "e1": [
@@ -8219,14 +8659,14 @@
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 1050
+                "value": -2
               }
             ],
             "c7": [
               "C_STRUCT",
               "struct Converting",
               {
-                "value": 0
+                "value": 3050
               }
             ],
             "e1": [
@@ -8516,7 +8956,39 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 190,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "result": 75
+          },
+          "frame_id": 20,
+          "func_name": "Converting::~Converting",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "result": 4
+          },
+          "ordered_varnames": [
+            "result"
+          ],
+          "stack_size_bytes": 4
+        }
+      ],
+      "stack_total_bytes": 4,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Converting::~Converting",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 191,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -9329,7 +9801,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 154,
       "ordered_globals": [],
       "stack_to_render": [
         {

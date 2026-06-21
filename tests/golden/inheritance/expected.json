@@ -75,6 +75,84 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "d": [
+              "C_STRUCT",
+              "class Derived",
+              {
+                "baseVal": 10,
+                "derivedVal": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "d": 8
+          },
+          "ordered_varnames": [
+            "d"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "d": [
+              "C_STRUCT",
+              "class Derived",
+              {
+                "baseVal": 10,
+                "derivedVal": 20
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "d": 8
+          },
+          "ordered_varnames": [
+            "d"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
@@ -82,7 +160,7 @@
           "encoded_locals": {
             "bp": [
               "C_ADDRESS",
-              "0x16b732c04",
+              "0xPTR",
               "class Base *",
               "stack"
             ],
@@ -130,7 +208,7 @@
           "encoded_locals": {
             "bp": [
               "C_ADDRESS",
-              "0x16b732c04",
+              "0xPTR",
               "class Base *",
               "stack"
             ],

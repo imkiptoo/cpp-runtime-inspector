@@ -1570,7 +1570,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000001",
+              "0xPTR",
               "const struct Tracer &",
               "unknown"
             ]
@@ -1664,7 +1664,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000001",
+              "0xPTR",
               "const struct Tracer &",
               "unknown"
             ]
@@ -1758,7 +1758,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000001",
+              "0xPTR",
               "const struct Tracer &",
               "unknown"
             ]
@@ -1852,7 +1852,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000001",
+              "0xPTR",
               "const struct Tracer &",
               "unknown"
             ]
@@ -1871,6 +1871,79 @@
         }
       ],
       "stack_total_bytes": 56,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 59,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "stack_size_bytes": 48
+        }
+      ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
@@ -1920,8 +1993,8 @@
               "struct Tracer",
               {
                 "id": 1,
-                "mode": 0,
-                "sourceId": -1
+                "mode": 3,
+                "sourceId": 101
               }
             ]
           },
@@ -2003,8 +2076,8 @@
               "struct Tracer",
               {
                 "id": 1,
-                "mode": 0,
-                "sourceId": -1
+                "mode": 3,
+                "sourceId": 101
               }
             ]
           },
@@ -2086,8 +2159,8 @@
               "struct Tracer",
               {
                 "id": 1,
-                "mode": 0,
-                "sourceId": -1
+                "mode": 3,
+                "sourceId": 101
               }
             ]
           },
@@ -2169,8 +2242,8 @@
               "struct Tracer",
               {
                 "id": 1,
-                "mode": 0,
-                "sourceId": -1
+                "mode": 3,
+                "sourceId": 101
               }
             ]
           },
@@ -2252,8 +2325,8 @@
               "struct Tracer",
               {
                 "id": 1,
-                "mode": 0,
-                "sourceId": -1
+                "mode": 3,
+                "sourceId": 101
               }
             ]
           },
@@ -2552,7 +2625,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x6500000003",
+              "0xPTR",
               "struct Tracer &&",
               "unknown"
             ]
@@ -2657,7 +2730,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x6500000003",
+              "0xPTR",
               "struct Tracer &&",
               "unknown"
             ]
@@ -2762,7 +2835,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x6500000003",
+              "0xPTR",
               "struct Tracer &&",
               "unknown"
             ]
@@ -2867,7 +2940,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x6500000003",
+              "0xPTR",
               "struct Tracer &&",
               "unknown"
             ]
@@ -2972,7 +3045,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x6500000003",
+              "0xPTR",
               "struct Tracer &&",
               "unknown"
             ]
@@ -2991,6 +3064,90 @@
         }
       ],
       "stack_total_bytes": 68,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 61,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -1,
+                "mode": 0,
+                "sourceId": -1
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 101,
+                "mode": 1,
+                "sourceId": 1
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 201,
+                "mode": 2,
+                "sourceId": 1
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": -2,
+                "mode": 3,
+                "sourceId": 101
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Tracer",
+              {
+                "id": 1,
+                "mode": 4,
+                "sourceId": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e"
+          ],
+          "stack_size_bytes": 60
+        }
+      ],
+      "stack_total_bytes": 60,
       "stdout": ""
     },
     {

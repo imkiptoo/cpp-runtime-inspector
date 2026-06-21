@@ -110,6 +110,11 @@ private:
     //! the caller's frame.
     void wrapThisWriteWithStep(clang::Expr* expr, unsigned line);
 
+    //! Wrap a local-variable write as `(expr, updateCall, __inspector_step(line))`
+    //! so the write records the new value AND emits a step on that line.
+    void wrapLocalWriteWithStep(clang::Expr* op, const std::string& updateCall,
+                                unsigned line);
+
     //! Check if current statement's parent is a CompoundStmt.
     bool hasCompoundStmtParent() const;
 

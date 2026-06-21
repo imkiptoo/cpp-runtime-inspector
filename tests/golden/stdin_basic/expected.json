@@ -36,7 +36,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -68,7 +68,40 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "x": 42
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "x": 4
+          },
+          "ordered_varnames": [
+            "x"
+          ],
+          "stack_size_bytes": 4
+        }
+      ],
+      "stack_total_bytes": 4,
+      "stdin_input": "42\n",
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 9,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -92,8 +125,42 @@
         }
       ],
       "stack_total_bytes": 8,
-      "stdin_input": "42\n",
       "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 10,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "doubled": 84,
+            "x": 42
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "doubled": 4,
+            "x": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "doubled"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": "Result: 84\n"
     },
     {
       "event": "return",

@@ -43,7 +43,7 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0x129606058",
+              "0xPTR",
               "struct Resource",
               "unknown"
             ]
@@ -80,13 +80,13 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0x129606058",
+              "0xPTR",
               "struct Resource",
               "unknown"
             ],
             "b": [
               "C_ADDRESS",
-              "0x129606058",
+              "0xPTR",
               "struct Resource",
               "unknown"
             ]
@@ -118,20 +118,20 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 18,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0x129606058",
+              "0xPTR",
               "struct Resource",
               "unknown"
             ],
             "b": [
               "C_ADDRESS",
-              "0x129606058",
+              "0xPTR",
               "struct Resource",
               "unknown"
             ],
@@ -166,20 +166,119 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 21,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0x129606058",
+              "0xPTR",
               "struct Resource",
               "unknown"
             ],
             "b": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
+              "struct Resource",
+              "null"
+            ],
+            "via_b": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 16,
+            "b": 16,
+            "via_b": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "via_b"
+          ],
+          "stack_size_bytes": 36
+        }
+      ],
+      "stack_total_bytes": 36,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 22,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Resource",
+              "unknown"
+            ],
+            "b": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Resource",
+              "null"
+            ],
+            "via_a": 100,
+            "via_b": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 16,
+            "b": 16,
+            "via_a": 4,
+            "via_b": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "via_b",
+            "via_a"
+          ],
+          "stack_size_bytes": 40
+        }
+      ],
+      "stack_total_bytes": 40,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 24,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Resource",
+              "null"
+            ],
+            "b": [
+              "C_ADDRESS",
+              "0xPTR",
               "struct Resource",
               "null"
             ],
@@ -225,13 +324,13 @@
           "encoded_locals": {
             "a": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "struct Resource",
               "null"
             ],
             "b": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "struct Resource",
               "null"
             ],

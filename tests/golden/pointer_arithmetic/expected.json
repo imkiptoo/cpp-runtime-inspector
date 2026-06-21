@@ -46,7 +46,7 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x154706000"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 20
@@ -97,7 +97,7 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x154706000"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 20
@@ -155,13 +155,13 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x154706000"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 20
       },
       "heap_total_bytes": 20,
-      "line": 0,
+      "line": 13,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -176,6 +176,172 @@
               8
             ],
             "val": 30
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "arr": 8,
+            "p": 8,
+            "val": 4
+          },
+          "ordered_varnames": [
+            "arr",
+            "p",
+            "val"
+          ],
+          "stack_size_bytes": 20
+        }
+      ],
+      "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_ARRAY",
+          "int",
+          [
+            10,
+            20,
+            30,
+            40,
+            50
+          ]
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 20
+      },
+      "heap_total_bytes": 20,
+      "line": 15,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "arr": [
+              "REF",
+              1
+            ],
+            "p": [
+              "REF_OFFSET",
+              1,
+              12
+            ],
+            "val": 30
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "arr": 8,
+            "p": 8,
+            "val": 4
+          },
+          "ordered_varnames": [
+            "arr",
+            "p",
+            "val"
+          ],
+          "stack_size_bytes": 20
+        }
+      ],
+      "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "1": [
+          "HEAP_ARRAY",
+          "int",
+          [
+            10,
+            20,
+            30,
+            40,
+            50
+          ]
+        ]
+      },
+      "heap_addresses": {
+        "1": "0xPTR"
+      },
+      "heap_sizes": {
+        "1": 20
+      },
+      "heap_total_bytes": 20,
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "arr": [
+              "REF",
+              1
+            ],
+            "p": [
+              "REF_OFFSET",
+              1,
+              12
+            ],
+            "val": 40
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "arr": 8,
+            "p": 8,
+            "val": 4
+          },
+          "ordered_varnames": [
+            "arr",
+            "p",
+            "val"
+          ],
+          "stack_size_bytes": 20
+        }
+      ],
+      "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "arr": [
+              "DANGLING",
+              1
+            ],
+            "p": [
+              "DANGLING",
+              1
+            ],
+            "val": 40
           },
           "frame_id": 0,
           "func_name": "main",

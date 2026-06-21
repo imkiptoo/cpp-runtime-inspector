@@ -305,7 +305,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000002",
+              "0xPTR",
               "const struct Counter &",
               "unknown"
             ]
@@ -352,7 +352,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000002",
+              "0xPTR",
               "const struct Counter &",
               "unknown"
             ]
@@ -544,6 +544,32 @@
           "encoded_locals": {},
           "frame_id": 5,
           "func_name": "Counter::get",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 105,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
           "local_sizes": {},
@@ -1154,7 +1180,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 44,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -1411,6 +1437,32 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 108,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Counter::~Counter",
       "global_sizes": {},
@@ -1986,7 +2038,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x400000005",
+              "0xPTR",
               "const struct Counter &",
               "unknown"
             ]
@@ -2033,7 +2085,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x400000005",
+              "0xPTR",
               "const struct Counter &",
               "unknown"
             ]
@@ -2332,7 +2384,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x500000006",
+              "0xPTR",
               "const struct Counter &",
               "unknown"
             ]
@@ -2379,7 +2431,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x500000006",
+              "0xPTR",
               "const struct Counter &",
               "unknown"
             ]
@@ -2571,6 +2623,32 @@
           "encoded_locals": {},
           "frame_id": 27,
           "func_name": "Counter::get",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 111,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
           "local_sizes": {},
@@ -4603,6 +4681,32 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 114,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Counter::~Counter",
       "global_sizes": {},
@@ -5292,7 +5396,39 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 117,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "val": 100
+          },
+          "frame_id": 56,
+          "func_name": "Convertible::~Convertible",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "val": 4
+          },
+          "ordered_varnames": [
+            "val"
+          ],
+          "stack_size_bytes": 4
+        }
+      ],
+      "stack_total_bytes": 4,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Convertible::~Convertible",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 118,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -5451,7 +5587,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 74,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -5537,6 +5673,38 @@
         }
       ],
       "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Convertible::~Convertible",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 121,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "val": 100
+          },
+          "frame_id": 56,
+          "func_name": "Convertible::~Convertible",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "val": 4
+          },
+          "ordered_varnames": [
+            "val"
+          ],
+          "stack_size_bytes": 4
+        }
+      ],
+      "stack_total_bytes": 4,
       "stdout": ""
     },
     {
@@ -6038,6 +6206,32 @@
           "encoded_locals": {},
           "frame_id": 64,
           "func_name": "Counter::get",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::~WithArray",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 124,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 60,
+          "func_name": "WithArray::~WithArray",
           "is_highlighted": true,
           "is_zombie": false,
           "local_sizes": {},
@@ -7623,6 +7817,32 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "WithArray::~WithArray",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 128,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 60,
+          "func_name": "WithArray::~WithArray",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Counter::~Counter",
       "global_sizes": {},
@@ -8421,6 +8641,32 @@
           "encoded_locals": {},
           "frame_id": 88,
           "func_name": "Counter::get",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::~WithArray",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 131,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 60,
+          "func_name": "WithArray::~WithArray",
           "is_highlighted": true,
           "is_zombie": false,
           "local_sizes": {},
@@ -8774,7 +9020,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 94,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -8816,7 +9062,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 94,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -9086,7 +9332,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 94,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -9128,7 +9374,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 94,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -9343,6 +9589,32 @@
           "encoded_locals": {},
           "frame_id": 96,
           "func_name": "Pair::Pair",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::~WithArray",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 134,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 60,
+          "func_name": "WithArray::~WithArray",
           "is_highlighted": true,
           "is_zombie": false,
           "local_sizes": {},

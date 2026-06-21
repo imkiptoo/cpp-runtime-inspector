@@ -36,7 +36,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 5,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -68,7 +68,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 6,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -110,12 +110,12 @@
           "encoded_locals": {
             "f": [
               "C_STRUCT",
-              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda/input.cpp:9:14)",
+              "class (lambda at <ROOT>/tests/golden/lambda/input.cpp:9:14)",
               {
                 "x": 10,
                 "y": [
                   "C_ADDRESS",
-                  "0x16da8ac04",
+                  "0xPTR",
                   "int &",
                   "stack"
                 ]
@@ -161,12 +161,12 @@
           "encoded_locals": {
             "f": [
               "C_STRUCT",
-              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda/input.cpp:9:14)",
+              "class (lambda at <ROOT>/tests/golden/lambda/input.cpp:9:14)",
               {
                 "x": 10,
                 "y": [
                   "C_ADDRESS",
-                  "0x16da8ac04",
+                  "0xPTR",
                   "int &",
                   "stack"
                 ]
@@ -213,7 +213,7 @@
         }
       ],
       "kind": "struct",
-      "name": "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/lambda/input.cpp:9:14)",
+      "name": "class (lambda at <ROOT>/tests/golden/lambda/input.cpp:9:14)",
       "sizeof": 16
     },
     "int": {

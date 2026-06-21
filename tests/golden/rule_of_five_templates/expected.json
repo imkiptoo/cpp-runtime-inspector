@@ -118,7 +118,7 @@
               "C_STRUCT",
               "struct Box<int>",
               {
-                "value": -157548368
+                "value": 41287856
               }
             ]
           },
@@ -156,7 +156,7 @@
               "C_STRUCT",
               "struct Box<int>",
               {
-                "value": -157548368
+                "value": 41287856
               }
             ]
           },
@@ -636,7 +636,7 @@
               "C_STRUCT",
               "struct Box<int>",
               {
-                "value": -157548368
+                "value": 41287856
               }
             ]
           },
@@ -693,7 +693,7 @@
               "C_STRUCT",
               "struct Box<int>",
               {
-                "value": -157548368
+                "value": 41287856
               }
             ]
           },
@@ -759,7 +759,7 @@
               "C_STRUCT",
               "struct Box<int>",
               {
-                "value": -157548368
+                "value": 41287856
               }
             ]
           },
@@ -811,7 +811,7 @@
               "C_STRUCT",
               "struct Box<double>",
               {
-                "value": 4.1661522706e-314
+                "value": 4.264390418e-314
               }
             ],
             "bi2": [
@@ -832,7 +832,7 @@
               "C_STRUCT",
               "struct Box<int>",
               {
-                "value": -157548368
+                "value": 41287856
               }
             ]
           },
@@ -876,7 +876,7 @@
               "C_STRUCT",
               "struct Box<double>",
               {
-                "value": 4.1661522706e-314
+                "value": 4.264390418e-314
               }
             ],
             "bi2": [
@@ -897,7 +897,7 @@
               "C_STRUCT",
               "struct Box<int>",
               {
-                "value": -157548368
+                "value": 41287856
               }
             ]
           },
@@ -1127,6 +1127,44 @@
           "local_sizes": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Box::Box<T>",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 122,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "bd2": [
+              "C_STRUCT",
+              "struct Box<double>",
+              {
+                "value": 3.14
+              }
+            ]
+          },
+          "frame_id": 6,
+          "func_name": "Box::Box<T>",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "bd2": 8
+          },
+          "ordered_varnames": [
+            "bd2"
+          ],
+          "stack_size_bytes": 8
         }
       ],
       "stack_total_bytes": 8,
@@ -1969,7 +2007,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x32",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -2016,7 +2054,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3200000032",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -2063,7 +2101,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x32fffffff6",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -2110,7 +2148,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x32fffffff6",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -2129,6 +2167,32 @@
         }
       ],
       "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Inner::Inner",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 127,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 12,
+          "func_name": "Inner::Inner",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
@@ -2489,7 +2553,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x32",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -2546,7 +2610,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x32",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -2603,7 +2667,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x32",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -2829,8 +2893,8 @@
               "C_STRUCT",
               "struct Pair<int, double>",
               {
-                "first": -137678104,
-                "second": 4.1661522593e-314
+                "first": 61158136,
+                "second": 4.2643904067e-314
               }
             ]
           },
@@ -2868,8 +2932,8 @@
               "C_STRUCT",
               "struct Pair<int, double>",
               {
-                "first": -137678104,
-                "second": 4.1661522593e-314
+                "first": 61158136,
+                "second": 4.2643904067e-314
               }
             ]
           },
@@ -3257,6 +3321,45 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 134,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "p3": [
+              "C_STRUCT",
+              "struct Pair<int, double>",
+              {
+                "first": 10,
+                "second": 20.5
+              }
+            ]
+          },
+          "frame_id": 21,
+          "func_name": "Pair::Pair<T, U>",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "p3": 16
+          },
+          "ordered_varnames": [
+            "p3"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 16,
+      "stdout": ""
+    },
+    {
       "event": "return",
       "func_name": "Pair::Pair<T, U>",
       "global_sizes": {},
@@ -3417,7 +3520,7 @@
                   "C_STRUCT",
                   "struct Pair<int, int>",
                   {
-                    "first": -2003654104,
+                    "first": -1804850648,
                     "second": 1
                   }
                 ]
@@ -3462,7 +3565,7 @@
                   "C_STRUCT",
                   "struct Pair<int, int>",
                   {
-                    "first": -2003654104,
+                    "first": -1804850648,
                     "second": 1
                   }
                 ]
@@ -3646,6 +3749,32 @@
           "encoded_locals": {},
           "frame_id": 26,
           "func_name": "Pair::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Pair::Pair<T, U>",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 138,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 25,
+          "func_name": "Pair::Pair<T, U>",
           "is_highlighted": true,
           "is_zombie": false,
           "local_sizes": {},

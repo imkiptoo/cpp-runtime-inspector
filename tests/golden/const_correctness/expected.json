@@ -36,7 +36,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 14,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -133,7 +133,7 @@
           "encoded_locals": {
             "x": [
               "C_ADDRESS",
-              "0xa",
+              "0xPTR",
               "const int &",
               "unknown"
             ]
@@ -187,7 +187,7 @@
           "encoded_locals": {
             "x": [
               "C_ADDRESS",
-              "0xa",
+              "0xPTR",
               "const int &",
               "unknown"
             ]
@@ -217,7 +217,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 15,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -262,6 +262,50 @@
               "struct Counter",
               {
                 "n": 0
+              }
+            ],
+            "limit": 10,
+            "twice": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "c": 4,
+            "limit": 4,
+            "twice": 4
+          },
+          "ordered_varnames": [
+            "limit",
+            "twice",
+            "c"
+          ],
+          "stack_size_bytes": 12
+        }
+      ],
+      "stack_total_bytes": 12,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": [
+              "C_STRUCT",
+              "struct Counter",
+              {
+                "n": 7
               }
             ],
             "limit": 10,
@@ -405,7 +449,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 19,
       "ordered_globals": [],
       "stack_to_render": [
         {

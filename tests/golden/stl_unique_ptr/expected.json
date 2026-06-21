@@ -43,7 +43,7 @@
           "encoded_locals": {
             "ptr": [
               "C_ADDRESS",
-              "0x154e05f70",
+              "0xPTR",
               "struct Data",
               "unknown"
             ]
@@ -73,16 +73,56 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 14,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "ptr": [
               "C_ADDRESS",
-              "0x154e05f70",
+              "0xPTR",
               "struct Data",
               "unknown"
+            ],
+            "v": 42
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "ptr": 8,
+            "v": 4
+          },
+          "ordered_varnames": [
+            "ptr",
+            "v"
+          ],
+          "stack_size_bytes": 12
+        }
+      ],
+      "stack_total_bytes": 12,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ptr": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Data",
+              "null"
             ],
             "v": 42
           },
@@ -121,7 +161,7 @@
           "encoded_locals": {
             "ptr": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "struct Data",
               "null"
             ],

@@ -43,7 +43,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ]
@@ -80,7 +80,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ]
@@ -120,14 +120,14 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 4,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ]
@@ -173,14 +173,14 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 4,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ]
@@ -237,7 +237,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ]
@@ -286,14 +286,54 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 13,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
+              "int (*)(int, int)",
+              "unknown"
+            ],
+            "s": 7
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "fp": 8,
+            "s": 4
+          },
+          "ordered_varnames": [
+            "fp",
+            "s"
+          ],
+          "stack_size_bytes": 12
+        }
+      ],
+      "stack_total_bytes": 12,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 14,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "fp": [
+              "C_ADDRESS",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -333,7 +373,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -376,14 +416,14 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 5,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -432,14 +472,14 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 5,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -499,7 +539,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -551,14 +591,14 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 15,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -601,7 +641,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -654,7 +694,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -681,7 +721,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ]
@@ -711,14 +751,14 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -745,7 +785,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -778,14 +818,14 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -812,7 +852,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -855,7 +895,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -882,7 +922,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -928,14 +968,14 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 4,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -962,7 +1002,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1014,14 +1054,14 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 4,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1048,7 +1088,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1111,7 +1151,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1138,7 +1178,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1201,7 +1241,7 @@
           "encoded_locals": {
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1228,7 +1268,7 @@
           "encoded_locals": {
             "op": [
               "C_ADDRESS",
-              "0x1040407b0",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1264,7 +1304,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 16,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -1272,7 +1312,7 @@
             "a": 30,
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],
@@ -1319,7 +1359,7 @@
             "a": 30,
             "fp": [
               "C_ADDRESS",
-              "0x104040850",
+              "0xPTR",
               "int (*)(int, int)",
               "unknown"
             ],

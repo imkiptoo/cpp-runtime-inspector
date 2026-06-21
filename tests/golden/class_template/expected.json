@@ -210,6 +210,44 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 13,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "bi": [
+              "C_STRUCT",
+              "struct Box<int>",
+              {
+                "value": 42
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "bi": 4
+          },
+          "ordered_varnames": [
+            "bi"
+          ],
+          "stack_size_bytes": 4
+        }
+      ],
+      "stack_total_bytes": 4,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Box::get",
       "global_sizes": {},
@@ -227,7 +265,7 @@
               "C_STRUCT",
               "struct Box<int>",
               {
-                "value": 0
+                "value": 42
               }
             ]
           },
@@ -275,7 +313,7 @@
               "C_STRUCT",
               "struct Box<int>",
               {
-                "value": 0
+                "value": 42
               }
             ]
           },
@@ -314,7 +352,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 14,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -577,6 +615,56 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "bd": [
+              "C_STRUCT",
+              "struct Box<double>",
+              {
+                "value": 3.14
+              }
+            ],
+            "bi": [
+              "C_STRUCT",
+              "struct Box<int>",
+              {
+                "value": 42
+              }
+            ],
+            "xi": 42
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "bd": 8,
+            "bi": 4,
+            "xi": 4
+          },
+          "ordered_varnames": [
+            "bi",
+            "xi",
+            "bd"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 16,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Box::get",
       "global_sizes": {},
@@ -594,7 +682,7 @@
               "C_STRUCT",
               "struct Box<double>",
               {
-                "value": 0.0
+                "value": 3.14
               }
             ],
             "bi": [
@@ -654,7 +742,7 @@
               "C_STRUCT",
               "struct Box<double>",
               {
-                "value": 0.0
+                "value": 3.14
               }
             ],
             "bi": [

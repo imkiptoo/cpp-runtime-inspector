@@ -1051,7 +1051,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -1134,7 +1134,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -1217,7 +1217,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -1236,6 +1236,68 @@
         }
       ],
       "stack_total_bytes": 44,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 115,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 100,
+                "move_count": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ],
+          "stack_size_bytes": 36
+        }
+      ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
@@ -1373,7 +1435,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x64",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -1456,7 +1518,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x64",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -1539,7 +1601,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x64",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -1622,7 +1684,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x64",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -1705,7 +1767,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x64",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -1727,6 +1789,68 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 118,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 1,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 100,
+                "move_count": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c"
+          ],
+          "stack_size_bytes": 36
+        }
+      ],
+      "stack_total_bytes": 36,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Widget::Widget",
       "global_sizes": {},
@@ -1745,8 +1869,8 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
-                "id": 1,
+                "copy_count": 1,
+                "id": 100,
                 "move_count": 0
               }
             ],
@@ -1817,8 +1941,8 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
-                "id": 1,
+                "copy_count": 1,
+                "id": 100,
                 "move_count": 0
               }
             ],
@@ -1889,8 +2013,8 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
-                "id": 1,
+                "copy_count": 1,
+                "id": 100,
                 "move_count": 0
               }
             ],
@@ -1961,8 +2085,8 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
-                "id": 1,
+                "copy_count": 1,
+                "id": 100,
                 "move_count": 0
               }
             ],
@@ -2033,8 +2157,8 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
-                "id": 1,
+                "copy_count": 1,
+                "id": 100,
                 "move_count": 0
               }
             ],
@@ -3427,7 +3551,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -3543,7 +3667,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -3659,7 +3783,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -3775,7 +3899,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -3891,7 +4015,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -4113,7 +4237,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000001",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -4229,7 +4353,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000001",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -4345,7 +4469,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000001",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -4461,7 +4585,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000001",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -4577,7 +4701,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x100000001",
+              "0xPTR",
               "const struct Widget &",
               "unknown"
             ]
@@ -4596,6 +4720,101 @@
         }
       ],
       "stack_total_bytes": 80,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 124,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 1,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 2,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 1,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "f": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 1,
+                "move_count": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f"
+          ],
+          "stack_size_bytes": 72
+        }
+      ],
+      "stack_total_bytes": 72,
       "stdout": ""
     },
     {
@@ -4644,7 +4863,7 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
+                "copy_count": 2,
                 "id": 1,
                 "move_count": 0
               }
@@ -4653,7 +4872,7 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
+                "copy_count": 1,
                 "id": 1,
                 "move_count": 0
               }
@@ -4749,7 +4968,7 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
+                "copy_count": 2,
                 "id": 1,
                 "move_count": 0
               }
@@ -4758,7 +4977,7 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
+                "copy_count": 1,
                 "id": 1,
                 "move_count": 0
               }
@@ -4854,7 +5073,7 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
+                "copy_count": 2,
                 "id": 1,
                 "move_count": 0
               }
@@ -4863,7 +5082,7 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
+                "copy_count": 1,
                 "id": 1,
                 "move_count": 0
               }
@@ -4959,7 +5178,7 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
+                "copy_count": 2,
                 "id": 1,
                 "move_count": 0
               }
@@ -4968,7 +5187,7 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
+                "copy_count": 1,
                 "id": 1,
                 "move_count": 0
               }
@@ -5064,7 +5283,7 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
+                "copy_count": 2,
                 "id": 1,
                 "move_count": 0
               }
@@ -5073,7 +5292,7 @@
               "C_STRUCT",
               "struct Widget",
               {
-                "copy_count": 0,
+                "copy_count": 1,
                 "id": 1,
                 "move_count": 0
               }
@@ -5453,7 +5672,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "struct Widget &&",
               "unknown"
             ]
@@ -5580,7 +5799,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "struct Widget &&",
               "unknown"
             ]
@@ -5707,7 +5926,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "struct Widget &&",
               "unknown"
             ]
@@ -5726,6 +5945,112 @@
         }
       ],
       "stack_total_bytes": 92,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 128,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 1,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 2,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 1,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "f": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "g": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 1,
+                "move_count": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g"
+          ],
+          "stack_size_bytes": 84
+        }
+      ],
+      "stack_total_bytes": 84,
       "stdout": ""
     },
     {
@@ -7457,7 +7782,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "struct Widget &&",
               "unknown"
             ]
@@ -7606,7 +7931,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "struct Widget &&",
               "unknown"
             ]
@@ -7755,7 +8080,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "struct Widget &&",
               "unknown"
             ]
@@ -7904,7 +8229,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1",
+              "0xPTR",
               "struct Widget &&",
               "unknown"
             ]
@@ -8053,7 +8378,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffffe",
+              "0xPTR",
               "struct Widget &&",
               "unknown"
             ]
@@ -8202,7 +8527,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffffe",
+              "0xPTR",
               "struct Widget &&",
               "unknown"
             ]
@@ -8221,6 +8546,134 @@
         }
       ],
       "stack_total_bytes": 116,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 133,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 1,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 2,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 1,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "f": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "g": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "h": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 1,
+                "move_count": 1
+              }
+            ],
+            "i": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": -2,
+                "move_count": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i"
+          ],
+          "stack_size_bytes": 108
+        }
+      ],
+      "stack_total_bytes": 108,
       "stdout": ""
     },
     {
@@ -8307,7 +8760,7 @@
               {
                 "copy_count": 0,
                 "id": 1,
-                "move_count": 0
+                "move_count": 1
               }
             ],
             "i": [
@@ -8315,7 +8768,7 @@
               "struct Widget",
               {
                 "copy_count": 0,
-                "id": 1,
+                "id": -2,
                 "move_count": 0
               }
             ]
@@ -8445,7 +8898,7 @@
               {
                 "copy_count": 0,
                 "id": 1,
-                "move_count": 0
+                "move_count": 1
               }
             ],
             "i": [
@@ -8453,7 +8906,7 @@
               "struct Widget",
               {
                 "copy_count": 0,
-                "id": 1,
+                "id": -2,
                 "move_count": 0
               }
             ]
@@ -8583,7 +9036,7 @@
               {
                 "copy_count": 0,
                 "id": 1,
-                "move_count": 0
+                "move_count": 1
               }
             ],
             "i": [
@@ -8591,7 +9044,7 @@
               "struct Widget",
               {
                 "copy_count": 0,
-                "id": 1,
+                "id": -2,
                 "move_count": 0
               }
             ]
@@ -8721,7 +9174,7 @@
               {
                 "copy_count": 0,
                 "id": 1,
-                "move_count": 0
+                "move_count": 1
               }
             ],
             "i": [
@@ -8729,7 +9182,7 @@
               "struct Widget",
               {
                 "copy_count": 0,
-                "id": 1,
+                "id": -2,
                 "move_count": 0
               }
             ]
@@ -8859,7 +9312,7 @@
               {
                 "copy_count": 0,
                 "id": 1,
-                "move_count": 0
+                "move_count": 1
               }
             ],
             "i": [
@@ -8867,7 +9320,7 @@
               "struct Widget",
               {
                 "copy_count": 0,
-                "id": 1,
+                "id": -2,
                 "move_count": 0
               }
             ]
@@ -9062,7 +9515,149 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 137,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 1,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "b": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "c": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "d": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 2,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "e": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 1,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "f": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "g": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 1,
+                "move_count": 0
+              }
+            ],
+            "h": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 1,
+                "move_count": 1
+              }
+            ],
+            "i": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": -2,
+                "move_count": 0
+              }
+            ],
+            "j": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 2,
+                "id": 100,
+                "move_count": 0
+              }
+            ],
+            "result": 101
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a": 12,
+            "b": 12,
+            "c": 12,
+            "d": 12,
+            "e": 12,
+            "f": 12,
+            "g": 12,
+            "h": 12,
+            "i": 12,
+            "j": 12,
+            "result": 4
+          },
+          "ordered_varnames": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "result"
+          ],
+          "stack_size_bytes": 124
+        }
+      ],
+      "stack_total_bytes": 124,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 138,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -9686,6 +10281,42 @@
           "local_sizes": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 1,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Empty::Empty",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 144,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "em3": [
+              "C_STRUCT",
+              "struct Empty",
+              {}
+            ]
+          },
+          "frame_id": 19,
+          "func_name": "Empty::Empty",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "em3": 1
+          },
+          "ordered_varnames": [
+            "em3"
+          ],
+          "stack_size_bytes": 1
         }
       ],
       "stack_total_bytes": 1,
@@ -10916,7 +11547,59 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 153,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "consumed": 500,
+            "k": [
+              "C_STRUCT",
+              "struct Widget",
+              {
+                "copy_count": 0,
+                "id": 500,
+                "move_count": 0
+              }
+            ],
+            "wc3": [
+              "C_STRUCT",
+              "struct WithConst",
+              {
+                "id": 42
+              }
+            ]
+          },
+          "frame_id": 23,
+          "func_name": "WithConst::WithConst",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "consumed": 4,
+            "k": 12,
+            "wc3": 4
+          },
+          "ordered_varnames": [
+            "wc3",
+            "k",
+            "consumed"
+          ],
+          "stack_size_bytes": 20
+        }
+      ],
+      "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithConst::WithConst",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 154,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -11030,7 +11713,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 96,
       "ordered_globals": [],
       "stack_to_render": [
         {

@@ -304,7 +304,7 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x138605f70"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 16
@@ -359,7 +359,7 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x138605f70"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 16
@@ -424,7 +424,7 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x138605f70"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 16
@@ -490,13 +490,13 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x138605f70"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 16
       },
       "heap_total_bytes": 16,
-      "line": 0,
+      "line": 39,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -548,7 +548,7 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x138605f70"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 16
@@ -616,7 +616,7 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x138605f70"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 16
@@ -685,13 +685,13 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x138605f70"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 16
       },
       "heap_total_bytes": 16,
-      "line": 0,
+      "line": 40,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -946,6 +946,32 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "Animal::~Animal",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 41,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 6,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Animal::Animal",
       "global_sizes": {},
@@ -1222,7 +1248,7 @@
         ]
       },
       "heap_addresses": {
-        "2": "0x138605f70"
+        "2": "0xPTR"
       },
       "heap_sizes": {
         "2": 16
@@ -1277,7 +1303,7 @@
         ]
       },
       "heap_addresses": {
-        "2": "0x138605f70"
+        "2": "0xPTR"
       },
       "heap_sizes": {
         "2": 16
@@ -1342,7 +1368,7 @@
         ]
       },
       "heap_addresses": {
-        "2": "0x138605f70"
+        "2": "0xPTR"
       },
       "heap_sizes": {
         "2": 16
@@ -1408,13 +1434,13 @@
         ]
       },
       "heap_addresses": {
-        "2": "0x138605f70"
+        "2": "0xPTR"
       },
       "heap_sizes": {
         "2": 16
       },
       "heap_total_bytes": 16,
-      "line": 0,
+      "line": 44,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -1466,7 +1492,7 @@
         ]
       },
       "heap_addresses": {
-        "2": "0x138605f70"
+        "2": "0xPTR"
       },
       "heap_sizes": {
         "2": 16
@@ -1534,7 +1560,7 @@
         ]
       },
       "heap_addresses": {
-        "2": "0x138605f70"
+        "2": "0xPTR"
       },
       "heap_sizes": {
         "2": 16
@@ -1603,13 +1629,13 @@
         ]
       },
       "heap_addresses": {
-        "2": "0x138605f70"
+        "2": "0xPTR"
       },
       "heap_sizes": {
         "2": 16
       },
       "heap_total_bytes": 16,
-      "line": 0,
+      "line": 45,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -1847,6 +1873,32 @@
       "heap_total_bytes": 0,
       "lifecycle": "dtor",
       "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 12,
+          "func_name": "Animal::~Animal",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Animal::~Animal",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 46,
       "ordered_globals": [],
       "stack_to_render": [
         {

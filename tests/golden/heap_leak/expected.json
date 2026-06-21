@@ -47,7 +47,7 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x159e05f70"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 4
@@ -92,7 +92,7 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x159e05f70"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 4

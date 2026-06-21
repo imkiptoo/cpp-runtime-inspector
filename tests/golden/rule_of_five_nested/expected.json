@@ -2144,7 +2144,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x65000003e8",
+              "0xPTR",
               "const struct Outer &",
               "unknown"
             ]
@@ -2259,7 +2259,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x65000003e8",
+              "0xPTR",
               "const struct Outer &",
               "unknown"
             ]
@@ -2383,7 +2383,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x65000003e8",
+              "0xPTR",
               "const struct Outer &",
               "unknown"
             ]
@@ -2404,7 +2404,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x65000003e8",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -2518,7 +2518,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x65000003e8",
+              "0xPTR",
               "const struct Outer &",
               "unknown"
             ]
@@ -2539,7 +2539,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x65000003e8",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -2653,7 +2653,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x65000003e8",
+              "0xPTR",
               "const struct Outer &",
               "unknown"
             ]
@@ -2674,7 +2674,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x65000003e8",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -2693,6 +2693,120 @@
         }
       ],
       "stack_total_bytes": 48,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Outer::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 70,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "o1": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": -999
+                  }
+                ],
+                "outer_id": -1
+              }
+            ],
+            "o2": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 1000
+                  }
+                ],
+                "outer_id": 101
+              }
+            ],
+            "o3": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 2000
+                  }
+                ],
+                "outer_id": 201
+              }
+            ],
+            "o4": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 0
+                  }
+                ],
+                "outer_id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "o1": 8,
+            "o2": 8,
+            "o3": 8,
+            "o4": 8
+          },
+          "ordered_varnames": [
+            "o1",
+            "o2",
+            "o3",
+            "o4"
+          ],
+          "stack_size_bytes": 32
+        },
+        {
+          "encoded_locals": {
+            "o": [
+              "C_ADDRESS",
+              "0xPTR",
+              "const struct Outer &",
+              "unknown"
+            ]
+          },
+          "frame_id": 9,
+          "func_name": "Outer::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
+          "ordered_varnames": [
+            "o"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 40,
       "stdout": ""
     },
     {
@@ -2788,7 +2902,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x65000003e8",
+              "0xPTR",
               "const struct Outer &",
               "unknown"
             ]
@@ -2902,7 +3016,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x65000003e8",
+              "0xPTR",
               "const struct Outer &",
               "unknown"
             ]
@@ -2921,6 +3035,99 @@
         }
       ],
       "stack_total_bytes": 40,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 176,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "o1": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": -999
+                  }
+                ],
+                "outer_id": -1
+              }
+            ],
+            "o2": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 1000
+                  }
+                ],
+                "outer_id": 101
+              }
+            ],
+            "o3": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 2000
+                  }
+                ],
+                "outer_id": 201
+              }
+            ],
+            "o4": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4000
+                  }
+                ],
+                "outer_id": 401
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "o1": 8,
+            "o2": 8,
+            "o3": 8,
+            "o4": 8
+          },
+          "ordered_varnames": [
+            "o1",
+            "o2",
+            "o3",
+            "o4"
+          ],
+          "stack_size_bytes": 32
+        }
+      ],
+      "stack_total_bytes": 32,
       "stdout": ""
     },
     {
@@ -2988,10 +3195,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 4000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 401
               }
             ]
           },
@@ -3091,10 +3298,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 4000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 401
               }
             ]
           },
@@ -3194,10 +3401,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 4000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 401
               }
             ]
           },
@@ -3298,10 +3505,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 4000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 401
               }
             ]
           },
@@ -3401,10 +3608,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 4000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 401
               }
             ]
           },
@@ -3504,10 +3711,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 4000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 401
               }
             ]
           },
@@ -3881,7 +4088,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x19100000fa0",
+              "0xPTR",
               "struct Outer &&",
               "unknown"
             ]
@@ -4012,7 +4219,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x19100000fa0",
+              "0xPTR",
               "struct Outer &&",
               "unknown"
             ]
@@ -4152,7 +4359,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x19100000fa0",
+              "0xPTR",
               "struct Outer &&",
               "unknown"
             ]
@@ -4173,7 +4380,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x19100000fa0",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -4303,7 +4510,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x19100000fa0",
+              "0xPTR",
               "struct Outer &&",
               "unknown"
             ]
@@ -4324,7 +4531,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x19100000fa0",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -4454,7 +4661,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x19100000fa0",
+              "0xPTR",
               "struct Outer &&",
               "unknown"
             ]
@@ -4475,7 +4682,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x191fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -4605,7 +4812,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x19100000fa0",
+              "0xPTR",
               "struct Outer &&",
               "unknown"
             ]
@@ -4626,7 +4833,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x191fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -4645,6 +4852,136 @@
         }
       ],
       "stack_total_bytes": 56,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Outer::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 76,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "o1": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": -999
+                  }
+                ],
+                "outer_id": -1
+              }
+            ],
+            "o2": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 1000
+                  }
+                ],
+                "outer_id": 101
+              }
+            ],
+            "o3": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 2000
+                  }
+                ],
+                "outer_id": 201
+              }
+            ],
+            "o4": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4000
+                  }
+                ],
+                "outer_id": 401
+              }
+            ],
+            "o5": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 0
+                  }
+                ],
+                "outer_id": 1
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "o1": 8,
+            "o2": 8,
+            "o3": 8,
+            "o4": 8,
+            "o5": 8
+          },
+          "ordered_varnames": [
+            "o1",
+            "o2",
+            "o3",
+            "o4",
+            "o5"
+          ],
+          "stack_size_bytes": 40
+        },
+        {
+          "encoded_locals": {
+            "o": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Outer &&",
+              "unknown"
+            ]
+          },
+          "frame_id": 13,
+          "func_name": "Outer::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
+          "ordered_varnames": [
+            "o"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
@@ -4756,7 +5093,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x191fffffc88",
+              "0xPTR",
               "struct Outer &&",
               "unknown"
             ]
@@ -4886,7 +5223,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffffefffffc88",
+              "0xPTR",
               "struct Outer &&",
               "stack"
             ]
@@ -5016,7 +5353,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffffefffffc88",
+              "0xPTR",
               "struct Outer &&",
               "stack"
             ]
@@ -5038,6 +5375,115 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 180,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "o1": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": -999
+                  }
+                ],
+                "outer_id": -1
+              }
+            ],
+            "o2": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 1000
+                  }
+                ],
+                "outer_id": 101
+              }
+            ],
+            "o3": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 2000
+                  }
+                ],
+                "outer_id": 201
+              }
+            ],
+            "o4": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": -888
+                  }
+                ],
+                "outer_id": -2
+              }
+            ],
+            "o5": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "member": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 8000
+                  }
+                ],
+                "outer_id": 801
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "o1": 8,
+            "o2": 8,
+            "o3": 8,
+            "o4": 8,
+            "o5": 8
+          },
+          "ordered_varnames": [
+            "o1",
+            "o2",
+            "o3",
+            "o4",
+            "o5"
+          ],
+          "stack_size_bytes": 40
+        }
+      ],
+      "stack_total_bytes": 40,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Inner::Inner",
       "global_sizes": {},
@@ -5101,10 +5547,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 4000
+                    "value": -888
                   }
                 ],
-                "outer_id": 401
+                "outer_id": -2
               }
             ],
             "o5": [
@@ -5115,10 +5561,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 8000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 801
               }
             ]
           },
@@ -5220,10 +5666,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 4000
+                    "value": -888
                   }
                 ],
-                "outer_id": 401
+                "outer_id": -2
               }
             ],
             "o5": [
@@ -5234,10 +5680,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 8000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 801
               }
             ]
           },
@@ -5339,10 +5785,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 4000
+                    "value": -888
                   }
                 ],
-                "outer_id": 401
+                "outer_id": -2
               }
             ],
             "o5": [
@@ -5353,10 +5799,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 8000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 801
               }
             ]
           },
@@ -5458,10 +5904,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 4000
+                    "value": -888
                   }
                 ],
-                "outer_id": 401
+                "outer_id": -2
               }
             ],
             "o5": [
@@ -5472,10 +5918,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 8000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 801
               }
             ]
           },
@@ -5577,10 +6023,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 4000
+                    "value": -888
                   }
                 ],
-                "outer_id": 401
+                "outer_id": -2
               }
             ],
             "o5": [
@@ -5591,10 +6037,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 8000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 801
               }
             ]
           },
@@ -5696,10 +6142,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 4000
+                    "value": -888
                   }
                 ],
-                "outer_id": 401
+                "outer_id": -2
               }
             ],
             "o5": [
@@ -5710,10 +6156,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 8000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 801
               }
             ]
           },
@@ -5815,10 +6261,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 4000
+                    "value": -888
                   }
                 ],
-                "outer_id": 401
+                "outer_id": -2
               }
             ],
             "o5": [
@@ -5829,10 +6275,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 8000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 801
               }
             ]
           },
@@ -5934,10 +6380,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 4000
+                    "value": -888
                   }
                 ],
-                "outer_id": 401
+                "outer_id": -2
               }
             ],
             "o5": [
@@ -5948,10 +6394,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 8000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 801
               }
             ]
           },
@@ -6053,10 +6499,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 4000
+                    "value": -888
                   }
                 ],
-                "outer_id": 401
+                "outer_id": -2
               }
             ],
             "o5": [
@@ -6067,10 +6513,10 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 0
+                    "value": 8000
                   }
                 ],
-                "outer_id": 1
+                "outer_id": 801
               }
             ]
           },
@@ -8904,7 +9350,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -8984,7 +9430,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -9073,7 +9519,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -9094,7 +9540,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -9173,7 +9619,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -9194,7 +9640,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -9273,7 +9719,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -9294,7 +9740,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -9313,6 +9759,85 @@
         }
       ],
       "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "MultiMember::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 103,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 1
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 2
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 3
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12
+          },
+          "ordered_varnames": [
+            "mm4"
+          ],
+          "stack_size_bytes": 12
+        },
+        {
+          "encoded_locals": {
+            "o": [
+              "C_ADDRESS",
+              "0xPTR",
+              "const struct MultiMember &",
+              "unknown"
+            ]
+          },
+          "frame_id": 31,
+          "func_name": "MultiMember::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
+          "ordered_varnames": [
+            "o"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
@@ -9374,7 +9899,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -9463,7 +9988,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -9484,7 +10009,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3eb000003ea",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -9563,7 +10088,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -9584,7 +10109,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3eb000003ea",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -9663,7 +10188,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -9684,7 +10209,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3eb000003ea",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -9703,6 +10228,85 @@
         }
       ],
       "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "MultiMember::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 104,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 1
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 2
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 3
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12
+          },
+          "ordered_varnames": [
+            "mm4"
+          ],
+          "stack_size_bytes": 12
+        },
+        {
+          "encoded_locals": {
+            "o": [
+              "C_ADDRESS",
+              "0xPTR",
+              "const struct MultiMember &",
+              "unknown"
+            ]
+          },
+          "frame_id": 31,
+          "func_name": "MultiMember::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
+          "ordered_varnames": [
+            "o"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
@@ -9764,7 +10368,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -9853,7 +10457,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -9874,7 +10478,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc19000003eb",
+              "0xPTR",
               "const struct Inner &",
               "stack"
             ]
@@ -9953,7 +10557,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -9974,7 +10578,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc19000003eb",
+              "0xPTR",
               "const struct Inner &",
               "stack"
             ]
@@ -10053,7 +10657,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -10074,7 +10678,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc19000003eb",
+              "0xPTR",
               "const struct Inner &",
               "stack"
             ]
@@ -10093,6 +10697,85 @@
         }
       ],
       "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "MultiMember::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 105,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 1
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 2
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 3
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12
+          },
+          "ordered_varnames": [
+            "mm4"
+          ],
+          "stack_size_bytes": 12
+        },
+        {
+          "encoded_locals": {
+            "o": [
+              "C_ADDRESS",
+              "0xPTR",
+              "const struct MultiMember &",
+              "unknown"
+            ]
+          },
+          "frame_id": 31,
+          "func_name": "MultiMember::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
+          "ordered_varnames": [
+            "o"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 20,
       "stdout": ""
     },
     {
@@ -10153,7 +10836,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x3ea000003e9",
+              "0xPTR",
               "const struct MultiMember &",
               "unknown"
             ]
@@ -10175,6 +10858,64 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "MultiMember::MultiMember",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 191,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12
+          },
+          "ordered_varnames": [
+            "mm4"
+          ],
+          "stack_size_bytes": 12
+        }
+      ],
+      "stack_total_bytes": 12,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Inner::Inner",
       "global_sizes": {},
@@ -10197,21 +10938,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -10265,21 +11006,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -10333,21 +11074,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -10402,21 +11143,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -10470,21 +11211,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -10538,21 +11279,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -10607,21 +11348,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -10675,21 +11416,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -10743,21 +11484,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -10812,21 +11553,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -10880,21 +11621,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -10958,21 +11699,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -11036,21 +11777,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -11115,21 +11856,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -11193,21 +11934,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -11239,7 +11980,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x10000000a",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -11282,21 +12023,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -11328,7 +12069,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x10000000a",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -11371,21 +12112,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -11417,7 +12158,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -11460,21 +12201,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -11506,7 +12247,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -11525,6 +12266,74 @@
         }
       ],
       "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::WithArray",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 124,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12
+          },
+          "ordered_varnames": [
+            "mm4"
+          ],
+          "stack_size_bytes": 12
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 38,
+          "func_name": "WithArray::WithArray",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
@@ -11550,21 +12359,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -11630,21 +12439,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -11710,21 +12519,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -11788,21 +12597,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -11866,21 +12675,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -11944,21 +12753,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -12022,21 +12831,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -12101,21 +12910,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -12179,21 +12988,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -12225,7 +13034,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc8800000014",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -12268,21 +13077,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -12314,7 +13123,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc8800000014",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -12357,21 +13166,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -12403,7 +13212,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc88fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -12446,21 +13255,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -12492,7 +13301,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc88fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -12511,6 +13320,74 @@
         }
       ],
       "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::WithArray",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 125,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12
+          },
+          "ordered_varnames": [
+            "mm4"
+          ],
+          "stack_size_bytes": 12
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 38,
+          "func_name": "WithArray::WithArray",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
@@ -12536,21 +13413,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -12616,21 +13493,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -12696,21 +13573,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -12774,21 +13651,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -12852,21 +13729,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -12930,21 +13807,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -13008,21 +13885,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -13087,21 +13964,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -13165,21 +14042,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -13211,7 +14088,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc880000001e",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -13254,21 +14131,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -13300,7 +14177,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc880000001e",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -13343,21 +14220,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -13389,7 +14266,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc88fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -13432,21 +14309,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -13478,7 +14355,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc88fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -13497,6 +14374,74 @@
         }
       ],
       "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::WithArray",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 126,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12
+          },
+          "ordered_varnames": [
+            "mm4"
+          ],
+          "stack_size_bytes": 12
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 38,
+          "func_name": "WithArray::WithArray",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 12,
       "stdout": ""
     },
     {
@@ -13522,21 +14467,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -13602,21 +14547,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -13682,21 +14627,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -13760,21 +14705,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -13838,21 +14783,21 @@
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 1
+                    "value": 4001
                   }
                 ],
                 "second": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 2
+                    "value": 4002
                   }
                 ],
                 "third": [
                   "C_STRUCT",
                   "struct Inner",
                   {
-                    "value": 3
+                    "value": 4003
                   }
                 ]
               }
@@ -15228,7 +16173,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfb400000faa",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -15352,7 +16297,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfb400000faa",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -15476,7 +16421,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfb400000faa",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -15495,6 +16440,109 @@
         }
       ],
       "stack_total_bytes": 32,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::WithArray",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 130,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ],
+            "wa1": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12,
+            "wa1": 12
+          },
+          "ordered_varnames": [
+            "mm4",
+            "wa1"
+          ],
+          "stack_size_bytes": 24
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 54,
+          "func_name": "WithArray::WithArray",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
@@ -15714,7 +16762,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfbe00000fb4",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -15838,7 +16886,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfbe00000fb4",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -15962,7 +17010,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfbe00000fb4",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -15981,6 +17029,109 @@
         }
       ],
       "stack_total_bytes": 32,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::WithArray",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 131,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ],
+            "wa1": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12,
+            "wa1": 12
+          },
+          "ordered_varnames": [
+            "mm4",
+            "wa1"
+          ],
+          "stack_size_bytes": 24
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 54,
+          "func_name": "WithArray::WithArray",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
@@ -16200,7 +17351,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfa100000fbe",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -16324,7 +17475,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfa100000fbe",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -16448,7 +17599,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfa100000fbe",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -16467,6 +17618,109 @@
         }
       ],
       "stack_total_bytes": 32,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::WithArray",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 132,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ],
+            "wa1": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12,
+            "wa1": 12
+          },
+          "ordered_varnames": [
+            "mm4",
+            "wa1"
+          ],
+          "stack_size_bytes": 24
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 54,
+          "func_name": "WithArray::WithArray",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 24,
       "stdout": ""
     },
     {
@@ -18815,7 +20069,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x10000000a",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -18974,7 +20228,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x10000000a",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -19133,7 +20387,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -19292,7 +20546,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "unknown"
             ]
@@ -19311,6 +20565,144 @@
         }
       ],
       "stack_total_bytes": 44,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::WithArray",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 124,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ],
+            "wa1": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "wa2": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12,
+            "wa1": 12,
+            "wa2": 12
+          },
+          "ordered_varnames": [
+            "mm4",
+            "wa1",
+            "wa2"
+          ],
+          "stack_size_bytes": 36
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 61,
+          "func_name": "WithArray::WithArray",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
@@ -20641,7 +22033,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc8800000014",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -20800,7 +22192,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc8800000014",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -20959,7 +22351,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc88fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -21118,7 +22510,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc88fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -21137,6 +22529,144 @@
         }
       ],
       "stack_total_bytes": 44,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::WithArray",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 125,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ],
+            "wa1": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "wa2": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12,
+            "wa1": 12,
+            "wa2": 12
+          },
+          "ordered_varnames": [
+            "mm4",
+            "wa1",
+            "wa2"
+          ],
+          "stack_size_bytes": 36
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 61,
+          "func_name": "WithArray::WithArray",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
@@ -22467,7 +23997,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc880000001e",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -22626,7 +24156,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc880000001e",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -22785,7 +24315,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc88fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -22944,7 +24474,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfffffc88fffffc88",
+              "0xPTR",
               "struct Inner &&",
               "stack"
             ]
@@ -22963,6 +24493,144 @@
         }
       ],
       "stack_total_bytes": 44,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::WithArray",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 126,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ],
+            "wa1": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "wa2": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12,
+            "wa1": 12,
+            "wa2": 12
+          },
+          "ordered_varnames": [
+            "mm4",
+            "wa1",
+            "wa2"
+          ],
+          "stack_size_bytes": 36
+        },
+        {
+          "encoded_locals": {},
+          "frame_id": 61,
+          "func_name": "WithArray::WithArray",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 36,
       "stdout": ""
     },
     {
@@ -24200,7 +25868,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -24385,7 +26053,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -24579,7 +26247,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -24600,7 +26268,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -24784,7 +26452,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -24805,7 +26473,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -24989,7 +26657,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -25010,7 +26678,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -25029,6 +26697,190 @@
         }
       ],
       "stack_total_bytes": 64,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 136,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ],
+            "wa1": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "wa2": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "wa3": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12,
+            "wa1": 12,
+            "wa2": 12,
+            "wa3": 12
+          },
+          "ordered_varnames": [
+            "mm4",
+            "wa1",
+            "wa2",
+            "wa3"
+          ],
+          "stack_size_bytes": 48
+        },
+        {
+          "encoded_locals": {
+            "o": [
+              "C_ADDRESS",
+              "0xPTR",
+              "const struct WithArray &",
+              "unknown"
+            ]
+          },
+          "frame_id": 74,
+          "func_name": "WithArray::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
+          "ordered_varnames": [
+            "o"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 56,
       "stdout": ""
     },
     {
@@ -25195,7 +27047,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -25389,7 +27241,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -25410,7 +27262,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b7600001b6c",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -25594,7 +27446,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -25615,7 +27467,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b7600001b6c",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -25799,7 +27651,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -25820,7 +27672,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b7600001b6c",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -25839,6 +27691,190 @@
         }
       ],
       "stack_total_bytes": 64,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 137,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ],
+            "wa1": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "wa2": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "wa3": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12,
+            "wa1": 12,
+            "wa2": 12,
+            "wa3": 12
+          },
+          "ordered_varnames": [
+            "mm4",
+            "wa1",
+            "wa2",
+            "wa3"
+          ],
+          "stack_size_bytes": 48
+        },
+        {
+          "encoded_locals": {
+            "o": [
+              "C_ADDRESS",
+              "0xPTR",
+              "const struct WithArray &",
+              "unknown"
+            ]
+          },
+          "frame_id": 74,
+          "func_name": "WithArray::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
+          "ordered_varnames": [
+            "o"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 56,
       "stdout": ""
     },
     {
@@ -26005,7 +28041,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -26199,7 +28235,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -26220,7 +28256,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfaa00001b76",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -26404,7 +28440,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -26425,7 +28461,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfaa00001b76",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -26609,7 +28645,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -26630,7 +28666,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0xfaa00001b76",
+              "0xPTR",
               "const struct Inner &",
               "unknown"
             ]
@@ -26649,6 +28685,190 @@
         }
       ],
       "stack_total_bytes": 64,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "WithArray::operator=",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 138,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ],
+            "wa1": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "wa2": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "wa3": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": false,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12,
+            "wa1": 12,
+            "wa2": 12,
+            "wa3": 12
+          },
+          "ordered_varnames": [
+            "mm4",
+            "wa1",
+            "wa2",
+            "wa3"
+          ],
+          "stack_size_bytes": 48
+        },
+        {
+          "encoded_locals": {
+            "o": [
+              "C_ADDRESS",
+              "0xPTR",
+              "const struct WithArray &",
+              "unknown"
+            ]
+          },
+          "frame_id": 74,
+          "func_name": "WithArray::operator=",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "o": 8
+          },
+          "ordered_varnames": [
+            "o"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 56,
       "stdout": ""
     },
     {
@@ -26814,7 +29034,7 @@
           "encoded_locals": {
             "o": [
               "C_ADDRESS",
-              "0x1b6c00001b62",
+              "0xPTR",
               "const struct WithArray &",
               "unknown"
             ]
@@ -26833,6 +29053,169 @@
         }
       ],
       "stack_total_bytes": 56,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "MultiMember::MultiMember",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 197,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "mm4": [
+              "C_STRUCT",
+              "struct MultiMember",
+              {
+                "first": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4001
+                  }
+                ],
+                "second": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4002
+                  }
+                ],
+                "third": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "value": 4003
+                  }
+                ]
+              }
+            ],
+            "wa1": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 4030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "wa2": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 7030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ],
+            "wa3": [
+              "C_STRUCT",
+              "struct WithArray",
+              {
+                "arr": [
+                  "C_ARRAY",
+                  "struct Inner",
+                  [
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 10010
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 10020
+                      }
+                    ],
+                    [
+                      "C_STRUCT",
+                      "struct Inner",
+                      {
+                        "value": 10030
+                      }
+                    ]
+                  ]
+                ]
+              }
+            ]
+          },
+          "frame_id": 30,
+          "func_name": "MultiMember::MultiMember",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "mm4": 12,
+            "wa1": 12,
+            "wa2": 12,
+            "wa3": 12
+          },
+          "ordered_varnames": [
+            "mm4",
+            "wa1",
+            "wa2",
+            "wa3"
+          ],
+          "stack_size_bytes": 48
+        }
+      ],
+      "stack_total_bytes": 48,
       "stdout": ""
     },
     {
@@ -26955,21 +29338,21 @@
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4010
+                        "value": 10010
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4020
+                        "value": 10020
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4030
+                        "value": 10030
                       }
                     ]
                   ]
@@ -27128,21 +29511,21 @@
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4010
+                        "value": 10010
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4020
+                        "value": 10020
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4030
+                        "value": 10030
                       }
                     ]
                   ]
@@ -27301,21 +29684,21 @@
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4010
+                        "value": 10010
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4020
+                        "value": 10020
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4030
+                        "value": 10030
                       }
                     ]
                   ]
@@ -27475,21 +29858,21 @@
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4010
+                        "value": 10010
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4020
+                        "value": 10020
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4030
+                        "value": 10030
                       }
                     ]
                   ]
@@ -27648,21 +30031,21 @@
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4010
+                        "value": 10010
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4020
+                        "value": 10020
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4030
+                        "value": 10030
                       }
                     ]
                   ]
@@ -27821,21 +30204,21 @@
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4010
+                        "value": 10010
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4020
+                        "value": 10020
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4030
+                        "value": 10030
                       }
                     ]
                   ]
@@ -27995,21 +30378,21 @@
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4010
+                        "value": 10010
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4020
+                        "value": 10020
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4030
+                        "value": 10030
                       }
                     ]
                   ]
@@ -28168,21 +30551,21 @@
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4010
+                        "value": 10010
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4020
+                        "value": 10020
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4030
+                        "value": 10030
                       }
                     ]
                   ]
@@ -28341,21 +30724,21 @@
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4010
+                        "value": 10010
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4020
+                        "value": 10020
                       }
                     ],
                     [
                       "C_STRUCT",
                       "struct Inner",
                       {
-                        "value": 4030
+                        "value": 10030
                       }
                     ]
                   ]

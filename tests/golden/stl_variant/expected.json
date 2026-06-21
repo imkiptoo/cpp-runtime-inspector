@@ -75,7 +75,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 9,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -117,7 +117,49 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "idx0": 0,
+            "v": [
+              "C_STRUCT",
+              "std::variant",
+              {
+                "index": 0,
+                "value": 42
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "idx0": 4,
+            "v": 16
+          },
+          "ordered_varnames": [
+            "v",
+            "idx0"
+          ],
+          "stack_size_bytes": 20
+        }
+      ],
+      "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 12,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -162,7 +204,52 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 14,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "idx0": 0,
+            "idx_after_int": 0,
+            "v": [
+              "C_STRUCT",
+              "std::variant",
+              {
+                "index": 1,
+                "value": "<alternative beyond first; payload not introspectable>"
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "idx0": 4,
+            "idx_after_int": 4,
+            "v": 16
+          },
+          "ordered_varnames": [
+            "v",
+            "idx0",
+            "idx_after_int"
+          ],
+          "stack_size_bytes": 24
+        }
+      ],
+      "stack_total_bytes": 24,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 15,
       "ordered_globals": [],
       "stack_to_render": [
         {

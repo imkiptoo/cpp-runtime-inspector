@@ -78,7 +78,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 6,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -168,7 +168,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -216,7 +216,55 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "n": 1,
+            "nums": [
+              "C_ARRAY",
+              "int",
+              [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            ],
+            "sum": 1
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "n": 4,
+            "nums": 20,
+            "sum": 4
+          },
+          "ordered_varnames": [
+            "nums",
+            "sum",
+            "n"
+          ],
+          "stack_size_bytes": 28
+        }
+      ],
+      "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -264,7 +312,55 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "n": 2,
+            "nums": [
+              "C_ARRAY",
+              "int",
+              [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            ],
+            "sum": 3
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "n": 4,
+            "nums": 20,
+            "sum": 4
+          },
+          "ordered_varnames": [
+            "nums",
+            "sum",
+            "n"
+          ],
+          "stack_size_bytes": 28
+        }
+      ],
+      "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -312,7 +408,55 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "n": 3,
+            "nums": [
+              "C_ARRAY",
+              "int",
+              [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            ],
+            "sum": 6
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "n": 4,
+            "nums": 20,
+            "sum": 4
+          },
+          "ordered_varnames": [
+            "nums",
+            "sum",
+            "n"
+          ],
+          "stack_size_bytes": 28
+        }
+      ],
+      "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -360,7 +504,55 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "n": 4,
+            "nums": [
+              "C_ARRAY",
+              "int",
+              [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            ],
+            "sum": 10
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "n": 4,
+            "nums": 20,
+            "sum": 4
+          },
+          "ordered_varnames": [
+            "nums",
+            "sum",
+            "n"
+          ],
+          "stack_size_bytes": 28
+        }
+      ],
+      "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 7,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -378,6 +570,54 @@
               ]
             ],
             "sum": 10
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "n": 4,
+            "nums": 20,
+            "sum": 4
+          },
+          "ordered_varnames": [
+            "nums",
+            "sum",
+            "n"
+          ],
+          "stack_size_bytes": 28
+        }
+      ],
+      "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "n": 5,
+            "nums": [
+              "C_ARRAY",
+              "int",
+              [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            ],
+            "sum": 15
           },
           "frame_id": 0,
           "func_name": "main",

@@ -36,7 +36,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 13,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -381,7 +381,7 @@
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16b9c2bf0",
+              "0xPTR",
               "int *",
               "stack"
             ]
@@ -454,13 +454,175 @@
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16b9c2bf0",
+              "0xPTR",
               "int *",
               "stack"
             ],
             "ref": [
               "C_ADDRESS",
-              "0x2a",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "arr": 12,
+            "b": 1,
+            "c": 1,
+            "color": 4,
+            "d": 8,
+            "i": 4,
+            "p": 8,
+            "ptr": 8,
+            "ref": 8
+          },
+          "ordered_varnames": [
+            "i",
+            "d",
+            "b",
+            "c",
+            "p",
+            "color",
+            "arr",
+            "ptr",
+            "ref"
+          ],
+          "stack_size_bytes": 54
+        }
+      ],
+      "stack_total_bytes": 54,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 34,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "arr": [
+              "C_ARRAY",
+              "int",
+              [
+                1,
+                2,
+                3
+              ]
+            ],
+            "b": true,
+            "c": "A",
+            "color": "GREEN",
+            "d": 3.14,
+            "i": 100,
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 10,
+                "y": 20
+              }
+            ],
+            "ptr": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int *",
+              "stack"
+            ],
+            "ref": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "unknown"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "arr": 12,
+            "b": 1,
+            "c": 1,
+            "color": 4,
+            "d": 8,
+            "i": 4,
+            "p": 8,
+            "ptr": 8,
+            "ref": 8
+          },
+          "ordered_varnames": [
+            "i",
+            "d",
+            "b",
+            "c",
+            "p",
+            "color",
+            "arr",
+            "ptr",
+            "ref"
+          ],
+          "stack_size_bytes": 54
+        }
+      ],
+      "stack_total_bytes": 54,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 35,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "arr": [
+              "C_ARRAY",
+              "int",
+              [
+                1,
+                2,
+                3
+              ]
+            ],
+            "b": true,
+            "c": "A",
+            "color": "GREEN",
+            "d": 3.14,
+            "i": 100,
+            "p": [
+              "C_STRUCT",
+              "struct Point",
+              {
+                "x": 30,
+                "y": 20
+              }
+            ],
+            "ptr": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int *",
+              "stack"
+            ],
+            "ref": [
+              "C_ADDRESS",
+              "0xPTR",
               "int &",
               "unknown"
             ]
@@ -536,13 +698,13 @@
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16b9c2bf0",
+              "0xPTR",
               "int *",
               "stack"
             ],
             "ref": [
               "C_ADDRESS",
-              "0x64",
+              "0xPTR",
               "int &",
               "unknown"
             ]

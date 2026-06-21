@@ -45,7 +45,7 @@
               "next",
               [
                 "C_ADDRESS",
-                "0x0",
+                "0xPTR",
                 "struct Node *",
                 "null"
               ]
@@ -54,7 +54,7 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x122e05f70"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 16
@@ -138,7 +138,7 @@
               "next",
               [
                 "C_ADDRESS",
-                "0x0",
+                "0xPTR",
                 "struct Node *",
                 "null"
               ]
@@ -147,9 +147,9 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x122e05f70",
-        "2": "0x122e06680",
-        "3": "0x122e05eb0"
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "1": 16,
@@ -241,7 +241,7 @@
               "next",
               [
                 "C_ADDRESS",
-                "0x0",
+                "0xPTR",
                 "struct Node *",
                 "null"
               ]
@@ -250,9 +250,9 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x122e05f70",
-        "2": "0x122e06680",
-        "3": "0x122e05eb0"
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "1": 16,
@@ -344,7 +344,7 @@
               "next",
               [
                 "C_ADDRESS",
-                "0x0",
+                "0xPTR",
                 "struct Node *",
                 "null"
               ]
@@ -353,9 +353,9 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x122e05f70",
-        "2": "0x122e06680",
-        "3": "0x122e05eb0"
+        "1": "0xPTR",
+        "2": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "1": 16,
@@ -436,7 +436,7 @@
               "next",
               [
                 "C_ADDRESS",
-                "0x0",
+                "0xPTR",
                 "struct Node *",
                 "null"
               ]
@@ -445,8 +445,188 @@
         ]
       },
       "heap_addresses": {
-        "2": "0x122e06680",
-        "3": "0x122e05eb0"
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "2": 16,
+        "3": 16
+      },
+      "heap_total_bytes": 32,
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "current": [
+              "DANGLING",
+              1
+            ],
+            "head": [
+              "DANGLING",
+              1
+            ],
+            "next": [
+              "REF",
+              2
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "current": 8,
+            "head": 8,
+            "next": 8
+          },
+          "ordered_varnames": [
+            "head",
+            "current",
+            "next"
+          ],
+          "stack_size_bytes": 24
+        }
+      ],
+      "stack_total_bytes": 24,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "2": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              2
+            ],
+            [
+              "next",
+              [
+                "REF",
+                3
+              ]
+            ]
+          ]
+        ],
+        "3": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              3
+            ],
+            [
+              "next",
+              [
+                "C_ADDRESS",
+                "0xPTR",
+                "struct Node *",
+                "null"
+              ]
+            ]
+          ]
+        ]
+      },
+      "heap_addresses": {
+        "2": "0xPTR",
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "2": 16,
+        "3": 16
+      },
+      "heap_total_bytes": 32,
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "current": [
+              "REF",
+              2
+            ],
+            "head": [
+              "DANGLING",
+              1
+            ],
+            "next": [
+              "REF",
+              2
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "current": 8,
+            "head": 8,
+            "next": 8
+          },
+          "ordered_varnames": [
+            "head",
+            "current",
+            "next"
+          ],
+          "stack_size_bytes": 24
+        }
+      ],
+      "stack_total_bytes": 24,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "2": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              2
+            ],
+            [
+              "next",
+              [
+                "REF",
+                3
+              ]
+            ]
+          ]
+        ],
+        "3": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              3
+            ],
+            [
+              "next",
+              [
+                "C_ADDRESS",
+                "0xPTR",
+                "struct Node *",
+                "null"
+              ]
+            ]
+          ]
+        ]
+      },
+      "heap_addresses": {
+        "2": "0xPTR",
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "2": 16,
@@ -509,7 +689,7 @@
               "next",
               [
                 "C_ADDRESS",
-                "0x0",
+                "0xPTR",
                 "struct Node *",
                 "null"
               ]
@@ -518,7 +698,149 @@
         ]
       },
       "heap_addresses": {
-        "3": "0x122e05eb0"
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "3": 16
+      },
+      "heap_total_bytes": 16,
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "current": [
+              "DANGLING",
+              2
+            ],
+            "head": [
+              "DANGLING",
+              1
+            ],
+            "next": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "current": 8,
+            "head": 8,
+            "next": 8
+          },
+          "ordered_varnames": [
+            "head",
+            "current",
+            "next"
+          ],
+          "stack_size_bytes": 24
+        }
+      ],
+      "stack_total_bytes": 24,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "3": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              3
+            ],
+            [
+              "next",
+              [
+                "C_ADDRESS",
+                "0xPTR",
+                "struct Node *",
+                "null"
+              ]
+            ]
+          ]
+        ]
+      },
+      "heap_addresses": {
+        "3": "0xPTR"
+      },
+      "heap_sizes": {
+        "3": 16
+      },
+      "heap_total_bytes": 16,
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "current": [
+              "REF",
+              3
+            ],
+            "head": [
+              "DANGLING",
+              1
+            ],
+            "next": [
+              "REF",
+              3
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "current": 8,
+            "head": 8,
+            "next": 8
+          },
+          "ordered_varnames": [
+            "head",
+            "current",
+            "next"
+          ],
+          "stack_size_bytes": 24
+        }
+      ],
+      "stack_total_bytes": 24,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {
+        "3": [
+          "HEAP_STRUCT",
+          "struct Node",
+          [
+            [
+              "value",
+              3
+            ],
+            [
+              "next",
+              [
+                "C_ADDRESS",
+                "0xPTR",
+                "struct Node *",
+                "null"
+              ]
+            ]
+          ]
+        ]
+      },
+      "heap_addresses": {
+        "3": "0xPTR"
       },
       "heap_sizes": {
         "3": 16
@@ -539,7 +861,107 @@
             ],
             "next": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
+              "struct Node *",
+              "null"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "current": 8,
+            "head": 8,
+            "next": 8
+          },
+          "ordered_varnames": [
+            "head",
+            "current",
+            "next"
+          ],
+          "stack_size_bytes": 24
+        }
+      ],
+      "stack_total_bytes": 24,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "current": [
+              "DANGLING",
+              3
+            ],
+            "head": [
+              "DANGLING",
+              1
+            ],
+            "next": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Node *",
+              "null"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "current": 8,
+            "head": 8,
+            "next": 8
+          },
+          "ordered_varnames": [
+            "head",
+            "current",
+            "next"
+          ],
+          "stack_size_bytes": 24
+        }
+      ],
+      "stack_total_bytes": 24,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 20,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "current": [
+              "C_ADDRESS",
+              "0xPTR",
+              "struct Node *",
+              "null"
+            ],
+            "head": [
+              "DANGLING",
+              1
+            ],
+            "next": [
+              "C_ADDRESS",
+              "0xPTR",
               "struct Node *",
               "null"
             ]
@@ -581,7 +1003,7 @@
           "encoded_locals": {
             "current": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "struct Node *",
               "null"
             ],
@@ -591,7 +1013,7 @@
             ],
             "next": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "struct Node *",
               "null"
             ]

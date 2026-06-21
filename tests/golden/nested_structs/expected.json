@@ -82,6 +82,144 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "o": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "inner": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "x": 1,
+                    "y": 0
+                  }
+                ],
+                "z": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "o": 12
+          },
+          "ordered_varnames": [
+            "o"
+          ],
+          "stack_size_bytes": 12
+        }
+      ],
+      "stack_total_bytes": 12,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 17,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "o": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "inner": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "x": 1,
+                    "y": 2
+                  }
+                ],
+                "z": 0
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "o": 12
+          },
+          "ordered_varnames": [
+            "o"
+          ],
+          "stack_size_bytes": 12
+        }
+      ],
+      "stack_total_bytes": 12,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 18,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "o": [
+              "C_STRUCT",
+              "struct Outer",
+              {
+                "inner": [
+                  "C_STRUCT",
+                  "struct Inner",
+                  {
+                    "x": 1,
+                    "y": 2
+                  }
+                ],
+                "z": 3
+              }
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "o": 12
+          },
+          "ordered_varnames": [
+            "o"
+          ],
+          "stack_size_bytes": 12
+        }
+      ],
+      "stack_total_bytes": 12,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
       "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
@@ -104,7 +242,7 @@
             ],
             "pi": [
               "C_ADDRESS",
-              "0x16f5eac00",
+              "0xPTR",
               "struct Inner *",
               "stack"
             ]
@@ -159,7 +297,7 @@
             ],
             "pi": [
               "C_ADDRESS",
-              "0x16f5eac00",
+              "0xPTR",
               "struct Inner *",
               "stack"
             ]

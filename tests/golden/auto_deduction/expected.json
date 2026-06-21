@@ -36,7 +36,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 5,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -141,7 +141,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 9,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -192,7 +192,7 @@
             "i": 42,
             "r": [
               "C_ADDRESS",
-              "0x580000010000000a",
+              "0xPTR",
               "int &",
               "stack"
             ],
@@ -231,7 +231,56 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 11,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "c": "X",
+            "d": 3.14,
+            "i": 42,
+            "r": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int &",
+              "stack"
+            ],
+            "x": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "c": 1,
+            "d": 8,
+            "i": 4,
+            "r": 8,
+            "x": 4
+          },
+          "ordered_varnames": [
+            "i",
+            "d",
+            "c",
+            "x",
+            "r"
+          ],
+          "stack_size_bytes": 25
+        }
+      ],
+      "stack_total_bytes": 25,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 13,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -242,7 +291,7 @@
             "k": 100,
             "r": [
               "C_ADDRESS",
-              "0x5800000100000014",
+              "0xPTR",
               "int &",
               "stack"
             ],
@@ -295,7 +344,7 @@
             "k": 100,
             "r": [
               "C_ADDRESS",
-              "0x5800000100000014",
+              "0xPTR",
               "int &",
               "stack"
             ],

@@ -36,7 +36,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 9,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -68,7 +68,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 10,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -148,7 +148,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 3,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -199,7 +199,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 3,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -253,7 +253,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 4,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -368,7 +368,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 11,
       "ordered_globals": [],
       "stack_to_render": [
         {

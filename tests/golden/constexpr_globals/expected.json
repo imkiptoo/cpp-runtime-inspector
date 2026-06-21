@@ -140,7 +140,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 26,
       "ordered_globals": [
         "pi",
         "magic",

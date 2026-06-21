@@ -326,7 +326,39 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 95,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "r1": 10
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "r1": 4
+          },
+          "ordered_varnames": [
+            "r1"
+          ],
+          "stack_size_bytes": 4
+        }
+      ],
+      "stack_total_bytes": 4,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 96,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -400,7 +432,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 66,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -834,7 +866,42 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 99,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "r1": 10,
+            "r2": 20
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "r1": 4,
+            "r2": 4
+          },
+          "ordered_varnames": [
+            "r1",
+            "r2"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 100,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -1593,7 +1660,45 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 103,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "r1": 10,
+            "r2": 20,
+            "r3": 61
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "r1": 4,
+            "r2": 4,
+            "r3": 4
+          },
+          "ordered_varnames": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "stack_size_bytes": 12
+        }
+      ],
+      "stack_total_bytes": 12,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 104,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -2230,7 +2335,48 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 107,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "r1": 10,
+            "r2": 20,
+            "r3": 61,
+            "r4": 40
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "r1": 4,
+            "r2": 4,
+            "r3": 4,
+            "r4": 4
+          },
+          "ordered_varnames": [
+            "r1",
+            "r2",
+            "r3",
+            "r4"
+          ],
+          "stack_size_bytes": 16
+        }
+      ],
+      "stack_total_bytes": 16,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 108,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -3090,7 +3236,51 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 111,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "r1": 10,
+            "r2": 20,
+            "r3": 61,
+            "r4": 40,
+            "r5": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "r1": 4,
+            "r2": 4,
+            "r3": 4,
+            "r4": 4,
+            "r5": 4
+          },
+          "ordered_varnames": [
+            "r1",
+            "r2",
+            "r3",
+            "r4",
+            "r5"
+          ],
+          "stack_size_bytes": 20
+        }
+      ],
+      "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 112,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -4615,7 +4805,54 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 115,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "r1": 10,
+            "r2": 20,
+            "r3": 61,
+            "r4": 40,
+            "r5": 100,
+            "r6": 121
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "r1": 4,
+            "r2": 4,
+            "r3": 4,
+            "r4": 4,
+            "r5": 4,
+            "r6": 4
+          },
+          "ordered_varnames": [
+            "r1",
+            "r2",
+            "r3",
+            "r4",
+            "r5",
+            "r6"
+          ],
+          "stack_size_bytes": 24
+        }
+      ],
+      "stack_total_bytes": 24,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 116,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -4719,7 +4956,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 66,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -5543,7 +5780,57 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 119,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "r1": 10,
+            "r2": 20,
+            "r3": 61,
+            "r4": 40,
+            "r5": 100,
+            "r6": 121,
+            "r7": 70
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "r1": 4,
+            "r2": 4,
+            "r3": 4,
+            "r4": 4,
+            "r5": 4,
+            "r6": 4,
+            "r7": 4
+          },
+          "ordered_varnames": [
+            "r1",
+            "r2",
+            "r3",
+            "r4",
+            "r5",
+            "r6",
+            "r7"
+          ],
+          "stack_size_bytes": 28
+        }
+      ],
+      "stack_total_bytes": 28,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 120,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -5653,7 +5940,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 66,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -6025,7 +6312,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 70,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -6994,7 +7281,60 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 123,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "r1": 10,
+            "r2": 20,
+            "r3": 61,
+            "r4": 40,
+            "r5": 100,
+            "r6": 121,
+            "r7": 70,
+            "r8": 161
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "r1": 4,
+            "r2": 4,
+            "r3": 4,
+            "r4": 4,
+            "r5": 4,
+            "r6": 4,
+            "r7": 4,
+            "r8": 4
+          },
+          "ordered_varnames": [
+            "r1",
+            "r2",
+            "r3",
+            "r4",
+            "r5",
+            "r6",
+            "r7",
+            "r8"
+          ],
+          "stack_size_bytes": 32
+        }
+      ],
+      "stack_total_bytes": 32,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 124,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -7949,7 +8289,72 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 128,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a9": [
+              "C_STRUCT",
+              "struct TempA",
+              {
+                "id": 90
+              }
+            ],
+            "r1": 10,
+            "r2": 20,
+            "r3": 61,
+            "r4": 40,
+            "r5": 100,
+            "r6": 121,
+            "r7": 70,
+            "r8": 161,
+            "r9": 90
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a9": 4,
+            "r1": 4,
+            "r2": 4,
+            "r3": 4,
+            "r4": 4,
+            "r5": 4,
+            "r6": 4,
+            "r7": 4,
+            "r8": 4,
+            "r9": 4
+          },
+          "ordered_varnames": [
+            "r1",
+            "r2",
+            "r3",
+            "r4",
+            "r5",
+            "r6",
+            "r7",
+            "r8",
+            "a9",
+            "r9"
+          ],
+          "stack_size_bytes": 40
+        }
+      ],
+      "stack_total_bytes": 40,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 129,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -8616,7 +9021,75 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 133,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a9": [
+              "C_STRUCT",
+              "struct TempA",
+              {
+                "id": 90
+              }
+            ],
+            "r1": 10,
+            "r10": 100,
+            "r2": 20,
+            "r3": 61,
+            "r4": 40,
+            "r5": 100,
+            "r6": 121,
+            "r7": 70,
+            "r8": 161,
+            "r9": 90
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a9": 4,
+            "r1": 4,
+            "r10": 4,
+            "r2": 4,
+            "r3": 4,
+            "r4": 4,
+            "r5": 4,
+            "r6": 4,
+            "r7": 4,
+            "r8": 4,
+            "r9": 4
+          },
+          "ordered_varnames": [
+            "r1",
+            "r2",
+            "r3",
+            "r4",
+            "r5",
+            "r6",
+            "r7",
+            "r8",
+            "a9",
+            "r9",
+            "r10"
+          ],
+          "stack_size_bytes": 44
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 134,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -9061,6 +9534,74 @@
           "local_sizes": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 139,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a9": [
+              "C_STRUCT",
+              "struct TempA",
+              {
+                "id": 90
+              }
+            ],
+            "r1": 10,
+            "r10": 100,
+            "r2": 20,
+            "r3": 61,
+            "r4": 40,
+            "r5": 100,
+            "r6": 121,
+            "r7": 70,
+            "r8": 161,
+            "r9": 90
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a9": 4,
+            "r1": 4,
+            "r10": 4,
+            "r2": 4,
+            "r3": 4,
+            "r4": 4,
+            "r5": 4,
+            "r6": 4,
+            "r7": 4,
+            "r8": 4,
+            "r9": 4
+          },
+          "ordered_varnames": [
+            "r1",
+            "r2",
+            "r3",
+            "r4",
+            "r5",
+            "r6",
+            "r7",
+            "r8",
+            "a9",
+            "r9",
+            "r10"
+          ],
+          "stack_size_bytes": 44
         }
       ],
       "stack_total_bytes": 44,
@@ -10238,6 +10779,74 @@
           "local_sizes": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 142,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a9": [
+              "C_STRUCT",
+              "struct TempA",
+              {
+                "id": 90
+              }
+            ],
+            "r1": 10,
+            "r10": 100,
+            "r2": 20,
+            "r3": 61,
+            "r4": 40,
+            "r5": 100,
+            "r6": 121,
+            "r7": 70,
+            "r8": 161,
+            "r9": 90
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a9": 4,
+            "r1": 4,
+            "r10": 4,
+            "r2": 4,
+            "r3": 4,
+            "r4": 4,
+            "r5": 4,
+            "r6": 4,
+            "r7": 4,
+            "r8": 4,
+            "r9": 4
+          },
+          "ordered_varnames": [
+            "r1",
+            "r2",
+            "r3",
+            "r4",
+            "r5",
+            "r6",
+            "r7",
+            "r8",
+            "a9",
+            "r9",
+            "r10"
+          ],
+          "stack_size_bytes": 44
         }
       ],
       "stack_total_bytes": 44,
@@ -11815,6 +12424,74 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 145,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a9": [
+              "C_STRUCT",
+              "struct TempA",
+              {
+                "id": 90
+              }
+            ],
+            "r1": 10,
+            "r10": 100,
+            "r2": 20,
+            "r3": 61,
+            "r4": 40,
+            "r5": 100,
+            "r6": 121,
+            "r7": 70,
+            "r8": 161,
+            "r9": 90
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a9": 4,
+            "r1": 4,
+            "r10": 4,
+            "r2": 4,
+            "r3": 4,
+            "r4": 4,
+            "r5": 4,
+            "r6": 4,
+            "r7": 4,
+            "r8": 4,
+            "r9": 4
+          },
+          "ordered_varnames": [
+            "r1",
+            "r2",
+            "r3",
+            "r4",
+            "r5",
+            "r6",
+            "r7",
+            "r8",
+            "a9",
+            "r9",
+            "r10"
+          ],
+          "stack_size_bytes": 44
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "TempA::~TempA",
       "global_sizes": {},
@@ -13296,6 +13973,74 @@
         }
       ],
       "stack_total_bytes": 48,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 148,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "a9": [
+              "C_STRUCT",
+              "struct TempA",
+              {
+                "id": 90
+              }
+            ],
+            "r1": 10,
+            "r10": 100,
+            "r2": 20,
+            "r3": 61,
+            "r4": 40,
+            "r5": 100,
+            "r6": 121,
+            "r7": 70,
+            "r8": 161,
+            "r9": 90
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "a9": 4,
+            "r1": 4,
+            "r10": 4,
+            "r2": 4,
+            "r3": 4,
+            "r4": 4,
+            "r5": 4,
+            "r6": 4,
+            "r7": 4,
+            "r8": 4,
+            "r9": 4
+          },
+          "ordered_varnames": [
+            "r1",
+            "r2",
+            "r3",
+            "r4",
+            "r5",
+            "r6",
+            "r7",
+            "r8",
+            "a9",
+            "r9",
+            "r10"
+          ],
+          "stack_size_bytes": 44
+        }
+      ],
+      "stack_total_bytes": 44,
       "stdout": ""
     },
     {

@@ -44,7 +44,7 @@
         ]
       },
       "heap_addresses": {
-        "1": "0x140605f70"
+        "1": "0xPTR"
       },
       "heap_sizes": {
         "1": 12
@@ -57,6 +57,41 @@
           "encoded_locals": {
             "arr": [
               "REF",
+              1
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "arr": 8
+          },
+          "ordered_varnames": [
+            "arr"
+          ],
+          "stack_size_bytes": 8
+        }
+      ],
+      "stack_total_bytes": 8,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 8,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "arr": [
+              "DANGLING",
               1
             ]
           },

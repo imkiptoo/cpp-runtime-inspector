@@ -36,7 +36,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 5,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -68,7 +68,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 6,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -110,7 +110,7 @@
           "encoded_locals": {
             "ptr": [
               "C_ADDRESS",
-              "0x16f4eac08",
+              "0xPTR",
               "int *",
               "stack"
             ],
@@ -146,18 +146,110 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 12,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "ptr": [
               "C_ADDRESS",
-              "0x16f4eac08",
+              "0xPTR",
               "int *",
               "stack"
             ],
             "val": 42,
+            "x": 42,
+            "y": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "ptr": 8,
+            "val": 4,
+            "x": 4,
+            "y": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ptr",
+            "val"
+          ],
+          "stack_size_bytes": 20
+        }
+      ],
+      "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 15,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ptr": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int *",
+              "stack"
+            ],
+            "val": 42,
+            "x": 42,
+            "y": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "ptr": 8,
+            "val": 4,
+            "x": 4,
+            "y": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ptr",
+            "val"
+          ],
+          "stack_size_bytes": 20
+        }
+      ],
+      "stack_total_bytes": 20,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "ptr": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int *",
+              "stack"
+            ],
+            "val": 100,
             "x": 42,
             "y": 100
           },
@@ -199,13 +291,13 @@
           "encoded_locals": {
             "null_ptr": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "int *",
               "null"
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16f4eac04",
+              "0xPTR",
               "int *",
               "stack"
             ],
@@ -253,19 +345,81 @@
           "encoded_locals": {
             "null_ptr": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "int *",
               "null"
             ],
             "pptr": [
               "C_ADDRESS",
-              "0x16f4eabf8",
+              "0xPTR",
               "int **",
               "stack"
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16f4eac04",
+              "0xPTR",
+              "int *",
+              "stack"
+            ],
+            "val": 100,
+            "x": 42,
+            "y": 100
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "null_ptr": 8,
+            "pptr": 8,
+            "ptr": 8,
+            "val": 4,
+            "x": 4,
+            "y": 4
+          },
+          "ordered_varnames": [
+            "x",
+            "y",
+            "ptr",
+            "val",
+            "null_ptr",
+            "pptr"
+          ],
+          "stack_size_bytes": 36
+        }
+      ],
+      "stack_total_bytes": 36,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 23,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "null_ptr": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int *",
+              "null"
+            ],
+            "pptr": [
+              "C_ADDRESS",
+              "0xPTR",
+              "int **",
+              "stack"
+            ],
+            "ptr": [
+              "C_ADDRESS",
+              "0xPTR",
               "int *",
               "stack"
             ],
@@ -316,19 +470,19 @@
           "encoded_locals": {
             "null_ptr": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "int *",
               "null"
             ],
             "pptr": [
               "C_ADDRESS",
-              "0x16f4eabf8",
+              "0xPTR",
               "int **",
               "stack"
             ],
             "ptr": [
               "C_ADDRESS",
-              "0x16f4eac04",
+              "0xPTR",
               "int *",
               "stack"
             ],

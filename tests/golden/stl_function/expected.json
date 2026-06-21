@@ -74,7 +74,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 10,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -115,7 +115,48 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 12,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "f": [
+              "C_STRUCT",
+              "std::function",
+              {
+                "engaged": true
+              }
+            ],
+            "has1": 0
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "f": 32,
+            "has1": 4
+          },
+          "ordered_varnames": [
+            "f",
+            "has1"
+          ],
+          "stack_size_bytes": 36
+        }
+      ],
+      "stack_total_bytes": 36,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 13,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -213,7 +254,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 6,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -334,7 +375,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 14,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -381,7 +422,54 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 16,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "f": [
+              "C_STRUCT",
+              "std::function",
+              {
+                "engaged": true
+              }
+            ],
+            "has1": 0,
+            "has2": 1,
+            "v": 10
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "f": 32,
+            "has1": 4,
+            "has2": 4,
+            "v": 4
+          },
+          "ordered_varnames": [
+            "f",
+            "has1",
+            "has2",
+            "v"
+          ],
+          "stack_size_bytes": 44
+        }
+      ],
+      "stack_total_bytes": 44,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 17,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -431,7 +519,57 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 19,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "f": [
+              "C_STRUCT",
+              "std::function",
+              {
+                "engaged": true
+              }
+            ],
+            "has1": 0,
+            "has2": 1,
+            "has3": 0,
+            "v": 10
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "f": 32,
+            "has1": 4,
+            "has2": 4,
+            "has3": 4,
+            "v": 4
+          },
+          "ordered_varnames": [
+            "f",
+            "has1",
+            "has2",
+            "v",
+            "has3"
+          ],
+          "stack_size_bytes": 48
+        }
+      ],
+      "stack_total_bytes": 48,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 20,
       "ordered_globals": [],
       "stack_to_render": [
         {

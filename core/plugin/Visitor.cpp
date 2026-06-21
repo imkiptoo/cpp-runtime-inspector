@@ -187,9 +187,7 @@ bool InspectorVisitor::VisitFunctionDecl(clang::FunctionDecl* decl) {
         std::string suffix = m_typeEncoder.getHookSuffix(type);
         unsigned paramLine = m_helpers.getLineNumber(param->getLocation());
 
-        if (kind == TypeKind::Int && type->isSpecificBuiltinType(clang::BuiltinType::Int)) {
-            paramCalls += " __inspector_var_init(\"" + paramName + "\", &" + paramName + ", " + paramName + ");";
-        } else if (kind == TypeKind::Struct || kind == TypeKind::Union || kind == TypeKind::Array) {
+        if (kind == TypeKind::Struct || kind == TypeKind::Union || kind == TypeKind::Array) {
             std::string typeRef = m_typeEncoder.getDescriptorRef(type);
             paramCalls += " __inspector_var_init_" + suffix + "(\"" + paramName + "\", &" +
                           paramName + ", " + typeRef + ", " + std::to_string(paramLine) + ");";
@@ -683,11 +681,10 @@ bool InspectorVisitor::VisitBinaryOperator(clang::BinaryOperator* op) {
     }
 
     std::string call = generateVarUpdateCall(var);
+    unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
 
-    // Wrap in comma operator: (x = expr, __inspector_var_update_...(...))
-    m_rewriter.InsertText(op->getBeginLoc(), "(", /*InsertAfter=*/true);
-    m_rewriter.InsertTextAfterToken(op->getEndLoc(),
-                                    RewriteHelpers::commaWrap(call));
+    // Wrap as (x = expr, __inspector_var_update_...(...), __inspector_step(line))
+    wrapLocalWriteWithStep(op, call, line);
 
     return true;
 }
@@ -749,11 +746,10 @@ bool InspectorVisitor::VisitCompoundAssignOperator(
     }
 
     std::string call = generateVarUpdateCall(var);
+    unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
 
-    // Wrap in comma operator
-    m_rewriter.InsertText(op->getBeginLoc(), "(", /*InsertAfter=*/true);
-    m_rewriter.InsertTextAfterToken(op->getEndLoc(),
-                                    RewriteHelpers::commaWrap(call));
+    // Wrap as (expr, __inspector_var_update_...(...), __inspector_step(line))
+    wrapLocalWriteWithStep(op, call, line);
 
     return true;
 }
@@ -817,11 +813,10 @@ bool InspectorVisitor::VisitUnaryOperator(clang::UnaryOperator* op) {
     }
 
     std::string call = generateVarUpdateCall(var);
+    unsigned line = m_helpers.getLineNumber(op->getBeginLoc());
 
-    // Wrap in comma operator
-    m_rewriter.InsertText(op->getBeginLoc(), "(", /*InsertAfter=*/true);
-    m_rewriter.InsertTextAfterToken(op->getEndLoc(),
-                                    RewriteHelpers::commaWrap(call));
+    // Wrap as (expr, __inspector_var_update_...(...), __inspector_step(line))
+    wrapLocalWriteWithStep(op, call, line);
 
     return true;
 }
@@ -838,21 +833,45 @@ bool InspectorVisitor::VisitStmt(clang::Stmt* stmt) {
     if (llvm::isa<clang::CompoundStmt>(stmt))
         return true;
     if (llvm::isa<clang::DeclStmt>(stmt))
-        return true; // Handled by VisitVarDecl
+        return true; // Handled by VisitVarDecl/VisitDeclStmt (var_init emits the step)
     if (llvm::isa<clang::NullStmt>(stmt))
         return true;
     if (llvm::isa<clang::ReturnStmt>(stmt))
         return true; // Handled by VisitReturnStmt
 
-    // Skip expression statements - they contain the expressions we've already
-    // handled with comma operators, and injecting before them causes issues
-    // because the step call becomes part of an expression context
-    // TODO: Properly handle this by injecting step as separate statement
-    // For now, skip step injection on expression statements to avoid breaking code
-    if (llvm::isa<clang::Expr>(stmt))
-        return true;
-
     unsigned line = m_helpers.getLineNumber(stmt->getBeginLoc());
+
+    // Expression statements (e.g. `std::cout << ...;`, `foo();`): step *after*
+    // the expression so the snapshot captures its effects — stdout produced by
+    // the statement, heap/global mutations from a call, etc. Use the same comma
+    // wrap as this-writes: `(expr, __inspector_step(line))`.
+    if (auto* expr = llvm::dyn_cast<clang::Expr>(stmt)) {
+        const clang::Expr* inner = expr->IgnoreImplicit()->IgnoreParens();
+
+        // Variable-write expressions are stepped by VisitBinaryOperator /
+        // VisitCompoundAssignOperator / VisitUnaryOperator (they wrap the write
+        // with a var_update + step). Stepping here too would double-count.
+        if (const auto* bin = llvm::dyn_cast<clang::BinaryOperator>(inner)) {
+            if (bin->isAssignmentOp())
+                return true;
+        }
+        if (const auto* un = llvm::dyn_cast<clang::UnaryOperator>(inner)) {
+            if (un->isIncrementDecrementOp())
+                return true;
+        }
+        // `throw` is handled by VisitCXXThrowExpr; a step after it is unreachable.
+        if (llvm::isa<clang::CXXThrowExpr>(inner))
+            return true;
+
+        m_rewriter.InsertText(expr->getBeginLoc(), "(", /*InsertAfter=*/true);
+        m_rewriter.InsertTextAfterToken(
+            expr->getEndLoc(),
+            ", __inspector_step(" + std::to_string(line) + "))");
+        return true;
+    }
+
+    // Non-expression statements (if / for / while / switch ...): step before so
+    // the line is highlighted as control flow reaches it.
     std::string call = "__inspector_step(" + std::to_string(line) + "); ";
     m_rewriter.InsertTextBefore(stmt->getBeginLoc(), call);
 
@@ -962,12 +981,11 @@ std::string InspectorVisitor::generateVarInitCall(clang::VarDecl* decl) const {
     std::ostringstream ss;
     TypeKind kind = m_typeEncoder.getTypeKind(type);
 
-    // Use the simple legacy API for int to maintain backward compatibility
-    if (kind == TypeKind::Int && type->isSpecificBuiltinType(clang::BuiltinType::Int)) {
-        ss << "; __inspector_var_init(\"" << varName << "\", &" << varName << ", " << varName << ")";
-    } else if (kind == TypeKind::Struct || kind == TypeKind::Union ||
-               kind == TypeKind::Array) {
-        // Composite types: pass address, no value expression
+    // Composite types: pass address, no value expression. (int and other
+    // primitives go through the full _<suffix> API below so the step carries
+    // the correct line number — the legacy __inspector_var_init records line 0.)
+    if (kind == TypeKind::Struct || kind == TypeKind::Union ||
+        kind == TypeKind::Array) {
         std::string typeRef = m_typeEncoder.getDescriptorRef(type);
         ss << "; __inspector_var_init_" << suffix << "(\"" << varName << "\", &"
            << varName << ", " << typeRef << ", " << line << ")";
@@ -1259,6 +1277,17 @@ void InspectorVisitor::wrapThisWriteWithStep(clang::Expr* expr, unsigned line) {
         ", __inspector_step(" + std::to_string(line) + "))";
     m_rewriter.InsertText(expr->getBeginLoc(), "(", /*InsertAfter=*/true);
     m_rewriter.InsertTextAfterToken(expr->getEndLoc(), suffix);
+}
+
+void InspectorVisitor::wrapLocalWriteWithStep(clang::Expr* op,
+                                              const std::string& updateCall,
+                                              unsigned line) {
+    // Wrap as (expr, var_update(...), __inspector_step(line)): record the new
+    // value, then fire a step so the write shows up as its own trace step.
+    m_rewriter.InsertText(op->getBeginLoc(), "(", /*InsertAfter=*/true);
+    m_rewriter.InsertTextAfterToken(
+        op->getEndLoc(),
+        ", " + updateCall + ", __inspector_step(" + std::to_string(line) + "))");
 }
 
 bool InspectorVisitor::VisitCXXConstructorDecl(clang::CXXConstructorDecl* decl) {

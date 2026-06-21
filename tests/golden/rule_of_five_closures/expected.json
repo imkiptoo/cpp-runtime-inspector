@@ -341,7 +341,7 @@
             ],
             "lambda1": [
               "C_STRUCT",
-              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/rule_of_five_closures/input.cpp:67:20)",
+              "class (lambda at <ROOT>/tests/golden/rule_of_five_closures/input.cpp:67:20)",
               {
                 "c1": [
                   "C_STRUCT",
@@ -394,7 +394,7 @@
             ],
             "lambda1": [
               "C_STRUCT",
-              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/rule_of_five_closures/input.cpp:67:20)",
+              "class (lambda at <ROOT>/tests/golden/rule_of_five_closures/input.cpp:67:20)",
               {
                 "c1": [
                   "C_STRUCT",
@@ -458,7 +458,7 @@
             ],
             "lambda1": [
               "C_STRUCT",
-              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/rule_of_five_closures/input.cpp:67:20)",
+              "class (lambda at <ROOT>/tests/golden/rule_of_five_closures/input.cpp:67:20)",
               {
                 "c1": [
                   "C_STRUCT",
@@ -522,7 +522,7 @@
             ],
             "lambda1": [
               "C_STRUCT",
-              "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/rule_of_five_closures/input.cpp:67:20)",
+              "class (lambda at <ROOT>/tests/golden/rule_of_five_closures/input.cpp:67:20)",
               {
                 "c1": [
                   "C_STRUCT",
@@ -1615,7 +1615,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 49,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -1843,7 +1843,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 49,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -4728,7 +4728,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 49,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -6524,7 +6524,7 @@
         }
       ],
       "kind": "struct",
-      "name": "class (lambda at /Users/imkiptoo/data/swe/cpp/workspace/cpp-runtime-inspector/tests/golden/rule_of_five_closures/input.cpp:67:20)",
+      "name": "class (lambda at <ROOT>/tests/golden/rule_of_five_closures/input.cpp:67:20)",
       "sizeof": 4
     },
     "int": {

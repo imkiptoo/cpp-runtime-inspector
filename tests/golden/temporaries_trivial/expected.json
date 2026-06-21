@@ -245,6 +245,32 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 112,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
@@ -415,6 +441,32 @@
           "encoded_locals": {},
           "frame_id": 4,
           "func_name": "Minimal::get",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 115,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
           "local_sizes": {},
@@ -828,6 +880,32 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 118,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
@@ -1001,7 +1079,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 85,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -1043,7 +1121,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 85,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -1342,6 +1420,32 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "PodLike::~PodLike",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 121,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 10,
+          "func_name": "PodLike::~PodLike",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "makeMinimal",
       "global_sizes": {},
@@ -1386,7 +1490,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 89,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -1643,6 +1747,32 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "PodLike::~PodLike",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 124,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 10,
+          "func_name": "PodLike::~PodLike",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
@@ -1836,7 +1966,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 93,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -1878,7 +2008,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 93,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -1923,7 +2053,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 93,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -2253,6 +2383,32 @@
           "encoded_locals": {},
           "frame_id": 21,
           "func_name": "PodLike::total",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "PodLike::~PodLike",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 127,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 10,
+          "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
           "local_sizes": {},
@@ -2827,6 +2983,32 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "PodLike::~PodLike",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 130,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 23,
+          "func_name": "PodLike::~PodLike",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
@@ -3198,6 +3380,32 @@
           "encoded_locals": {},
           "frame_id": 30,
           "func_name": "Outer::getSum",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "PodLike::~PodLike",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 133,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 23,
+          "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
           "local_sizes": {},
@@ -3736,6 +3944,32 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "Outer::~Outer",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 136,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 33,
+          "func_name": "Outer::~Outer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
@@ -4091,6 +4325,32 @@
         }
       ],
       "stack_total_bytes": 4,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Outer::~Outer",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 139,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 33,
+          "func_name": "Outer::~Outer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
@@ -4678,6 +4938,32 @@
         }
       ],
       "stack_total_bytes": 12,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "Outer::~Outer",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 142,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 33,
+          "func_name": "Outer::~Outer",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
       "stdout": ""
     },
     {
@@ -5461,6 +5747,32 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "PodLike::~PodLike",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 145,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 46,
+          "func_name": "PodLike::~PodLike",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
@@ -5783,7 +6095,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 85,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -5825,7 +6137,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 85,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -6341,6 +6653,32 @@
       "stdout": ""
     },
     {
+      "event": "step_line",
+      "func_name": "PodLike::~PodLike",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 148,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 55,
+          "func_name": "PodLike::~PodLike",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
       "event": "call",
       "func_name": "makeTrivial",
       "global_sizes": {},
@@ -6385,7 +6723,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 85,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -6427,7 +6765,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 85,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -6770,7 +7108,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 85,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -6812,7 +7150,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 85,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -7100,6 +7438,32 @@
           "encoded_locals": {},
           "frame_id": 67,
           "func_name": "Trivial::sum",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {},
+          "ordered_varnames": [],
+          "stack_size_bytes": 0
+        }
+      ],
+      "stack_total_bytes": 0,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "PodLike::~PodLike",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 151,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {},
+          "frame_id": 55,
+          "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
           "local_sizes": {},

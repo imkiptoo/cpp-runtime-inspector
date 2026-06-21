@@ -43,7 +43,7 @@
           "encoded_locals": {
             "str1": [
               "C_ADDRESS",
-              "0x10461cad1",
+              "0xPTR",
               "char*",
               "unknown"
             ]
@@ -80,13 +80,13 @@
           "encoded_locals": {
             "str1": [
               "C_ADDRESS",
-              "0x10461cad1",
+              "0xPTR",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0x10461cadc",
+              "0xPTR",
               "char*",
               "unknown"
             ]
@@ -118,7 +118,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 14,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -126,13 +126,13 @@
             "len1": 5,
             "str1": [
               "C_ADDRESS",
-              "0x10461cad1",
+              "0xPTR",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0x10461cadc",
+              "0xPTR",
               "char*",
               "unknown"
             ]
@@ -166,7 +166,7 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 15,
       "ordered_globals": [],
       "stack_to_render": [
         {
@@ -175,13 +175,13 @@
             "len2": 5,
             "str1": [
               "C_ADDRESS",
-              "0x10461cad1",
+              "0xPTR",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0x10461cadc",
+              "0xPTR",
               "char*",
               "unknown"
             ]
@@ -227,13 +227,13 @@
             "len2": 5,
             "str1": [
               "C_ADDRESS",
-              "0x10461cad1",
+              "0xPTR",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0x10461cadc",
+              "0xPTR",
               "char*",
               "unknown"
             ]
@@ -282,13 +282,70 @@
             "len2": 5,
             "str1": [
               "C_ADDRESS",
-              "0x10461cad1",
+              "0xPTR",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0x10461cadc",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ]
+          },
+          "frame_id": 0,
+          "func_name": "main",
+          "is_highlighted": true,
+          "is_zombie": false,
+          "local_sizes": {
+            "first": 1,
+            "last": 1,
+            "len1": 4,
+            "len2": 4,
+            "str1": 8,
+            "str2": 8
+          },
+          "ordered_varnames": [
+            "str1",
+            "str2",
+            "len1",
+            "len2",
+            "first",
+            "last"
+          ],
+          "stack_size_bytes": 26
+        }
+      ],
+      "stack_total_bytes": 26,
+      "stdout": ""
+    },
+    {
+      "event": "step_line",
+      "func_name": "main",
+      "global_sizes": {},
+      "globals": {},
+      "heap": {},
+      "heap_addresses": {},
+      "heap_sizes": {},
+      "heap_total_bytes": 0,
+      "line": 22,
+      "ordered_globals": [],
+      "stack_to_render": [
+        {
+          "encoded_locals": {
+            "first": "h",
+            "last": "o",
+            "len1": 5,
+            "len2": 5,
+            "str1": [
+              "C_ADDRESS",
+              "0xPTR",
+              "char*",
+              "unknown"
+            ],
+            "str2": [
+              "C_ADDRESS",
+              "0xPTR",
               "char*",
               "unknown"
             ]
@@ -335,7 +392,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0x10461cafc",
+              "0xPTR",
               "char*",
               "unknown"
             ],
@@ -345,13 +402,13 @@
             "len2": 5,
             "str1": [
               "C_ADDRESS",
-              "0x10461cadc",
+              "0xPTR",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0x10461cadc",
+              "0xPTR",
               "char*",
               "unknown"
             ]
@@ -393,14 +450,14 @@
       "heap_addresses": {},
       "heap_sizes": {},
       "heap_total_bytes": 0,
-      "line": 0,
+      "line": 26,
       "ordered_globals": [],
       "stack_to_render": [
         {
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0x10461cafc",
+              "0xPTR",
               "char*",
               "unknown"
             ],
@@ -411,13 +468,13 @@
             "len2": 5,
             "str1": [
               "C_ADDRESS",
-              "0x10461cadc",
+              "0xPTR",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0x10461cadc",
+              "0xPTR",
               "char*",
               "unknown"
             ]
@@ -468,7 +525,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0x10461cafc",
+              "0xPTR",
               "char*",
               "unknown"
             ],
@@ -479,19 +536,19 @@
             "len2": 5,
             "null_str": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "char*",
               "null"
             ],
             "str1": [
               "C_ADDRESS",
-              "0x10461cadc",
+              "0xPTR",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0x10461cadc",
+              "0xPTR",
               "char*",
               "unknown"
             ]
@@ -545,7 +602,7 @@
           "encoded_locals": {
             "empty": [
               "C_ADDRESS",
-              "0x10461cafc",
+              "0xPTR",
               "char*",
               "unknown"
             ],
@@ -556,19 +613,19 @@
             "len2": 5,
             "null_str": [
               "C_ADDRESS",
-              "0x0",
+              "0xPTR",
               "char*",
               "null"
             ],
             "str1": [
               "C_ADDRESS",
-              "0x10461cadc",
+              "0xPTR",
               "char*",
               "unknown"
             ],
             "str2": [
               "C_ADDRESS",
-              "0x10461cadc",
+              "0xPTR",
               "char*",
               "unknown"
             ]

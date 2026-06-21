@@ -7,7 +7,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 BUILD="${ROOT}/cmake-build-debug"
 GOLDEN_DIR="${ROOT}/tests/golden"
-RUNTIME_HDR="${ROOT}/runtime"
+RUNTIME_HDR="${ROOT}/core/runtime"
 
 # Use cmake-build-debug if it exists, otherwise build/
 if [[ ! -d "${BUILD}" ]]; then
