@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "call",
       "func_name": "math::square",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -45,7 +49,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -55,7 +61,9 @@
           "func_name": "math::square",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -67,6 +75,7 @@
       "event": "step_line",
       "func_name": "math::square",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -81,7 +90,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -93,8 +104,14 @@
           "func_name": "math::square",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "x": 4
+          },
+          "local_types": {
+            "x": "int"
           },
           "ordered_varnames": [
             "x"
@@ -109,6 +126,7 @@
       "event": "return",
       "func_name": "math::square",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -124,7 +142,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -136,8 +156,14 @@
           "func_name": "math::square",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "x": 4
+          },
+          "local_types": {
+            "x": "int"
           },
           "ordered_varnames": [
             "x"
@@ -152,6 +178,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -168,8 +195,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "s": "0xPTR"
+          },
           "local_sizes": {
             "s": 4
+          },
+          "local_types": {
+            "s": "int"
           },
           "ordered_varnames": [
             "s"
@@ -184,6 +217,7 @@
       "event": "call",
       "func_name": "math::detail::triple",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -200,8 +234,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "s": "0xPTR"
+          },
           "local_sizes": {
             "s": 4
+          },
+          "local_types": {
+            "s": "int"
           },
           "ordered_varnames": [
             "s"
@@ -214,7 +254,9 @@
           "func_name": "math::detail::triple",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -226,6 +268,7 @@
       "event": "step_line",
       "func_name": "math::detail::triple",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -242,8 +285,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "s": "0xPTR"
+          },
           "local_sizes": {
             "s": 4
+          },
+          "local_types": {
+            "s": "int"
           },
           "ordered_varnames": [
             "s"
@@ -258,8 +307,14 @@
           "func_name": "math::detail::triple",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "x": 4
+          },
+          "local_types": {
+            "x": "int"
           },
           "ordered_varnames": [
             "x"
@@ -274,6 +329,7 @@
       "event": "return",
       "func_name": "math::detail::triple",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -291,8 +347,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "s": "0xPTR"
+          },
           "local_sizes": {
             "s": 4
+          },
+          "local_types": {
+            "s": "int"
           },
           "ordered_varnames": [
             "s"
@@ -307,8 +369,14 @@
           "func_name": "math::detail::triple",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "x": 4
+          },
+          "local_types": {
+            "x": "int"
           },
           "ordered_varnames": [
             "x"
@@ -323,6 +391,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -340,9 +409,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "s": "0xPTR",
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "s": 4,
             "t": 4
+          },
+          "local_types": {
+            "s": "int",
+            "t": "int"
           },
           "ordered_varnames": [
             "s",
@@ -358,6 +435,7 @@
       "event": "call",
       "func_name": "math::square",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -375,9 +453,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "s": "0xPTR",
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "s": 4,
             "t": 4
+          },
+          "local_types": {
+            "s": "int",
+            "t": "int"
           },
           "ordered_varnames": [
             "s",
@@ -391,7 +477,9 @@
           "func_name": "math::square",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -403,6 +491,7 @@
       "event": "step_line",
       "func_name": "math::square",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -420,9 +509,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "s": "0xPTR",
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "s": 4,
             "t": 4
+          },
+          "local_types": {
+            "s": "int",
+            "t": "int"
           },
           "ordered_varnames": [
             "s",
@@ -438,8 +535,14 @@
           "func_name": "math::square",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "x": 4
+          },
+          "local_types": {
+            "x": "int"
           },
           "ordered_varnames": [
             "x"
@@ -454,6 +557,7 @@
       "event": "return",
       "func_name": "math::square",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -472,9 +576,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "s": "0xPTR",
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "s": 4,
             "t": 4
+          },
+          "local_types": {
+            "s": "int",
+            "t": "int"
           },
           "ordered_varnames": [
             "s",
@@ -490,8 +602,14 @@
           "func_name": "math::square",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "x": 4
+          },
+          "local_types": {
+            "x": "int"
           },
           "ordered_varnames": [
             "x"
@@ -506,6 +624,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -524,10 +643,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "s": "0xPTR",
+            "s2": "0xPTR",
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "s": 4,
             "s2": 4,
             "t": 4
+          },
+          "local_types": {
+            "s": "int",
+            "s2": "int",
+            "t": "int"
           },
           "ordered_varnames": [
             "s",
@@ -544,6 +673,7 @@
       "event": "call",
       "func_name": "text::length",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -562,10 +692,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "s": "0xPTR",
+            "s2": "0xPTR",
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "s": 4,
             "s2": 4,
             "t": 4
+          },
+          "local_types": {
+            "s": "int",
+            "s2": "int",
+            "t": "int"
           },
           "ordered_varnames": [
             "s",
@@ -580,7 +720,9 @@
           "func_name": "text::length",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -592,6 +734,7 @@
       "event": "return",
       "func_name": "text::length",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -611,10 +754,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "s": "0xPTR",
+            "s2": "0xPTR",
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "s": 4,
             "s2": 4,
             "t": 4
+          },
+          "local_types": {
+            "s": "int",
+            "s2": "int",
+            "t": "int"
           },
           "ordered_varnames": [
             "s",
@@ -629,7 +782,9 @@
           "func_name": "text::length",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -641,6 +796,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -660,11 +816,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "len": "0xPTR",
+            "s": "0xPTR",
+            "s2": "0xPTR",
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "len": 4,
             "s": 4,
             "s2": 4,
             "t": 4
+          },
+          "local_types": {
+            "len": "int",
+            "s": "int",
+            "s2": "int",
+            "t": "int"
           },
           "ordered_varnames": [
             "s",
@@ -682,6 +850,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -702,11 +871,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "len": "0xPTR",
+            "s": "0xPTR",
+            "s2": "0xPTR",
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "len": 4,
             "s": 4,
             "s2": 4,
             "t": 4
+          },
+          "local_types": {
+            "len": "int",
+            "s": "int",
+            "s2": "int",
+            "t": "int"
           },
           "ordered_varnames": [
             "s",

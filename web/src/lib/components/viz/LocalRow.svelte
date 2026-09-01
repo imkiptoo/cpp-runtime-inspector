@@ -1,22 +1,29 @@
 <script lang="ts">
 	import type { EncodedValue } from '$lib/trace/schema';
 	import { isPointerLike, isCAddress, getPointerType } from '$lib/trace/schema';
-	import { getHoverContext } from '$lib/contexts/hover.svelte';
 	import ValueChip from './ValueChip.svelte';
 
 	interface Props {
 		name: string;
 		value: EncodedValue;
 		size?: number;
-		showType?: boolean;
+		/** Declared type spelling from the runtime, e.g. "unsigned long". */
+		type?: string;
+		/** Storage address as hex, e.g. "0x16f37e888". Absent for globals. */
+		address?: string;
+		/** Render the address cell (off for globals, which have no address). */
+		showAddress?: boolean;
 	}
 
-	let { name, value, size, showType = false }: Props = $props();
+	let { name, value, size, type, address, showAddress = false }: Props = $props();
 
-	const hover = getHoverContext();
-
-	// Get type label for display
+	// Prefer the type the runtime actually recorded. The fallback infers a type
+	// from the JSON value shape, which is lossy — a `double` holding 42.0 is
+	// indistinguishable from an `int` there — so it is only used when the
+	// backend predates local_types/global_types.
 	const typeLabel = $derived.by(() => {
+		if (type) return type;
+
 		if (isPointerLike(value)) {
 			if (isCAddress(value)) {
 				return getPointerType(value) || 'pointer';
@@ -35,22 +42,35 @@
 	});
 </script>
 
-<div
-	class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-1.5 border-t border-islands-100 dark:border-islands-700/50 py-1.5 font-mono text-[12px] first:border-t-0"
+<tr
+	class="border-t border-islands-100 dark:border-islands-700/50 align-baseline"
 	data-testid="local-{name}"
 >
-	<!-- Name : type -->
-	<div class="flex min-w-0 items-baseline gap-1 truncate">
-		<span class="text-islands-800 dark:text-islands-200">{name}</span>
-		{#if showType && typeLabel}
-			<span class="text-islands-400 dark:text-islands-500">:</span>
-			<span class="text-islands-400 dark:text-islands-500">{typeLabel}</span>
-		{/if}
-		{#if size !== undefined}
-			<span class="text-[11px] text-islands-400 dark:text-islands-500 ml-1">({size}B)</span>
-		{/if}
-	</div>
+	<!-- Name -->
+	<td class="py-1.5 pr-3 whitespace-nowrap text-islands-800 dark:text-islands-200">
+		{name}
+	</td>
 
-	<!-- Value chip -->
-	<ValueChip {value} />
-</div>
+	<!-- Type (+ size) -->
+	<td class="py-1.5 pr-3 whitespace-nowrap text-islands-400 dark:text-islands-500">
+		{#if typeLabel}<span>{typeLabel}</span>{:else}<span>—</span>{/if}
+		{#if size !== undefined}
+			<span class="text-[11px]">({size}B)</span>
+		{/if}
+	</td>
+
+	<!-- Value -->
+	<td class="py-1.5 text-right">
+		<ValueChip {value} />
+	</td>
+
+	<!-- Address -->
+	{#if showAddress}
+		<td
+			class="py-1.5 pl-3 whitespace-nowrap text-right text-[11px] text-islands-400 dark:text-islands-500"
+			title={address ?? 'address unavailable'}
+		>
+			{address ?? '—'}
+		</td>
+	{/if}
+</tr>

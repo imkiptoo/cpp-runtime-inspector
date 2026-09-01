@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -47,8 +51,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 4
+          },
+          "local_types": {
+            "c": "enum Color"
           },
           "ordered_varnames": [
             "c"
@@ -63,6 +73,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -80,9 +91,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "c": 4,
             "d": 4
+          },
+          "local_types": {
+            "c": "enum Color",
+            "d": "enum Direction"
           },
           "ordered_varnames": [
             "c",
@@ -98,6 +117,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -115,9 +135,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "c": 4,
             "d": 4
+          },
+          "local_types": {
+            "c": "enum Color",
+            "d": "enum Direction"
           },
           "ordered_varnames": [
             "c",
@@ -133,6 +161,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -151,9 +180,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "c": 4,
             "d": 4
+          },
+          "local_types": {
+            "c": "enum Color",
+            "d": "enum Direction"
           },
           "ordered_varnames": [
             "c",

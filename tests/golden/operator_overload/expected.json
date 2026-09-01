@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -54,8 +58,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 8
+          },
+          "local_types": {
+            "a": "struct Vec2"
           },
           "ordered_varnames": [
             "a"
@@ -70,6 +80,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -93,8 +104,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 8
+          },
+          "local_types": {
+            "a": "struct Vec2"
           },
           "ordered_varnames": [
             "a"
@@ -109,6 +126,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -132,8 +150,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 8
+          },
+          "local_types": {
+            "a": "struct Vec2"
           },
           "ordered_varnames": [
             "a"
@@ -148,6 +172,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -179,9 +204,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -197,6 +230,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -228,9 +262,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -246,6 +288,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -277,9 +320,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -295,6 +346,7 @@
       "event": "call",
       "func_name": "Vec2::operator+",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -326,9 +378,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -342,7 +402,9 @@
           "func_name": "Vec2::operator+",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -354,6 +416,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator+",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -385,9 +448,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -408,8 +479,14 @@
           "func_name": "Vec2::operator+",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Vec2 &"
           },
           "ordered_varnames": [
             "o"
@@ -424,6 +501,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator+",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -455,9 +533,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -486,9 +572,17 @@
           "func_name": "Vec2::operator+",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR",
+            "r": "0xPTR"
+          },
           "local_sizes": {
             "o": 8,
             "r": 8
+          },
+          "local_types": {
+            "o": "const struct Vec2 &",
+            "r": "struct Vec2"
           },
           "ordered_varnames": [
             "o",
@@ -504,6 +598,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator+",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -535,9 +630,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -566,9 +669,17 @@
           "func_name": "Vec2::operator+",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR",
+            "r": "0xPTR"
+          },
           "local_sizes": {
             "o": 8,
             "r": 8
+          },
+          "local_types": {
+            "o": "const struct Vec2 &",
+            "r": "struct Vec2"
           },
           "ordered_varnames": [
             "o",
@@ -584,6 +695,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator+",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -615,9 +727,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -646,9 +766,17 @@
           "func_name": "Vec2::operator+",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR",
+            "r": "0xPTR"
+          },
           "local_sizes": {
             "o": 8,
             "r": 8
+          },
+          "local_types": {
+            "o": "const struct Vec2 &",
+            "r": "struct Vec2"
           },
           "ordered_varnames": [
             "o",
@@ -664,6 +792,7 @@
       "event": "return",
       "func_name": "Vec2::operator+",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -695,9 +824,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -726,9 +863,17 @@
           "func_name": "Vec2::operator+",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR",
+            "r": "0xPTR"
+          },
           "local_sizes": {
             "o": 8,
             "r": 8
+          },
+          "local_types": {
+            "o": "const struct Vec2 &",
+            "r": "struct Vec2"
           },
           "ordered_varnames": [
             "o",
@@ -744,6 +889,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -783,10 +929,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -803,6 +959,7 @@
       "event": "call",
       "func_name": "Vec2::operator+=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -842,10 +999,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -860,7 +1027,9 @@
           "func_name": "Vec2::operator+=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -872,6 +1041,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator+=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -911,10 +1081,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -936,8 +1116,14 @@
           "func_name": "Vec2::operator+=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Vec2 &"
           },
           "ordered_varnames": [
             "o"
@@ -952,6 +1138,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator+=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -991,10 +1178,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1016,8 +1213,14 @@
           "func_name": "Vec2::operator+=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Vec2 &"
           },
           "ordered_varnames": [
             "o"
@@ -1032,6 +1235,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator+=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1071,10 +1275,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1096,8 +1310,14 @@
           "func_name": "Vec2::operator+=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Vec2 &"
           },
           "ordered_varnames": [
             "o"
@@ -1112,6 +1332,7 @@
       "event": "return",
       "func_name": "Vec2::operator+=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1151,10 +1372,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1176,8 +1407,14 @@
           "func_name": "Vec2::operator+=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Vec2 &"
           },
           "ordered_varnames": [
             "o"
@@ -1192,6 +1429,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1231,10 +1469,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1251,6 +1499,7 @@
       "event": "call",
       "func_name": "Vec2::operator++",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1290,10 +1539,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1308,7 +1567,9 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1320,6 +1581,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator++",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1359,10 +1621,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1377,7 +1649,9 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1389,6 +1663,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator++",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1428,10 +1703,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1446,7 +1731,9 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1458,6 +1745,7 @@
       "event": "return",
       "func_name": "Vec2::operator++",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1497,10 +1785,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1515,7 +1813,9 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1527,6 +1827,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1566,10 +1867,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1586,6 +1897,7 @@
       "event": "call",
       "func_name": "Vec2::operator++",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1625,10 +1937,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1643,7 +1965,9 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1655,6 +1979,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator++",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1694,10 +2019,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1721,8 +2056,14 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "copy": "0xPTR"
+          },
           "local_sizes": {
             "copy": 8
+          },
+          "local_types": {
+            "copy": "struct Vec2"
           },
           "ordered_varnames": [
             "copy"
@@ -1737,6 +2078,7 @@
       "event": "call",
       "func_name": "Vec2::operator++",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1776,10 +2118,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1803,8 +2155,14 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "copy": "0xPTR"
+          },
           "local_sizes": {
             "copy": 8
+          },
+          "local_types": {
+            "copy": "struct Vec2"
           },
           "ordered_varnames": [
             "copy"
@@ -1817,7 +2175,9 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1829,6 +2189,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator++",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1868,10 +2229,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1895,8 +2266,14 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "copy": "0xPTR"
+          },
           "local_sizes": {
             "copy": 8
+          },
+          "local_types": {
+            "copy": "struct Vec2"
           },
           "ordered_varnames": [
             "copy"
@@ -1909,7 +2286,9 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1921,6 +2300,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator++",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1960,10 +2340,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -1987,8 +2377,14 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "copy": "0xPTR"
+          },
           "local_sizes": {
             "copy": 8
+          },
+          "local_types": {
+            "copy": "struct Vec2"
           },
           "ordered_varnames": [
             "copy"
@@ -2001,7 +2397,9 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2013,6 +2411,7 @@
       "event": "return",
       "func_name": "Vec2::operator++",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2052,10 +2451,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -2079,8 +2488,14 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "copy": "0xPTR"
+          },
           "local_sizes": {
             "copy": 8
+          },
+          "local_types": {
+            "copy": "struct Vec2"
           },
           "ordered_varnames": [
             "copy"
@@ -2093,7 +2508,9 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2105,6 +2522,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator++",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2144,10 +2562,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -2171,8 +2599,14 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "copy": "0xPTR"
+          },
           "local_sizes": {
             "copy": 8
+          },
+          "local_types": {
+            "copy": "struct Vec2"
           },
           "ordered_varnames": [
             "copy"
@@ -2187,6 +2621,7 @@
       "event": "return",
       "func_name": "Vec2::operator++",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2226,10 +2661,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -2253,8 +2698,14 @@
           "func_name": "Vec2::operator++",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "copy": "0xPTR"
+          },
           "local_sizes": {
             "copy": 8
+          },
+          "local_types": {
+            "copy": "struct Vec2"
           },
           "ordered_varnames": [
             "copy"
@@ -2269,6 +2720,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2316,11 +2768,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "prev": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8,
             "prev": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2",
+            "prev": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -2338,6 +2802,7 @@
       "event": "call",
       "func_name": "operator-",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2385,11 +2850,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "prev": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8,
             "prev": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2",
+            "prev": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -2405,7 +2882,9 @@
           "func_name": "operator-",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2417,6 +2896,7 @@
       "event": "step_line",
       "func_name": "operator-",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2464,11 +2944,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "prev": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8,
             "prev": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2",
+            "prev": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -2491,8 +2983,14 @@
           "func_name": "operator-",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "v": 8
+          },
+          "local_types": {
+            "v": "const struct Vec2 &"
           },
           "ordered_varnames": [
             "v"
@@ -2507,6 +3005,7 @@
       "event": "step_line",
       "func_name": "operator-",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2554,11 +3053,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "prev": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8,
             "prev": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2",
+            "prev": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -2589,9 +3100,17 @@
           "func_name": "operator-",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "r": "0xPTR",
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "r": 8,
             "v": 8
+          },
+          "local_types": {
+            "r": "struct Vec2",
+            "v": "const struct Vec2 &"
           },
           "ordered_varnames": [
             "v",
@@ -2607,6 +3126,7 @@
       "event": "step_line",
       "func_name": "operator-",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2654,11 +3174,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "prev": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8,
             "prev": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2",
+            "prev": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -2689,9 +3221,17 @@
           "func_name": "operator-",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "r": "0xPTR",
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "r": 8,
             "v": 8
+          },
+          "local_types": {
+            "r": "struct Vec2",
+            "v": "const struct Vec2 &"
           },
           "ordered_varnames": [
             "v",
@@ -2707,6 +3247,7 @@
       "event": "step_line",
       "func_name": "operator-",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2754,11 +3295,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "prev": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8,
             "prev": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2",
+            "prev": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -2789,9 +3342,17 @@
           "func_name": "operator-",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "r": "0xPTR",
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "r": 8,
             "v": 8
+          },
+          "local_types": {
+            "r": "struct Vec2",
+            "v": "const struct Vec2 &"
           },
           "ordered_varnames": [
             "v",
@@ -2807,6 +3368,7 @@
       "event": "return",
       "func_name": "operator-",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2854,11 +3416,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "prev": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8,
             "prev": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2",
+            "prev": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -2889,9 +3463,17 @@
           "func_name": "operator-",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "r": "0xPTR",
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "r": 8,
             "v": 8
+          },
+          "local_types": {
+            "r": "struct Vec2",
+            "v": "const struct Vec2 &"
           },
           "ordered_varnames": [
             "v",
@@ -2907,6 +3489,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2962,12 +3545,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "neg": "0xPTR",
+            "prev": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8,
             "neg": 8,
             "prev": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2",
+            "neg": "struct Vec2",
+            "prev": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -2986,6 +3583,7 @@
       "event": "call",
       "func_name": "Vec2::operator==",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3041,12 +3639,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "neg": "0xPTR",
+            "prev": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8,
             "neg": 8,
             "prev": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2",
+            "neg": "struct Vec2",
+            "prev": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -3063,7 +3675,9 @@
           "func_name": "Vec2::operator==",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3075,6 +3689,7 @@
       "event": "step_line",
       "func_name": "Vec2::operator==",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3130,12 +3745,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "neg": "0xPTR",
+            "prev": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8,
             "neg": 8,
             "prev": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2",
+            "neg": "struct Vec2",
+            "prev": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -3159,8 +3788,14 @@
           "func_name": "Vec2::operator==",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Vec2 &"
           },
           "ordered_varnames": [
             "o"
@@ -3175,6 +3810,7 @@
       "event": "return",
       "func_name": "Vec2::operator==",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3231,12 +3867,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "neg": "0xPTR",
+            "prev": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
             "c": 8,
             "neg": 8,
             "prev": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2",
+            "neg": "struct Vec2",
+            "prev": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -3260,8 +3910,14 @@
           "func_name": "Vec2::operator==",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Vec2 &"
           },
           "ordered_varnames": [
             "o"
@@ -3276,6 +3932,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3332,6 +3989,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "eq": "0xPTR",
+            "neg": "0xPTR",
+            "prev": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
@@ -3339,6 +4004,14 @@
             "eq": 1,
             "neg": 8,
             "prev": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2",
+            "eq": "bool",
+            "neg": "struct Vec2",
+            "prev": "struct Vec2"
           },
           "ordered_varnames": [
             "a",
@@ -3358,6 +4031,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3415,6 +4089,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "eq": "0xPTR",
+            "neg": "0xPTR",
+            "prev": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "b": 8,
@@ -3422,6 +4104,14 @@
             "eq": 1,
             "neg": 8,
             "prev": 8
+          },
+          "local_types": {
+            "a": "struct Vec2",
+            "b": "struct Vec2",
+            "c": "struct Vec2",
+            "eq": "bool",
+            "neg": "struct Vec2",
+            "prev": "struct Vec2"
           },
           "ordered_varnames": [
             "a",

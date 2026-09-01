@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "call",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -46,7 +50,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -56,7 +62,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -68,6 +76,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -82,7 +91,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -92,7 +103,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -104,6 +117,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -118,7 +132,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -128,7 +144,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -140,6 +158,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -154,7 +173,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -164,7 +185,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -176,6 +199,7 @@
       "event": "return",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -190,7 +214,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -200,7 +226,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -212,6 +240,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -236,8 +265,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 12
+          },
+          "local_types": {
+            "a": "struct Tracer"
           },
           "ordered_varnames": [
             "a"
@@ -252,6 +287,7 @@
       "event": "call",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -277,8 +313,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 12
+          },
+          "local_types": {
+            "a": "struct Tracer"
           },
           "ordered_varnames": [
             "a"
@@ -291,7 +333,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -303,6 +347,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -327,8 +372,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 12
+          },
+          "local_types": {
+            "a": "struct Tracer"
           },
           "ordered_varnames": [
             "a"
@@ -341,7 +392,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -353,6 +406,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -377,8 +431,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 12
+          },
+          "local_types": {
+            "a": "struct Tracer"
           },
           "ordered_varnames": [
             "a"
@@ -391,7 +451,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -403,6 +465,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -427,8 +490,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 12
+          },
+          "local_types": {
+            "a": "struct Tracer"
           },
           "ordered_varnames": [
             "a"
@@ -441,7 +510,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -453,6 +524,7 @@
       "event": "return",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -477,8 +549,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 12
+          },
+          "local_types": {
+            "a": "struct Tracer"
           },
           "ordered_varnames": [
             "a"
@@ -491,7 +569,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -503,6 +583,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -536,9 +617,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -554,6 +643,7 @@
       "event": "call",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -588,9 +678,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -604,7 +702,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -616,6 +716,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -649,9 +750,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -665,7 +774,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -677,6 +788,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -710,9 +822,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -726,7 +846,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -738,6 +860,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -771,9 +894,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -787,7 +918,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -799,6 +932,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -832,9 +966,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -848,7 +990,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -860,6 +1004,7 @@
       "event": "return",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -893,9 +1038,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -909,7 +1062,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -921,6 +1076,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -963,10 +1119,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -983,6 +1149,7 @@
       "event": "call",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1026,10 +1193,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -1044,7 +1221,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1056,6 +1235,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1098,10 +1278,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -1116,7 +1306,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1128,6 +1320,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1170,10 +1363,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -1188,7 +1391,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1200,6 +1405,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1242,10 +1448,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -1260,7 +1476,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1272,6 +1490,7 @@
       "event": "return",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1314,10 +1533,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -1332,7 +1561,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1344,6 +1575,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1395,11 +1627,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -1417,6 +1661,7 @@
       "event": "call",
       "func_name": "Tracer::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1469,11 +1714,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -1489,7 +1746,9 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1501,6 +1760,7 @@
       "event": "step_line",
       "func_name": "Tracer::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1552,11 +1812,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -1579,8 +1851,14 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Tracer &"
           },
           "ordered_varnames": [
             "o"
@@ -1595,6 +1873,7 @@
       "event": "step_line",
       "func_name": "Tracer::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1646,11 +1925,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -1673,8 +1964,14 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Tracer &"
           },
           "ordered_varnames": [
             "o"
@@ -1689,6 +1986,7 @@
       "event": "step_line",
       "func_name": "Tracer::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1740,11 +2038,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -1767,8 +2077,14 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Tracer &"
           },
           "ordered_varnames": [
             "o"
@@ -1783,6 +2099,7 @@
       "event": "return",
       "func_name": "Tracer::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1834,11 +2151,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -1861,8 +2190,14 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Tracer &"
           },
           "ordered_varnames": [
             "o"
@@ -1877,6 +2212,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1928,11 +2264,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -1950,6 +2298,7 @@
       "event": "call",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2002,11 +2351,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -2022,7 +2383,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2034,6 +2397,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2085,11 +2449,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -2105,7 +2481,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2117,6 +2495,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2168,11 +2547,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -2188,7 +2579,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2200,6 +2593,7 @@
       "event": "step_line",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2251,11 +2645,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -2271,7 +2677,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2283,6 +2691,7 @@
       "event": "return",
       "func_name": "Tracer::Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2334,11 +2743,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -2354,7 +2775,9 @@
           "func_name": "Tracer::Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2366,6 +2789,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2426,12 +2850,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12,
             "e": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer",
+            "e": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -2450,6 +2888,7 @@
       "event": "call",
       "func_name": "Tracer::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2511,12 +2950,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12,
             "e": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer",
+            "e": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -2533,7 +2986,9 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2545,6 +3000,7 @@
       "event": "step_line",
       "func_name": "Tracer::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2605,12 +3061,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12,
             "e": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer",
+            "e": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -2634,8 +3104,14 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "struct Tracer &&"
           },
           "ordered_varnames": [
             "o"
@@ -2650,6 +3126,7 @@
       "event": "step_line",
       "func_name": "Tracer::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2710,12 +3187,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12,
             "e": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer",
+            "e": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -2739,8 +3230,14 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "struct Tracer &&"
           },
           "ordered_varnames": [
             "o"
@@ -2755,6 +3252,7 @@
       "event": "step_line",
       "func_name": "Tracer::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2815,12 +3313,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12,
             "e": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer",
+            "e": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -2844,8 +3356,14 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "struct Tracer &&"
           },
           "ordered_varnames": [
             "o"
@@ -2860,6 +3378,7 @@
       "event": "step_line",
       "func_name": "Tracer::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2920,12 +3439,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12,
             "e": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer",
+            "e": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -2949,8 +3482,14 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "struct Tracer &&"
           },
           "ordered_varnames": [
             "o"
@@ -2965,6 +3504,7 @@
       "event": "return",
       "func_name": "Tracer::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3025,12 +3565,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12,
             "e": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer",
+            "e": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -3054,8 +3608,14 @@
           "func_name": "Tracer::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "struct Tracer &&"
           },
           "ordered_varnames": [
             "o"
@@ -3070,6 +3630,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3130,12 +3691,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12,
             "e": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer",
+            "e": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -3154,6 +3729,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3215,12 +3791,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 12,
             "b": 12,
             "c": 12,
             "d": 12,
             "e": 12
+          },
+          "local_types": {
+            "a": "struct Tracer",
+            "b": "struct Tracer",
+            "c": "struct Tracer",
+            "d": "struct Tracer",
+            "e": "struct Tracer"
           },
           "ordered_varnames": [
             "a",
@@ -3239,6 +3829,7 @@
       "event": "call",
       "func_name": "Tracer::~Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3254,7 +3845,9 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3266,6 +3859,7 @@
       "event": "return",
       "func_name": "Tracer::~Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3280,7 +3874,9 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3292,6 +3888,7 @@
       "event": "call",
       "func_name": "Tracer::~Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3307,7 +3904,9 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3319,6 +3918,7 @@
       "event": "return",
       "func_name": "Tracer::~Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3333,7 +3933,9 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3345,6 +3947,7 @@
       "event": "call",
       "func_name": "Tracer::~Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3360,7 +3963,9 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3372,6 +3977,7 @@
       "event": "return",
       "func_name": "Tracer::~Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3386,7 +3992,9 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3398,6 +4006,7 @@
       "event": "call",
       "func_name": "Tracer::~Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3413,7 +4022,9 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3425,6 +4036,7 @@
       "event": "return",
       "func_name": "Tracer::~Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3439,7 +4051,9 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3451,6 +4065,7 @@
       "event": "call",
       "func_name": "Tracer::~Tracer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3466,7 +4081,9 @@
           "func_name": "Tracer::~Tracer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }

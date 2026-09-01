@@ -29,6 +29,12 @@
 	// Counts for section labels
 	const stackCount = $derived(step?.stack_to_render.length ?? 0);
 	const heapCount = $derived(step ? Object.keys(step.heap).length : 0);
+
+	// The stack table needs real width for its name/type/value/address columns.
+	// With nothing on the heap, that panel only shows an empty-state, so hand
+	// the space to the stack instead; otherwise keep the stack at a width that
+	// fits the table and let the heap graph take the remainder.
+	const vizColumns = $derived(heapCount === 0 ? '1fr 280px' : '460px 1fr');
 </script>
 
 <section class="h-full flex flex-col bg-white dark:bg-islands-900" data-testid="viz-pane">
@@ -119,7 +125,7 @@
 			</div>
 		{:else if hasTrace && step}
 			<!-- Stack and Heap panels (z-0 so arrows render on top) -->
-			<div class="grid h-full min-h-0 w-full z-0" style="grid-template-columns: 260px 1fr">
+			<div class="grid h-full min-h-0 w-full z-0" style="grid-template-columns: {vizColumns}">
 				<!-- Stack panel -->
 				<div class="flex min-h-0 min-w-0 flex-col overflow-auto border-r border-line bg-white dark:bg-islands-800/50">
 					<div class="flex items-center justify-between px-3 py-2 text-[11px] font-medium uppercase tracking-wider text-islands-500 dark:text-islands-400 border-b border-line bg-islands-50 dark:bg-islands-800">

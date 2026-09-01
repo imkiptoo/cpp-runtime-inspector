@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "call",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -46,7 +50,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -56,7 +62,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -68,6 +76,7 @@
       "event": "step_line",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -82,7 +91,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -92,7 +103,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -104,6 +117,7 @@
       "event": "return",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -118,7 +132,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -128,7 +144,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -140,6 +158,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -162,8 +181,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 4
+          },
+          "local_types": {
+            "a": "struct Widget"
           },
           "ordered_varnames": [
             "a"
@@ -178,6 +203,7 @@
       "event": "call",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -201,8 +227,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 4
+          },
+          "local_types": {
+            "a": "struct Widget"
           },
           "ordered_varnames": [
             "a"
@@ -215,7 +247,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -227,6 +261,7 @@
       "event": "step_line",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -249,8 +284,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 4
+          },
+          "local_types": {
+            "a": "struct Widget"
           },
           "ordered_varnames": [
             "a"
@@ -263,7 +304,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -275,6 +318,7 @@
       "event": "return",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -297,8 +341,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 4
+          },
+          "local_types": {
+            "a": "struct Widget"
           },
           "ordered_varnames": [
             "a"
@@ -311,7 +361,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -323,6 +375,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -352,9 +405,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -370,6 +431,7 @@
       "event": "call",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -400,9 +462,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -416,7 +486,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -428,6 +500,7 @@
       "event": "step_line",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -457,9 +530,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -473,7 +554,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -485,6 +568,7 @@
       "event": "step_line",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -514,9 +598,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -530,7 +622,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -542,6 +636,7 @@
       "event": "return",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -571,9 +666,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -587,7 +690,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -599,6 +704,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -635,10 +741,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -655,6 +771,7 @@
       "event": "call",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -692,10 +809,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -710,7 +837,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -722,6 +851,7 @@
       "event": "step_line",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -758,10 +888,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -776,7 +916,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -788,6 +930,7 @@
       "event": "return",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -824,10 +967,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -842,7 +995,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -854,6 +1009,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -897,11 +1053,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -919,6 +1087,7 @@
       "event": "call",
       "func_name": "Widget::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -963,11 +1132,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -983,7 +1164,9 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -995,6 +1178,7 @@
       "event": "step_line",
       "func_name": "Widget::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1038,11 +1222,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -1065,8 +1261,14 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "other": "0xPTR"
+          },
           "local_sizes": {
             "other": 8
+          },
+          "local_types": {
+            "other": "const struct Widget &"
           },
           "ordered_varnames": [
             "other"
@@ -1081,6 +1283,7 @@
       "event": "step_line",
       "func_name": "Widget::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1124,11 +1327,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -1151,8 +1366,14 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "other": "0xPTR"
+          },
           "local_sizes": {
             "other": 8
+          },
+          "local_types": {
+            "other": "const struct Widget &"
           },
           "ordered_varnames": [
             "other"
@@ -1167,6 +1388,7 @@
       "event": "return",
       "func_name": "Widget::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1210,11 +1432,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -1237,8 +1471,14 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "other": "0xPTR"
+          },
           "local_sizes": {
             "other": 8
+          },
+          "local_types": {
+            "other": "const struct Widget &"
           },
           "ordered_varnames": [
             "other"
@@ -1253,6 +1493,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1296,11 +1537,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -1318,6 +1571,7 @@
       "event": "call",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1362,11 +1616,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -1382,7 +1648,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1394,6 +1662,7 @@
       "event": "step_line",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1437,11 +1706,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -1457,7 +1738,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1469,6 +1752,7 @@
       "event": "return",
       "func_name": "Widget::Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1512,11 +1796,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -1532,7 +1828,9 @@
           "func_name": "Widget::Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1544,6 +1842,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1594,12 +1893,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4,
             "e": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget",
+            "e": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -1618,6 +1931,7 @@
       "event": "call",
       "func_name": "Widget::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1669,12 +1983,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4,
             "e": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget",
+            "e": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -1691,7 +2019,9 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1703,6 +2033,7 @@
       "event": "step_line",
       "func_name": "Widget::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1753,12 +2084,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4,
             "e": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget",
+            "e": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -1782,8 +2127,14 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "other": "0xPTR"
+          },
           "local_sizes": {
             "other": 8
+          },
+          "local_types": {
+            "other": "struct Widget &&"
           },
           "ordered_varnames": [
             "other"
@@ -1798,6 +2149,7 @@
       "event": "step_line",
       "func_name": "Widget::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1848,12 +2200,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4,
             "e": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget",
+            "e": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -1877,8 +2243,14 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "other": "0xPTR"
+          },
           "local_sizes": {
             "other": 8
+          },
+          "local_types": {
+            "other": "struct Widget &&"
           },
           "ordered_varnames": [
             "other"
@@ -1893,6 +2265,7 @@
       "event": "step_line",
       "func_name": "Widget::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1943,12 +2316,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4,
             "e": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget",
+            "e": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -1972,8 +2359,14 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "other": "0xPTR"
+          },
           "local_sizes": {
             "other": 8
+          },
+          "local_types": {
+            "other": "struct Widget &&"
           },
           "ordered_varnames": [
             "other"
@@ -1988,6 +2381,7 @@
       "event": "return",
       "func_name": "Widget::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2038,12 +2432,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4,
             "e": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget",
+            "e": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -2067,8 +2475,14 @@
           "func_name": "Widget::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "other": "0xPTR"
+          },
           "local_sizes": {
             "other": 8
+          },
+          "local_types": {
+            "other": "struct Widget &&"
           },
           "ordered_varnames": [
             "other"
@@ -2083,6 +2497,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2133,12 +2548,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4,
             "e": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget",
+            "e": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -2157,6 +2586,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2208,12 +2638,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "e": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4,
             "d": 4,
             "e": 4
+          },
+          "local_types": {
+            "a": "struct Widget",
+            "b": "struct Widget",
+            "c": "struct Widget",
+            "d": "struct Widget",
+            "e": "struct Widget"
           },
           "ordered_varnames": [
             "a",
@@ -2232,6 +2676,7 @@
       "event": "call",
       "func_name": "Widget::~Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2247,7 +2692,9 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2259,6 +2706,7 @@
       "event": "return",
       "func_name": "Widget::~Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2273,7 +2721,9 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2285,6 +2735,7 @@
       "event": "call",
       "func_name": "Widget::~Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2300,7 +2751,9 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2312,6 +2765,7 @@
       "event": "return",
       "func_name": "Widget::~Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2326,7 +2780,9 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2338,6 +2794,7 @@
       "event": "call",
       "func_name": "Widget::~Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2353,7 +2810,9 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2365,6 +2824,7 @@
       "event": "return",
       "func_name": "Widget::~Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2379,7 +2839,9 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2391,6 +2853,7 @@
       "event": "call",
       "func_name": "Widget::~Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2406,7 +2869,9 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2418,6 +2883,7 @@
       "event": "return",
       "func_name": "Widget::~Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2432,7 +2898,9 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2444,6 +2912,7 @@
       "event": "call",
       "func_name": "Widget::~Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2459,7 +2928,9 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2471,6 +2942,7 @@
       "event": "return",
       "func_name": "Widget::~Widget",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2485,7 +2957,9 @@
           "func_name": "Widget::~Widget",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }

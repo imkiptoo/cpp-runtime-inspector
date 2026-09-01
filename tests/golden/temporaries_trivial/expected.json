@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "call",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -45,7 +49,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -55,7 +61,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -67,6 +75,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -81,7 +90,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -91,7 +102,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -103,6 +116,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -117,7 +131,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -127,7 +143,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -139,6 +157,7 @@
       "event": "return",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -153,7 +172,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -163,7 +184,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -175,6 +198,7 @@
       "event": "call",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -189,7 +213,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -199,7 +225,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -211,6 +239,7 @@
       "event": "return",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -226,7 +255,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -236,7 +267,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -248,6 +281,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -262,7 +296,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -274,6 +310,7 @@
       "event": "call",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -288,7 +325,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -298,7 +337,9 @@
           "func_name": "Minimal::Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -310,6 +351,7 @@
       "event": "step_line",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -324,7 +366,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -334,7 +378,9 @@
           "func_name": "Minimal::Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -346,6 +392,7 @@
       "event": "return",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -360,7 +407,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -370,7 +419,9 @@
           "func_name": "Minimal::Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -382,6 +433,7 @@
       "event": "call",
       "func_name": "Minimal::get",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -396,7 +448,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -406,7 +460,9 @@
           "func_name": "Minimal::get",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -418,6 +474,7 @@
       "event": "return",
       "func_name": "Minimal::get",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -433,7 +490,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -443,7 +502,9 @@
           "func_name": "Minimal::get",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -455,6 +516,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -469,7 +531,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -481,6 +545,7 @@
       "event": "call",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -496,7 +561,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -507,7 +574,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -519,6 +588,7 @@
       "event": "return",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -534,7 +604,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -545,7 +617,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -557,6 +631,7 @@
       "event": "call",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -572,7 +647,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -582,7 +659,9 @@
           "func_name": "Minimal::~Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -594,6 +673,7 @@
       "event": "return",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -608,7 +688,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -618,7 +700,9 @@
           "func_name": "Minimal::~Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -630,6 +714,7 @@
       "event": "call",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -644,7 +729,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -654,7 +741,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -666,6 +755,7 @@
       "event": "step_line",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -680,7 +770,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -690,7 +782,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -702,6 +796,7 @@
       "event": "step_line",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -716,7 +811,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -726,7 +823,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -738,6 +837,7 @@
       "event": "step_line",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -752,7 +852,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -762,7 +864,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -774,6 +878,7 @@
       "event": "return",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -788,7 +893,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -798,7 +905,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -810,6 +919,7 @@
       "event": "call",
       "func_name": "PodLike::total",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -824,7 +934,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -834,7 +946,9 @@
           "func_name": "PodLike::total",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -846,6 +960,7 @@
       "event": "return",
       "func_name": "PodLike::total",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -861,7 +976,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -871,7 +988,9 @@
           "func_name": "PodLike::total",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -883,6 +1002,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -897,7 +1017,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -909,6 +1031,7 @@
       "event": "call",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -924,7 +1047,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -935,7 +1060,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -947,6 +1074,7 @@
       "event": "return",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -962,7 +1090,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -973,7 +1103,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -985,6 +1117,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -999,7 +1132,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1011,6 +1146,7 @@
       "event": "call",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1026,7 +1162,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1038,6 +1176,7 @@
       "event": "call",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1052,7 +1191,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1062,7 +1203,9 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1074,6 +1217,7 @@
       "event": "step_line",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1088,7 +1232,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1100,8 +1246,14 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 4
+          },
+          "local_types": {
+            "a": "int"
           },
           "ordered_varnames": [
             "a"
@@ -1116,6 +1268,7 @@
       "event": "step_line",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1130,7 +1283,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1143,9 +1298,17 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int"
           },
           "ordered_varnames": [
             "a",
@@ -1161,6 +1324,7 @@
       "event": "return",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1175,7 +1339,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1188,9 +1354,17 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int"
           },
           "ordered_varnames": [
             "a",
@@ -1206,6 +1380,7 @@
       "event": "call",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1220,7 +1395,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1230,7 +1407,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1242,6 +1421,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1256,7 +1436,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1266,7 +1448,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1278,6 +1462,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1292,7 +1477,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1302,7 +1489,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1314,6 +1503,7 @@
       "event": "return",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1328,7 +1518,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1338,7 +1530,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1350,6 +1544,7 @@
       "event": "call",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1364,7 +1559,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1374,7 +1571,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1386,6 +1585,7 @@
       "event": "return",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1401,7 +1601,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1411,7 +1613,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1423,6 +1627,7 @@
       "event": "step_line",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1437,7 +1642,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1449,6 +1656,7 @@
       "event": "call",
       "func_name": "makeMinimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1463,7 +1671,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1473,7 +1683,9 @@
           "func_name": "makeMinimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1485,6 +1697,7 @@
       "event": "step_line",
       "func_name": "makeMinimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1499,7 +1712,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1511,8 +1726,14 @@
           "func_name": "makeMinimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "v": 4
+          },
+          "local_types": {
+            "v": "int"
           },
           "ordered_varnames": [
             "v"
@@ -1527,6 +1748,7 @@
       "event": "return",
       "func_name": "makeMinimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1541,7 +1763,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1553,8 +1777,14 @@
           "func_name": "makeMinimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "v": 4
+          },
+          "local_types": {
+            "v": "int"
           },
           "ordered_varnames": [
             "v"
@@ -1569,6 +1799,7 @@
       "event": "call",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1583,7 +1814,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1593,7 +1826,9 @@
           "func_name": "Minimal::Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1605,6 +1840,7 @@
       "event": "step_line",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1619,7 +1855,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1629,7 +1867,9 @@
           "func_name": "Minimal::Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1641,6 +1881,7 @@
       "event": "return",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1655,7 +1896,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1665,7 +1908,9 @@
           "func_name": "Minimal::Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1677,6 +1922,7 @@
       "event": "call",
       "func_name": "Minimal::get",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1691,7 +1937,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1701,7 +1949,9 @@
           "func_name": "Minimal::get",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1713,6 +1963,7 @@
       "event": "return",
       "func_name": "Minimal::get",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1728,7 +1979,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1738,7 +1991,9 @@
           "func_name": "Minimal::get",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1750,6 +2005,7 @@
       "event": "step_line",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1764,7 +2020,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1776,6 +2034,7 @@
       "event": "call",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1791,7 +2050,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1802,7 +2063,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1814,6 +2077,7 @@
       "event": "return",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1829,7 +2093,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1840,7 +2106,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1852,6 +2120,7 @@
       "event": "call",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1867,7 +2136,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1877,7 +2148,9 @@
           "func_name": "Minimal::~Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1889,6 +2162,7 @@
       "event": "return",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1903,7 +2177,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1913,7 +2189,9 @@
           "func_name": "Minimal::~Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1925,6 +2203,7 @@
       "event": "call",
       "func_name": "makePod",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1939,7 +2218,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1949,7 +2230,9 @@
           "func_name": "makePod",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1961,6 +2244,7 @@
       "event": "step_line",
       "func_name": "makePod",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1975,7 +2259,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1987,8 +2273,14 @@
           "func_name": "makePod",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 4
+          },
+          "local_types": {
+            "a": "int"
           },
           "ordered_varnames": [
             "a"
@@ -2003,6 +2295,7 @@
       "event": "step_line",
       "func_name": "makePod",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2017,7 +2310,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2030,9 +2325,17 @@
           "func_name": "makePod",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int"
           },
           "ordered_varnames": [
             "a",
@@ -2048,6 +2351,7 @@
       "event": "step_line",
       "func_name": "makePod",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2062,7 +2366,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2076,10 +2382,20 @@
           "func_name": "makePod",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int",
+            "c": "int"
           },
           "ordered_varnames": [
             "a",
@@ -2096,6 +2412,7 @@
       "event": "return",
       "func_name": "makePod",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2110,7 +2427,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2124,10 +2443,20 @@
           "func_name": "makePod",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int",
+            "c": "int"
           },
           "ordered_varnames": [
             "a",
@@ -2144,6 +2473,7 @@
       "event": "call",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2158,7 +2488,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2168,7 +2500,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2180,6 +2514,7 @@
       "event": "step_line",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2194,7 +2529,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2204,7 +2541,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2216,6 +2555,7 @@
       "event": "step_line",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2230,7 +2570,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2240,7 +2582,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2252,6 +2596,7 @@
       "event": "step_line",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2266,7 +2611,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2276,7 +2623,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2288,6 +2637,7 @@
       "event": "return",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2302,7 +2652,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2312,7 +2664,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2324,6 +2678,7 @@
       "event": "call",
       "func_name": "PodLike::total",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2338,7 +2693,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2348,7 +2705,9 @@
           "func_name": "PodLike::total",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2360,6 +2719,7 @@
       "event": "return",
       "func_name": "PodLike::total",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2375,7 +2735,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2385,7 +2747,9 @@
           "func_name": "PodLike::total",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2397,6 +2761,7 @@
       "event": "step_line",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2411,7 +2776,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2423,6 +2790,7 @@
       "event": "call",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2438,7 +2806,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2449,7 +2819,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2461,6 +2833,7 @@
       "event": "return",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2476,7 +2849,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2487,7 +2862,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2499,6 +2876,7 @@
       "event": "return",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2513,7 +2891,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2525,6 +2905,7 @@
       "event": "call",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2540,7 +2921,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2552,6 +2935,7 @@
       "event": "call",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2566,7 +2950,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2576,7 +2962,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2588,6 +2976,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2602,7 +2991,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2612,7 +3003,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2624,6 +3017,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2638,7 +3032,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2648,7 +3044,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2660,6 +3058,7 @@
       "event": "return",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2674,7 +3073,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2684,7 +3085,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2696,6 +3099,7 @@
       "event": "call",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2710,7 +3114,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2720,7 +3126,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2732,6 +3140,7 @@
       "event": "return",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2747,7 +3156,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2757,7 +3168,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2769,6 +3182,7 @@
       "event": "call",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2783,7 +3197,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2793,7 +3209,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2805,6 +3223,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2819,7 +3238,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2829,7 +3250,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2841,6 +3264,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2855,7 +3279,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2865,7 +3291,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2877,6 +3305,7 @@
       "event": "return",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2891,7 +3320,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2901,7 +3332,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2913,6 +3346,7 @@
       "event": "call",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2927,7 +3361,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2937,7 +3373,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2949,6 +3387,7 @@
       "event": "return",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2964,7 +3403,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -2974,7 +3415,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2986,6 +3429,7 @@
       "event": "step_line",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3000,7 +3444,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3012,6 +3458,7 @@
       "event": "call",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3026,7 +3473,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3036,7 +3485,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3048,6 +3499,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3062,7 +3514,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3072,7 +3526,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3084,6 +3540,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3098,7 +3555,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3108,7 +3567,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3120,6 +3581,7 @@
       "event": "return",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3134,7 +3596,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3144,7 +3608,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3156,6 +3622,7 @@
       "event": "call",
       "func_name": "Outer::Outer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3170,7 +3637,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3180,7 +3649,9 @@
           "func_name": "Outer::Outer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3192,6 +3663,7 @@
       "event": "return",
       "func_name": "Outer::Outer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3206,7 +3678,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3216,7 +3690,9 @@
           "func_name": "Outer::Outer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3228,6 +3704,7 @@
       "event": "call",
       "func_name": "Outer::getSum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3242,7 +3719,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3252,7 +3731,9 @@
           "func_name": "Outer::getSum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3264,6 +3745,7 @@
       "event": "call",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3278,7 +3760,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3288,7 +3772,9 @@
           "func_name": "Outer::getSum",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3298,7 +3784,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3310,6 +3798,7 @@
       "event": "return",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3325,7 +3814,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3335,7 +3826,9 @@
           "func_name": "Outer::getSum",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3345,7 +3838,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3357,6 +3852,7 @@
       "event": "return",
       "func_name": "Outer::getSum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3372,7 +3868,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3382,7 +3880,9 @@
           "func_name": "Outer::getSum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3394,6 +3894,7 @@
       "event": "step_line",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3408,7 +3909,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3420,6 +3923,7 @@
       "event": "call",
       "func_name": "Outer::~Outer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3435,7 +3939,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3446,7 +3952,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3458,6 +3966,7 @@
       "event": "return",
       "func_name": "Outer::~Outer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3473,7 +3982,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3484,7 +3995,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3496,6 +4009,7 @@
       "event": "return",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3510,7 +4024,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3522,6 +4038,7 @@
       "event": "call",
       "func_name": "Outer::~Outer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3537,7 +4054,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3549,6 +4068,7 @@
       "event": "call",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3563,7 +4083,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3573,7 +4095,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3585,6 +4109,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3599,7 +4124,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3609,7 +4136,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3621,6 +4150,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3635,7 +4165,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3645,7 +4177,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3657,6 +4191,7 @@
       "event": "return",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3671,7 +4206,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3681,7 +4218,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3693,6 +4232,7 @@
       "event": "call",
       "func_name": "consumeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3707,7 +4247,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3717,7 +4259,9 @@
           "func_name": "consumeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3729,6 +4273,7 @@
       "event": "step_line",
       "func_name": "consumeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3743,7 +4288,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3762,8 +4309,14 @@
           "func_name": "consumeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "t": 8
+          },
+          "local_types": {
+            "t": "struct Trivial"
           },
           "ordered_varnames": [
             "t"
@@ -3778,6 +4331,7 @@
       "event": "call",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3792,7 +4346,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3811,8 +4367,14 @@
           "func_name": "consumeTrivial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "t": 8
+          },
+          "local_types": {
+            "t": "struct Trivial"
           },
           "ordered_varnames": [
             "t"
@@ -3825,7 +4387,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3837,6 +4401,7 @@
       "event": "return",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3852,7 +4417,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3871,8 +4438,14 @@
           "func_name": "consumeTrivial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "t": 8
+          },
+          "local_types": {
+            "t": "struct Trivial"
           },
           "ordered_varnames": [
             "t"
@@ -3885,7 +4458,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3897,6 +4472,7 @@
       "event": "return",
       "func_name": "consumeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3912,7 +4488,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3931,8 +4509,14 @@
           "func_name": "consumeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "t": 8
+          },
+          "local_types": {
+            "t": "struct Trivial"
           },
           "ordered_varnames": [
             "t"
@@ -3947,6 +4531,7 @@
       "event": "step_line",
       "func_name": "Outer::~Outer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3961,7 +4546,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3973,6 +4560,7 @@
       "event": "call",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3987,7 +4575,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -3997,7 +4587,9 @@
           "func_name": "Minimal::Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4009,6 +4601,7 @@
       "event": "step_line",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4023,7 +4616,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4033,7 +4628,9 @@
           "func_name": "Minimal::Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4045,6 +4642,7 @@
       "event": "return",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4059,7 +4657,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4069,7 +4669,9 @@
           "func_name": "Minimal::Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4081,6 +4683,7 @@
       "event": "call",
       "func_name": "consumeMinimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4095,7 +4698,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4105,7 +4710,9 @@
           "func_name": "consumeMinimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4117,6 +4724,7 @@
       "event": "step_line",
       "func_name": "consumeMinimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4131,7 +4739,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4149,8 +4759,14 @@
           "func_name": "consumeMinimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "m": "0xPTR"
+          },
           "local_sizes": {
             "m": 4
+          },
+          "local_types": {
+            "m": "struct Minimal"
           },
           "ordered_varnames": [
             "m"
@@ -4165,6 +4781,7 @@
       "event": "call",
       "func_name": "Minimal::get",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4179,7 +4796,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4197,8 +4816,14 @@
           "func_name": "consumeMinimal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "m": "0xPTR"
+          },
           "local_sizes": {
             "m": 4
+          },
+          "local_types": {
+            "m": "struct Minimal"
           },
           "ordered_varnames": [
             "m"
@@ -4211,7 +4836,9 @@
           "func_name": "Minimal::get",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4223,6 +4850,7 @@
       "event": "return",
       "func_name": "Minimal::get",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4238,7 +4866,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4256,8 +4886,14 @@
           "func_name": "consumeMinimal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "m": "0xPTR"
+          },
           "local_sizes": {
             "m": 4
+          },
+          "local_types": {
+            "m": "struct Minimal"
           },
           "ordered_varnames": [
             "m"
@@ -4270,7 +4906,9 @@
           "func_name": "Minimal::get",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4282,6 +4920,7 @@
       "event": "return",
       "func_name": "consumeMinimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4297,7 +4936,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4315,8 +4956,14 @@
           "func_name": "consumeMinimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "m": "0xPTR"
+          },
           "local_sizes": {
             "m": 4
+          },
+          "local_types": {
+            "m": "struct Minimal"
           },
           "ordered_varnames": [
             "m"
@@ -4331,6 +4978,7 @@
       "event": "step_line",
       "func_name": "Outer::~Outer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4345,7 +4993,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4357,6 +5007,7 @@
       "event": "call",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4372,7 +5023,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4383,7 +5036,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4395,6 +5050,7 @@
       "event": "return",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4410,7 +5066,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4421,7 +5079,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4433,6 +5093,7 @@
       "event": "call",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4448,7 +5109,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4458,7 +5121,9 @@
           "func_name": "Minimal::~Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4470,6 +5135,7 @@
       "event": "return",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4484,7 +5150,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4494,7 +5162,9 @@
           "func_name": "Minimal::~Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4506,6 +5176,7 @@
       "event": "call",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4520,7 +5191,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4530,7 +5203,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4542,6 +5217,7 @@
       "event": "step_line",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4556,7 +5232,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4566,7 +5244,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4578,6 +5258,7 @@
       "event": "step_line",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4592,7 +5273,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4602,7 +5285,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4614,6 +5299,7 @@
       "event": "step_line",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4628,7 +5314,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4638,7 +5326,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4650,6 +5340,7 @@
       "event": "return",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4664,7 +5355,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4674,7 +5367,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4686,6 +5381,7 @@
       "event": "call",
       "func_name": "consumePod",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4700,7 +5396,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4710,7 +5408,9 @@
           "func_name": "consumePod",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4722,6 +5422,7 @@
       "event": "step_line",
       "func_name": "consumePod",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4736,7 +5437,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4756,8 +5459,14 @@
           "func_name": "consumePod",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "p": "0xPTR"
+          },
           "local_sizes": {
             "p": 12
+          },
+          "local_types": {
+            "p": "struct PodLike"
           },
           "ordered_varnames": [
             "p"
@@ -4772,6 +5481,7 @@
       "event": "call",
       "func_name": "PodLike::total",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4786,7 +5496,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4806,8 +5518,14 @@
           "func_name": "consumePod",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "p": "0xPTR"
+          },
           "local_sizes": {
             "p": 12
+          },
+          "local_types": {
+            "p": "struct PodLike"
           },
           "ordered_varnames": [
             "p"
@@ -4820,7 +5538,9 @@
           "func_name": "PodLike::total",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4832,6 +5552,7 @@
       "event": "return",
       "func_name": "PodLike::total",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4847,7 +5568,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4867,8 +5590,14 @@
           "func_name": "consumePod",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "p": "0xPTR"
+          },
           "local_sizes": {
             "p": 12
+          },
+          "local_types": {
+            "p": "struct PodLike"
           },
           "ordered_varnames": [
             "p"
@@ -4881,7 +5610,9 @@
           "func_name": "PodLike::total",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4893,6 +5624,7 @@
       "event": "return",
       "func_name": "consumePod",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4908,7 +5640,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4928,8 +5662,14 @@
           "func_name": "consumePod",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "p": "0xPTR"
+          },
           "local_sizes": {
             "p": 12
+          },
+          "local_types": {
+            "p": "struct PodLike"
           },
           "ordered_varnames": [
             "p"
@@ -4944,6 +5684,7 @@
       "event": "step_line",
       "func_name": "Outer::~Outer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4958,7 +5699,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4970,6 +5713,7 @@
       "event": "call",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4985,7 +5729,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -4996,7 +5742,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5008,6 +5756,7 @@
       "event": "return",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5023,7 +5772,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5034,7 +5785,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5046,6 +5799,7 @@
       "event": "return",
       "func_name": "Outer::~Outer",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5060,7 +5814,9 @@
           "func_name": "Outer::~Outer",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5072,6 +5828,7 @@
       "event": "call",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5087,7 +5844,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5099,6 +5858,7 @@
       "event": "call",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5113,7 +5873,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5123,7 +5885,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5135,6 +5899,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5149,7 +5914,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5159,7 +5926,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5171,6 +5940,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5185,7 +5955,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5195,7 +5967,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5207,6 +5981,7 @@
       "event": "return",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5221,7 +5996,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5231,7 +6008,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5243,6 +6022,7 @@
       "event": "call",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5257,7 +6037,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5267,7 +6049,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5279,6 +6063,7 @@
       "event": "return",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5294,7 +6079,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5304,7 +6091,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5316,6 +6105,7 @@
       "event": "call",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5330,7 +6120,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5340,7 +6132,9 @@
           "func_name": "Minimal::Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5352,6 +6146,7 @@
       "event": "step_line",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5366,7 +6161,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5376,7 +6173,9 @@
           "func_name": "Minimal::Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5388,6 +6187,7 @@
       "event": "return",
       "func_name": "Minimal::Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5402,7 +6202,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5412,7 +6214,9 @@
           "func_name": "Minimal::Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5424,6 +6228,7 @@
       "event": "call",
       "func_name": "Minimal::get",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5438,7 +6243,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5448,7 +6255,9 @@
           "func_name": "Minimal::get",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5460,6 +6269,7 @@
       "event": "return",
       "func_name": "Minimal::get",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5475,7 +6285,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5485,7 +6297,9 @@
           "func_name": "Minimal::get",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5497,6 +6311,7 @@
       "event": "call",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5511,7 +6326,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5521,7 +6338,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5533,6 +6352,7 @@
       "event": "step_line",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5547,7 +6367,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5557,7 +6379,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5569,6 +6393,7 @@
       "event": "step_line",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5583,7 +6408,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5593,7 +6420,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5605,6 +6434,7 @@
       "event": "step_line",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5619,7 +6449,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5629,7 +6461,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5641,6 +6475,7 @@
       "event": "return",
       "func_name": "PodLike::PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5655,7 +6490,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5665,7 +6502,9 @@
           "func_name": "PodLike::PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5677,6 +6516,7 @@
       "event": "call",
       "func_name": "PodLike::total",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5691,7 +6531,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5701,7 +6543,9 @@
           "func_name": "PodLike::total",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5713,6 +6557,7 @@
       "event": "return",
       "func_name": "PodLike::total",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5728,7 +6573,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5738,7 +6585,9 @@
           "func_name": "PodLike::total",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5750,6 +6599,7 @@
       "event": "step_line",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5764,7 +6614,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5776,6 +6628,7 @@
       "event": "call",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5791,7 +6644,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5802,7 +6657,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5814,6 +6671,7 @@
       "event": "return",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5829,7 +6687,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5840,7 +6700,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5852,6 +6714,7 @@
       "event": "call",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5867,7 +6730,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5878,7 +6743,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5890,6 +6757,7 @@
       "event": "return",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5905,7 +6773,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -5916,7 +6786,9 @@
           "is_ghost_dtor": true,
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5928,6 +6800,7 @@
       "event": "return",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5942,7 +6815,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5954,6 +6829,7 @@
       "event": "call",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5969,7 +6845,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5981,6 +6859,7 @@
       "event": "call",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5996,7 +6875,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6006,7 +6887,9 @@
           "func_name": "Minimal::~Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6018,6 +6901,7 @@
       "event": "return",
       "func_name": "Minimal::~Minimal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6032,7 +6916,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6042,7 +6928,9 @@
           "func_name": "Minimal::~Minimal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6054,6 +6942,7 @@
       "event": "call",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6068,7 +6957,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6078,7 +6969,9 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6090,6 +6983,7 @@
       "event": "step_line",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6104,7 +6998,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6116,8 +7012,14 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 4
+          },
+          "local_types": {
+            "a": "int"
           },
           "ordered_varnames": [
             "a"
@@ -6132,6 +7034,7 @@
       "event": "step_line",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6146,7 +7049,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6159,9 +7064,17 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int"
           },
           "ordered_varnames": [
             "a",
@@ -6177,6 +7090,7 @@
       "event": "return",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6191,7 +7105,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6204,9 +7120,17 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int"
           },
           "ordered_varnames": [
             "a",
@@ -6222,6 +7146,7 @@
       "event": "call",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6236,7 +7161,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6246,7 +7173,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6258,6 +7187,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6272,7 +7202,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6282,7 +7214,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6294,6 +7228,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6308,7 +7243,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6318,7 +7255,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6330,6 +7269,7 @@
       "event": "return",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6344,7 +7284,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6354,7 +7296,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6366,6 +7310,7 @@
       "event": "call",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6380,7 +7325,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6390,7 +7337,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6402,6 +7351,7 @@
       "event": "return",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6417,7 +7367,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6427,7 +7379,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6439,6 +7393,7 @@
       "event": "call",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6453,7 +7408,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6463,7 +7420,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6475,6 +7434,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6489,7 +7449,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6499,7 +7461,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6511,6 +7475,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6525,7 +7490,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6535,7 +7502,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6547,6 +7516,7 @@
       "event": "return",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6561,7 +7531,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6571,7 +7543,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6583,6 +7557,7 @@
       "event": "call",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6597,7 +7572,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6607,7 +7584,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6619,6 +7598,7 @@
       "event": "return",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6634,7 +7614,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6644,7 +7626,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6656,6 +7640,7 @@
       "event": "step_line",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6670,7 +7655,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6682,6 +7669,7 @@
       "event": "call",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6696,7 +7684,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6706,7 +7696,9 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6718,6 +7710,7 @@
       "event": "step_line",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6732,7 +7725,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6744,8 +7739,14 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 4
+          },
+          "local_types": {
+            "a": "int"
           },
           "ordered_varnames": [
             "a"
@@ -6760,6 +7761,7 @@
       "event": "step_line",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6774,7 +7776,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6787,9 +7791,17 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int"
           },
           "ordered_varnames": [
             "a",
@@ -6805,6 +7817,7 @@
       "event": "return",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6819,7 +7832,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6832,9 +7847,17 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int"
           },
           "ordered_varnames": [
             "a",
@@ -6850,6 +7873,7 @@
       "event": "call",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6864,7 +7888,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6874,7 +7900,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6886,6 +7914,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6900,7 +7929,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6910,7 +7941,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6922,6 +7955,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6936,7 +7970,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6946,7 +7982,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6958,6 +7996,7 @@
       "event": "return",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6972,7 +8011,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -6982,7 +8023,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6994,6 +8037,7 @@
       "event": "call",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7008,7 +8052,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -7018,7 +8064,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -7030,6 +8078,7 @@
       "event": "return",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7045,7 +8094,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -7055,7 +8106,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -7067,6 +8120,7 @@
       "event": "call",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7081,7 +8135,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -7091,7 +8147,9 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -7103,6 +8161,7 @@
       "event": "step_line",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7117,7 +8176,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -7129,8 +8190,14 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 4
+          },
+          "local_types": {
+            "a": "int"
           },
           "ordered_varnames": [
             "a"
@@ -7145,6 +8212,7 @@
       "event": "step_line",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7159,7 +8227,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -7172,9 +8242,17 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int"
           },
           "ordered_varnames": [
             "a",
@@ -7190,6 +8268,7 @@
       "event": "return",
       "func_name": "makeTrivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7204,7 +8283,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -7217,9 +8298,17 @@
           "func_name": "makeTrivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int"
           },
           "ordered_varnames": [
             "a",
@@ -7235,6 +8324,7 @@
       "event": "call",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7249,7 +8339,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -7259,7 +8351,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -7271,6 +8365,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7285,7 +8380,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -7295,7 +8392,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -7307,6 +8406,7 @@
       "event": "step_line",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7321,7 +8421,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -7331,7 +8433,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -7343,6 +8447,7 @@
       "event": "return",
       "func_name": "Trivial::Trivial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7357,7 +8462,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -7367,7 +8474,9 @@
           "func_name": "Trivial::Trivial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -7379,6 +8488,7 @@
       "event": "call",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7393,7 +8503,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -7403,7 +8515,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -7415,6 +8529,7 @@
       "event": "return",
       "func_name": "Trivial::sum",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7430,7 +8545,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -7440,7 +8557,9 @@
           "func_name": "Trivial::sum",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -7452,6 +8571,7 @@
       "event": "step_line",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7466,7 +8586,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -7478,6 +8600,7 @@
       "event": "return",
       "func_name": "PodLike::~PodLike",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7493,7 +8616,9 @@
           "func_name": "PodLike::~PodLike",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }

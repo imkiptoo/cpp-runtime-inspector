@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "call",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -45,7 +49,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -55,7 +61,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -67,6 +75,7 @@
       "event": "step_line",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -81,7 +90,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -91,7 +102,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -103,6 +116,7 @@
       "event": "step_line",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -117,7 +131,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -127,7 +143,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -139,6 +157,7 @@
       "event": "return",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -153,7 +172,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -163,7 +184,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -175,6 +198,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -197,8 +221,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4
+          },
+          "local_types": {
+            "g1": "struct Guard"
           },
           "ordered_varnames": [
             "g1"
@@ -213,6 +243,7 @@
       "event": "call",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -235,8 +266,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4
+          },
+          "local_types": {
+            "g1": "struct Guard"
           },
           "ordered_varnames": [
             "g1"
@@ -249,7 +286,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -261,6 +300,7 @@
       "event": "step_line",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -283,8 +323,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4
+          },
+          "local_types": {
+            "g1": "struct Guard"
           },
           "ordered_varnames": [
             "g1"
@@ -297,7 +343,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -309,6 +357,7 @@
       "event": "step_line",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -331,8 +380,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4
+          },
+          "local_types": {
+            "g1": "struct Guard"
           },
           "ordered_varnames": [
             "g1"
@@ -345,7 +400,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -357,6 +414,7 @@
       "event": "return",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -379,8 +437,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4
+          },
+          "local_types": {
+            "g1": "struct Guard"
           },
           "ordered_varnames": [
             "g1"
@@ -393,7 +457,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -405,6 +471,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -434,9 +501,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -452,6 +527,7 @@
       "event": "call",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -481,9 +557,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -497,7 +581,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -509,6 +595,7 @@
       "event": "step_line",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -538,9 +625,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -554,7 +649,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -566,6 +663,7 @@
       "event": "step_line",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -595,9 +693,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -611,7 +717,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -623,6 +731,7 @@
       "event": "return",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -652,9 +761,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -668,7 +785,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -680,6 +799,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -716,10 +836,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -736,6 +866,7 @@
       "event": "call",
       "func_name": "Guard::~Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -773,10 +904,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -791,7 +932,9 @@
           "func_name": "Guard::~Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -803,6 +946,7 @@
       "event": "step_line",
       "func_name": "Guard::~Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -839,10 +983,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -857,7 +1011,9 @@
           "func_name": "Guard::~Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -869,6 +1025,7 @@
       "event": "return",
       "func_name": "Guard::~Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -905,10 +1062,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -923,7 +1090,9 @@
           "func_name": "Guard::~Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -935,6 +1104,7 @@
       "event": "call",
       "func_name": "Guard::~Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -972,10 +1142,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -990,7 +1170,9 @@
           "func_name": "Guard::~Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1002,6 +1184,7 @@
       "event": "step_line",
       "func_name": "Guard::~Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1038,10 +1221,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -1056,7 +1249,9 @@
           "func_name": "Guard::~Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1068,6 +1263,7 @@
       "event": "return",
       "func_name": "Guard::~Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1104,10 +1300,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -1122,7 +1328,9 @@
           "func_name": "Guard::~Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1134,6 +1342,7 @@
       "event": "call",
       "func_name": "Guard::~Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1171,10 +1380,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -1189,7 +1408,9 @@
           "func_name": "Guard::~Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1201,6 +1422,7 @@
       "event": "step_line",
       "func_name": "Guard::~Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1237,10 +1459,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -1255,7 +1487,9 @@
           "func_name": "Guard::~Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1267,6 +1501,7 @@
       "event": "return",
       "func_name": "Guard::~Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1303,10 +1538,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -1321,7 +1566,9 @@
           "func_name": "Guard::~Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1333,6 +1580,7 @@
       "event": "call",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1369,10 +1617,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -1387,7 +1645,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1399,6 +1659,7 @@
       "event": "step_line",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1435,10 +1696,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -1453,7 +1724,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1465,6 +1738,7 @@
       "event": "step_line",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1501,10 +1775,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -1519,7 +1803,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1531,6 +1817,7 @@
       "event": "return",
       "func_name": "Guard::Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1567,10 +1854,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -1585,7 +1882,9 @@
           "func_name": "Guard::Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1597,6 +1896,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1640,11 +1940,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "final_guard": "0xPTR",
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "final_guard": 4,
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "final_guard": "struct Guard",
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -1662,6 +1974,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1706,11 +2019,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "final_guard": "0xPTR",
+            "g1": "0xPTR",
+            "g2": "0xPTR",
+            "g3": "0xPTR"
+          },
           "local_sizes": {
             "final_guard": 4,
             "g1": 4,
             "g2": 4,
             "g3": 4
+          },
+          "local_types": {
+            "final_guard": "struct Guard",
+            "g1": "struct Guard",
+            "g2": "struct Guard",
+            "g3": "struct Guard"
           },
           "ordered_varnames": [
             "g1",
@@ -1728,6 +2053,7 @@
       "event": "call",
       "func_name": "Guard::~Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1743,7 +2069,9 @@
           "func_name": "Guard::~Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1755,6 +2083,7 @@
       "event": "step_line",
       "func_name": "Guard::~Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1769,7 +2098,9 @@
           "func_name": "Guard::~Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1781,6 +2112,7 @@
       "event": "return",
       "func_name": "Guard::~Guard",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1795,7 +2127,9 @@
           "func_name": "Guard::~Guard",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }

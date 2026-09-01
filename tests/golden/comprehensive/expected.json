@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -47,8 +51,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "count": "0xPTR"
+          },
           "local_sizes": {
             "count": 4
+          },
+          "local_types": {
+            "count": "int"
           },
           "ordered_varnames": [
             "count"
@@ -63,6 +73,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -80,9 +91,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "count": "0xPTR",
+            "pi": "0xPTR"
+          },
           "local_sizes": {
             "count": 4,
             "pi": 8
+          },
+          "local_types": {
+            "count": "int",
+            "pi": "double"
           },
           "ordered_varnames": [
             "count",
@@ -98,6 +117,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -116,10 +136,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "pi": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
             "pi": 8
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "pi": "double"
           },
           "ordered_varnames": [
             "count",
@@ -136,6 +166,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -155,11 +186,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "pi": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
             "letter": 1,
             "pi": 8
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "letter": "char",
+            "pi": "double"
           },
           "ordered_varnames": [
             "count",
@@ -177,6 +220,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -204,12 +248,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
             "letter": 1,
             "p": 8,
             "pi": 8
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double"
           },
           "ordered_varnames": [
             "count",
@@ -228,6 +286,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -255,12 +314,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
             "letter": 1,
             "p": 8,
             "pi": 8
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double"
           },
           "ordered_varnames": [
             "count",
@@ -279,6 +352,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -306,12 +380,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
             "letter": 1,
             "p": 8,
             "pi": 8
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double"
           },
           "ordered_varnames": [
             "count",
@@ -330,6 +418,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -379,6 +468,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
@@ -386,6 +483,14 @@
             "p": 8,
             "pi": 8,
             "rect": 16
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double",
+            "rect": "struct Rectangle"
           },
           "ordered_varnames": [
             "count",
@@ -405,6 +510,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -454,6 +560,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
@@ -461,6 +575,14 @@
             "p": 8,
             "pi": 8,
             "rect": 16
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double",
+            "rect": "struct Rectangle"
           },
           "ordered_varnames": [
             "count",
@@ -480,6 +602,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -529,6 +652,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
@@ -536,6 +667,14 @@
             "p": 8,
             "pi": 8,
             "rect": 16
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double",
+            "rect": "struct Rectangle"
           },
           "ordered_varnames": [
             "count",
@@ -555,6 +694,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -604,6 +744,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
@@ -611,6 +759,14 @@
             "p": 8,
             "pi": 8,
             "rect": 16
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double",
+            "rect": "struct Rectangle"
           },
           "ordered_varnames": [
             "count",
@@ -630,6 +786,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -679,6 +836,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
@@ -686,6 +851,14 @@
             "p": 8,
             "pi": 8,
             "rect": 16
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double",
+            "rect": "struct Rectangle"
           },
           "ordered_varnames": [
             "count",
@@ -705,6 +878,7 @@
       "event": "call",
       "func_name": "Rectangle::area",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -754,6 +928,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
@@ -761,6 +943,14 @@
             "p": 8,
             "pi": 8,
             "rect": 16
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double",
+            "rect": "struct Rectangle"
           },
           "ordered_varnames": [
             "count",
@@ -778,7 +968,9 @@
           "func_name": "Rectangle::area",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -790,6 +982,7 @@
       "event": "step_line",
       "func_name": "Rectangle::area",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -839,6 +1032,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
@@ -846,6 +1047,14 @@
             "p": 8,
             "pi": 8,
             "rect": 16
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double",
+            "rect": "struct Rectangle"
           },
           "ordered_varnames": [
             "count",
@@ -865,8 +1074,14 @@
           "func_name": "Rectangle::area",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "width": "0xPTR"
+          },
           "local_sizes": {
             "width": 4
+          },
+          "local_types": {
+            "width": "int"
           },
           "ordered_varnames": [
             "width"
@@ -881,6 +1096,7 @@
       "event": "step_line",
       "func_name": "Rectangle::area",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -930,6 +1146,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
@@ -937,6 +1161,14 @@
             "p": 8,
             "pi": 8,
             "rect": 16
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double",
+            "rect": "struct Rectangle"
           },
           "ordered_varnames": [
             "count",
@@ -957,9 +1189,17 @@
           "func_name": "Rectangle::area",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "height": "0xPTR",
+            "width": "0xPTR"
+          },
           "local_sizes": {
             "height": 4,
             "width": 4
+          },
+          "local_types": {
+            "height": "int",
+            "width": "int"
           },
           "ordered_varnames": [
             "width",
@@ -975,6 +1215,7 @@
       "event": "return",
       "func_name": "Rectangle::area",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1025,6 +1266,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "count": 4,
@@ -1032,6 +1281,14 @@
             "p": 8,
             "pi": 8,
             "rect": 16
+          },
+          "local_types": {
+            "active": "bool",
+            "count": "int",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double",
+            "rect": "struct Rectangle"
           },
           "ordered_varnames": [
             "count",
@@ -1052,9 +1309,17 @@
           "func_name": "Rectangle::area",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "height": "0xPTR",
+            "width": "0xPTR"
+          },
           "local_sizes": {
             "height": 4,
             "width": 4
+          },
+          "local_types": {
+            "height": "int",
+            "width": "int"
           },
           "ordered_varnames": [
             "width",
@@ -1070,6 +1335,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1120,6 +1386,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "area": "0xPTR",
+            "count": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "area": 4,
@@ -1128,6 +1403,15 @@
             "p": 8,
             "pi": 8,
             "rect": 16
+          },
+          "local_types": {
+            "active": "bool",
+            "area": "int",
+            "count": "int",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double",
+            "rect": "struct Rectangle"
           },
           "ordered_varnames": [
             "count",
@@ -1148,6 +1432,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1221,6 +1506,16 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "area": "0xPTR",
+            "count": "0xPTR",
+            "hp": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "area": 4,
@@ -1230,6 +1525,16 @@
             "p": 8,
             "pi": 8,
             "rect": 16
+          },
+          "local_types": {
+            "active": "bool",
+            "area": "int",
+            "count": "int",
+            "hp": "struct Point *",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double",
+            "rect": "struct Rectangle"
           },
           "ordered_varnames": [
             "count",
@@ -1251,6 +1556,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1339,6 +1645,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "area": "0xPTR",
+            "arr": "0xPTR",
+            "count": "0xPTR",
+            "hp": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "area": 4,
@@ -1349,6 +1666,17 @@
             "p": 8,
             "pi": 8,
             "rect": 16
+          },
+          "local_types": {
+            "active": "bool",
+            "area": "int",
+            "arr": "int *",
+            "count": "int",
+            "hp": "struct Point *",
+            "letter": "char",
+            "p": "struct Point",
+            "pi": "double",
+            "rect": "struct Rectangle"
           },
           "ordered_varnames": [
             "count",
@@ -1371,6 +1699,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1464,6 +1793,18 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "area": "0xPTR",
+            "arr": "0xPTR",
+            "count": "0xPTR",
+            "hp": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "p2": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "area": 4,
@@ -1475,6 +1816,18 @@
             "p2": 8,
             "pi": 8,
             "rect": 16
+          },
+          "local_types": {
+            "active": "bool",
+            "area": "int",
+            "arr": "int *",
+            "count": "int",
+            "hp": "struct Point *",
+            "letter": "char",
+            "p": "struct Point",
+            "p2": "int *",
+            "pi": "double",
+            "rect": "struct Rectangle"
           },
           "ordered_varnames": [
             "count",
@@ -1498,6 +1851,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1592,6 +1946,19 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "area": "0xPTR",
+            "arr": "0xPTR",
+            "count": "0xPTR",
+            "hp": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "p2": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR",
+            "val": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "area": 4,
@@ -1604,6 +1971,19 @@
             "pi": 8,
             "rect": 16,
             "val": 4
+          },
+          "local_types": {
+            "active": "bool",
+            "area": "int",
+            "arr": "int *",
+            "count": "int",
+            "hp": "struct Point *",
+            "letter": "char",
+            "p": "struct Point",
+            "p2": "int *",
+            "pi": "double",
+            "rect": "struct Rectangle",
+            "val": "int"
           },
           "ordered_varnames": [
             "count",
@@ -1628,6 +2008,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1728,6 +2109,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "area": "0xPTR",
+            "arr": "0xPTR",
+            "count": "0xPTR",
+            "hp": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "p2": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR",
+            "refCount": "0xPTR",
+            "val": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "area": 4,
@@ -1741,6 +2136,20 @@
             "rect": 16,
             "refCount": 8,
             "val": 4
+          },
+          "local_types": {
+            "active": "bool",
+            "area": "int",
+            "arr": "int *",
+            "count": "int",
+            "hp": "struct Point *",
+            "letter": "char",
+            "p": "struct Point",
+            "p2": "int *",
+            "pi": "double",
+            "rect": "struct Rectangle",
+            "refCount": "int &",
+            "val": "int"
           },
           "ordered_varnames": [
             "count",
@@ -1766,6 +2175,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1866,6 +2276,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "area": "0xPTR",
+            "arr": "0xPTR",
+            "count": "0xPTR",
+            "hp": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "p2": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR",
+            "refCount": "0xPTR",
+            "val": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "area": 4,
@@ -1879,6 +2303,20 @@
             "rect": 16,
             "refCount": 8,
             "val": 4
+          },
+          "local_types": {
+            "active": "bool",
+            "area": "int",
+            "arr": "int *",
+            "count": "int",
+            "hp": "struct Point *",
+            "letter": "char",
+            "p": "struct Point",
+            "p2": "int *",
+            "pi": "double",
+            "rect": "struct Rectangle",
+            "refCount": "int &",
+            "val": "int"
           },
           "ordered_varnames": [
             "count",
@@ -1904,6 +2342,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "2": [
@@ -1988,6 +2427,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "area": "0xPTR",
+            "arr": "0xPTR",
+            "count": "0xPTR",
+            "hp": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "p2": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR",
+            "refCount": "0xPTR",
+            "val": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "area": 4,
@@ -2001,6 +2454,20 @@
             "rect": 16,
             "refCount": 8,
             "val": 4
+          },
+          "local_types": {
+            "active": "bool",
+            "area": "int",
+            "arr": "int *",
+            "count": "int",
+            "hp": "struct Point *",
+            "letter": "char",
+            "p": "struct Point",
+            "p2": "int *",
+            "pi": "double",
+            "rect": "struct Rectangle",
+            "refCount": "int &",
+            "val": "int"
           },
           "ordered_varnames": [
             "count",
@@ -2026,6 +2493,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2095,6 +2563,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "area": "0xPTR",
+            "arr": "0xPTR",
+            "count": "0xPTR",
+            "hp": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "p2": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR",
+            "refCount": "0xPTR",
+            "val": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "area": 4,
@@ -2108,6 +2590,20 @@
             "rect": 16,
             "refCount": 8,
             "val": 4
+          },
+          "local_types": {
+            "active": "bool",
+            "area": "int",
+            "arr": "int *",
+            "count": "int",
+            "hp": "struct Point *",
+            "letter": "char",
+            "p": "struct Point",
+            "p2": "int *",
+            "pi": "double",
+            "rect": "struct Rectangle",
+            "refCount": "int &",
+            "val": "int"
           },
           "ordered_varnames": [
             "count",
@@ -2133,6 +2629,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2203,6 +2700,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "active": "0xPTR",
+            "area": "0xPTR",
+            "arr": "0xPTR",
+            "count": "0xPTR",
+            "hp": "0xPTR",
+            "letter": "0xPTR",
+            "p": "0xPTR",
+            "p2": "0xPTR",
+            "pi": "0xPTR",
+            "rect": "0xPTR",
+            "refCount": "0xPTR",
+            "val": "0xPTR"
+          },
           "local_sizes": {
             "active": 1,
             "area": 4,
@@ -2216,6 +2727,20 @@
             "rect": 16,
             "refCount": 8,
             "val": 4
+          },
+          "local_types": {
+            "active": "bool",
+            "area": "int",
+            "arr": "int *",
+            "count": "int",
+            "hp": "struct Point *",
+            "letter": "char",
+            "p": "struct Point",
+            "p2": "int *",
+            "pi": "double",
+            "rect": "struct Rectangle",
+            "refCount": "int &",
+            "val": "int"
           },
           "ordered_varnames": [
             "count",

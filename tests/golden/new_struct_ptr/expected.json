@@ -17,6 +17,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -31,7 +32,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -43,6 +46,7 @@
       "event": "call",
       "func_name": "City::City",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -57,7 +61,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -67,7 +73,9 @@
           "func_name": "City::City",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -79,6 +87,7 @@
       "event": "return",
       "func_name": "City::City",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -93,7 +102,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -103,7 +114,9 @@
           "func_name": "City::City",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -115,6 +128,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -157,8 +171,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *"
           },
           "ordered_varnames": [
             "stuttgart"
@@ -173,6 +193,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -226,9 +247,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -244,6 +273,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -308,10 +338,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -328,6 +368,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -393,11 +434,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -415,6 +468,7 @@
       "event": "call",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -480,11 +534,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -500,7 +566,9 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -512,6 +580,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -577,11 +646,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -599,8 +680,14 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "x": 4
+          },
+          "local_types": {
+            "x": "int"
           },
           "ordered_varnames": [
             "x"
@@ -615,6 +702,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -680,11 +768,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -703,9 +803,17 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR",
+            "y": "0xPTR"
+          },
           "local_sizes": {
             "x": 4,
             "y": 4
+          },
+          "local_types": {
+            "x": "int",
+            "y": "int"
           },
           "ordered_varnames": [
             "x",
@@ -721,6 +829,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -786,11 +895,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -810,10 +931,20 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -830,6 +961,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -895,11 +1027,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -919,10 +1063,20 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -939,6 +1093,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1004,11 +1159,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -1028,10 +1195,20 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -1048,6 +1225,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1113,11 +1291,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -1137,10 +1327,20 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -1157,6 +1357,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1222,11 +1423,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -1247,11 +1460,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -1269,6 +1494,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1334,11 +1560,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -1359,11 +1597,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -1381,6 +1631,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1446,11 +1697,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -1471,11 +1734,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -1493,6 +1768,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1558,11 +1834,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -1583,11 +1871,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -1605,6 +1905,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1670,11 +1971,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -1695,11 +2008,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -1717,6 +2042,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1782,11 +2108,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -1807,11 +2145,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -1829,6 +2179,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -1894,11 +2245,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -1919,11 +2282,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -1941,6 +2316,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -2006,11 +2382,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -2031,11 +2419,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -2053,6 +2453,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -2118,11 +2519,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -2143,11 +2556,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -2165,6 +2590,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -2230,11 +2656,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -2255,11 +2693,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -2277,6 +2727,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -2342,11 +2793,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -2367,11 +2830,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -2389,6 +2864,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -2454,11 +2930,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -2479,11 +2967,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -2501,6 +3001,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -2566,11 +3067,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -2591,11 +3104,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -2613,6 +3138,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -2678,11 +3204,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -2703,11 +3241,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -2725,6 +3275,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -2790,11 +3341,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -2815,11 +3378,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -2837,6 +3412,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -2902,11 +3478,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -2927,11 +3515,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -2949,6 +3549,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -3014,11 +3615,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -3039,11 +3652,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -3061,6 +3686,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -3126,11 +3752,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -3151,11 +3789,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -3173,6 +3823,7 @@
       "event": "step_line",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -3238,11 +3889,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -3263,11 +3926,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -3285,6 +3960,7 @@
       "event": "return",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -3351,11 +4027,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -3376,11 +4064,23 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "x": 4,
             "y": 4,
             "z": 4
+          },
+          "local_types": {
+            "i": "int",
+            "x": "int",
+            "y": "int",
+            "z": "int"
           },
           "ordered_varnames": [
             "x",
@@ -3398,6 +4098,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -3464,12 +4165,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "sum": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "sum": 4,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "sum": "int",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -3488,6 +4203,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -3554,12 +4270,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "sum": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "sum": 4,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "sum": "int",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -3578,6 +4308,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -3637,12 +4368,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "sum": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "sum": 4,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "sum": "int",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",
@@ -3661,6 +4406,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -3721,12 +4467,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "stuttgart": "0xPTR",
+            "sum": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR",
+            "z": "0xPTR"
+          },
           "local_sizes": {
             "stuttgart": 8,
             "sum": 4,
             "x": 8,
             "y": 4,
             "z": 8
+          },
+          "local_types": {
+            "stuttgart": "struct City *",
+            "sum": "int",
+            "x": "int *",
+            "y": "int",
+            "z": "char*"
           },
           "ordered_varnames": [
             "stuttgart",

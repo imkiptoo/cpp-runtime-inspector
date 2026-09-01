@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -54,8 +58,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "union Number"
           },
           "ordered_varnames": [
             "n"
@@ -70,6 +80,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -93,8 +104,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "union Number"
           },
           "ordered_varnames": [
             "n"
@@ -109,6 +126,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -133,9 +151,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR",
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "i": 4,
             "n": 4
+          },
+          "local_types": {
+            "i": "int",
+            "n": "union Number"
           },
           "ordered_varnames": [
             "n",
@@ -151,6 +177,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -176,10 +203,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "f": "0xPTR",
+            "i": "0xPTR",
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "f": 4,
             "i": 4,
             "n": 4
+          },
+          "local_types": {
+            "f": "float",
+            "i": "int",
+            "n": "union Number"
           },
           "ordered_varnames": [
             "n",
@@ -196,6 +233,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -221,10 +259,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "f": "0xPTR",
+            "i": "0xPTR",
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "f": 4,
             "i": 4,
             "n": 4
+          },
+          "local_types": {
+            "f": "float",
+            "i": "int",
+            "n": "union Number"
           },
           "ordered_varnames": [
             "n",
@@ -241,6 +289,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -267,11 +316,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "f": "0xPTR",
+            "i": "0xPTR",
+            "n": "0xPTR",
+            "reinterpreted": "0xPTR"
+          },
           "local_sizes": {
             "f": 4,
             "i": 4,
             "n": 4,
             "reinterpreted": 4
+          },
+          "local_types": {
+            "f": "float",
+            "i": "int",
+            "n": "union Number",
+            "reinterpreted": "int"
           },
           "ordered_varnames": [
             "n",
@@ -289,6 +350,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -316,11 +378,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "f": "0xPTR",
+            "i": "0xPTR",
+            "n": "0xPTR",
+            "reinterpreted": "0xPTR"
+          },
           "local_sizes": {
             "f": 4,
             "i": 4,
             "n": 4,
             "reinterpreted": 4
+          },
+          "local_types": {
+            "f": "float",
+            "i": "int",
+            "n": "union Number",
+            "reinterpreted": "int"
           },
           "ordered_varnames": [
             "n",

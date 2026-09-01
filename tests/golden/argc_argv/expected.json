@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -47,8 +51,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "argc": "0xPTR"
+          },
           "local_sizes": {
             "argc": 4
+          },
+          "local_types": {
+            "argc": "int"
           },
           "ordered_varnames": [
             "argc"
@@ -63,6 +73,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -85,9 +96,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "argc": "0xPTR",
+            "argv": "0xPTR"
+          },
           "local_sizes": {
             "argc": 4,
             "argv": 8
+          },
+          "local_types": {
+            "argc": "int",
+            "argv": "char **"
           },
           "ordered_varnames": [
             "argc",
@@ -103,6 +122,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -126,10 +146,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "argc": 4,
             "argv": 8,
             "n": 4
+          },
+          "local_types": {
+            "argc": "int",
+            "argv": "char **",
+            "n": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -146,6 +176,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -170,11 +201,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "argc": 4,
             "argv": 8,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "argc": "int",
+            "argv": "char **",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -192,6 +235,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -216,11 +260,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "argc": 4,
             "argv": 8,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "argc": "int",
+            "argv": "char **",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -238,6 +294,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -268,12 +325,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
             "argv": 8,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -292,6 +363,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -323,6 +395,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -330,6 +410,14 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -349,6 +437,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -380,6 +469,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -387,6 +484,14 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -406,6 +511,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -437,6 +543,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -444,6 +558,14 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -463,6 +585,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -494,6 +617,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -501,6 +632,14 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -520,6 +659,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -551,6 +691,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -558,6 +706,14 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -577,6 +733,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -608,6 +765,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -615,6 +780,14 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -634,6 +807,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -665,6 +839,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -672,6 +854,14 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -691,6 +881,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -722,6 +913,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -729,6 +928,14 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -748,6 +955,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -780,6 +988,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -788,6 +1005,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -808,6 +1034,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -840,6 +1067,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -848,6 +1084,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -868,6 +1113,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -900,6 +1146,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -908,6 +1163,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -928,6 +1192,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -960,6 +1225,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -968,6 +1242,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -988,6 +1271,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1020,6 +1304,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1028,6 +1321,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1048,6 +1350,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1080,6 +1383,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1088,6 +1400,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1108,6 +1429,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1140,6 +1462,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1148,6 +1479,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1168,6 +1508,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1200,6 +1541,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1208,6 +1558,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1228,6 +1587,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1260,6 +1620,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1268,6 +1637,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1288,6 +1666,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1320,6 +1699,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1328,6 +1716,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1348,6 +1745,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1380,6 +1778,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1388,6 +1795,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1408,6 +1824,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1440,6 +1857,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1448,6 +1874,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1468,6 +1903,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1500,6 +1936,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1508,6 +1953,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1528,6 +1982,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1560,6 +2015,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1568,6 +2032,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1588,6 +2061,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1620,6 +2094,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1628,6 +2111,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1648,6 +2140,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1680,6 +2173,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1688,6 +2190,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1708,6 +2219,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1740,6 +2252,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1748,6 +2269,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1768,6 +2298,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1800,6 +2331,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1808,6 +2348,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1828,6 +2377,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1860,6 +2410,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1868,6 +2427,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1888,6 +2456,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1920,6 +2489,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1928,6 +2506,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -1948,6 +2535,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1980,6 +2568,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -1988,6 +2585,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -2008,6 +2614,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2040,6 +2647,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -2048,6 +2664,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -2068,6 +2693,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2100,6 +2726,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -2108,6 +2743,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",
@@ -2128,6 +2772,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2161,6 +2806,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "argc": "0xPTR",
+            "argv": "0xPTR",
+            "i": "0xPTR",
+            "len": "0xPTR",
+            "n": "0xPTR",
+            "total_chars": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "argc": 4,
@@ -2169,6 +2823,15 @@
             "len": 4,
             "n": 4,
             "total_chars": 4
+          },
+          "local_types": {
+            "a": "char*",
+            "argc": "int",
+            "argv": "char **",
+            "i": "int",
+            "len": "int",
+            "n": "int",
+            "total_chars": "int"
           },
           "ordered_varnames": [
             "argc",

@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -64,8 +68,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "arr": "0xPTR"
+          },
           "local_sizes": {
             "arr": 8
+          },
+          "local_types": {
+            "arr": "int *"
           },
           "ordered_varnames": [
             "arr"
@@ -80,6 +90,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -99,8 +110,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "arr": "0xPTR"
+          },
           "local_sizes": {
             "arr": 8
+          },
+          "local_types": {
+            "arr": "int *"
           },
           "ordered_varnames": [
             "arr"
@@ -115,6 +132,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -135,8 +153,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "arr": "0xPTR"
+          },
           "local_sizes": {
             "arr": 8
+          },
+          "local_types": {
+            "arr": "int *"
           },
           "ordered_varnames": [
             "arr"

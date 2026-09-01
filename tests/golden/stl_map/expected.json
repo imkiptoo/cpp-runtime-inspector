@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -58,8 +62,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "m": "0xPTR"
+          },
           "local_sizes": {
             "m": 24
+          },
+          "local_types": {
+            "m": "class std::map<int, int>"
           },
           "ordered_varnames": [
             "m"
@@ -74,6 +84,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -102,9 +113,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "m": "0xPTR",
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "m": 24,
             "n": 4
+          },
+          "local_types": {
+            "m": "class std::map<int, int>",
+            "n": "int"
           },
           "ordered_varnames": [
             "m",
@@ -120,6 +139,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -149,10 +169,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "m": "0xPTR",
+            "n": "0xPTR",
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "m": 24,
             "n": 4,
             "v": 4
+          },
+          "local_types": {
+            "m": "class std::map<int, int>",
+            "n": "int",
+            "v": "int"
           },
           "ordered_varnames": [
             "m",
@@ -169,6 +199,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -199,10 +230,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "m": "0xPTR",
+            "n": "0xPTR",
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "m": 24,
             "n": 4,
             "v": 4
+          },
+          "local_types": {
+            "m": "class std::map<int, int>",
+            "n": "int",
+            "v": "int"
           },
           "ordered_varnames": [
             "m",

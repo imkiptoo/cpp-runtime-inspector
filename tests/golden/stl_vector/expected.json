@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -51,8 +55,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "v": 24
+          },
+          "local_types": {
+            "v": "class std::vector<int>"
           },
           "ordered_varnames": [
             "v"
@@ -67,6 +77,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -89,8 +100,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "v": 24
+          },
+          "local_types": {
+            "v": "class std::vector<int>"
           },
           "ordered_varnames": [
             "v"
@@ -105,6 +122,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -128,8 +146,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "v": 24
+          },
+          "local_types": {
+            "v": "class std::vector<int>"
           },
           "ordered_varnames": [
             "v"
@@ -144,6 +168,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -168,8 +193,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "v": 24
+          },
+          "local_types": {
+            "v": "class std::vector<int>"
           },
           "ordered_varnames": [
             "v"
@@ -184,6 +215,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -209,9 +241,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "sum": "0xPTR",
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "sum": 4,
             "v": 24
+          },
+          "local_types": {
+            "sum": "int",
+            "v": "class std::vector<int>"
           },
           "ordered_varnames": [
             "v",
@@ -227,6 +267,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -252,9 +293,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "sum": "0xPTR",
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "sum": 4,
             "v": 24
+          },
+          "local_types": {
+            "sum": "int",
+            "v": "class std::vector<int>"
           },
           "ordered_varnames": [
             "v",
@@ -270,6 +319,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -296,10 +346,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "sum": "0xPTR",
+            "v": "0xPTR",
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "sum": 4,
             "v": 24,
             "x": 4
+          },
+          "local_types": {
+            "sum": "int",
+            "v": "class std::vector<int>",
+            "x": "int"
           },
           "ordered_varnames": [
             "v",
@@ -316,6 +376,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -342,10 +403,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "sum": "0xPTR",
+            "v": "0xPTR",
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "sum": 4,
             "v": 24,
             "x": 4
+          },
+          "local_types": {
+            "sum": "int",
+            "v": "class std::vector<int>",
+            "x": "int"
           },
           "ordered_varnames": [
             "v",
@@ -362,6 +433,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -388,10 +460,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "sum": "0xPTR",
+            "v": "0xPTR",
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "sum": 4,
             "v": 24,
             "x": 4
+          },
+          "local_types": {
+            "sum": "int",
+            "v": "class std::vector<int>",
+            "x": "int"
           },
           "ordered_varnames": [
             "v",
@@ -408,6 +490,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -434,10 +517,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "sum": "0xPTR",
+            "v": "0xPTR",
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "sum": 4,
             "v": 24,
             "x": 4
+          },
+          "local_types": {
+            "sum": "int",
+            "v": "class std::vector<int>",
+            "x": "int"
           },
           "ordered_varnames": [
             "v",
@@ -454,6 +547,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -480,10 +574,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "sum": "0xPTR",
+            "v": "0xPTR",
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "sum": 4,
             "v": 24,
             "x": 4
+          },
+          "local_types": {
+            "sum": "int",
+            "v": "class std::vector<int>",
+            "x": "int"
           },
           "ordered_varnames": [
             "v",
@@ -500,6 +604,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -526,10 +631,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "sum": "0xPTR",
+            "v": "0xPTR",
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "sum": 4,
             "v": 24,
             "x": 4
+          },
+          "local_types": {
+            "sum": "int",
+            "v": "class std::vector<int>",
+            "x": "int"
           },
           "ordered_varnames": [
             "v",
@@ -546,6 +661,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -568,10 +684,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "sum": "0xPTR",
+            "v": "0xPTR",
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "sum": 4,
             "v": 24,
             "x": 4
+          },
+          "local_types": {
+            "sum": "int",
+            "v": "class std::vector<int>",
+            "x": "int"
           },
           "ordered_varnames": [
             "v",
@@ -588,6 +714,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -611,10 +738,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "sum": "0xPTR",
+            "v": "0xPTR",
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "sum": 4,
             "v": 24,
             "x": 4
+          },
+          "local_types": {
+            "sum": "int",
+            "v": "class std::vector<int>",
+            "x": "int"
           },
           "ordered_varnames": [
             "v",

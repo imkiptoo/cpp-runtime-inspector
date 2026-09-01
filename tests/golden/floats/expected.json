@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -47,8 +51,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "f": "0xPTR"
+          },
           "local_sizes": {
             "f": 4
+          },
+          "local_types": {
+            "f": "float"
           },
           "ordered_varnames": [
             "f"
@@ -63,6 +73,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -80,9 +91,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "d": "0xPTR",
+            "f": "0xPTR"
+          },
           "local_sizes": {
             "d": 8,
             "f": 4
+          },
+          "local_types": {
+            "d": "double",
+            "f": "float"
           },
           "ordered_varnames": [
             "f",
@@ -98,6 +117,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -116,10 +136,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "d": "0xPTR",
+            "f": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "d": 8,
             "f": 4,
             "sum": 8
+          },
+          "local_types": {
+            "d": "double",
+            "f": "float",
+            "sum": "double"
           },
           "ordered_varnames": [
             "f",
@@ -136,6 +166,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -155,11 +186,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "d": "0xPTR",
+            "f": "0xPTR",
+            "product": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "d": 8,
             "f": 4,
             "product": 8,
             "sum": 8
+          },
+          "local_types": {
+            "d": "double",
+            "f": "float",
+            "product": "double",
+            "sum": "double"
           },
           "ordered_varnames": [
             "f",
@@ -177,6 +220,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -197,12 +241,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "d": "0xPTR",
+            "f": "0xPTR",
+            "inf": "0xPTR",
+            "product": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "d": 8,
             "f": 4,
             "inf": 8,
             "product": 8,
             "sum": 8
+          },
+          "local_types": {
+            "d": "double",
+            "f": "float",
+            "inf": "double",
+            "product": "double",
+            "sum": "double"
           },
           "ordered_varnames": [
             "f",
@@ -221,6 +279,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -242,6 +301,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "d": "0xPTR",
+            "f": "0xPTR",
+            "inf": "0xPTR",
+            "neg_inf": "0xPTR",
+            "product": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "d": 8,
             "f": 4,
@@ -249,6 +316,14 @@
             "neg_inf": 8,
             "product": 8,
             "sum": 8
+          },
+          "local_types": {
+            "d": "double",
+            "f": "float",
+            "inf": "double",
+            "neg_inf": "double",
+            "product": "double",
+            "sum": "double"
           },
           "ordered_varnames": [
             "f",
@@ -268,6 +343,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -290,6 +366,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "d": "0xPTR",
+            "f": "0xPTR",
+            "inf": "0xPTR",
+            "nan_val": "0xPTR",
+            "neg_inf": "0xPTR",
+            "product": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "d": 8,
             "f": 4,
@@ -298,6 +383,15 @@
             "neg_inf": 8,
             "product": 8,
             "sum": 8
+          },
+          "local_types": {
+            "d": "double",
+            "f": "float",
+            "inf": "double",
+            "nan_val": "double",
+            "neg_inf": "double",
+            "product": "double",
+            "sum": "double"
           },
           "ordered_varnames": [
             "f",
@@ -318,6 +412,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -341,6 +436,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "d": "0xPTR",
+            "f": "0xPTR",
+            "inf": "0xPTR",
+            "nan_val": "0xPTR",
+            "neg_inf": "0xPTR",
+            "product": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "d": 8,
             "f": 4,
@@ -349,6 +453,15 @@
             "neg_inf": 8,
             "product": 8,
             "sum": 8
+          },
+          "local_types": {
+            "d": "double",
+            "f": "float",
+            "inf": "double",
+            "nan_val": "double",
+            "neg_inf": "double",
+            "product": "double",
+            "sum": "double"
           },
           "ordered_varnames": [
             "f",

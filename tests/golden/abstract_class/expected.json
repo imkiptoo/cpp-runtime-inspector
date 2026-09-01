@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "call",
       "func_name": "Animal::Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -46,7 +50,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -56,7 +62,9 @@
           "func_name": "Animal::Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -68,6 +76,7 @@
       "event": "step_line",
       "func_name": "Animal::Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -82,7 +91,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -92,7 +103,9 @@
           "func_name": "Animal::Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -104,6 +117,7 @@
       "event": "return",
       "func_name": "Animal::Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -118,7 +132,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -128,7 +144,9 @@
           "func_name": "Animal::Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -140,6 +158,7 @@
       "event": "call",
       "func_name": "Dog::Dog",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -155,7 +174,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -165,7 +186,9 @@
           "func_name": "Dog::Dog",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -177,6 +200,7 @@
       "event": "step_line",
       "func_name": "Dog::Dog",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -191,7 +215,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -201,7 +227,9 @@
           "func_name": "Dog::Dog",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -213,6 +241,7 @@
       "event": "step_line",
       "func_name": "Dog::Dog",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -227,7 +256,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -237,7 +268,9 @@
           "func_name": "Dog::Dog",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -249,6 +282,7 @@
       "event": "return",
       "func_name": "Dog::Dog",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -263,7 +297,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -273,7 +309,9 @@
           "func_name": "Dog::Dog",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -285,6 +323,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -324,8 +363,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 8
+          },
+          "local_types": {
+            "a": "struct Animal *"
           },
           "ordered_varnames": [
             "a"
@@ -340,6 +385,7 @@
       "event": "call",
       "func_name": "Dog::legs",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -379,8 +425,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 8
+          },
+          "local_types": {
+            "a": "struct Animal *"
           },
           "ordered_varnames": [
             "a"
@@ -393,7 +445,9 @@
           "func_name": "Dog::legs",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -405,6 +459,7 @@
       "event": "return",
       "func_name": "Dog::legs",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -445,8 +500,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 8
+          },
+          "local_types": {
+            "a": "struct Animal *"
           },
           "ordered_varnames": [
             "a"
@@ -459,7 +520,9 @@
           "func_name": "Dog::legs",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -471,6 +534,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -511,9 +575,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "l1": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "l1": 4
+          },
+          "local_types": {
+            "a": "struct Animal *",
+            "l1": "int"
           },
           "ordered_varnames": [
             "a",
@@ -529,6 +601,7 @@
       "event": "call",
       "func_name": "Dog::sound",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -569,9 +642,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "l1": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "l1": 4
+          },
+          "local_types": {
+            "a": "struct Animal *",
+            "l1": "int"
           },
           "ordered_varnames": [
             "a",
@@ -585,7 +666,9 @@
           "func_name": "Dog::sound",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -597,6 +680,7 @@
       "event": "return",
       "func_name": "Dog::sound",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -638,9 +722,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "l1": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "l1": 4
+          },
+          "local_types": {
+            "a": "struct Animal *",
+            "l1": "int"
           },
           "ordered_varnames": [
             "a",
@@ -654,7 +746,9 @@
           "func_name": "Dog::sound",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -666,6 +760,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -707,10 +802,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "l1": "0xPTR",
+            "s1": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "l1": 4,
             "s1": 4
+          },
+          "local_types": {
+            "a": "struct Animal *",
+            "l1": "int",
+            "s1": "int"
           },
           "ordered_varnames": [
             "a",
@@ -727,6 +832,7 @@
       "event": "call",
       "func_name": "Dog::~Dog",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -749,10 +855,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "l1": "0xPTR",
+            "s1": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "l1": 4,
             "s1": 4
+          },
+          "local_types": {
+            "a": "struct Animal *",
+            "l1": "int",
+            "s1": "int"
           },
           "ordered_varnames": [
             "a",
@@ -767,7 +883,9 @@
           "func_name": "Dog::~Dog",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -779,6 +897,7 @@
       "event": "step_line",
       "func_name": "Dog::~Dog",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -800,10 +919,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "l1": "0xPTR",
+            "s1": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "l1": 4,
             "s1": 4
+          },
+          "local_types": {
+            "a": "struct Animal *",
+            "l1": "int",
+            "s1": "int"
           },
           "ordered_varnames": [
             "a",
@@ -818,7 +947,9 @@
           "func_name": "Dog::~Dog",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -830,6 +961,7 @@
       "event": "return",
       "func_name": "Dog::~Dog",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -851,10 +983,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "l1": "0xPTR",
+            "s1": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "l1": 4,
             "s1": 4
+          },
+          "local_types": {
+            "a": "struct Animal *",
+            "l1": "int",
+            "s1": "int"
           },
           "ordered_varnames": [
             "a",
@@ -869,7 +1011,9 @@
           "func_name": "Dog::~Dog",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -881,6 +1025,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -902,10 +1047,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "l1": "0xPTR",
+            "s1": "0xPTR"
+          },
           "local_sizes": {
             "a": 8,
             "l1": 4,
             "s1": 4
+          },
+          "local_types": {
+            "a": "struct Animal *",
+            "l1": "int",
+            "s1": "int"
           },
           "ordered_varnames": [
             "a",
@@ -922,6 +1077,7 @@
       "event": "call",
       "func_name": "Animal::~Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -937,7 +1093,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -949,6 +1107,7 @@
       "event": "step_line",
       "func_name": "Animal::~Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -963,7 +1122,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -975,6 +1136,7 @@
       "event": "call",
       "func_name": "Animal::Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -990,7 +1152,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1000,7 +1164,9 @@
           "func_name": "Animal::Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1012,6 +1178,7 @@
       "event": "step_line",
       "func_name": "Animal::Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1026,7 +1193,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1036,7 +1205,9 @@
           "func_name": "Animal::Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1048,6 +1219,7 @@
       "event": "return",
       "func_name": "Animal::Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1062,7 +1234,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1072,7 +1246,9 @@
           "func_name": "Animal::Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1084,6 +1260,7 @@
       "event": "call",
       "func_name": "Cat::Cat",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1099,7 +1276,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1109,7 +1288,9 @@
           "func_name": "Cat::Cat",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1121,6 +1302,7 @@
       "event": "step_line",
       "func_name": "Cat::Cat",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1135,7 +1317,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1145,7 +1329,9 @@
           "func_name": "Cat::Cat",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1157,6 +1343,7 @@
       "event": "step_line",
       "func_name": "Cat::Cat",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1171,7 +1358,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1181,7 +1370,9 @@
           "func_name": "Cat::Cat",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1193,6 +1384,7 @@
       "event": "return",
       "func_name": "Cat::Cat",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1207,7 +1399,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1217,7 +1411,9 @@
           "func_name": "Cat::Cat",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1229,6 +1425,7 @@
       "event": "step_line",
       "func_name": "Animal::~Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "2": [
@@ -1268,8 +1465,14 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "b": 8
+          },
+          "local_types": {
+            "b": "struct Animal *"
           },
           "ordered_varnames": [
             "b"
@@ -1284,6 +1487,7 @@
       "event": "call",
       "func_name": "Cat::legs",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "2": [
@@ -1323,8 +1527,14 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "b": 8
+          },
+          "local_types": {
+            "b": "struct Animal *"
           },
           "ordered_varnames": [
             "b"
@@ -1337,7 +1547,9 @@
           "func_name": "Cat::legs",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1349,6 +1561,7 @@
       "event": "return",
       "func_name": "Cat::legs",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "2": [
@@ -1389,8 +1602,14 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "b": 8
+          },
+          "local_types": {
+            "b": "struct Animal *"
           },
           "ordered_varnames": [
             "b"
@@ -1403,7 +1622,9 @@
           "func_name": "Cat::legs",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1415,6 +1636,7 @@
       "event": "step_line",
       "func_name": "Animal::~Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "2": [
@@ -1455,9 +1677,17 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR",
+            "l2": "0xPTR"
+          },
           "local_sizes": {
             "b": 8,
             "l2": 4
+          },
+          "local_types": {
+            "b": "struct Animal *",
+            "l2": "int"
           },
           "ordered_varnames": [
             "b",
@@ -1473,6 +1703,7 @@
       "event": "call",
       "func_name": "Cat::sound",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "2": [
@@ -1513,9 +1744,17 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR",
+            "l2": "0xPTR"
+          },
           "local_sizes": {
             "b": 8,
             "l2": 4
+          },
+          "local_types": {
+            "b": "struct Animal *",
+            "l2": "int"
           },
           "ordered_varnames": [
             "b",
@@ -1529,7 +1768,9 @@
           "func_name": "Cat::sound",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1541,6 +1782,7 @@
       "event": "return",
       "func_name": "Cat::sound",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "2": [
@@ -1582,9 +1824,17 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR",
+            "l2": "0xPTR"
+          },
           "local_sizes": {
             "b": 8,
             "l2": 4
+          },
+          "local_types": {
+            "b": "struct Animal *",
+            "l2": "int"
           },
           "ordered_varnames": [
             "b",
@@ -1598,7 +1848,9 @@
           "func_name": "Cat::sound",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1610,6 +1862,7 @@
       "event": "step_line",
       "func_name": "Animal::~Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "2": [
@@ -1651,10 +1904,20 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR",
+            "l2": "0xPTR",
+            "s2": "0xPTR"
+          },
           "local_sizes": {
             "b": 8,
             "l2": 4,
             "s2": 4
+          },
+          "local_types": {
+            "b": "struct Animal *",
+            "l2": "int",
+            "s2": "int"
           },
           "ordered_varnames": [
             "b",
@@ -1671,6 +1934,7 @@
       "event": "call",
       "func_name": "Cat::~Cat",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1693,10 +1957,20 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR",
+            "l2": "0xPTR",
+            "s2": "0xPTR"
+          },
           "local_sizes": {
             "b": 8,
             "l2": 4,
             "s2": 4
+          },
+          "local_types": {
+            "b": "struct Animal *",
+            "l2": "int",
+            "s2": "int"
           },
           "ordered_varnames": [
             "b",
@@ -1711,7 +1985,9 @@
           "func_name": "Cat::~Cat",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1723,6 +1999,7 @@
       "event": "step_line",
       "func_name": "Cat::~Cat",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1744,10 +2021,20 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR",
+            "l2": "0xPTR",
+            "s2": "0xPTR"
+          },
           "local_sizes": {
             "b": 8,
             "l2": 4,
             "s2": 4
+          },
+          "local_types": {
+            "b": "struct Animal *",
+            "l2": "int",
+            "s2": "int"
           },
           "ordered_varnames": [
             "b",
@@ -1762,7 +2049,9 @@
           "func_name": "Cat::~Cat",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1774,6 +2063,7 @@
       "event": "return",
       "func_name": "Cat::~Cat",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1795,10 +2085,20 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR",
+            "l2": "0xPTR",
+            "s2": "0xPTR"
+          },
           "local_sizes": {
             "b": 8,
             "l2": 4,
             "s2": 4
+          },
+          "local_types": {
+            "b": "struct Animal *",
+            "l2": "int",
+            "s2": "int"
           },
           "ordered_varnames": [
             "b",
@@ -1813,7 +2113,9 @@
           "func_name": "Cat::~Cat",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1825,6 +2127,7 @@
       "event": "return",
       "func_name": "Animal::~Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1846,10 +2149,20 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR",
+            "l2": "0xPTR",
+            "s2": "0xPTR"
+          },
           "local_sizes": {
             "b": 8,
             "l2": 4,
             "s2": 4
+          },
+          "local_types": {
+            "b": "struct Animal *",
+            "l2": "int",
+            "s2": "int"
           },
           "ordered_varnames": [
             "b",
@@ -1866,6 +2179,7 @@
       "event": "call",
       "func_name": "Animal::~Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1881,7 +2195,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1893,6 +2209,7 @@
       "event": "step_line",
       "func_name": "Animal::~Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1907,7 +2224,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1919,6 +2238,7 @@
       "event": "return",
       "func_name": "Animal::~Animal",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1934,7 +2254,9 @@
           "func_name": "Animal::~Animal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }

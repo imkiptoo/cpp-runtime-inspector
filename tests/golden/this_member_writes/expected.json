@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -54,8 +58,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -70,6 +80,7 @@
       "event": "call",
       "func_name": "Counter::set",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -93,8 +104,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -107,7 +124,9 @@
           "func_name": "Counter::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -119,6 +138,7 @@
       "event": "step_line",
       "func_name": "Counter::set",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -142,8 +162,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -158,8 +184,14 @@
           "func_name": "Counter::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "v": 4
+          },
+          "local_types": {
+            "v": "int"
           },
           "ordered_varnames": [
             "v"
@@ -174,6 +206,7 @@
       "event": "step_line",
       "func_name": "Counter::set",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -197,8 +230,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -213,8 +252,14 @@
           "func_name": "Counter::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "v": 4
+          },
+          "local_types": {
+            "v": "int"
           },
           "ordered_varnames": [
             "v"
@@ -229,6 +274,7 @@
       "event": "step_line",
       "func_name": "Counter::set",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -252,8 +298,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -268,8 +320,14 @@
           "func_name": "Counter::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "v": 4
+          },
+          "local_types": {
+            "v": "int"
           },
           "ordered_varnames": [
             "v"
@@ -284,6 +342,7 @@
       "event": "return",
       "func_name": "Counter::set",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -307,8 +366,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -323,8 +388,14 @@
           "func_name": "Counter::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "v": 4
+          },
+          "local_types": {
+            "v": "int"
           },
           "ordered_varnames": [
             "v"
@@ -339,6 +410,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -362,8 +434,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -378,6 +456,7 @@
       "event": "call",
       "func_name": "Counter::bump",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -401,8 +480,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -415,7 +500,9 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -427,6 +514,7 @@
       "event": "step_line",
       "func_name": "Counter::bump",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -450,8 +538,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -464,7 +558,9 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -476,6 +572,7 @@
       "event": "return",
       "func_name": "Counter::bump",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -499,8 +596,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -513,7 +616,9 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -525,6 +630,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -548,8 +654,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -564,6 +676,7 @@
       "event": "call",
       "func_name": "Counter::add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -587,8 +700,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -601,7 +720,9 @@
           "func_name": "Counter::add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -613,6 +734,7 @@
       "event": "step_line",
       "func_name": "Counter::add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -636,8 +758,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -652,8 +780,14 @@
           "func_name": "Counter::add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -668,6 +802,7 @@
       "event": "step_line",
       "func_name": "Counter::add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -691,8 +826,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -707,8 +848,14 @@
           "func_name": "Counter::add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -723,6 +870,7 @@
       "event": "return",
       "func_name": "Counter::add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -746,8 +894,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -762,8 +916,14 @@
           "func_name": "Counter::add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -778,6 +938,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -801,8 +962,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -817,6 +984,7 @@
       "event": "call",
       "func_name": "Counter::decAndBump",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -840,8 +1008,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -854,7 +1028,9 @@
           "func_name": "Counter::decAndBump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -866,6 +1042,7 @@
       "event": "step_line",
       "func_name": "Counter::decAndBump",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -889,8 +1066,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -903,7 +1086,9 @@
           "func_name": "Counter::decAndBump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -915,6 +1100,7 @@
       "event": "step_line",
       "func_name": "Counter::decAndBump",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -938,8 +1124,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -952,7 +1144,9 @@
           "func_name": "Counter::decAndBump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -964,6 +1158,7 @@
       "event": "return",
       "func_name": "Counter::decAndBump",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -987,8 +1182,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -1001,7 +1202,9 @@
           "func_name": "Counter::decAndBump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1013,6 +1216,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1036,8 +1240,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"
@@ -1052,6 +1262,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1076,8 +1287,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 8
+          },
+          "local_types": {
+            "c": "struct Counter"
           },
           "ordered_varnames": [
             "c"

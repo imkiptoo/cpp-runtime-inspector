@@ -96,7 +96,9 @@ export function formatShortcut(
 					return key.toUpperCase();
 			}
 		})
-		.join(isMac ? ' ' : ' + ');
+		// Platform convention: macOS concatenates modifier glyphs with no
+		// separator (⌘K), Windows/Linux join with a bare plus (Ctrl+K).
+		.join(isMac ? '' : '+');
 }
 
 /**

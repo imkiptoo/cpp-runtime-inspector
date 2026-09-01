@@ -2,10 +2,9 @@ import { describe, it, expect } from 'vitest';
 import {
 	examples,
 	getExample,
-	getExamplesByTag,
-	getAllTags,
-	defaultCode,
-	type Example
+	getExamplesByCategory,
+	getAllCategories,
+	defaultCode
 } from './examples';
 
 describe('examples/examples', () => {
@@ -24,8 +23,10 @@ describe('examples/examples', () => {
 				expect(typeof example.description).toBe('string');
 				expect(example.code).toBeDefined();
 				expect(typeof example.code).toBe('string');
-				expect(Array.isArray(example.tags)).toBe(true);
-				expect(example.tags.length).toBeGreaterThan(0);
+				expect(typeof example.category).toBe('string');
+				expect(example.category.length).toBeGreaterThan(0);
+				expect(typeof example.steps).toBe('number');
+				expect([1, 2, 3]).toContain(example.complexity);
 			}
 		});
 
@@ -47,7 +48,7 @@ describe('examples/examples', () => {
 			const example = getExample('hello-world');
 			expect(example).toBeDefined();
 			expect(example?.id).toBe('hello-world');
-			expect(example?.title).toBe('Hello World');
+			expect(example?.title).toBe('Hello, world');
 		});
 
 		it('returns undefined for unknown id', () => {
@@ -58,7 +59,7 @@ describe('examples/examples', () => {
 		it('finds linked-list example', () => {
 			const example = getExample('linked-list');
 			expect(example).toBeDefined();
-			expect(example?.title).toBe('Linked List');
+			expect(example?.title).toBe('Linked list - build & reverse');
 			expect(example?.code).toContain('struct Node');
 		});
 
@@ -69,49 +70,61 @@ describe('examples/examples', () => {
 		});
 	});
 
-	describe('getExamplesByTag', () => {
-		it('returns examples with matching tag', () => {
-			const pointerExamples = getExamplesByTag('pointers');
+	describe('getExamplesByCategory', () => {
+		it('returns examples with matching category', () => {
+			// Matching is a case-insensitive substring, so "pointers" also
+			// picks up "Pointers & Dynamic Memory".
+			const pointerExamples = getExamplesByCategory('pointers');
 			expect(pointerExamples.length).toBeGreaterThan(0);
 			for (const example of pointerExamples) {
-				expect(example.tags).toContain('pointers');
+				expect(example.category.toLowerCase()).toContain('pointers');
 			}
 		});
 
-		it('returns empty array for unknown tag', () => {
-			const noExamples = getExamplesByTag('nonexistent-tag');
-			expect(noExamples).toEqual([]);
+		it('is case-insensitive', () => {
+			expect(getExamplesByCategory('BASICS')).toEqual(getExamplesByCategory('basics'));
+		});
+
+		it('returns empty array for unknown category', () => {
+			expect(getExamplesByCategory('nonexistent-category')).toEqual([]);
 		});
 
 		it('finds memory examples', () => {
-			const memoryExamples = getExamplesByTag('memory');
-			expect(memoryExamples.length).toBeGreaterThan(0);
+			expect(getExamplesByCategory('memory').length).toBeGreaterThan(0);
 		});
 
 		it('finds heap examples', () => {
-			const heapExamples = getExamplesByTag('heap');
-			expect(heapExamples.length).toBeGreaterThanOrEqual(2);
+			expect(getExamplesByCategory('heap').length).toBeGreaterThan(0);
+		});
+
+		it('finds recursion examples', () => {
+			expect(getExamplesByCategory('recursion').length).toBeGreaterThanOrEqual(2);
 		});
 	});
 
-	describe('getAllTags', () => {
-		it('returns array of unique tags', () => {
-			const tags = getAllTags();
-			expect(Array.isArray(tags)).toBe(true);
-			const uniqueTags = new Set(tags);
-			expect(uniqueTags.size).toBe(tags.length);
+	describe('getAllCategories', () => {
+		it('returns array of unique categories', () => {
+			const categories = getAllCategories();
+			expect(Array.isArray(categories)).toBe(true);
+			expect(new Set(categories).size).toBe(categories.length);
 		});
 
-		it('tags are sorted alphabetically', () => {
-			const tags = getAllTags();
-			const sorted = [...tags].sort();
-			expect(tags).toEqual(sorted);
+		it('categories are sorted alphabetically', () => {
+			const categories = getAllCategories();
+			expect(categories).toEqual([...categories].sort());
 		});
 
-		it('includes common tags', () => {
-			const tags = getAllTags();
-			expect(tags).toContain('pointers');
-			expect(tags).toContain('memory');
+		it('covers every example category', () => {
+			const categories = getAllCategories();
+			for (const example of examples) {
+				expect(categories).toContain(example.category);
+			}
+		});
+
+		it('includes common categories', () => {
+			const categories = getAllCategories();
+			expect(categories).toContain('Basics');
+			expect(categories).toContain('Pointers');
 		});
 	});
 

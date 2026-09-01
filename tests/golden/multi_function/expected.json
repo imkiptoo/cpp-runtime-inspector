@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "call",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -45,7 +49,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -55,7 +61,9 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -67,6 +75,7 @@
       "event": "step_line",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -81,7 +90,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -93,8 +104,14 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -109,6 +126,7 @@
       "event": "step_line",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -123,7 +141,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -135,8 +155,14 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -151,6 +177,7 @@
       "event": "call",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -165,7 +192,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -177,8 +206,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -191,7 +226,9 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -203,6 +240,7 @@
       "event": "step_line",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -217,7 +255,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -229,8 +269,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -245,8 +291,14 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -261,6 +313,7 @@
       "event": "step_line",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -275,7 +328,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -287,8 +342,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -303,8 +364,14 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -319,6 +386,7 @@
       "event": "call",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -333,7 +401,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -345,8 +415,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -361,8 +437,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -375,7 +457,9 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -387,6 +471,7 @@
       "event": "step_line",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -401,7 +486,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -413,8 +500,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -429,8 +522,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -445,8 +544,14 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -461,6 +566,7 @@
       "event": "step_line",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -475,7 +581,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -487,8 +595,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -503,8 +617,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -519,8 +639,14 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -535,6 +661,7 @@
       "event": "call",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -549,7 +676,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -561,8 +690,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -577,8 +712,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -593,8 +734,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -607,7 +754,9 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -619,6 +768,7 @@
       "event": "step_line",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -633,7 +783,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -645,8 +797,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -661,8 +819,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -677,8 +841,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -693,8 +863,14 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -709,6 +885,7 @@
       "event": "step_line",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -723,7 +900,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -735,8 +914,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -751,8 +936,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -767,8 +958,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -783,8 +980,14 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -799,6 +1002,7 @@
       "event": "return",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -814,7 +1018,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -826,8 +1032,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -842,8 +1054,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -858,8 +1076,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -874,8 +1098,14 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -890,6 +1120,7 @@
       "event": "step_line",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -904,7 +1135,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -916,8 +1149,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -932,8 +1171,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -949,9 +1194,17 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "sub": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "sub": 4
+          },
+          "local_types": {
+            "n": "int",
+            "sub": "int"
           },
           "ordered_varnames": [
             "n",
@@ -967,6 +1220,7 @@
       "event": "return",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -982,7 +1236,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -994,8 +1250,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -1010,8 +1272,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -1027,9 +1295,17 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "sub": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "sub": 4
+          },
+          "local_types": {
+            "n": "int",
+            "sub": "int"
           },
           "ordered_varnames": [
             "n",
@@ -1045,6 +1321,7 @@
       "event": "step_line",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1059,7 +1336,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1071,8 +1350,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -1088,9 +1373,17 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "sub": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "sub": 4
+          },
+          "local_types": {
+            "n": "int",
+            "sub": "int"
           },
           "ordered_varnames": [
             "n",
@@ -1106,6 +1399,7 @@
       "event": "return",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1121,7 +1415,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1133,8 +1429,14 @@
           "func_name": "factorial",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR"
+          },
           "local_sizes": {
             "n": 4
+          },
+          "local_types": {
+            "n": "int"
           },
           "ordered_varnames": [
             "n"
@@ -1150,9 +1452,17 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "sub": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "sub": 4
+          },
+          "local_types": {
+            "n": "int",
+            "sub": "int"
           },
           "ordered_varnames": [
             "n",
@@ -1168,6 +1478,7 @@
       "event": "step_line",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1182,7 +1493,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1195,9 +1508,17 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "sub": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "sub": 4
+          },
+          "local_types": {
+            "n": "int",
+            "sub": "int"
           },
           "ordered_varnames": [
             "n",
@@ -1213,6 +1534,7 @@
       "event": "return",
       "func_name": "factorial",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1228,7 +1550,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -1241,9 +1565,17 @@
           "func_name": "factorial",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "sub": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "sub": 4
+          },
+          "local_types": {
+            "n": "int",
+            "sub": "int"
           },
           "ordered_varnames": [
             "n",
@@ -1259,6 +1591,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1275,8 +1608,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "result": "0xPTR"
+          },
           "local_sizes": {
             "result": 4
+          },
+          "local_types": {
+            "result": "int"
           },
           "ordered_varnames": [
             "result"
@@ -1291,6 +1630,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1308,8 +1648,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "result": "0xPTR"
+          },
           "local_sizes": {
             "result": 4
+          },
+          "local_types": {
+            "result": "int"
           },
           "ordered_varnames": [
             "result"

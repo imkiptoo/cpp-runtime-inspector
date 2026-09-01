@@ -12,9 +12,10 @@ template <typename T>
 struct Box {
     T value;
 
-    Box() {
-        // Default-initialize value
-    }
+    // Value-initialize `value`: for scalar T this zeroes it. Without the
+    // initializer the member holds whatever was on the stack, which makes the
+    // recorded trace differ between machines and runs.
+    Box() : value() {}
 
     Box(T v) : value(v) {}
 
@@ -45,7 +46,8 @@ struct Pair {
     T first;
     U second;
 
-    Pair() {}
+    // Value-initialized for the same reason as Box().
+    Pair() : first(), second() {}
 
     Pair(T a, U b) : first(a), second(b) {}
 

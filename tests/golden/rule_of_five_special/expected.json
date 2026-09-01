@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "call",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -46,7 +50,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -56,7 +62,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -68,6 +76,7 @@
       "event": "step_line",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -82,7 +91,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -92,7 +103,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -104,6 +117,7 @@
       "event": "return",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -118,7 +132,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -128,7 +144,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -140,6 +158,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -162,8 +181,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit"
           },
           "ordered_varnames": [
             "e1"
@@ -178,6 +203,7 @@
       "event": "call",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -200,8 +226,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit"
           },
           "ordered_varnames": [
             "e1"
@@ -214,7 +246,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -226,6 +260,7 @@
       "event": "step_line",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -248,8 +283,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit"
           },
           "ordered_varnames": [
             "e1"
@@ -262,7 +303,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -274,6 +317,7 @@
       "event": "return",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -296,8 +340,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit"
           },
           "ordered_varnames": [
             "e1"
@@ -310,7 +360,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -322,6 +374,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -351,9 +404,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -369,6 +430,7 @@
       "event": "call",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -399,9 +461,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -415,7 +485,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -427,6 +499,7 @@
       "event": "step_line",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -456,9 +529,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -472,7 +553,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -484,6 +567,7 @@
       "event": "return",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -513,9 +597,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -529,7 +621,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -541,6 +635,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -577,10 +672,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -597,6 +702,7 @@
       "event": "call",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -634,10 +740,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -652,7 +768,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -664,6 +782,7 @@
       "event": "step_line",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -700,10 +819,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -718,7 +847,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -730,6 +861,7 @@
       "event": "step_line",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -766,10 +898,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -784,7 +926,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -796,6 +940,7 @@
       "event": "return",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -832,10 +977,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -850,7 +1005,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -862,6 +1019,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -905,11 +1063,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4,
             "e5": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -927,6 +1097,7 @@
       "event": "call",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -971,11 +1142,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4,
             "e5": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -991,7 +1174,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1003,6 +1188,7 @@
       "event": "step_line",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1046,11 +1232,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4,
             "e5": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -1066,7 +1264,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1078,6 +1278,7 @@
       "event": "return",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1121,11 +1322,23 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4,
             "e5": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -1141,7 +1354,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1153,6 +1368,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1203,12 +1419,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4,
             "e5": 4,
             "e6": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -1227,6 +1457,7 @@
       "event": "call",
       "func_name": "Explicit::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1278,12 +1509,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4,
             "e5": 4,
             "e6": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -1300,7 +1545,9 @@
           "func_name": "Explicit::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1312,6 +1559,7 @@
       "event": "step_line",
       "func_name": "Explicit::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1362,12 +1610,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4,
             "e5": 4,
             "e6": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -1391,8 +1653,14 @@
           "func_name": "Explicit::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Explicit &"
           },
           "ordered_varnames": [
             "o"
@@ -1407,6 +1675,7 @@
       "event": "step_line",
       "func_name": "Explicit::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1457,12 +1726,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4,
             "e5": 4,
             "e6": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -1486,8 +1769,14 @@
           "func_name": "Explicit::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Explicit &"
           },
           "ordered_varnames": [
             "o"
@@ -1502,6 +1791,7 @@
       "event": "return",
       "func_name": "Explicit::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1552,12 +1842,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4,
             "e5": 4,
             "e6": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -1581,8 +1885,14 @@
           "func_name": "Explicit::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Explicit &"
           },
           "ordered_varnames": [
             "o"
@@ -1597,6 +1907,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1647,12 +1958,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4,
             "e5": 4,
             "e6": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -1671,6 +1996,7 @@
       "event": "call",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1722,12 +2048,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4,
             "e5": 4,
             "e6": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -1744,7 +2084,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1756,6 +2098,7 @@
       "event": "step_line",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1806,12 +2149,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4,
             "e5": 4,
             "e6": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -1828,7 +2185,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1840,6 +2199,7 @@
       "event": "return",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1890,12 +2250,26 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
             "e4": 4,
             "e5": 4,
             "e6": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -1912,7 +2286,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1924,6 +2300,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1981,6 +2358,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
@@ -1988,6 +2373,14 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -2007,6 +2400,7 @@
       "event": "call",
       "func_name": "Explicit::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2065,6 +2459,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
@@ -2072,6 +2474,14 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -2089,7 +2499,9 @@
           "func_name": "Explicit::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2101,6 +2513,7 @@
       "event": "step_line",
       "func_name": "Explicit::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2158,6 +2571,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
@@ -2165,6 +2586,14 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -2189,8 +2618,14 @@
           "func_name": "Explicit::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "struct Explicit &&"
           },
           "ordered_varnames": [
             "o"
@@ -2205,6 +2640,7 @@
       "event": "step_line",
       "func_name": "Explicit::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2262,6 +2698,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
@@ -2269,6 +2713,14 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -2293,8 +2745,14 @@
           "func_name": "Explicit::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "struct Explicit &&"
           },
           "ordered_varnames": [
             "o"
@@ -2309,6 +2767,7 @@
       "event": "step_line",
       "func_name": "Explicit::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2366,6 +2825,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
@@ -2373,6 +2840,14 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -2397,8 +2872,14 @@
           "func_name": "Explicit::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "struct Explicit &&"
           },
           "ordered_varnames": [
             "o"
@@ -2413,6 +2894,7 @@
       "event": "return",
       "func_name": "Explicit::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2470,6 +2952,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
@@ -2477,6 +2967,14 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -2501,8 +2999,14 @@
           "func_name": "Explicit::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "struct Explicit &&"
           },
           "ordered_varnames": [
             "o"
@@ -2517,6 +3021,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2574,6 +3079,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
@@ -2581,6 +3094,14 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -2600,6 +3121,7 @@
       "event": "call",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2658,6 +3180,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
@@ -2665,6 +3195,14 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -2682,7 +3220,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2694,6 +3234,7 @@
       "event": "step_line",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2751,6 +3292,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
@@ -2758,6 +3307,14 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -2775,7 +3332,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2787,6 +3346,7 @@
       "event": "return",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2844,6 +3404,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "e1": 4,
             "e2": 4,
@@ -2851,6 +3419,14 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -2868,7 +3444,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -2880,6 +3458,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -2944,6 +3523,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "e1": 4,
@@ -2952,6 +3540,15 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -2972,6 +3569,7 @@
       "event": "call",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3036,6 +3634,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "e1": 4,
@@ -3044,6 +3651,15 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -3062,7 +3678,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3074,6 +3692,7 @@
       "event": "step_line",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3138,6 +3757,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "e1": 4,
@@ -3146,6 +3774,15 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -3164,7 +3801,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3176,6 +3815,7 @@
       "event": "return",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3240,6 +3880,15 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "e1": 4,
@@ -3248,6 +3897,15 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -3266,7 +3924,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3278,6 +3938,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3349,6 +4010,16 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -3358,6 +4029,16 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -3379,6 +4060,7 @@
       "event": "call",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3450,6 +4132,16 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -3459,6 +4151,16 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -3478,7 +4180,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3490,6 +4194,7 @@
       "event": "step_line",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3561,6 +4266,16 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -3570,6 +4285,16 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -3589,7 +4314,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3601,6 +4328,7 @@
       "event": "return",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3672,6 +4400,16 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -3681,6 +4419,16 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -3700,7 +4448,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3712,6 +4462,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3790,6 +4541,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -3800,6 +4562,17 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -3822,6 +4595,7 @@
       "event": "call",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -3901,6 +4675,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -3911,6 +4696,17 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -3931,7 +4727,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -3943,6 +4741,7 @@
       "event": "step_line",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4021,6 +4820,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -4031,6 +4841,17 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -4051,7 +4872,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4063,6 +4886,7 @@
       "event": "return",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4141,6 +4965,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -4151,6 +4986,17 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -4171,7 +5017,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4183,6 +5031,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4268,6 +5117,18 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -4279,6 +5140,18 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -4302,6 +5175,7 @@
       "event": "call",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4388,6 +5262,18 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -4399,6 +5285,18 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -4420,7 +5318,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4432,6 +5332,7 @@
       "event": "step_line",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4517,6 +5418,18 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -4528,6 +5441,18 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -4549,7 +5474,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4561,6 +5488,7 @@
       "event": "step_line",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4646,6 +5574,18 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -4657,6 +5597,18 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -4678,7 +5630,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4690,6 +5644,7 @@
       "event": "return",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4775,6 +5730,18 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -4786,6 +5753,18 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -4807,7 +5786,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -4819,6 +5800,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -4911,6 +5893,19 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -4923,6 +5918,19 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -4947,6 +5955,7 @@
       "event": "call",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5040,6 +6049,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -5052,6 +6074,19 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -5074,7 +6109,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5086,6 +6123,7 @@
       "event": "step_line",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5178,6 +6216,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -5190,6 +6241,19 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -5212,7 +6276,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5224,6 +6290,7 @@
       "event": "return",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5316,6 +6383,19 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -5328,6 +6408,19 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -5350,7 +6443,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5362,6 +6457,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5461,6 +6557,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -5474,6 +6584,20 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -5499,6 +6623,7 @@
       "event": "call",
       "func_name": "Converting::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5599,6 +6724,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -5612,6 +6751,20 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -5635,7 +6788,9 @@
           "func_name": "Converting::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -5647,6 +6802,7 @@
       "event": "step_line",
       "func_name": "Converting::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5746,6 +6902,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -5759,6 +6929,20 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -5789,8 +6973,14 @@
           "func_name": "Converting::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Converting &"
           },
           "ordered_varnames": [
             "o"
@@ -5805,6 +6995,7 @@
       "event": "step_line",
       "func_name": "Converting::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -5904,6 +7095,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -5917,6 +7122,20 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -5947,8 +7166,14 @@
           "func_name": "Converting::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Converting &"
           },
           "ordered_varnames": [
             "o"
@@ -5963,6 +7188,7 @@
       "event": "return",
       "func_name": "Converting::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6062,6 +7288,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -6075,6 +7315,20 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -6105,8 +7359,14 @@
           "func_name": "Converting::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "const struct Converting &"
           },
           "ordered_varnames": [
             "o"
@@ -6121,6 +7381,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6220,6 +7481,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -6233,6 +7508,20 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -6258,6 +7547,7 @@
       "event": "call",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6358,6 +7648,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -6371,6 +7675,20 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -6394,7 +7712,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6406,6 +7726,7 @@
       "event": "step_line",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6505,6 +7826,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -6518,6 +7853,20 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -6541,7 +7890,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6553,6 +7904,7 @@
       "event": "return",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6652,6 +8004,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -6665,6 +8031,20 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -6688,7 +8068,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -6700,6 +8082,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6806,6 +8189,21 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -6820,6 +8218,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -6846,6 +8259,7 @@
       "event": "call",
       "func_name": "Converting::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -6953,6 +8367,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -6967,6 +8396,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -6991,7 +8435,9 @@
           "func_name": "Converting::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -7003,6 +8449,7 @@
       "event": "step_line",
       "func_name": "Converting::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7109,6 +8556,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -7123,6 +8585,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -7154,8 +8631,14 @@
           "func_name": "Converting::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "struct Converting &&"
           },
           "ordered_varnames": [
             "o"
@@ -7170,6 +8653,7 @@
       "event": "step_line",
       "func_name": "Converting::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7276,6 +8760,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -7290,6 +8789,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -7321,8 +8835,14 @@
           "func_name": "Converting::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "struct Converting &&"
           },
           "ordered_varnames": [
             "o"
@@ -7337,6 +8857,7 @@
       "event": "step_line",
       "func_name": "Converting::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7443,6 +8964,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -7457,6 +8993,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -7488,8 +9039,14 @@
           "func_name": "Converting::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "struct Converting &&"
           },
           "ordered_varnames": [
             "o"
@@ -7504,6 +9061,7 @@
       "event": "return",
       "func_name": "Converting::operator=",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7610,6 +9168,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -7624,6 +9197,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -7655,8 +9243,14 @@
           "func_name": "Converting::operator=",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "o": "0xPTR"
+          },
           "local_sizes": {
             "o": 8
+          },
+          "local_types": {
+            "o": "struct Converting &&"
           },
           "ordered_varnames": [
             "o"
@@ -7671,6 +9265,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7777,6 +9372,21 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -7791,6 +9401,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -7817,6 +9442,7 @@
       "event": "call",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -7923,6 +9549,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -7937,6 +9578,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -7961,7 +9617,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -7973,6 +9631,7 @@
       "event": "step_line",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -8079,6 +9738,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -8093,6 +9767,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -8117,7 +9806,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -8129,6 +9820,7 @@
       "event": "return",
       "func_name": "Converting::Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -8235,6 +9927,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -8249,6 +9956,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -8273,7 +9995,9 @@
           "func_name": "Converting::Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -8285,6 +10009,7 @@
       "event": "call",
       "func_name": "takeConverting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -8391,6 +10116,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -8405,6 +10145,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -8429,7 +10184,9 @@
           "func_name": "takeConverting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -8441,6 +10198,7 @@
       "event": "step_line",
       "func_name": "takeConverting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -8547,6 +10305,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -8561,6 +10334,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -8593,8 +10381,14 @@
           "func_name": "takeConverting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 4
+          },
+          "local_types": {
+            "c": "struct Converting"
           },
           "ordered_varnames": [
             "c"
@@ -8609,6 +10403,7 @@
       "event": "return",
       "func_name": "takeConverting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -8716,6 +10511,21 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -8730,6 +10540,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -8762,8 +10587,14 @@
           "func_name": "takeConverting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "c": 4
+          },
+          "local_types": {
+            "c": "struct Converting"
           },
           "ordered_varnames": [
             "c"
@@ -8778,6 +10609,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -8884,6 +10716,21 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "c1": "0xPTR",
+            "c2": "0xPTR",
+            "c3": "0xPTR",
+            "c4": "0xPTR",
+            "c5": "0xPTR",
+            "c6": "0xPTR",
+            "c7": "0xPTR",
+            "e1": "0xPTR",
+            "e2": "0xPTR",
+            "e4": "0xPTR",
+            "e5": "0xPTR",
+            "e6": "0xPTR",
+            "e7": "0xPTR"
+          },
           "local_sizes": {
             "c1": 4,
             "c2": 4,
@@ -8898,6 +10745,21 @@
             "e5": 4,
             "e6": 4,
             "e7": 4
+          },
+          "local_types": {
+            "c1": "struct Converting",
+            "c2": "struct Converting",
+            "c3": "struct Converting",
+            "c4": "struct Converting",
+            "c5": "struct Converting",
+            "c6": "struct Converting",
+            "c7": "struct Converting",
+            "e1": "struct Explicit",
+            "e2": "struct Explicit",
+            "e4": "struct Explicit",
+            "e5": "struct Explicit",
+            "e6": "struct Explicit",
+            "e7": "struct Explicit"
           },
           "ordered_varnames": [
             "e1",
@@ -8924,6 +10786,7 @@
       "event": "call",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -8939,7 +10802,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -8951,6 +10816,7 @@
       "event": "step_line",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -8967,8 +10833,14 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "result": "0xPTR"
+          },
           "local_sizes": {
             "result": 4
+          },
+          "local_types": {
+            "result": "int"
           },
           "ordered_varnames": [
             "result"
@@ -8983,6 +10855,7 @@
       "event": "step_line",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -8999,8 +10872,14 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "result": "0xPTR"
+          },
           "local_sizes": {
             "result": 4
+          },
+          "local_types": {
+            "result": "int"
           },
           "ordered_varnames": [
             "result"
@@ -9015,6 +10894,7 @@
       "event": "return",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9031,8 +10911,14 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "result": "0xPTR"
+          },
           "local_sizes": {
             "result": 4
+          },
+          "local_types": {
+            "result": "int"
           },
           "ordered_varnames": [
             "result"
@@ -9047,6 +10933,7 @@
       "event": "call",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9061,7 +10948,9 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -9073,6 +10962,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9097,8 +10987,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "wil1": "0xPTR"
+          },
           "local_sizes": {
             "wil1": 12
+          },
+          "local_types": {
+            "wil1": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil1"
@@ -9113,6 +11009,7 @@
       "event": "return",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9137,8 +11034,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "wil1": "0xPTR"
+          },
           "local_sizes": {
             "wil1": 12
+          },
+          "local_types": {
+            "wil1": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil1"
@@ -9153,6 +11056,7 @@
       "event": "call",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9168,7 +11072,9 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -9180,6 +11086,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9204,8 +11111,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "wil2": "0xPTR"
+          },
           "local_sizes": {
             "wil2": 12
+          },
+          "local_types": {
+            "wil2": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil2"
@@ -9220,6 +11133,7 @@
       "event": "return",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9244,8 +11158,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "wil2": "0xPTR"
+          },
           "local_sizes": {
             "wil2": 12
+          },
+          "local_types": {
+            "wil2": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil2"
@@ -9260,6 +11180,7 @@
       "event": "call",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9274,7 +11195,9 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -9286,6 +11209,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9310,8 +11234,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "wil3": "0xPTR"
+          },
           "local_sizes": {
             "wil3": 12
+          },
+          "local_types": {
+            "wil3": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil3"
@@ -9326,6 +11256,7 @@
       "event": "return",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9350,8 +11281,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "wil3": "0xPTR"
+          },
           "local_sizes": {
             "wil3": 12
+          },
+          "local_types": {
+            "wil3": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil3"
@@ -9366,6 +11303,7 @@
       "event": "call",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9381,7 +11319,9 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -9393,6 +11333,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9417,8 +11358,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "wil4": "0xPTR"
+          },
           "local_sizes": {
             "wil4": 12
+          },
+          "local_types": {
+            "wil4": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4"
@@ -9433,6 +11380,7 @@
       "event": "call",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9458,8 +11406,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "wil4": "0xPTR"
+          },
           "local_sizes": {
             "wil4": 12
+          },
+          "local_types": {
+            "wil4": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4"
@@ -9472,7 +11426,9 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -9484,6 +11440,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9508,8 +11465,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "wil4": "0xPTR"
+          },
           "local_sizes": {
             "wil4": 12
+          },
+          "local_types": {
+            "wil4": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4"
@@ -9522,7 +11485,9 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -9534,6 +11499,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9558,8 +11524,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "wil4": "0xPTR"
+          },
           "local_sizes": {
             "wil4": 12
+          },
+          "local_types": {
+            "wil4": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4"
@@ -9572,7 +11544,9 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -9584,6 +11558,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9608,8 +11583,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "wil4": "0xPTR"
+          },
           "local_sizes": {
             "wil4": 12
+          },
+          "local_types": {
+            "wil4": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4"
@@ -9622,7 +11603,9 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -9634,6 +11617,7 @@
       "event": "return",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9658,8 +11642,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "wil4": "0xPTR"
+          },
           "local_sizes": {
             "wil4": 12
+          },
+          "local_types": {
+            "wil4": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4"
@@ -9672,7 +11662,9 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -9684,6 +11676,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9717,9 +11710,17 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -9735,6 +11736,7 @@
       "event": "call",
       "func_name": "makeExplicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9768,9 +11770,17 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -9784,7 +11794,9 @@
           "func_name": "makeExplicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -9796,6 +11808,7 @@
       "event": "step_line",
       "func_name": "makeExplicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9829,9 +11842,17 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -9847,8 +11868,14 @@
           "func_name": "makeExplicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "v": 4
+          },
+          "local_types": {
+            "v": "int"
           },
           "ordered_varnames": [
             "v"
@@ -9863,6 +11890,7 @@
       "event": "return",
       "func_name": "makeExplicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9896,9 +11924,17 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -9914,8 +11950,14 @@
           "func_name": "makeExplicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "v": "0xPTR"
+          },
           "local_sizes": {
             "v": 4
+          },
+          "local_types": {
+            "v": "int"
           },
           "ordered_varnames": [
             "v"
@@ -9930,6 +11972,7 @@
       "event": "call",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -9963,9 +12006,17 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -9979,7 +12030,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -9991,6 +12044,7 @@
       "event": "step_line",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10024,9 +12078,17 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -10040,7 +12102,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -10052,6 +12116,7 @@
       "event": "return",
       "func_name": "Explicit::Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10085,9 +12150,17 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -10101,7 +12174,9 @@
           "func_name": "Explicit::Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -10113,6 +12188,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10153,10 +12229,20 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -10173,6 +12259,7 @@
       "event": "call",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10214,10 +12301,20 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -10232,7 +12329,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -10244,6 +12343,7 @@
       "event": "step_line",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10284,10 +12384,20 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -10302,7 +12412,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -10314,6 +12426,7 @@
       "event": "step_line",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10354,10 +12467,20 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -10372,7 +12495,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -10384,6 +12509,7 @@
       "event": "return",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10424,10 +12550,20 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -10442,7 +12578,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -10454,6 +12592,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10502,11 +12641,23 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -10524,6 +12675,7 @@
       "event": "call",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10572,11 +12724,23 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -10592,7 +12756,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -10604,6 +12770,7 @@
       "event": "step_line",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10652,11 +12819,23 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -10672,7 +12851,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -10684,6 +12865,7 @@
       "event": "step_line",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10732,11 +12914,23 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -10752,7 +12946,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -10764,6 +12960,7 @@
       "event": "return",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10812,11 +13009,23 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -10832,7 +13041,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -10844,6 +13055,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10900,12 +13112,26 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
             "mc2": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -10924,6 +13150,7 @@
       "event": "call",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -10980,12 +13207,26 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
             "mc2": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -11002,7 +13243,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -11014,6 +13257,7 @@
       "event": "step_line",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -11070,12 +13314,26 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
             "mc2": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -11092,7 +13350,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -11104,6 +13364,7 @@
       "event": "step_line",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -11160,12 +13421,26 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
             "mc2": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -11182,7 +13457,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -11194,6 +13471,7 @@
       "event": "return",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -11250,12 +13528,26 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
             "mc2": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -11272,7 +13564,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -11284,6 +13578,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -11348,6 +13643,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -11355,6 +13658,14 @@
             "mc3": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -11374,6 +13685,7 @@
       "event": "call",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -11439,6 +13751,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -11446,6 +13766,14 @@
             "mc3": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -11463,7 +13791,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -11475,6 +13805,7 @@
       "event": "step_line",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -11539,6 +13870,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -11546,6 +13885,14 @@
             "mc3": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -11563,7 +13910,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -11575,6 +13924,7 @@
       "event": "step_line",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -11639,6 +13989,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -11646,6 +14004,14 @@
             "mc3": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -11663,7 +14029,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -11675,6 +14043,7 @@
       "event": "return",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -11739,6 +14108,14 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -11746,6 +14123,14 @@
             "mc3": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -11763,7 +14148,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -11775,6 +14162,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -11847,6 +14235,15 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "mc4": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -11855,6 +14252,15 @@
             "mc4": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "mc4": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -11875,6 +14281,7 @@
       "event": "call",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -11948,6 +14355,15 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "mc4": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -11956,6 +14372,15 @@
             "mc4": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "mc4": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -11974,7 +14399,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -11986,6 +14413,7 @@
       "event": "step_line",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12058,6 +14486,15 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "mc4": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -12066,6 +14503,15 @@
             "mc4": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "mc4": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -12084,7 +14530,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12096,6 +14544,7 @@
       "event": "step_line",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12168,6 +14617,15 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "mc4": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -12176,6 +14634,15 @@
             "mc4": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "mc4": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -12194,7 +14661,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12206,6 +14675,7 @@
       "event": "step_line",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12278,6 +14748,15 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "mc4": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -12286,6 +14765,15 @@
             "mc4": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "mc4": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -12304,7 +14792,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12316,6 +14806,7 @@
       "event": "step_line",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12388,6 +14879,15 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "mc4": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -12396,6 +14896,15 @@
             "mc4": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "mc4": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -12414,7 +14923,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12426,6 +14937,7 @@
       "event": "return",
       "func_name": "MultiCtor::MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12498,6 +15010,15 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "mc4": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -12506,6 +15027,15 @@
             "mc4": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "mc4": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -12524,7 +15054,9 @@
           "func_name": "MultiCtor::MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12536,6 +15068,7 @@
       "event": "step_line",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12616,6 +15149,16 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "mc4": "0xPTR",
+            "mc5": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -12625,6 +15168,16 @@
             "mc5": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "mc4": "struct MultiCtor",
+            "mc5": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -12646,6 +15199,7 @@
       "event": "return",
       "func_name": "WithInitList::WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12727,6 +15281,16 @@
           "func_name": "WithInitList::WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "e8": "0xPTR",
+            "mc1": "0xPTR",
+            "mc2": "0xPTR",
+            "mc3": "0xPTR",
+            "mc4": "0xPTR",
+            "mc5": "0xPTR",
+            "wil4": "0xPTR",
+            "wil5": "0xPTR"
+          },
           "local_sizes": {
             "e8": 4,
             "mc1": 8,
@@ -12736,6 +15300,16 @@
             "mc5": 8,
             "wil4": 12,
             "wil5": 12
+          },
+          "local_types": {
+            "e8": "struct Explicit",
+            "mc1": "struct MultiCtor",
+            "mc2": "struct MultiCtor",
+            "mc3": "struct MultiCtor",
+            "mc4": "struct MultiCtor",
+            "mc5": "struct MultiCtor",
+            "wil4": "struct WithInitList",
+            "wil5": "struct WithInitList"
           },
           "ordered_varnames": [
             "wil4",
@@ -12757,6 +15331,7 @@
       "event": "call",
       "func_name": "MultiCtor::~MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12772,7 +15347,9 @@
           "func_name": "MultiCtor::~MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12784,6 +15361,7 @@
       "event": "return",
       "func_name": "MultiCtor::~MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12798,7 +15376,9 @@
           "func_name": "MultiCtor::~MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12810,6 +15390,7 @@
       "event": "call",
       "func_name": "MultiCtor::~MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12825,7 +15406,9 @@
           "func_name": "MultiCtor::~MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12837,6 +15420,7 @@
       "event": "return",
       "func_name": "MultiCtor::~MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12851,7 +15435,9 @@
           "func_name": "MultiCtor::~MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12863,6 +15449,7 @@
       "event": "call",
       "func_name": "MultiCtor::~MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12878,7 +15465,9 @@
           "func_name": "MultiCtor::~MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12890,6 +15479,7 @@
       "event": "return",
       "func_name": "MultiCtor::~MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12904,7 +15494,9 @@
           "func_name": "MultiCtor::~MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12916,6 +15508,7 @@
       "event": "call",
       "func_name": "MultiCtor::~MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12931,7 +15524,9 @@
           "func_name": "MultiCtor::~MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12943,6 +15538,7 @@
       "event": "return",
       "func_name": "MultiCtor::~MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12957,7 +15553,9 @@
           "func_name": "MultiCtor::~MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12969,6 +15567,7 @@
       "event": "call",
       "func_name": "MultiCtor::~MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -12984,7 +15583,9 @@
           "func_name": "MultiCtor::~MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -12996,6 +15597,7 @@
       "event": "return",
       "func_name": "MultiCtor::~MultiCtor",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13010,7 +15612,9 @@
           "func_name": "MultiCtor::~MultiCtor",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13022,6 +15626,7 @@
       "event": "call",
       "func_name": "Explicit::~Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13037,7 +15642,9 @@
           "func_name": "Explicit::~Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13049,6 +15656,7 @@
       "event": "return",
       "func_name": "Explicit::~Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13063,7 +15671,9 @@
           "func_name": "Explicit::~Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13075,6 +15685,7 @@
       "event": "call",
       "func_name": "WithInitList::~WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13090,7 +15701,9 @@
           "func_name": "WithInitList::~WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13102,6 +15715,7 @@
       "event": "return",
       "func_name": "WithInitList::~WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13116,7 +15730,9 @@
           "func_name": "WithInitList::~WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13128,6 +15744,7 @@
       "event": "call",
       "func_name": "WithInitList::~WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13143,7 +15760,9 @@
           "func_name": "WithInitList::~WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13155,6 +15774,7 @@
       "event": "return",
       "func_name": "WithInitList::~WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13169,7 +15789,9 @@
           "func_name": "WithInitList::~WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13181,6 +15803,7 @@
       "event": "call",
       "func_name": "WithInitList::~WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13196,7 +15819,9 @@
           "func_name": "WithInitList::~WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13208,6 +15833,7 @@
       "event": "return",
       "func_name": "WithInitList::~WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13222,7 +15848,9 @@
           "func_name": "WithInitList::~WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13234,6 +15862,7 @@
       "event": "call",
       "func_name": "WithInitList::~WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13249,7 +15878,9 @@
           "func_name": "WithInitList::~WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13261,6 +15892,7 @@
       "event": "return",
       "func_name": "WithInitList::~WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13275,7 +15907,9 @@
           "func_name": "WithInitList::~WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13287,6 +15921,7 @@
       "event": "call",
       "func_name": "WithInitList::~WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13302,7 +15937,9 @@
           "func_name": "WithInitList::~WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13314,6 +15951,7 @@
       "event": "return",
       "func_name": "WithInitList::~WithInitList",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13328,7 +15966,9 @@
           "func_name": "WithInitList::~WithInitList",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13340,6 +15980,7 @@
       "event": "call",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13355,7 +15996,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13367,6 +16010,7 @@
       "event": "return",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13381,7 +16025,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13393,6 +16039,7 @@
       "event": "call",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13408,7 +16055,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13420,6 +16069,7 @@
       "event": "return",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13434,7 +16084,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13446,6 +16098,7 @@
       "event": "call",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13461,7 +16114,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13473,6 +16128,7 @@
       "event": "return",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13487,7 +16143,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13499,6 +16157,7 @@
       "event": "call",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13514,7 +16173,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13526,6 +16187,7 @@
       "event": "return",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13540,7 +16202,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13552,6 +16216,7 @@
       "event": "call",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13567,7 +16232,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13579,6 +16246,7 @@
       "event": "return",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13593,7 +16261,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13605,6 +16275,7 @@
       "event": "call",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13620,7 +16291,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13632,6 +16305,7 @@
       "event": "return",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13646,7 +16320,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13658,6 +16334,7 @@
       "event": "call",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13673,7 +16350,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13685,6 +16364,7 @@
       "event": "return",
       "func_name": "Converting::~Converting",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13699,7 +16379,9 @@
           "func_name": "Converting::~Converting",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13711,6 +16393,7 @@
       "event": "call",
       "func_name": "Explicit::~Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13726,7 +16409,9 @@
           "func_name": "Explicit::~Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13738,6 +16423,7 @@
       "event": "return",
       "func_name": "Explicit::~Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13752,7 +16438,9 @@
           "func_name": "Explicit::~Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13764,6 +16452,7 @@
       "event": "call",
       "func_name": "Explicit::~Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13779,7 +16468,9 @@
           "func_name": "Explicit::~Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13791,6 +16482,7 @@
       "event": "return",
       "func_name": "Explicit::~Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13805,7 +16497,9 @@
           "func_name": "Explicit::~Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13817,6 +16511,7 @@
       "event": "call",
       "func_name": "Explicit::~Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13832,7 +16527,9 @@
           "func_name": "Explicit::~Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13844,6 +16541,7 @@
       "event": "return",
       "func_name": "Explicit::~Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13858,7 +16556,9 @@
           "func_name": "Explicit::~Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13870,6 +16570,7 @@
       "event": "call",
       "func_name": "Explicit::~Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13885,7 +16586,9 @@
           "func_name": "Explicit::~Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13897,6 +16600,7 @@
       "event": "return",
       "func_name": "Explicit::~Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13911,7 +16615,9 @@
           "func_name": "Explicit::~Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13923,6 +16629,7 @@
       "event": "call",
       "func_name": "Explicit::~Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13938,7 +16645,9 @@
           "func_name": "Explicit::~Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13950,6 +16659,7 @@
       "event": "return",
       "func_name": "Explicit::~Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13964,7 +16674,9 @@
           "func_name": "Explicit::~Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -13976,6 +16688,7 @@
       "event": "call",
       "func_name": "Explicit::~Explicit",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -13991,7 +16704,9 @@
           "func_name": "Explicit::~Explicit",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }

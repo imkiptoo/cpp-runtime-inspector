@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -74,8 +78,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "head": "0xPTR"
+          },
           "local_sizes": {
             "head": 8
+          },
+          "local_types": {
+            "head": "struct Node *"
           },
           "ordered_varnames": [
             "head"
@@ -90,6 +100,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -175,9 +186,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "current": "0xPTR",
+            "head": "0xPTR"
+          },
           "local_sizes": {
             "current": 8,
             "head": 8
+          },
+          "local_types": {
+            "current": "struct Node *",
+            "head": "struct Node *"
           },
           "ordered_varnames": [
             "head",
@@ -193,6 +212,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -278,9 +298,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "current": "0xPTR",
+            "head": "0xPTR"
+          },
           "local_sizes": {
             "current": 8,
             "head": 8
+          },
+          "local_types": {
+            "current": "struct Node *",
+            "head": "struct Node *"
           },
           "ordered_varnames": [
             "head",
@@ -296,6 +324,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "1": [
@@ -385,10 +414,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "current": "0xPTR",
+            "head": "0xPTR",
+            "next": "0xPTR"
+          },
           "local_sizes": {
             "current": 8,
             "head": 8,
             "next": 8
+          },
+          "local_types": {
+            "current": "struct Node *",
+            "head": "struct Node *",
+            "next": "struct Node *"
           },
           "ordered_varnames": [
             "head",
@@ -405,6 +444,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "2": [
@@ -475,10 +515,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "current": "0xPTR",
+            "head": "0xPTR",
+            "next": "0xPTR"
+          },
           "local_sizes": {
             "current": 8,
             "head": 8,
             "next": 8
+          },
+          "local_types": {
+            "current": "struct Node *",
+            "head": "struct Node *",
+            "next": "struct Node *"
           },
           "ordered_varnames": [
             "head",
@@ -495,6 +545,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "2": [
@@ -565,10 +616,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "current": "0xPTR",
+            "head": "0xPTR",
+            "next": "0xPTR"
+          },
           "local_sizes": {
             "current": 8,
             "head": 8,
             "next": 8
+          },
+          "local_types": {
+            "current": "struct Node *",
+            "head": "struct Node *",
+            "next": "struct Node *"
           },
           "ordered_varnames": [
             "head",
@@ -585,6 +646,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "2": [
@@ -655,10 +717,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "current": "0xPTR",
+            "head": "0xPTR",
+            "next": "0xPTR"
+          },
           "local_sizes": {
             "current": 8,
             "head": 8,
             "next": 8
+          },
+          "local_types": {
+            "current": "struct Node *",
+            "head": "struct Node *",
+            "next": "struct Node *"
           },
           "ordered_varnames": [
             "head",
@@ -675,6 +747,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "3": [
@@ -726,10 +799,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "current": "0xPTR",
+            "head": "0xPTR",
+            "next": "0xPTR"
+          },
           "local_sizes": {
             "current": 8,
             "head": 8,
             "next": 8
+          },
+          "local_types": {
+            "current": "struct Node *",
+            "head": "struct Node *",
+            "next": "struct Node *"
           },
           "ordered_varnames": [
             "head",
@@ -746,6 +829,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "3": [
@@ -797,10 +881,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "current": "0xPTR",
+            "head": "0xPTR",
+            "next": "0xPTR"
+          },
           "local_sizes": {
             "current": 8,
             "head": 8,
             "next": 8
+          },
+          "local_types": {
+            "current": "struct Node *",
+            "head": "struct Node *",
+            "next": "struct Node *"
           },
           "ordered_varnames": [
             "head",
@@ -817,6 +911,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {
         "3": [
@@ -870,10 +965,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "current": "0xPTR",
+            "head": "0xPTR",
+            "next": "0xPTR"
+          },
           "local_sizes": {
             "current": 8,
             "head": 8,
             "next": 8
+          },
+          "local_types": {
+            "current": "struct Node *",
+            "head": "struct Node *",
+            "next": "struct Node *"
           },
           "ordered_varnames": [
             "head",
@@ -890,6 +995,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -919,10 +1025,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "current": "0xPTR",
+            "head": "0xPTR",
+            "next": "0xPTR"
+          },
           "local_sizes": {
             "current": 8,
             "head": 8,
             "next": 8
+          },
+          "local_types": {
+            "current": "struct Node *",
+            "head": "struct Node *",
+            "next": "struct Node *"
           },
           "ordered_varnames": [
             "head",
@@ -939,6 +1055,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -970,10 +1087,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "current": "0xPTR",
+            "head": "0xPTR",
+            "next": "0xPTR"
+          },
           "local_sizes": {
             "current": 8,
             "head": 8,
             "next": 8
+          },
+          "local_types": {
+            "current": "struct Node *",
+            "head": "struct Node *",
+            "next": "struct Node *"
           },
           "ordered_varnames": [
             "head",
@@ -990,6 +1117,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -1022,10 +1150,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "current": "0xPTR",
+            "head": "0xPTR",
+            "next": "0xPTR"
+          },
           "local_sizes": {
             "current": 8,
             "head": 8,
             "next": 8
+          },
+          "local_types": {
+            "current": "struct Node *",
+            "head": "struct Node *",
+            "next": "struct Node *"
           },
           "ordered_varnames": [
             "head",

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { StackFrame, EncodedValue } from '$lib/trace/schema';
 	import { isCRef, isCRefOffset, isCDangling, getHeapId } from '$lib/trace/schema';
-	import LocalRow from './LocalRow.svelte';
+	import VarTable from './VarTable.svelte';
 	import PointerChip from './PointerChip.svelte';
 
 	interface Props {
@@ -165,12 +165,15 @@
 
 	<!-- Locals section -->
 	{#if isExpanded && hasLocals}
-		<div class="flex flex-col border-t border-islands-100 dark:border-islands-700/50 px-2.5 pb-2.5 pt-1" data-testid="frame-locals">
-			{#each frame.ordered_varnames as name}
-				{@const value = frame.encoded_locals[name]}
-				{@const size = frame.local_sizes?.[name]}
-				<LocalRow {name} {value} {size} showType={true} />
-			{/each}
+		<div class="border-t border-islands-100 dark:border-islands-700/50 px-2.5 pb-2.5 pt-1" data-testid="frame-locals">
+			<VarTable
+				names={frame.ordered_varnames}
+				values={frame.encoded_locals}
+				sizes={frame.local_sizes}
+				types={frame.local_types}
+				addresses={frame.local_addresses}
+				showAddress={true}
+			/>
 		</div>
 	{:else if isExpanded && !hasLocals}
 		<div class="px-2.5 pb-2 text-[12px] text-islands-400 dark:text-islands-500 italic border-t border-islands-100 dark:border-islands-700/50 pt-1">

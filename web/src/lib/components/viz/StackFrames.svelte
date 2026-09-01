@@ -4,7 +4,7 @@
 	import { appState } from '$lib/state/app.svelte';
 	import { capturePositions, calculateTransitions, animateFlip, animateEnter } from '$lib/anim/flip';
 	import FrameCard from './FrameCard.svelte';
-	import LocalRow from './LocalRow.svelte';
+	import VarTable from './VarTable.svelte';
 
 	interface Props {
 		frames: StackFrame[];
@@ -96,11 +96,14 @@
 			<div class="font-mono text-[10px] uppercase tracking-widest text-islands-400 dark:text-islands-500 mb-2">
 				Globals
 			</div>
-			<div class="overflow-hidden rounded-sm border border-line bg-white dark:bg-islands-800">
-				{#each orderedGlobals as name}
-					{@const value = globals[name]}
-					<LocalRow {name} {value} showType={true} />
-				{/each}
+			<div class="overflow-hidden rounded-sm border border-line bg-white dark:bg-islands-800 px-2.5 pb-2 pt-1">
+				<!-- Globals have no runtime address, so that column is omitted. -->
+				<VarTable
+					names={orderedGlobals}
+					values={globals}
+					sizes={appState.currentStep?.global_sizes}
+					types={appState.currentStep?.global_types}
+				/>
 			</div>
 		</div>
 	{/if}

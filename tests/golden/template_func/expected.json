@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "call",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -45,7 +49,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -55,7 +61,9 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -67,6 +75,7 @@
       "event": "return",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -81,7 +90,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -91,7 +102,9 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -103,6 +116,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -119,8 +133,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR"
+          },
           "local_sizes": {
             "i": 4
+          },
+          "local_types": {
+            "i": "int"
           },
           "ordered_varnames": [
             "i"
@@ -135,6 +155,7 @@
       "event": "call",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -151,8 +172,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR"
+          },
           "local_sizes": {
             "i": 4
+          },
+          "local_types": {
+            "i": "int"
           },
           "ordered_varnames": [
             "i"
@@ -165,7 +192,9 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -177,6 +206,7 @@
       "event": "return",
       "func_name": "add",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -193,8 +223,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR"
+          },
           "local_sizes": {
             "i": 4
+          },
+          "local_types": {
+            "i": "int"
           },
           "ordered_varnames": [
             "i"
@@ -207,7 +243,9 @@
           "func_name": "add",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -219,6 +257,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -236,9 +275,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "d": "0xPTR",
+            "i": "0xPTR"
+          },
           "local_sizes": {
             "d": 8,
             "i": 4
+          },
+          "local_types": {
+            "d": "double",
+            "i": "int"
           },
           "ordered_varnames": [
             "i",
@@ -254,6 +301,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -272,9 +320,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "d": "0xPTR",
+            "i": "0xPTR"
+          },
           "local_sizes": {
             "d": 8,
             "i": 4
+          },
+          "local_types": {
+            "d": "double",
+            "i": "int"
           },
           "ordered_varnames": [
             "i",

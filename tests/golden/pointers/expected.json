@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -47,8 +51,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "x": 4
+          },
+          "local_types": {
+            "x": "int"
           },
           "ordered_varnames": [
             "x"
@@ -63,6 +73,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -80,9 +91,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "x": "0xPTR",
+            "y": "0xPTR"
+          },
           "local_sizes": {
             "x": 4,
             "y": 4
+          },
+          "local_types": {
+            "x": "int",
+            "y": "int"
           },
           "ordered_varnames": [
             "x",
@@ -98,6 +117,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -121,10 +141,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "ptr": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR"
+          },
           "local_sizes": {
             "ptr": 8,
             "x": 4,
             "y": 4
+          },
+          "local_types": {
+            "ptr": "int *",
+            "x": "int",
+            "y": "int"
           },
           "ordered_varnames": [
             "x",
@@ -141,6 +171,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -165,11 +196,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "ptr": "0xPTR",
+            "val": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR"
+          },
           "local_sizes": {
             "ptr": 8,
             "val": 4,
             "x": 4,
             "y": 4
+          },
+          "local_types": {
+            "ptr": "int *",
+            "val": "int",
+            "x": "int",
+            "y": "int"
           },
           "ordered_varnames": [
             "x",
@@ -187,6 +230,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -211,11 +255,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "ptr": "0xPTR",
+            "val": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR"
+          },
           "local_sizes": {
             "ptr": 8,
             "val": 4,
             "x": 4,
             "y": 4
+          },
+          "local_types": {
+            "ptr": "int *",
+            "val": "int",
+            "x": "int",
+            "y": "int"
           },
           "ordered_varnames": [
             "x",
@@ -233,6 +289,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -257,11 +314,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "ptr": "0xPTR",
+            "val": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR"
+          },
           "local_sizes": {
             "ptr": 8,
             "val": 4,
             "x": 4,
             "y": 4
+          },
+          "local_types": {
+            "ptr": "int *",
+            "val": "int",
+            "x": "int",
+            "y": "int"
           },
           "ordered_varnames": [
             "x",
@@ -279,6 +348,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -309,12 +379,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "null_ptr": "0xPTR",
+            "ptr": "0xPTR",
+            "val": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR"
+          },
           "local_sizes": {
             "null_ptr": 8,
             "ptr": 8,
             "val": 4,
             "x": 4,
             "y": 4
+          },
+          "local_types": {
+            "null_ptr": "int *",
+            "ptr": "int *",
+            "val": "int",
+            "x": "int",
+            "y": "int"
           },
           "ordered_varnames": [
             "x",
@@ -333,6 +417,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -369,6 +454,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "null_ptr": "0xPTR",
+            "pptr": "0xPTR",
+            "ptr": "0xPTR",
+            "val": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR"
+          },
           "local_sizes": {
             "null_ptr": 8,
             "pptr": 8,
@@ -376,6 +469,14 @@
             "val": 4,
             "x": 4,
             "y": 4
+          },
+          "local_types": {
+            "null_ptr": "int *",
+            "pptr": "int **",
+            "ptr": "int *",
+            "val": "int",
+            "x": "int",
+            "y": "int"
           },
           "ordered_varnames": [
             "x",
@@ -395,6 +496,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -431,6 +533,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "null_ptr": "0xPTR",
+            "pptr": "0xPTR",
+            "ptr": "0xPTR",
+            "val": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR"
+          },
           "local_sizes": {
             "null_ptr": 8,
             "pptr": 8,
@@ -438,6 +548,14 @@
             "val": 4,
             "x": 4,
             "y": 4
+          },
+          "local_types": {
+            "null_ptr": "int *",
+            "pptr": "int **",
+            "ptr": "int *",
+            "val": "int",
+            "x": "int",
+            "y": "int"
           },
           "ordered_varnames": [
             "x",
@@ -457,6 +575,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -494,6 +613,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "null_ptr": "0xPTR",
+            "pptr": "0xPTR",
+            "ptr": "0xPTR",
+            "val": "0xPTR",
+            "x": "0xPTR",
+            "y": "0xPTR"
+          },
           "local_sizes": {
             "null_ptr": 8,
             "pptr": 8,
@@ -501,6 +628,14 @@
             "val": 4,
             "x": 4,
             "y": 4
+          },
+          "local_types": {
+            "null_ptr": "int *",
+            "pptr": "int **",
+            "ptr": "int *",
+            "val": "int",
+            "x": "int",
+            "y": "int"
           },
           "ordered_varnames": [
             "x",

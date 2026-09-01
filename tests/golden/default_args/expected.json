@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "call",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -45,7 +49,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -55,7 +61,9 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -67,6 +75,7 @@
       "event": "step_line",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -81,7 +90,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -93,8 +104,14 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 4
+          },
+          "local_types": {
+            "a": "int"
           },
           "ordered_varnames": [
             "a"
@@ -109,6 +126,7 @@
       "event": "step_line",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -123,7 +141,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -136,9 +156,17 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int"
           },
           "ordered_varnames": [
             "a",
@@ -154,6 +182,7 @@
       "event": "step_line",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -168,7 +197,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -182,10 +213,20 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int",
+            "c": "int"
           },
           "ordered_varnames": [
             "a",
@@ -202,6 +243,7 @@
       "event": "return",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -217,7 +259,9 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         },
@@ -231,10 +275,20 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int",
+            "c": "int"
           },
           "ordered_varnames": [
             "a",
@@ -251,6 +305,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -267,8 +322,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR"
+          },
           "local_sizes": {
             "all": 4
+          },
+          "local_types": {
+            "all": "int"
           },
           "ordered_varnames": [
             "all"
@@ -283,6 +344,7 @@
       "event": "call",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -299,8 +361,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR"
+          },
           "local_sizes": {
             "all": 4
+          },
+          "local_types": {
+            "all": "int"
           },
           "ordered_varnames": [
             "all"
@@ -313,7 +381,9 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -325,6 +395,7 @@
       "event": "step_line",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -341,8 +412,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR"
+          },
           "local_sizes": {
             "all": 4
+          },
+          "local_types": {
+            "all": "int"
           },
           "ordered_varnames": [
             "all"
@@ -357,8 +434,14 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 4
+          },
+          "local_types": {
+            "a": "int"
           },
           "ordered_varnames": [
             "a"
@@ -373,6 +456,7 @@
       "event": "step_line",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -389,8 +473,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR"
+          },
           "local_sizes": {
             "all": 4
+          },
+          "local_types": {
+            "all": "int"
           },
           "ordered_varnames": [
             "all"
@@ -406,9 +496,17 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int"
           },
           "ordered_varnames": [
             "a",
@@ -424,6 +522,7 @@
       "event": "step_line",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -440,8 +539,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR"
+          },
           "local_sizes": {
             "all": 4
+          },
+          "local_types": {
+            "all": "int"
           },
           "ordered_varnames": [
             "all"
@@ -458,10 +563,20 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int",
+            "c": "int"
           },
           "ordered_varnames": [
             "a",
@@ -478,6 +593,7 @@
       "event": "return",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -495,8 +611,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR"
+          },
           "local_sizes": {
             "all": 4
+          },
+          "local_types": {
+            "all": "int"
           },
           "ordered_varnames": [
             "all"
@@ -513,10 +635,20 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int",
+            "c": "int"
           },
           "ordered_varnames": [
             "a",
@@ -533,6 +665,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -550,9 +683,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR",
+            "two": "0xPTR"
+          },
           "local_sizes": {
             "all": 4,
             "two": 4
+          },
+          "local_types": {
+            "all": "int",
+            "two": "int"
           },
           "ordered_varnames": [
             "all",
@@ -568,6 +709,7 @@
       "event": "call",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -585,9 +727,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR",
+            "two": "0xPTR"
+          },
           "local_sizes": {
             "all": 4,
             "two": 4
+          },
+          "local_types": {
+            "all": "int",
+            "two": "int"
           },
           "ordered_varnames": [
             "all",
@@ -601,7 +751,9 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -613,6 +765,7 @@
       "event": "step_line",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -630,9 +783,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR",
+            "two": "0xPTR"
+          },
           "local_sizes": {
             "all": 4,
             "two": 4
+          },
+          "local_types": {
+            "all": "int",
+            "two": "int"
           },
           "ordered_varnames": [
             "all",
@@ -648,8 +809,14 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 4
+          },
+          "local_types": {
+            "a": "int"
           },
           "ordered_varnames": [
             "a"
@@ -664,6 +831,7 @@
       "event": "step_line",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -681,9 +849,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR",
+            "two": "0xPTR"
+          },
           "local_sizes": {
             "all": 4,
             "two": 4
+          },
+          "local_types": {
+            "all": "int",
+            "two": "int"
           },
           "ordered_varnames": [
             "all",
@@ -700,9 +876,17 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int"
           },
           "ordered_varnames": [
             "a",
@@ -718,6 +902,7 @@
       "event": "step_line",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -735,9 +920,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR",
+            "two": "0xPTR"
+          },
           "local_sizes": {
             "all": 4,
             "two": 4
+          },
+          "local_types": {
+            "all": "int",
+            "two": "int"
           },
           "ordered_varnames": [
             "all",
@@ -755,10 +948,20 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int",
+            "c": "int"
           },
           "ordered_varnames": [
             "a",
@@ -775,6 +978,7 @@
       "event": "return",
       "func_name": "build",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -793,9 +997,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR",
+            "two": "0xPTR"
+          },
           "local_sizes": {
             "all": 4,
             "two": 4
+          },
+          "local_types": {
+            "all": "int",
+            "two": "int"
           },
           "ordered_varnames": [
             "all",
@@ -813,10 +1025,20 @@
           "func_name": "build",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "c": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int",
+            "c": "int"
           },
           "ordered_varnames": [
             "a",
@@ -833,6 +1055,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -851,10 +1074,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR",
+            "one": "0xPTR",
+            "two": "0xPTR"
+          },
           "local_sizes": {
             "all": 4,
             "one": 4,
             "two": 4
+          },
+          "local_types": {
+            "all": "int",
+            "one": "int",
+            "two": "int"
           },
           "ordered_varnames": [
             "all",
@@ -871,6 +1104,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -890,10 +1124,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "all": "0xPTR",
+            "one": "0xPTR",
+            "two": "0xPTR"
+          },
           "local_sizes": {
             "all": 4,
             "one": 4,
             "two": 4
+          },
+          "local_types": {
+            "all": "int",
+            "one": "int",
+            "two": "int"
           },
           "ordered_varnames": [
             "all",

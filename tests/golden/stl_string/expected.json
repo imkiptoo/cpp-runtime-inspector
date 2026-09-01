@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -47,8 +51,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "s": "0xPTR"
+          },
           "local_sizes": {
             "s": 24
+          },
+          "local_types": {
+            "s": "std::string"
           },
           "ordered_varnames": [
             "s"
@@ -63,6 +73,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -79,8 +90,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "s": "0xPTR"
+          },
           "local_sizes": {
             "s": 24
+          },
+          "local_types": {
+            "s": "std::string"
           },
           "ordered_varnames": [
             "s"
@@ -95,6 +112,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -112,9 +130,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "len": "0xPTR",
+            "s": "0xPTR"
+          },
           "local_sizes": {
             "len": 4,
             "s": 24
+          },
+          "local_types": {
+            "len": "int",
+            "s": "std::string"
           },
           "ordered_varnames": [
             "s",
@@ -130,6 +156,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -147,9 +174,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "len": "0xPTR",
+            "s": "0xPTR"
+          },
           "local_sizes": {
             "len": 4,
             "s": 24
+          },
+          "local_types": {
+            "len": "int",
+            "s": "std::string"
           },
           "ordered_varnames": [
             "s",
@@ -165,6 +200,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -183,9 +219,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "len": "0xPTR",
+            "s": "0xPTR"
+          },
           "local_sizes": {
             "len": 4,
             "s": 24
+          },
+          "local_types": {
+            "len": "int",
+            "s": "std::string"
           },
           "ordered_varnames": [
             "s",

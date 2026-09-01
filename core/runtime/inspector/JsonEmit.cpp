@@ -144,15 +144,21 @@ nlohmann::json JsonEmitter::stepToJson(const TraceStep& step) {
     }
     result["stack_to_render"] = stackToRender;
 
-    // Globals with sizes
+    // Globals with sizes and declared types. Globals carry no address —
+    // registerGlobal has no runtime pointer for them — so none is emitted.
     nlohmann::json globalsJson = nlohmann::json::object();
     nlohmann::json globalSizes = nlohmann::json::object();
+    nlohmann::json globalTypes = nlohmann::json::object();
     for (const auto& [name, vs] : step.globals) {
         globalsJson[name] = valueToJson(vs.value, vs.type);
         globalSizes[name] = static_cast<int>(vs.sizeBytes);
+        if (vs.type && vs.type->spelling) {
+            globalTypes[name] = vs.type->spelling;
+        }
     }
     result["globals"] = globalsJson;
     result["global_sizes"] = globalSizes;
+    result["global_types"] = globalTypes;
 
     nlohmann::json orderedGlobals = nlohmann::json::array();
     for (const auto& name : step.orderedGlobals) {
@@ -206,15 +212,30 @@ nlohmann::json JsonEmitter::frameToJson(const Frame& frame) {
         result["is_ghost_dtor"] = true;
     }
 
-    // Encoded locals with size information
+    // Encoded locals, with the declared type, size and storage address that
+    // the frontend needs to render a variable table. `local_types` carries the
+    // real spelling from the type descriptor — without it the UI can only
+    // guess a type back from the JSON value shape.
     nlohmann::json encodedLocals = nlohmann::json::object();
     nlohmann::json localSizes = nlohmann::json::object();
+    nlohmann::json localTypes = nlohmann::json::object();
+    nlohmann::json localAddresses = nlohmann::json::object();
     for (const auto& [name, var] : frame.locals) {
         encodedLocals[name] = valueToJson(var.value, var.type);
         localSizes[name] = static_cast<int>(var.sizeBytes);
+        if (var.type && var.type->spelling) {
+            localTypes[name] = var.type->spelling;
+        }
+        if (var.addr) {
+            std::ostringstream ss;
+            ss << "0x" << std::hex << reinterpret_cast<uintptr_t>(var.addr);
+            localAddresses[name] = ss.str();
+        }
     }
     result["encoded_locals"] = encodedLocals;
     result["local_sizes"] = localSizes;
+    result["local_types"] = localTypes;
+    result["local_addresses"] = localAddresses;
 
     // Ordered variable names
     result["ordered_varnames"] = frame.orderedLocalNames;

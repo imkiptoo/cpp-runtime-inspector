@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -51,8 +55,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "p": "0xPTR"
+          },
           "local_sizes": {
             "p": 8
+          },
+          "local_types": {
+            "p": "struct std::pair<int, int>"
           },
           "ordered_varnames": [
             "p"
@@ -67,6 +77,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -88,9 +99,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "p": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "p": 8
+          },
+          "local_types": {
+            "a": "int",
+            "p": "struct std::pair<int, int>"
           },
           "ordered_varnames": [
             "p",
@@ -106,6 +125,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -128,10 +148,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "p": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "p": 8
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int",
+            "p": "struct std::pair<int, int>"
           },
           "ordered_varnames": [
             "p",
@@ -148,6 +178,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -178,11 +209,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "p": "0xPTR",
+            "pt": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "p": 8,
             "pt": 8
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int",
+            "p": "struct std::pair<int, int>",
+            "pt": "struct Point"
           },
           "ordered_varnames": [
             "p",
@@ -200,6 +243,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -231,12 +275,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "p": "0xPTR",
+            "pt": "0xPTR",
+            "px": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "p": 8,
             "pt": 8,
             "px": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int",
+            "p": "struct std::pair<int, int>",
+            "pt": "struct Point",
+            "px": "int"
           },
           "ordered_varnames": [
             "p",
@@ -255,6 +313,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -287,6 +346,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "p": "0xPTR",
+            "pt": "0xPTR",
+            "px": "0xPTR",
+            "py": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
@@ -294,6 +361,14 @@
             "pt": 8,
             "px": 4,
             "py": 4
+          },
+          "local_types": {
+            "a": "int",
+            "b": "int",
+            "p": "struct std::pair<int, int>",
+            "pt": "struct Point",
+            "px": "int",
+            "py": "int"
           },
           "ordered_varnames": [
             "p",
@@ -313,6 +388,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -354,6 +430,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "arr": "0xPTR",
+            "b": "0xPTR",
+            "p": "0xPTR",
+            "pt": "0xPTR",
+            "px": "0xPTR",
+            "py": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "arr": 12,
@@ -362,6 +447,15 @@
             "pt": 8,
             "px": 4,
             "py": 4
+          },
+          "local_types": {
+            "a": "int",
+            "arr": "int[3]",
+            "b": "int",
+            "p": "struct std::pair<int, int>",
+            "pt": "struct Point",
+            "px": "int",
+            "py": "int"
           },
           "ordered_varnames": [
             "p",
@@ -382,6 +476,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -424,6 +519,16 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "arr": "0xPTR",
+            "b": "0xPTR",
+            "p": "0xPTR",
+            "pt": "0xPTR",
+            "px": "0xPTR",
+            "py": "0xPTR",
+            "r": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "arr": 12,
@@ -433,6 +538,16 @@
             "px": 4,
             "py": 4,
             "r": 4
+          },
+          "local_types": {
+            "a": "int",
+            "arr": "int[3]",
+            "b": "int",
+            "p": "struct std::pair<int, int>",
+            "pt": "struct Point",
+            "px": "int",
+            "py": "int",
+            "r": "int"
           },
           "ordered_varnames": [
             "p",
@@ -454,6 +569,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -497,6 +613,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "arr": "0xPTR",
+            "b": "0xPTR",
+            "p": "0xPTR",
+            "pt": "0xPTR",
+            "px": "0xPTR",
+            "py": "0xPTR",
+            "r": "0xPTR",
+            "s": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "arr": 12,
@@ -507,6 +634,17 @@
             "py": 4,
             "r": 4,
             "s": 4
+          },
+          "local_types": {
+            "a": "int",
+            "arr": "int[3]",
+            "b": "int",
+            "p": "struct std::pair<int, int>",
+            "pt": "struct Point",
+            "px": "int",
+            "py": "int",
+            "r": "int",
+            "s": "int"
           },
           "ordered_varnames": [
             "p",
@@ -529,6 +667,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -573,6 +712,18 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "arr": "0xPTR",
+            "b": "0xPTR",
+            "p": "0xPTR",
+            "pt": "0xPTR",
+            "px": "0xPTR",
+            "py": "0xPTR",
+            "r": "0xPTR",
+            "s": "0xPTR",
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "arr": 12,
@@ -584,6 +735,18 @@
             "r": 4,
             "s": 4,
             "t": 4
+          },
+          "local_types": {
+            "a": "int",
+            "arr": "int[3]",
+            "b": "int",
+            "p": "struct std::pair<int, int>",
+            "pt": "struct Point",
+            "px": "int",
+            "py": "int",
+            "r": "int",
+            "s": "int",
+            "t": "int"
           },
           "ordered_varnames": [
             "p",
@@ -607,6 +770,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -652,6 +816,18 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "arr": "0xPTR",
+            "b": "0xPTR",
+            "p": "0xPTR",
+            "pt": "0xPTR",
+            "px": "0xPTR",
+            "py": "0xPTR",
+            "r": "0xPTR",
+            "s": "0xPTR",
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "arr": 12,
@@ -663,6 +839,18 @@
             "r": 4,
             "s": 4,
             "t": 4
+          },
+          "local_types": {
+            "a": "int",
+            "arr": "int[3]",
+            "b": "int",
+            "p": "struct std::pair<int, int>",
+            "pt": "struct Point",
+            "px": "int",
+            "py": "int",
+            "r": "int",
+            "s": "int",
+            "t": "int"
           },
           "ordered_varnames": [
             "p",

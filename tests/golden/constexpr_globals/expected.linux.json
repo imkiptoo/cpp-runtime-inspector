@@ -14,6 +14,16 @@
         "pi": 8,
         "ratio": 4
       },
+      "global_types": {
+        "big_num": "long",
+        "buffer_size": "unsigned long",
+        "byte_val": "unsigned char",
+        "current_season": "enum Season",
+        "flag": "bool",
+        "magic": "int",
+        "pi": "double",
+        "ratio": "float"
+      },
       "globals": {
         "big_num": 9223372036854775807,
         "buffer_size": 1024,
@@ -46,7 +56,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -66,6 +78,16 @@
         "magic": 4,
         "pi": 8,
         "ratio": 4
+      },
+      "global_types": {
+        "big_num": "long",
+        "buffer_size": "unsigned long",
+        "byte_val": "unsigned char",
+        "current_season": "enum Season",
+        "flag": "bool",
+        "magic": "int",
+        "pi": "double",
+        "ratio": "float"
       },
       "globals": {
         "big_num": 9223372036854775807,
@@ -101,8 +123,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "first": "0xPTR"
+          },
           "local_sizes": {
             "first": 4
+          },
+          "local_types": {
+            "first": "enum Season"
           },
           "ordered_varnames": [
             "first"
@@ -125,6 +153,16 @@
         "magic": 4,
         "pi": 8,
         "ratio": 4
+      },
+      "global_types": {
+        "big_num": "long",
+        "buffer_size": "unsigned long",
+        "byte_val": "unsigned char",
+        "current_season": "enum Season",
+        "flag": "bool",
+        "magic": "int",
+        "pi": "double",
+        "ratio": "float"
       },
       "globals": {
         "big_num": 9223372036854775807,
@@ -161,9 +199,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "first": "0xPTR",
+            "local": "0xPTR"
+          },
           "local_sizes": {
             "first": 4,
             "local": 4
+          },
+          "local_types": {
+            "first": "enum Season",
+            "local": "int"
           },
           "ordered_varnames": [
             "first",
@@ -187,6 +233,16 @@
         "magic": 4,
         "pi": 8,
         "ratio": 4
+      },
+      "global_types": {
+        "big_num": "long",
+        "buffer_size": "unsigned long",
+        "byte_val": "unsigned char",
+        "current_season": "enum Season",
+        "flag": "bool",
+        "magic": "int",
+        "pi": "double",
+        "ratio": "float"
       },
       "globals": {
         "big_num": 9223372036854775807,
@@ -224,9 +280,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "first": "0xPTR",
+            "local": "0xPTR"
+          },
           "local_sizes": {
             "first": 4,
             "local": 4
+          },
+          "local_types": {
+            "first": "enum Season",
+            "local": "int"
           },
           "ordered_varnames": [
             "first",

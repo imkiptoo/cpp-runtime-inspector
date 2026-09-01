@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -53,8 +57,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "bi": "0xPTR"
+          },
           "local_sizes": {
             "bi": 4
+          },
+          "local_types": {
+            "bi": "struct Box<int>"
           },
           "ordered_varnames": [
             "bi"
@@ -69,6 +79,7 @@
       "event": "call",
       "func_name": "Box::set",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -91,8 +102,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "bi": "0xPTR"
+          },
           "local_sizes": {
             "bi": 4
+          },
+          "local_types": {
+            "bi": "struct Box<int>"
           },
           "ordered_varnames": [
             "bi"
@@ -105,7 +122,9 @@
           "func_name": "Box::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -117,6 +136,7 @@
       "event": "step_line",
       "func_name": "Box::set",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -139,8 +159,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "bi": "0xPTR"
+          },
           "local_sizes": {
             "bi": 4
+          },
+          "local_types": {
+            "bi": "struct Box<int>"
           },
           "ordered_varnames": [
             "bi"
@@ -153,7 +179,9 @@
           "func_name": "Box::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -165,6 +193,7 @@
       "event": "return",
       "func_name": "Box::set",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -187,8 +216,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "bi": "0xPTR"
+          },
           "local_sizes": {
             "bi": 4
+          },
+          "local_types": {
+            "bi": "struct Box<int>"
           },
           "ordered_varnames": [
             "bi"
@@ -201,7 +236,9 @@
           "func_name": "Box::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -213,6 +250,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -235,8 +273,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "bi": "0xPTR"
+          },
           "local_sizes": {
             "bi": 4
+          },
+          "local_types": {
+            "bi": "struct Box<int>"
           },
           "ordered_varnames": [
             "bi"
@@ -251,6 +295,7 @@
       "event": "call",
       "func_name": "Box::get",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -273,8 +318,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "bi": "0xPTR"
+          },
           "local_sizes": {
             "bi": 4
+          },
+          "local_types": {
+            "bi": "struct Box<int>"
           },
           "ordered_varnames": [
             "bi"
@@ -287,7 +338,9 @@
           "func_name": "Box::get",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -299,6 +352,7 @@
       "event": "return",
       "func_name": "Box::get",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -321,8 +375,14 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "bi": "0xPTR"
+          },
           "local_sizes": {
             "bi": 4
+          },
+          "local_types": {
+            "bi": "struct Box<int>"
           },
           "ordered_varnames": [
             "bi"
@@ -335,7 +395,9 @@
           "func_name": "Box::get",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -347,6 +409,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -370,9 +433,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "bi": "0xPTR",
+            "xi": "0xPTR"
+          },
           "local_sizes": {
             "bi": 4,
             "xi": 4
+          },
+          "local_types": {
+            "bi": "struct Box<int>",
+            "xi": "int"
           },
           "ordered_varnames": [
             "bi",
@@ -388,6 +459,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -418,10 +490,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "bd": "0xPTR",
+            "bi": "0xPTR",
+            "xi": "0xPTR"
+          },
           "local_sizes": {
             "bd": 8,
             "bi": 4,
             "xi": 4
+          },
+          "local_types": {
+            "bd": "struct Box<double>",
+            "bi": "struct Box<int>",
+            "xi": "int"
           },
           "ordered_varnames": [
             "bi",
@@ -438,6 +520,7 @@
       "event": "call",
       "func_name": "Box::set",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -468,10 +551,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "bd": "0xPTR",
+            "bi": "0xPTR",
+            "xi": "0xPTR"
+          },
           "local_sizes": {
             "bd": 8,
             "bi": 4,
             "xi": 4
+          },
+          "local_types": {
+            "bd": "struct Box<double>",
+            "bi": "struct Box<int>",
+            "xi": "int"
           },
           "ordered_varnames": [
             "bi",
@@ -486,7 +579,9 @@
           "func_name": "Box::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -498,6 +593,7 @@
       "event": "step_line",
       "func_name": "Box::set",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -528,10 +624,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "bd": "0xPTR",
+            "bi": "0xPTR",
+            "xi": "0xPTR"
+          },
           "local_sizes": {
             "bd": 8,
             "bi": 4,
             "xi": 4
+          },
+          "local_types": {
+            "bd": "struct Box<double>",
+            "bi": "struct Box<int>",
+            "xi": "int"
           },
           "ordered_varnames": [
             "bi",
@@ -546,7 +652,9 @@
           "func_name": "Box::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -558,6 +666,7 @@
       "event": "return",
       "func_name": "Box::set",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -588,10 +697,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "bd": "0xPTR",
+            "bi": "0xPTR",
+            "xi": "0xPTR"
+          },
           "local_sizes": {
             "bd": 8,
             "bi": 4,
             "xi": 4
+          },
+          "local_types": {
+            "bd": "struct Box<double>",
+            "bi": "struct Box<int>",
+            "xi": "int"
           },
           "ordered_varnames": [
             "bi",
@@ -606,7 +725,9 @@
           "func_name": "Box::set",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -618,6 +739,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -648,10 +770,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "bd": "0xPTR",
+            "bi": "0xPTR",
+            "xi": "0xPTR"
+          },
           "local_sizes": {
             "bd": 8,
             "bi": 4,
             "xi": 4
+          },
+          "local_types": {
+            "bd": "struct Box<double>",
+            "bi": "struct Box<int>",
+            "xi": "int"
           },
           "ordered_varnames": [
             "bi",
@@ -668,6 +800,7 @@
       "event": "call",
       "func_name": "Box::get",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -698,10 +831,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "bd": "0xPTR",
+            "bi": "0xPTR",
+            "xi": "0xPTR"
+          },
           "local_sizes": {
             "bd": 8,
             "bi": 4,
             "xi": 4
+          },
+          "local_types": {
+            "bd": "struct Box<double>",
+            "bi": "struct Box<int>",
+            "xi": "int"
           },
           "ordered_varnames": [
             "bi",
@@ -716,7 +859,9 @@
           "func_name": "Box::get",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -728,6 +873,7 @@
       "event": "return",
       "func_name": "Box::get",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -758,10 +904,20 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "bd": "0xPTR",
+            "bi": "0xPTR",
+            "xi": "0xPTR"
+          },
           "local_sizes": {
             "bd": 8,
             "bi": 4,
             "xi": 4
+          },
+          "local_types": {
+            "bd": "struct Box<double>",
+            "bi": "struct Box<int>",
+            "xi": "int"
           },
           "ordered_varnames": [
             "bi",
@@ -776,7 +932,9 @@
           "func_name": "Box::get",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -788,6 +946,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -819,11 +978,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "bd": "0xPTR",
+            "bi": "0xPTR",
+            "xd": "0xPTR",
+            "xi": "0xPTR"
+          },
           "local_sizes": {
             "bd": 8,
             "bi": 4,
             "xd": 8,
             "xi": 4
+          },
+          "local_types": {
+            "bd": "struct Box<double>",
+            "bi": "struct Box<int>",
+            "xd": "double",
+            "xi": "int"
           },
           "ordered_varnames": [
             "bi",
@@ -841,6 +1012,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -873,11 +1045,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "bd": "0xPTR",
+            "bi": "0xPTR",
+            "xd": "0xPTR",
+            "xi": "0xPTR"
+          },
           "local_sizes": {
             "bd": 8,
             "bi": 4,
             "xd": 8,
             "xi": 4
+          },
+          "local_types": {
+            "bd": "struct Box<double>",
+            "bi": "struct Box<int>",
+            "xd": "double",
+            "xi": "int"
           },
           "ordered_varnames": [
             "bi",

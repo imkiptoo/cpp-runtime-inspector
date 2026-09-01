@@ -7,6 +7,9 @@
       "global_sizes": {
         "total": 4
       },
+      "global_types": {
+        "total": "int"
+      },
       "globals": {
         "total": 0
       },
@@ -25,7 +28,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -38,6 +43,9 @@
       "func_name": "main",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -65,8 +73,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR"
+          },
           "local_sizes": {
             "a": 4
+          },
+          "local_types": {
+            "a": "struct Counter"
           },
           "ordered_varnames": [
             "a"
@@ -82,6 +96,9 @@
       "func_name": "main",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -116,9 +133,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -135,6 +160,9 @@
       "func_name": "Counter::bump",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -169,9 +197,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -185,7 +221,9 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -198,6 +236,9 @@
       "func_name": "Counter::bump",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -232,9 +273,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -248,7 +297,9 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -261,6 +312,9 @@
       "func_name": "Counter::bump",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -295,9 +349,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -313,8 +375,14 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "total": "0xPTR"
+          },
           "local_sizes": {
             "total": 4
+          },
+          "local_types": {
+            "total": "int"
           },
           "ordered_varnames": [
             "total"
@@ -330,6 +398,9 @@
       "func_name": "Counter::bump",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -364,9 +435,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -382,8 +461,14 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "total": "0xPTR"
+          },
           "local_sizes": {
             "total": 4
+          },
+          "local_types": {
+            "total": "int"
           },
           "ordered_varnames": [
             "total"
@@ -399,6 +484,9 @@
       "func_name": "main",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -433,9 +521,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -452,6 +548,9 @@
       "func_name": "Counter::bump",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -486,9 +585,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -502,7 +609,9 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -515,6 +624,9 @@
       "func_name": "Counter::bump",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -549,9 +661,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -565,7 +685,9 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -578,6 +700,9 @@
       "func_name": "Counter::bump",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -612,9 +737,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -630,8 +763,14 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "total": "0xPTR"
+          },
           "local_sizes": {
             "total": 4
+          },
+          "local_types": {
+            "total": "int"
           },
           "ordered_varnames": [
             "total"
@@ -647,6 +786,9 @@
       "func_name": "Counter::bump",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -681,9 +823,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -699,8 +849,14 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "total": "0xPTR"
+          },
           "local_sizes": {
             "total": 4
+          },
+          "local_types": {
+            "total": "int"
           },
           "ordered_varnames": [
             "total"
@@ -716,6 +872,9 @@
       "func_name": "main",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -750,9 +909,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -769,6 +936,9 @@
       "func_name": "Counter::bump",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -803,9 +973,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -819,7 +997,9 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -832,6 +1012,9 @@
       "func_name": "Counter::bump",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -866,9 +1049,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -882,7 +1073,9 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -895,6 +1088,9 @@
       "func_name": "Counter::bump",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -929,9 +1125,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -947,8 +1151,14 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "total": "0xPTR"
+          },
           "local_sizes": {
             "total": 4
+          },
+          "local_types": {
+            "total": "int"
           },
           "ordered_varnames": [
             "total"
@@ -964,6 +1174,9 @@
       "func_name": "Counter::bump",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -998,9 +1211,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -1016,8 +1237,14 @@
           "func_name": "Counter::bump",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "total": "0xPTR"
+          },
           "local_sizes": {
             "total": 4
+          },
+          "local_types": {
+            "total": "int"
           },
           "ordered_varnames": [
             "total"
@@ -1033,6 +1260,9 @@
       "func_name": "main",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -1067,9 +1297,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -1086,6 +1324,9 @@
       "func_name": "Counter::globalTotal",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -1120,9 +1361,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -1136,7 +1385,9 @@
           "func_name": "Counter::globalTotal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1149,6 +1400,9 @@
       "func_name": "Counter::globalTotal",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -1184,9 +1438,17 @@
           "func_name": "main",
           "is_highlighted": false,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter"
           },
           "ordered_varnames": [
             "a",
@@ -1200,7 +1462,9 @@
           "func_name": "Counter::globalTotal",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -1213,6 +1477,9 @@
       "func_name": "main",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -1248,10 +1515,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "t": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "t": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter",
+            "t": "int"
           },
           "ordered_varnames": [
             "a",
@@ -1269,6 +1546,9 @@
       "func_name": "main",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -1305,11 +1585,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "t": "0xPTR",
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "t": 4,
             "x": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter",
+            "t": "int",
+            "x": "int"
           },
           "ordered_varnames": [
             "a",
@@ -1328,6 +1620,9 @@
       "func_name": "main",
       "global_sizes": {
         "total": 4
+      },
+      "global_types": {
+        "total": "int"
       },
       "globals": {
         "total": 0
@@ -1365,11 +1660,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "a": "0xPTR",
+            "b": "0xPTR",
+            "t": "0xPTR",
+            "x": "0xPTR"
+          },
           "local_sizes": {
             "a": 4,
             "b": 4,
             "t": 4,
             "x": 4
+          },
+          "local_types": {
+            "a": "struct Counter",
+            "b": "struct Counter",
+            "t": "int",
+            "x": "int"
           },
           "ordered_varnames": [
             "a",

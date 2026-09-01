@@ -158,6 +158,10 @@ export const StackFrameSchema = z.object({
 	func_name: z.string(),
 	encoded_locals: z.record(z.string(), EncodedValueSchema),
 	local_sizes: z.record(z.string(), z.number()).optional(),
+	// Declared type spelling and storage address per local, straight from the
+	// runtime's type descriptors. Optional for older backends.
+	local_types: z.record(z.string(), z.string()).optional(),
+	local_addresses: z.record(z.string(), z.string()).optional(),
 	ordered_varnames: z.array(z.string()),
 	is_highlighted: z.boolean(),
 	is_zombie: z.boolean(),
@@ -175,6 +179,7 @@ export const TraceStepSchema = z.object({
 	stack_to_render: z.array(StackFrameSchema),
 	globals: z.record(z.string(), EncodedValueSchema),
 	global_sizes: z.record(z.string(), z.number()).optional(),
+	global_types: z.record(z.string(), z.string()).optional(),
 	ordered_globals: z.array(z.string()),
 	heap: z.record(z.string(), HeapObjectSchema),
 	heap_sizes: z.record(z.string(), z.number()).optional(),

@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -54,8 +58,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "empty": "0xPTR"
+          },
           "local_sizes": {
             "empty": 8
+          },
+          "local_types": {
+            "empty": "class std::optional<int>"
           },
           "ordered_varnames": [
             "empty"
@@ -70,6 +80,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -101,9 +112,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "empty": "0xPTR",
+            "with_value": "0xPTR"
+          },
           "local_sizes": {
             "empty": 8,
             "with_value": 8
+          },
+          "local_types": {
+            "empty": "class std::optional<int>",
+            "with_value": "class std::optional<int>"
           },
           "ordered_varnames": [
             "empty",
@@ -119,6 +138,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -151,10 +171,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "empty": "0xPTR",
+            "v": "0xPTR",
+            "with_value": "0xPTR"
+          },
           "local_sizes": {
             "empty": 8,
             "v": 4,
             "with_value": 8
+          },
+          "local_types": {
+            "empty": "class std::optional<int>",
+            "v": "int",
+            "with_value": "class std::optional<int>"
           },
           "ordered_varnames": [
             "empty",
@@ -171,6 +201,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -203,10 +234,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "empty": "0xPTR",
+            "v": "0xPTR",
+            "with_value": "0xPTR"
+          },
           "local_sizes": {
             "empty": 8,
             "v": 4,
             "with_value": 8
+          },
+          "local_types": {
+            "empty": "class std::optional<int>",
+            "v": "int",
+            "with_value": "class std::optional<int>"
           },
           "ordered_varnames": [
             "empty",
@@ -223,6 +264,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -263,11 +305,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "assigned": "0xPTR",
+            "empty": "0xPTR",
+            "v": "0xPTR",
+            "with_value": "0xPTR"
+          },
           "local_sizes": {
             "assigned": 8,
             "empty": 8,
             "v": 4,
             "with_value": 8
+          },
+          "local_types": {
+            "assigned": "class std::optional<int>",
+            "empty": "class std::optional<int>",
+            "v": "int",
+            "with_value": "class std::optional<int>"
           },
           "ordered_varnames": [
             "empty",
@@ -285,6 +339,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -325,11 +380,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "assigned": "0xPTR",
+            "empty": "0xPTR",
+            "v": "0xPTR",
+            "with_value": "0xPTR"
+          },
           "local_sizes": {
             "assigned": 8,
             "empty": 8,
             "v": 4,
             "with_value": 8
+          },
+          "local_types": {
+            "assigned": "class std::optional<int>",
+            "empty": "class std::optional<int>",
+            "v": "int",
+            "with_value": "class std::optional<int>"
           },
           "ordered_varnames": [
             "empty",
@@ -347,6 +414,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -388,11 +456,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "assigned": "0xPTR",
+            "empty": "0xPTR",
+            "v": "0xPTR",
+            "with_value": "0xPTR"
+          },
           "local_sizes": {
             "assigned": 8,
             "empty": 8,
             "v": 4,
             "with_value": 8
+          },
+          "local_types": {
+            "assigned": "class std::optional<int>",
+            "empty": "class std::optional<int>",
+            "v": "int",
+            "with_value": "class std::optional<int>"
           },
           "ordered_varnames": [
             "empty",

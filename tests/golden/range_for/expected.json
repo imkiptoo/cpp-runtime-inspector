@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -57,8 +61,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "nums": "0xPTR"
+          },
           "local_sizes": {
             "nums": 20
+          },
+          "local_types": {
+            "nums": "int[5]"
           },
           "ordered_varnames": [
             "nums"
@@ -73,6 +83,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -100,9 +111,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "nums": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "nums": 20,
             "sum": 4
+          },
+          "local_types": {
+            "nums": "int[5]",
+            "sum": "int"
           },
           "ordered_varnames": [
             "nums",
@@ -118,6 +137,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -145,9 +165,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "nums": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "nums": 20,
             "sum": 4
+          },
+          "local_types": {
+            "nums": "int[5]",
+            "sum": "int"
           },
           "ordered_varnames": [
             "nums",
@@ -163,6 +191,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -191,10 +220,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "nums": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "nums": 20,
             "sum": 4
+          },
+          "local_types": {
+            "n": "int",
+            "nums": "int[5]",
+            "sum": "int"
           },
           "ordered_varnames": [
             "nums",
@@ -211,6 +250,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -239,10 +279,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "nums": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "nums": 20,
             "sum": 4
+          },
+          "local_types": {
+            "n": "int",
+            "nums": "int[5]",
+            "sum": "int"
           },
           "ordered_varnames": [
             "nums",
@@ -259,6 +309,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -287,10 +338,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "nums": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "nums": 20,
             "sum": 4
+          },
+          "local_types": {
+            "n": "int",
+            "nums": "int[5]",
+            "sum": "int"
           },
           "ordered_varnames": [
             "nums",
@@ -307,6 +368,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -335,10 +397,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "nums": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "nums": 20,
             "sum": 4
+          },
+          "local_types": {
+            "n": "int",
+            "nums": "int[5]",
+            "sum": "int"
           },
           "ordered_varnames": [
             "nums",
@@ -355,6 +427,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -383,10 +456,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "nums": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "nums": 20,
             "sum": 4
+          },
+          "local_types": {
+            "n": "int",
+            "nums": "int[5]",
+            "sum": "int"
           },
           "ordered_varnames": [
             "nums",
@@ -403,6 +486,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -431,10 +515,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "nums": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "nums": 20,
             "sum": 4
+          },
+          "local_types": {
+            "n": "int",
+            "nums": "int[5]",
+            "sum": "int"
           },
           "ordered_varnames": [
             "nums",
@@ -451,6 +545,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -479,10 +574,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "nums": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "nums": 20,
             "sum": 4
+          },
+          "local_types": {
+            "n": "int",
+            "nums": "int[5]",
+            "sum": "int"
           },
           "ordered_varnames": [
             "nums",
@@ -499,6 +604,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -527,10 +633,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "nums": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "nums": 20,
             "sum": 4
+          },
+          "local_types": {
+            "n": "int",
+            "nums": "int[5]",
+            "sum": "int"
           },
           "ordered_varnames": [
             "nums",
@@ -547,6 +663,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -575,10 +692,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "nums": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "nums": 20,
             "sum": 4
+          },
+          "local_types": {
+            "n": "int",
+            "nums": "int[5]",
+            "sum": "int"
           },
           "ordered_varnames": [
             "nums",
@@ -595,6 +722,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -623,10 +751,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "nums": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "nums": 20,
             "sum": 4
+          },
+          "local_types": {
+            "n": "int",
+            "nums": "int[5]",
+            "sum": "int"
           },
           "ordered_varnames": [
             "nums",
@@ -643,6 +781,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -672,10 +811,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "n": "0xPTR",
+            "nums": "0xPTR",
+            "sum": "0xPTR"
+          },
           "local_sizes": {
             "n": 4,
             "nums": 20,
             "sum": 4
+          },
+          "local_types": {
+            "n": "int",
+            "nums": "int[5]",
+            "sum": "int"
           },
           "ordered_varnames": [
             "nums",

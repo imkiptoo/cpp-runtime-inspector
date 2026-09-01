@@ -5,6 +5,7 @@
       "event": "call",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -19,7 +20,9 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {},
           "local_sizes": {},
+          "local_types": {},
           "ordered_varnames": [],
           "stack_size_bytes": 0
         }
@@ -31,6 +34,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -47,8 +51,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "i": "0xPTR"
+          },
           "local_sizes": {
             "i": 4
+          },
+          "local_types": {
+            "i": "int"
           },
           "ordered_varnames": [
             "i"
@@ -63,6 +73,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -80,9 +91,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "d": "0xPTR",
+            "i": "0xPTR"
+          },
           "local_sizes": {
             "d": 8,
             "i": 4
+          },
+          "local_types": {
+            "d": "double",
+            "i": "int"
           },
           "ordered_varnames": [
             "i",
@@ -98,6 +117,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -116,10 +136,20 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR",
+            "d": "0xPTR",
+            "i": "0xPTR"
+          },
           "local_sizes": {
             "b": 1,
             "d": 8,
             "i": 4
+          },
+          "local_types": {
+            "b": "bool",
+            "d": "double",
+            "i": "int"
           },
           "ordered_varnames": [
             "i",
@@ -136,6 +166,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -155,11 +186,23 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "i": "0xPTR"
+          },
           "local_sizes": {
             "b": 1,
             "c": 1,
             "d": 8,
             "i": 4
+          },
+          "local_types": {
+            "b": "bool",
+            "c": "char",
+            "d": "double",
+            "i": "int"
           },
           "ordered_varnames": [
             "i",
@@ -177,6 +220,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -204,12 +248,26 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "d": "0xPTR",
+            "i": "0xPTR",
+            "p": "0xPTR"
+          },
           "local_sizes": {
             "b": 1,
             "c": 1,
             "d": 8,
             "i": 4,
             "p": 8
+          },
+          "local_types": {
+            "b": "bool",
+            "c": "char",
+            "d": "double",
+            "i": "int",
+            "p": "struct Point"
           },
           "ordered_varnames": [
             "i",
@@ -228,6 +286,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -256,6 +315,14 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "color": "0xPTR",
+            "d": "0xPTR",
+            "i": "0xPTR",
+            "p": "0xPTR"
+          },
           "local_sizes": {
             "b": 1,
             "c": 1,
@@ -263,6 +330,14 @@
             "d": 8,
             "i": 4,
             "p": 8
+          },
+          "local_types": {
+            "b": "bool",
+            "c": "char",
+            "color": "enum Color",
+            "d": "double",
+            "i": "int",
+            "p": "struct Point"
           },
           "ordered_varnames": [
             "i",
@@ -282,6 +357,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -319,6 +395,15 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "arr": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "color": "0xPTR",
+            "d": "0xPTR",
+            "i": "0xPTR",
+            "p": "0xPTR"
+          },
           "local_sizes": {
             "arr": 12,
             "b": 1,
@@ -327,6 +412,15 @@
             "d": 8,
             "i": 4,
             "p": 8
+          },
+          "local_types": {
+            "arr": "int[3]",
+            "b": "bool",
+            "c": "char",
+            "color": "enum Color",
+            "d": "double",
+            "i": "int",
+            "p": "struct Point"
           },
           "ordered_varnames": [
             "i",
@@ -347,6 +441,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -390,6 +485,16 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "arr": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "color": "0xPTR",
+            "d": "0xPTR",
+            "i": "0xPTR",
+            "p": "0xPTR",
+            "ptr": "0xPTR"
+          },
           "local_sizes": {
             "arr": 12,
             "b": 1,
@@ -399,6 +504,16 @@
             "i": 4,
             "p": 8,
             "ptr": 8
+          },
+          "local_types": {
+            "arr": "int[3]",
+            "b": "bool",
+            "c": "char",
+            "color": "enum Color",
+            "d": "double",
+            "i": "int",
+            "p": "struct Point",
+            "ptr": "int *"
           },
           "ordered_varnames": [
             "i",
@@ -420,6 +535,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -469,6 +585,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "arr": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "color": "0xPTR",
+            "d": "0xPTR",
+            "i": "0xPTR",
+            "p": "0xPTR",
+            "ptr": "0xPTR",
+            "ref": "0xPTR"
+          },
           "local_sizes": {
             "arr": 12,
             "b": 1,
@@ -479,6 +606,17 @@
             "p": 8,
             "ptr": 8,
             "ref": 8
+          },
+          "local_types": {
+            "arr": "int[3]",
+            "b": "bool",
+            "c": "char",
+            "color": "enum Color",
+            "d": "double",
+            "i": "int",
+            "p": "struct Point",
+            "ptr": "int *",
+            "ref": "int &"
           },
           "ordered_varnames": [
             "i",
@@ -501,6 +639,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -550,6 +689,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "arr": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "color": "0xPTR",
+            "d": "0xPTR",
+            "i": "0xPTR",
+            "p": "0xPTR",
+            "ptr": "0xPTR",
+            "ref": "0xPTR"
+          },
           "local_sizes": {
             "arr": 12,
             "b": 1,
@@ -560,6 +710,17 @@
             "p": 8,
             "ptr": 8,
             "ref": 8
+          },
+          "local_types": {
+            "arr": "int[3]",
+            "b": "bool",
+            "c": "char",
+            "color": "enum Color",
+            "d": "double",
+            "i": "int",
+            "p": "struct Point",
+            "ptr": "int *",
+            "ref": "int &"
           },
           "ordered_varnames": [
             "i",
@@ -582,6 +743,7 @@
       "event": "step_line",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -631,6 +793,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "arr": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "color": "0xPTR",
+            "d": "0xPTR",
+            "i": "0xPTR",
+            "p": "0xPTR",
+            "ptr": "0xPTR",
+            "ref": "0xPTR"
+          },
           "local_sizes": {
             "arr": 12,
             "b": 1,
@@ -641,6 +814,17 @@
             "p": 8,
             "ptr": 8,
             "ref": 8
+          },
+          "local_types": {
+            "arr": "int[3]",
+            "b": "bool",
+            "c": "char",
+            "color": "enum Color",
+            "d": "double",
+            "i": "int",
+            "p": "struct Point",
+            "ptr": "int *",
+            "ref": "int &"
           },
           "ordered_varnames": [
             "i",
@@ -663,6 +847,7 @@
       "event": "return",
       "func_name": "main",
       "global_sizes": {},
+      "global_types": {},
       "globals": {},
       "heap": {},
       "heap_addresses": {},
@@ -713,6 +898,17 @@
           "func_name": "main",
           "is_highlighted": true,
           "is_zombie": false,
+          "local_addresses": {
+            "arr": "0xPTR",
+            "b": "0xPTR",
+            "c": "0xPTR",
+            "color": "0xPTR",
+            "d": "0xPTR",
+            "i": "0xPTR",
+            "p": "0xPTR",
+            "ptr": "0xPTR",
+            "ref": "0xPTR"
+          },
           "local_sizes": {
             "arr": 12,
             "b": 1,
@@ -723,6 +919,17 @@
             "p": 8,
             "ptr": 8,
             "ref": 8
+          },
+          "local_types": {
+            "arr": "int[3]",
+            "b": "bool",
+            "c": "char",
+            "color": "enum Color",
+            "d": "double",
+            "i": "int",
+            "p": "struct Point",
+            "ptr": "int *",
+            "ref": "int &"
           },
           "ordered_varnames": [
             "i",
