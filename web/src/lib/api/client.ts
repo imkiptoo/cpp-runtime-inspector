@@ -13,6 +13,8 @@ export interface TraceFailure {
 	success: false;
 	error: string;
 	compileOutput?: string;
+	/** Rewritten source, when the plugin ran but a later phase failed. */
+	instrumentedSource?: string;
 }
 
 export type TraceResponse = TraceResult | TraceFailure;
@@ -63,7 +65,8 @@ export async function submitTrace(
 					return {
 						success: false,
 						error: errorMsg,
-						compileOutput: parsed.data.details
+						compileOutput: parsed.data.details,
+						instrumentedSource: parsed.data.instrumented_source
 					};
 				}
 			} catch {

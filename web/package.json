@@ -16,6 +16,7 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
+    "@codemirror/lang-json": "^6.0.2",
     "@playwright/test": "^1.49.0",
     "@sveltejs/adapter-static": "^3.0.6",
     "@sveltejs/kit": "^2.10.0",

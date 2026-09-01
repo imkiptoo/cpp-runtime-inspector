@@ -69,6 +69,9 @@ function createAppState() {
 	let trace = $state<TraceOutput | null>(null);
 	let error = $state<string | null>(null);
 	let buildOutput = $state<string | null>(null);
+	// Plugin-rewritten source from the last run. Kept separate from `trace`
+	// because it is also returned on compile failures, where there is no trace.
+	let instrumentedSource = $state<string | null>(null);
 
 	// === Navigation State ===
 	let stepIndex = $state(0);
@@ -119,6 +122,15 @@ function createAppState() {
 		trace?.memory_leaks && trace.memory_leaks.length > 0
 	);
 
+	// Pretty-printed trace for the JSON console tab. `instrumented_source` is
+	// dropped because it has its own tab and would otherwise dominate the view.
+	// $derived is lazy, so this only runs when the JSON tab actually reads it.
+	const traceJson = $derived.by(() => {
+		if (!trace) return '';
+		const { instrumented_source: _omitted, ...rest } = trace;
+		return JSON.stringify(rest, null, 2);
+	});
+
 	// === Actions ===
 
 	/**
@@ -130,6 +142,7 @@ function createAppState() {
 		running = true;
 		error = null;
 		buildOutput = null;
+		instrumentedSource = null;
 		stopPlaying();
 
 		try {
@@ -137,6 +150,7 @@ function createAppState() {
 
 			if (result.success) {
 				trace = result.data;
+				instrumentedSource = result.data.instrumented_source ?? null;
 				lastRunCode = code;
 				stepIndex = 0;
 				error = null;
@@ -153,6 +167,7 @@ function createAppState() {
 			} else {
 				error = result.error;
 				buildOutput = result.compileOutput ?? null;
+				instrumentedSource = result.instrumentedSource ?? null;
 				trace = null;
 				consoleOpen = true;
 			}
@@ -437,6 +452,7 @@ function createAppState() {
 		get trace() { return trace; },
 		get error() { return error; },
 		get buildOutput() { return buildOutput; },
+		get instrumentedSource() { return instrumentedSource; },
 
 		// Navigation
 		get stepIndex() { return stepIndex; },
@@ -463,6 +479,7 @@ function createAppState() {
 		get canStepBackward() { return canStepBackward; },
 		get canStepForward() { return canStepForward; },
 		get hasMemoryLeaks() { return hasMemoryLeaks; },
+		get traceJson() { return traceJson; },
 
 		// Actions
 		run,

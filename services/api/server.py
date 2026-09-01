@@ -73,10 +73,15 @@ logger = logging.getLogger(__name__)
 
 class TraceError(Exception):
     """Exception for trace generation errors."""
-    def __init__(self, phase: str, message: str, details: Optional[str] = None):
+    def __init__(self, phase: str, message: str, details: Optional[str] = None,
+                 instrumented_source: Optional[str] = None):
         self.phase = phase
         self.message = message
         self.details = details
+        # Present once the plugin has produced output. Surfaced on failure too,
+        # because a compile error in the rewritten source is exactly when you
+        # want to read it.
+        self.instrumented_source = instrumented_source
         super().__init__(f"{phase}: {message}")
 
     def to_json(self) -> dict:
@@ -86,10 +91,12 @@ class TraceError(Exception):
         }
         if self.details:
             result["details"] = self.details
+        if self.instrumented_source:
+            result["instrumented_source"] = self.instrumented_source
         return result
 
 
-def instrument_and_run(source_code: str) -> str:
+def instrument_and_run(source_code: str) -> tuple[str, str]:
     """
     Instrument, compile, and run C++ source code.
 
@@ -97,7 +104,7 @@ def instrument_and_run(source_code: str) -> str:
         source_code: C++ source code to trace
 
     Returns:
-        JSON trace string
+        Tuple of (JSON trace string, instrumented C++ source).
 
     Raises:
         TraceError: If any step fails
@@ -137,6 +144,10 @@ def instrument_and_run(source_code: str) -> str:
                 "Plugin did not produce instrumented file"
             )
 
+        # Read it now: the workdir is removed in the `finally` below, so this
+        # is the only chance to capture it for the response.
+        instrumented_source = instrumented_file.read_text(errors="replace")
+
         # Step 2: Compile
         logger.info("Compiling instrumented code...")
         result = subprocess.run(
@@ -155,7 +166,8 @@ def instrument_and_run(source_code: str) -> str:
             raise TraceError(
                 "compilation",
                 "Failed to compile instrumented source",
-                result.stderr
+                result.stderr,
+                instrumented_source
             )
 
         # Step 3: Run
@@ -173,7 +185,9 @@ def instrument_and_run(source_code: str) -> str:
         if not trace:
             raise TraceError(
                 "execution",
-                "Program did not produce trace output"
+                "Program did not produce trace output",
+                None,
+                instrumented_source
             )
 
         # Validate JSON
@@ -183,10 +197,11 @@ def instrument_and_run(source_code: str) -> str:
             raise TraceError(
                 "output",
                 "Invalid trace JSON",
-                str(e)
+                str(e),
+                instrumented_source
             )
 
-        return trace
+        return trace, instrumented_source
 
     except subprocess.TimeoutExpired:
         raise TraceError(
@@ -278,10 +293,12 @@ Example:
 
         try:
             logger.info(f"Received trace request ({len(source_code)} bytes)")
-            trace_json = instrument_and_run(source_code)
+            trace_json, instrumented_source = instrument_and_run(source_code)
 
             # Parse and re-serialize to ensure consistent formatting
             trace_data = json.loads(trace_json)
+            # Attach the rewritten source so the frontend can display it.
+            trace_data["instrumented_source"] = instrumented_source
             self._send_json(200, trace_data)
 
         except TraceError as e:

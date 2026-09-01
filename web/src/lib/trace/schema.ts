@@ -208,7 +208,10 @@ export const TraceOutputSchema = z.object({
 	memory_leaks: z.array(MemoryLeakSchema).optional(),
 	type_metadata: z.record(z.string(), z.unknown()).optional(),
 	truncated: z.boolean().optional(),
-	truncation_reason: z.string().nullable().optional()
+	truncation_reason: z.string().nullable().optional(),
+	// The plugin-rewritten C++ source. Added by the API layer, not the runtime,
+	// so it is optional for compatibility with older backends.
+	instrumented_source: z.string().optional()
 });
 export type TraceOutput = z.infer<typeof TraceOutputSchema>;
 
@@ -217,7 +220,8 @@ export type TraceOutput = z.infer<typeof TraceOutputSchema>;
 export const TraceErrorSchema = z.object({
 	error: z.string(),           // Phase: "instrumentation", "compilation", "execution", etc.
 	message: z.string(),         // Human-readable error message
-	details: z.string().optional()  // Compiler stderr or additional details
+	details: z.string().optional(),  // Compiler stderr or additional details
+	instrumented_source: z.string().optional()  // Rewritten source, if the plugin got that far
 });
 export type TraceError = z.infer<typeof TraceErrorSchema>;
 
